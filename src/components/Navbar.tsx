@@ -9,7 +9,7 @@ const Navbar = () => {
   const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div className="w-full flex justify-end items-center text-white pt-4 pr-5 text-xl bg-[#0f0f0f]">
-      <Link href="" className="mr-5">
+      <Link href="https://github.com/psykat1116/Modern_Periodic_Table" target="_blank" className="mr-5">
         <AiFillGithub className="text-2xl" />
       </Link>
       {theme === "dark" ? (

@@ -14,3 +14,7 @@
 *::-webkit-scrollbar-thumb {
   background-color: #eeeeee;
 } */
+
+html{
+  scroll-behavior: smooth;
+}

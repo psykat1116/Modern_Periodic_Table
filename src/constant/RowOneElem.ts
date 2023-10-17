@@ -1,11 +1,12 @@
 import ElementDetailsProps from "@/types/ElementTypes";
 
-export const RowOne: ElementDetailsProps[] = [
+export const RowOneElem: ElementDetailsProps[] = [
   {
     id: 1,
     description:
       "Hydrogen is the lightest and, the simplest element and with a ratio of 80%, it is the main ingridient in the observable universe.20% consist of Helium, the ratio of the heavier elements is below 1%. Most of the stars including our sun, generates energy by fusion of hydrogen to helium.Hydrogen is quiet abundant in earth too, opposite to helium, because it is very reactive elemnet and so is part of many different compounds",
     general_properties: {
+      name: "Hydrogen",
       atomic_number: 1,
       group: 1,
       period: 1,
@@ -26,8 +27,8 @@ export const RowOne: ElementDetailsProps[] = [
     atomic_properties: {
       atomic_weight: 1.008,
       oxidation_states: [-1, +1],
-      electron_shell_cofiguration: "K1",
-      electron_cofiguration: "1s1",
+      electron_shell_configuration: "K1",
+      electron_configuration: "1s1",
       gas_atom_multiplicities: 2,
       atomic_radius: 53,
       covalent_radius: 31,
@@ -81,6 +82,7 @@ export const RowOne: ElementDetailsProps[] = [
     description:
       "About 20% of the visible matter in the universe is helium, but because it is so light and doesn&apos;t react chemically with anything, it escaped from earth into space, when the solar system was young. So now it is quite rare here. Nonetheless it has multiple applications, from making balloons fly to coolingthings to extremely low temperatures with liquid helium.",
     general_properties: {
+      name: "Helium",
       atomic_number: 2,
       group: 18,
       period: 1,
@@ -100,8 +102,8 @@ export const RowOne: ElementDetailsProps[] = [
     },
     atomic_properties: {
       atomic_weight: 4.002602,
-      electron_shell_cofiguration: "K2",
-      electron_cofiguration: "1s2",
+      electron_shell_configuration: "K2",
+      electron_configuration: "1s2",
       gas_atom_multiplicities: 1,
       atomic_radius: 31,
       covalent_radius: 28,

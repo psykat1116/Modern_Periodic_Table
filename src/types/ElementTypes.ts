@@ -1,29 +1,30 @@
-interface GeneralProperties {
+export interface GeneralProperties {
+  name?: string;
   atomic_number: number;
   group: number;
   period: number;
   block: "s" | "p" | "d" | "f";
   cas_number: string;
-  symbol: string;
+  symbol?: string;
 }
 
-interface Particles {
+export interface Particles {
   electrons: number;
   protons: number;
   neutrons: number;
 }
 
-interface Overview {
+export interface Overview {
   latin_name: string;
   discovery: number;
   discoverer: string;
 }
 
-interface AtomicProperties {
+export interface AtomicProperties {
   atomic_weight: number;
   oxidation_states?: number[];
-  electron_shell_cofiguration: string;
-  electron_cofiguration: string;
+  electron_shell_configuration: string;
+  electron_configuration: string;
   gas_atom_multiplicities: number;
   atomic_radius: number;
   covalent_radius: number;
@@ -31,7 +32,7 @@ interface AtomicProperties {
   crystall_structure: string;
 }
 
-interface ThermodynamicProperties {
+export interface ThermodynamicProperties {
   boiling_point: string;
   melting_point: string;
   phase: string;
@@ -41,7 +42,7 @@ interface ThermodynamicProperties {
   thermal_expansion?: string;
 }
 
-interface MaterialProperties {
+export interface MaterialProperties {
   color: string;
   molar_volume: string;
   refrective_index: number;
@@ -53,19 +54,19 @@ interface MaterialProperties {
   vickers_hardness?: number;
   bulk_modulus?: number;
   brinell_hardness?: number;
-  poisson_ratio?:number,
+  poisson_ratio?: number;
   mohs_hardness?: number;
 }
 
-interface NueclearProperties {
+export interface NeuclearProperties {
   radioactive: "Yes" | "No";
   half_life: string | "∞";
   lifetime: string;
   neutron_cross_section: number;
-  decay_mode?: 'alpha' | 'beta' | 'gamma'
+  decay_mode?: "alpha" | "beta" | "gamma" | "positron";
 }
 
-interface ElectromagneticProperties {
+export interface ElectromagneticProperties {
   electrical_type?: string;
   magnetic_type: string;
   resisitivity?: string;
@@ -76,7 +77,7 @@ interface ElectromagneticProperties {
   molar_magnetic_suspectibility: string;
 }
 
-interface Prevalence {
+export interface Prevalence {
   universe: string;
   sun: string;
   ocean: string;
@@ -85,7 +86,7 @@ interface Prevalence {
   meteorites: string;
 }
 
-interface Reactivity {
+export interface Reactivity {
   electronegativity?: number;
   valence: number;
   electron_affinity?: number;
@@ -102,7 +103,7 @@ export default interface ElementDetailsProps {
   thermodynamic_properties: ThermodynamicProperties;
   material_properties: MaterialProperties;
   reactivity: Reactivity;
-  neuclear_properties: NueclearProperties;
+  neuclear_properties: NeuclearProperties;
   electromagnetic_properties: ElectromagneticProperties;
   prevalence: Prevalence;
 }

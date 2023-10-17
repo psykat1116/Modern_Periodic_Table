@@ -16,4 +16,16 @@ const Links = [
   { href: "?type=fblock", value: "F-Block" },
 ];
 
+const Properties = [
+  {href: "#overview", value: "Overview"},
+  {href: "#atomic_properties", value: "Atomic Properties"},
+  {href: "#thermodynamic_properties", value: "Thermodynamic Properties"},
+  {href: "#material_properties", value: "Material Properties"},
+  {href: "#reactivity", value: "Reactivity"},
+  {href: "#neuclear_properties", value: "Neuclear Properties"},
+  {href: "#electromagnetic_properties", value: "Electromagnetic Properties"},
+  {href: "#description", value: "Description"},
+  {href: "general_properties", value: "General Properties"},
+]
+
 export default Links;
