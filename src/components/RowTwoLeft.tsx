@@ -14,6 +14,7 @@ const RowTwoLeft = () => {
             id={element.id}
             category={element.category}
             key={element.id}
+            color={element.color}
           />
         );
       })}

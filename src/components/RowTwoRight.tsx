@@ -8,10 +8,11 @@ const RowTwoRight = () => {
       {RowTwoRightElements.map((element) => {
         return (
           <Box
-            key={element.name}
+            key={element.id}
             name={element.name}
             id={element.id}
             category={element.category}
+            color={element.color}
           />
         );
       })}

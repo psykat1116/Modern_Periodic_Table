@@ -18,6 +18,7 @@ const RowSeven = () => {
             key={elemets.id}
             category={elemets.category}
             name={elemets.name}
+            color={elemets.color}
           />
         );
       })}
@@ -29,6 +30,7 @@ const RowSeven = () => {
             key={elemets.id}
             category={elemets.category}
             name={elemets.name}
+            color={elemets.color}
           />
         );
       })}

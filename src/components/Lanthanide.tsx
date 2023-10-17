@@ -12,6 +12,7 @@ const Lanthanide = () => {
             key={elements.id}
             category={elements.category}
             name={elements.name}
+            color={elements.color}
           />
         );
       })}

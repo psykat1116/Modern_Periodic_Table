@@ -15,7 +15,7 @@ export default function Home() {
         className="fixed min-h-screen w-full bg-[#141414] flex justify-center items-center flex-col z-50"
         initial={{ opacity: 1, userSelect: "auto", pointerEvents: "auto" }}
         animate={{ opacity: 0, userSelect: "none", pointerEvents: "none" }}
-        transition={{ ease: "easeInOut", delay: 5 }}
+        transition={{ ease: "easeInOut", delay: 1 }}
       >
         <Lottie animationData={LoadingAnim} className="h-[200px] w-[200px]" />
       </motion.div>

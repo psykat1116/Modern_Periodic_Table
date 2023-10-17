@@ -3,7 +3,11 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import ThemeProvider from "@/context/ThemeProvider";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: "normal",
+});
 
 export const metadata: Metadata = {
   title: "Modern Periodic Table of Elements",
