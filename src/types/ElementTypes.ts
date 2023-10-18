@@ -5,7 +5,7 @@ export interface GeneralProperties {
   period: number;
   block: "s" | "p" | "d" | "f";
   cas_number: string;
-  symbol?: string;
+  symbol: string;
 }
 
 export interface Particles {

@@ -4,7 +4,7 @@ export const RowOneElem: ElementDetailsProps[] = [
   {
     id: 1,
     description:
-      "Hydrogen is the lightest and, the simplest element and with a ratio of 80%, it is the main ingridient in the observable universe.20% consist of Helium, the ratio of the heavier elements is below 1%. Most of the stars including our sun, generates energy by fusion of hydrogen to helium.Hydrogen is quiet abundant in earth too, opposite to helium, because it is very reactive elemnet and so is part of many different compounds",
+      "Hydrogen is the lightest and, the simplest element and with a ratio of 80%, it is the main ingridient in the observable universe. 20% consist of Helium, the ratio of the heavier elements is below 1%. Most of the stars including our sun, generates energy by fusion of hydrogen to helium. Hydrogen is quiet abundant in earth too, opposite to helium, because it is very reactive elemnet and so is part of many different compounds.",
     general_properties: {
       name: "Hydrogen",
       atomic_number: 1,
@@ -28,7 +28,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       atomic_weight: 1.008,
       oxidation_states: [-1, +1],
       electron_shell_configuration: "K1",
-      electron_configuration: "1s1",
+      electron_configuration: "<p>1s<sup>1</sup></p>",
       gas_atom_multiplicities: 2,
       atomic_radius: 53,
       covalent_radius: 31,
@@ -45,7 +45,7 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Colorless",
-      molar_volume: "1.12*10^-2",
+      molar_volume: "<p>1.12*10<sup>-2</sup><p>",
       refrective_index: 1.000132,
       sound_speed: 1270,
       thermal_conductivity: 0.1805,
@@ -64,9 +64,9 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       magnetic_type: "Diamagentic",
-      volume_magnetic_suspectibility: "-2.23*10^-9",
-      mass_magnetic_suspectibility: "-2.48*10^-9",
-      molar_magnetic_suspectibility: "-4.99*10^-9",
+      volume_magnetic_suspectibility: "<p>-2.23*10<sup>-9</sup></p>",
+      mass_magnetic_suspectibility: "<p>-2.48*10<sup>-9</sup></p>",
+      molar_magnetic_suspectibility: "<p>-4.99*10<sup>-9</sup></p>",
     },
     prevalence: {
       universe: "75.00%",
@@ -80,7 +80,7 @@ export const RowOneElem: ElementDetailsProps[] = [
   {
     id: 2,
     description:
-      "About 20% of the visible matter in the universe is helium, but because it is so light and doesn&apos;t react chemically with anything, it escaped from earth into space, when the solar system was young. So now it is quite rare here. Nonetheless it has multiple applications, from making balloons fly to coolingthings to extremely low temperatures with liquid helium.",
+      "About 20% of the visible matter in the universe is helium, but because it is so light and does not react chemically with anything, it escaped from earth into space, when the solar system was young. So now it is quite rare here. Nonetheless it has multiple applications, from making balloons fly to coolingthings to extremely low temperatures with liquid helium.",
     general_properties: {
       name: "Helium",
       atomic_number: 2,
@@ -103,7 +103,7 @@ export const RowOneElem: ElementDetailsProps[] = [
     atomic_properties: {
       atomic_weight: 4.002602,
       electron_shell_configuration: "K2",
-      electron_configuration: "1s2",
+      electron_configuration: "<p>1s<sup>2</sup></p>",
       gas_atom_multiplicities: 1,
       atomic_radius: 31,
       covalent_radius: 28,
@@ -120,7 +120,7 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Colorless",
-      molar_volume: "2.242*10^-2",
+      molar_volume: "<p>2.242*10<sup>-2</sup></p>",
       refrective_index: 1.000035,
       sound_speed: 970,
       thermal_conductivity: 0.1513,
@@ -137,16 +137,16 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       magnetic_type: "Diamagentic",
-      volume_magnetic_suspectibility: "-1.05*10^-9",
-      mass_magnetic_suspectibility: "-5.9*10^-9",
-      molar_magnetic_suspectibility: "-2.36*10^-11",
+      volume_magnetic_suspectibility: "<p>-1.05*10<sup>-9</sup></p>",
+      mass_magnetic_suspectibility: "<p>-5.9*10<sup>-9</sup></p>",
+      molar_magnetic_suspectibility: "<p>-2.36*10<sup>-11</sup></p>",
     },
     prevalence: {
       universe: "23.00%",
       sun: "23.00%",
-      ocean: "7.3*10^-10%",
+      ocean: "<p>7.3*10<sup>-10</sup>%</p>",
       human: "0%",
-      earth_crust: "5.5*10^-7%",
+      earth_crust: "<p>5.5*10<sup>-7</sup>%</p>",
       meteorites: "0%",
     },
   },

@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { MaterialProperties } from "@/types/ElementTypes";
+import { MdContentCopy, MdCheck } from "react-icons/md";
+import DOMPurify from "dompurify";
 
 const MaterialProperty = ({
   color,
@@ -16,7 +18,285 @@ const MaterialProperty = ({
   poisson_ratio,
   refrective_index,
 }: MaterialProperties) => {
-  return <div>MaterialProperty</div>;
+  const [isCopying, setIsCopying] = useState({
+    color: false,
+    molar_volume: false,
+    mohs_hardness: false,
+    bulk_modulus: false,
+    brinell_hardness: false,
+    density: false,
+    liquid_density: false,
+    young_modulus: false,
+    vickers_hardness: false,
+    thermal_conductivity: false,
+    sound_speed: false,
+    poisson_ratio: false,
+    refrective_index: false,
+  });
+  const handleCopy = (value: string, property: string) => {
+    setIsCopying({ ...isCopying, [property]: true });
+    navigator.clipboard.writeText(value);
+    setTimeout(() => {
+      setIsCopying({ ...isCopying, [property]: false });
+    }, 500);
+  };
+  return (
+    <div className="w-full flex flex-col justify-start items-start p-4 text-[#cfbbbb] bg-[#1b1a1a] shadow-md rounded-sm">
+      <h1 className="text-xl">Material Property</h1>
+      <div className="flex flex-col w-full justify-start items-start">
+        <div className="flex flex-row justify-start items-center w-full mt-3">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Color</p>
+          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+            <p>{color}</p>
+            <button onClick={() => handleCopy(color, "color")}>
+              {!isCopying.color ? (
+                <MdContentCopy />
+              ) : (
+                <MdCheck className="text-green-500" />
+              )}
+            </button>
+          </div>
+        </div>
+        <div className="flex flex-row justify-start items-center w-full mt-3">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Molar Volume</p>
+          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center">
+            <p
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(molar_volume),
+              }}
+            ></p>
+            <button
+              onClick={() =>
+                handleCopy(molar_volume.toString(), "molar_volume")
+              }
+            >
+              {!isCopying.molar_volume ? (
+                <MdContentCopy />
+              ) : (
+                <MdCheck className="text-green-500" />
+              )}
+            </button>
+          </div>
+        </div>
+        {mohs_hardness && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+              Mohs Hardness
+            </p>
+            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+              <p>{mohs_hardness}</p>
+              <button
+                onClick={() =>
+                  handleCopy(mohs_hardness.toString(), "mohs_hardness")
+                }
+              >
+                {!isCopying.mohs_hardness ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-500" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+        {bulk_modulus && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Bulk Modulus</p>
+            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+              <p>{bulk_modulus}</p>
+              <button
+                onClick={() =>
+                  handleCopy(bulk_modulus.toString(), "bulk_modulus")
+                }
+              >
+                {!isCopying.bulk_modulus ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-500" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+        {brinell_hardness && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+              Brinnel Hardness
+            </p>
+            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+              <p>{brinell_hardness}</p>
+              <button
+                onClick={() =>
+                  handleCopy(brinell_hardness.toString(), "brinell_hardness")
+                }
+              >
+                {!isCopying.brinell_hardness ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-500" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+        {density && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Density</p>
+            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+              <p>{density}</p>
+              <button onClick={() => handleCopy(density.toString(), "density")}>
+                {!isCopying.density ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-500" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+        {liquid_density && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+              Liquid Density
+            </p>
+            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+              <p>{liquid_density}</p>
+              <button
+                onClick={() =>
+                  handleCopy(liquid_density.toString(), "liquid_density")
+                }
+              >
+                {!isCopying.liquid_density ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-500" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+        {young_modulus && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+              Young Modulus
+            </p>
+            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+              <p>{young_modulus}</p>
+              <button
+                onClick={() =>
+                  handleCopy(young_modulus.toString(), "young_modulus")
+                }
+              >
+                {!isCopying.young_modulus ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-500" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+        {vickers_hardness && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+              Vickers Hardness
+            </p>
+            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+              <p>{vickers_hardness}</p>
+              <button
+                onClick={() =>
+                  handleCopy(vickers_hardness.toString(), "vickers_hardness")
+                }
+              >
+                {!isCopying.vickers_hardness ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-500" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+        <div className="flex flex-row justify-start items-center w-full mt-3">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+            Thermal Conductivity
+          </p>
+          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+            <p>{thermal_conductivity}</p>
+            <button
+              onClick={() =>
+                handleCopy(
+                  thermal_conductivity.toString(),
+                  "thermal_conductivity"
+                )
+              }
+            >
+              {!isCopying.thermal_conductivity ? (
+                <MdContentCopy />
+              ) : (
+                <MdCheck className="text-green-500" />
+              )}
+            </button>
+          </div>
+        </div>
+        <div className="flex flex-row justify-start items-center w-full mt-3">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Sound Speed</p>
+          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+            <p>{sound_speed}</p>
+            <button
+              onClick={() => handleCopy(sound_speed.toString(), "sound_speed")}
+            >
+              {!isCopying.sound_speed ? (
+                <MdContentCopy />
+              ) : (
+                <MdCheck className="text-green-500" />
+              )}
+            </button>
+          </div>
+        </div>
+        {poisson_ratio && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+              Poisson Ratio
+            </p>
+            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+              <p>{poisson_ratio}</p>
+              <button
+                onClick={() =>
+                  handleCopy(poisson_ratio.toString(), "poisson_ratio")
+                }
+              >
+                {!isCopying.poisson_ratio ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-500" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+        <div className="flex flex-row justify-start items-center w-full mt-3">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+            Refractive Index
+          </p>
+          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+            <p>{refrective_index}</p>
+            <button
+              onClick={() =>
+                handleCopy(refrective_index.toString(), "refrective_index")
+              }
+            >
+              {!isCopying.refrective_index ? (
+                <MdContentCopy />
+              ) : (
+                <MdCheck className="text-green-500" />
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default MaterialProperty;

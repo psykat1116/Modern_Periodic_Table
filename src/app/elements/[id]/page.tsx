@@ -36,7 +36,8 @@ const Page = () => {
             <BsArrowLeft className="cursor-pointer text-xl" />
           </Link>
           <p className="w-full text-center mx-5">
-            {elem?.general_properties.name}
+            {elem?.general_properties.name}{" "}
+            {`(${elem?.general_properties.symbol})`}
           </p>
           <Link href={`/elements/${nextId}`}>
             <BsArrowRight className="cursor-pointer text-xl" />
@@ -47,7 +48,7 @@ const Page = () => {
         <div className="w-1/3 h-[79vh] bg-[#1b1a1a] shadow-md flex justify-start flex-col items-center p-5 text-[#cfbbbb] rounded-sm">
           <h1>Electron Shell Configuration</h1>
         </div>
-        <div className="w-2/3 h-[79vh] ml-5 overflow-y-scroll flex flex-col justify-start items-center">
+        <div className="w-2/3 h-[79vh] ml-5 overflow-y-scroll flex flex-col justify-start items-center gap-2">
           <Description description={elem.description} />
           <GeneralInfo {...elem.general_properties} />
           <Particles {...elem.particles} />
