@@ -15,7 +15,7 @@ const RowSix = () => {
             id={elements.id}
             key={elements.id}
             category={elements.category}
-            color={elements.color}
+            groups={elements.groups}
           />
         );
       })}
@@ -25,7 +25,7 @@ const RowSix = () => {
           <Box
             name={elements.name}
             category={elements.category}
-            color={elements.color}
+            groups={elements.groups}
             id={elements.id}
             key={elements.id}
           />

@@ -14,7 +14,7 @@ const RowFive = () => {
             id={elements.id}
             key={elements.id}
             category={elements.category}
-            color={elements.color}
+            groups={elements.groups}
           />
         );
       })}

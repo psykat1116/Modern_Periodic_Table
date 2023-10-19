@@ -18,7 +18,7 @@ const RowThree = () => {
             id={element.id}
             category={element.category}
             key={element.id}
-            color={element.color}
+            groups={element.groups}
           />
         );
       })}
@@ -39,7 +39,7 @@ const RowThree = () => {
             id={element.id}
             category={element.category}
             key={element.id}
-            color={element.color}
+            groups={element.groups}
           />
         );
       })}

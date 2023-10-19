@@ -12,7 +12,7 @@ const RowTwoRight = () => {
             name={element.name}
             id={element.id}
             category={element.category}
-            color={element.color}
+            groups={element.groups}
           />
         );
       })}

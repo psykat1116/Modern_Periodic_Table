@@ -12,7 +12,7 @@ const Actinides = () => {
             category={elements.category}
             id={elements.id}
             name={elements.name}
-            color={elements.color}
+            groups={elements.groups}
           />
         );
       })}
