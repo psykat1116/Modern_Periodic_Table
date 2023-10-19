@@ -3,6 +3,7 @@ import ElementDetailsProps from "@/types/ElementTypes";
 export const RowOneElem: ElementDetailsProps[] = [
   {
     id: 1,
+    neighbour: ["Oganesson", "Helium"],
     description:
       "Hydrogen is the lightest and, the simplest element and with a ratio of 80%, it is the main ingridient in the observable universe. 20% consist of Helium, the ratio of the heavier elements is below 1%. Most of the stars including our sun, generates energy by fusion of hydrogen to helium. Hydrogen is quiet abundant in earth too, opposite to helium, because it is very reactive elemnet and so is part of many different compounds.",
     general_properties: {
@@ -79,6 +80,7 @@ export const RowOneElem: ElementDetailsProps[] = [
   },
   {
     id: 2,
+    neighbour: ["Hydrogen", "Lithium"],
     description:
       "About 20% of the visible matter in the universe is helium, but because it is so light and does not react chemically with anything, it escaped from earth into space, when the solar system was young. So now it is quite rare here. Nonetheless it has multiple applications, from making balloons fly to coolingthings to extremely low temperatures with liquid helium.",
     general_properties: {

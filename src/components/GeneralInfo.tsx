@@ -29,8 +29,8 @@ const GeneralInfo = ({
       <h1 className="text-xl">General Properties</h1>
       <div className="flex flex-col w-full justify-start items-start">
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Atomic Number</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Atomic Number</p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{atomic_number}</p>
             <button
               onClick={() =>
@@ -46,8 +46,8 @@ const GeneralInfo = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Group</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Group</p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{group}</p>
             <button onClick={() => handleCopy(group.toString(), "group")}>
               {!isCopying.group ? (
@@ -59,8 +59,8 @@ const GeneralInfo = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Period</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Period</p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{period}</p>
             <button onClick={() => handleCopy(period.toString(), "period")}>
               {!isCopying.period ? (
@@ -72,8 +72,8 @@ const GeneralInfo = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Block</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Block</p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{block}</p>
             <button onClick={() => handleCopy(block.toString(), "block")}>
               {!isCopying.block ? (
@@ -85,8 +85,8 @@ const GeneralInfo = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">CAS Number</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">CAS Number</p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{cas_number}</p>
             <button onClick={() => handleCopy(cas_number, "cas_number")}>
               {!isCopying.cas_number ? (

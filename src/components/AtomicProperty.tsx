@@ -37,8 +37,10 @@ const AtomicProperty = ({
       <h1 className="text-xl">Atomic Properties</h1>
       <div className="flex flex-col w-full justify-start items-start">
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Atomic Weight</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+            Atomic Weight{", "}u(gmol<sup>-1</sup>)
+          </p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{atomic_weight}</p>
             <button
               onClick={() =>
@@ -54,10 +56,10 @@ const AtomicProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
             Electron Shell Configuration
           </p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{electron_shell_configuration}</p>
             <button
               onClick={() =>
@@ -76,10 +78,10 @@ const AtomicProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
             Electron Configuration
           </p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center">
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center">
             <p
               dangerouslySetInnerHTML={{
                 __html: DOMPurify.sanitize(electron_configuration),
@@ -101,31 +103,35 @@ const AtomicProperty = ({
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
-            Gas Atomic Multiplicities
-          </p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
-            <p>{gas_atom_multiplicities}</p>
-            <button
-              onClick={() =>
-                handleCopy(
-                  gas_atom_multiplicities.toString(),
-                  "gas_atom_multiplicities"
-                )
-              }
-            >
-              {!isCopying.gas_atom_multiplicities ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-500" />
-              )}
-            </button>
+        {gas_atom_multiplicities && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Gas Atomic Multiplicities
+            </p>
+            <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+              <p>{gas_atom_multiplicities}</p>
+              <button
+                onClick={() =>
+                  handleCopy(
+                    gas_atom_multiplicities.toString(),
+                    "gas_atom_multiplicities"
+                  )
+                }
+              >
+                {!isCopying.gas_atom_multiplicities ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-500" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Atomic Radius</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            Atomic Radius(Pm)
+          </p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{atomic_radius}</p>
             <button
               onClick={() =>
@@ -141,10 +147,10 @@ const AtomicProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
-            Covalent Radius
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            Covalent Radius(Pm)
           </p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{covalent_radius}</p>
             <button
               onClick={() =>
@@ -160,10 +166,10 @@ const AtomicProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
-            Van Der Walls Radius
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            Van Der Walls Radius(Pm)
           </p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{van_der_walls_radius}</p>
             <button
               onClick={() =>
@@ -182,10 +188,10 @@ const AtomicProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
             Crystall Structure
           </p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{crystall_structure}</p>
             <button
               onClick={() =>
@@ -202,10 +208,10 @@ const AtomicProperty = ({
         </div>
         {oxidation_states && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
               Oxidation States
             </p>
-            <div className="w-[75%] py-1 flex justify-start items-center select-none">
+            <div className="w-[70%] py-1 flex justify-start items-center select-none">
               {oxidation_states.map((state) => {
                 return (
                   <p

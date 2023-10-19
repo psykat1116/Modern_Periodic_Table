@@ -20,8 +20,8 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
       <h1 className="text-xl">Overview</h1>
       <div className="flex flex-col w-full justify-start items-start">
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Latin Name</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Latin Name</p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{latin_name}</p>
             <button onClick={() => handleCopy(latin_name, "latin_name")}>
               {!isCopying.latin_name ? (
@@ -33,8 +33,8 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Discoverer</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Discoverer</p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{discoverer}</p>
             <button onClick={() => handleCopy(discoverer, "discoverer")}>
               {!isCopying.discoverer ? (
@@ -46,8 +46,8 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Discovery</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Discovery</p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{discovery}</p>
             <button onClick={() => handleCopy(discovery.toString(), "discovery")}>
               {!isCopying.discovery ? (

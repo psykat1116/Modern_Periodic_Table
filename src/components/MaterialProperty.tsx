@@ -17,6 +17,7 @@ const MaterialProperty = ({
   sound_speed,
   poisson_ratio,
   refrective_index,
+  shear_modulus,
 }: MaterialProperties) => {
   const [isCopying, setIsCopying] = useState({
     color: false,
@@ -32,6 +33,7 @@ const MaterialProperty = ({
     sound_speed: false,
     poisson_ratio: false,
     refrective_index: false,
+    shear_modulus: false,
   });
   const handleCopy = (value: string, property: string) => {
     setIsCopying({ ...isCopying, [property]: true });
@@ -45,8 +47,8 @@ const MaterialProperty = ({
       <h1 className="text-xl">Material Property</h1>
       <div className="flex flex-col w-full justify-start items-start">
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Color</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Color</p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{color}</p>
             <button onClick={() => handleCopy(color, "color")}>
               {!isCopying.color ? (
@@ -58,8 +60,10 @@ const MaterialProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Molar Volume</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            Molar Volume (m<sup>3</sup>mol<sup>-1</sup>)
+          </p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center">
             <p
               dangerouslySetInnerHTML={{
                 __html: DOMPurify.sanitize(molar_volume),
@@ -80,10 +84,10 @@ const MaterialProperty = ({
         </div>
         {mohs_hardness && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
               Mohs Hardness
             </p>
-            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+            <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
               <p>{mohs_hardness}</p>
               <button
                 onClick={() =>
@@ -101,8 +105,10 @@ const MaterialProperty = ({
         )}
         {bulk_modulus && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Bulk Modulus</p>
-            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Bulk Modulus (GPa)
+            </p>
+            <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
               <p>{bulk_modulus}</p>
               <button
                 onClick={() =>
@@ -120,10 +126,10 @@ const MaterialProperty = ({
         )}
         {brinell_hardness && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
-              Brinnel Hardness
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Brinnel Hardness (MPa)
             </p>
-            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+            <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
               <p>{brinell_hardness}</p>
               <button
                 onClick={() =>
@@ -141,8 +147,10 @@ const MaterialProperty = ({
         )}
         {density && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Density</p>
-            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Density (Kgm<sup>-3</sup>)
+            </p>
+            <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
               <p>{density}</p>
               <button onClick={() => handleCopy(density.toString(), "density")}>
                 {!isCopying.density ? (
@@ -156,10 +164,10 @@ const MaterialProperty = ({
         )}
         {liquid_density && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
-              Liquid Density
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Liquid Density (Kgm<sup>-3</sup>)
             </p>
-            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+            <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
               <p>{liquid_density}</p>
               <button
                 onClick={() =>
@@ -177,10 +185,10 @@ const MaterialProperty = ({
         )}
         {young_modulus && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
-              Young Modulus
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Young Modulus (GPa)
             </p>
-            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+            <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
               <p>{young_modulus}</p>
               <button
                 onClick={() =>
@@ -198,10 +206,10 @@ const MaterialProperty = ({
         )}
         {vickers_hardness && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
-              Vickers Hardness
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Vickers Hardness (MPa)
             </p>
-            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+            <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
               <p>{vickers_hardness}</p>
               <button
                 onClick={() =>
@@ -217,11 +225,32 @@ const MaterialProperty = ({
             </div>
           </div>
         )}
+        {shear_modulus && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Vickers Hardness (MPa)
+            </p>
+            <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+              <p>{shear_modulus}</p>
+              <button
+                onClick={() =>
+                  handleCopy(shear_modulus.toString(), "shear_modulus")
+                }
+              >
+                {!isCopying.shear_modulus ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-500" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
-            Thermal Conductivity
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+            Thermal Conductivity (Wm<sup>-1</sup>K<sup>-1</sup>)
           </p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{thermal_conductivity}</p>
             <button
               onClick={() =>
@@ -240,8 +269,10 @@ const MaterialProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Sound Speed</p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            Sound Speed (ms<sup>-1</sup>)
+          </p>
+          <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
             <p>{sound_speed}</p>
             <button
               onClick={() => handleCopy(sound_speed.toString(), "sound_speed")}
@@ -256,10 +287,10 @@ const MaterialProperty = ({
         </div>
         {poisson_ratio && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
               Poisson Ratio
             </p>
-            <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+            <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
               <p>{poisson_ratio}</p>
               <button
                 onClick={() =>
@@ -275,25 +306,27 @@ const MaterialProperty = ({
             </div>
           </div>
         )}
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
-            Refractive Index
-          </p>
-          <div className="w-[75%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
-            <p>{refrective_index}</p>
-            <button
-              onClick={() =>
-                handleCopy(refrective_index.toString(), "refrective_index")
-              }
-            >
-              {!isCopying.refrective_index ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-500" />
-              )}
-            </button>
+        {refrective_index && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Refractive Index
+            </p>
+            <div className="w-[70%] border border-[#cfbbbb] px-2 py-1 rounded-[4px] flex justify-between items-center select-none">
+              <p>{refrective_index}</p>
+              <button
+                onClick={() =>
+                  handleCopy(refrective_index.toString(), "refrective_index")
+                }
+              >
+                {!isCopying.refrective_index ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-500" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

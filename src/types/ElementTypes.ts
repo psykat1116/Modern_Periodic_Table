@@ -25,7 +25,7 @@ export interface AtomicProperties {
   oxidation_states?: number[];
   electron_shell_configuration: string;
   electron_configuration: string;
-  gas_atom_multiplicities: number;
+  gas_atom_multiplicities?: number;
   atomic_radius: number;
   covalent_radius: number;
   van_der_walls_radius: number;
@@ -45,7 +45,7 @@ export interface ThermodynamicProperties {
 export interface MaterialProperties {
   color: string;
   molar_volume: string;
-  refrective_index: number;
+  refrective_index?: number;
   sound_speed: number;
   thermal_conductivity: number;
   liquid_density?: number;
@@ -56,6 +56,7 @@ export interface MaterialProperties {
   brinell_hardness?: number;
   poisson_ratio?: number;
   mohs_hardness?: number;
+  shear_modulus?: number;
 }
 
 export interface NeuclearProperties {
@@ -95,6 +96,7 @@ export interface Reactivity {
 
 export default interface ElementDetailsProps {
   id: number;
+  neighbour: string[];
   description: string;
   general_properties: GeneralProperties;
   particles: Particles;

@@ -1,3 +1,4 @@
+import DOMPurify from "dompurify";
 import React, { useState } from "react";
 import { HiMiniSpeakerWave, HiOutlinePause, HiMiniPlay } from "react-icons/hi2";
 import { MdReplay, MdContentCopy, MdCheck } from "react-icons/md";
@@ -6,12 +7,15 @@ const Description = ({ description }: { description: string }) => {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [isCopying, setIsCopying] = useState(false);
+  const speech = new SpeechSynthesisUtterance(description);
   const handleSpeak = async () => {
-    const speech = new SpeechSynthesisUtterance(description);
     speech.voice = speechSynthesis.getVoices()[2];
     speechSynthesis.speak(speech);
     setIsSpeaking(true);
   };
+  speech.addEventListener("end", () => {
+    setIsSpeaking(false);
+  });
   const handleCopy = () => {
     setIsCopying(true);
     navigator.clipboard.writeText(description);
@@ -65,7 +69,9 @@ const Description = ({ description }: { description: string }) => {
           </div>
         )}
       </div>
-      {description}
+      <p
+        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(description) }}
+      ></p>
     </div>
   );
 };
