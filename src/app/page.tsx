@@ -7,7 +7,6 @@ import LowerTable from "@/components/LowerTable";
 import Navbar from "@/components/Navbar";
 import Lottie from "lottie-react";
 import LoadingAnim1 from "./loader1.json";
-import LoadingAnim2 from "./loader2.json";
 import Categories from "@/components/Categories";
 
 export default function Home() {
