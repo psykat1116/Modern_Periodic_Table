@@ -1,15 +1,16 @@
 import DOMPurify from "dompurify";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { HiMiniSpeakerWave, HiOutlinePause, HiMiniPlay } from "react-icons/hi2";
 import { MdReplay, MdContentCopy, MdCheck } from "react-icons/md";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Description = ({ description }: { description: string }) => {
+  const { theme } = useContext(ThemeContext) as ThemeContextType;
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [isCopying, setIsCopying] = useState(false);
   const speech = new SpeechSynthesisUtterance(description);
   const handleSpeak = async () => {
-    speech.voice = speechSynthesis.getVoices()[2];
     speechSynthesis.speak(speech);
     setIsSpeaking(true);
   };
@@ -24,7 +25,13 @@ const Description = ({ description }: { description: string }) => {
     }, 500);
   };
   return (
-    <div className="bg-[#1b1a1a] shadow-md rounded-sm w-full p-4 text-[#cfbbbb] flex flex-col justify-start items-center">
+    <div
+      className={`${
+        theme === "dark"
+          ? "text-text_primary bg-bg_dark"
+          : "text-text_secondary bg-bg_light"
+      } shadow-md rounded-sm w-full p-4 text-text_primary flex flex-col justify-start items-center`}
+    >
       <div className="flex justify-between items-center mb-2 w-full">
         <h1 className="text-xl">Description</h1>
         {!isSpeaking ? (
@@ -39,7 +46,7 @@ const Description = ({ description }: { description: string }) => {
                 className="ml-3 cursor-pointer"
               />
             ) : (
-              <MdCheck className="ml-3 cursor-pointer text-green-500" />
+              <MdCheck className="ml-3 cursor-pointer text-green-700" />
             )}
           </div>
         ) : (

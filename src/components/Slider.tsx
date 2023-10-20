@@ -12,7 +12,11 @@ import Links from "@/constant/SliderData";
 const Slider = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="flex justify-between items-center w-[97%] text-white text-sm overflow-hidden mt-5">
+    <div
+      className={`flex justify-between items-center w-[97%] ${
+        theme === "dark" ? "text-text_primary" : "text-text_secondary font-bold"
+      } text-sm overflow-hidden mt-5`}
+    >
       <Swiper
         slidesPerView={7}
         loop={true}
@@ -21,7 +25,11 @@ const Slider = () => {
           prevEl: ".button-prev-slide",
         }}
         modules={[Navigation]}
-        className="relative group text-center cursor-grabbing border-y border-y-white"
+        className={`relative group text-center cursor-grabbing ${
+          theme === "dark"
+            ? "border-y border-y-light_primary"
+            : "border-y-2 border-y-dark_primary"
+        } `}
       >
         {Links.map((link) => {
           return (
@@ -30,10 +38,18 @@ const Slider = () => {
             </SwiperSlide>
           );
         })}
-        <div className="h-full tranition-all duration-300 top-0 absolute z-[2] button-prev-slide left-0  bg-gradient-to-r from-[#0f0f0f] to-transparent w-[100px] cursor-auto flex justify-start items-center">
+        <div
+          className={`h-full tranition-all duration-300 top-0 absolute z-[2] button-prev-slide left-0  bg-gradient-to-r ${
+            theme === "dark" ? "from-dark_primary" : "from-light_primary"
+          } to-transparent w-[100px] cursor-auto flex justify-start items-center`}
+        >
           <BsArrowLeft className="text-2xl my-0.5" />
         </div>
-        <div className="h-full tranition-all duration-100 top-0 absolute z-[2] button-next-slide right-0 bg-gradient-to-l from-[#0f0f0f] to-transparent w-[100px] flex justify-end items-center cursor-auto">
+        <div
+          className={`h-full tranition-all duration-100 top-0 absolute z-[2] button-next-slide right-0 bg-gradient-to-l ${
+            theme === "dark" ? "from-dark_primary" : "from-light_primary"
+          } to-transparent w-[100px] flex justify-end items-center cursor-auto`}
+        >
           <BsArrowRight className="text-2xl my-0.5" />
         </div>
       </Swiper>

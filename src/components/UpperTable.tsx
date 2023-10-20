@@ -12,7 +12,7 @@ import RowSeven from "./RowSeven";
 
 const UpperTable = () => {
   return (
-    <div className="min-h-[50vh] flex justify-start items-center flex-col text-white mt-1 gap-1.5 w-full">
+    <div className="min-h-[50vh] flex justify-start items-center flex-col text-text_primary mt-1 gap-1.5 w-full">
       <div className="flex justify-between w-full">
         <div className="flex gap-1.5">
           <ColBox val1="G" val2="P" />

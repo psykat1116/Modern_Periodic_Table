@@ -4,7 +4,7 @@ import Actinides from "./Actinides";
 
 const LowerTable = () => {
   return (
-    <div className="mt-10 text-white flex flex-col items-end w-full gap-1.5">
+    <div className="mt-10 text-text_primary flex flex-col items-end w-full gap-1.5">
       <Lanthanide />
       <Actinides />
     </div>

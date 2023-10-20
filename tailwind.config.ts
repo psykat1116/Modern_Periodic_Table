@@ -20,7 +20,13 @@ const config: Config = {
         halogen: "#6b8e23",
         noblegases: "#9acd32",
         transactinides: "#913856",
-      }
+        dark_primary: "#0f0f0f",
+        light_primary: "#E5E4E2",
+        text_secondary: "#100c08",
+        text_primary: "#fcfcfc",
+        bg_dark: "#1b1a1a",
+        bg_light: "#d6cccc"
+      },
     },
   },
   plugins: [],
