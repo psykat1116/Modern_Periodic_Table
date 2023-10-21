@@ -8,6 +8,11 @@ interface ThemeProviderProps {
 
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = useState("dark");
+  if (typeof window !== "undefined") {
+    if (!window.localStorage.getItem("theme")) {
+      window.localStorage.setItem("theme", "dark");
+    }
+  }
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}

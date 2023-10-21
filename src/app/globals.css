@@ -15,6 +15,11 @@
   background-color: #eeeeee;
 } */
 
-html{
+html {
   scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: yellow;
+  color: #141414;
 }

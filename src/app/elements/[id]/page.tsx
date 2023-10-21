@@ -28,10 +28,12 @@ const Page = () => {
   useEffect(() => {
     setElem(getElementData(parseInt(id)));
   }, [id]);
-  if (elem) {
-    document.title = `Element ${elem?.general_properties.name} (${elem?.general_properties.symbol})`;
-  } else {
-    document.title = `Modern Periodic Table of Elements`;
+  if (typeof window !== "undefined") {
+    if (elem) {
+      window.document.title = `Element ${elem?.general_properties.name} (${elem?.general_properties.symbol})`;
+    } else {
+      window.document.title = `Modern Periodic Table of Elements`;
+    }
   }
 
   return (
@@ -85,8 +87,8 @@ const Page = () => {
             } text-4xl text-center`}
           >
             Oops! Element Details is Not Added Yet <br /> Contribute To This
-            Repo To Add Element Details <br /> Don&apos;t Forget To Star This
-            Repo
+            Repo To Add Element Details <br /> Don&apos;t Forget To <b>Star</b>{" "}
+            This Repo
           </h1>
         </div>
       ) : (

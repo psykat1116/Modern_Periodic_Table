@@ -25,17 +25,19 @@ const Navbar = () => {
       </Link>
       {theme === "dark" ? (
         <button
-          onClick={() =>
-            theme === "dark" ? setTheme("light") : setTheme("dark")
-          }
+          onClick={() => {
+            localStorage.setItem("theme", "light");
+            theme === "dark" ? setTheme("light") : setTheme("dark");
+          }}
         >
           <FiSun className="cursor-pointer" />
         </button>
       ) : (
         <button
-          onClick={() =>
-            theme === "dark" ? setTheme("light") : setTheme("dark")
-          }
+          onClick={() => {
+            localStorage.setItem("theme", "dark");
+            theme === "dark" ? setTheme("light") : setTheme("dark");
+          }}
         >
           <PiMoonStarsBold className="cursor-pointer" />
         </button>
