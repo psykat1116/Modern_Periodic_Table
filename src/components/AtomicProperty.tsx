@@ -199,32 +199,36 @@ const AtomicProperty = ({
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-            Van Der Walls Radius(Pm)
-          </p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-          >
-            <p>{van_der_walls_radius}</p>
-            <button
-              onClick={() =>
-                handleCopy(
-                  van_der_walls_radius.toString(),
-                  "van_der_walls_radius"
-                )
-              }
+        {van_der_walls_radius && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Van Der Walls Radius(Pm)
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
-              {!isCopying.van_der_walls_radius ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+              <p>{van_der_walls_radius}</p>
+              <button
+                onClick={() =>
+                  handleCopy(
+                    van_der_walls_radius.toString(),
+                    "van_der_walls_radius"
+                  )
+                }
+              >
+                {!isCopying.van_der_walls_radius ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
         <div className="flex flex-row justify-start items-center w-full mt-3">
           <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
             Crystall Structure

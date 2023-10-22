@@ -28,7 +28,7 @@ export interface AtomicProperties {
   gas_atom_multiplicities?: number;
   atomic_radius: number;
   covalent_radius: number;
-  van_der_walls_radius: number;
+  van_der_walls_radius?: number;
   crystall_structure: string;
 }
 
@@ -46,7 +46,7 @@ export interface MaterialProperties {
   color: string;
   molar_volume: string;
   refrective_index?: number;
-  sound_speed: number;
+  sound_speed?: number;
   thermal_conductivity: number;
   liquid_density?: number;
   density?: number;
@@ -106,6 +106,6 @@ export default interface ElementDetailsProps {
   material_properties: MaterialProperties;
   reactivity: Reactivity;
   neuclear_properties: NeuclearProperties;
-  electromagnetic_properties: ElectromagneticProperties;
-  prevalence: Prevalence;
+  electromagnetic_properties?: ElectromagneticProperties;
+  prevalence?: Prevalence;
 }

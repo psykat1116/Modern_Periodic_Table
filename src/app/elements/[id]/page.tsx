@@ -118,8 +118,10 @@ const Page = () => {
                 <MaterialProperty {...elem.material_properties} />
                 <Reactivity {...elem.reactivity} />
                 <NeuclearProperty {...elem.neuclear_properties} />
-                <EMProperty {...elem.electromagnetic_properties} />
-                <Prevalence {...elem.prevalence} />
+                {elem.electromagnetic_properties && (
+                  <EMProperty {...elem.electromagnetic_properties} />
+                )}
+                {elem.prevalence && <Prevalence {...elem.prevalence} />}
               </>
             )}
           </div>
