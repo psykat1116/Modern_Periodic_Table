@@ -9,17 +9,17 @@ const RowBox = ({ value }: { value: string }) => {
   return (
     <div
       className={`relative h-[55px] w-[55px] border-[2px] ${
-        !param
+        param !== null
           ? `${
-              theme === "dark"
-                ? "border-[#969696] text-text_primary"
-                : "border-[#141414] text-text_secondary"
-            }`
-          : `${
               theme === "light"
                 ? "text-white border-white"
                 : "border-black text-black"
             } pointer-events-none select-none`
+          : `${
+              theme === "dark"
+                ? "border-[#969696] text-text_primary"
+                : "border-[#141414] text-text_secondary"
+            }`
       } flex justify-center items-center`}
     >
       <p className="text-xl font-bold">{value}</p>

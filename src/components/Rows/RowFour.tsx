@@ -1,7 +1,7 @@
 import React from "react";
-import Box from "./Box";
-import RowBox from "./RowBox";
-import { RowFourElements } from "@/constant/RowFour";
+import Box from "../Boxes/Box";
+import RowBox from "../Boxes/RowBox";
+import { RowFourElements } from "@/constant/Elements/RowFour";
 
 const RowFour = () => {
   return (

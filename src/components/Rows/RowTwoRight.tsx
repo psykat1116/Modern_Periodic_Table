@@ -1,6 +1,6 @@
 import React from "react";
-import Box from "./Box";
-import { RowTwoRightElements } from "@/constant/RowTwo";
+import Box from "../Boxes/Box";
+import { RowTwoRightElements } from "@/constant/Elements/RowTwo";
 
 const RowTwoRight = () => {
   return (

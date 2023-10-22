@@ -1,14 +1,14 @@
 import React from "react";
-import ColBox from "./ColBox";
-import RowOneLeft from "./RowOneLeft";
-import RowOneRight from "./RowOneRight";
-import RowTwoLeft from "./RowTwoLeft";
-import RowTwoRight from "./RowTwoRight";
-import RowThree from "./RowThree";
-import RowFour from "./RowFour";
-import RowFive from "./RowFive";
-import RowSix from "./RowSix";
-import RowSeven from "./RowSeven";
+import ColBox from "./Boxes/ColBox";
+import RowOneLeft from "./Rows/RowOneLeft";
+import RowOneRight from "./Rows/RowOneRight";
+import RowTwoLeft from "./Rows/RowTwoLeft";
+import RowTwoRight from "./Rows/RowTwoRight";
+import RowThree from "./Rows/RowThree";
+import RowFour from "./Rows/RowFour";
+import RowFive from "./Rows/RowFive";
+import RowSix from "./Rows/RowSix";
+import RowSeven from "./Rows/RowSeven";
 
 const UpperTable = () => {
   return (

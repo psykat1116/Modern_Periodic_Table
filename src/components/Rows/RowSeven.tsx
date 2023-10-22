@@ -1,11 +1,11 @@
 import React from "react";
-import Box from "./Box";
-import RowBox from "./RowBox";
-import BlankBox from "./BlankBox";
+import Box from "../Boxes/Box";
+import RowBox from "../Boxes/RowBox";
+import BlankBox from "../Boxes/BlankBox";
 import {
   RowSevenLeftElements,
   RowSevenRightElements,
-} from "@/constant/RowSeven";
+} from "@/constant/Elements/RowSeven";
 
 const RowSeven = () => {
   return (

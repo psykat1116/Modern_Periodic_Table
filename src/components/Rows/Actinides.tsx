@@ -1,16 +1,16 @@
 import React from "react";
-import Box from "./Box";
-import { LanthanideElements } from "@/constant/Lanthanide";
+import Box from "../Boxes/Box";
+import { ActinideElements } from "@/constant/Elements/Actinides";
 
-const Lanthanide = () => {
+const Actinides = () => {
   return (
     <div className="flex gap-1.5">
-      {LanthanideElements.map((elements) => {
+      {ActinideElements.map((elements) => {
         return (
           <Box
-            id={elements.id}
             key={elements.id}
             category={elements.category}
+            id={elements.id}
             name={elements.name}
             groups={elements.groups}
           />
@@ -20,4 +20,4 @@ const Lanthanide = () => {
   );
 };
 
-export default Lanthanide;
+export default Actinides;

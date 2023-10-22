@@ -6,17 +6,17 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import ElementDetailsProps from "@/types/ElementTypes";
-import GeneralInfo from "@/components/GeneralInfo";
-import Description from "@/components/Description";
-import Particles from "@/components/Particles";
-import Overview from "@/components/Overview";
-import AtomicProperty from "@/components/AtomicProperty";
-import ThermoProperty from "@/components/ThermoProperty";
-import MaterialProperty from "@/components/MaterialProperty";
-import Reactivity from "@/components/Reactivity";
-import NeuclearProperty from "@/components/NeuclearProperty";
-import EMProperty from "@/components/EMProperty";
-import Prevalence from "@/components/Prevalence";
+import GeneralInfo from "@/components/Properties/GeneralInfo";
+import Description from "@/components/Properties/Description";
+import Particles from "@/components/Properties/Particles";
+import Overview from "@/components/Properties/Overview";
+import AtomicProperty from "@/components/Properties/AtomicProperty";
+import ThermoProperty from "@/components/Properties/ThermoProperty";
+import MaterialProperty from "@/components/Properties/MaterialProperty";
+import Reactivity from "@/components/Properties/Reactivity";
+import NeuclearProperty from "@/components/Properties/NeuclearProperty";
+import EMProperty from "@/components/Properties/EMProperty";
+import Prevalence from "@/components/Properties/Prevalence";
 import getElementData from "@/helper/getElementData";
 
 const Page = () => {
