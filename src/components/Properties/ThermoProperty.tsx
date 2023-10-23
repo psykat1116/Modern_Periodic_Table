@@ -12,6 +12,7 @@ const ThermoProperty = ({
   specific_heat,
   vaporization_heat,
   thermal_expansion,
+  neel_point,
 }: ThermodynamicProperties) => {
   const [isCopying, setIsCopying] = useState({
     boiling_point: false,
@@ -21,6 +22,7 @@ const ThermoProperty = ({
     specific_heat: false,
     vaporization_heat: false,
     thermal_expansion: false,
+    neel_point: false,
   });
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const handleCopy = (value: string, property: string) => {
@@ -182,6 +184,31 @@ const ThermoProperty = ({
                 }
               >
                 {!isCopying.thermal_expansion ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+        {neel_point && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Neel Point (K)
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p>{neel_point}</p>
+              <button
+                onClick={() => handleCopy(neel_point.toString(), "neel_point")}
+              >
+                {!isCopying.neel_point ? (
                   <MdContentCopy />
                 ) : (
                   <MdCheck className="text-green-700" />

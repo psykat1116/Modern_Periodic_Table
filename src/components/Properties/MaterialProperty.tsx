@@ -286,7 +286,7 @@ const MaterialProperty = ({
         {shear_modulus && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
             <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-              Vickers Hardness (MPa)
+              Shear Hardness (MPa)
             </p>
             <div
               className={`w-[70%] border ${

@@ -40,6 +40,7 @@ export interface ThermodynamicProperties {
   specific_heat: number;
   vaporization_heat: number;
   thermal_expansion?: string;
+  neel_point?: number;
 }
 
 export interface MaterialProperties {
@@ -73,18 +74,19 @@ export interface ElectromagneticProperties {
   resisitivity?: string;
   electrical_conductivity?: string;
   curie_point?: number;
-  volume_magnetic_suspectibility: string;
-  mass_magnetic_suspectibility: string;
-  molar_magnetic_suspectibility: string;
+  superconducting_point?: number;
+  volume_magnetic_suspectibility?: string;
+  mass_magnetic_suspectibility?: string;
+  molar_magnetic_suspectibility?: string;
 }
 
 export interface Prevalence {
-  universe: string;
-  sun: string;
-  ocean: string;
-  human: string;
-  earth_crust: string;
-  meteorites: string;
+  universe?: string;
+  sun?: string;
+  ocean?: string;
+  human?: string;
+  earth_crust?: string;
+  meteorites?: string;
 }
 
 export interface Reactivity {

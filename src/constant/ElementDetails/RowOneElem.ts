@@ -46,7 +46,7 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Colorless",
-      molar_volume: "<p>1.12*10<sup>-2</sup><p>",
+      molar_volume: "<p>1.12•10<sup>-2</sup><p>",
       refrective_index: 1.000132,
       sound_speed: 1270,
       thermal_conductivity: 0.1805,
@@ -65,9 +65,9 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       magnetic_type: "Diamagentic",
-      volume_magnetic_suspectibility: "<p>-2.23*10<sup>-9</sup></p>",
-      mass_magnetic_suspectibility: "<p>-2.48*10<sup>-9</sup></p>",
-      molar_magnetic_suspectibility: "<p>-4.99*10<sup>-9</sup></p>",
+      volume_magnetic_suspectibility: "<p>-2.23•10<sup>-9</sup></p>",
+      mass_magnetic_suspectibility: "<p>-2.48•10<sup>-9</sup></p>",
+      molar_magnetic_suspectibility: "<p>-4.99•10<sup>-9</sup></p>",
     },
     prevalence: {
       universe: "75.00%",
@@ -122,7 +122,7 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Colorless",
-      molar_volume: "<p>2.242*10<sup>-2</sup></p>",
+      molar_volume: "<p>2.242•10<sup>-2</sup></p>",
       refrective_index: 1.000035,
       sound_speed: 970,
       thermal_conductivity: 0.1513,
@@ -139,16 +139,16 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       magnetic_type: "Diamagentic",
-      volume_magnetic_suspectibility: "<p>-1.05*10<sup>-9</sup></p>",
-      mass_magnetic_suspectibility: "<p>-5.9*10<sup>-9</sup></p>",
-      molar_magnetic_suspectibility: "<p>-2.36*10<sup>-11</sup></p>",
+      volume_magnetic_suspectibility: "<p>-1.05•10<sup>-9</sup></p>",
+      mass_magnetic_suspectibility: "<p>-5.9•10<sup>-9</sup></p>",
+      molar_magnetic_suspectibility: "<p>-2.36•10<sup>-11</sup></p>",
     },
     prevalence: {
       universe: "23.00%",
       sun: "23.00%",
-      ocean: "<p>7.3*10<sup>-10</sup>%</p>",
+      ocean: "<p>7.3•10<sup>-10</sup>%</p>",
       human: "0%",
-      earth_crust: "<p>5.5*10<sup>-7</sup>%</p>",
+      earth_crust: "<p>5.5•10<sup>-7</sup>%</p>",
       meteorites: "0%",
     },
   },

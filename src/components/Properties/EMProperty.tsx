@@ -13,6 +13,7 @@ const EMProperty = ({
   mass_magnetic_suspectibility,
   molar_magnetic_suspectibility,
   volume_magnetic_suspectibility,
+  superconducting_point,
 }: ElectromagneticProperties) => {
   const [isCopying, setIsCopying] = useState({
     electrical_conductivity: false,
@@ -23,6 +24,7 @@ const EMProperty = ({
     mass_magnetic_suspectibility: false,
     molar_magnetic_suspectibility: false,
     volume_magnetic_suspectibility: false,
+    superconducting_point: false,
   });
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const handleCopy = (value: string, property: string) => {
@@ -152,6 +154,36 @@ const EMProperty = ({
             </div>
           </div>
         )}
+        {superconducting_point && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Superconducting Point (K)
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p>{superconducting_point}</p>
+              <button
+                onClick={() =>
+                  handleCopy(
+                    superconducting_point.toString(),
+                    "superconducting_point"
+                  )
+                }
+              >
+                {!isCopying.superconducting_point ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
         <div className="flex flex-row justify-start items-center w-full mt-3">
           <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Magnetic Type</p>
           <div
@@ -169,96 +201,108 @@ const EMProperty = ({
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-            Mass Magnetic Suspectibility (m<sup>3</sup>kg<sup>-1</sup>)
-          </p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center`}
-          >
-            <p
-              dangerouslySetInnerHTML={{
-                __html: DOMPurify.sanitize(mass_magnetic_suspectibility),
-              }}
-            ></p>
-            <button
-              onClick={() =>
-                handleCopy(
-                  mass_magnetic_suspectibility,
-                  "mass_magnetic_suspectibility"
-                )
-              }
+        {mass_magnetic_suspectibility && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+              Mass Magnetic Suspectibility (m<sup>3</sup>kg<sup>-1</sup>)
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
-              {!isCopying.mass_magnetic_suspectibility ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(mass_magnetic_suspectibility),
+                }}
+              ></p>
+              <button
+                onClick={() =>
+                  handleCopy(
+                    mass_magnetic_suspectibility,
+                    "mass_magnetic_suspectibility"
+                  )
+                }
+              >
+                {!isCopying.mass_magnetic_suspectibility ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-            Molar Magnetic Suspectibility (m<sup>3</sup>mol<sup>-1</sup>)
-          </p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center`}
-          >
-            <p
-              dangerouslySetInnerHTML={{
-                __html: DOMPurify.sanitize(molar_magnetic_suspectibility),
-              }}
-            ></p>
-            <button
-              onClick={() =>
-                handleCopy(
-                  molar_magnetic_suspectibility,
-                  "molar_magnetic_suspectibility"
-                )
-              }
+        )}
+        {molar_magnetic_suspectibility && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+              Molar Magnetic Suspectibility (m<sup>3</sup>mol<sup>-1</sup>)
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
-              {!isCopying.magnetic_type ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(molar_magnetic_suspectibility),
+                }}
+              ></p>
+              <button
+                onClick={() =>
+                  handleCopy(
+                    molar_magnetic_suspectibility,
+                    "molar_magnetic_suspectibility"
+                  )
+                }
+              >
+                {!isCopying.magnetic_type ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-            Volume Magnetic Suspectibility
-          </p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center`}
-          >
-            <p
-              dangerouslySetInnerHTML={{
-                __html: DOMPurify.sanitize(volume_magnetic_suspectibility),
-              }}
-            ></p>
-            <button
-              onClick={() =>
-                handleCopy(
-                  volume_magnetic_suspectibility,
-                  "volume_magnetic_suspectibility"
-                )
-              }
+        )}
+        {volume_magnetic_suspectibility && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+              Volume Magnetic Suspectibility
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
-              {!isCopying.volume_magnetic_suspectibility ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(volume_magnetic_suspectibility),
+                }}
+              ></p>
+              <button
+                onClick={() =>
+                  handleCopy(
+                    volume_magnetic_suspectibility,
+                    "volume_magnetic_suspectibility"
+                  )
+                }
+              >
+                {!isCopying.volume_magnetic_suspectibility ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
