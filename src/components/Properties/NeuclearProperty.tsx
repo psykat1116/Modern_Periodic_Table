@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { NeuclearProperties } from "@/types/ElementTypes";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import DOMPurify from "dompurify";
 
 const NeuclearProperty = ({
   radioactive,
@@ -61,7 +62,11 @@ const NeuclearProperty = ({
               theme === "dark" ? "border-text_primary" : "border-text_secondary"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
-            <p>{half_life}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(half_life),
+              }}
+            ></p>
             <button
               onClick={() => handleCopy(half_life.toString(), "half_life")}
             >
@@ -80,7 +85,9 @@ const NeuclearProperty = ({
               theme === "dark" ? "border-text_primary" : "border-text_secondary"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
-            <p>{lifetime}</p>
+            <p
+              dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(lifetime) }}
+            ></p>
             <button onClick={() => handleCopy(lifetime.toString(), "lifetime")}>
               {!isCopying.lifetime ? (
                 <MdContentCopy />

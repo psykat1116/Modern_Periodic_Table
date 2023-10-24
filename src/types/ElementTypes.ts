@@ -1,9 +1,9 @@
 export interface GeneralProperties {
   name?: string;
   atomic_number: number;
-  group: number;
+  group?: number;
   period: number;
-  block: "s" | "p" | "d" | "f";
+  block: "S" | "P" | "D" | "F";
   cas_number: string;
   symbol: string;
 }
@@ -26,8 +26,8 @@ export interface AtomicProperties {
   electron_shell_configuration: string;
   electron_configuration: string;
   gas_atom_multiplicities?: number;
-  atomic_radius: number;
-  covalent_radius: number;
+  atomic_radius?: number;
+  covalent_radius?: number;
   van_der_walls_radius?: number;
   crystall_structure: string;
 }
@@ -37,7 +37,7 @@ export interface ThermodynamicProperties {
   melting_point: string;
   phase: string;
   fusion_heat: number;
-  specific_heat: number;
+  specific_heat?: number;
   vaporization_heat: number;
   thermal_expansion?: string;
   neel_point?: number;
@@ -65,12 +65,12 @@ export interface NeuclearProperties {
   half_life: string | "∞";
   lifetime: string;
   neutron_cross_section: number;
-  decay_mode?: "alpha" | "beta" | "gamma" | "positron";
+  decay_mode?: "Alpha" | "Beta" | "Gamma" | "Positron";
 }
 
 export interface ElectromagneticProperties {
   electrical_type?: string;
-  magnetic_type: string;
+  magnetic_type?: string;
   resisitivity?: string;
   electrical_conductivity?: string;
   curie_point?: number;

@@ -36,7 +36,7 @@ export const RowFiveElements: BoxTypes[] = [
     name: "Tc",
     id: "43",
     category: "transition",
-    groups: ["dblock", "transition"],
+    groups: ["dblock", "transition", "radioactive"],
   },
   {
     name: "Ru",
