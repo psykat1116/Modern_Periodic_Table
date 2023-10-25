@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ThemeContext from "./ThemeContex";
 
 interface ThemeProviderProps {
@@ -7,12 +7,13 @@ interface ThemeProviderProps {
 }
 
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState("");
-  if (typeof window !== "undefined") {
-    if (!window.localStorage.getItem("theme")) {
-      window.localStorage.setItem("theme", "dark");
+  const [theme, setTheme] = useState("dark");
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      let themeColor = localStorage.getItem("theme");
+      setTheme(themeColor || "dark");
     }
-  }
+  }, []);
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}
