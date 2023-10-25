@@ -54,23 +54,27 @@ const MaterialProperty = ({
     >
       <h1 className="text-xl">Material Property</h1>
       <div className="flex flex-col w-full justify-start items-start">
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Color</p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-          >
-            <p>{color}</p>
-            <button onClick={() => handleCopy(color, "color")}>
-              {!isCopying.color ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+        {color && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Color</p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p>{color}</p>
+              <button onClick={() => handleCopy(color, "color")}>
+                {!isCopying.color ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
         <div className="flex flex-row justify-start items-center w-full mt-3">
           <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
             Molar Volume (m<sup>3</sup>mol<sup>-1</sup>)
@@ -310,32 +314,36 @@ const MaterialProperty = ({
             </div>
           </div>
         )}
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-            Thermal Conductivity (Wm<sup>-1</sup>K<sup>-1</sup>)
-          </p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-          >
-            <p>{thermal_conductivity}</p>
-            <button
-              onClick={() =>
-                handleCopy(
-                  thermal_conductivity.toString(),
-                  "thermal_conductivity"
-                )
-              }
+        {thermal_conductivity && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+              Thermal Conductivity (Wm<sup>-1</sup>K<sup>-1</sup>)
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
-              {!isCopying.thermal_conductivity ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+              <p>{thermal_conductivity}</p>
+              <button
+                onClick={() =>
+                  handleCopy(
+                    thermal_conductivity.toString(),
+                    "thermal_conductivity"
+                  )
+                }
+              >
+                {!isCopying.thermal_conductivity ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
         {sound_speed && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
             <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">

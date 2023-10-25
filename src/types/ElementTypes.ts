@@ -29,26 +29,26 @@ export interface AtomicProperties {
   atomic_radius?: number;
   covalent_radius?: number;
   van_der_walls_radius?: number;
-  crystall_structure: string;
+  crystall_structure?: string;
 }
 
 export interface ThermodynamicProperties {
-  boiling_point: string;
+  boiling_point?: string;
   melting_point: string;
-  phase: string;
-  fusion_heat: number;
+  phase?: string;
+  fusion_heat?: number;
   specific_heat?: number;
-  vaporization_heat: number;
+  vaporization_heat?: number;
   thermal_expansion?: string;
   neel_point?: number;
 }
 
 export interface MaterialProperties {
-  color: string;
+  color?: string;
   molar_volume: string;
   refrective_index?: number;
   sound_speed?: number;
-  thermal_conductivity: number;
+  thermal_conductivity?: number;
   liquid_density?: number;
   density?: number;
   young_modulus?: number;
@@ -64,7 +64,7 @@ export interface NeuclearProperties {
   radioactive: "Yes" | "No";
   half_life: string | "∞";
   lifetime: string;
-  neutron_cross_section: number;
+  neutron_cross_section?: number;
   decay_mode?: "Alpha" | "Beta" | "Gamma" | "Positron";
 }
 
@@ -93,7 +93,7 @@ export interface Reactivity {
   electronegativity?: number;
   valence: number;
   electron_affinity?: number;
-  ionization_energy: number;
+  ionization_energy?: number;
 }
 
 export default interface ElementDetailsProps {
@@ -105,7 +105,7 @@ export default interface ElementDetailsProps {
   overview: Overview;
   atomic_properties: AtomicProperties;
   thermodynamic_properties: ThermodynamicProperties;
-  material_properties: MaterialProperties;
+  material_properties?: MaterialProperties;
   reactivity: Reactivity;
   neuclear_properties: NeuclearProperties;
   electromagnetic_properties?: ElectromagneticProperties;

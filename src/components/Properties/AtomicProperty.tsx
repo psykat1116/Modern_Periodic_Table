@@ -237,29 +237,36 @@ const AtomicProperty = ({
             </div>
           </div>
         )}
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-            Crystall Structure
-          </p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-          >
-            <p>{crystall_structure}</p>
-            <button
-              onClick={() =>
-                handleCopy(crystall_structure.toString(), "crystall_structure")
-              }
+        {crystall_structure && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Crystall Structure
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
-              {!isCopying.crystall_structure ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+              <p>{crystall_structure}</p>
+              <button
+                onClick={() =>
+                  handleCopy(
+                    crystall_structure.toString(),
+                    "crystall_structure"
+                  )
+                }
+              >
+                {!isCopying.crystall_structure ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
         {oxidation_states && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
             <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">

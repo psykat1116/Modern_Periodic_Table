@@ -87,29 +87,33 @@ const Reactivity = ({
             </div>
           </div>
         )}
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-            Ionization Energy (kJmol<sup>-1</sup>)
-          </p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-          >
-            <p>{ionization_energy}</p>
-            <button
-              onClick={() =>
-                handleCopy(ionization_energy.toString(), "ionization_energy")
-              }
+        {ionization_energy && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+              Ionization Energy (kJmol<sup>-1</sup>)
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
-              {!isCopying.ionization_energy ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+              <p>{ionization_energy}</p>
+              <button
+                onClick={() =>
+                  handleCopy(ionization_energy.toString(), "ionization_energy")
+                }
+              >
+                {!isCopying.ionization_energy ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
         <div className="flex flex-row justify-start items-center w-full mt-3">
           <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Valence</p>
           <div

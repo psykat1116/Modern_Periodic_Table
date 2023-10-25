@@ -43,23 +43,31 @@ const ThermoProperty = ({
     >
       <h1 className="text-xl">Thermodynamic Properties</h1>
       <div className="flex flex-col w-full justify-start items-start">
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Boiling Point</p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-          >
-            <p>{boiling_point}</p>
-            <button onClick={() => handleCopy(boiling_point, "boiling_point")}>
-              {!isCopying.boiling_point ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+        {boiling_point && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Boiling Point
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p>{boiling_point}</p>
+              <button
+                onClick={() => handleCopy(boiling_point, "boiling_point")}
+              >
+                {!isCopying.boiling_point ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
         <div className="flex flex-row justify-start items-center w-full mt-3">
           <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Melting Point</p>
           <div
@@ -77,44 +85,54 @@ const ThermoProperty = ({
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Phase</p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-          >
-            <p>{phase}</p>
-            <button onClick={() => handleCopy(phase, "phase")}>
-              {!isCopying.phase ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
-          </div>
-        </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-            Fusion Heat (kJmol<sup>-1</sup>)
-          </p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-          >
-            <p>{fusion_heat}</p>
-            <button
-              onClick={() => handleCopy(fusion_heat.toString(), "fusion_heat")}
+        {phase && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Phase</p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
-              {!isCopying.fusion_heat ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+              <p>{phase}</p>
+              <button onClick={() => handleCopy(phase, "phase")}>
+                {!isCopying.phase ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
+        {fusion_heat && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Fusion Heat (kJmol<sup>-1</sup>)
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p>{fusion_heat}</p>
+              <button
+                onClick={() =>
+                  handleCopy(fusion_heat.toString(), "fusion_heat")
+                }
+              >
+                {!isCopying.fusion_heat ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
         {specific_heat && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
             <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
@@ -142,29 +160,33 @@ const ThermoProperty = ({
             </div>
           </div>
         )}
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-            Vaporization Heat (KJmol<sup>-1</sup>)
-          </p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-          >
-            <p>{vaporization_heat}</p>
-            <button
-              onClick={() =>
-                handleCopy(vaporization_heat.toString(), "vaporization_heat")
-              }
+        {vaporization_heat && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Vaporization Heat (KJmol<sup>-1</sup>)
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
-              {!isCopying.vaporization_heat ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+              <p>{vaporization_heat}</p>
+              <button
+                onClick={() =>
+                  handleCopy(vaporization_heat.toString(), "vaporization_heat")
+                }
+              >
+                {!isCopying.vaporization_heat ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
         {thermal_expansion && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
             <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">

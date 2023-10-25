@@ -97,32 +97,36 @@ const NeuclearProperty = ({
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-            Neutron Cross Section
-          </p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-          >
-            <p>{neutron_cross_section}</p>
-            <button
-              onClick={() =>
-                handleCopy(
-                  neutron_cross_section.toString(),
-                  "neutron_cross_section"
-                )
-              }
+        {neutron_cross_section && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Neutron Cross Section
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
-              {!isCopying.neutron_cross_section ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+              <p>{neutron_cross_section}</p>
+              <button
+                onClick={() =>
+                  handleCopy(
+                    neutron_cross_section.toString(),
+                    "neutron_cross_section"
+                  )
+                }
+              >
+                {!isCopying.neutron_cross_section ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
         {decay_mode && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
             <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Decay Mode</p>
