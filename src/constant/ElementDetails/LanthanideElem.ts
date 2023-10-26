@@ -29,7 +29,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [3],
       electron_shell_configuration: "K2 L8 M18 N18 O9 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 5d<sup>1</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 5d<sup>1</sup>",
       covalent_radius: 207,
       crystall_structure: "Hexagonal",
     },
@@ -44,7 +44,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>2.26•10<sup>-2</sup><p>",
+      molar_volume: "2.26•10<sup>-2</sup>",
       density: 6146,
       liquid_density: 5940,
       thermal_conductivity: 13,
@@ -116,7 +116,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [3, 4],
       electron_shell_configuration: "K2 L8 M18 N19 O9 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>1</sup> 5d<sup>1</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>1</sup> 5d<sup>1</sup>",
       covalent_radius: 204,
       crystall_structure: "Cubic(Face-Centered)",
     },
@@ -132,7 +132,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>2.095•10<sup>-5</sup><p>",
+      molar_volume: "2.095•10<sup>-5</sup>",
       density: 6689,
       liquid_density: 6550,
       thermal_conductivity: 11,
@@ -203,7 +203,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [3],
       electron_shell_configuration: "K2 L8 M18 N21 O8 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>3</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>3</sup>",
       atomic_radius: 247,
       covalent_radius: 203,
       crystall_structure: "Hexagonal",
@@ -219,7 +219,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>2.122•10<sup>-5</sup><p>",
+      molar_volume: "2.122•10<sup>-5</sup>",
       density: 6640,
       liquid_density: 6500,
       thermal_conductivity: 13,
@@ -289,7 +289,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [3],
       electron_shell_configuration: "K2 L8 M18 N22 O8 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>4</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>4</sup>",
       atomic_radius: 206,
       covalent_radius: 201,
       crystall_structure: "Hexagonal",
@@ -305,7 +305,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>2.085•10<sup>-5</sup><p>",
+      molar_volume: "2.085•10<sup>-5</sup>",
       density: 7010,
       liquid_density: 6890,
       thermal_conductivity: 17,
@@ -375,7 +375,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [3],
       electron_shell_configuration: "K2 L8 M18 N23 O8 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>5</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>5</sup>",
       atomic_radius: 205,
       covalent_radius: 199,
       crystall_structure: "Hexagonal",
@@ -390,7 +390,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>2•10<sup>-5</sup><p>",
+      molar_volume: "2•10<sup>-5</sup>",
       density: 7264,
       thermal_conductivity: 15,
       shear_modulus: 18,
@@ -444,7 +444,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [2, 3],
       electron_shell_configuration: "K2 L8 M18 N24 O8 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>6</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>6</sup>",
       atomic_radius: 238,
       covalent_radius: 198,
       crystall_structure: "Rhombohedral",
@@ -461,7 +461,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>2.045•10<sup>-5</sup><p>",
+      molar_volume: "2.045•10<sup>-5</sup>",
       density: 7353,
       liquid_density: 7160,
       thermal_conductivity: 13,
@@ -531,7 +531,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [2, 3],
       electron_shell_configuration: "K2 L8 M18 N25 O8 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>7</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>7</sup>",
       atomic_radius: 231,
       covalent_radius: 198,
       crystall_structure: "Cubic(Body-Centered)",
@@ -548,7 +548,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>2.898•10<sup>-5</sup><p>",
+      molar_volume: "2.898•10<sup>-5</sup>",
       density: 5244,
       liquid_density: 5130,
       thermal_conductivity: 14,
@@ -616,7 +616,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [2, 3],
       electron_shell_configuration: "K2 L8 M18 N25 O9 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>7</sup> 5d<sup>1</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>7</sup> 5d<sup>1</sup>",
       atomic_radius: 233,
       covalent_radius: 196,
       crystall_structure: "Hexagonal",
@@ -632,7 +632,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>1.99•10<sup>-5</sup><p>",
+      molar_volume: "1.99•10<sup>-5</sup>",
       density: 7901,
       liquid_density: 7400,
       thermal_conductivity: 11,
@@ -699,7 +699,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [3, 4],
       electron_shell_configuration: "K2 L8 M18 N27 O8 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>9</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>9</sup>",
       atomic_radius: 225,
       covalent_radius: 194,
       crystall_structure: "Hexagonal",
@@ -716,7 +716,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>1.934•10<sup>-5</sup><p>",
+      molar_volume: "1.934•10<sup>-5</sup>",
       density: 8219,
       liquid_density: 7650,
       thermal_conductivity: 11,
@@ -786,7 +786,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [3],
       electron_shell_configuration: "K2 L8 M18 N28 O8 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>10</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>10</sup>",
       atomic_radius: 228,
       covalent_radius: 192,
       crystall_structure: "Hexagonal",
@@ -802,7 +802,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>1.9•10<sup>-5</sup><p>",
+      molar_volume: "1.9•10<sup>-5</sup>",
       density: 8551,
       liquid_density: 8370,
       thermal_conductivity: 11,
@@ -873,7 +873,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [3],
       electron_shell_configuration: "K2 L8 M18 N29 O8 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>11</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>11</sup>",
       atomic_radius: 226,
       covalent_radius: 192,
       crystall_structure: "Hexagonal",
@@ -890,7 +890,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>1.875•10<sup>-5</sup><p>",
+      molar_volume: "1.875•10<sup>-5</sup>",
       density: 8795,
       liquid_density: 8340,
       thermal_conductivity: 16,
@@ -960,7 +960,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [3],
       electron_shell_configuration: "K2 L8 M18 N30 O8 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>12</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>12</sup>",
       atomic_radius: 226,
       covalent_radius: 189,
       crystall_structure: "Hexagonal",
@@ -977,7 +977,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>1.845•10<sup>-5</sup><p>",
+      molar_volume: "1.845•10<sup>-5</sup>",
       density: 9066,
       liquid_density: 8860,
       thermal_conductivity: 15,
@@ -1048,7 +1048,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [2, 3],
       electron_shell_configuration: "K2 L8 M18 N31 O8 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>13</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>13</sup>",
       atomic_radius: 222,
       covalent_radius: 190,
       crystall_structure: "Hexagonal",
@@ -1065,7 +1065,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>1.812•10<sup>-5</sup><p>",
+      molar_volume: "1.812•10<sup>-5</sup>",
       density: 9321,
       liquid_density: 8560,
       thermal_conductivity: 17,
@@ -1135,7 +1135,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [2, 3],
       electron_shell_configuration: "K2 L8 M18 N32 O8 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup>",
       atomic_radius: 222,
       covalent_radius: 187,
       crystall_structure: "Cubic(Face-Centered)",
@@ -1151,7 +1151,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>2.634•10<sup>-5</sup><p>",
+      molar_volume: "2.634•10<sup>-5</sup>",
       density: 6570,
       liquid_density: 6210,
       thermal_conductivity: 39,
@@ -1219,7 +1219,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       oxidation_states: [3],
       electron_shell_configuration: "K2 L8 M18 N32 O9 P2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>1</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>1</sup>",
       atomic_radius: 217,
       covalent_radius: 187,
       crystall_structure: "Hexagonal",
@@ -1235,7 +1235,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>1.778•10<sup>-5</sup><p>",
+      molar_volume: "1.778•10<sup>-5</sup>",
       density: 9841,
       liquid_density: 9300,
       thermal_conductivity: 16,

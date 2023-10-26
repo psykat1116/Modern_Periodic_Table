@@ -29,7 +29,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       atomic_weight: 6.94,
       oxidation_states: [1],
       electron_shell_configuration: "K2 L1",
-      electron_configuration: "<p>1s<sup>2</sup> 2s<sup>1</sup></p>",
+      electron_configuration: "1s<sup>2</sup> 2s<sup>1</sup>",
       atomic_radius: 167,
       covalent_radius: 128,
       van_der_walls_radius: 182,
@@ -46,7 +46,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silvery-white",
-      molar_volume: "<p>1.46•10<sup>-2</sup><p>",
+      molar_volume: "1.46•10<sup>-2</sup>",
       liquid_density: 512,
       density: 535,
       young_modulus: 4.9,
@@ -73,9 +73,9 @@ export const RowTwoElem: ElementDetailsProps[] = [
       magnetic_type: "Paramagentic",
       resisitivity: "9.4•10<sup>-8</sup>",
       electrical_conductivity: "1.1•10<sup>7</sup>",
-      volume_magnetic_suspectibility: "<p>1.37•10<sup>-5</sup></p>",
-      mass_magnetic_suspectibility: "<p>2.56•10<sup>-8</sup></p>",
-      molar_magnetic_suspectibility: "<p>1.78•10<sup>-10</sup></p>",
+      volume_magnetic_suspectibility: "1.37•10<sup>-5</sup>",
+      mass_magnetic_suspectibility: "2.56•10<sup>-8</sup>",
+      molar_magnetic_suspectibility: "1.78•10<sup>-10</sup>",
     },
     prevalence: {
       universe: "6•10<sup>-7</sup>%",
@@ -115,7 +115,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       atomic_weight: 9.0121831,
       oxidation_states: [2],
       electron_shell_configuration: "K2 L2",
-      electron_configuration: "<p>1s<sup>2</sup> 2s<sup>2</sup></p>",
+      electron_configuration: "1s<sup>2</sup> 2s<sup>2</sup>",
       atomic_radius: 112,
       covalent_radius: 96,
       crystall_structure: "Hexagonal",
@@ -131,7 +131,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Slate Gray",
-      molar_volume: "<p>4.877•10<sup>-6</sup><p>",
+      molar_volume: "4.877•10<sup>-6</sup>",
       liquid_density: 1690,
       density: 1848,
       young_modulus: 287,
@@ -161,9 +161,9 @@ export const RowTwoElem: ElementDetailsProps[] = [
       resisitivity: "4•10<sup>-8</sup>",
       superconducting_point: 0.026,
       electrical_conductivity: "2.5•10<sup>7</sup>",
-      volume_magnetic_suspectibility: "<p>-2.328•10<sup>-5</sup></p>",
-      mass_magnetic_suspectibility: "<p>-1.26•10<sup>-8</sup></p>",
-      molar_magnetic_suspectibility: "<p>-1.136•10<sup>-10</sup></p>",
+      volume_magnetic_suspectibility: "-2.328•10<sup>-5</sup>",
+      mass_magnetic_suspectibility: "-1.26•10<sup>-8</sup>",
+      molar_magnetic_suspectibility: "-1.136•10<sup>-10</sup>",
     },
     prevalence: {
       universe: "10<sup>-7</sup>%",
@@ -204,7 +204,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       oxidation_states: [3],
       electron_shell_configuration: "K2 L3",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>2</sup></p> 2p<sup>1</sup>",
+        "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>1</sup>",
       atomic_radius: 87,
       covalent_radius: 84,
       crystall_structure: "Rhombohedral",
@@ -220,7 +220,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Black",
-      molar_volume: "<p>4.394•10<sup>-6</sup><p>",
+      molar_volume: "4.394•10<sup>-6</sup>",
       liquid_density: 2080,
       density: 2460,
       bulk_modulus: 320,
@@ -246,9 +246,9 @@ export const RowTwoElem: ElementDetailsProps[] = [
       magnetic_type: "Diamagentic",
       resisitivity: "10<sup>4</sup>",
       electrical_conductivity: "10<sup>-4</sup>",
-      volume_magnetic_suspectibility: "<p>-2.14•10<sup>-5</sup></p>",
-      mass_magnetic_suspectibility: "<p>-8.7•10<sup>-9</sup></p>",
-      molar_magnetic_suspectibility: "<p>-9.41•10<sup>-11</sup></p>",
+      volume_magnetic_suspectibility: "-2.14•10<sup>-5</sup>",
+      mass_magnetic_suspectibility: "-8.7•10<sup>-9</sup>",
+      molar_magnetic_suspectibility: "-9.41•10<sup>-11</sup>",
     },
     prevalence: {
       universe: "10<sup>-7</sup>%",
@@ -288,7 +288,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       oxidation_states: [-4, 2, 4],
       electron_shell_configuration: "K2 L4",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup></p>",
+        "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup>",
       atomic_radius: 67,
       covalent_radius: 76,
       van_der_walls_radius: 170,
@@ -305,7 +305,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Black",
-      molar_volume: "<p>5.315•10<sup>-6</sup><p>",
+      molar_volume: "5.315•10<sup>-6</sup>",
       density: 2260,
       bulk_modulus: 33,
       mohs_hardness: 0.5,
@@ -330,9 +330,9 @@ export const RowTwoElem: ElementDetailsProps[] = [
       magnetic_type: "Diamagentic",
       resisitivity: "10<sup>-5</sup>",
       electrical_conductivity: "10<sup>5</sup>",
-      volume_magnetic_suspectibility: "<p>-1.4•10<sup>-5</sup></p>",
-      mass_magnetic_suspectibility: "<p>-6.2•10<sup>-9</sup></p>",
-      molar_magnetic_suspectibility: "<p>-7.45•10<sup>-11</sup></p>",
+      volume_magnetic_suspectibility: "-1.4•10<sup>-5</sup>",
+      mass_magnetic_suspectibility: "-6.2•10<sup>-9</sup>",
+      molar_magnetic_suspectibility: "-7.45•10<sup>-11</sup>",
     },
     prevalence: {
       universe: "0.50%",
@@ -372,7 +372,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       oxidation_states: [-3, -2, -1, 1, 2, 3, 4, 5],
       electron_shell_configuration: "K2 L5",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>3</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>3</sup>",
       atomic_radius: 56,
       covalent_radius: 71,
       van_der_walls_radius: 155,
@@ -388,7 +388,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Colorless",
-      molar_volume: "<p>1.12•10<sup>-2</sup><p>",
+      molar_volume: "1.12•10<sup>-2</sup>",
       density: 1.251,
       thermal_conductivity: 0.02583,
       sound_speed: 333.6,
@@ -408,9 +408,9 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       magnetic_type: "Diamagentic",
-      volume_magnetic_suspectibility: "<p>-6.8•10<sup>-9</sup></p>",
-      mass_magnetic_suspectibility: "<p>-5.4•10<sup>-9</sup></p>",
-      molar_magnetic_suspectibility: "<p>-1.5•10<sup>-10</sup></p>",
+      volume_magnetic_suspectibility: "-6.8•10<sup>-9</sup>",
+      mass_magnetic_suspectibility: "-5.4•10<sup>-9</sup>",
+      molar_magnetic_suspectibility: "-1.5•10<sup>-10</sup>",
     },
     prevalence: {
       universe: "0.10%",
@@ -450,7 +450,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       oxidation_states: [-2, -1, 1, 2],
       electron_shell_configuration: "K2 L6",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>4</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>4</sup>",
       atomic_radius: 48,
       covalent_radius: 66,
       van_der_walls_radius: 152,
@@ -467,7 +467,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Colorless",
-      molar_volume: "<p>1.12•10<sup>-2</sup><p>",
+      molar_volume: "1.12•10<sup>-2</sup>",
       density: 1.429,
       thermal_conductivity: 0.02658,
       sound_speed: 317.5,
@@ -487,9 +487,9 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       magnetic_type: "Paramagnetic",
-      volume_magnetic_suspectibility: "<p>1.90772•10<sup>-9</sup></p>",
-      mass_magnetic_suspectibility: "<p>1.335•10<sup>-9</sup></p>",
-      molar_magnetic_suspectibility: "<p>4.27184•10<sup>-10</sup></p>",
+      volume_magnetic_suspectibility: "1.90772•10<sup>-9</sup>",
+      mass_magnetic_suspectibility: "1.335•10<sup>-9</sup>",
+      molar_magnetic_suspectibility: "4.27184•10<sup>-10</sup>",
     },
     prevalence: {
       universe: "1.00%",
@@ -529,7 +529,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       oxidation_states: [-1],
       electron_shell_configuration: "K2 L7",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>5</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>5</sup>",
       atomic_radius: 42,
       covalent_radius: 57,
       van_der_walls_radius: 147,
@@ -546,7 +546,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Colorless",
-      molar_volume: "<p>1.12•10<sup>-2</sup><p>",
+      molar_volume: "1.12•10<sup>-2</sup>",
       density: 1.696,
       thermal_conductivity: 0.0277,
       refrective_index: 1.000195,
@@ -600,7 +600,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       atomic_weight: 20.1797,
       electron_shell_configuration: "K2 L8",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup>",
       gas_atom_multiplicities: 1,
       atomic_radius: 38,
       covalent_radius: 58,
@@ -617,7 +617,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Colorless",
-      molar_volume: "<p>2.24•10<sup>-2</sup><p>",
+      molar_volume: "2.24•10<sup>-2</sup>",
       density: 0.9,
       thermal_conductivity: 0.0491,
       refrective_index: 1.000067,

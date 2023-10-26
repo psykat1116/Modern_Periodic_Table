@@ -30,7 +30,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       oxidation_states: [1],
       electron_shell_configuration: "K2 L8 M1",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>1</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>1</sup>",
       atomic_radius: 190,
       covalent_radius: 166,
       van_der_walls_radius: 227,
@@ -47,7 +47,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>2.37•10<sup>-5</sup><p>",
+      molar_volume: "2.37•10<sup>-5</sup>",
       density: 968,
       thermal_conductivity: 140,
       sound_speed: 3200,
@@ -116,7 +116,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       oxidation_states: [2],
       electron_shell_configuration: "K2 L8 M2",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup>",
       atomic_radius: 145,
       covalent_radius: 141,
       van_der_walls_radius: 173,
@@ -133,7 +133,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>1.398•10<sup>-5</sup><p>",
+      molar_volume: "1.398•10<sup>-5</sup>",
       density: 1738,
       thermal_conductivity: 160,
       sound_speed: 4602,
@@ -203,7 +203,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       oxidation_states: [3],
       electron_shell_configuration: "K2 L8 M3",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>1</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>1</sup>",
       atomic_radius: 118,
       covalent_radius: 121,
       crystall_structure: "Cubic (Face-Centered)",
@@ -219,7 +219,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Silver",
-      molar_volume: "<p>10<sup>-5</sup><p>",
+      molar_volume: "10<sup>-5</sup>",
       density: 2700,
       thermal_conductivity: 235,
       sound_speed: 5100,
@@ -292,7 +292,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       oxidation_states: [-4, 2, 4],
       electron_shell_configuration: "K2 L8 M4",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>2</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>2</sup>",
       atomic_radius: 111,
       covalent_radius: 111,
       van_der_walls_radius: 210,
@@ -309,7 +309,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Gray",
-      molar_volume: "1.205•<p>10<sup>-5</sup><p>",
+      molar_volume: "1.205•10<sup>-5</sup>",
       density: 2330,
       thermal_conductivity: 150,
       sound_speed: 2200,
@@ -378,7 +378,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       oxidation_states: [-3, 3, 4, 5],
       electron_shell_configuration: "K2 L8 M5",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>3</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>3</sup>",
       atomic_radius: 98,
       covalent_radius: 107,
       van_der_walls_radius: 180,
@@ -394,7 +394,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Colorless",
-      molar_volume: "<p>10<sup>-5</sup><p>",
+      molar_volume: "10<sup>-5</sup>",
       density: 1823,
       thermal_conductivity: 0.236,
       bulk_modulus: 11,
@@ -459,7 +459,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       oxidation_states: [-2, 2, 4, 6],
       electron_shell_configuration: "K2 L8 M6",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>4</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>4</sup>",
       atomic_radius: 88,
       covalent_radius: 105,
       van_der_walls_radius: 180,
@@ -475,7 +475,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Yellow / Red",
-      molar_volume: "1.636•<p>10<sup>-5</sup><p>",
+      molar_volume: "1.636•10<sup>-5</sup>",
       density: 1960,
       thermal_conductivity: 0.205,
       mohs_hardness: 2,
@@ -542,7 +542,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       oxidation_states: [-1, 1, 3, 5, 7],
       electron_shell_configuration: "K2 L8 M7",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>5</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>5</sup>",
       gas_atom_multiplicities: 2,
       atomic_radius: 79,
       covalent_radius: 102,
@@ -559,7 +559,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Yellow",
-      molar_volume: "<p>1.103•10<sup>-2</sup><p>",
+      molar_volume: "1.103•10<sup>-2</sup>",
       density: 3.214,
       thermal_conductivity: 0.0089,
       sound_speed: 206,
@@ -624,7 +624,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       atomic_weight: 39.948,
       electron_shell_configuration: "K2 L8 M8",
       electron_configuration:
-        "<p>1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup></p>",
+        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup>",
       gas_atom_multiplicities: 1,
       atomic_radius: 71,
       covalent_radius: 106,
@@ -641,7 +641,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Colorless",
-      molar_volume: "<p>2.239•10<sup>-2</sup><p>",
+      molar_volume: "2.239•10<sup>-2</sup>",
       density: 1.784,
       thermal_conductivity: 0.01772,
       sound_speed: 319,
