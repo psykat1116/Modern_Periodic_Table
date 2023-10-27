@@ -5,7 +5,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 57,
     neighbour: ["Barium", "Cerium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Lanthanum is the prototype for the lanthanoids, elements 58-71. Like these, it is silvery in color and quite soft. If counted among them, it is the most reactive of those and the one with the highest atomic diameter. It is used in optical lenses, alloys for special applications and in some batteries. In nature, it always occurs in compounds.",
     general_properties: {
       name: "Lanthanum",
       atomic_number: 57,
@@ -91,7 +91,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 58,
     neighbour: ["Lanthanum", "Praseodymium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Cerium is the most frequent of the lanthanoids, most of it occurs mixed with the others of them. Often it is used as mischmetal, which contains a natural lanthanoid mixture and is cheaper than the separated lanthanoids. This typically consists of 50% Cerium, 20% Lanthanum and Neodymium, 5% Praseodymium and the other Lanthanoids in fewer amounts as well as Iron and other elements. Iron and Cerium are the only elements, where by hard and fast friction sparks can be produced.",
     general_properties: {
       name: "Cerium",
       atomic_number: 58,
@@ -179,7 +179,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 59,
     neighbour: ["Cerium", "Neodymium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Praseodymium is a reactive, soft metal. In compounds, it shows a beautifull , lustrous green or yellow, which often is used to stain glass, ceramic and enamel. It also is used in sunglasses and safety goggles, because it can block ultraviolet light.",
     general_properties: {
       name: "Praseodymium",
       atomic_number: 59,
@@ -265,7 +265,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 60,
     neighbour: ["Praseodymium", "Promethium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Neodymium is one of the more abundant lanthanoids and has many different applications. It is often used as colorent for glass and ceramic, because its compounds, depending on concentration, can make a beautifull blue, green or red. Another important application is as active medium in Nd:YAG lasers. Nd<sub>2</sub>Fe<sub>14</sub>B, neodymium-iron-boron, known as Neodymium magnet, is the strongest permanent magnet.",
     general_properties: {
       name: "Neodymium",
       atomic_number: 60,
@@ -351,7 +351,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 61,
     neighbour: ["Neodymium", "Samarium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Promethium is the second element after technetium, of which no stable isotope exist. However, it is much more unstable than this, the most long-lived isotope, <sup>145</sup>Pm, has a half-life of only about two and a half years. This on Earth occurs only in traces, most of it is from neuclear waste. There are some few, very special application of Promethium, e.g. in radioisotope thermoelectric generators. Very few starts contain promethium, which they seem to produce themselves, however they may do that.",
     general_properties: {
       name: "Promethium",
       atomic_number: 61,
@@ -420,7 +420,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 62,
     neighbour: ["Promethium", "Europium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "It is a moderately hard silvery metal that slowly oxidizes in air. Being a typical memebr of the lanthanide series, Samarium usually assumes the oxidation state +3. Compounds of Samarium(II) are also known, most notably the monooxide SmO, monochalcogenides SmS, SmSe and SmTe, as well as Samarium(II) iodide. The last compound is a common reducing agent in chemical synthesis. Samarium has no significant biological role but is only slightly toxic.",
     general_properties: {
       name: "Samarium",
       atomic_number: 62,
@@ -507,7 +507,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 63,
     neighbour: ["Samarium", "Gadolinium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Europium is a very reactive metal, which actually has a silvery color, but oxidizes quickly in air. It is toxic and is the most ignoable of the lanthanoids after lanthanum. It has its most important application as red and blue luminescent substance, e.g. in CRT television sets. The phenomenon fluorescence was named after fluorites with Eu<sup>2+</sup> inclusores.",
     general_properties: {
       name: "Europium",
       atomic_number: 63,
@@ -592,7 +592,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 64,
     neighbour: ["Europium", "Terbium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Gadolinium has some special applications in high tech and medicine. It is rather toxic and is the first element that was named after a person, Finnish Chemist and Geologist Johan Gadolin. Gadolinium is a silvery-white metal when oxidation is removed. It is only slightly malleable and is a ductile rare-earth element/ Gadolinium reacts with atmospheric oxygen or moist slowly to form a black coating.",
     general_properties: {
       name: "Gadolinium",
       atomic_number: 64,
@@ -675,7 +675,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 65,
     neighbour: ["Gadolinium", "Dysprosium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "It is a silvery-white, rare earth metal that is malleable, ductile, and soft enough to be cut with a knife. The ninth member of the lanthanide series, terbium is a fairly electropositive metal reacts withs water, evolving hydrogen gas.",
     general_properties: {
       name: "Terbium",
       atomic_number: 65,
@@ -762,7 +762,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 66,
     neighbour: ["Terbium", "Holmium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "It is a rare earth element with a metallic silver luster. Dysprosium is never found in nature as a free element, though it is found in nature as a free element, though it is found in various minerals, such as xenotime. Naturally occurring Dysprosium is composed of seven isotopes, the most abundant of which is <sup>164</sup>Dy.",
     general_properties: {
       name: "Dysprosium",
       atomic_number: 66,
@@ -849,7 +849,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 67,
     neighbour: ["Dysprosium", "Erbium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Part of the lanthanide series, holmium is a rare-earth element. Holmium was discovered by swedish chemist Per Theodor Cleve. Its oxides was first isolated from rare-earth ores in 1978. The elements name comes from Holmia, the latin name for the city of Stockholm.",
     general_properties: {
       name: "Holmium",
       atomic_number: 67,
@@ -936,7 +936,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 68,
     neighbour: ["Holmium", "Thulium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Erbium is used for amplifiers in optical fibres and therefore is very important for the internet and the transcontinental data transfer. Erbium oxide can double the intensity of optical light under certain conditions and so allows the signal to travel long distances without fading. This is a good example of how a neglectable and mostly unknown element can certainly become very popular for a single special qualification.",
     general_properties: {
       name: "Erbium",
       atomic_number: 68,
@@ -1024,7 +1024,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 69,
     neighbour: ["Erbium", "Ytterbium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "It is the thirteenth and third last element in the lanthanide series. Like the other lanthanides, the most common oxidation state is +3, seen in its oxide, halides and other compounds; because it occurs so late in the series, however, the +2 oxidation state is also stabilized by the nearly full 4f shell that results.",
     general_properties: {
       name: "Thulium",
       atomic_number: 69,
@@ -1111,7 +1111,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 70,
     neighbour: ["Thulium", "Lutetium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Ytterbium forms a protective oxide layer in air, which makes it quite resistant. It is not particularly rare for a lanthanoid, but difficult to seperate from the others, so it is not used much. Its main application is as additive in special steels and for special permanent magnets. Ytterbium is bout 25%-30% lighter (less dense) than its neighbors Thulium and Lutetium.",
     general_properties: {
       name: "Ytterbium",
       atomic_number: 70,
@@ -1195,7 +1195,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 71,
     neighbour: ["Ytterbium", "Hafnium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Lutetium is the last of the lanthanoids, the hardest of them, the one with the smallest atomic diameter, the rarest stable after thulium and the one which is most difficult to extract. Therefore it is rather expensive and is scarcely used. The natural occuring, radioactive <sup>176</sup>Lu, which has a half-life of 38 billion years, is used to determine the age of meteorites.",
     general_properties: {
       name: "Lutetium",
       atomic_number: 71,

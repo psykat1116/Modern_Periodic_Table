@@ -5,7 +5,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 89,
     neighbour: ["Radium", "Thorium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Actinium starts the series of actinoids(elements 90-103), which named after this element. It naturally occurs from Uranium decay, the half life of its most stable isotope 227 is less than 22 years. It has very few applications, because it is difficult to handle and very dangerous. Chemically it is similar to lanthanum. Most Actinium decays to Thorium. about 1.4% to Fracium.",
     general_properties: {
       name: "Actinium",
       atomic_number: 89,
@@ -64,7 +64,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 90,
     neighbour: ["Actinium", "Protactinium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Thorium by far is the most stable and frequent actinoid, the half-life of <sup>232</sup>Th is 14 billion years. The soft, in pure form silvery metal is chemically reactive and light toxic. However, its weak radioactivity can become dangerous, if it is inhaled. Therefore it is not longer much used for mantles in gas lights, which it was for a long time. It is used for some special alloys and in good camera lenses (as ThO<sub>2</sub>). Thorium Decays to Radium.",
     general_properties: {
       name: "Thorium",
       atomic_number: 90,
@@ -147,7 +147,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 91,
     neighbour: ["Thorium", "Uranium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Protactinium primarily is generated from decay of rare isotope uranium 235 (via very unstable thorium 231). Therefore it only exists in small amounts, most of it is found in nuclear waste. the half life of the most stable isotope 231 is 32760 years. Outside of science, no application for protactinium exist. Nearly all protactinium further decays to Actinium.",
     general_properties: {
       name: "Protactinium",
       atomic_number: 91,
@@ -224,7 +224,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 92,
     neighbour: ["Protactinium", "Neptunium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Uranium is a chemically very reactive, highly toxic, grey heavy metal. Like all actinoids it is radioactive, after thorium it is the second most stable of those. The most abundant natural isotope is <sup>238</sup>U with a half-life of 4.5 billion years. The basis for neuclear power plants is the fissile isotope <sup>235</sup>U. The fission products often are highly radioactive isotopes of lower elements, like cesium 137 and strontium 90. Uranium 235 is used for atomic bombs, too, like the one in Hiroshima. It has a natural abundant of Only 0.7% and has to be enriched in an extensive process.",
     general_properties: {
       name: "Uranium",
       atomic_number: 92,
@@ -312,7 +312,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 93,
     neighbour: ["Uranium", "Plutonium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Neptunium, a radioactive, silvery heavy mwtal, is quite stable for an element with a high and odd atomic number, <sup>237</sup>Np has a half-life of 2 million years. On earth, it naturally occurs in tiny traces in Uranium ore, it is found in much bigger amounts as waste in neuclear reactors. It is scarcely used, although it is fissionable. Most of it decays to Protactinium.",
     general_properties: {
       name: "Neptunium",
       atomic_number: 93,
@@ -375,7 +375,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 94,
     neighbour: ["Neptunium", "Americium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Plutonium, a silvery, very heavy and hard metal, is perhaps the most dangerous of all elements. It was in the bomb of Nagasaki and, together with Uranium, involved in the Chernobyl and Fukushima disasters. In multiple nuclear tests it devasteted huge areas. 244Pu the most stable isotope, has a half-life of 80 million years. In nature, Plutonium only occurs in extremely small amounts, all that is in use is artificially made from Uranium.",
     general_properties: {
       name: "Plutonium",
       atomic_number: 94,
@@ -446,7 +446,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 95,
     neighbour: ["Plutonium", "Curium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Americium is the first synthetic element, from here onwards all elements have to be produced in laboratories. These are very radioactive. The most stable isotope of Americium <sup>243</sup>Am, has a half-life of just under 7400 years. Due to its strong Alpha radiation, Americium is very dangerous. In some countries Americium 241 (432 years half-life) is used in tiny amounts in smoke detectors for ionizing air. Americium emerges in small amounts in nuclear reactors from Plutonium and mostly decays to Neptunium.",
     general_properties: {
       name: "Americium",
       atomic_number: 94,
@@ -510,7 +510,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 96,
     neighbour: ["Americium", "Berkelium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "The synthetic element Curium is usually made from Plutonium and mostly decays to this again. The most stable isotope, <sup>247</sup>Cm, has a quite long half-life of 15.6 million years. However this is scarcely produced. Much more frequent are the significantly more unstable isotopes 242 and 244, which emit very intense radiation. Therefore, the enormously dangerous Curium is used only rarely and in safe environments, like in space missions.",
     general_properties: {
       name: "Curium",
       atomic_number: 96,
@@ -565,7 +565,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 97,
     neighbour: ["Curium", "Californium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Berkelium is made from americium or curium, mostly unintentional, because outside of basic research it hasn't any application. The most stable isotope, <sup>247</sup>Bk, has a half-life of 1380 years after all, but this is hardly produced. The most commonly accrued <sup>249</sup>Bk has a half-life of only 330 days. Of this, each year about 1 gram emerges worldwide as by-product in nuclear reactors, most of it decays to Californium. Berkelium is a strong Beta emitter.",
     general_properties: {
       name: "Berkelium",
       atomic_number: 97,
@@ -616,9 +616,9 @@ export const ActinideElem: ElementDetailsProps[] = [
   },
   {
     id: 98,
-    neighbour: ["Berkelium", "Einsteium"],
+    neighbour: ["Berkelium", "Einsteinium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Californium emerges in tiny amounts rather randomly from plutonium via the elements because of this two. With Californium, It is bothered to laboriously extract it, because for <sup>252</sup>Cf, which has a half-life of 2.6 years, there are reasonable applications. About 3% of this isotope spontaneously fissions into large chunks and hot neutrons.",
     general_properties: {
       name: "Californium",
       atomic_number: 98,
@@ -671,9 +671,9 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 99,
     neighbour: ["Californium", "Fermium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Einsteinium and Fermium are produced in small amounts in explosions of hydrogen bombs, from the igniter plutonium and neutrons that are flying around. Einsteinium also can be made in labs, however the highly radioactive metal has no use outside of basic research. The most stable isotope 252 has a half-life of 472 days. Einsteinium of course was named after Albert Einstein, who himself had no connection to the element. Einsteinium decays to Berkelium or Californium.",
     general_properties: {
-      name: "Einsteium",
+      name: "Einsteinium",
       atomic_number: 99,
       period: 7,
       block: "F",
@@ -686,7 +686,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       neutrons: 153,
     },
     overview: {
-      latin_name: "Einsteium",
+      latin_name: "Einsteinium",
       discovery: 1952,
       discoverer:
         "Stanley Gerald Thompson, Albert Ghiorso, Gregory R Choppin, Bernard G Harvey",
@@ -718,9 +718,9 @@ export const ActinideElem: ElementDetailsProps[] = [
   },
   {
     id: 100,
-    neighbour: ["Einsteium", "Mendelevium"],
+    neighbour: ["Einsteinium", "Mendelevium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Fermium and Einsteinium are produced in small amounts in explosions of hydrogen bombs, from the igniter Plutonium and Neutrons that are flying around. Fermium also can be made in labs, however the highly radioactive metal has no use outside of basic research. The most stable isotope has a half-life of 100 days. Fermium was named after Enrico Fermi, Who had nothing to do with the elements, but who was involved in the construction of first atomic bomb. Fermium decays to Californium.",
     general_properties: {
       name: "Fermium",
       atomic_number: 100,
@@ -767,7 +767,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 101,
     neighbour: ["Fermium", "Nobelium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Mendelevium is the first synthetic element, which can&apos;t be produced anymore by neutron capture. To make Mendelevium, Einsteinium is bombered with Helium nuclei. Most of it decays to Einsteinium again. The most stable mendelevium isotope has a half-life of 53 days. The element is named to honor Dmitri Mendeleev, the developer of the periodic table of elements.",
     general_properties: {
       name: "Mendelevium",
       atomic_number: 101,
@@ -812,7 +812,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 102,
     neighbour: ["Mendelevium", "Lawrencium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Nobelium is produced for example by bombarding Californium with Carbon or Uranium with Neon. The most stable isotope has a half-life of 58 minutes. Most of it decays to Fermium by spontaneous fission. Of its physical properties not much is known, but they are probably similar to those of the other actinoids.",
     general_properties: {
       name: "Nobelium",
       atomic_number: 102,
@@ -858,7 +858,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     id: 103,
     neighbour: ["Nobelium", "Rutherfordium"],
     description:
-      "It is arelatively rare element in the universe, usually occurring as a product of the spallation of larger atomic nuclei that have collided with cosmic rays. Within the cores of stars,beryllium is depleted as it is fused into heavier elements. It is a divalent element which occurs naturally only in combination with other elements in minerals.",
+      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
     general_properties: {
       name: "Lawrencium",
       atomic_number: 103,
