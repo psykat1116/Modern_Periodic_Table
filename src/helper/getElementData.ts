@@ -43,7 +43,7 @@ export default function getElementData(id: number) {
     element = RowSixElem.find(
       (elem: ElementDetailsProps) => elem.id === id
     ) as ElementDetailsProps;
-  } else if (id >= 55 && id <= 86) {
+  } else if (id >= 87 && id <= 118) {
     element = RowSevenElem.find(
       (elem: ElementDetailsProps) => elem.id === id
     ) as ElementDetailsProps;

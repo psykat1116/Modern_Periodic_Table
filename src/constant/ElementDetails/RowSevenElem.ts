@@ -5,7 +5,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 87,
     neighbour: ["Radon", "Radium"],
     description:
-      "Radon, with a half-life of less than four days, is a highly radioactive noble gas. For this it is rather abundant, because it is formed from the decay of Radium. Being nuch more heavy than air, it stays on the ground and can concentrate in poorly ventilated buildings that are build on Radium rich undergrounds, like granite. In this case, the Radon contamination can become dangerous, whereas normal concentrations are considered to be safe. Dangerously high values often occur at the mining of Uranium. Radon decays further to Polonium.",
+      "Francium is the most unstable of the first 101 elements. Its longest-lived isotope has a half-life of only 22 minutes. It is produced by the decay of Actinium. It is the most electropositive of all elements, and therefore the most reactive of all metals. It reacts violently with water, and also with air, forming a black coating of Francium Oxide. It is so rare that only a few atoms have been produced. It is therefore not known how it looks like, but it is probably a silvery metal. It is so rare that it is not used for anything, but it could be used for research on the structure of atoms. Francium has the largest atomic diameter and is a very ignoble metal. Its chemical properties are similar to Caesium, but it is a bit less reactive. However it is very difficult to explore, because it is generated only in tiny amounts from Actinium decay. Its most stable isotope, <sup>223</sup>Fr, has a half-life of only 22 minutes.",
     general_properties: {
       name: "Francium",
       atomic_number: 87,
@@ -58,7 +58,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 88,
     neighbour: ["Francium", "Actinium"],
     description:
-      "Radon, with a half-life of less than four days, is a highly radioactive noble gas. For this it is rather abundant, because it is formed from the decay of Radium. Being nuch more heavy than air, it stays on the ground and can concentrate in poorly ventilated buildings that are build on Radium rich undergrounds, like granite. In this case, the Radon contamination can become dangerous, whereas normal concentrations are considered to be safe. Dangerously high values often occur at the mining of Uranium. Radon decays further to Polonium.",
+      "Radium is a ignoble metal, which chemically is very similar to Barium. It is radioactive, the most stable isotope, <sup>226</sup>Ra, has a half-life of 1602 years and decays to Radon. Radium was discovered by Marie Curie and played and important role in the earliest research of radioactivity. Up to the late 1920s, it was treated quite unscrupulously and was even promoted as being healthy.",
     general_properties: {
       name: "Radium",
       atomic_number: 88,
@@ -123,7 +123,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 104,
     neighbour: ["Lawrencium", "Dubnium"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "Rutherfordium is the first transactinides element. Those elements all are highly radioactive with half-life in most cases of minutes, seconds and less. Of them, heavier isotopes with a higher neutrons/protons ratio by trend are more stable, compared to the ratio of the lighter elements. But they are also the ones that are more difficult to make, because the original elements used to make them have proportionally less neutrons.",
     general_properties: {
       name: "Rutherfordium",
       atomic_number: 104,
@@ -164,7 +164,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 105,
     neighbour: ["Rutherfordium", "Seaborgium"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "First made 1967 by bombarding Americium with Neon, it often decays to Lawrencium. <sup>268</sup>Db has a quite long half-life of 29 hours, it decays by spontaneous fission. Dubnium is highly radioactive: the most stable known isotope, Dubnium-268, has a half-life of about 28 hours. This greatly limits the extent of research on Dubnium.",
     general_properties: {
       name: "Dubnium",
       atomic_number: 105,
@@ -205,7 +205,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 106,
     neighbour: ["Dubnium", "Bohrium"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "It named after the American neuclear chemist Glenn T Seaborg. As a synthetic element, it can be cretaed in a laboratory but is not found in nature. It is also radioactive; the most stable known isotope, <sup>269</sup>Sg, has a half-life of approximately 14 minutes.",
     general_properties: {
       name: "Seaborgium",
       atomic_number: 106,
@@ -245,7 +245,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 107,
     neighbour: ["Seaborgium", "Hassium"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "It is named after Danish physicist Niels Bohr. As a synthetic element, it can be created in laboratory but not found in nature. All known isotopes of Bohrium are extremely radioactive; the most stable known isotope is <sup>270</sup>Bh with a half-life of approx 61 seconds, though the unconfirmed <sup>278</sup>Bh may have a longer half-life of about 690 seconds.",
     general_properties: {
       name: "Bohrium",
       atomic_number: 107,
@@ -285,7 +285,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 108,
     neighbour: ["Bohrium", "Meitnerium"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "First made 1984 by bombarding lead with iron, it decays to seaborgium. Hassium isotopes have half-lifes of maximum some seconds. Possibly neuclear isomeres of Hassium with long half-life exists. In 2001, a Hassium compound was produced, probably Hassium Tetroxide, HsO<sub>4</sub>.",
     general_properties: {
       name: "Hassium",
       atomic_number: 108,
@@ -359,7 +359,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 110,
     neighbour: ["Meitnerium", "Roentgenium"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "It is an extremely radioactive synthetic element. The most stable known isotope, Darmstadtium-281, has a half-life of approx 12.7 seconds. Darmstadtium was first created in 1994 by the GSI Helmholtz Centre for Heavy Ion Research near the city of Darmstadt, Germany, after which it was named",
     general_properties: {
       name: "Darmstadtium",
       atomic_number: 110,
@@ -393,10 +393,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
     },
   },
   {
-    id: 109,
+    id: 111,
     neighbour: ["Darmstadtium", "Copernicium"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "It is an extremely radioactive synthetic element that can be created in a laboratory but is not found in nature. The most stable known isotope, Roentgenium-282, has a half-life of 100 seconds, although the unconfirmed Roentgenium-286 may have a longer half-life of 10.7 minutes.",
     general_properties: {
       name: "Roentgenium",
       atomic_number: 111,
@@ -433,7 +433,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 112,
     neighbour: ["Roentgenium", "Nihonium"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "Its known isotopes are extremely radioactive, and have only been created in a laboratory. The most stable known isotope, copernicium-285, has a half-life of approximately 28 seconds. Copernicium was first created in 1996 by the GSI Helmholtz Centre for Heavy Ion Research near Darmstadt, Germany. It is named after the astronomer Nicolaus Copernicus.",
     general_properties: {
       name: "Copernicium",
       atomic_number: 112,
@@ -470,7 +470,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 113,
     neighbour: ["Copernicium", "Flerovium"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "It is extremely radioactive; its most stable known isotope, Nihonium-286, has a half-life of about 10 seconds. In the periodic table, Nihonium is a transactinides element in the p-block. It is a member of Boron group.",
     general_properties: {
       name: "Nihonium",
       atomic_number: 113,
@@ -507,7 +507,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 114,
     neighbour: ["Nihonium", "Moscovium"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "It is an extremely radioactive synthetic element. The element is named after the Flerov laboratory of neuclear research in Dubna, Russia, where the element was discovered in 1998. The name of the laboratory, in turn, honours the Russian physicist Geirgy Flyorov. The name was adopted by IUPAC on 30 May 2012.",
     general_properties: {
       name: "Flerovium",
       atomic_number: 114,
@@ -544,7 +544,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 115,
     neighbour: ["Flerovium", "Livermorium"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "It was first synthesized in 2003 by a joint team of Russian and American scientists at the Joint Institute for Nuclear Research (JINR) in Dubna, Russia. In December 2015, it was recognized as one of four new elements by the Joint Working Party of International scientific bodies IUPAC and IUPAP. On 28 November 2016, It was officialy name after Moscow Oblast, in which the JINR is situated.",
     general_properties: {
       name: "Moscovium",
       atomic_number: 115,
@@ -581,7 +581,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 116,
     neighbour: ["Moscovium", "Tennessine"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "It is an extremely radioactive element that has only been created in the laboratory and has not been observed in nature. The element is named after the Lawrence Livermore National Laboratory in the United States, which collaborated with the Joint Institute for Nuclear Research (JINR) in Dubna, Russia to discover Livermorium during experiments made between 2000 and 2006.",
     general_properties: {
       name: "Livermorium",
       atomic_number: 116,
@@ -618,7 +618,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 117,
     neighbour: ["Livermorium", "Oganesson"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "One of its daughter isotopes was created directly in 2011, partially confirming the results of the experiment. The experiment itself was repeated successfully by the same collaboration in 2012 and by joint German-American team in May 2014. In December 2015, the Joint Working Party of the international Union of Pure and Applied Chemistry (IUPAC) and the International Union of Pure and Applied Physics.",
     general_properties: {
       name: "Tennessine",
       atomic_number: 117,
@@ -654,7 +654,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     id: 118,
     neighbour: ["Tennessine", "Hydrogen"],
     description:
-      "Lawrencium is produced for example by bombarding Californium with Boron or Americium with Oxygen. The most stable isotope has a half-life of 11 hours. This decays to Nobelium, most other isotopes to Mendelevium. Of its physical properties not much is known, but they are probably similar to those of the other Actinoids. Lawrencium could be the hardest and heaviest of them",
+      "It was fist synthesized in 2002 at the Joint Institite for Neuclear Research (JINR) in Dubna, near Moscow in Russia, by a joint team of Russian and American scientists. In December 2015, it was recognized as one of four new elements by the Joint Working Party of the international scientific bodies IUPAC and IUPAP. It was formally named on 28 November 2016.",
     general_properties: {
       name: "Oganesson",
       atomic_number: 118,
