@@ -1459,7 +1459,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     id: 54,
     neighbour: ["Iodine", "Cesium"],
     description:
-      "Xenon is the most heavy and reactive noble gas(except for the radioactive radon) and is the rarest non-radioactive element on earth. Therefore it is very expensive. It is primarly used in lamps, like in automobile headlights. several xenon compounds are known, some of them are even quite stable. The compound first to be discovered was xenon tetrafluoride, XeF<sub>2</sub>, in 1962",
+      "Xenon is the most heavy and reactive noble gas(except for the radioactive radon) and is the rarest non-radioactive element on earth. Therefore it is very expensive. It is primarly used in lamps, like in automobile headlights. several xenon compounds are known, some of them are even quite stable. The compound first to be discovered was xenon tetrafluoride, XeF<sub>2</sub>, in 1962.",
     general_properties: {
       name: "Xenon",
       atomic_number: 54,

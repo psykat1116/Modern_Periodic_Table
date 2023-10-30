@@ -75,33 +75,37 @@ const MaterialProperty = ({
             </div>
           </div>
         )}
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-            Molar Volume (m<sup>3</sup>mol<sup>-1</sup>)
-          </p>
-          <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center`}
-          >
-            <p
-              dangerouslySetInnerHTML={{
-                __html: DOMPurify.sanitize(molar_volume),
-              }}
-            ></p>
-            <button
-              onClick={() =>
-                handleCopy(molar_volume.toString(), "molar_volume")
-              }
+        {molar_volume && (
+          <div className="flex flex-row justify-start items-center w-full mt-3">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+              Molar Volume (m<sup>3</sup>mol<sup>-1</sup>)
+            </p>
+            <div
+              className={`w-[70%] border ${
+                theme === "dark"
+                  ? "border-text_primary"
+                  : "border-text_secondary"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
-              {!isCopying.molar_volume ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(molar_volume),
+                }}
+              ></p>
+              <button
+                onClick={() =>
+                  handleCopy(molar_volume.toString(), "molar_volume")
+                }
+              >
+                {!isCopying.molar_volume ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
+        )}
         {mohs_hardness && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
             <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">

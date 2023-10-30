@@ -67,7 +67,12 @@ export const RowSixRightElements: BoxTypes[] = [
   },
   { name: "Tl", id: "81", category: "metal", groups: ["pblock", "metal"] },
   { name: "Pb", id: "82", category: "metal", groups: ["pblock", "metal"] },
-  { name: "Bi", id: "83", category: "metal", groups: ["pblock", "metal"] },
+  {
+    name: "Bi",
+    id: "83",
+    category: "metal",
+    groups: ["pblock", "metal", "radioactive"],
+  },
   {
     name: "Po",
     id: "84",

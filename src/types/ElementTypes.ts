@@ -34,7 +34,7 @@ export interface AtomicProperties {
 
 export interface ThermodynamicProperties {
   boiling_point?: string;
-  melting_point: string;
+  melting_point?: string;
   phase?: string;
   fusion_heat?: number;
   specific_heat?: number;
@@ -45,7 +45,7 @@ export interface ThermodynamicProperties {
 
 export interface MaterialProperties {
   color?: string;
-  molar_volume: string;
+  molar_volume?: string;
   refrective_index?: number;
   sound_speed?: number;
   thermal_conductivity?: number;
@@ -104,9 +104,9 @@ export default interface ElementDetailsProps {
   particles: Particles;
   overview: Overview;
   atomic_properties: AtomicProperties;
-  thermodynamic_properties: ThermodynamicProperties;
+  thermodynamic_properties?: ThermodynamicProperties;
   material_properties?: MaterialProperties;
-  reactivity: Reactivity;
+  reactivity?: Reactivity;
   neuclear_properties: NeuclearProperties;
   electromagnetic_properties?: ElectromagneticProperties;
   prevalence?: Prevalence;

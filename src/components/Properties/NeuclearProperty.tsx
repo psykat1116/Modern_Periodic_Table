@@ -79,7 +79,7 @@ const NeuclearProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Lifetime (s)</p>
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Lifetime(s)</p>
           <div
             className={`w-[70%] border ${
               theme === "dark" ? "border-text_primary" : "border-text_secondary"

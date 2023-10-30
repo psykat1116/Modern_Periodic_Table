@@ -873,7 +873,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       neutrons: 159,
     },
     overview: {
-      latin_name: "Fermium",
+      latin_name: "Lawrencium",
       discovery: 1952,
       discoverer:
         "Stanley Gerald Thompson, Albert Ghiorso, Gregory R Choppin, Bernard G Harvey",

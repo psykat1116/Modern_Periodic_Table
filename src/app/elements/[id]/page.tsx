@@ -114,11 +114,13 @@ const Page = () => {
                 <GeneralInfo {...elem.general_properties} />
                 <Overview {...elem.overview} />
                 <AtomicProperty {...elem.atomic_properties} />
-                <ThermoProperty {...elem.thermodynamic_properties} />
+                {elem.thermodynamic_properties && (
+                  <ThermoProperty {...elem.thermodynamic_properties} />
+                )}
                 {elem.material_properties && (
                   <MaterialProperty {...elem.material_properties} />
                 )}
-                <Reactivity {...elem.reactivity} />
+                {elem.reactivity && <Reactivity {...elem.reactivity} />}
                 <NeuclearProperty {...elem.neuclear_properties} />
                 {elem.electromagnetic_properties && (
                   <EMProperty {...elem.electromagnetic_properties} />
