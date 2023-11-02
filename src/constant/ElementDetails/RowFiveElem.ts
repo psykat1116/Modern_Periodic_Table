@@ -84,6 +84,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       electrical_conductivity: "8.3•10<sup>6</sup>",
       resisitivity: "1.2•10<sup>-7</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Rubidium",
+      youtube: "https://youtu.be/g0P-A23m3lE",
+    },
   },
   {
     id: 38,
@@ -166,6 +170,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       molar_magnetic_suspectibility: "1.16•10<sup>-10</sup>",
       electrical_conductivity: "7.7•10<sup>6</sup>",
       resisitivity: "1.3•10<sup>-7</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Strontium",
+      youtube: "https://youtu.be/28guL5UQfOQ",
     },
   },
   {
@@ -252,6 +260,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       electrical_conductivity: "1.8•10<sup>6</sup>",
       resisitivity: "5.6•10<sup>-7</sup>",
       superconducting_point: 1.3,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Yttrium",
+      youtube: "https://youtu.be/LGAmrFTr5e4",
     },
   },
   {
@@ -341,6 +353,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       resisitivity: "4.2•10<sup>-7</sup>",
       superconducting_point: 0.61,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Zirconium",
+      youtube: "https://youtu.be/yIBbrk56KwQ",
+    },
   },
   {
     id: 41,
@@ -427,6 +443,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       electrical_conductivity: "6.7•10<sup>6</sup>",
       resisitivity: "1.5•10<sup>-7</sup>",
       superconducting_point: 9.25,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Niobium",
+      youtube: "https://youtu.be/K90HPbVZOQ4",
     },
   },
   {
@@ -517,6 +537,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       resisitivity: "5•10<sup>-8</sup>",
       superconducting_point: 0.915,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Molybdenum",
+      youtube: "https://youtu.be/fuhZF0Dtevw",
+    },
   },
   {
     id: 43,
@@ -595,6 +619,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       electrical_conductivity: "5•10<sup>6</sup>",
       resisitivity: "2•10<sup>-7</sup>",
       superconducting_point: 7.8,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Technetium",
+      youtube: "https://youtu.be/Hu42SH5iAps",
     },
   },
   {
@@ -684,6 +712,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       resisitivity: "7.1•10<sup>-8</sup>",
       superconducting_point: 0.49,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Ruthenium",
+      youtube: "https://youtu.be/xtY6BpT4DTY",
+    },
   },
   {
     id: 45,
@@ -771,6 +803,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       resisitivity: "4.3•10<sup>-8</sup>",
       superconducting_point: 0.49,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Rhodium",
+      youtube: "https://youtu.be/RcQVJ4lb8r0",
+    },
   },
   {
     id: 46,
@@ -857,6 +893,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       molar_magnetic_suspectibility: "6.992•10<sup>-9</sup>",
       electrical_conductivity: "10<sup>7</sup>",
       resisitivity: "10<sup>-7</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Palladium",
+      youtube: "https://youtu.be/FC-OBl9Eiiw",
     },
   },
   {
@@ -946,6 +986,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       electrical_conductivity: "6.2•10<sup>7</sup>",
       resisitivity: "1.6•10<sup>-8</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Silver",
+      youtube: "https://youtu.be/v-L4lUrEUlI",
+    },
   },
   {
     id: 48,
@@ -1032,6 +1076,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       resisitivity: "7•10<sup>-8</sup>",
       superconducting_point: 0.517,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Cadmium",
+      youtube: "https://youtu.be/yvWKeYOdWbo",
+    },
   },
   {
     id: 49,
@@ -1115,6 +1163,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       electrical_conductivity: "1.2•10<sup>7</sup>",
       resisitivity: "8•10<sup>-8</sup>",
       superconducting_point: 3.41,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Indium",
+      youtube: "https://youtu.be/mjiP5Q6g_aM",
     },
   },
   {
@@ -1205,6 +1257,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       resisitivity: "1.1•10<sup>-7</sup>",
       superconducting_point: 3.72,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Tin",
+      youtube: "https://youtu.be/Q9zdt-rOB0Y",
+    },
   },
   {
     id: 51,
@@ -1289,6 +1345,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       molar_magnetic_suspectibility: "-1.327•10<sup>-9</sup>",
       electrical_conductivity: "2.5•10<sup>6</sup>",
       resisitivity: "4•10<sup>-7</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Antimony",
+      youtube: "https://youtu.be/BBzUYptG1_o",
     },
   },
   {
@@ -1375,6 +1435,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       resisitivity: "10<sup>-4</sup>",
       superconducting_point: 3.72,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Tellurium",
+      youtube: "https://youtu.be/HGsFcbXd1hA",
+    },
   },
   {
     id: 53,
@@ -1454,6 +1518,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       electrical_conductivity: "10<sup>-7</sup>",
       resisitivity: "10<sup>7</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Iodine",
+      youtube: "https://youtu.be/_e194ZAxwko",
+    },
   },
   {
     id: 54,
@@ -1528,6 +1596,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "-2.54•10<sup>-8</sup>",
       mass_magnetic_suspectibility: "-4.3•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-5.65•10<sup>-10</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Xenon",
+      youtube: "https://youtu.be/p9CBg8OaTLg",
     },
   },
 ];

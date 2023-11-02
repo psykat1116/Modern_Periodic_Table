@@ -64,7 +64,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       neutron_cross_section: 0.332,
     },
     electromagnetic_properties: {
-      magnetic_type: "Diamagentic",
+      magnetic_type: "Diamagnetic",
       volume_magnetic_suspectibility: "-2.23•10<sup>-9</sup>",
       mass_magnetic_suspectibility: "-2.48•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-4.99•10<sup>-9</sup>",
@@ -76,6 +76,10 @@ export const RowOneElem: ElementDetailsProps[] = [
       human: "10%",
       earth_crust: "0.15%",
       meteorites: "2%",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Hydrogen",
+      youtube: "https://youtu.be/U-MNKK20Z_g",
     },
   },
   {
@@ -138,7 +142,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       neutron_cross_section: 0.007,
     },
     electromagnetic_properties: {
-      magnetic_type: "Diamagentic",
+      magnetic_type: "Diamagnetic",
       volume_magnetic_suspectibility: "-1.05•10<sup>-9</sup>",
       mass_magnetic_suspectibility: "-5.9•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-2.36•10<sup>-11</sup>",
@@ -150,6 +154,10 @@ export const RowOneElem: ElementDetailsProps[] = [
       human: "0%",
       earth_crust: "5.5•10<sup>-7</sup>%",
       meteorites: "0%",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Helium",
+      youtube: "https://youtu.be/ntyh9VJvq2w",
     },
   },
 ];

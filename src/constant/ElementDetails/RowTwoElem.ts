@@ -70,7 +70,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       electrical_type: "Conductor",
-      magnetic_type: "Paramagentic",
+      magnetic_type: "Paramagnetic",
       resisitivity: "9.4•10<sup>-8</sup>",
       electrical_conductivity: "1.1•10<sup>7</sup>",
       volume_magnetic_suspectibility: "1.37•10<sup>-5</sup>",
@@ -84,6 +84,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
       earth_crust: "0.0017%",
       ocean: "0.000018%",
       human: "3•10<sup>-6</sup>%",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Lithium",
+      youtube: "https://youtu.be/EvOvVuQcRRI",
     },
   },
   {
@@ -157,7 +161,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       electrical_type: "Conductor",
-      magnetic_type: "Diamagentic",
+      magnetic_type: "Diamagnetic",
       resisitivity: "4•10<sup>-8</sup>",
       superconducting_point: 0.026,
       electrical_conductivity: "2.5•10<sup>7</sup>",
@@ -172,6 +176,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
       human: "4•10<sup>-8</sup>%",
       earth_crust: "0.00019%",
       meteorites: "2.9•10<sup>-6</sup>%",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Beryllium",
+      youtube: "https://youtu.be/WHsLEmuFDrY",
     },
   },
   {
@@ -203,8 +211,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       atomic_weight: 10.81,
       oxidation_states: [3],
       electron_shell_configuration: "K2 L3",
-      electron_configuration:
-        "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>1</sup>",
+      electron_configuration: "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>1</sup>",
       atomic_radius: 87,
       covalent_radius: 84,
       crystall_structure: "Rhombohedral",
@@ -243,7 +250,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       electrical_type: "Insulator",
-      magnetic_type: "Diamagentic",
+      magnetic_type: "Diamagnetic",
       resisitivity: "10<sup>4</sup>",
       electrical_conductivity: "10<sup>-4</sup>",
       volume_magnetic_suspectibility: "-2.14•10<sup>-5</sup>",
@@ -257,6 +264,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
       earth_crust: "0.00086%",
       ocean: "0.000440%",
       human: "7•10<sup>-5</sup>%",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Boron",
+      youtube: "https://youtu.be/Uhw1_Mv_sHY",
     },
   },
   {
@@ -287,8 +298,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       atomic_weight: 12.011,
       oxidation_states: [-4, 2, 4],
       electron_shell_configuration: "K2 L4",
-      electron_configuration:
-        "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup>",
+      electron_configuration: "1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup>",
       atomic_radius: 67,
       covalent_radius: 76,
       van_der_walls_radius: 170,
@@ -327,7 +337,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       electrical_type: "Conductor",
-      magnetic_type: "Diamagentic",
+      magnetic_type: "Diamagnetic",
       resisitivity: "10<sup>-5</sup>",
       electrical_conductivity: "10<sup>5</sup>",
       volume_magnetic_suspectibility: "-1.4•10<sup>-5</sup>",
@@ -341,6 +351,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
       earth_crust: "0.18%",
       ocean: "0.002800%",
       human: "23%",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Carbon",
+      youtube: "https://youtu.be/QuW4_bRHbUk",
     },
   },
   {
@@ -371,8 +385,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       atomic_weight: 14.007,
       oxidation_states: [-3, -2, -1, 1, 2, 3, 4, 5],
       electron_shell_configuration: "K2 L5",
-      electron_configuration:
-        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>3</sup>",
+      electron_configuration: "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>3</sup>",
       atomic_radius: 56,
       covalent_radius: 71,
       van_der_walls_radius: 155,
@@ -407,7 +420,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       neutron_cross_section: 1.91,
     },
     electromagnetic_properties: {
-      magnetic_type: "Diamagentic",
+      magnetic_type: "Diamagnetic",
       volume_magnetic_suspectibility: "-6.8•10<sup>-9</sup>",
       mass_magnetic_suspectibility: "-5.4•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-1.5•10<sup>-10</sup>",
@@ -419,6 +432,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
       earth_crust: "0.002%",
       ocean: "0.000050%",
       human: "2.60%",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Nitrogen",
+      youtube: "https://youtu.be/H8XNdqA18-M",
     },
   },
   {
@@ -449,8 +466,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       atomic_weight: 15.999,
       oxidation_states: [-2, -1, 1, 2],
       electron_shell_configuration: "K2 L6",
-      electron_configuration:
-        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>4</sup>",
+      electron_configuration: "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>4</sup>",
       atomic_radius: 48,
       covalent_radius: 66,
       van_der_walls_radius: 152,
@@ -499,6 +515,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
       ocean: "86%",
       human: "61%",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Oxygen",
+      youtube: "https://youtu.be/diP_ngebIxI",
+    },
   },
   {
     id: 9,
@@ -528,8 +548,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       atomic_weight: 18.998403163,
       oxidation_states: [-1],
       electron_shell_configuration: "K2 L7",
-      electron_configuration:
-        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>5</sup>",
+      electron_configuration: "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>5</sup>",
       atomic_radius: 42,
       covalent_radius: 57,
       van_der_walls_radius: 147,
@@ -571,6 +590,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
       ocean: "86%",
       human: "61%",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Fuorine",
+      youtube: "https://youtu.be/vtWp45Eewtw",
+    },
   },
   {
     id: 10,
@@ -599,8 +622,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     atomic_properties: {
       atomic_weight: 20.1797,
       electron_shell_configuration: "K2 L8",
-      electron_configuration:
-        "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup>",
+      electron_configuration: "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup>",
       gas_atom_multiplicities: 1,
       atomic_radius: 38,
       covalent_radius: 58,
@@ -646,6 +668,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-3.69•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-4.1•10<sup>-9</sup>",
       volume_magnetic_suspectibility: "-8.27•10<sup>-11</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Neon",
+      youtube: "https://youtu.be/CW7ZS4S9HZY",
     },
   },
 ];

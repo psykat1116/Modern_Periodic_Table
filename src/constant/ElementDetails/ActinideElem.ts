@@ -59,6 +59,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       neutron_cross_section: 880,
       decay_mode: "Beta",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Actinium",
+      youtube: "https://youtu.be/rKm0ShaJNFM",
+    },
   },
   {
     id: 90,
@@ -142,6 +146,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "7.2•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "1.7•10<sup>-9</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Thorium",
+      youtube: "https://youtu.be/zjDw1VWJ_RU",
+    },
   },
   {
     id: 91,
@@ -218,6 +226,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "3.25•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "7.509•10<sup>-9</sup>",
       superconducting_point: 1.4,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Protactinium",
+      youtube: "https://youtu.be/bsIMMa7iEKU",
     },
   },
   {
@@ -307,6 +319,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       molar_magnetic_suspectibility: "5.14•10<sup>-9</sup>",
       superconducting_point: 0.68,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Uranium",
+      youtube: "https://youtu.be/Kkd2bYAVtOU",
+    },
   },
   {
     id: 93,
@@ -370,12 +386,16 @@ export const ActinideElem: ElementDetailsProps[] = [
       resisitivity: "1.2•10<sup>-6</sup>",
       electrical_type: "Conductor",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Neptunium",
+      youtube: "https://youtu.be/1D75B0_URbE",
+    },
   },
   {
     id: 94,
     neighbour: ["Neptunium", "Americium"],
     description:
-      "Plutonium, a silvery, very heavy and hard metal, is perhaps the most dangerous of all elements. It was in the bomb of Nagasaki and, together with Uranium, involved in the Chernobyl and Fukushima disasters. In multiple nuclear tests it devasteted huge areas. 244Pu the most stable isotope, has a half-life of 80 million years. In nature, Plutonium only occurs in extremely small amounts, all that is in use is artificially made from Uranium.",
+      "Plutonium, a silvery, very heavy and hard metal, is perhaps the most dangerous of all elements. It was in the bomb of Nagasaki and, together with Uranium, involved in the Chernobyl and Fukushima disasters. In multiple nuclear tests it devasteted huge areas. <sup>244</sup>Pu the most stable isotope, has a half-life of 80 million years. In nature, Plutonium only occurs in extremely small amounts, all that is in use is artificially made from Uranium.",
     general_properties: {
       name: "Plutonium",
       atomic_number: 94,
@@ -390,7 +410,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       neutrons: 150,
     },
     overview: {
-      latin_name: "Uranium",
+      latin_name: "Plutonium",
       discovery: 1789,
       discoverer: "Martin Heinrich Klaproth",
     },
@@ -440,6 +460,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "6.282•10<sup>-4</sup>",
       mass_magnetic_suspectibility: "3.17•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "7.735•10<sup>-9</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Plutonium",
+      youtube: "https://youtu.be/87TpxxFdzQU",
     },
   },
   {
@@ -505,6 +529,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       molar_magnetic_suspectibility: "1.251•10<sup>-8</sup>",
       superconducting_point: 0.6,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Americium",
+      youtube: "https://youtu.be/CC-L-CITg3k",
+    },
   },
   {
     id: 96,
@@ -560,6 +588,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       neutron_cross_section: 60,
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Curium",
+      youtube: "https://youtu.be/sZobqPFNcwg",
+    },
   },
   {
     id: 97,
@@ -612,6 +644,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "6.28•10<sup>10</sup>",
       neutron_cross_section: 710,
       decay_mode: "Alpha",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Berkelium",
+      youtube: "https://youtu.be/IgPkUbtnC4o",
     },
   },
   {
@@ -666,6 +702,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       neutron_cross_section: 2900,
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Californium",
+      youtube: "https://youtu.be/ZhvRmbpkx9U",
+    },
   },
   {
     id: 99,
@@ -715,6 +755,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       neutron_cross_section: 160,
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Einsteinium",
+      youtube: "https://youtu.be/UdJeLlwrVUI",
+    },
   },
   {
     id: 100,
@@ -762,6 +806,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       neutron_cross_section: 5800,
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Fermium",
+      youtube: "https://youtu.be/SQhI52sqanA",
+    },
   },
   {
     id: 101,
@@ -806,6 +854,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "4.45•10<sup>6</sup>",
       lifetime: "6.62•10<sup>6</sup>",
       decay_mode: "Alpha",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Mendelevium",
+      youtube: "https://youtu.be/0JlshAo8DuE",
     },
   },
   {
@@ -853,6 +905,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "2•10<sup>4</sup>",
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Nobelium",
+      youtube: "https://youtu.be/t_ZpauMxapY",
+    },
   },
   {
     id: 103,
@@ -898,6 +954,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "3.6•10<sup>4</sup>",
       lifetime: "5.2•10<sup>4</sup>",
       decay_mode: "Beta",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Lawrencium",
+      youtube: "https://youtu.be/_zBsnnJOkyA",
     },
   },
 ];

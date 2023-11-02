@@ -86,6 +86,10 @@ export const RowThreeElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "8.8•10<sup>-9</sup>",
       resisitivity: "4.7•10<sup>-8</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Sodium",
+      youtube: "https://youtu.be/WsrdE5g4z1I"
+    }
   },
   {
     id: 12,
@@ -173,6 +177,10 @@ export const RowThreeElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "1.2•10<sup>-5</sup>",
       resisitivity: "4.4•10<sup>-8</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Magnesium",
+      youtube: "https://youtu.be/FKkWdizutxI"
+    }
   },
   {
     id: 13,
@@ -262,6 +270,10 @@ export const RowThreeElem: ElementDetailsProps[] = [
       resisitivity: "2.6•10<sup>-8</sup>",
       superconducting_point: 1.175,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Aluminium",
+      youtube: "https://youtu.be/nqicpx0adY4"
+    }
   },
   {
     id: 14,
@@ -348,6 +360,10 @@ export const RowThreeElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "-3.73•10<sup>-6</sup>",
       resisitivity: "10<sup>-3</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Silicon",
+      youtube: "https://youtu.be/akvr9utNCVs"
+    }
   },
   {
     id: 15,
@@ -429,6 +445,10 @@ export const RowThreeElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "-2.06•10<sup>-5</sup>",
       resisitivity: "10<sup>-7</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Phosphorus",
+      youtube: "https://youtu.be/NdOyFPv7TkY"
+    }
   },
   {
     id: 16,
@@ -512,6 +532,10 @@ export const RowThreeElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "-1.22•10<sup>-5</sup>",
       resisitivity: "10<sup>15</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Sulphur",
+      youtube: "https://youtu.be/mddfu3TXaRw"
+    }
   },
   {
     id: 17,
@@ -595,6 +619,10 @@ export const RowThreeElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "-2.31•10<sup>-8</sup>",
       resisitivity: "10<sup>2</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Chlorine",
+      youtube: "https://youtu.be/BXCfBl4rmh0"
+    }
   },
   {
     id: 18,
@@ -669,5 +697,9 @@ export const RowThreeElem: ElementDetailsProps[] = [
       molar_magnetic_suspectibility: "-2.4•10<sup>-10</sup>",
       volume_magnetic_suspectibility: "-1.07•10<sup>-8</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Argon",
+      youtube: "https://youtu.be/b3TrEGlpttI"
+    }
   },
 ];

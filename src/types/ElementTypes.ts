@@ -69,8 +69,12 @@ export interface NeuclearProperties {
 }
 
 export interface ElectromagneticProperties {
-  electrical_type?: string;
-  magnetic_type?: string;
+  electrical_type?: "Conductor" | "Semiconductor" | "Insulator";
+  magnetic_type?:
+    | "Diamagnetic"
+    | "Paramagnetic"
+    | "Ferromagnetic"
+    | "Antiferromagnetic";
   resisitivity?: string;
   electrical_conductivity?: string;
   curie_point?: number;
@@ -96,6 +100,11 @@ export interface Reactivity {
   ionization_energy?: number;
 }
 
+export interface ExternalLinks {
+  wikipedia: string;
+  youtube: string;
+}
+
 export default interface ElementDetailsProps {
   id: number;
   neighbour: string[];
@@ -110,4 +119,5 @@ export default interface ElementDetailsProps {
   neuclear_properties: NeuclearProperties;
   electromagnetic_properties?: ElectromagneticProperties;
   prevalence?: Prevalence;
+  external_links: ExternalLinks;
 }

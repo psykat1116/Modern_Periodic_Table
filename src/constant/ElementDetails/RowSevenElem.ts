@@ -53,6 +53,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       lifetime: "1.9•10<sup>3</sup>",
       decay_mode: "Beta",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Francium",
+      youtube: "https://youtu.be/hpYxllgfMSg",
+    },
   },
   {
     id: 88,
@@ -118,6 +122,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       neutron_cross_section: 13,
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Radium",
+      youtube: "https://youtu.be/I_1XelLa1eo",
+    },
   },
   {
     id: 104,
@@ -158,6 +166,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "4.7•10<sup>4</sup>",
       lifetime: "6.8•10<sup>4</sup>",
       decay_mode: "Alpha",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Rutherfordium",
+      youtube: "https://youtu.be/dOj9ZjKnJcY",
     },
   },
   {
@@ -200,6 +212,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       lifetime: "3•10<sup>4</sup>",
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Dubnium",
+      youtube: "https://youtu.be/5d4VekfRnMs",
+    },
   },
   {
     id: 106,
@@ -239,6 +255,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "7•10<sup>3</sup>",
       lifetime: "10<sup>4</sup>",
       decay_mode: "Alpha",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Seaborgium",
+      youtube: "https://youtu.be/0WbFkXJwCaY",
     },
   },
   {
@@ -280,6 +300,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       lifetime: "7.8•10<sup>3</sup>",
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Bohrium",
+      youtube: "https://youtu.be/okJnQIjELY4",
+    },
   },
   {
     id: 108,
@@ -316,6 +340,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "4•10<sup>3</sup>",
       lifetime: "5•10<sup>3</sup>",
       decay_mode: "Alpha",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Hassium",
+      youtube: "https://youtu.be/nF5B13Y5taQ",
     },
   },
   {
@@ -354,6 +382,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       lifetime: "2.6•10<sup>3</sup>",
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Meitnerium",
+      youtube: "https://youtu.be/N8VR7Qscq4k",
+    },
   },
   {
     id: 110,
@@ -390,6 +422,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "2.4•10<sup>2</sup>",
       lifetime: "3.5•10<sup>2</sup>",
       decay_mode: "Alpha",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Darmstadtium",
+      youtube: "https://youtu.be/lhvMqva3-7M",
     },
   },
   {
@@ -428,6 +464,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       lifetime: "8.7•10<sup>2</sup>",
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Roentgenium",
+      youtube: "https://youtu.be/MTq1hzhCF0g",
+    },
   },
   {
     id: 112,
@@ -464,6 +504,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "2.4•10<sup>3</sup>",
       lifetime: "3.5•10<sup>3</sup>",
       decay_mode: "Alpha",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Copernicium",
+      youtube: "https://youtu.be/S3n_DBNMoqY",
     },
   },
   {
@@ -502,6 +546,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       lifetime: "1.7•10<sup>3</sup>",
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Nihonium",
+      youtube: "https://youtu.be/3zC4CWTlbdQ",
+    },
   },
   {
     id: 114,
@@ -538,6 +586,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "80",
       lifetime: "1.2•10<sup>2</sup>",
       decay_mode: "Alpha",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Flerovium",
+      youtube: "https://youtu.be/5L-NNFPiRog",
     },
   },
   {
@@ -576,6 +628,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       lifetime: "90",
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Moscovium",
+      youtube: "https://youtu.be/ewQAJtbgr7w",
+    },
   },
   {
     id: 116,
@@ -613,6 +669,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       lifetime: "0.173",
       decay_mode: "Alpha",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Livermorium",
+      youtube: "https://youtu.be/WdbF4L_ruyM",
+    },
   },
   {
     id: 117,
@@ -648,6 +708,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "5•10<sup>-2</sup>",
       lifetime: "7.2•10<sup>-2</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Tennessine",
+      youtube: "https://youtu.be/1RGlXh9eC5E",
     },
   },
   {
@@ -685,6 +749,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "5•10<sup>-3</sup>",
       lifetime: "7•10<sup>-3</sup>",
       decay_mode: "Alpha",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Oganesson",
+      youtube: "https://youtu.be/VMv44bIBdQI",
     },
   },
 ];

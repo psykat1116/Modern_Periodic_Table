@@ -86,6 +86,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       resisitivity: "6.1•10<sup>-7</sup>",
       superconducting_point: 4.88,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Lanthanum",
+      youtube: "https://youtu.be/0YhbvVhAudE",
+    },
   },
   {
     id: 58,
@@ -174,6 +178,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       resisitivity: "7.4•10<sup>-7</sup>",
       superconducting_point: 0.022,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Cerium",
+      youtube: "https://youtu.be/HSa9MvYc90E",
+    },
   },
   {
     id: 59,
@@ -259,6 +267,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       molar_magnetic_suspectibility: "5.9604•10<sup>-8</sup>",
       electrical_conductivity: "1.4•10<sup>6</sup>",
       resisitivity: "7•10<sup>-7</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Praseodymium",
+      youtube: "https://youtu.be/FHDb-VjDWeE",
     },
   },
   {
@@ -346,6 +358,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       electrical_conductivity: "1.6•10<sup>6</sup>",
       resisitivity: "6.4•10<sup>-7</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Neodymium",
+      youtube: "https://youtu.be/SoxHTCod9Fc",
+    },
   },
   {
     id: 61,
@@ -414,6 +430,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       electrical_type: "Conductor",
       electrical_conductivity: "1.3•10<sup>6</sup>",
       resisitivity: "7.5•10<sup>-7</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Promethium",
+      youtube: "https://youtu.be/HplP_MY78NQ",
     },
   },
   {
@@ -502,6 +522,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       electrical_conductivity: "1.1•10<sup>6</sup>",
       resisitivity: "9.4•10<sup>-7</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Samarium",
+      youtube: "https://youtu.be/d-RbpEIHJRI",
+    },
   },
   {
     id: 63,
@@ -587,6 +611,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       resisitivity: "9•10<sup>-7</sup>",
       superconducting_point: 1.8,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Europium",
+      youtube: "https://youtu.be/uC4nn2Ku63c",
+    },
   },
   {
     id: 64,
@@ -669,6 +697,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       electrical_conductivity: "7.7•10<sup>5</sup>",
       resisitivity: "1.3•10<sup>-6</sup>",
       curie_point: 292,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Gadolinium",
+      youtube: "https://youtu.be/jDZU5urVQTY",
     },
   },
   {
@@ -757,6 +789,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "1.36•10<sup>-5</sup>",
       molar_magnetic_suspectibility: "2.161385•10<sup>-6</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Terbium",
+      youtube: "https://youtu.be/On5LjH9TQxY",
+    },
   },
   {
     id: 66,
@@ -844,6 +880,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "5.45•10<sup>-6</sup>",
       molar_magnetic_suspectibility: "8.85625•10<sup>-7</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Dysprosium",
+      youtube: "https://youtu.be/uc4EVhl-EuY",
+    },
   },
   {
     id: 67,
@@ -930,6 +970,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "4.82845•10<sup>-2</sup>",
       mass_magnetic_suspectibility: "5.49•10<sup>-6</sup>",
       molar_magnetic_suspectibility: "9.05467•10<sup>-7</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Holmium",
+      youtube: "https://youtu.be/v5CNMTfWVJ8",
     },
   },
   {
@@ -1019,6 +1063,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "3.77•10<sup>-6</sup>",
       molar_magnetic_suspectibility: "6.30566•10<sup>-7</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Erbium",
+      youtube: "https://youtu.be/zJ7SfFTUqgQ",
+    },
   },
   {
     id: 69,
@@ -1106,6 +1154,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "1.99•10<sup>-6</sup>",
       molar_magnetic_suspectibility: "3.36179•10<sup>-7</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Thulium",
+      youtube: "https://youtu.be/DyStjcP-ppw",
+    },
   },
   {
     id: 70,
@@ -1189,6 +1241,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "3.88•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "5.9•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "1.02•10<sup>-9</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Ytterbium",
+      youtube: "https://youtu.be/ivC-dBZvAkU",
     },
   },
   {
@@ -1275,6 +1331,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "1.18•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "1.2•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "2.1•10<sup>-10</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Lutetium",
+      youtube: "https://youtu.be/Z6HYAlSdR2g",
     },
   },
 ];

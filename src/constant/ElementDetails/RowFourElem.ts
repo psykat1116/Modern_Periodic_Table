@@ -83,6 +83,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       electrical_conductivity: "1.4•10<sup>7</sup>",
       resisitivity: "7•10<sup>-8</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Potassium",
+      youtube: "https://youtu.be/ANH-v-jd9PQ",
+    },
   },
   {
     id: 20,
@@ -170,6 +174,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       electrical_conductivity: "2.9•10<sup>7</sup>",
       resisitivity: "3.4•10<sup>-8</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Calcium",
+      youtube: "https://youtu.be/V9fuY8_ffFg",
+    },
   },
   {
     id: 21,
@@ -255,6 +263,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       electrical_conductivity: "1.8•10<sup>6</sup>",
       resisitivity: "5.5•10<sup>-7</sup>",
       superconducting_point: 0.05,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Scandium",
+      youtube: "https://youtu.be/Dh9QcKKObQE",
     },
   },
   {
@@ -343,6 +355,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       electrical_conductivity: "2.5•10<sup>6</sup>",
       resisitivity: "4•10<sup>-7</sup>",
       superconducting_point: 0.4,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Titanium",
+      youtube: "https://youtu.be/ptAR3allc7U",
     },
   },
   {
@@ -433,6 +449,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       resisitivity: "2•10<sup>-7</sup>",
       superconducting_point: 5.4,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Vanadium",
+      youtube: "https://youtu.be/eySYRB4OUZ4",
+    },
   },
   {
     id: 24,
@@ -522,6 +542,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       resisitivity: "1.3•10<sup>-7</sup>",
       superconducting_point: 5.4,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Chromium",
+      youtube: "https://youtu.be/JHs150cSTVc",
+    },
   },
   {
     id: 25,
@@ -606,6 +630,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       molar_magnetic_suspectibility: "6.6475•10<sup>-9</sup>",
       electrical_conductivity: "6.2•10<sup>5</sup>",
       resisitivity: "1.6•10<sup>-6</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Manganese",
+      youtube: "https://youtu.be/9ZLcpb0FmFE",
     },
   },
   {
@@ -693,6 +721,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       resisitivity: "9.7•10<sup>-8</sup>",
       curie_point: 1043,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Iron",
+      youtube: "https://youtu.be/uAMMQv0rKFI",
+    },
   },
   {
     id: 27,
@@ -778,6 +810,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       electrical_conductivity: "1.7•10<sup>7</sup>",
       resisitivity: "6•10<sup>-8</sup>",
       curie_point: 1394,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Cobalt",
+      youtube: "https://youtu.be/yvWKeYOdWbo",
     },
   },
   {
@@ -865,6 +901,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       electrical_conductivity: "1.4•10<sup>7</sup>",
       resisitivity: "7•10<sup>-8</sup>",
       curie_point: 631,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Nickel",
+      youtube: "https://youtu.be/AUmoaZn9bek",
     },
   },
   {
@@ -955,6 +995,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-1.08•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-6.86•10<sup>-11</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Copper",
+      youtube: "https://youtu.be/fyUWYpWkwIw",
+    },
   },
   {
     id: 30,
@@ -1044,6 +1088,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       molar_magnetic_suspectibility: "-1.45•10<sup>-10</sup>",
       superconducting_point: 0.85,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Zinc",
+      youtube: "https://youtu.be/ju6gGLxq99k",
+    },
   },
   {
     id: 31,
@@ -1128,6 +1176,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       molar_magnetic_suspectibility: "-2.09•10<sup>-10</sup>",
       superconducting_point: 1.083,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Galium",
+      youtube: "https://youtu.be/N6ccRvKKwZQ",
+    },
   },
   {
     id: 32,
@@ -1209,6 +1261,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "-7.98•10<sup>-6</sup>",
       mass_magnetic_suspectibility: "-1.5•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-1.09•10<sup>-10</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Germanium",
+      youtube: "https://youtu.be/2xylv_hijXw",
     },
   },
   {
@@ -1295,6 +1351,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-3.9•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-2.92•10<sup>-10</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Arsenic",
+      youtube: "https://youtu.be/yD8Vz-mFHgI",
+    },
   },
   {
     id: 34,
@@ -1379,6 +1439,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-4•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-3.16•10<sup>-10</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Selenium",
+      youtube: "https://youtu.be/IHrUtKjcAFE",
+    },
   },
   {
     id: 35,
@@ -1459,6 +1523,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-4.9•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-7.83•10<sup>-10</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Bromine",
+      youtube: "https://youtu.be/1CtnJtYcm_M",
+    },
   },
   {
     id: 36,
@@ -1533,6 +1601,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "-1.65•10<sup>-8</sup>",
       mass_magnetic_suspectibility: "-4.4•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-3.69•10<sup>-10</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Krypton",
+      youtube: "https://youtu.be/il4OOY7Zseg",
     },
   },
 ];

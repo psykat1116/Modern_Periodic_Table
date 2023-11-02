@@ -11,27 +11,27 @@ const Particles = ({ electrons, protons, neutrons }: Particles) => {
       }`}
     >
       <div
-        className={`w-1/3 flex flex-col justify-between items-center p-2 ${
+        className={`w-1/3 flex justify-around items-center p-2 ${
           theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
         } bg-[#1b1a1a] rounded-sm shadow-md`}
       >
-        <h1 className="mb-2 text-lg">Electrons</h1>
+        <h1 className="text-base">Electrons</h1>
         <p>{electrons}</p>
       </div>
       <div
-        className={`w-1/3 flex flex-col justify-between items-center p-2 ${
+        className={`w-1/3 flex justify-around items-center p-2 ${
           theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
         } bg-[#1b1a1a] rounded-sm shadow-md`}
       >
-        <h1 className="mb-2 text-lg">Protons</h1>
+        <h1 className="text-base">Protons</h1>
         <p>{protons}</p>
       </div>
       <div
-        className={`w-1/3 flex flex-col justify-between items-center p-2 ${
+        className={`w-1/3 flex justify-around items-center p-2 ${
           theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
         } bg-[#1b1a1a] rounded-sm shadow-md`}
       >
-        <h1 className="mb-2 text-lg">Neutrons</h1>
+        <h1 className="text-base">Neutrons</h1>
         <p>{neutrons}</p>
       </div>
     </div>

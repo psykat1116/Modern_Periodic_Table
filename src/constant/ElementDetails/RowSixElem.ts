@@ -83,6 +83,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       electrical_conductivity: "5*10<sup>6</sup>",
       resisitivity: "2*10<sup>-7</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Caesium",
+      youtube: "https://youtu.be/ytxx95g-kiA",
+    },
   },
   {
     id: 56,
@@ -167,6 +171,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       molar_magnetic_suspectibility: "1.552•10<sup>-9</sup>",
       electrical_conductivity: "2.9*10<sup>6</sup>",
       resisitivity: "3.5*10<sup>-7</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Barium",
+      youtube: "https://youtu.be/dtWVaYXD9xA",
     },
   },
   {
@@ -255,6 +263,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       resisitivity: "3*10<sup>-7</sup>",
       superconducting_point: 0.128,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Hafnium",
+      youtube: "https://youtu.be/-jLX2D_tta0",
+    },
   },
   {
     id: 73,
@@ -342,6 +354,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       resisitivity: "1.3*10<sup>-7</sup>",
       superconducting_point: 4.47,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Tantalum",
+      youtube: "https://youtu.be/7tsiT_zdFew",
+    },
   },
   {
     id: 74,
@@ -428,6 +444,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       electrical_conductivity: "2*10<sup>7</sup>",
       resisitivity: "5*10<sup>-8</sup>",
       superconducting_point: 0.015,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Tungsten",
+      youtube: "https://youtu.be/6XxcVg2Dfck",
     },
   },
   {
@@ -517,6 +537,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       resisitivity: "1.8*10<sup>-7</sup>",
       superconducting_point: 1.7,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Rhenium",
+      youtube: "https://youtu.be/Duk20wEVgJQ",
+    },
   },
   {
     id: 76,
@@ -601,6 +625,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       electrical_conductivity: "1.2*10<sup>7</sup>",
       resisitivity: "8.1*10<sup>-8</sup>",
       superconducting_point: 0.66,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Osmium",
+      youtube: "https://youtu.be/D9C_lbivcn4",
     },
   },
   {
@@ -689,6 +717,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       resisitivity: "4.7*10<sup>-8</sup>",
       superconducting_point: 0.11,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Iridium",
+      youtube: "https://youtu.be/lGy1vGnYAak",
+    },
   },
   {
     id: 78,
@@ -775,6 +807,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       molar_magnetic_suspectibility: "2.38•10<sup>-9</sup>",
       electrical_conductivity: "9.4*10<sup>6</sup>",
       resisitivity: "1.1*10<sup>-7</sup>",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Platinum",
+      youtube: "https://youtu.be/vhPu-3b0FnY",
     },
   },
   {
@@ -863,6 +899,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       electrical_conductivity: "4.5*10<sup>7</sup>",
       resisitivity: "2.2*10<sup>-8</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Gold",
+      youtube: "https://youtu.be/reMP1aP8Tgg",
+    },
   },
   {
     id: 80,
@@ -945,6 +985,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       electrical_conductivity: "10<sup>6</sup>",
       resisitivity: "9.6*10<sup>-7</sup>",
       superconducting_point: 4.154,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Mercury",
+      youtube: "https://youtu.be/PFf0SBuzLMQ",
     },
   },
   {
@@ -1033,6 +1077,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       electrical_conductivity: "6.7*10<sup>6</sup>",
       resisitivity: "1.5*10<sup>-7</sup>",
       superconducting_point: 2.38,
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Thallium",
+      youtube: "https://youtu.be/ZvgrXJwMm8I",
     },
   },
   {
@@ -1123,6 +1171,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       resisitivity: "2.1*10<sup>-7</sup>",
       superconducting_point: 7.2,
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Lead",
+      youtube: "https://youtu.be/LjpthO4r1GY",
+    },
   },
   {
     id: 83,
@@ -1210,6 +1262,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       electrical_conductivity: "7.7*10<sup>5</sup>",
       resisitivity: "1.3*10<sup>-6</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Bismuth",
+      youtube: "https://youtu.be/E7uiSTa1kXQ",
+    },
   },
   {
     id: 84,
@@ -1278,6 +1334,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       electrical_conductivity: "2.3*10<sup>6</sup>",
       resisitivity: "4.3*10<sup>-7</sup>",
     },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Polonium",
+      youtube: "https://youtu.be/K97oJed15j0",
+    },
   },
   {
     id: 85,
@@ -1333,6 +1393,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       half_life: "2.9*10<sup>4</sup>",
       lifetime: "4.2*10<sup>4</sup>",
       decay_mode: "Positron",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Astatine",
+      youtube: "https://youtu.be/GP8jJgzEmwE",
     },
   },
   {
@@ -1397,6 +1461,10 @@ export const RowSixElem: ElementDetailsProps[] = [
     },
     prevalence: {
       ocean: "6*10<sup>-20</sup>%",
+    },
+    external_links: {
+      wikipedia: "https://en.wikipedia.org/wiki/Radon",
+      youtube: "https://youtu.be/mTuC_LrEfbU",
     },
   },
 ];

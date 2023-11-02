@@ -17,6 +17,7 @@ import Reactivity from "@/components/Properties/Reactivity";
 import NeuclearProperty from "@/components/Properties/NeuclearProperty";
 import EMProperty from "@/components/Properties/EMProperty";
 import Prevalence from "@/components/Properties/Prevalence";
+import ExternalLink from "@/components/Properties/ExternalLink";
 import getElementData from "@/helper/getElementData";
 
 const Page = () => {
@@ -106,13 +107,14 @@ const Page = () => {
               <h1>Electron Shell Configuration</h1>
             </div>
             {elem && <Particles {...elem.particles} />}
+            {elem.external_links && <ExternalLink {...elem.external_links} />}
           </div>
-          <div className="w-2/3 h-[79vh] ml-5 overflow-y-scroll flex flex-col justify-start items-center gap-2">
+          <div className="w-2/3 h-[79vh] ml-5 overflow-y-scroll flex flex-col justify-start items-center gap-3">
             {elem && (
               <>
                 <Description description={elem.description} />
-                <GeneralInfo {...elem.general_properties} />
                 <Overview {...elem.overview} />
+                <GeneralInfo {...elem.general_properties} />
                 <AtomicProperty {...elem.atomic_properties} />
                 {elem.thermodynamic_properties && (
                   <ThermoProperty {...elem.thermodynamic_properties} />
@@ -121,10 +123,10 @@ const Page = () => {
                   <MaterialProperty {...elem.material_properties} />
                 )}
                 {elem.reactivity && <Reactivity {...elem.reactivity} />}
-                <NeuclearProperty {...elem.neuclear_properties} />
                 {elem.electromagnetic_properties && (
                   <EMProperty {...elem.electromagnetic_properties} />
                 )}
+                <NeuclearProperty {...elem.neuclear_properties} />
                 {elem.prevalence && <Prevalence {...elem.prevalence} />}
               </>
             )}
