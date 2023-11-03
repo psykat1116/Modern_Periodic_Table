@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import Link from "next/link";
 import { Overview } from "@/types/ElementTypes";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
@@ -23,14 +24,14 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
         theme === "dark"
           ? "text-text_primary bg-bg_dark"
           : "bg-bg_light text-text_secondary"
-      } shadow-md rounded-sm`}
+      } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Overview</h1>
       <div className="flex flex-col w-full justify-start items-start">
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Latin Name</p>
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Latin Name</p>
           <div
-            className={`w-[70%] border ${
+            className={`w-[80%] border ${
               theme === "dark" ? "border-text_primary" : "border-text_secondary"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
@@ -45,26 +46,9 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Discoverer</p>
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Discovery</p>
           <div
-            className={`w-[70%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-          >
-            <p>{discoverer}</p>
-            <button onClick={() => handleCopy(discoverer, "discoverer")}>
-              {!isCopying.discoverer ? (
-                <MdContentCopy />
-              ) : (
-                <MdCheck className="text-green-700" />
-              )}
-            </button>
-          </div>
-        </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Discovery</p>
-          <div
-            className={`w-[70%] border ${
+            className={`w-[80%] border ${
               theme === "dark" ? "border-text_primary" : "border-text_secondary"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
@@ -78,6 +62,26 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
                 <MdCheck className="text-green-700" />
               )}
             </button>
+          </div>
+        </div>
+        <div className="flex flex-row justify-start items-start w-full mt-3">
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Discoverer</p>
+          <div className="w-[80%] gap-2 grid grid-cols-2 text-sm">
+            {discoverer.map((d) => {
+              return (
+                <Link
+                  target="_blank"
+                  href={`https://en.wikipedia.org/wiki/${d[1]}`}
+                  className={`border ${
+                    theme === "dark"
+                      ? "border-text_primary"
+                      : "border-text_secondary"
+                  } px-2 py-1 rounded-[4px] select-none`}
+                >
+                  {d[0]}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>

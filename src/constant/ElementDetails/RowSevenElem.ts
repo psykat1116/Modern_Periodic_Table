@@ -23,7 +23,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Francium",
       discovery: 1939,
-      discoverer: "Marguerite Perey",
+      discoverer: [["Marguerite Perey", "Marguerite_Perey"]],
     },
     atomic_properties: {
       atomic_weight: 223,
@@ -80,7 +80,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Radium",
       discovery: 1898,
-      discoverer: "Pierre Curie, Marie Curie",
+      discoverer: [
+        ["Marie Curie", "Marie_Curie"],
+        ["Pierre Curie", "Pierre_Curie"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 226,
@@ -149,7 +152,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Rutherfordium",
       discovery: 1964,
-      discoverer: "Albert Ghiorso",
+      discoverer: [["Albert Ghiorso", "Albert_Ghiorso"]],
     },
     atomic_properties: {
       atomic_weight: 267,
@@ -194,7 +197,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Rutherfordium",
       discovery: 1964,
-      discoverer: "Albert Ghiorso",
+      discoverer: [["Albert Ghiorso", "Albert_Ghiorso"]],
     },
     atomic_properties: {
       atomic_weight: 270,
@@ -239,7 +242,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Seaborgium",
       discovery: 1967,
-      discoverer: "Albert Ghiorso",
+      discoverer: [["Albert Ghiorso", "Albert_Ghiorso"]],
     },
     atomic_properties: {
       atomic_weight: 269,
@@ -283,7 +286,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Bohrium",
       discovery: 1981,
-      discoverer: "Peter Armbruster, Gottfried Munzenburg",
+      discoverer: [
+        ["Peter Armbruster", "Peter_Armbruster"],
+        ["Gottfried Muzenburg", "Gottfried_Muzenburg"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 270,
@@ -327,7 +333,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Hassium",
       discovery: 1984,
-      discoverer: "Peter Armbruster",
+      discoverer: [["Peter Armbruster", "Peter_Armbruster"]],
     },
     atomic_properties: {
       atomic_weight: 270,
@@ -368,7 +374,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Meitnerium",
       discovery: 1982,
-      discoverer: "Peter Armbruster, Gottfried Muzenburg",
+      discoverer: [
+        ["Peter Armbruster", "Peter_Armbruster"],
+        ["Gottfried Muzenburg", "Gottfried_Muzenburg"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 278,
@@ -409,7 +418,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Darmstadtium",
       discovery: 1994,
-      discoverer: "Sigurd Hofmann",
+      discoverer: [["Sigurd Hofmann", "Sigurd_Hofmann"]],
     },
     atomic_properties: {
       atomic_weight: 281,
@@ -450,7 +459,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Roentgenium",
       discovery: 1994,
-      discoverer: "Sigurd Hofmann",
+      discoverer: [["Sigurd Hofmann", "Sigurd_Hofmann"]],
     },
     atomic_properties: {
       atomic_weight: 281,
@@ -491,7 +500,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Copernicium",
       discovery: 1996,
-      discoverer: "Sigurd Hofmann",
+      discoverer: [["Sigurd Hofmann", "Sigurd_Hofmann"]],
     },
     atomic_properties: {
       atomic_weight: 285,
@@ -532,7 +541,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Nihonium",
       discovery: 2004,
-      discoverer: "Sigurd Hofmann, Kosuke Morita",
+      discoverer: [
+        ["Sigurd Hofmann", "Sigurd_Hofmann"],
+        ["Kosuke Morita", "Kosuke_Morita"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 286,
@@ -573,7 +585,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Flerovium",
       discovery: 1998,
-      discoverer: "Sigurd Hofmann",
+      discoverer: [["Sigurd Hofmann", "Sigurd_Hofmann"]],
     },
     atomic_properties: {
       atomic_weight: 289,
@@ -614,7 +626,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Moscovium",
       discovery: 2004,
-      discoverer: "Yuri Oganessian",
+      discoverer: [["Yuri Oganessian", "Yuri_Oganessian"]],
     },
     atomic_properties: {
       atomic_weight: 289,
@@ -655,7 +667,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Livermorium",
       discovery: 2000,
-      discoverer: "Yuri Oganessian",
+      discoverer: [["Yuri Oganessian", "Yuri_Oganessian"]],
     },
     atomic_properties: {
       atomic_weight: 289,
@@ -696,7 +708,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Tennessine",
       discovery: 2010,
-      discoverer: "Yuri Oganessian",
+      discoverer: [["Yuri Oganessian", "Yuri_Oganessian"]],
     },
     atomic_properties: {
       atomic_weight: 293,
@@ -736,7 +748,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Oganesson",
       discovery: 2006,
-      discoverer: "Yuri Oganessian",
+      discoverer: [["Yuri Oganessian", "Yuri_Oganessian"]],
     },
     atomic_properties: {
       atomic_weight: 294,

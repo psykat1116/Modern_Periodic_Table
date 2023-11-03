@@ -50,13 +50,15 @@ const MaterialProperty = ({
         theme === "dark"
           ? "text-text_primary bg-bg_dark"
           : "bg-bg_light text-text_secondary"
-      } shadow-md rounded-sm`}
+      } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Material Property</h1>
       <div className="flex flex-col w-full justify-start items-start">
         {color && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Color</p>
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+              Color
+            </p>
             <div
               className={`w-[70%] border ${
                 theme === "dark"
@@ -77,7 +79,7 @@ const MaterialProperty = ({
         )}
         {molar_volume && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Molar Volume (m<sup>3</sup>mol<sup>-1</sup>)
             </p>
             <div
@@ -108,7 +110,7 @@ const MaterialProperty = ({
         )}
         {mohs_hardness && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Mohs Hardness
             </p>
             <div
@@ -135,7 +137,7 @@ const MaterialProperty = ({
         )}
         {bulk_modulus && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Bulk Modulus (GPa)
             </p>
             <div
@@ -162,7 +164,7 @@ const MaterialProperty = ({
         )}
         {brinell_hardness && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Brinnel Hardness (MPa)
             </p>
             <div
@@ -189,7 +191,7 @@ const MaterialProperty = ({
         )}
         {density && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Density (Kgm<sup>-3</sup>)
             </p>
             <div
@@ -212,7 +214,7 @@ const MaterialProperty = ({
         )}
         {liquid_density && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Liquid Density (Kgm<sup>-3</sup>)
             </p>
             <div
@@ -239,7 +241,7 @@ const MaterialProperty = ({
         )}
         {young_modulus && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Young Modulus (GPa)
             </p>
             <div
@@ -266,7 +268,7 @@ const MaterialProperty = ({
         )}
         {vickers_hardness && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Vickers Hardness (MPa)
             </p>
             <div
@@ -293,7 +295,7 @@ const MaterialProperty = ({
         )}
         {shear_modulus && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Shear Hardness (MPa)
             </p>
             <div
@@ -350,7 +352,7 @@ const MaterialProperty = ({
         )}
         {sound_speed && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Sound Speed (ms<sup>-1</sup>)
             </p>
             <div
@@ -377,7 +379,7 @@ const MaterialProperty = ({
         )}
         {poisson_ratio && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Poisson Ratio
             </p>
             <div
@@ -404,7 +406,7 @@ const MaterialProperty = ({
         )}
         {refrective_index && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Refractive Index
             </p>
             <div

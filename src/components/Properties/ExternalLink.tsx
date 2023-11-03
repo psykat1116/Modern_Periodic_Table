@@ -17,7 +17,7 @@ const ExternalLink = ({ youtube, wikipedia }: ExternalLinks) => {
         href={wikipedia}
         className={`w-1/2 flex justify-center items-center p-2 ${
           theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-        } bg-[#1b1a1a] rounded-sm shadow-md`}
+        } bg-[#1b1a1a] rounded-sm shadow-lg`}
       >
         <BsWikipedia className="text-lg" />
       </Link>
@@ -26,7 +26,7 @@ const ExternalLink = ({ youtube, wikipedia }: ExternalLinks) => {
         href={youtube}
         className={`w-1/2 flex justify-center items-center p-2 ${
           theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-        } bg-[#1b1a1a] rounded-sm shadow-md`}
+        } bg-[#1b1a1a] rounded-sm shadow-lg`}
       >
         <BsYoutube className="text-lg" />
       </Link>

@@ -23,7 +23,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Natrium",
       discovery: 1807,
-      discoverer: "Humphry Davy",
+      discoverer: [["Humphry Davy","Humphry_Davy"]],
     },
     atomic_properties: {
       atomic_weight: 22.98976928,
@@ -88,8 +88,8 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Sodium",
-      youtube: "https://youtu.be/WsrdE5g4z1I"
-    }
+      youtube: "https://youtu.be/WsrdE5g4z1I",
+    },
   },
   {
     id: 12,
@@ -113,7 +113,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Magnesium",
       discovery: 1755,
-      discoverer: "Joseph Black",
+      discoverer: [["Joseph Black","Joseph_Black"]],
     },
     atomic_properties: {
       atomic_weight: 24.305,
@@ -179,8 +179,8 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Magnesium",
-      youtube: "https://youtu.be/FKkWdizutxI"
-    }
+      youtube: "https://youtu.be/FKkWdizutxI",
+    },
   },
   {
     id: 13,
@@ -204,7 +204,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Aluminium",
       discovery: 1825,
-      discoverer: "Hans Christian Ørsted",
+      discoverer: [["Hans Christian Ørsted", "Hans_Christian_Ørsted"]],
     },
     atomic_properties: {
       atomic_weight: 26.9815385,
@@ -272,8 +272,8 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Aluminium",
-      youtube: "https://youtu.be/nqicpx0adY4"
-    }
+      youtube: "https://youtu.be/nqicpx0adY4",
+    },
   },
   {
     id: 14,
@@ -297,7 +297,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Silicum",
       discovery: 1824,
-      discoverer: "Jöns Jacob Berzelius",
+      discoverer: [["Jöns Jacob Berzelius", "Jöns_Jacob_Berzelius"]],
     },
     atomic_properties: {
       atomic_weight: 28.085,
@@ -362,8 +362,8 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Silicon",
-      youtube: "https://youtu.be/akvr9utNCVs"
-    }
+      youtube: "https://youtu.be/akvr9utNCVs",
+    },
   },
   {
     id: 15,
@@ -387,7 +387,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Phosphorus",
       discovery: 1669,
-      discoverer: "Hennig Brandt",
+      discoverer: [["Hennig Brandt", "Hennig_Brandt"]],
     },
     atomic_properties: {
       atomic_weight: 30.973761998,
@@ -447,8 +447,8 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Phosphorus",
-      youtube: "https://youtu.be/NdOyFPv7TkY"
-    }
+      youtube: "https://youtu.be/NdOyFPv7TkY",
+    },
   },
   {
     id: 16,
@@ -472,7 +472,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Sulphur",
       discovery: -500,
-      discoverer: "Prehistoric",
+      discoverer: [["Prehistoric", "Prehistoric"]],
     },
     atomic_properties: {
       atomic_weight: 32.06,
@@ -534,8 +534,8 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Sulphur",
-      youtube: "https://youtu.be/mddfu3TXaRw"
-    }
+      youtube: "https://youtu.be/mddfu3TXaRw",
+    },
   },
   {
     id: 17,
@@ -559,7 +559,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Chlorum",
       discovery: 1774,
-      discoverer: "Carl Wilhelm Scheele",
+      discoverer: [["Carl Wilhelm Scheele", "Carl_Wilhelm_Scheele"]],
     },
     atomic_properties: {
       atomic_weight: 35.45,
@@ -621,8 +621,8 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Chlorine",
-      youtube: "https://youtu.be/BXCfBl4rmh0"
-    }
+      youtube: "https://youtu.be/BXCfBl4rmh0",
+    },
   },
   {
     id: 18,
@@ -646,10 +646,14 @@ export const RowThreeElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Argon",
       discovery: 1894,
-      discoverer: "Lord Rayleigh, Sir William Ramsay",
+      discoverer: [
+        ["Lord Rayleigh", "Lord_Rayleigh"],
+        ["Sir William Ramsay", "William_Ramsay"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 39.948,
+      oxidation_states: [0],
       electron_shell_configuration: "K2 L8 M8",
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup>",
@@ -699,7 +703,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Argon",
-      youtube: "https://youtu.be/b3TrEGlpttI"
-    }
+      youtube: "https://youtu.be/b3TrEGlpttI",
+    },
   },
 ];

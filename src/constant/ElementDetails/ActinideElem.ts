@@ -22,7 +22,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Actinium",
       discovery: 1899,
-      discoverer: "André-Louis Debierne",
+      discoverer: [["André-Louis Debierne", "André-Louis_Debierne"]],
     },
     atomic_properties: {
       atomic_weight: 227,
@@ -85,7 +85,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Thorium",
       discovery: 1829,
-      discoverer: "Jöns Jacob Berzelius",
+      discoverer: [["Jöns Jacob Berzelius", "Jöns_Jacob_Berzelius"]],
     },
     atomic_properties: {
       atomic_weight: 231.0377,
@@ -172,8 +172,15 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Protactinium",
       discovery: 1913,
-      discoverer:
-        "Oswald Helmuth Göhring, John Arnold Cranston, Alexander Fleck, Otto Hahn, Lise Meitner, Kasimir Fajans, Frederick Soddy",
+      discoverer: [
+        ["John Arnold Cranston", "John_Arnold_Cranston"],
+        ["Oswald Helmuth Göhring", "Oswald_Helmuth_Göhring"],
+        ["Lise Meitner", "Lise_Meitner"],
+        ["Alexander Fleck", "Alexander_Fleck"],
+        ["Otto Hahn", "Otto_Hahn"],
+        ["Kasimir Fajans", "Kasimir_Fajans"],
+        ["Frederick Soddy", "Frederick_Soddy"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 231.03588,
@@ -253,7 +260,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Uranium",
       discovery: 1789,
-      discoverer: "Martin Heinrich Klaproth",
+      discoverer: [["Martin Heinrich Klaproth", "Martin_Heinrich_Klaproth"]],
     },
     atomic_properties: {
       atomic_weight: 238.02891,
@@ -345,7 +352,10 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Neptunium",
       discovery: 1940,
-      discoverer: "Edwin McMillan, Philip Hauge Abelson",
+      discoverer: [
+        ["Edwin McMillan", "Edwin_McMillan"],
+        ["Philip Hauge Abelson", "Philip_Abelson"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 237,
@@ -412,7 +422,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Plutonium",
       discovery: 1789,
-      discoverer: "Martin Heinrich Klaproth",
+      discoverer: [["Martin Heinrich Klaproth", "Martin_Heinrich_Klaproth"]],
     },
     atomic_properties: {
       atomic_weight: 244,
@@ -487,8 +497,12 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Americium",
       discovery: 1944,
-      discoverer:
-        "Ralph Arthur James, Leon O Morgan, Glenn Seaborg, Albert Ghiorso",
+      discoverer: [
+        ["Ralph Arthur James", "Ralph_A._James"],
+        ["Albert Ghiorso", "Albert_Ghiorso"],
+        ["Glenn Seaborg", "Glenn_Seaborg"],
+        ["Leon O Morgan", "Leon_O._Morgan"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 243,
@@ -555,7 +569,11 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Curium",
       discovery: 1944,
-      discoverer: "Ralph Arthur James, Glenn Seaborg, Albert Ghiorso",
+      discoverer: [
+        ["Ralph Arthur James", "Ralph_A._James"],
+        ["Albert Ghiorso", "Albert_Ghiorso"],
+        ["Glenn Seaborg", "Glenn_Seaborg"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 247,
@@ -614,7 +632,11 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Berkelium",
       discovery: 1949,
-      discoverer: "Stanley Gerald Thompson, Albert Ghiorso, Glenn Seaboarg",
+      discoverer: [
+        ["Stanley Gerald Thompson", "Stanley_Gerald_Thompson"],
+        ["Albert Ghiorso", "Albert_Ghiorso"],
+        ["Glenn Seaborg", "Glenn_Seaborg"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 247,
@@ -671,8 +693,12 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Californium",
       discovery: 1950,
-      discoverer:
-        "Stanley Gerald Thompson, Kenneth Street Jr, Glenn Seaborg, Albert Ghiorso",
+      discoverer: [
+        ["Stanley Gerald Thompson", "Stanley_Gerald_Thompson"],
+        ["Albert Ghiorso", "Albert_Ghiorso"],
+        ["Kenneth_Street_Jr.", "Kenneth_Street_Jr."],
+        ["Glenn Seaborg", "Glenn_Seaborg"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 251,
@@ -728,8 +754,12 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Einsteinium",
       discovery: 1952,
-      discoverer:
-        "Stanley Gerald Thompson, Albert Ghiorso, Gregory R Choppin, Bernard G Harvey",
+      discoverer: [
+        ["Stanley Gerald Thompson", "Stanley_Gerald_Thompson"],
+        ["Albert Ghiorso", "Albert_Ghiorso"],
+        ["Bernard G Harvey", "Bernard_G._Harvey"],
+        ["Gregory R Choppin", "Gregory_R._Choppin"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 252,
@@ -781,8 +811,12 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Fermium",
       discovery: 1952,
-      discoverer:
-        "Stanley Gerald Thompson, Albert Ghiorso, Gregory R Choppin, Bernard G Harvey",
+      discoverer: [
+        ["Stanley Gerald Thompson", "Stanley_Gerald_Thompson"],
+        ["Albert Ghiorso", "Albert_Ghiorso"],
+        ["Bernard G Harvey", "Bernard_G._Harvey"],
+        ["Gregory R Choppin", "Gregory_R._Choppin"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 257,
@@ -832,7 +866,10 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Mendelevium",
       discovery: 1955,
-      discoverer: "Albert Ghiorso, Glenn Seaborg",
+      discoverer: [
+        ["Albert Ghiorso", "Albert_Ghiorso"],
+        ["Glenn Seaborg", "Glenn_Seaborg"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 258,
@@ -881,8 +918,12 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Nobelium",
       discovery: 1958,
-      discoverer:
-        "Albert Ghiorso, Glenn Seaborg, TorbjØrn Sikkeland, John R Walton",
+      discoverer: [
+        ["Albert Ghiorso", "Albert_Ghiorso"],
+        ["John R Walton", "John_R._Walton"],
+        ["TorbjØrn Sikkeland", "TorbjØrn_Sikkeland"],
+        ["Glenn Seaborg", "Glenn_Seaborg"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 259,
@@ -931,8 +972,12 @@ export const ActinideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Lawrencium",
       discovery: 1952,
-      discoverer:
-        "Stanley Gerald Thompson, Albert Ghiorso, Gregory R Choppin, Bernard G Harvey",
+      discoverer: [
+        ["Stanley Gerald Thompson", "Stanley_Gerald_Thompson"],
+        ["Albert Ghiorso", "Albert_Ghiorso"],
+        ["Gregory R Choppin", "Gregory_R._Choppin"],
+        ["Bernard G Harvey", "Bernard_G._Harvey"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 262,

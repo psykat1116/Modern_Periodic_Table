@@ -32,14 +32,14 @@ const GeneralInfo = ({
         theme === "dark"
           ? "text-text_primary bg-bg_dark"
           : "bg-bg_light text-text_secondary"
-      } shadow-md rounded-sm`}
+      } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">General Properties</h1>
       <div className="flex flex-col w-full justify-start items-start">
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Atomic Number</p>
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Atomic Number</p>
           <div
-            className={`w-[70%] border ${
+            className={`w-[80%] border ${
               theme === "dark" ? "border-text_primary" : "border-text_secondary"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
@@ -59,9 +59,9 @@ const GeneralInfo = ({
         </div>
         {group && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Group</p>
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Group</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[80%] border ${
                 theme === "dark"
                   ? "border-text_primary"
                   : "border-text_secondary"
@@ -79,9 +79,9 @@ const GeneralInfo = ({
           </div>
         )}
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Period</p>
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Period</p>
           <div
-            className={`w-[70%] border ${
+            className={`w-[80%] border ${
               theme === "dark" ? "border-text_primary" : "border-text_secondary"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
@@ -96,9 +96,9 @@ const GeneralInfo = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Block</p>
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Block</p>
           <div
-            className={`w-[70%] border ${
+            className={`w-[80%] border ${
               theme === "dark" ? "border-text_primary" : "border-text_secondary"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
@@ -113,9 +113,9 @@ const GeneralInfo = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">CAS Number</p>
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">CAS Number</p>
           <div
-            className={`w-[70%] border ${
+            className={`w-[80%] border ${
               theme === "dark" ? "border-text_primary" : "border-text_secondary"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >

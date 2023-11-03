@@ -23,7 +23,11 @@ export const RowTwoElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Lithium",
       discovery: 1817,
-      discoverer: "Augustus Matthiessen, Johan August Arfwedson, Robert Bunsen",
+      discoverer: [
+        ["Augustus Matthiessen", "Augustus_Matthiessen"],
+        ["Johan August Arfwedson", "Johan_August_Arfwedson"],
+        ["Robert Bunsen", "Robert_Bunsen"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 6.94,
@@ -112,8 +116,11 @@ export const RowTwoElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Beryllium",
       discovery: 1797,
-      discoverer:
-        "Nicolas-Louis Vauquelin, Friedrich Wohler, Antonie A B Bussy",
+      discoverer: [
+        ["Nicolas-Louis Vauquelin", "Louis_Nicolas_Vauquelin"],
+        ["Antonie A B Bussy", "Antoine_Bussy"],
+        ["Friedrich Wöhler", "Friedrich_Wöhler"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 9.0121831,
@@ -204,8 +211,11 @@ export const RowTwoElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Borum",
       discovery: 1808,
-      discoverer:
-        "Joseph Louis Gay-Lussac, Louis-Jacques Thenard, Humphry Davy",
+      discoverer: [
+        ["Joseph Louis Gay-Lussac", "Joseph_Louis_Gay-Lussac"],
+        ["Louis-Jacques Thenard", "Louis_Jacques_Thénard"],
+        ["Humphry Davy", "Humphry_Davy"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 10.81,
@@ -292,7 +302,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Carbonium",
       discovery: -3750,
-      discoverer: "Prehistorics",
+      discoverer: [["Prehistorics", "Prehistorics"]],
     },
     atomic_properties: {
       atomic_weight: 12.011,
@@ -379,7 +389,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Nitrogenium",
       discovery: 1772,
-      discoverer: "Daniel Rutherford, Antonie Laurent Lavoisier",
+      discoverer: [
+        ["Daniel Rutherford", "Daniel_Rutherford"],
+        ["Antonie Laurent Lavoisier", "Antoine_Lavoisier"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 14.007,
@@ -460,7 +473,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Oxygenium",
       discovery: 1774,
-      discoverer: "Joseph Priestley",
+      discoverer: [["Joseph Priestley", "Joseph_Priestley"]],
     },
     atomic_properties: {
       atomic_weight: 15.999,
@@ -542,7 +555,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Fluorine",
       discovery: 1886,
-      discoverer: "Henri Moissan",
+      discoverer: [["Henri Moissan", "Henri_Moissan"]],
     },
     atomic_properties: {
       atomic_weight: 18.998403163,
@@ -617,10 +630,14 @@ export const RowTwoElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Neon",
       discovery: 1898,
-      discoverer: "Sir William Ramsay, Morris William Travers",
+      discoverer: [
+        ["Sir William Ramsay", "William_Ramsay"],
+        ["Morris Willam Travers", "Morris_Travers"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 20.1797,
+      oxidation_states: [0],
       electron_shell_configuration: "K2 L8",
       electron_configuration: "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup>",
       gas_atom_multiplicities: 1,

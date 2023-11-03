@@ -23,7 +23,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Rubidium",
       discovery: 1861,
-      discoverer: "Robert Wilhelm Bunsen, Gustav Kirchhoff",
+      discoverer: [
+        ["Gustav Kirchhoff", "Gustav_Kirchhoff"],
+        ["Robert Wilhelm Bunsen", "Robert_Bunsen"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 85.4678,
@@ -111,7 +114,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Strontium",
       discovery: 1790,
-      discoverer: "Adair Crawford, Humphry Davy",
+      discoverer: [
+        ["Adair Crawford", "Adair_Crawford"],
+        ["Humphry Davy", "Humpry_Davy"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 87.62,
@@ -198,7 +204,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Strontium",
       discovery: 1790,
-      discoverer: "Adair Crawford, Humphry Davy",
+      discoverer: [
+        ["Adair Crawford", "Adair_Crawford"],
+        ["Humphry Davy", "Humpry_Davy"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 88.90584,
@@ -288,7 +297,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Zirconium",
       discovery: 1789,
-      discoverer: "Martin Heinrich Klaproth, Humphry Davy",
+      discoverer: [
+        ["Martin Heinrich Klaproth", "Martin_Heinrich_Klaproth"],
+        ["Humphry Davy", "Humpry_Davy"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 91.224,
@@ -380,7 +392,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Niobium",
       discovery: 1801,
-      discoverer: "Charles Hatchett",
+      discoverer: [["Charles Hatchett", "Charles_Hatchett"]],
     },
     atomic_properties: {
       atomic_weight: 92.90637,
@@ -471,7 +483,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Molybdenum",
       discovery: 1781,
-      discoverer: "Peter Jacob Hjelm",
+      discoverer: [["Peter Jacob Hjelm", "Peter_Jacob_Hjelm"]],
     },
     atomic_properties: {
       atomic_weight: 95.95,
@@ -564,7 +576,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Technetium",
       discovery: 1937,
-      discoverer: "Carlo Perrier, Emilio Segrè",
+      discoverer: [
+        ["Carlo Perrier", "Carlo_Perrier"],
+        ["Emilio Segrè", "Emilio_Segrè"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 98,
@@ -647,7 +662,11 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Ruthenium",
       discovery: 1808,
-      discoverer: "Gottfried Osann, Jędrzej Śniadecki, Karl Karlovich Klaus",
+      discoverer: [
+        ["Gottfried Osann", "Gottfried_Osann"],
+        ["Jędrzej Śniadecki", "Jędrzej_Śniadecki"],
+        ["Karl Karlovich Klaus", "Karl_Karlovich_Klaus"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 101.07,
@@ -739,7 +758,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Rhodium",
       discovery: 1803,
-      discoverer: "William Hyde Wollaston",
+      discoverer: [["William Hyde Wollaston", "William_Hyde_Wollaston"]],
     },
     atomic_properties: {
       atomic_weight: 102.9055,
@@ -830,7 +849,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Palladium",
       discovery: 1803,
-      discoverer: "William Hyde Wollaston",
+      discoverer: [["William Hyde Wollaston", "William_Hyde_Wollaston"]],
     },
     atomic_properties: {
       atomic_weight: 106.42,
@@ -921,7 +940,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Argentum",
       discovery: -3000,
-      discoverer: "Prehistoric",
+      discoverer: [["Prehistoric", "Prehistoric"]],
     },
     atomic_properties: {
       atomic_weight: 107.8682,
@@ -1013,7 +1032,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Cadmium",
       discovery: 1817,
-      discoverer: "Friedrich Stromeyer",
+      discoverer: [["Friedrich Stromeyer", "Friedrich_Stromeyer"]],
     },
     atomic_properties: {
       atomic_weight: 112.414,
@@ -1103,7 +1122,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Indium",
       discovery: 1863,
-      discoverer: "Ferdinand Reich, Hieronymus Theodor Richter",
+      discoverer: [
+        ["Ferdinand Reich", "Ferdinand_Reich"],
+        ["Hieronymus Theodor Richter", "Hieronymus_Theodor_Richter"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 114.818,
@@ -1191,7 +1213,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Stannum",
       discovery: -3000,
-      discoverer: "Prehistoric",
+      discoverer: [["Prehistoric", "Prehistoric"]],
     },
     atomic_properties: {
       atomic_weight: 118.71,
@@ -1284,7 +1306,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Stibium",
       discovery: -3000,
-      discoverer: "Prehistoric",
+      discoverer: [["Prehistoric", "Prehistoric"]],
     },
     atomic_properties: {
       atomic_weight: 121.76,
@@ -1373,7 +1395,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Stannum",
       discovery: -3000,
-      discoverer: "Prehistoric",
+      discoverer: [["Prehistoric", "Prehistoric"]],
     },
     atomic_properties: {
       atomic_weight: 127.6,
@@ -1462,7 +1484,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Iodum",
       discovery: 1811,
-      discoverer: "Bernard Courtois",
+      discoverer: [["Bernard Courtois", "Bernard_Courtois"]],
     },
     atomic_properties: {
       atomic_weight: 126.90447,
@@ -1545,7 +1567,10 @@ export const RowFiveElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Xenon",
       discovery: 1898,
-      discoverer: "Sir William Ramsay, Morris William Travers",
+      discoverer: [
+        ["Sir William Ramsay", "William_Ramsay"],
+        ["Morris William Travers", "Morris_Travers"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 131.293,

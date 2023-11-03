@@ -29,17 +29,17 @@ const Reactivity = ({
         theme === "dark"
           ? "text-text_primary bg-bg_dark"
           : "bg-bg_light text-text_secondary"
-      } shadow-md rounded-sm`}
+      } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Reactivity</h1>
       <div className="flex flex-col w-full justify-start items-start">
         {electron_affinity && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
               Electron Affinity (kJmol<sup>-1</sup>)
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[75%] border ${
                 theme === "dark"
                   ? "border-text_primary"
                   : "border-text_secondary"
@@ -62,11 +62,11 @@ const Reactivity = ({
         )}
         {electronegativity && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
               Electronegativity
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[75%] border ${
                 theme === "dark"
                   ? "border-text_primary"
                   : "border-text_secondary"
@@ -89,11 +89,11 @@ const Reactivity = ({
         )}
         {ionization_energy && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
               Ionization Energy (kJmol<sup>-1</sup>)
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[75%] border ${
                 theme === "dark"
                   ? "border-text_primary"
                   : "border-text_secondary"
@@ -115,9 +115,9 @@ const Reactivity = ({
           </div>
         )}
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Valence</p>
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">Valence</p>
           <div
-            className={`w-[70%] border ${
+            className={`w-[75%] border ${
               theme === "dark" ? "border-text_primary" : "border-text_secondary"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >

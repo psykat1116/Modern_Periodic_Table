@@ -23,7 +23,7 @@ export const RowOneElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Hydrogenium",
       discovery: 1766,
-      discoverer: "Henry Cavendish",
+      discoverer: [["Henry Cavendish", "Henry_Cavendish"]],
     },
     atomic_properties: {
       atomic_weight: 1.008,
@@ -104,10 +104,15 @@ export const RowOneElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Helium",
       discovery: 1868,
-      discoverer: "Sir Edward Frankland, Pierre Janssen, Normal Lockver",
+      discoverer: [
+        ["Sir Edward Frankland", "Edward_Frankland"],
+        ["Pierre Janssen", "Pierre_Janssen"],
+        ["Normal Lockver", "Normal_Lockver"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 4.002602,
+      oxidation_states: [0],
       electron_shell_configuration: "K2",
       electron_configuration: "1s<sup>2</sup>",
       gas_atom_multiplicities: 1,

@@ -17,7 +17,7 @@ export interface Particles {
 export interface Overview {
   latin_name: string;
   discovery: number;
-  discoverer: string;
+  discoverer: string[][];
 }
 
 export interface AtomicProperties {
@@ -63,7 +63,7 @@ export interface MaterialProperties {
 export interface NeuclearProperties {
   radioactive: "Yes" | "No";
   half_life: string | "∞";
-  lifetime: string;
+  lifetime: string | "∞";
   neutron_cross_section?: number;
   decay_mode?: "Alpha" | "Beta" | "Gamma" | "Positron";
 }

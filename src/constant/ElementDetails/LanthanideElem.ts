@@ -22,7 +22,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Lanthanum",
       discovery: 1839,
-      discoverer: "Carl Gustaf Mosander",
+      discoverer: [["Carl Gustaf Mosander", "Carl_Gustaf_Mosander"]],
     },
     atomic_properties: {
       atomic_weight: 138.90547,
@@ -112,8 +112,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Cerium",
       discovery: 1803,
-      discoverer:
-        "Wilhelm Hisinger, William Francis Hillebrabd, Thomas H. Norton, Jöns Jacob Berzelius",
+      discoverer: [
+        ["Wilhelm Hisinger", "Wilhelm_Hisinger"],
+        ["William Francis Hillebrand", "William_Francis_Hillebrand"],
+        ["Jöns Jacob Berzelius", "Jöns_Jacob_Berzelius"],
+        ["Thomas H. Norton", "Thomas_Herbert_Norton"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 140.116,
@@ -204,7 +208,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Praseodymium",
       discovery: 1839,
-      discoverer: "Carl Gustaf Mosander",
+      discoverer: [["Carl Gustaf Mosander", "Carl_Gustaf_Mosander"]],
     },
     atomic_properties: {
       atomic_weight: 138.90547,
@@ -294,7 +298,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Neodymium",
       discovery: 1885,
-      discoverer: "Baron Carl Auer von Welsbach",
+      discoverer: [["Baron Carl Auer von Welsbach", "Carl_Auer_von_Welsbach"]],
     },
     atomic_properties: {
       atomic_weight: 144.242,
@@ -384,7 +388,11 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Promethium",
       discovery: 1945,
-      discoverer: "Jacob A Marinsky, Lawrence Glendenin, Charles D Coryell",
+      discoverer: [
+        ["Jacob A Marinsky", "Jacob_A._Marinsky"],
+        ["Lawrence Glendenin", "Lawrence_Glendenin"],
+        ["Charles D Coryell", "Charles_D._Coryell"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 145,
@@ -457,7 +465,9 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Samarium",
       discovery: 1879,
-      discoverer: "Paul-Émile Lecoq de Boisbaudran",
+      discoverer: [
+        ["Paul-Émile Lecoq de Boisbaudran", "Paul-Émile_Lecoq_de_Boisbaudran"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 150.36,
@@ -548,7 +558,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Europium",
       discovery: 1901,
-      discoverer: "Eugéne Anatole Demarcay",
+      discoverer: [["Eugéne Anatole Demarcay", "Eugène-Anatole_Demarçay"]],
     },
     atomic_properties: {
       atomic_weight: 151.964,
@@ -637,7 +647,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Gadolinium",
       discovery: 1880,
-      discoverer: "Jean-Charles-Galinard de Marignac",
+      discoverer: [
+        [
+          "Jean-Charles-Galissard de Marignac",
+          "Jean_Charles_Galissard_de_Marignac",
+        ],
+      ],
     },
     atomic_properties: {
       atomic_weight: 157.25,
@@ -724,7 +739,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Terbium",
       discovery: 1843,
-      discoverer: "Carl Gustaf Mosander",
+      discoverer: [["Carl Gustaf Mosander", "Carl_Gustaf_Mosander"]],
     },
     atomic_properties: {
       atomic_weight: 158.92535,
@@ -815,7 +830,9 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Dysprosium",
       discovery: 1886,
-      discoverer: "Paul-Émile Lecoq de Boisbaudran",
+      discoverer: [
+        ["Paul-Émile Lecoq de Boisbaudran", "Paul-Émile_Lecoq_de_Boisbaudran"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 162.5,
@@ -906,7 +923,11 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Holmium",
       discovery: 1878,
-      discoverer: "Marc Delafontaine, Jacques-Louis Soret, Per Teodor Cleve",
+      discoverer: [
+        ["Marc Delafontaine", "Marc_Delafontaine"],
+        ["Per Teodor Cleve", "Per_Teodor_Cleve"],
+        ["Jacques-Louis Soret", "Jacques-Louis_Soret"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 164.93033,
@@ -997,7 +1018,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Erbium",
       discovery: 1842,
-      discoverer: "Carl Gustaf Mosander",
+      discoverer: [["Carl Gustaf Mosander", "Carl_Gustaf_Mosander"]],
     },
     atomic_properties: {
       atomic_weight: 167.259,
@@ -1089,7 +1110,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Thulium",
       discovery: 1879,
-      discoverer: "Per Teodor Cleve",
+      discoverer: [["Per Teodor Cleve", "Per_Teodor_Cleve"]],
     },
     atomic_properties: {
       atomic_weight: 168.93422,
@@ -1180,7 +1201,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Ytterbium",
       discovery: 1878,
-      discoverer: "Jean-Charles-Galinard de Marignac",
+      discoverer: [
+        [
+          "Jean-Charles-Galinard de Marignac",
+          "Jean_Charles_Galissard_de_Marignac",
+        ],
+      ],
     },
     atomic_properties: {
       atomic_weight: 173.045,
@@ -1268,7 +1294,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Lutetium",
       discovery: 1907,
-      discoverer: "Georges Urbain, Charles James",
+      discoverer: [
+        ["Georges Urbain", "Georges_Urbain"],
+        ["Charles James", "Charles_James"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 174.9668,

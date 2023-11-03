@@ -39,7 +39,7 @@ const ThermoProperty = ({
         theme === "dark"
           ? "text-text_primary bg-bg_dark"
           : "bg-bg_light text-text_secondary"
-      } shadow-md rounded-sm`}
+      } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Thermodynamic Properties</h1>
       <div className="flex flex-col w-full justify-start items-start">

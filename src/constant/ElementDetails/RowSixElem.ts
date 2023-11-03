@@ -23,7 +23,10 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Caesium",
       discovery: 1860,
-      discoverer: "Robert Wilhelm Bunsen, Gustav Kirchhoff",
+      discoverer: [
+        ["Robert Wilhelm Bunsen", "Robert_Bunsen"],
+        ["Gustav Kirchhoff", "Gustav_Kirchhoff"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 132.90545196,
@@ -110,7 +113,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Barium",
       discovery: 1808,
-      discoverer: "Humphry Davy",
+      discoverer: [["Humphry Davy", "Humphry_Davy"]],
     },
     atomic_properties: {
       atomic_weight: 137.327,
@@ -199,7 +202,10 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Hafnium",
       discovery: 1923,
-      discoverer: "Dirk Coster, Georg Von Hevesy",
+      discoverer: [
+        ["Georg Von Hevesy", "Georg_de_Hevesy"],
+        ["Dirk Coster", "Dirk_Coster"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 178.49,
@@ -290,7 +296,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Tantalum",
       discovery: 1802,
-      discoverer: "Charles Hatchett",
+      discoverer: [["Charles Hatchett", "Charles_Hatchett"]],
     },
     atomic_properties: {
       atomic_weight: 180.94788,
@@ -381,7 +387,10 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Wolframium",
       discovery: 1783,
-      discoverer: "Juan José DElhuyar, Fausto Elhuyar",
+      discoverer: [
+        ["Juan José Elhuyar", "Juan_José_Elhuyar"],
+        ["Fausto Elhuyar", "Fausto_Elhuyar"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 183.84,
@@ -472,7 +481,11 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Rhenium",
       discovery: 1925,
-      discoverer: "Otto Berg, Walter Noddack, Ida Noddack",
+      discoverer: [
+        ["Otto Berg", "Otto_Berg"],
+        ["Ida Noddack", "Ida_Noddack"],
+        ["Walter Noddack", "Walter_Noddack"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 186.207,
@@ -564,7 +577,10 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Osmium",
       discovery: 1803,
-      discoverer: "Smithson Tennant, William Hyde Wollaston",
+      discoverer: [
+        ["Smithson Tennant", "Smithson_Tennant"],
+        ["William Hyde Wollaston", "William_Hyde_Wollaston"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 190.23,
@@ -653,7 +669,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Iridium",
       discovery: 1803,
-      discoverer: "Smithson Tennant",
+      discoverer: [["Smithson Tennant", "Smithson_Tennant"]],
     },
     atomic_properties: {
       atomic_weight: 192.217,
@@ -744,7 +760,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Platinum",
       discovery: 1735,
-      discoverer: "Antonio de Ulloa",
+      discoverer: [["Antonio de Ulloa", "Antonio_de_Ulloa"]],
     },
     atomic_properties: {
       atomic_weight: 195.084,
@@ -835,7 +851,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Aurum",
       discovery: -2500,
-      discoverer: "Prehistoric",
+      discoverer: [["Prehistoric", "Prehistoric"]],
     },
     atomic_properties: {
       atomic_weight: 196.966569,
@@ -926,7 +942,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Hydrargyrum",
       discovery: -1500,
-      discoverer: "Prehistoric",
+      discoverer: [["Prehistoric", "Prehistoric"]],
     },
     atomic_properties: {
       atomic_weight: 200.592,
@@ -1013,7 +1029,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Thallium",
       discovery: 1861,
-      discoverer: "William Crookes",
+      discoverer: [["William Crookes", "William_Crookes"]],
     },
     atomic_properties: {
       atomic_weight: 204.38,
@@ -1105,7 +1121,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Plumbum",
       discovery: -4000,
-      discoverer: "Prehistoric",
+      discoverer: [["Prehistoric", "Prehistoric"]],
     },
     atomic_properties: {
       atomic_weight: 207.2,
@@ -1198,7 +1214,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Bisemutum (Bismuthum, Bismutum)",
       discovery: 1400,
-      discoverer: "Prehistoric",
+      discoverer: [["Prehistoric", "Prehistoric"]],
     },
     atomic_properties: {
       atomic_weight: 208.9804,
@@ -1289,7 +1305,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Polonium",
       discovery: 1898,
-      discoverer: "Marie Curie",
+      discoverer: [["Marie Curie", "Marie_Curie"]],
     },
     atomic_properties: {
       atomic_weight: 209,
@@ -1361,7 +1377,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Astatium",
       discovery: 1940,
-      discoverer: "Dale R Corson",
+      discoverer: [["Dale R Corson", "Dale_R._Corson"]],
     },
     atomic_properties: {
       atomic_weight: 210,
@@ -1421,7 +1437,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Radon",
       discovery: 1900,
-      discoverer: "Friedrich Ernst Dorn",
+      discoverer: [["Friedrich Ernst Dorn", "Friedrich_Ernst_Dorn"]],
     },
     atomic_properties: {
       atomic_weight: 208.9804,

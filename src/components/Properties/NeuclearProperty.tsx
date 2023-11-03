@@ -32,14 +32,14 @@ const NeuclearProperty = ({
         theme === "dark"
           ? "text-text_primary bg-bg_dark"
           : "bg-bg_light text-text_secondary"
-      } shadow-md rounded-sm`}
+      } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Neuclear Properties</h1>
       <div className="flex flex-col w-full justify-start items-start">
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Radioactive</p>
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Radioactive</p>
           <div
-            className={`w-[70%] border ${
+            className={`w-[75%] border ${
               theme === "dark" ? "border-text_primary" : "border-text_secondary"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
@@ -56,9 +56,9 @@ const NeuclearProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Half Life(s)</p>
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Half Life(s)</p>
           <div
-            className={`w-[70%] border ${
+            className={`w-[75%] border ${
               theme === "dark" ? "border-text_primary" : "border-text_secondary"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
@@ -79,9 +79,9 @@ const NeuclearProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Lifetime(s)</p>
+          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Lifetime(s)</p>
           <div
-            className={`w-[70%] border ${
+            className={`w-[75%] border ${
               theme === "dark" ? "border-text_primary" : "border-text_secondary"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
@@ -99,11 +99,11 @@ const NeuclearProperty = ({
         </div>
         {neutron_cross_section && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
               Neutron Cross Section
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[75%] border ${
                 theme === "dark"
                   ? "border-text_primary"
                   : "border-text_secondary"
@@ -129,9 +129,9 @@ const NeuclearProperty = ({
         )}
         {decay_mode && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Decay Mode</p>
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Decay Mode</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[75%] border ${
                 theme === "dark"
                   ? "border-text_primary"
                   : "border-text_secondary"

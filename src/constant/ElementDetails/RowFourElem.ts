@@ -23,7 +23,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Kalium",
       discovery: 1807,
-      discoverer: "Humphry Davy",
+      discoverer: [["Humphry Davy", "Humphry_Davy"]],
     },
     atomic_properties: {
       atomic_weight: 39.0983,
@@ -110,7 +110,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Calcium",
       discovery: 1807,
-      discoverer: "Humphry Davy",
+      discoverer: [["Humphry Davy", "Humphry_Davy"]],
     },
     atomic_properties: {
       atomic_weight: 40.078,
@@ -201,7 +201,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Calcium",
       discovery: 1879,
-      discoverer: "Lars Fredrik Nilson",
+      discoverer: [["Lars Fredrik Nilson", "Lars_Fredrik_Nilson"]],
     },
     atomic_properties: {
       atomic_weight: 44.955908,
@@ -291,7 +291,10 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Titanium",
       discovery: 1791,
-      discoverer: "William Gregor, Lars Fredrik Nilson",
+      discoverer: [
+        ["William Gregor", "William_Gregor"],
+        ["Lars Fredrik Nilson", "Lars_Fredrik_Nilson"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 47.867,
@@ -383,7 +386,10 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Vanadium",
       discovery: 1801,
-      discoverer: "Andres Manuel Del Rio, Nils Gabriel Sefström",
+      discoverer: [
+        ["Andres Manuel Del Rio", "Andres_Manuel_Del_Rio"],
+        ["Nils Gabriel Sefström", "Nils_Gabriel_Sefström"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 50.9415,
@@ -476,7 +482,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Chromium",
       discovery: 1780,
-      discoverer: "Nicolas-Louis Vauquelin",
+      discoverer: [["Nicolas-Louis Vauquelin", "Louis_Nicolas_Vauquelin"]],
     },
     atomic_properties: {
       atomic_weight: 51.9961,
@@ -569,7 +575,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Manganum",
       discovery: 1774,
-      discoverer: "Johan Gottilieb Gahn",
+      discoverer: [["Johan Gottilieb Gahn", "Johan_Gottilieb_Gahn"]],
     },
     atomic_properties: {
       atomic_weight: 53.938044,
@@ -658,7 +664,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Ferrum",
       discovery: -2000,
-      discoverer: "Prehistoric",
+      discoverer: [["Prehistoric", "Prehistoric"]],
     },
     atomic_properties: {
       atomic_weight: 55.845,
@@ -748,7 +754,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Cobaltum",
       discovery: 1735,
-      discoverer: "Georg Brandt",
+      discoverer: [["Georg Brandt", "Georg Brandt"]],
     },
     atomic_properties: {
       atomic_weight: 58.933194,
@@ -838,7 +844,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Niccolum",
       discovery: 1751,
-      discoverer: "Axel Fredrik Cronstedt",
+      discoverer: [["Axel Fredrik Cronstedt", "Axel_Fredrik_Cronstedt"]],
     },
     atomic_properties: {
       atomic_weight: 58.6934,
@@ -929,7 +935,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Cuprum",
       discovery: -8000,
-      discoverer: "Prehistoric",
+      discoverer: [["Prehistoric", "Prehistoric"]],
     },
     atomic_properties: {
       atomic_weight: 63.546,
@@ -1022,7 +1028,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Zincum",
       discovery: 1500,
-      discoverer: "Prehistoric",
+      discoverer: [["Prehistoric", "Prehistoric"]],
     },
     atomic_properties: {
       atomic_weight: 65.38,
@@ -1115,7 +1121,9 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Gallium",
       discovery: 1875,
-      discoverer: "Paul-Émile Lecoq de Boisbaudran",
+      discoverer: [
+        ["Paul-Émile Lecoq de Boisbaudran", "Paul-Émile_Lecoq_de_Boisbaudran"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 69.723,
@@ -1203,7 +1211,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Germanium",
       discovery: 1886,
-      discoverer: "Clemens Alexander Winkler",
+      discoverer: [["Clemens Alexander Winkler", "Clemens_Winkler"]],
     },
     atomic_properties: {
       atomic_weight: 72.63,
@@ -1289,7 +1297,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Arsenicum",
       discovery: 1250,
-      discoverer: "Saint Albertus Magnus",
+      discoverer: [["Saint Albertus Magnus", "Saint_Albertus_Magnus"]],
     },
     atomic_properties: {
       atomic_weight: 74.921595,
@@ -1378,7 +1386,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Selenium",
       discovery: 1250,
-      discoverer: "Jöns Jacob Berzelius",
+      discoverer: [["Jöns Jacob Berzelius", "Jöns_Jacob_Berzelius"]],
     },
     atomic_properties: {
       atomic_weight: 78.971,
@@ -1466,7 +1474,10 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Bromum",
       discovery: 1826,
-      discoverer: "Carl Jacob Löwig, Antonie Jerome Balard",
+      discoverer: [
+        ["Carl Jacob Löwig", "Carl_Jacob_Löwig"],
+        ["Antonie Jérôme Balard", "Antonie_Jérôme_Balard"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 79.904,
@@ -1550,11 +1561,14 @@ export const RowFourElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Krypton",
       discovery: 1898,
-      discoverer: "Sir William Ramsay, Morris William Travers",
+      discoverer: [
+        ["Sir William Ramsay", "William_Ramsay"],
+        ["Morris William Travers", "Morris_Travers"],
+      ],
     },
     atomic_properties: {
       atomic_weight: 83.798,
-      oxidation_states: [2, 4],
+      oxidation_states: [0, 2, 4],
       electron_shell_configuration: "K2 L8 M18 N8",
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup>",

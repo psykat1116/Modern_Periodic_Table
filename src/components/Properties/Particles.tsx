@@ -13,7 +13,7 @@ const Particles = ({ electrons, protons, neutrons }: Particles) => {
       <div
         className={`w-1/3 flex justify-around items-center p-2 ${
           theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-        } bg-[#1b1a1a] rounded-sm shadow-md`}
+        } bg-[#1b1a1a] rounded-sm shadow-lg`}
       >
         <h1 className="text-base">Electrons</h1>
         <p>{electrons}</p>
@@ -21,7 +21,7 @@ const Particles = ({ electrons, protons, neutrons }: Particles) => {
       <div
         className={`w-1/3 flex justify-around items-center p-2 ${
           theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-        } bg-[#1b1a1a] rounded-sm shadow-md`}
+        } bg-[#1b1a1a] rounded-sm shadow-lg`}
       >
         <h1 className="text-base">Protons</h1>
         <p>{protons}</p>
@@ -29,7 +29,7 @@ const Particles = ({ electrons, protons, neutrons }: Particles) => {
       <div
         className={`w-1/3 flex justify-around items-center p-2 ${
           theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-        } bg-[#1b1a1a] rounded-sm shadow-md`}
+        } bg-[#1b1a1a] rounded-sm shadow-lg`}
       >
         <h1 className="text-base">Neutrons</h1>
         <p>{neutrons}</p>

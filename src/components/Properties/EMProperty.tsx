@@ -40,13 +40,13 @@ const EMProperty = ({
         theme === "dark"
           ? "text-text_primary bg-bg_dark"
           : "bg-bg_light text-text_secondary"
-      } shadow-md rounded-sm`}
+      } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Electromagnetic Properties</h1>
       <div className="flex flex-col w-full justify-start items-start">
         {electrical_conductivity && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Electrical Conductivity (Sm<sup>-1</sup>)
             </p>
             <div
@@ -77,7 +77,7 @@ const EMProperty = ({
         )}
         {electrical_type && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Electrical Type
             </p>
             <div
@@ -102,7 +102,7 @@ const EMProperty = ({
         )}
         {resisitivity && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Resistivity (Ohm m)
             </p>
             <div
@@ -129,7 +129,7 @@ const EMProperty = ({
         )}
         {curie_point && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Curie Point (K)
             </p>
             <div
@@ -156,7 +156,7 @@ const EMProperty = ({
         )}
         {superconducting_point && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Superconducting Point (K)
             </p>
             <div
@@ -186,7 +186,7 @@ const EMProperty = ({
         )}
         {magnetic_type && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Magnetic Type
             </p>
             <div

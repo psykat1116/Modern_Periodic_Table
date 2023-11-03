@@ -34,19 +34,19 @@ const Prevalence = ({
         theme === "dark"
           ? "text-text_primary bg-bg_dark"
           : "bg-bg_light text-text_secondary"
-      } shadow-md rounded-sm`}
+      } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Prevalence</h1>
       <div className="flex flex-col w-full justify-start items-start">
         {universe && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Universe</p>
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Universe</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[80%] border ${
                 theme === "dark"
                   ? "border-text_primary"
                   : "border-text_secondary"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
               <p
                 dangerouslySetInnerHTML={{
@@ -67,9 +67,9 @@ const Prevalence = ({
         )}
         {sun && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Sun</p>
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Sun</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[80%] border ${
                 theme === "dark"
                   ? "border-text_primary"
                   : "border-text_secondary"
@@ -90,9 +90,9 @@ const Prevalence = ({
         )}
         {ocean && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Ocean</p>
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Ocean</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[80%] border ${
                 theme === "dark"
                   ? "border-text_primary"
                   : "border-text_secondary"
@@ -113,9 +113,9 @@ const Prevalence = ({
         )}
         {human && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Human</p>
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Human</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[80%] border ${
                 theme === "dark"
                   ? "border-text_primary"
                   : "border-text_secondary"
@@ -136,9 +136,9 @@ const Prevalence = ({
         )}
         {earth_crust && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Earth Crust</p>
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Earth Crust</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[80%] border ${
                 theme === "dark"
                   ? "border-text_primary"
                   : "border-text_secondary"
@@ -161,9 +161,9 @@ const Prevalence = ({
         )}
         {meteorites && (
           <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Meteorites</p>
+            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Meteorites</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[80%] border ${
                 theme === "dark"
                   ? "border-text_primary"
                   : "border-text_secondary"
