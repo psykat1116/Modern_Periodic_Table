@@ -3,6 +3,36 @@ import { ThermodynamicProperties } from "@/types/ElementTypes";
 import { MdCheck, MdContentCopy } from "react-icons/md";
 import DOMPurify from "dompurify";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import ListBox from "../ListBox";
+
+const SpecificHeatOptions = [
+  { name: "JKg<sup>-1</sup>K<sup>-1</sup>" },
+  { name: "Jg<sup>-1</sup>℃<sup>-1</sup>" },
+];
+
+const VaporizationHeatOptions = [
+  { name: "kJmol<sup>-1</sup>" },
+  { name: "Jg<sup>-1</sup>" },
+  { name: "KJ/Kg" },
+];
+
+const FusionHeatOptions = [
+  { name: "kJmol<sup>-1</sup>" },
+  { name: "Cal/g" },
+  { name: "J/Kg" },
+];
+
+const TemperatureOptions = [
+  { name: "Celcius (℃)" },
+  { name: "Feranheit (℉)" },
+  { name: "Kelvin (K)" },
+];
+
+const ThermalExpansionOptions = [
+  { name: "K<sup>-1</sup>" },
+  { name: "℃<sup>-1</sup>" },
+  { name: "℉<sup>-1</sup>" },
+];
 
 const ThermoProperty = ({
   boiling_point,
@@ -42,17 +72,15 @@ const ThermoProperty = ({
       } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Thermodynamic Properties</h1>
-      <div className="flex flex-col w-full justify-start items-start">
+      <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {boiling_point && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-              Boiling Point
-            </p>
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Boiling Point</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[60%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{boiling_point}</p>
@@ -66,18 +94,17 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={TemperatureOptions} />
           </div>
         )}
         {melting_point && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-              Melting Point
-            </p>
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Melting Point</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[60%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{melting_point}</p>
@@ -91,16 +118,17 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={TemperatureOptions} />
           </div>
         )}
         {phase && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">Phase</p>
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Phase</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[80%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{phase}</p>
@@ -115,15 +143,13 @@ const ThermoProperty = ({
           </div>
         )}
         {fusion_heat && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-              Fusion Heat (kJmol<sup>-1</sup>)
-            </p>
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Fusion Heat</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[60%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{fusion_heat}</p>
@@ -139,18 +165,17 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={FusionHeatOptions} />
           </div>
         )}
         {specific_heat && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-              Specific Heat (JKg<sup>-1</sup>K<sup>-1</sup>)
-            </p>
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Specific Heat</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[60%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{specific_heat}</p>
@@ -166,18 +191,17 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={VaporizationHeatOptions} />
           </div>
         )}
         {vaporization_heat && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-              Vaporization Heat (KJmol<sup>-1</sup>)
-            </p>
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Vaporization Heat</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[60%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{vaporization_heat}</p>
@@ -193,18 +217,17 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={SpecificHeatOptions} />
           </div>
         )}
         {thermal_expansion && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-              Thermal Expansion (K<sup>-1</sup>)
-            </p>
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Thermal Expansion</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[60%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p
@@ -224,18 +247,17 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={ThermalExpansionOptions} />
           </div>
         )}
         {neel_point && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%]">
-              Neel Point (K)
-            </p>
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Neel Point (K)</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[60%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{neel_point}</p>
@@ -249,6 +271,7 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={TemperatureOptions} />
           </div>
         )}
       </div>

@@ -27,12 +27,14 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
       } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Overview</h1>
-      <div className="flex flex-col w-full justify-start items-start">
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Latin Name</p>
+      <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
+        <div className="flex flex-row justify-start items-center w-full ">
+          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Latin Name</p>
           <div
-            className={`w-[80%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[80%] ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
             <p>{latin_name}</p>
@@ -45,11 +47,13 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Discovery</p>
+        <div className="flex flex-row justify-start items-center w-full ">
+          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Discovery</p>
           <div
-            className={`w-[80%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[80%] ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
             <p>{discovery}</p>
@@ -64,18 +68,19 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-start w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Discoverer</p>
+        <div className="flex flex-row justify-start items-start w-full ">
+          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Discoverer</p>
           <div className="w-[80%] gap-2 grid grid-cols-2 text-sm">
             {discoverer.map((d) => {
               return (
                 <Link
+                  key={d[0]}
                   target="_blank"
                   href={`https://en.wikipedia.org/wiki/${d[1]}`}
-                  className={`border ${
+                  className={`${
                     theme === "dark"
-                      ? "border-text_primary"
-                      : "border-text_secondary"
+                      ? "bg-bg_dark_placeholder"
+                      : "bg-bg_light_placeholder"
                   } px-2 py-1 rounded-[4px] select-none`}
                 >
                   {d[0]}

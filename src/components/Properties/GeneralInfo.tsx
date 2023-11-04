@@ -35,12 +35,14 @@ const GeneralInfo = ({
       } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">General Properties</h1>
-      <div className="flex flex-col w-full justify-start items-start">
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Atomic Number</p>
+      <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
+        <div className="flex flex-row justify-start items-center w-full ">
+          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Atomic Number</p>
           <div
-            className={`w-[80%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[80%]  ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
             <p>{atomic_number}</p>
@@ -58,13 +60,13 @@ const GeneralInfo = ({
           </div>
         </div>
         {group && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Group</p>
+          <div className="flex flex-row justify-start items-center w-full ">
+            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Group</p>
             <div
-              className={`w-[80%] border ${
+              className={`w-[80%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{group}</p>
@@ -78,11 +80,13 @@ const GeneralInfo = ({
             </div>
           </div>
         )}
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Period</p>
+        <div className="flex flex-row justify-start items-center w-full ">
+          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Period</p>
           <div
-            className={`w-[80%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[80%]  ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
             <p>{period}</p>
@@ -95,11 +99,13 @@ const GeneralInfo = ({
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Block</p>
+        <div className="flex flex-row justify-start items-center w-full ">
+          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Block</p>
           <div
-            className={`w-[80%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[80%]  ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
             <p>{block}</p>
@@ -112,11 +118,13 @@ const GeneralInfo = ({
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">CAS Number</p>
+        <div className="flex flex-row justify-start items-center w-full ">
+          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">CAS Number</p>
           <div
-            className={`w-[80%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[80%]  ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
             <p>{cas_number}</p>

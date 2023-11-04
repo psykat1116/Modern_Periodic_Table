@@ -3,6 +3,32 @@ import { MaterialProperties } from "@/types/ElementTypes";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import DOMPurify from "dompurify";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import ListBox from "../ListBox";
+
+const MolarVolumeOptions = [
+  { name: "m<sup>3</sup>/mol" },
+  { name: "cm<sup>3</sup>/mol" },
+];
+
+const BulkYoungModulusOptions = [
+  { name: "GPa(10<sup>9</sup>N/m<sup>2</sup>)" },
+  { name: "dyne/cm<sup>2</sup>" },
+];
+
+const BrinnelVickerShearModulusOptions = [
+  { name: "MPa(10<sup>6</sup>N/m<sup>2</sup>)" },
+  { name: "dyne/cm<sup>2</sup>" },
+];
+
+const DensityOptions = [
+  { name: "Kg/m<sup>3</sup>" },
+  { name: "g/cm<sup>3</sup>" },
+];
+
+const ThermalConductivityOptions = [
+  { name: "Wm<sup>-1</sup>K<sup>-1</sup>" },
+  { name: "calcm<sup>-1</sup>s<sup>-1</sup>℃<sup>-1</sup>" },
+];
 
 const MaterialProperty = ({
   color,
@@ -53,17 +79,15 @@ const MaterialProperty = ({
       } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Material Property</h1>
-      <div className="flex flex-col w-full justify-start items-start">
+      <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {color && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Color
-            </p>
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">Color</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[75%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{color}</p>
@@ -78,15 +102,15 @@ const MaterialProperty = ({
           </div>
         )}
         {molar_volume && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Molar Volume (m<sup>3</sup>mol<sup>-1</sup>)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+              Molar Volume
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[55%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
               <p
@@ -106,18 +130,19 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={MolarVolumeOptions} />
           </div>
         )}
         {mohs_hardness && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[25%] text-sm">
               Mohs Hardness
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[75%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{mohs_hardness}</p>
@@ -136,15 +161,15 @@ const MaterialProperty = ({
           </div>
         )}
         {bulk_modulus && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Bulk Modulus (GPa)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+              Bulk Modulus
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[55%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{bulk_modulus}</p>
@@ -160,18 +185,19 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={BulkYoungModulusOptions} />
           </div>
         )}
         {brinell_hardness && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Brinnel Hardness (MPa)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+              Brinnel Hardness
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[55%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{brinell_hardness}</p>
@@ -187,18 +213,17 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={BrinnelVickerShearModulusOptions} />
           </div>
         )}
         {density && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Density (Kgm<sup>-3</sup>)
-            </p>
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">Density</p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[55%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{density}</p>
@@ -210,18 +235,19 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={DensityOptions} />
           </div>
         )}
         {liquid_density && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Liquid Density (Kgm<sup>-3</sup>)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+              Liquid Density
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[55%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{liquid_density}</p>
@@ -237,18 +263,19 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={DensityOptions} />
           </div>
         )}
         {young_modulus && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Young Modulus (GPa)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+              Young Modulus
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[55%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{young_modulus}</p>
@@ -264,18 +291,19 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={BulkYoungModulusOptions} />
           </div>
         )}
         {vickers_hardness && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Vickers Hardness (MPa)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+              Vickers Hardness
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[55%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{vickers_hardness}</p>
@@ -291,18 +319,19 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={BrinnelVickerShearModulusOptions} />
           </div>
         )}
         {shear_modulus && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Shear Hardness (MPa)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+              Shear Hardness
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[55%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{shear_modulus}</p>
@@ -318,18 +347,19 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={BrinnelVickerShearModulusOptions} />
           </div>
         )}
         {thermal_conductivity && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Thermal Conductivity (Wm<sup>-1</sup>K<sup>-1</sup>)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+              Thermal Conductivity
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[55%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{thermal_conductivity}</p>
@@ -348,18 +378,19 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={ThermalConductivityOptions} />
           </div>
         )}
         {sound_speed && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Sound Speed (ms<sup>-1</sup>)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+              Sound Speed
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[55%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{sound_speed}</p>
@@ -375,18 +406,27 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
+            <div
+              className={`w-[20%] px-2 py-1 rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              }`}
+            >
+              ms<sup>-1</sup>
+            </div>
           </div>
         )}
         {poisson_ratio && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
               Poisson Ratio
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[75%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{poisson_ratio}</p>
@@ -405,15 +445,15 @@ const MaterialProperty = ({
           </div>
         )}
         {refrective_index && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
               Refractive Index
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[75%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{refrective_index}</p>

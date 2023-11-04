@@ -35,12 +35,14 @@ const NeuclearProperty = ({
       } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Neuclear Properties</h1>
-      <div className="flex flex-col w-full justify-start items-start">
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Radioactive</p>
+      <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
+        <div className="flex flex-row justify-start items-center w-full ">
+          <p className=" pr-2 py-1 rounded-[4px] w-[25%]">Radioactive</p>
           <div
-            className={`w-[75%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[75%]  ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
             <p>{radioactive}</p>
@@ -55,11 +57,13 @@ const NeuclearProperty = ({
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Half Life(s)</p>
+        <div className="flex flex-row justify-start items-center w-full ">
+          <p className=" pr-2 py-1 rounded-[4px] w-[25%]">Half Life(s)</p>
           <div
-            className={`w-[75%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[75%]  ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
             <p
@@ -78,11 +82,13 @@ const NeuclearProperty = ({
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Lifetime(s)</p>
+        <div className="flex flex-row justify-start items-center w-full ">
+          <p className=" pr-2 py-1 rounded-[4px] w-[25%]">Lifetime(s)</p>
           <div
-            className={`w-[75%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[75%]  ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
             <p
@@ -98,15 +104,15 @@ const NeuclearProperty = ({
           </div>
         </div>
         {neutron_cross_section && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">
+          <div className="flex flex-row justify-start items-center w-full ">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%]">
               Neutron Cross Section
             </p>
             <div
-              className={`w-[75%] border ${
+              className={`w-[75%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{neutron_cross_section}</p>
@@ -128,13 +134,13 @@ const NeuclearProperty = ({
           </div>
         )}
         {decay_mode && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%]">Decay Mode</p>
+          <div className="flex flex-row justify-start items-center w-full ">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%]">Decay Mode</p>
             <div
-              className={`w-[75%] border ${
+              className={`w-[75%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{decay_mode}</p>

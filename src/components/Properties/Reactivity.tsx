@@ -2,6 +2,9 @@ import React, { useState, useContext } from "react";
 import { Reactivity } from "@/types/ElementTypes";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import ListBox from "../ListBox";
+
+const EnergyOptions = [{ name: "kJ/mol" }, { name: "kCal/mol" }];
 
 const Reactivity = ({
   electron_affinity,
@@ -32,17 +35,17 @@ const Reactivity = ({
       } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Reactivity</h1>
-      <div className="flex flex-col w-full justify-start items-start">
+      <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {electron_affinity && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
-              Electron Affinity (kJmol<sup>-1</sup>)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[20%] text-sm">
+              Electron Affinity
             </p>
             <div
-              className={`w-[75%] border ${
+              className={`w-[60%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{electron_affinity}</p>
@@ -58,18 +61,47 @@ const Reactivity = ({
                 )}
               </button>
             </div>
+            <ListBox options={EnergyOptions} />
+          </div>
+        )}
+        {ionization_energy && (
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[20%] text-sm">
+              Ionization Energy
+            </p>
+            <div
+              className={`w-[60%]  ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p>{ionization_energy}</p>
+              <button
+                onClick={() =>
+                  handleCopy(ionization_energy.toString(), "ionization_energy")
+                }
+              >
+                {!isCopying.ionization_energy ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
+            <ListBox options={EnergyOptions} />
           </div>
         )}
         {electronegativity && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[20%] text-sm">
               Electronegativity
             </p>
             <div
-              className={`w-[75%] border ${
+              className={`w-[80%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{electronegativity}</p>
@@ -87,38 +119,13 @@ const Reactivity = ({
             </div>
           </div>
         )}
-        {ionization_energy && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
-              Ionization Energy (kJmol<sup>-1</sup>)
-            </p>
-            <div
-              className={`w-[75%] border ${
-                theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-            >
-              <p>{ionization_energy}</p>
-              <button
-                onClick={() =>
-                  handleCopy(ionization_energy.toString(), "ionization_energy")
-                }
-              >
-                {!isCopying.ionization_energy ? (
-                  <MdContentCopy />
-                ) : (
-                  <MdCheck className="text-green-700" />
-                )}
-              </button>
-            </div>
-          </div>
-        )}
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">Valence</p>
+        <div className="flex flex-row justify-start items-center w-full gap-2">
+          <p className="pr-2 py-1 rounded-[4px] w-[20%] text-sm">Valence</p>
           <div
-            className={`w-[75%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[80%]  ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
             <p>{valence}</p>

@@ -3,6 +3,7 @@ import { AtomicProperties } from "@/types/ElementTypes";
 import DOMPurify from "dompurify";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import ListBox from "../ListBox";
 
 const AtomicProperty = ({
   atomic_weight,
@@ -43,14 +44,16 @@ const AtomicProperty = ({
       } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Atomic Properties</h1>
-      <div className="flex flex-col w-full justify-start items-start">
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
-            Atomic Weight{", "}u(gmol<sup>-1</sup>)
+      <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
+        <div className="flex flex-row justify-start items-center w-full gap-2">
+          <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            Atomic Weight
           </p>
           <div
-            className={`w-[75%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[55%] ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
             <p>{atomic_weight}</p>
@@ -66,14 +69,25 @@ const AtomicProperty = ({
               )}
             </button>
           </div>
+          <div
+            className={`w-[20%] px-2 py-1 rounded-[4px] ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
+            }`}
+          >
+            AMU
+          </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+        <div className="flex flex-row justify-start items-center w-full gap-2">
+          <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
             Electron Shell Configuration
           </p>
           <div
-            className={`w-[75%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[75%] ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
           >
             <p>{electron_shell_configuration}</p>
@@ -93,13 +107,15 @@ const AtomicProperty = ({
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-start w-full mt-3">
-          <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+        <div className="flex flex-row justify-start items-start w-full gap-2">
+          <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
             Electron Configuration
           </p>
           <div
-            className={`w-[75%] border ${
-              theme === "dark" ? "border-text_primary" : "border-text_secondary"
+            className={`w-[75%] ${
+              theme === "dark"
+                ? "bg-bg_dark_placeholder"
+                : "bg-bg_light_placeholder"
             } px-2 py-1 rounded-[4px] flex justify-between items-center`}
           >
             <p
@@ -124,15 +140,15 @@ const AtomicProperty = ({
           </div>
         </div>
         {gas_atom_multiplicities && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
               Gas Atomic Multiplicities
             </p>
             <div
-              className={`w-[75%] border ${
+              className={`w-[75%] ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{gas_atom_multiplicities}</p>
@@ -154,15 +170,15 @@ const AtomicProperty = ({
           </div>
         )}
         {atomic_radius && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
-              Atomic Radius(Pm)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+              Atomic Radius
             </p>
             <div
-              className={`w-[75%] border ${
+              className={`w-[55%] ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{atomic_radius}</p>
@@ -178,18 +194,27 @@ const AtomicProperty = ({
                 )}
               </button>
             </div>
+            <div
+              className={`w-[20%] px-2 py-1 rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              }`}
+            >
+              Pm (10<sup>-12</sup>m)
+            </div>
           </div>
         )}
         {covalent_radius && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
-              Covalent Radius(Pm)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+              Covalent Radius
             </p>
             <div
-              className={`w-[75%] border ${
+              className={`w-[55%] ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{covalent_radius}</p>
@@ -205,18 +230,27 @@ const AtomicProperty = ({
                 )}
               </button>
             </div>
+            <div
+              className={`w-[20%] px-2 py-1 rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              }`}
+            >
+              Pm (10<sup>-12</sup>m)
+            </div>
           </div>
         )}
         {van_der_walls_radius && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
-              Van Der Walls Radius(Pm)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+              Van Der Walls Radius
             </p>
             <div
-              className={`w-[75%] border ${
+              className={`w-[55%] ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{van_der_walls_radius}</p>
@@ -235,18 +269,27 @@ const AtomicProperty = ({
                 )}
               </button>
             </div>
+            <div
+              className={`w-[20%] px-2 py-1 rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              }`}
+            >
+              Pm (10<sup>-12</sup>m)
+            </div>
           </div>
         )}
         {crystall_structure && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
               Crystall Structure
             </p>
             <div
-              className={`w-[75%] border ${
+              className={`w-[75%] ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{crystall_structure}</p>
@@ -268,18 +311,18 @@ const AtomicProperty = ({
           </div>
         )}
         {oxidation_states && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
               Oxidation States
             </p>
             <div className="w-[75%] py-1 flex justify-start items-center select-none">
               {oxidation_states.map((state) => {
                 return (
                   <p
-                    className={`mr-2 h-[30px] w-[30px] flex justify-center items-center border ${
+                    className={`mr-2 h-[30px] w-[30px] flex justify-center items-center ${
                       theme === "dark"
-                        ? "border-text_primary"
-                        : "border-text_secondary"
+                        ? "bg-bg_dark_placeholder"
+                        : "bg-bg_light_placeholder"
                     } rounded-full text-sm`}
                     key={state}
                   >

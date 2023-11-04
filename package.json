@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
     "dompurify": "^3.0.6",
     "framer-motion": "^10.16.4",
     "lottie-react": "^2.4.0",

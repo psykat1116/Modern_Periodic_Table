@@ -37,15 +37,15 @@ const Prevalence = ({
       } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Prevalence</h1>
-      <div className="flex flex-col w-full justify-start items-start">
+      <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {universe && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Universe</p>
+          <div className="flex flex-row justify-start items-center w-full ">
+            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Universe</p>
             <div
-              className={`w-[80%] border ${
+              className={`w-[80%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
               <p
@@ -66,13 +66,13 @@ const Prevalence = ({
           </div>
         )}
         {sun && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Sun</p>
+          <div className="flex flex-row justify-start items-center w-full ">
+            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Sun</p>
             <div
-              className={`w-[80%] border ${
+              className={`w-[80%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
               <p
@@ -89,13 +89,13 @@ const Prevalence = ({
           </div>
         )}
         {ocean && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Ocean</p>
+          <div className="flex flex-row justify-start items-center w-full ">
+            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Ocean</p>
             <div
-              className={`w-[80%] border ${
+              className={`w-[80%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
               <p
@@ -112,13 +112,13 @@ const Prevalence = ({
           </div>
         )}
         {human && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Human</p>
+          <div className="flex flex-row justify-start items-center w-full ">
+            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Human</p>
             <div
-              className={`w-[80%] border ${
+              className={`w-[80%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
               <p
@@ -135,13 +135,13 @@ const Prevalence = ({
           </div>
         )}
         {earth_crust && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Earth Crust</p>
+          <div className="flex flex-row justify-start items-center w-full ">
+            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Earth Crust</p>
             <div
-              className={`w-[80%] border ${
+              className={`w-[80%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
               <p
@@ -160,13 +160,13 @@ const Prevalence = ({
           </div>
         )}
         {meteorites && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[20%]">Meteorites</p>
+          <div className="flex flex-row justify-start items-center w-full ">
+            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Meteorites</p>
             <div
-              className={`w-[80%] border ${
+              className={`w-[80%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
               <p

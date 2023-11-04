@@ -25,7 +25,9 @@ const config: Config = {
         text_secondary: "#100c08",
         text_primary: "#fcfcfc",
         bg_dark: "#1b1a1a",
-        bg_light: "#d6cccc"
+        bg_light: "#d6cccc",
+        bg_light_placeholder: "#e3dfd2",
+        bg_dark_placeholder: "#0f0b0a",
       },
     },
   },

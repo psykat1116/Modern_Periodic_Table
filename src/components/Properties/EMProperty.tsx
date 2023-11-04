@@ -3,6 +3,18 @@ import { ElectromagneticProperties } from "@/types/ElementTypes";
 import { MdCheck, MdContentCopy } from "react-icons/md";
 import DOMPurify from "dompurify";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import ListBox from "../ListBox";
+
+const TempOptions = [
+  { name: "Celecius(℃)" },
+  { name: "Feranheit(℉)" },
+  { name: "Kelvin(K)" },
+];
+
+const MassMagnetOptions = [
+  { name: "m<sup>3</sup>/Kg" },
+  { name: "cm<sup>3</sup>/g" },
+];
 
 const EMProperty = ({
   electrical_conductivity,
@@ -43,17 +55,17 @@ const EMProperty = ({
       } shadow-lg rounded-sm`}
     >
       <h1 className="text-xl">Electromagnetic Properties</h1>
-      <div className="flex flex-col w-full justify-start items-start">
+      <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {electrical_conductivity && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Electrical Conductivity (Sm<sup>-1</sup>)
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[70%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               }  px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p
@@ -76,15 +88,15 @@ const EMProperty = ({
           </div>
         )}
         {electrical_type && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Electrical Type
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[70%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{electrical_type}</p>
@@ -101,15 +113,15 @@ const EMProperty = ({
           </div>
         )}
         {resisitivity && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Resistivity (Ohm m)
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[70%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p
@@ -128,15 +140,15 @@ const EMProperty = ({
           </div>
         )}
         {curie_point && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Curie Point (K)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+              Curie Point
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[50%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{curie_point}</p>
@@ -152,18 +164,19 @@ const EMProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={TempOptions} />
           </div>
         )}
         {superconducting_point && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Superconducting Point (K)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+              Superconducting Point
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[50%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{superconducting_point}</p>
@@ -182,18 +195,19 @@ const EMProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={TempOptions} />
           </div>
         )}
         {magnetic_type && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Magnetic Type
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[70%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
               <p>{magnetic_type}</p>
@@ -210,15 +224,15 @@ const EMProperty = ({
           </div>
         )}
         {mass_magnetic_suspectibility && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Mass Magnetic Suspectibility (m<sup>3</sup>kg<sup>-1</sup>)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+              Mass Magnetic Suspectibility
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[50%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
               <p
@@ -241,18 +255,19 @@ const EMProperty = ({
                 )}
               </button>
             </div>
+            <ListBox options={MassMagnetOptions} />
           </div>
         )}
         {molar_magnetic_suspectibility && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Molar Magnetic Suspectibility (m<sup>3</sup>mol<sup>-1</sup>)
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className="pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+              Molar Magnetic Suspectibility
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[50%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
               <p
@@ -275,18 +290,27 @@ const EMProperty = ({
                 )}
               </button>
             </div>
+            <div
+              className={`w-[20%] px-2 py-1 rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              }`}
+            >
+              m<sup>3</sup>/mol
+            </div>
           </div>
         )}
         {volume_magnetic_suspectibility && (
-          <div className="flex flex-row justify-start items-center w-full mt-3">
-            <p className="mr-5 pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <p className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Volume Magnetic Suspectibility
             </p>
             <div
-              className={`w-[70%] border ${
+              className={`w-[70%]  ${
                 theme === "dark"
-                  ? "border-text_primary"
-                  : "border-text_secondary"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center`}
             >
               <p
