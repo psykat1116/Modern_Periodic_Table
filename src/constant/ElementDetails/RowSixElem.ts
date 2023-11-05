@@ -70,10 +70,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       neutron_cross_section: 29,
     },
     prevalence: {
-      universe: "8*10<sup>-8</sup>%",
-      sun: "8*10<sup>-7</sup>%",
+      universe: "8•10<sup>-8</sup>%",
+      sun: "8•10<sup>-7</sup>%",
       ocean: "5•10<sup>-8</sup>%",
-      human: "1*10<sup>-6</sup>%",
+      human: "1•10<sup>-6</sup>%",
       earth_crust: "0.00019%",
       meteorites: "0.00001%",
     },
@@ -83,8 +83,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "5.26•10<sup>-6</sup>",
       mass_magnetic_suspectibility: "2.8•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "3.72•10<sup>-10</sup>",
-      electrical_conductivity: "5*10<sup>6</sup>",
-      resisitivity: "2*10<sup>-7</sup>",
+      electrical_conductivity: "5•10<sup>6</sup>",
+      resisitivity: "2•10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Caesium",
@@ -132,7 +132,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 8,
       specific_heat: 205,
       vaporization_heat: 140,
-      thermal_expansion: "2.06*10<sup>-5</sup>",
+      thermal_expansion: "2.06•10<sup>-5</sup>",
     },
     material_properties: {
       color: "Silver",
@@ -160,7 +160,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     },
     prevalence: {
       universe: "10<sup>-6</sup>%",
-      sun: "9.9*10<sup>-7</sup>%",
+      sun: "9.9•10<sup>-7</sup>%",
       ocean: "3•10<sup>-6</sup>%",
       human: "0.00003%",
       earth_crust: "0.03%",
@@ -172,8 +172,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "3.966•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "1.13•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "1.552•10<sup>-9</sup>",
-      electrical_conductivity: "2.9*10<sup>6</sup>",
-      resisitivity: "3.5*10<sup>-7</sup>",
+      electrical_conductivity: "2.9•10<sup>6</sup>",
+      resisitivity: "3.5•10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Barium",
@@ -224,7 +224,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 25.5,
       specific_heat: 144,
       vaporization_heat: 630,
-      thermal_expansion: "5.9*10<sup>-6</sup>",
+      thermal_expansion: "5.9•10<sup>-6</sup>",
     },
     material_properties: {
       color: "Gray",
@@ -253,7 +253,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       neutron_cross_section: 104,
     },
     prevalence: {
-      universe: "7*10<sup>-8</sup>%",
+      universe: "7•10<sup>-8</sup>%",
       sun: "10<sup>-7</sup>%",
       ocean: "8•10<sup>-10</sup>%",
       earth_crust: "0.00033%",
@@ -265,8 +265,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "7.05•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "5.3•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "9.46•10<sup>-10</sup>",
-      electrical_conductivity: "3.3*10<sup>6</sup>",
-      resisitivity: "3*10<sup>-7</sup>",
+      electrical_conductivity: "3.3•10<sup>6</sup>",
+      resisitivity: "3•10<sup>-7</sup>",
       superconducting_point: 0.128,
     },
     external_links: {
@@ -315,7 +315,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 36,
       specific_heat: 140,
       vaporization_heat: 735,
-      thermal_expansion: "6.3*10<sup>-6</sup>",
+      thermal_expansion: "6.3•10<sup>-6</sup>",
     },
     material_properties: {
       color: "Gray",
@@ -345,10 +345,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       neutron_cross_section: 20.5,
     },
     prevalence: {
-      universe: "8*10<sup>-9</sup>%",
+      universe: "8•10<sup>-9</sup>%",
       ocean: "2•10<sup>-10</sup>%",
       earth_crust: "0.00017%",
-      meteorites: "2*10<sup>-6</sup>%",
+      meteorites: "2•10<sup>-6</sup>%",
     },
     electromagnetic_properties: {
       electrical_type: "Conductor",
@@ -356,8 +356,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "1.782•10<sup>-4</sup>",
       mass_magnetic_suspectibility: "1.07•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "1.936•10<sup>-9</sup>",
-      electrical_conductivity: "7.7*10<sup>6</sup>",
-      resisitivity: "1.3*10<sup>-7</sup>",
+      electrical_conductivity: "7.7•10<sup>6</sup>",
+      resisitivity: "1.3•10<sup>-7</sup>",
       superconducting_point: 4.47,
     },
     external_links: {
@@ -438,8 +438,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       neutron_cross_section: 18.4,
     },
     prevalence: {
-      universe: "5*10<sup>-8</sup>%",
-      sun: "4*10<sup>-7</sup>%",
+      universe: "5•10<sup>-8</sup>%",
+      sun: "4•10<sup>-7</sup>%",
       ocean: "1.2•10<sup>-8</sup>%",
       earth_crust: "0.00011%",
       meteorites: "0.00001%",
@@ -450,8 +450,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "8.84•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "4.59•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "8.44•10<sup>-10</sup>",
-      electrical_conductivity: "2*10<sup>7</sup>",
-      resisitivity: "5*10<sup>-8</sup>",
+      electrical_conductivity: "2•10<sup>7</sup>",
+      resisitivity: "5•10<sup>-8</sup>",
       superconducting_point: 0.015,
     },
     external_links: {
@@ -504,7 +504,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 33,
       specific_heat: 137,
       vaporization_heat: 705,
-      thermal_expansion: "6.2*10<sup>-6</sup>",
+      thermal_expansion: "6.2•10<sup>-6</sup>",
     },
     material_properties: {
       color: "Gray",
@@ -534,11 +534,11 @@ export const RowSixElem: ElementDetailsProps[] = [
       neutron_cross_section: 90,
     },
     prevalence: {
-      universe: "2*10<sup>-8</sup>%",
+      universe: "2•10<sup>-8</sup>%",
       sun: "10<sup>-8</sup>%",
       ocean: "10<sup>-10</sup>%",
-      earth_crust: "2.6*10<sup>-7</sup>%",
-      meteorites: "4.9*10<sup>6</sup>%",
+      earth_crust: "2.6•10<sup>-7</sup>%",
+      meteorites: "4.9•10<sup>6</sup>%",
     },
     electromagnetic_properties: {
       electrical_type: "Conductor",
@@ -546,8 +546,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "9.59•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "4.56•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "8.49•10<sup>-10</sup>",
-      electrical_conductivity: "5.6*10<sup>6</sup>",
-      resisitivity: "1.8*10<sup>-7</sup>",
+      electrical_conductivity: "5.6•10<sup>6</sup>",
+      resisitivity: "1.8•10<sup>-7</sup>",
       superconducting_point: 1.7,
     },
     external_links: {
@@ -599,7 +599,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 31,
       specific_heat: 130,
       vaporization_heat: 630,
-      thermal_expansion: "5.1*10<sup>-6</sup>",
+      thermal_expansion: "5.1•10<sup>-6</sup>",
     },
     material_properties: {
       color: "Slate Gray",
@@ -627,9 +627,9 @@ export const RowSixElem: ElementDetailsProps[] = [
       neutron_cross_section: 15,
     },
     prevalence: {
-      universe: "3*10<sup>-7</sup>%",
-      sun: "2*10<sup>-7</sup>%",
-      earth_crust: "1.8*10<sup>-7</sup>%",
+      universe: "3•10<sup>-7</sup>%",
+      sun: "2•10<sup>-7</sup>%",
+      earth_crust: "1.8•10<sup>-7</sup>%",
       meteorites: "0.00007%",
     },
     electromagnetic_properties: {
@@ -638,8 +638,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "1.4•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "6•10<sup>-10</sup>",
       molar_magnetic_suspectibility: "1.1•10<sup>-10</sup>",
-      electrical_conductivity: "1.2*10<sup>7</sup>",
-      resisitivity: "8.1*10<sup>-8</sup>",
+      electrical_conductivity: "1.2•10<sup>7</sup>",
+      resisitivity: "8.1•10<sup>-8</sup>",
       superconducting_point: 0.66,
     },
     external_links: {
@@ -688,7 +688,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 26,
       specific_heat: 131,
       vaporization_heat: 560,
-      thermal_expansion: "6.4*10<sup>-6</sup>",
+      thermal_expansion: "6.4•10<sup>-6</sup>",
     },
     material_properties: {
       color: "Silver",
@@ -718,9 +718,9 @@ export const RowSixElem: ElementDetailsProps[] = [
       neutron_cross_section: 104,
     },
     prevalence: {
-      universe: "2*10<sup>-7</sup>%",
-      sun: "2*10<sup>-7</sup>%",
-      earth_crust: "4*10<sup>-8</sup>%",
+      universe: "2•10<sup>-7</sup>%",
+      sun: "2•10<sup>-7</sup>%",
+      earth_crust: "4•10<sup>-8</sup>%",
       meteorites: "0.00005%",
     },
     electromagnetic_properties: {
@@ -729,8 +729,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "3.77•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "1.67•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "3.21•10<sup>-10</sup>",
-      electrical_conductivity: "2.1*10<sup>7</sup>",
-      resisitivity: "4.7*10<sup>-8</sup>",
+      electrical_conductivity: "2.1•10<sup>7</sup>",
+      resisitivity: "4.7•10<sup>-8</sup>",
       superconducting_point: 0.11,
     },
     external_links: {
@@ -780,7 +780,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 20,
       specific_heat: 133,
       vaporization_heat: 490,
-      thermal_expansion: "8.8*10<sup>-6</sup>",
+      thermal_expansion: "8.8•10<sup>-6</sup>",
     },
     material_properties: {
       color: "Gray",
@@ -810,9 +810,9 @@ export const RowSixElem: ElementDetailsProps[] = [
       neutron_cross_section: 10,
     },
     prevalence: {
-      universe: "5*10<sup>-7</sup>%",
-      sun: "9*10<sup>-7</sup>%",
-      earth_crust: "3.7*10<sup>-6</sup>%",
+      universe: "5•10<sup>-7</sup>%",
+      sun: "9•10<sup>-7</sup>%",
+      earth_crust: "3.7•10<sup>-6</sup>%",
       meteorites: "0.00010%",
     },
     electromagnetic_properties: {
@@ -821,8 +821,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "2.573•10<sup>-4</sup>",
       mass_magnetic_suspectibility: "1.22•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "2.38•10<sup>-9</sup>",
-      electrical_conductivity: "9.4*10<sup>6</sup>",
-      resisitivity: "1.1*10<sup>-7</sup>",
+      electrical_conductivity: "9.4•10<sup>6</sup>",
+      resisitivity: "1.1•10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Platinum",
@@ -871,7 +871,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 12.5,
       specific_heat: 129.1,
       vaporization_heat: 330,
-      thermal_expansion: "1.42*10<sup>-5</sup>",
+      thermal_expansion: "1.42•10<sup>-5</sup>",
     },
     material_properties: {
       color: "Gold",
@@ -901,9 +901,9 @@ export const RowSixElem: ElementDetailsProps[] = [
       neutron_cross_section: 98.7,
     },
     prevalence: {
-      universe: "5*10<sup>-7</sup>%",
-      sun: "9*10<sup>-7</sup>%",
-      earth_crust: "3.7*10<sup>-6</sup>%",
+      universe: "5•10<sup>-7</sup>%",
+      sun: "9•10<sup>-7</sup>%",
+      earth_crust: "3.7•10<sup>-6</sup>%",
       meteorites: "0.00010%",
     },
     electromagnetic_properties: {
@@ -912,8 +912,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "-3.44•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "-1.78•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-3.51•10<sup>-10</sup>",
-      electrical_conductivity: "4.5*10<sup>7</sup>",
-      resisitivity: "2.2*10<sup>-8</sup>",
+      electrical_conductivity: "4.5•10<sup>7</sup>",
+      resisitivity: "2.2•10<sup>-8</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Gold",
@@ -962,7 +962,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 2.29,
       specific_heat: 139.5,
       vaporization_heat: 59.2,
-      thermal_expansion: "1.81*10<sup>-4</sup>",
+      thermal_expansion: "1.81•10<sup>-4</sup>",
     },
     material_properties: {
       color: "Silver",
@@ -987,9 +987,9 @@ export const RowSixElem: ElementDetailsProps[] = [
     },
     prevalence: {
       universe: "10<sup>-7</sup>%",
-      sun: "2*10<sup>-6</sup>%",
-      ocean: "5*10<sup>-9</sup>%",
-      earth_crust: "6.7*10<sup>-6</sup>%",
+      sun: "2•10<sup>-6</sup>%",
+      ocean: "5•10<sup>-9</sup>%",
+      earth_crust: "6.7•10<sup>-6</sup>%",
       meteorites: "0.00003%",
     },
     electromagnetic_properties: {
@@ -999,7 +999,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-2.1•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-4.21•10<sup>-10</sup>",
       electrical_conductivity: "10<sup>6</sup>",
-      resisitivity: "9.6*10<sup>-7</sup>",
+      resisitivity: "9.6•10<sup>-7</sup>",
       superconducting_point: 4.154,
     },
     external_links: {
@@ -1049,7 +1049,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 4.2,
       specific_heat: 129,
       vaporization_heat: 165,
-      thermal_expansion: "2.99*10<sup>-5</sup>",
+      thermal_expansion: "2.99•10<sup>-5</sup>",
     },
     material_properties: {
       color: "Silver",
@@ -1078,11 +1078,11 @@ export const RowSixElem: ElementDetailsProps[] = [
       neutron_cross_section: 3.4,
     },
     prevalence: {
-      universe: "5*10<sup>-8</sup>%",
+      universe: "5•10<sup>-8</sup>%",
       sun: "10<sup>-7</sup>%",
       ocean: "10<sup>-10</sup>%",
       earth_crust: "0.00005%",
-      meteorites: "7.9*10<sup>-6</sup>%",
+      meteorites: "7.9•10<sup>-6</sup>%",
     },
     electromagnetic_properties: {
       electrical_type: "Conductor",
@@ -1090,8 +1090,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "-3.56•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "-3•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-6.13•10<sup>-10</sup>",
-      electrical_conductivity: "6.7*10<sup>6</sup>",
-      resisitivity: "1.5*10<sup>-7</sup>",
+      electrical_conductivity: "6.7•10<sup>6</sup>",
+      resisitivity: "1.5•10<sup>-7</sup>",
       superconducting_point: 2.38,
     },
     external_links: {
@@ -1141,7 +1141,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 4.77,
       specific_heat: 127,
       vaporization_heat: 178,
-      thermal_expansion: "2.89*10<sup>-5</sup>",
+      thermal_expansion: "2.89•10<sup>-5</sup>",
     },
     material_properties: {
       color: "Slate Gray",
@@ -1171,8 +1171,8 @@ export const RowSixElem: ElementDetailsProps[] = [
     },
     prevalence: {
       universe: "10<sup>-6</sup>%",
-      sun: "9.9*10<sup>-7</sup>%",
-      ocean: "3*10<sup>-9</sup>%",
+      sun: "9.9•10<sup>-7</sup>%",
+      ocean: "3•10<sup>-9</sup>%",
       human: "0.00017%",
       earth_crust: "0.001%",
       meteorites: "0.00014%",
@@ -1183,8 +1183,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "-1.7•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "-1.5•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-3.11•10<sup>-10</sup>",
-      electrical_conductivity: "4.8*10<sup>6</sup>",
-      resisitivity: "2.1*10<sup>-7</sup>",
+      electrical_conductivity: "4.8•10<sup>6</sup>",
+      resisitivity: "2.1•10<sup>-7</sup>",
       superconducting_point: 7.2,
     },
     external_links: {
@@ -1196,7 +1196,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     id: 83,
     neighbour: ["Lead", "Polonium"],
     description:
-      "Bismuth is mostly used in low-melting alloys. In pure form it can grow beautiful crystals. It has long been thought to be the last stable element, but in 2003 its radioactivity was discovered. The natural isotope <sup>209</sup>Bi has an extremely long half-life of 1.9*10<sup>19</sup>(19 quintillion) years and therefore is harmless even in large quantities. It decays to Thallium.",
+      "Bismuth is mostly used in low-melting alloys. In pure form it can grow beautiful crystals. It has long been thought to be the last stable element, but in 2003 its radioactivity was discovered. The natural isotope <sup>209</sup>Bi has an extremely long half-life of 1.9•10<sup>19</sup>(19 quintillion) years and therefore is harmless even in large quantities. It decays to Thallium.",
     general_properties: {
       name: "Bismuth",
       atomic_number: 83,
@@ -1233,7 +1233,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 10.9,
       specific_heat: 122,
       vaporization_heat: 160,
-      thermal_expansion: "1.34*10<sup>-5</sup>",
+      thermal_expansion: "1.34•10<sup>-5</sup>",
     },
     material_properties: {
       color: "Gray",
@@ -1257,17 +1257,17 @@ export const RowSixElem: ElementDetailsProps[] = [
     },
     neuclear_properties: {
       radioactive: "Yes",
-      half_life: "6*10<sup>26</sup>",
-      lifetime: "8.7*10<sup>26</sup>",
+      half_life: "6•10<sup>26</sup>",
+      lifetime: "8.7•10<sup>26</sup>",
       neutron_cross_section: 0.034,
       decay_mode: "Alpha",
     },
     prevalence: {
-      universe: "7*10<sup>-8</sup>%",
-      sun: "9.9*10<sup>-7</sup>%",
-      ocean: "2*10<sup>-9</sup>%",
-      earth_crust: "2.5*10<sup>-6</sup>%",
-      meteorites: "6.9*10<sup>-6</sup>%",
+      universe: "7•10<sup>-8</sup>%",
+      sun: "9.9•10<sup>-7</sup>%",
+      ocean: "2•10<sup>-9</sup>%",
+      earth_crust: "2.5•10<sup>-6</sup>%",
+      meteorites: "6.9•10<sup>-6</sup>%",
     },
     electromagnetic_properties: {
       electrical_type: "Conductor",
@@ -1275,8 +1275,8 @@ export const RowSixElem: ElementDetailsProps[] = [
       volume_magnetic_suspectibility: "-1.7•10<sup>-4</sup>",
       mass_magnetic_suspectibility: "-1.7•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "-3.6•10<sup>-9</sup>",
-      electrical_conductivity: "7.7*10<sup>5</sup>",
-      resisitivity: "1.3*10<sup>-6</sup>",
+      electrical_conductivity: "7.7•10<sup>5</sup>",
+      resisitivity: "1.3•10<sup>-6</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Bismuth",
@@ -1337,18 +1337,18 @@ export const RowSixElem: ElementDetailsProps[] = [
     },
     neuclear_properties: {
       radioactive: "Yes",
-      half_life: "3.22*10<sup>9</sup>",
-      lifetime: "4.64*10<sup>9</sup>",
+      half_life: "3.22•10<sup>9</sup>",
+      lifetime: "4.64•10<sup>9</sup>",
       neutron_cross_section: 0.5,
       decay_mode: "Alpha",
     },
     prevalence: {
-      ocean: "2*10<sup>-18</sup>%",
+      ocean: "2•10<sup>-18</sup>%",
     },
     electromagnetic_properties: {
       electrical_type: "Conductor",
-      electrical_conductivity: "2.3*10<sup>6</sup>",
-      resisitivity: "4.3*10<sup>-7</sup>",
+      electrical_conductivity: "2.3•10<sup>6</sup>",
+      resisitivity: "4.3•10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Polonium",
@@ -1406,8 +1406,8 @@ export const RowSixElem: ElementDetailsProps[] = [
     },
     neuclear_properties: {
       radioactive: "Yes",
-      half_life: "2.9*10<sup>4</sup>",
-      lifetime: "4.2*10<sup>4</sup>",
+      half_life: "2.9•10<sup>4</sup>",
+      lifetime: "4.2•10<sup>4</sup>",
       decay_mode: "Positron",
     },
     external_links: {
@@ -1470,13 +1470,13 @@ export const RowSixElem: ElementDetailsProps[] = [
     },
     neuclear_properties: {
       radioactive: "Yes",
-      half_life: "3.3035*10<sup>5</sup>",
-      lifetime: "4.7659*10<sup>5</sup>",
+      half_life: "3.3035•10<sup>5</sup>",
+      lifetime: "4.7659•10<sup>5</sup>",
       neutron_cross_section: 0.7,
       decay_mode: "Alpha",
     },
     prevalence: {
-      ocean: "6*10<sup>-20</sup>%",
+      ocean: "6•10<sup>-20</sup>%",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Radon",

@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import Link from "next/link";
 import { Reactivity } from "@/types/ElementTypes";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
@@ -38,9 +39,12 @@ const Reactivity = ({
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {electron_affinity && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[20%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[20%] text-sm"
+              href="https://en.wikipedia.org/wiki/Electron_affinity"
+            >
               Electron Affinity
-            </p>
+            </Link>
             <div
               className={`w-[60%]  ${
                 theme === "dark"
@@ -66,9 +70,12 @@ const Reactivity = ({
         )}
         {ionization_energy && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[20%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[20%] text-sm"
+              href="https://en.wikipedia.org/wiki/Ionization_energy"
+            >
               Ionization Energy
-            </p>
+            </Link>
             <div
               className={`w-[60%]  ${
                 theme === "dark"
@@ -94,9 +101,12 @@ const Reactivity = ({
         )}
         {electronegativity && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[20%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[20%] text-sm"
+              href="https://en.wikipedia.org/wiki/Electronegativity"
+            >
               Electronegativity
-            </p>
+            </Link>
             <div
               className={`w-[80%]  ${
                 theme === "dark"
@@ -120,7 +130,12 @@ const Reactivity = ({
           </div>
         )}
         <div className="flex flex-row justify-start items-center w-full gap-2">
-          <p className="pr-2 py-1 rounded-[4px] w-[20%] text-sm">Valence</p>
+          <Link
+            className="pr-2 py-1 rounded-[4px] w-[20%] text-sm"
+            href="https://en.wikipedia.org/wiki/Valence_(chemistry)"
+          >
+            Valence
+          </Link>
           <div
             className={`w-[80%]  ${
               theme === "dark"

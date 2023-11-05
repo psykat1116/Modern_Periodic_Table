@@ -5,43 +5,49 @@ import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import { AiFillGithub } from "react-icons/ai";
 import { FiSun } from "react-icons/fi";
 import { PiMoonStarsBold } from "react-icons/pi";
+import { LiaAtomSolid } from "react-icons/lia";
 
 const Navbar = () => {
   const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div
-      className={`w-full flex justify-end items-center pt-4 pr-5 text-xl bg-dark_primary ${
+      className={`w-full flex justify-between items-center pt-3 pb-2 px-5 text-xl ${
         theme === "dark"
-          ? "bg-dark_primary text-text_primary"
-          : "text-text_secondary bg-light_primary"
+          ? "bg-bg_dark_placeholder text-text_primary shadow-lg"
+          : "text-text_secondary bg-bg_light_placeholder shadow-md"
       }`}
     >
-      <Link
-        href="https://github.com/psykat1116/Modern_Periodic_Table"
-        target="_blank"
-        className="mr-5"
-      >
-        <AiFillGithub className="text-2xl" />
+      <Link className="text-2xl" href="/">
+        <LiaAtomSolid />
       </Link>
-      {theme === "dark" ? (
-        <button
-          onClick={() => {
-            localStorage.setItem("theme", "light");
-            theme === "dark" ? setTheme("light") : setTheme("dark");
-          }}
+      <div className="flex justify-end items-center">
+        <Link
+          href="https://github.com/psykat1116/Modern_Periodic_Table"
+          target="_blank"
+          className="mr-5"
         >
-          <FiSun className="cursor-pointer" />
-        </button>
-      ) : (
-        <button
-          onClick={() => {
-            localStorage.setItem("theme", "dark");
-            theme === "dark" ? setTheme("light") : setTheme("dark");
-          }}
-        >
-          <PiMoonStarsBold className="cursor-pointer" />
-        </button>
-      )}
+          <AiFillGithub className="text-2xl" />
+        </Link>
+        {theme === "dark" ? (
+          <button
+            onClick={() => {
+              localStorage.setItem("theme", "light");
+              theme === "dark" ? setTheme("light") : setTheme("dark");
+            }}
+          >
+            <FiSun className="cursor-pointer" />
+          </button>
+        ) : (
+          <button
+            onClick={() => {
+              localStorage.setItem("theme", "dark");
+              theme === "dark" ? setTheme("light") : setTheme("dark");
+            }}
+          >
+            <PiMoonStarsBold className="cursor-pointer" />
+          </button>
+        )}
+      </div>
     </div>
   );
 };

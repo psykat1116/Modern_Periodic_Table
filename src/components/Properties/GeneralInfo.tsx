@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import Link from "next/link";
 import { GeneralProperties } from "@/types/ElementTypes";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
@@ -37,7 +38,12 @@ const GeneralInfo = ({
       <h1 className="text-xl">General Properties</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         <div className="flex flex-row justify-start items-center w-full ">
-          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Atomic Number</p>
+          <Link
+            className=" pr-2 py-1 rounded-[4px] w-[20%]"
+            href="https://en.wikipedia.org/wiki/Atomic_number"
+          >
+            Atomic Number
+          </Link>
           <div
             className={`w-[80%]  ${
               theme === "dark"
@@ -61,7 +67,12 @@ const GeneralInfo = ({
         </div>
         {group && (
           <div className="flex flex-row justify-start items-center w-full ">
-            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Group</p>
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              href="https://en.wikipedia.org/wiki/Group_(periodic_table)"
+            >
+              Group
+            </Link>
             <div
               className={`w-[80%]  ${
                 theme === "dark"
@@ -81,7 +92,12 @@ const GeneralInfo = ({
           </div>
         )}
         <div className="flex flex-row justify-start items-center w-full ">
-          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Period</p>
+          <Link
+            className=" pr-2 py-1 rounded-[4px] w-[20%]"
+            href="https://en.wikipedia.org/wiki/Period_(periodic_table)"
+          >
+            Period
+          </Link>
           <div
             className={`w-[80%]  ${
               theme === "dark"
@@ -100,7 +116,12 @@ const GeneralInfo = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full ">
-          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Block</p>
+          <Link
+            className=" pr-2 py-1 rounded-[4px] w-[20%]"
+            href="https://en.wikipedia.org/wiki/Block_(periodic_table)"
+          >
+            Block
+          </Link>
           <div
             className={`w-[80%]  ${
               theme === "dark"
@@ -119,7 +140,12 @@ const GeneralInfo = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full ">
-          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">CAS Number</p>
+          <Link
+            className=" pr-2 py-1 rounded-[4px] w-[20%]"
+            href="https://en.wikipedia.org/wiki/CAS_Registry_Number"
+          >
+            CAS Number
+          </Link>
           <div
             className={`w-[80%]  ${
               theme === "dark"

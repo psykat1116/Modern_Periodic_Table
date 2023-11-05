@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import Link from "next/link";
 import { ElectromagneticProperties } from "@/types/ElementTypes";
 import { MdCheck, MdContentCopy } from "react-icons/md";
 import DOMPurify from "dompurify";
@@ -6,15 +7,17 @@ import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import ListBox from "../ListBox";
 
 const TempOptions = [
-  { name: "Celecius(℃)" },
-  { name: "Feranheit(℉)" },
-  { name: "Kelvin(K)" },
+  { name: "Celecius (℃)" },
+  { name: "Feranheit (℉)" },
+  { name: "Kelvin (K)" },
 ];
 
 const MassMagnetOptions = [
   { name: "m<sup>3</sup>/Kg" },
   { name: "cm<sup>3</sup>/g" },
 ];
+
+const ResistivityOptions = [{ name: "m•Ohm" }, { name: "cm•Ohm" }];
 
 const EMProperty = ({
   electrical_conductivity,
@@ -56,40 +59,9 @@ const EMProperty = ({
     >
       <h1 className="text-xl">Electromagnetic Properties</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
-        {electrical_conductivity && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Electrical Conductivity (Sm<sup>-1</sup>)
-            </p>
-            <div
-              className={`w-[70%]  ${
-                theme === "dark"
-                  ? "bg-bg_dark_placeholder"
-                  : "bg-bg_light_placeholder"
-              }  px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-            >
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: DOMPurify.sanitize(electrical_conductivity),
-                }}
-              ></p>
-              <button
-                onClick={() =>
-                  handleCopy(electrical_conductivity, "electrical_conductivity")
-                }
-              >
-                {!isCopying.electrical_conductivity ? (
-                  <MdContentCopy />
-                ) : (
-                  <MdCheck className="text-green-700" />
-                )}
-              </button>
-            </div>
-          </div>
-        )}
         {electrical_type && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+            <p className="pr-2 py-1 rounded-[4px] w-[30%] text-sm">
               Electrical Type
             </p>
             <div
@@ -110,92 +82,6 @@ const EMProperty = ({
                 )}
               </button>
             </div>
-          </div>
-        )}
-        {resisitivity && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Resistivity (Ohm m)
-            </p>
-            <div
-              className={`w-[70%]  ${
-                theme === "dark"
-                  ? "bg-bg_dark_placeholder"
-                  : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-            >
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: DOMPurify.sanitize(resisitivity),
-                }}
-              ></p>
-              <button onClick={() => handleCopy(resisitivity, "resisitivity")}>
-                {!isCopying.resisitivity ? (
-                  <MdContentCopy />
-                ) : (
-                  <MdCheck className="text-green-700" />
-                )}
-              </button>
-            </div>
-          </div>
-        )}
-        {curie_point && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Curie Point
-            </p>
-            <div
-              className={`w-[50%]  ${
-                theme === "dark"
-                  ? "bg-bg_dark_placeholder"
-                  : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-            >
-              <p>{curie_point}</p>
-              <button
-                onClick={() =>
-                  handleCopy(curie_point.toString(), "curie_point")
-                }
-              >
-                {!isCopying.curie_point ? (
-                  <MdContentCopy />
-                ) : (
-                  <MdCheck className="text-green-700" />
-                )}
-              </button>
-            </div>
-            <ListBox options={TempOptions} />
-          </div>
-        )}
-        {superconducting_point && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[30%] text-sm">
-              Superconducting Point
-            </p>
-            <div
-              className={`w-[50%]  ${
-                theme === "dark"
-                  ? "bg-bg_dark_placeholder"
-                  : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-            >
-              <p>{superconducting_point}</p>
-              <button
-                onClick={() =>
-                  handleCopy(
-                    superconducting_point.toString(),
-                    "superconducting_point"
-                  )
-                }
-              >
-                {!isCopying.superconducting_point ? (
-                  <MdContentCopy />
-                ) : (
-                  <MdCheck className="text-green-700" />
-                )}
-              </button>
-            </div>
-            <ListBox options={TempOptions} />
           </div>
         )}
         {magnetic_type && (
@@ -223,11 +109,153 @@ const EMProperty = ({
             </div>
           </div>
         )}
+        {electrical_conductivity && (
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              href="https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivit"
+            >
+              Electrical Conductivity
+            </Link>
+            <div
+              className={`w-[50%]  ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              }  px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(electrical_conductivity),
+                }}
+              ></p>
+              <button
+                onClick={() =>
+                  handleCopy(electrical_conductivity, "electrical_conductivity")
+                }
+              >
+                {!isCopying.electrical_conductivity ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
+            <div
+              className={`w-[20%] px-2 py-1 rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              }`}
+            >
+              Sm<sup>-1</sup>
+            </div>
+          </div>
+        )}
+        {resisitivity && (
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              href="https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivit"
+            >
+              Resistivity
+            </Link>
+            <div
+              className={`w-[50%]  ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(resisitivity),
+                }}
+              ></p>
+              <button onClick={() => handleCopy(resisitivity, "resisitivity")}>
+                {!isCopying.resisitivity ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
+            <ListBox options={ResistivityOptions} />
+          </div>
+        )}
+        {curie_point && (
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              href="https://en.wikipedia.org/wiki/Curie_temperature"
+            >
+              Curie Point
+            </Link>
+            <div
+              className={`w-[50%]  ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p>{curie_point}</p>
+              <button
+                onClick={() =>
+                  handleCopy(curie_point.toString(), "curie_point")
+                }
+              >
+                {!isCopying.curie_point ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
+            <ListBox options={TempOptions} />
+          </div>
+        )}
+        {superconducting_point && (
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              href="https://en.wikipedia.org/wiki/Superconductivity"
+            >
+              Superconducting Point
+            </Link>
+            <div
+              className={`w-[50%]  ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p>{superconducting_point}</p>
+              <button
+                onClick={() =>
+                  handleCopy(
+                    superconducting_point.toString(),
+                    "superconducting_point"
+                  )
+                }
+              >
+                {!isCopying.superconducting_point ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
+            <ListBox options={TempOptions} />
+          </div>
+        )}
         {mass_magnetic_suspectibility && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              href="https://en.wikipedia.org/wiki/Magnetic_susceptibility"
+            >
               Mass Magnetic Suspectibility
-            </p>
+            </Link>
             <div
               className={`w-[50%]  ${
                 theme === "dark"
@@ -260,9 +288,12 @@ const EMProperty = ({
         )}
         {molar_magnetic_suspectibility && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              href="https://en.wikipedia.org/wiki/Magnetic_susceptibility"
+            >
               Molar Magnetic Suspectibility
-            </p>
+            </Link>
             <div
               className={`w-[50%]  ${
                 theme === "dark"
@@ -303,9 +334,12 @@ const EMProperty = ({
         )}
         {volume_magnetic_suspectibility && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              href="https://en.wikipedia.org/wiki/Magnetic_susceptibility"
+            >
               Volume Magnetic Suspectibility
-            </p>
+            </Link>
             <div
               className={`w-[70%]  ${
                 theme === "dark"

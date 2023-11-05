@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import Link from "next/link";
 import { MaterialProperties } from "@/types/ElementTypes";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import DOMPurify from "dompurify";
@@ -103,9 +104,12 @@ const MaterialProperty = ({
         )}
         {molar_volume && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Molar_volume"
+            >
               Molar Volume
-            </p>
+            </Link>
             <div
               className={`w-[55%]  ${
                 theme === "dark"
@@ -135,9 +139,12 @@ const MaterialProperty = ({
         )}
         {mohs_hardness && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Mohs_scale"
+            >
               Mohs Hardness
-            </p>
+            </Link>
             <div
               className={`w-[75%]  ${
                 theme === "dark"
@@ -162,9 +169,12 @@ const MaterialProperty = ({
         )}
         {bulk_modulus && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Bulk_modulus"
+            >
               Bulk Modulus
-            </p>
+            </Link>
             <div
               className={`w-[55%]  ${
                 theme === "dark"
@@ -190,9 +200,12 @@ const MaterialProperty = ({
         )}
         {brinell_hardness && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Brinell_scale"
+            >
               Brinnel Hardness
-            </p>
+            </Link>
             <div
               className={`w-[55%]  ${
                 theme === "dark"
@@ -218,7 +231,12 @@ const MaterialProperty = ({
         )}
         {density && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">Density</p>
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Density"
+            >
+              Density
+            </Link>
             <div
               className={`w-[55%]  ${
                 theme === "dark"
@@ -240,9 +258,12 @@ const MaterialProperty = ({
         )}
         {liquid_density && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Density"
+            >
               Liquid Density
-            </p>
+            </Link>
             <div
               className={`w-[55%]  ${
                 theme === "dark"
@@ -268,9 +289,12 @@ const MaterialProperty = ({
         )}
         {young_modulus && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Young%27s_modulus"
+            >
               Young Modulus
-            </p>
+            </Link>
             <div
               className={`w-[55%]  ${
                 theme === "dark"
@@ -296,9 +320,12 @@ const MaterialProperty = ({
         )}
         {vickers_hardness && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Vickers_hardness_test"
+            >
               Vickers Hardness
-            </p>
+            </Link>
             <div
               className={`w-[55%]  ${
                 theme === "dark"
@@ -324,9 +351,12 @@ const MaterialProperty = ({
         )}
         {shear_modulus && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Shear_modulus"
+            >
               Shear Hardness
-            </p>
+            </Link>
             <div
               className={`w-[55%]  ${
                 theme === "dark"
@@ -352,9 +382,12 @@ const MaterialProperty = ({
         )}
         {thermal_conductivity && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Thermal_conductivity_and_resistivity"
+            >
               Thermal Conductivity
-            </p>
+            </Link>
             <div
               className={`w-[55%]  ${
                 theme === "dark"
@@ -383,9 +416,12 @@ const MaterialProperty = ({
         )}
         {sound_speed && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Speed_of_sound"
+            >
               Sound Speed
-            </p>
+            </Link>
             <div
               className={`w-[55%]  ${
                 theme === "dark"
@@ -419,9 +455,12 @@ const MaterialProperty = ({
         )}
         {poisson_ratio && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Poisson%27s_ratio"
+            >
               Poisson Ratio
-            </p>
+            </Link>
             <div
               className={`w-[75%]  ${
                 theme === "dark"
@@ -446,9 +485,12 @@ const MaterialProperty = ({
         )}
         {refrective_index && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Refractive_index"
+            >
               Refractive Index
-            </p>
+            </Link>
             <div
               className={`w-[75%]  ${
                 theme === "dark"

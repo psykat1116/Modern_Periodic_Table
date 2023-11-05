@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import Link from "next/link";
 import { NeuclearProperties } from "@/types/ElementTypes";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
@@ -58,7 +59,12 @@ const NeuclearProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full ">
-          <p className=" pr-2 py-1 rounded-[4px] w-[25%]">Half Life(s)</p>
+          <Link
+            className=" pr-2 py-1 rounded-[4px] w-[25%]"
+            href="https://en.wikipedia.org/wiki/Half-life"
+          >
+            Half Life(s)
+          </Link>
           <div
             className={`w-[75%]  ${
               theme === "dark"
@@ -83,7 +89,12 @@ const NeuclearProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full ">
-          <p className=" pr-2 py-1 rounded-[4px] w-[25%]">Lifetime(s)</p>
+          <Link
+            className=" pr-2 py-1 rounded-[4px] w-[25%]"
+            href="https://en.wikipedia.org/wiki/Radioactive_decay"
+          >
+            Lifetime(s)
+          </Link>
           <div
             className={`w-[75%]  ${
               theme === "dark"
@@ -105,9 +116,12 @@ const NeuclearProperty = ({
         </div>
         {neutron_cross_section && (
           <div className="flex flex-row justify-start items-center w-full ">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%]">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%]"
+              href="https://en.wikipedia.org/wiki/Neutron_cross_section"
+            >
               Neutron Cross Section
-            </p>
+            </Link>
             <div
               className={`w-[75%]  ${
                 theme === "dark"

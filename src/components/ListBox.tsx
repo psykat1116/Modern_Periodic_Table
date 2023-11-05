@@ -12,9 +12,9 @@ const ListBox = ({ options }: { options: optionTypes[] }) => {
   const [selected, setSelected] = useState(options[0]);
   return (
     <Listbox value={selected} onChange={setSelected}>
-      <div className="relative w-[20%]">
+      <div className="relative w-[20%] text-sm">
         <Listbox.Button
-          className={`relative w-full cursor-pointer px-2 py-1 rounded-[4px] ${
+          className={`relative w-full cursor-pointer px-2 py-2 rounded-[4px] ${
             theme === "dark"
               ? "bg-bg_dark_placeholder"
               : "bg-bg_light_placeholder"
@@ -44,7 +44,7 @@ const ListBox = ({ options }: { options: optionTypes[] }) => {
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } py-1 text-base focus:outline-none sm:text-sm`}
+            } py-2 text-base focus:outline-none sm:text-sm`}
           >
             {options.map((person, personIdx) => (
               <Listbox.Option

@@ -630,7 +630,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     id: 64,
     neighbour: ["Europium", "Terbium"],
     description:
-      "Gadolinium has some special applications in high tech and medicine. It is rather toxic and is the first element that was named after a person, Finnish Chemist and Geologist Johan Gadolin. Gadolinium is a silvery-white metal when oxidation is removed. It is only slightly malleable and is a ductile rare-earth element/ Gadolinium reacts with atmospheric oxygen or moist slowly to form a black coating.",
+      "Gadolinium has some special applications in high tech and medicine. It is rather toxic and is the first element that was named after a person, Finnish Chemist and Geologist Johan Gadolin. Gadolinium is a silvery-white metal when oxidation is removed. It is only slightly malleable and is a ductile rare-earth element Gadolinium reacts with atmospheric oxygen or moist slowly to form a black coating.",
     general_properties: {
       name: "Gadolinium",
       atomic_number: 64,

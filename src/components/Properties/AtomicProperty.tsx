@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import Link from "next/link";
 import { AtomicProperties } from "@/types/ElementTypes";
 import DOMPurify from "dompurify";
 import { MdContentCopy, MdCheck } from "react-icons/md";
@@ -46,9 +47,12 @@ const AtomicProperty = ({
       <h1 className="text-xl">Atomic Properties</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         <div className="flex flex-row justify-start items-center w-full gap-2">
-          <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+          <Link
+            className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+            href="https://en.wikipedia.org/wiki/Standard_atomic_weight"
+          >
             Atomic Weight
-          </p>
+          </Link>
           <div
             className={`w-[55%] ${
               theme === "dark"
@@ -80,9 +84,12 @@ const AtomicProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full gap-2">
-          <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+          <Link
+            className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+            href="https://en.wikipedia.org/wiki/Electron_shell"
+          >
             Electron Shell Configuration
-          </p>
+          </Link>
           <div
             className={`w-[75%] ${
               theme === "dark"
@@ -108,9 +115,12 @@ const AtomicProperty = ({
           </div>
         </div>
         <div className="flex flex-row justify-start items-start w-full gap-2">
-          <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+          <Link
+            className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+            href="https://en.wikipedia.org/wiki/Electron_shell"
+          >
             Electron Configuration
-          </p>
+          </Link>
           <div
             className={`w-[75%] ${
               theme === "dark"
@@ -171,9 +181,12 @@ const AtomicProperty = ({
         )}
         {atomic_radius && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Atomic_radius"
+            >
               Atomic Radius
-            </p>
+            </Link>
             <div
               className={`w-[55%] ${
                 theme === "dark"
@@ -207,9 +220,12 @@ const AtomicProperty = ({
         )}
         {covalent_radius && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Covalent_radius"
+            >
               Covalent Radius
-            </p>
+            </Link>
             <div
               className={`w-[55%] ${
                 theme === "dark"
@@ -243,9 +259,12 @@ const AtomicProperty = ({
         )}
         {van_der_walls_radius && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Van_der_Waals_radius"
+            >
               Van Der Walls Radius
-            </p>
+            </Link>
             <div
               className={`w-[55%] ${
                 theme === "dark"
@@ -282,9 +301,12 @@ const AtomicProperty = ({
         )}
         {crystall_structure && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Crystal_structure"
+            >
               Crystall Structure
-            </p>
+            </Link>
             <div
               className={`w-[75%] ${
                 theme === "dark"
@@ -312,9 +334,12 @@ const AtomicProperty = ({
         )}
         {oxidation_states && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="https://en.wikipedia.org/wiki/Oxidation_state"
+            >
               Oxidation States
-            </p>
+            </Link>
             <div className="w-[75%] py-1 flex justify-start items-center select-none">
               {oxidation_states.map((state) => {
                 return (
