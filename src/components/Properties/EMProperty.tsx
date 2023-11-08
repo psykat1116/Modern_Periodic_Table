@@ -142,7 +142,7 @@ const EMProperty = ({
               </button>
             </div>
             <div
-              className={`w-[20%] px-2 py-1 rounded-[4px] ${
+              className={`w-[20%] px-2 py-2 text-sm rounded-[4px] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -322,7 +322,7 @@ const EMProperty = ({
               </button>
             </div>
             <div
-              className={`w-[20%] px-2 py-1 rounded-[4px] ${
+              className={`w-[20%] px-2 py-2 text-sm rounded-[4px] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"

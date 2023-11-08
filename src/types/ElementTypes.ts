@@ -66,6 +66,8 @@ export interface NeuclearProperties {
   lifetime: string | "∞";
   neutron_cross_section?: number;
   decay_mode?: "Alpha" | "Beta" | "Gamma" | "Positron";
+  isotopes: number[];
+  stable?: number[];
 }
 
 export interface ElectromagneticProperties {

@@ -68,6 +68,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 8.98,
+      isotopes: [
+        117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130,
+        131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144,
+        145, 146, 147, 148, 149, 150.151, 152, 153, 154, 155,
+      ],
+      stable: [139],
     },
     prevalence: {
       universe: "2•10<sup>-7</sup>%",
@@ -164,6 +170,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.6,
+      isotopes: [
+        119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132,
+        133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146,
+        147, 148, 149, 150.151, 152, 153, 154, 155, 156, 157,
+      ],
+      stable: [136, 138, 140, 142],
     },
     prevalence: {
       universe: "10<sup>-6</sup>%",
@@ -255,6 +267,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 11.4,
+      isotopes: [
+        121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134,
+        135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148,
+        149, 150.151, 152, 153, 154, 155, 156, 157, 158, 159,
+      ],
+      stable: [141],
     },
     prevalence: {
       universe: "2•10<sup>-7</sup>%",
@@ -345,6 +363,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 49,
+      isotopes: [
+        124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137,
+        138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150.151,
+        152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+      ],
+      stable: [142, 143, 145, 146, 148],
     },
     prevalence: {
       universe: "10<sup>-6</sup>%",
@@ -433,6 +457,11 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "8.06•10<sup>8</sup>",
       neutron_cross_section: 8400,
       decay_mode: "Beta",
+      isotopes: [
+        126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139,
+        140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150.151, 152, 153,
+        154, 155, 156, 157, 158, 159, 160, 161, 162, 163,
+      ],
     },
     electromagnetic_properties: {
       electrical_type: "Conductor",
@@ -515,6 +544,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 5900,
+      isotopes: [
+        128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141,
+        142, 143, 144, 145, 146, 147, 148, 149, 150.151, 152, 153, 154, 155,
+        156, 157, 158, 159, 160, 161, 162, 163, 164, 165,
+      ],
+      stable: [144, 149, 150, 152, 154],
     },
     prevalence: {
       universe: "5•10<sup>-7</sup>%",
@@ -603,6 +638,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 4570,
+      isotopes: [
+        130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143,
+        144, 145, 146, 147, 148, 149, 150.151, 152, 153, 154, 155, 156, 157,
+        158, 159, 160, 161, 162, 163, 164, 165, 166, 167,
+      ],
+      stable: [151, 153],
     },
     prevalence: {
       universe: "5•10<sup>-8</sup>%",
@@ -698,6 +739,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 49000,
+      isotopes: [
+        134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147,
+        148, 149, 150.151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+        162, 163, 164, 165, 166, 167, 168, 169,
+      ],
+      stable: [154, 155, 156, 157, 158, 160],
     },
     prevalence: {
       universe: "2•10<sup>-7</sup>%",
@@ -786,6 +833,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 23,
+      isotopes: [
+        136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149,
+        150.151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163,
+        164, 165, 166, 167, 168, 169, 170, 171,
+      ],
+      stable: [159],
     },
     prevalence: {
       universe: "5•10<sup>-8</sup>%",
@@ -879,6 +932,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 950,
+      isotopes: [
+        138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150.151,
+        152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165,
+        166, 167, 168, 169, 170, 171, 172, 173,
+      ],
+      stable: [156, 158, 160, 161, 162, 163, 164],
     },
     prevalence: {
       universe: "2•10<sup>-7</sup>%",
@@ -975,6 +1034,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 65,
+      isotopes: [
+        140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153,
+        154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167,
+        168, 169, 170, 171, 172, 173, 174, 175,
+      ],
+      stable: [165],
     },
     prevalence: {
       universe: "5•10<sup>-8</sup>%",
@@ -1066,6 +1131,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 165,
+      isotopes: [
+        143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156,
+        157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170,
+        171, 172, 173, 174, 175, 176, 177,
+      ],
+      stable: [162, 164, 166, 167, 168, 170],
     },
     prevalence: {
       universe: "2•10<sup>-7</sup>%",
@@ -1157,6 +1228,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 105,
+      isotopes: [
+        145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158,
+        159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172,
+        173, 174, 175, 176, 177, 178, 179,
+      ],
+      stable: [169],
     },
     prevalence: {
       universe: "10<sup>-8</sup>%",
@@ -1251,6 +1328,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 35,
+      isotopes: [
+        148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
+        162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175,
+        176, 177, 178, 179, 180, 181, 182,
+      ],
+      stable: [168, 170, 171, 172, 173, 174, 176],
     },
     prevalence: {
       universe: "2•10<sup>-7</sup>%",
@@ -1343,6 +1426,12 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 84,
+      isotopes: [
+        150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163,
+        164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177,
+        178, 179, 180, 181, 182, 183, 184,
+      ],
+      stable: [175],
     },
     prevalence: {
       universe: "10<sup>-8</sup>%",

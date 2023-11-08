@@ -81,7 +81,7 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
                     theme === "dark"
                       ? "bg-bg_dark_placeholder"
                       : "bg-bg_light_placeholder"
-                  } px-2 py-1 rounded-[4px] select-none`}
+                  } px-2 py-2 rounded-[4px] select-none`}
                 >
                   {d[0]}
                 </Link>

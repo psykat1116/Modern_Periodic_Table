@@ -5,13 +5,21 @@ import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import DOMPurify from "dompurify";
 
-const NeuclearProperty = ({
-  radioactive,
-  half_life,
-  lifetime,
-  neutron_cross_section,
-  decay_mode,
-}: NeuclearProperties) => {
+interface NProperty {
+  property: NeuclearProperties;
+  name?: string;
+}
+
+const NeuclearProperty = ({ property, name }: NProperty) => {
+  const {
+    radioactive,
+    half_life,
+    lifetime,
+    neutron_cross_section,
+    decay_mode,
+    isotopes,
+    stable,
+  } = property;
   const [isCopying, setIsCopying] = useState({
     radioactive: false,
     half_life: false,
@@ -165,6 +173,52 @@ const NeuclearProperty = ({
                   <MdCheck className="text-green-700" />
                 )}
               </button>
+            </div>
+          </div>
+        )}
+        <div className="flex flex-row justify-start items-start w-full ">
+          <p className=" pr-2 py-1 rounded-[4px] w-[25%]">Known Isotopes</p>
+          <div
+            className={`w-[75%] py-1 rounded-[4px] grid grid-cols-12 gap-2 select-none`}
+          >
+            {isotopes.map((elem) => {
+              return (
+                <p
+                  className={`h-[35px] w-[35px] flex justify-center items-center ${
+                    theme === "dark"
+                      ? "bg-bg_dark_placeholder"
+                      : "bg-bg_light_placeholder"
+                  } rounded-full text-xs`}
+                  key={elem}
+                >
+                  <sup>{elem}</sup>
+                  {name}
+                </p>
+              );
+            })}
+          </div>
+        </div>
+        {stable && (
+          <div className="flex flex-row justify-start items-start w-full ">
+            <p className=" pr-2 py-1 rounded-[4px] w-[25%]">Stable Isotopes</p>
+            <div
+              className={`w-[75%] py-1 rounded-[4px] grid grid-cols-12 gap-2 select-none`}
+            >
+              {stable.map((elem) => {
+                return (
+                  <p
+                    className={`h-[35px] w-[35px] flex justify-center items-center ${
+                      theme === "dark"
+                        ? "bg-bg_dark_placeholder"
+                        : "bg-bg_light_placeholder"
+                    } rounded-full text-xs`}
+                    key={elem}
+                  >
+                    <sup>{elem}</sup>
+                    {name}
+                  </p>
+                );
+              })}
             </div>
           </div>
         )}

@@ -52,6 +52,11 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "1.3•10<sup>3</sup>",
       lifetime: "1.9•10<sup>3</sup>",
       decay_mode: "Beta",
+      isotopes: [
+        199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212,
+        213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226,
+        227, 228, 229, 230, 231, 232,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Francium",
@@ -124,6 +129,11 @@ export const RowSevenElem: ElementDetailsProps[] = [
       lifetime: "7.3•10<sup>10</sup>",
       neutron_cross_section: 13,
       decay_mode: "Alpha",
+      isotopes: [
+        202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215,
+        216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229,
+        230, 231, 232, 233, 234,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Radium",
@@ -169,6 +179,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "4.7•10<sup>4</sup>",
       lifetime: "6.8•10<sup>4</sup>",
       decay_mode: "Alpha",
+      isotopes: [
+        253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266,
+        267, 268,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Rutherfordium",
@@ -214,6 +228,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "2•10<sup>4</sup>",
       lifetime: "3•10<sup>4</sup>",
       decay_mode: "Alpha",
+      isotopes: [
+        255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268,
+        269, 270,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Dubnium",
@@ -258,6 +276,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "7•10<sup>3</sup>",
       lifetime: "10<sup>4</sup>",
       decay_mode: "Alpha",
+      isotopes: [
+        258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271,
+        272, 273,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Seaborgium",
@@ -305,6 +327,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "5.4•10<sup>3</sup>",
       lifetime: "7.8•10<sup>3</sup>",
       decay_mode: "Alpha",
+      isotopes: [
+        260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273,
+        274, 275,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Bohrium",
@@ -346,6 +372,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "4•10<sup>3</sup>",
       lifetime: "5•10<sup>3</sup>",
       decay_mode: "Alpha",
+      isotopes: [
+        263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276,
+        277,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Hassium",
@@ -390,6 +420,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "1.8•10<sup>3</sup>",
       lifetime: "2.6•10<sup>3</sup>",
       decay_mode: "Alpha",
+      isotopes: [
+        265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278,
+        279,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Meitnerium",
@@ -431,6 +465,10 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "2.4•10<sup>2</sup>",
       lifetime: "3.5•10<sup>2</sup>",
       decay_mode: "Alpha",
+      isotopes: [
+        267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280,
+        281,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Darmstadtium",
@@ -472,6 +510,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "6•10<sup>2</sup>",
       lifetime: "8.7•10<sup>2</sup>",
       decay_mode: "Alpha",
+      isotopes: [272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Roentgenium",
@@ -513,6 +552,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "2.4•10<sup>3</sup>",
       lifetime: "3.5•10<sup>3</sup>",
       decay_mode: "Alpha",
+      isotopes: [277, 278, 279, 280, 281, 282, 283, 284, 285],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Copernicium",
@@ -557,6 +597,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "1.2•10<sup>3</sup>",
       lifetime: "1.7•10<sup>3</sup>",
       decay_mode: "Alpha",
+      isotopes: [283, 284, 285, 286, 287],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Nihonium",
@@ -598,6 +639,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "80",
       lifetime: "1.2•10<sup>2</sup>",
       decay_mode: "Alpha",
+      isotopes: [285, 286, 287, 288, 289],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Flerovium",
@@ -639,6 +681,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "60",
       lifetime: "90",
       decay_mode: "Alpha",
+      isotopes: [287, 288, 289, 290, 291],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Moscovium",
@@ -680,6 +723,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "0.12",
       lifetime: "0.173",
       decay_mode: "Alpha",
+      isotopes: [289, 290, 291, 292],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Livermorium",
@@ -720,6 +764,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "5•10<sup>-2</sup>",
       lifetime: "7.2•10<sup>-2</sup>",
+      isotopes: [291, 292, 293, 294],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Tennessine",
@@ -761,6 +806,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "5•10<sup>-3</sup>",
       lifetime: "7•10<sup>-3</sup>",
       decay_mode: "Alpha",
+      isotopes: [293],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Oganesson",

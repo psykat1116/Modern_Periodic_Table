@@ -58,6 +58,11 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "9.9121•10<sup>8</sup>",
       neutron_cross_section: 880,
       decay_mode: "Beta",
+      isotopes: [
+        206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219,
+        220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233,
+        234, 235, 236,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Actinium",
@@ -129,6 +134,12 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "6.397•10<sup>17</sup>",
       neutron_cross_section: 7.4,
       decay_mode: "Alpha",
+      isotopes: [
+        209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222,
+        223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236,
+        237, 238,
+      ],
+      stable: [232],
     },
     prevalence: {
       universe: "4•10<sup>-8</sup>%",
@@ -216,6 +227,11 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "1.491•10<sup>12</sup>",
       neutron_cross_section: 200,
       decay_mode: "Alpha",
+      isotopes: [
+        212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225,
+        226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239,
+        240,
+      ],
     },
     prevalence: {
       universe: "4•10<sup>-8</sup>%",
@@ -307,6 +323,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "2.034•10<sup>17</sup>",
       neutron_cross_section: 7.57,
       decay_mode: "Alpha",
+      isotopes: [
+        217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230,
+        231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242,
+      ],
     },
     prevalence: {
       universe: "2•10<sup>-8</sup>%",
@@ -390,6 +410,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "9.761•10<sup>13</sup>",
       neutron_cross_section: 180,
       decay_mode: "Alpha",
+      isotopes: [
+        225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238,
+        239, 240, 241, 242,
+      ],
     },
     electromagnetic_properties: {
       electrical_conductivity: "8.3•10<sup>5</sup>",
@@ -461,6 +485,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "2.6•10<sup>15</sup>",
       neutron_cross_section: 1.7,
       decay_mode: "Alpha",
+      isotopes: [
+        228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241,
+        242, 243, 244, 245, 246, 247,
+      ],
     },
     electromagnetic_properties: {
       electrical_conductivity: "6.7•10<sup>5</sup>",
@@ -535,6 +563,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "3.66•10<sup>11</sup>",
       neutron_cross_section: 74,
       decay_mode: "Alpha",
+      isotopes: [
+        231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244,
+        245, 246, 247, 248, 249,
+      ],
     },
     electromagnetic_properties: {
       magnetic_type: "Paramagnetic",
@@ -605,6 +637,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "7.1•10<sup>14</sup>",
       neutron_cross_section: 60,
       decay_mode: "Alpha",
+      isotopes: [
+        233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246,
+        247, 248, 249, 250, 251, 252,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Curium",
@@ -666,6 +702,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "6.28•10<sup>10</sup>",
       neutron_cross_section: 710,
       decay_mode: "Alpha",
+      isotopes: [
+        235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248,
+        249, 250, 251, 252, 253, 254,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Berkelium",
@@ -727,6 +767,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "4.1•10<sup>10</sup>",
       neutron_cross_section: 2900,
       decay_mode: "Alpha",
+      isotopes: [
+        237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250,
+        251, 252, 253, 254, 255, 256,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Californium",
@@ -784,6 +828,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "5.88•10<sup>7</sup>",
       neutron_cross_section: 160,
       decay_mode: "Alpha",
+      isotopes: [
+        240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253,
+        254, 255, 256, 257, 258,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Einsteinium",
@@ -839,6 +887,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "1.253•10<sup>7</sup>",
       neutron_cross_section: 5800,
       decay_mode: "Alpha",
+      isotopes: [
+        242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255,
+        256, 257, 258, 259, 260,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Fermium",
@@ -891,6 +943,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "4.45•10<sup>6</sup>",
       lifetime: "6.62•10<sup>6</sup>",
       decay_mode: "Alpha",
+      isotopes: [
+        245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258,
+        259, 260, 261, 262,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Mendelevium",
@@ -945,6 +1001,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "10<sup>4</sup>",
       lifetime: "2•10<sup>4</sup>",
       decay_mode: "Alpha",
+      isotopes: [
+        248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261,
+        262, 263, 264,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Nobelium",
@@ -999,6 +1059,10 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "3.6•10<sup>4</sup>",
       lifetime: "5.2•10<sup>4</sup>",
       decay_mode: "Beta",
+      isotopes: [
+        251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264,
+        265, 266,
+      ],
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Lawrencium",

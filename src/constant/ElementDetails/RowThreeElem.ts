@@ -23,7 +23,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Natrium",
       discovery: 1807,
-      discoverer: [["Humphry Davy","Humphry_Davy"]],
+      discoverer: [["Humphry Davy", "Humphry_Davy"]],
     },
     atomic_properties: {
       atomic_weight: 22.98976928,
@@ -69,6 +69,11 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.53,
+      isotopes: [
+        18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35,
+        36, 37,
+      ],
+      stable: [23],
     },
     prevalence: {
       sun: "0.0040%",
@@ -95,7 +100,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     id: 12,
     neighbour: ["Sodium", "Aluminium"],
     description:
-      "Magnesium is a very abundant, light and reactive element, which is essetial to life. In nature, it is found in many minerals, like in talc.Elemental magnesium burns with a bright, White flame and a temperature of more than 3000 K. This once was used as flashlight for photography and is still used in underwater torches.",
+      "Magnesium is a very abundant, light and reactive element, which is essetial to life. In nature, it is found in many minerals, like in talc. Elemental magnesium burns with a bright, White flame and a temperature of more than 3000 K. This once was used as flashlight for photography and is still used in underwater torches.",
     general_properties: {
       name: "Magnesium",
       atomic_number: 12,
@@ -113,7 +118,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     overview: {
       latin_name: "Magnesium",
       discovery: 1755,
-      discoverer: [["Joseph Black","Joseph_Black"]],
+      discoverer: [["Joseph Black", "Joseph_Black"]],
     },
     atomic_properties: {
       atomic_weight: 24.305,
@@ -159,6 +164,11 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.063,
+      isotopes: [
+        19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36,
+        37, 38, 39, 40,
+      ],
+      stable: [24, 25, 26],
     },
     prevalence: {
       universe: "0.06%",
@@ -251,6 +261,11 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.233,
+      isotopes: [
+        21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
+        39, 40, 41, 42,
+      ],
+      stable: [27],
     },
     prevalence: {
       universe: "0.01%",
@@ -342,6 +357,11 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.166,
+      isotopes: [
+        22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+        40, 41, 42, 43, 44,
+      ],
+      stable: [28, 29, 30],
     },
     prevalence: {
       universe: "0.07%",
@@ -427,6 +447,11 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.18,
+      isotopes: [
+        24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
+        42, 43, 44, 45, 46,
+      ],
+      stable: [31],
     },
     prevalence: {
       universe: "0.01%",
@@ -514,6 +539,11 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.52,
+      isotopes: [
+        26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,
+        44, 45, 46, 47, 48, 49,
+      ],
+      stable: [32, 33, 34, 36],
     },
     prevalence: {
       universe: "0.05%",
@@ -601,6 +631,11 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 35.3,
+      isotopes: [
+        28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45,
+        46, 47, 48, 49, 50, 51,
+      ],
+      stable: [35, 37],
     },
     prevalence: {
       universe: "0.00010%",
@@ -688,6 +723,11 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.65,
+      isotopes: [
+        30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47,
+        48, 49, 50, 51, 52, 53,
+      ],
+      stable: [36, 38, 40],
     },
     prevalence: {
       universe: "0.02%",

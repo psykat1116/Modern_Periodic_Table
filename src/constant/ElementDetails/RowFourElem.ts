@@ -67,6 +67,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 2.1,
+      isotopes: [
+        32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
+        50, 51, 52, 53, 54, 55,
+      ],
+      stable: [39, 41],
     },
     prevalence: {
       earth_crust: "1.50%",
@@ -156,6 +161,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.43,
+      isotopes: [
+        34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+        52, 53, 54, 55, 56, 57,
+      ],
+      stable: [40, 42, 43, 44, 46],
     },
     prevalence: {
       universe: "0.01%",
@@ -245,6 +255,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 27.2,
+      isotopes: [
+        36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
+        54, 55, 56, 57, 58, 59, 60,
+      ],
+      stable: [45],
     },
     prevalence: {
       universe: "3•10<sup>-6</sup>%",
@@ -341,6 +356,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 6.1,
+      isotopes: [
+        38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55,
+        56, 57, 58, 59, 60, 61, 62, 63,
+      ],
+      stable: [46, 47, 48, 49, 50],
     },
     prevalence: {
       universe: "0.0003%",
@@ -436,6 +456,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 5.06,
+      isotopes: [
+        40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
+        58, 59, 60, 61, 62, 63, 64, 65,
+      ],
+      stable: [51],
     },
     prevalence: {
       universe: "0.0001%",
@@ -529,6 +554,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 3.1,
+      isotopes: [
+        42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
+        60, 61, 62, 63, 64, 65, 66, 67,
+      ],
+      stable: [50, 52, 53, 54],
     },
     prevalence: {
       universe: "0.0015%",
@@ -619,6 +649,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 13.3,
+      isotopes: [
+        44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61,
+        62, 63, 64, 65, 66, 67, 68, 69,
+      ],
+      stable: [55],
     },
     prevalence: {
       universe: "0.0008%",
@@ -711,6 +746,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 2.56,
+      isotopes: [
+        45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62,
+        63, 64, 65, 66, 67, 68, 69, 70, 71, 72,
+      ],
+      stable: [54, 56, 57, 58],
     },
     prevalence: {
       universe: "0.0015%",
@@ -801,6 +841,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 37.2,
+      isotopes: [
+        47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60.61, 62, 63, 64,
+        65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
+      ],
+      stable: [59],
     },
     prevalence: {
       universe: "0.0003%",
@@ -892,6 +937,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 4.5,
+      isotopes: [
+        48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65,
+        66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78,
+      ],
+      stable: [58, 60, 61, 62, 64],
     },
     prevalence: {
       universe: "0.01%",
@@ -983,6 +1033,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 3.78,
+      isotopes: [
+        52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
+        70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80,
+      ],
+      stable: [63, 65],
     },
     prevalence: {
       universe: "6•10<sup>-6</sup>%",
@@ -1075,6 +1130,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 1.1,
+      isotopes: [
+        54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70.71,
+        72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83,
+      ],
+      stable: [64, 66, 67, 68, 70],
     },
     prevalence: {
       universe: "6•10<sup>-6</sup>%",
@@ -1166,6 +1226,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 2.9,
+      isotopes: [
+        56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73,
+        74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86,
+      ],
+      stable: [69, 71],
     },
     prevalence: {
       universe: "10<sup>-6</sup>%",
@@ -1254,6 +1319,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 2.2,
+      isotopes: [
+        58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
+        76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
+      ],
+      stable: [70, 72, 73, 74],
     },
     prevalence: {
       sun: "2•10<sup>-5</sup>%",
@@ -1342,6 +1412,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 4.3,
+      isotopes: [
+        60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77,
+        78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92,
+      ],
+      stable: [75],
     },
     prevalence: {
       universe: "8•10<sup>-7</sup>%",
@@ -1433,6 +1508,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 11.7,
+      isotopes: [
+        65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82,
+        83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94,
+      ],
+      stable: [74, 76, 77, 78, 80],
     },
     prevalence: {
       universe: "3•10<sup>-6</sup>%",
@@ -1518,6 +1598,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 6.8,
+      isotopes: [
+        67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84,
+        85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97,
+      ],
+      stable: [79, 81],
     },
     prevalence: {
       universe: "7•10<sup>-7</sup>%",
@@ -1604,6 +1689,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 25,
+      isotopes: [
+        69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86,
+        87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100,
+      ],
+      stable: [78, 80, 82, 83, 84, 86],
     },
     prevalence: {
       universe: "4•10<sup>-6</sup>%",

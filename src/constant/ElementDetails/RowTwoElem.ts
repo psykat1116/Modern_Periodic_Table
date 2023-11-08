@@ -71,6 +71,8 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 71,
+      isotopes: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      stable: [6, 7],
     },
     electromagnetic_properties: {
       electrical_type: "Conductor",
@@ -165,6 +167,8 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.0092,
+      isotopes: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+      stable: [9],
     },
     electromagnetic_properties: {
       electrical_type: "Conductor",
@@ -257,6 +261,8 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 760,
+      isotopes: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      stable: [10, 11],
     },
     electromagnetic_properties: {
       electrical_type: "Insulator",
@@ -344,6 +350,8 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.0035,
+      isotopes: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
+      stable: [12, 13],
     },
     electromagnetic_properties: {
       electrical_type: "Conductor",
@@ -431,6 +439,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 1.91,
+      isotopes: [
+        10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,
+      ],
+      stable: [14, 15],
     },
     electromagnetic_properties: {
       magnetic_type: "Diamagnetic",
@@ -513,6 +525,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.00028,
+      isotopes: [
+        12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,
+      ],
+      stable: [16, 17, 18],
     },
     electromagnetic_properties: {
       magnetic_type: "Paramagnetic",
@@ -594,6 +610,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.0096,
+      isotopes: [
+        14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+      ],
+      stable: [19],
     },
     prevalence: {
       universe: "1.00%",
@@ -671,6 +691,11 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.04,
+      isotopes: [
+        16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,
+        34,
+      ],
+      stable: [20, 21, 22],
     },
     prevalence: {
       universe: "1.00%",

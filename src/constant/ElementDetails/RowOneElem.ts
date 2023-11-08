@@ -62,6 +62,8 @@ export const RowOneElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.332,
+      isotopes: [1, 2, 3, 4, 5, 6, 7],
+      stable: [1, 2],
     },
     electromagnetic_properties: {
       magnetic_type: "Diamagnetic",
@@ -145,6 +147,8 @@ export const RowOneElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.007,
+      isotopes: [2, 3, 4, 5, 6, 7, 8, 9, 10],
+      stable: [3, 4],
     },
     electromagnetic_properties: {
       magnetic_type: "Diamagnetic",

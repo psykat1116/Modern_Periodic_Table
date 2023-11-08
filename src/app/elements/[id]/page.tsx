@@ -126,7 +126,10 @@ const Page = () => {
                 {elem.electromagnetic_properties && (
                   <EMProperty {...elem.electromagnetic_properties} />
                 )}
-                <NeuclearProperty {...elem.neuclear_properties} />
+                <NeuclearProperty
+                  property={elem.neuclear_properties}
+                  name={elem?.general_properties.symbol}
+                />
                 {elem.prevalence && <Prevalence {...elem.prevalence} />}
               </>
             )}

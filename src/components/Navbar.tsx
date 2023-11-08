@@ -13,8 +13,8 @@ const Navbar = () => {
     <div
       className={`w-full flex justify-between items-center pt-3 pb-2 px-5 text-xl ${
         theme === "dark"
-          ? "bg-bg_dark_placeholder text-text_primary shadow-lg"
-          : "text-text_secondary bg-bg_light_placeholder shadow-md"
+          ? "bg-bg_dark text-text_primary shadow-lg"
+          : "text-text_secondary bg-bg_light shadow-md"
       }`}
     >
       <Link className="text-2xl" href="/">
