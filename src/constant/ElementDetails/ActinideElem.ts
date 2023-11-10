@@ -32,7 +32,6 @@ export const ActinideElem: ElementDetailsProps[] = [
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 6d<sup>1</sup>",
       covalent_radius: 215,
-      crystall_structure: "Cubic(Face-Centered)",
     },
     thermodynamic_properties: {
       boiling_point: "3200℃",
@@ -59,6 +58,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "9.9121•10<sup>8</sup>",
       neutron_cross_section: 880,
       neutron_mass_absorption: 0.078,
+      quantum_numbers: "<sup>2</sup>D<sub>3/2</sub>",
       decay_mode: "Beta",
       isotopes: [
         206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219,
@@ -109,7 +109,6 @@ export const ActinideElem: ElementDetailsProps[] = [
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 6d<sup>2</sup>",
       covalent_radius: 206,
-      crystall_structure: "Cubic(Face-Centered)",
     },
     thermodynamic_properties: {
       boiling_point: "4820℃",
@@ -144,6 +143,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "6.397•10<sup>17</sup>",
       neutron_cross_section: 7.4,
       neutron_mass_absorption: 0.001,
+      quantum_numbers: "<sup>3</sup>F<sub>2</sub>",
       decay_mode: "Alpha",
       isotopes: [
         209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222,
@@ -219,7 +219,6 @@ export const ActinideElem: ElementDetailsProps[] = [
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>2</sup> 6d<sup>1</sup>",
       covalent_radius: 200,
-      crystall_structure: "Orthorombic",
     },
     thermodynamic_properties: {
       boiling_point: "4000℃",
@@ -245,6 +244,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "1.034•10<sup>12</sup>",
       lifetime: "1.491•10<sup>12</sup>",
       neutron_cross_section: 200,
+      quantum_numbers: "<sup>4</sup>K<sub>11/2</sub>",
       decay_mode: "Alpha",
       isotopes: [
         212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225,
@@ -313,7 +313,6 @@ export const ActinideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>3</sup> 6d<sup>1</sup>",
       covalent_radius: 196,
       van_der_walls_radius: 186,
-      crystall_structure: "Orthorombic",
     },
     thermodynamic_properties: {
       boiling_point: "3927℃",
@@ -350,6 +349,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       lifetime: "2.034•10<sup>17</sup>",
       neutron_cross_section: 7.57,
       neutron_mass_absorption: 0.0005,
+      quantum_numbers: "<sup>5</sup>L<sub>6</sub>",
       decay_mode: "Alpha",
       isotopes: [
         217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230,
@@ -420,7 +420,6 @@ export const ActinideElem: ElementDetailsProps[] = [
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>4</sup> 6d<sup>1</sup>",
       covalent_radius: 190,
-      crystall_structure: "Orthorombic",
     },
     thermodynamic_properties: {
       boiling_point: "4000℃",
@@ -445,6 +444,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "6.766•10<sup>13</sup>",
       lifetime: "9.761•10<sup>13</sup>",
       neutron_cross_section: 180,
+      quantum_numbers: "<sup>6</sup>L<sub>11/2</sub>",
       decay_mode: "Alpha",
       isotopes: [
         225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238,
@@ -499,7 +499,6 @@ export const ActinideElem: ElementDetailsProps[] = [
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>6</sup>",
       covalent_radius: 187,
-      crystall_structure: "Monoclinic",
     },
     thermodynamic_properties: {
       boiling_point: "3230℃",
@@ -528,6 +527,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "2.5•10<sup>15</sup>",
       lifetime: "2.6•10<sup>15</sup>",
       neutron_cross_section: 1.7,
+      quantum_numbers: "<sup>7</sup>F<sub>0</sub>",
       decay_mode: "Alpha",
       isotopes: [
         228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241,
@@ -591,7 +591,6 @@ export const ActinideElem: ElementDetailsProps[] = [
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>7</sup>",
       covalent_radius: 180,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "2011℃",
@@ -614,6 +613,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "2.33•10<sup>11</sup>",
       lifetime: "3.66•10<sup>11</sup>",
       neutron_cross_section: 74,
+      quantum_numbers: "<sup>8</sup>S<sub>7/2</sub>",
       decay_mode: "Alpha",
       isotopes: [
         231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244,
@@ -674,7 +674,6 @@ export const ActinideElem: ElementDetailsProps[] = [
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>7</sup> 6d<sup>1</sup>",
       covalent_radius: 180,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "3110℃",
@@ -696,6 +695,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "4.92•10<sup>14</sup>",
       lifetime: "7.1•10<sup>14</sup>",
       neutron_cross_section: 60,
+      quantum_numbers: "<sup>9</sup>D<sub>2</sub>",
       decay_mode: "Alpha",
       isotopes: [
         233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246,
@@ -748,7 +748,6 @@ export const ActinideElem: ElementDetailsProps[] = [
       electron_shell_configuration: "K2 L8 M18 N32 O27 P8 Q2",
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>9</sup>",
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       melting_point: "1050℃",
@@ -769,6 +768,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "4.35•10<sup>10</sup>",
       lifetime: "6.28•10<sup>10</sup>",
       neutron_cross_section: 710,
+      quantum_numbers: "<sup>6</sup>H<sub>15/2</sub>",
       decay_mode: "Alpha",
       isotopes: [
         235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248,
@@ -822,7 +822,6 @@ export const ActinideElem: ElementDetailsProps[] = [
       electron_shell_configuration: "K2 L8 M18 N32 O28 P8 Q2",
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>10</sup>",
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       melting_point: "900℃",
@@ -842,6 +841,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "2.84•10<sup>10</sup>",
       lifetime: "4.1•10<sup>10</sup>",
       neutron_cross_section: 2900,
+      quantum_numbers: "<sup>5</sup>I<sub>8</sub>",
       decay_mode: "Alpha",
       isotopes: [
         237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250,
@@ -895,7 +895,6 @@ export const ActinideElem: ElementDetailsProps[] = [
       electron_shell_configuration: "K2 L8 M18 N32 O29 P8 Q2",
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>11</sup>",
-      crystall_structure: "Cubic(Face-Centered)",
     },
     thermodynamic_properties: {
       melting_point: "860℃",
@@ -911,6 +910,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "4.075•10<sup>7</sup>",
       lifetime: "5.88•10<sup>7</sup>",
       neutron_cross_section: 160,
+      quantum_numbers: "<sup>5</sup>I<sub>15/2</sub>",
       decay_mode: "Alpha",
       isotopes: [
         240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253,
@@ -978,6 +978,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "8.683•10<sup>6</sup>",
       lifetime: "1.253•10<sup>7</sup>",
       neutron_cross_section: 5800,
+      quantum_numbers: "<sup>3</sup>H<sub>6</sub>",
       decay_mode: "Alpha",
       isotopes: [
         242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255,
@@ -1034,6 +1035,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "4.45•10<sup>6</sup>",
       lifetime: "6.62•10<sup>6</sup>",
+      quantum_numbers: "<sup>2</sup>F<sub>7/2</sub>",
       decay_mode: "Alpha",
       isotopes: [
         245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258,
@@ -1093,6 +1095,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "10<sup>4</sup>",
       lifetime: "2•10<sup>4</sup>",
+      quantum_numbers: "<sup>1</sup>S<sub>0</sub>",
       decay_mode: "Alpha",
       isotopes: [
         248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261,
@@ -1139,7 +1142,6 @@ export const ActinideElem: ElementDetailsProps[] = [
       electron_shell_configuration: "K2 L8 M18 N32 O32 P8 Q3",
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 7p<sup>1</sup>",
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       melting_point: "1627℃",
@@ -1152,6 +1154,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "3.6•10<sup>4</sup>",
       lifetime: "5.2•10<sup>4</sup>",
+      quantum_numbers: "<sup>2</sup>P<sub>1/2</sub>",
       decay_mode: "Beta",
       isotopes: [
         251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264,

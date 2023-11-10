@@ -32,7 +32,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 5d<sup>1</sup>",
       covalent_radius: 207,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "3464℃",
@@ -70,6 +69,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 8.98,
       neutron_mass_absorption: 0.0023,
+      quantum_numbers: "<sup>2</sup>D<sub>3/2</sub>",
       isotopes: [
         117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130,
         131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144,
@@ -142,7 +142,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>1</sup> 5d<sup>1</sup>",
       covalent_radius: 204,
-      crystall_structure: "Cubic(Face-Centered)",
     },
     thermodynamic_properties: {
       boiling_point: "3360℃",
@@ -181,6 +180,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 0.6,
       neutron_mass_absorption: 0.00021,
+      quantum_numbers: "<sup>1</sup>G<sub>4</sub>",
       isotopes: [
         119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132,
         133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146,
@@ -249,7 +249,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>3</sup>",
       atomic_radius: 247,
       covalent_radius: 203,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "3290℃",
@@ -287,6 +286,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 11.4,
       neutron_mass_absorption: 0.00021,
+      quantum_numbers: "<sup>4</sup>I<sub>9/2</sub>",
       isotopes: [
         121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134,
         135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148,
@@ -354,7 +354,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>4</sup>",
       atomic_radius: 206,
       covalent_radius: 201,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "3100℃",
@@ -392,6 +391,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 49,
       neutron_mass_absorption: 0.011,
+      quantum_numbers: "<sup>5</sup>I<sub>4</sub>",
       isotopes: [
         124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137,
         138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150.151,
@@ -463,7 +463,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>5</sup>",
       atomic_radius: 205,
       covalent_radius: 199,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "3000℃",
@@ -493,6 +492,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "5.59•10<sup>8</sup>",
       lifetime: "8.06•10<sup>8</sup>",
       neutron_cross_section: 8400,
+      quantum_numbers: "<sup>6</sup>H<sub>5/2</sub>",
       decay_mode: "Beta",
       isotopes: [
         126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139,
@@ -544,7 +544,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>6</sup>",
       atomic_radius: 238,
       covalent_radius: 198,
-      crystall_structure: "Rhombohedral",
     },
     thermodynamic_properties: {
       boiling_point: "1803℃",
@@ -583,6 +582,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 5900,
       neutron_mass_absorption: 4.7,
+      quantum_numbers: "<sup>7</sup>F<sub>0</sub>",
       isotopes: [
         128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141,
         142, 143, 144, 145, 146, 147, 148, 149, 150.151, 152, 153, 154, 155,
@@ -650,7 +650,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>7</sup>",
       atomic_radius: 231,
       covalent_radius: 198,
-      crystall_structure: "Cubic(Body-Centered)",
     },
     thermodynamic_properties: {
       boiling_point: "1587℃",
@@ -686,6 +685,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 4570,
       neutron_mass_absorption: 0.6,
+      quantum_numbers: "<sup>8</sup>S<sub>7/2</sub>",
       isotopes: [
         130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143,
         144, 145, 146, 147, 148, 149, 150.151, 152, 153, 154, 155, 156, 157,
@@ -759,7 +759,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>7</sup> 5d<sup>1</sup>",
       atomic_radius: 233,
       covalent_radius: 196,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "3250℃",
@@ -796,6 +795,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 49000,
       neutron_mass_absorption: 7.3,
+      quantum_numbers: "<sup>9</sup>D<sub>2</sub>",
       isotopes: [
         134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147,
         148, 149, 150.151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
@@ -861,7 +861,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>9</sup>",
       atomic_radius: 225,
       covalent_radius: 194,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "3230℃",
@@ -899,6 +898,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 23,
       neutron_mass_absorption: 0.009,
+      quantum_numbers: "<sup>6</sup>H<sub>15/2</sub>",
       isotopes: [
         136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149,
         150.151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163,
@@ -969,7 +969,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>10</sup>",
       atomic_radius: 228,
       covalent_radius: 192,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "2567℃",
@@ -1007,6 +1006,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 950,
       neutron_mass_absorption: 0.2,
+      quantum_numbers: "<sup>5</sup>I<sub>8</sub>",
       isotopes: [
         138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150.151,
         152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165,
@@ -1079,7 +1079,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>11</sup>",
       atomic_radius: 226,
       covalent_radius: 192,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "2700℃",
@@ -1118,6 +1117,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 65,
       neutron_mass_absorption: 0.015,
+      quantum_numbers: "<sup>4</sup>I<sub>15/2</sub>",
       isotopes: [
         140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153,
         154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167,
@@ -1185,7 +1185,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>12</sup>",
       atomic_radius: 226,
       covalent_radius: 189,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "2868℃",
@@ -1224,6 +1223,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 165,
       neutron_mass_absorption: 0.036,
+      quantum_numbers: "<sup>3</sup>H<sub>6</sub>",
       isotopes: [
         143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156,
         157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170,
@@ -1292,7 +1292,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>13</sup>",
       atomic_radius: 222,
       covalent_radius: 190,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "1950℃",
@@ -1330,6 +1329,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 105,
       neutron_mass_absorption: 0.025,
+      quantum_numbers: "<sup>2</sup>F<sub>7/2</sub>",
       isotopes: [
         145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158,
         159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172,
@@ -1403,7 +1403,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup>",
       atomic_radius: 222,
       covalent_radius: 187,
-      crystall_structure: "Cubic(Face-Centered)",
     },
     thermodynamic_properties: {
       boiling_point: "1196℃",
@@ -1439,6 +1438,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 35,
       neutron_mass_absorption: 0.0076,
+      quantum_numbers: "<sup>1</sup>S<sub>0</sub>",
       isotopes: [
         148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
         162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175,
@@ -1509,7 +1509,6 @@ export const LanthanideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>1</sup>",
       atomic_radius: 217,
       covalent_radius: 187,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "3402℃",
@@ -1546,6 +1545,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 84,
       neutron_mass_absorption: 0.022,
+      quantum_numbers: "<sup>2</sup>D<sub>3/2</sub>",
       isotopes: [
         150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163,
         164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177,

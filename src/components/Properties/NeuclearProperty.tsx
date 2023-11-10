@@ -20,6 +20,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
     decay_mode,
     isotopes,
     stable,
+    quantum_numbers,
   } = property;
   const [isCopying, setIsCopying] = useState({
     radioactive: false,
@@ -28,6 +29,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
     neutron_cross_section: false,
     neutron_mass_absorption: false,
     decay_mode: false,
+    quantum_numbers: false,
   });
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const handleCopy = (value: string, property: string) => {
@@ -203,6 +205,39 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
               <p>{decay_mode}</p>
               <button onClick={() => handleCopy(decay_mode, "decay_mode")}>
                 {!isCopying.decay_mode ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+        {quantum_numbers && (
+          <div className="flex flex-row justify-start items-center w-full">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%]"
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Quantum_number"
+            >
+              Quantum Numbers
+            </Link>
+            <div
+              className={`w-[75%]  ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(quantum_numbers),
+                }}
+              ></p>
+              <button
+                onClick={() => handleCopy(quantum_numbers, "quantum_numbers")}
+              >
+                {!isCopying.quantum_numbers ? (
                   <MdContentCopy />
                 ) : (
                   <MdCheck className="text-green-700" />

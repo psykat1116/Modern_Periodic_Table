@@ -30,7 +30,6 @@ export interface AtomicProperties {
   atomic_radius?: number;
   covalent_radius?: number;
   van_der_walls_radius?: number;
-  crystall_structure?: string;
 }
 
 export interface ThermodynamicProperties {
@@ -42,6 +41,7 @@ export interface ThermodynamicProperties {
   vaporization_heat?: number;
   thermal_expansion?: string;
   neel_point?: number;
+  adiabatic_index?: number;
 }
 
 export interface MaterialProperties {
@@ -68,6 +68,7 @@ export interface NeuclearProperties {
   neutron_cross_section?: number;
   neutron_mass_absorption?: number;
   decay_mode?: "Alpha" | "Beta" | "Gamma" | "Positron";
+  quantum_numbers?: string;
   isotopes: number[];
   stable?: number[];
 }

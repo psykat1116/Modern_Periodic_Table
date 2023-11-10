@@ -35,7 +35,6 @@ export const RowOneElem: ElementDetailsProps[] = [
       atomic_radius: 53,
       covalent_radius: 31,
       van_der_walls_radius: 120,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "-252.87℃",
@@ -64,6 +63,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 0.332,
       neutron_mass_absorption: 0.011,
+      quantum_numbers: "<sup>2</sup>S<sub>1/2</sub>",
       isotopes: [1, 2, 3, 4, 5, 6, 7],
       stable: [1, 2],
     },
@@ -136,7 +136,6 @@ export const RowOneElem: ElementDetailsProps[] = [
       atomic_radius: 31,
       covalent_radius: 28,
       van_der_walls_radius: 140,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "-268.93℃",
@@ -163,6 +162,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 0.007,
       neutron_mass_absorption: 0.00001,
+      quantum_numbers: "<sup>1</sup>S<sub>0</sub>",
       isotopes: [2, 3, 4, 5, 6, 7, 8, 9, 10],
       stable: [3, 4],
     },

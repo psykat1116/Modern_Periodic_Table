@@ -35,7 +35,7 @@ const AtomStructure = ({
           : "bg-bg_light text-text_secondary"
       } shadow-lg rounded-sm`}
     >
-      <h1 className="text-xl">Overview</h1>
+      <h1 className="text-xl">Atomic Structure</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {crystall_structure && (
           <div className="flex flex-row justify-start items-center w-full">

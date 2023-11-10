@@ -35,7 +35,6 @@ export const RowThreeElem: ElementDetailsProps[] = [
       atomic_radius: 190,
       covalent_radius: 166,
       van_der_walls_radius: 227,
-      crystall_structure: "Cubic (Body-Centered)",
     },
     thermodynamic_properties: {
       boiling_point: "883℃",
@@ -71,6 +70,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 0.53,
       neutron_mass_absorption: 0.0007,
+      quantum_numbers: "<sup>2</sup>S<sub>1/2</sub>",
       isotopes: [
         18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35,
         36, 37,
@@ -139,7 +139,6 @@ export const RowThreeElem: ElementDetailsProps[] = [
       atomic_radius: 145,
       covalent_radius: 141,
       van_der_walls_radius: 173,
-      crystall_structure: "Hexagonal",
     },
     thermodynamic_properties: {
       boiling_point: "1090℃",
@@ -175,6 +174,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 0.063,
       neutron_mass_absorption: 0.0001,
+      quantum_numbers: "<sup>1</sup>S<sub>0</sub>",
       isotopes: [
         19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36,
         37, 38, 39, 40,
@@ -243,7 +243,6 @@ export const RowThreeElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>1</sup>",
       atomic_radius: 118,
       covalent_radius: 121,
-      crystall_structure: "Cubic (Face-Centered)",
     },
     thermodynamic_properties: {
       boiling_point: "2519℃",
@@ -281,6 +280,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 0.233,
       neutron_mass_absorption: 0.03,
+      quantum_numbers: "<sup>2</sup>P<sub>1/2</sub>",
       isotopes: [
         21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
         39, 40, 41, 42,
@@ -321,7 +321,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     id: 14,
     neighbour: ["Aluminium", "Phosphorus"],
     description:
-      "The metalloid silicon is a very abundant element> Much of the earth crust made out of silicates and silica(SiO<sub>2</sub>). The latter is a chief ingredient of quartz and sand is used as raw material for glass since ages. Elemental silicon is an important industrial material,where it is used in huge amounts for semiconductors,computer chips,in electronics, for solar energy and photovoltaics.",
+      "The metalloid silicon is a very abundant element Much of the earth crust made out of silicates and silica(SiO<sub>2</sub>). The latter is a chief ingredient of quartz and sand is used as raw material for glass since ages. Elemental silicon is an important industrial material,where it is used in huge amounts for semiconductors,computer chips,in electronics, for solar energy and photovoltaics.",
     general_properties: {
       name: "Silicon",
       atomic_number: 14,
@@ -351,7 +351,6 @@ export const RowThreeElem: ElementDetailsProps[] = [
       atomic_radius: 111,
       covalent_radius: 111,
       van_der_walls_radius: 210,
-      crystall_structure: "Cubic (Face-Centered)",
     },
     thermodynamic_properties: {
       boiling_point: "2900℃",
@@ -386,6 +385,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 0.166,
       neutron_mass_absorption: 0.0002,
+      quantum_numbers: "<sup>3</sup>P<sub>0</sub>",
       isotopes: [
         22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
         40, 41, 42, 43, 44,
@@ -455,7 +455,6 @@ export const RowThreeElem: ElementDetailsProps[] = [
       atomic_radius: 98,
       covalent_radius: 107,
       van_der_walls_radius: 180,
-      crystall_structure: "Monoclinic",
     },
     thermodynamic_properties: {
       boiling_point: "280.5℃",
@@ -485,6 +484,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 0.18,
       neutron_mass_absorption: 0.0002,
+      quantum_numbers: "<sup>4</sup>S<sub>3/2</sub>",
       isotopes: [
         24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
         42, 43, 44, 45, 46,
@@ -554,7 +554,6 @@ export const RowThreeElem: ElementDetailsProps[] = [
       atomic_radius: 88,
       covalent_radius: 105,
       van_der_walls_radius: 180,
-      crystall_structure: "Orthorombhic",
     },
     thermodynamic_properties: {
       boiling_point: "444.72℃",
@@ -586,6 +585,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 0.52,
       neutron_mass_absorption: 0.00055,
+      quantum_numbers: "<sup>3</sup>P<sub>2</sub>",
       isotopes: [
         26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,
         44, 45, 46, 47, 48, 49,
@@ -656,7 +656,6 @@ export const RowThreeElem: ElementDetailsProps[] = [
       atomic_radius: 79,
       covalent_radius: 102,
       van_der_walls_radius: 175,
-      crystall_structure: "Orthorombhic",
     },
     thermodynamic_properties: {
       boiling_point: "-34.04℃",
@@ -687,6 +686,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 35.3,
       neutron_mass_absorption: 0.033,
+      quantum_numbers: "<sup>2</sup>P<sub>3/2</sub>",
       isotopes: [
         28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45,
         46, 47, 48, 49, 50, 51,
@@ -760,7 +760,6 @@ export const RowThreeElem: ElementDetailsProps[] = [
       atomic_radius: 71,
       covalent_radius: 106,
       van_der_walls_radius: 188,
-      crystall_structure: "Cubic (Face-Centered)",
     },
     thermodynamic_properties: {
       boiling_point: "-185.8℃",
@@ -788,6 +787,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       lifetime: "∞",
       neutron_cross_section: 0.65,
       neutron_mass_absorption: 0.00059,
+      quantum_numbers: "<sup>1</sup>S<sub>0</sub>",
       isotopes: [
         30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47,
         48, 49, 50, 51, 52, 53,

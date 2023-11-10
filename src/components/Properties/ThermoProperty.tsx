@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import Link from "next/link";
 import { ThermodynamicProperties } from "@/types/ElementTypes";
 import { MdCheck, MdContentCopy } from "react-icons/md";
 import DOMPurify from "dompurify";
@@ -43,6 +44,7 @@ const ThermoProperty = ({
   vaporization_heat,
   thermal_expansion,
   neel_point,
+  adiabatic_index,
 }: ThermodynamicProperties) => {
   const [isCopying, setIsCopying] = useState({
     boiling_point: false,
@@ -53,6 +55,7 @@ const ThermoProperty = ({
     vaporization_heat: false,
     thermal_expansion: false,
     neel_point: false,
+    adiabatic_index: false,
   });
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const handleCopy = (value: string, property: string) => {
@@ -77,7 +80,7 @@ const ThermoProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <p className="pr-2 py-1 rounded-[4px] w-[20%]">Boiling Point</p>
             <div
-              className={`w-[60%]  ${
+              className={`w-[60%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -101,7 +104,7 @@ const ThermoProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <p className="pr-2 py-1 rounded-[4px] w-[20%]">Melting Point</p>
             <div
-              className={`w-[60%]  ${
+              className={`w-[60%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -144,9 +147,15 @@ const ThermoProperty = ({
         )}
         {fusion_heat && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Fusion Heat</p>
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[20%]"
+              href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/heat-of-fusion"
+              target="_blank"
+            >
+              Fusion Heat
+            </Link>
             <div
-              className={`w-[60%]  ${
+              className={`w-[60%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -170,9 +179,15 @@ const ThermoProperty = ({
         )}
         {specific_heat && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Specific Heat</p>
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[20%]"
+              href="https://en.wikipedia.org/wiki/Specific_heat_capacity"
+              target="_blank"
+            >
+              Specific Heat
+            </Link>
             <div
-              className={`w-[60%]  ${
+              className={`w-[60%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -196,9 +211,15 @@ const ThermoProperty = ({
         )}
         {vaporization_heat && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Vaporization Heat</p>
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[20%]"
+              href="https://en.wikipedia.org/wiki/Enthalpy_of_vaporizatio"
+              target="_blank"
+            >
+              Vaporization Heat
+            </Link>
             <div
-              className={`w-[60%]  ${
+              className={`w-[60%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -222,9 +243,15 @@ const ThermoProperty = ({
         )}
         {thermal_expansion && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Thermal Expansion</p>
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[20%]"
+              href="https://en.wikipedia.org/wiki/Thermal_expansion"
+              target="_blank"
+            >
+              Thermal Expansion
+            </Link>
             <div
-              className={`w-[60%]  ${
+              className={`w-[60%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -252,9 +279,15 @@ const ThermoProperty = ({
         )}
         {neel_point && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Neel Point (K)</p>
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[20%]"
+              href="https://www.britannica.com/science/Neel-temperature"
+              target="_blank"
+            >
+              Neel Point (K)
+            </Link>
             <div
-              className={`w-[60%]  ${
+              className={`w-[60%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -272,6 +305,37 @@ const ThermoProperty = ({
               </button>
             </div>
             <ListBox options={TemperatureOptions} />
+          </div>
+        )}
+        {adiabatic_index && (
+          <div className="flex flex-row justify-start items-center w-full gap-2">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[20%]"
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Heat_capacity_ratio"
+            >
+              Adiabatic Index
+            </Link>
+            <div
+              className={`w-[60%] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p>{adiabatic_index}</p>
+              <button
+                onClick={() =>
+                  handleCopy(adiabatic_index.toString(), "adiabatic_index")
+                }
+              >
+                {!isCopying.adiabatic_index ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
           </div>
         )}
       </div>

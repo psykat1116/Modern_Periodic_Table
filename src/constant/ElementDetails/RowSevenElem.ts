@@ -33,7 +33,6 @@ export const RowSevenElem: ElementDetailsProps[] = [
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>1</sup>",
       covalent_radius: 260,
-      crystall_structure: "Cubic(Body-Centered)",
     },
     thermodynamic_properties: {
       phase: "Liquid",
@@ -52,6 +51,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "1.3•10<sup>3</sup>",
       lifetime: "1.9•10<sup>3</sup>",
+      quantum_numbers: "<sup>2</sup>S<sub>1/2</sub>",
       decay_mode: "Beta",
       isotopes: [
         199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212,
@@ -99,7 +99,6 @@ export const RowSevenElem: ElementDetailsProps[] = [
       electron_configuration:
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup>",
       covalent_radius: 221,
-      crystall_structure: "Cubic(Body-Centered)",
     },
     thermodynamic_properties: {
       boiling_point: "1737℃",
@@ -129,6 +128,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "5•10<sup>10</sup>",
       lifetime: "7.3•10<sup>10</sup>",
+      quantum_numbers: "<sup>1</sup>S<sub>0</sub>",
       neutron_cross_section: 13,
       decay_mode: "Alpha",
       isotopes: [
@@ -188,6 +188,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "4.7•10<sup>4</sup>",
       lifetime: "6.8•10<sup>4</sup>",
+      quantum_numbers: "<sup>3</sup>F<sub>2</sub>",
       decay_mode: "Alpha",
       isotopes: [
         253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266,
@@ -238,6 +239,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "2•10<sup>4</sup>",
       lifetime: "3•10<sup>4</sup>",
+      quantum_numbers: "<sup>4</sup>F<sub>3/2</sub>",
       decay_mode: "Alpha",
       isotopes: [
         255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268,
@@ -287,6 +289,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "7•10<sup>3</sup>",
       lifetime: "10<sup>4</sup>",
+      quantum_numbers: "<sup>5</sup>D<sub>0</sub>",
       decay_mode: "Alpha",
       isotopes: [
         258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271,
@@ -339,6 +342,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "5.4•10<sup>3</sup>",
       lifetime: "7.8•10<sup>3</sup>",
+      quantum_numbers: "<sup>6</sup>S<sub>5/2</sub>",
       decay_mode: "Alpha",
       isotopes: [
         260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273,
@@ -385,6 +389,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "4•10<sup>3</sup>",
       lifetime: "5•10<sup>3</sup>",
+      quantum_numbers: "<sup>5</sup>D<sub>4</sub>",
       decay_mode: "Alpha",
       isotopes: [
         263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276,
@@ -434,6 +439,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "1.8•10<sup>3</sup>",
       lifetime: "2.6•10<sup>3</sup>",
+      quantum_numbers: "<sup>4</sup>F<sub>9/2</sub>",
       decay_mode: "Alpha",
       isotopes: [
         265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278,
@@ -480,6 +486,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "2.4•10<sup>2</sup>",
       lifetime: "3.5•10<sup>2</sup>",
+      quantum_numbers: "<sup>3</sup>D<sub>3</sub>",
       decay_mode: "Alpha",
       isotopes: [
         267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280,
@@ -526,6 +533,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "6•10<sup>2</sup>",
       lifetime: "8.7•10<sup>2</sup>",
+      quantum_numbers: "<sup>2</sup>S<sub>1/2</sub>",
       decay_mode: "Alpha",
       isotopes: [272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283],
     },
@@ -569,6 +577,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "2.4•10<sup>3</sup>",
       lifetime: "3.5•10<sup>3</sup>",
+      quantum_numbers: "<sup>1</sup>S<sub>0</sub>",
       decay_mode: "Alpha",
       isotopes: [277, 278, 279, 280, 281, 282, 283, 284, 285],
     },
@@ -614,6 +623,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "1.2•10<sup>3</sup>",
       lifetime: "1.7•10<sup>3</sup>",
+      quantum_numbers: "<sup>2</sup>P<sub>1/2</sub>",
       decay_mode: "Alpha",
       isotopes: [283, 284, 285, 286, 287],
     },
@@ -656,6 +666,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "80",
       lifetime: "1.2•10<sup>2</sup>",
+      quantum_numbers: "<sup>3</sup>P<sub>0</sub>",
       decay_mode: "Alpha",
       isotopes: [285, 286, 287, 288, 289],
     },
@@ -699,6 +710,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "60",
       lifetime: "90",
       decay_mode: "Alpha",
+      quantum_numbers: "<sup>4</sup>S<sub>3/2</sub>",
       isotopes: [287, 288, 289, 290, 291],
     },
     external_links: {
@@ -741,6 +753,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       half_life: "0.12",
       lifetime: "0.173",
       decay_mode: "Alpha",
+      quantum_numbers: "<sup>3</sup>P<sub>2</sub>",
       isotopes: [289, 290, 291, 292],
     },
     external_links: {
@@ -782,6 +795,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "5•10<sup>-2</sup>",
       lifetime: "7.2•10<sup>-2</sup>",
+      quantum_numbers: "<sup>2</sup>P<sub>3/2</sub>",
       isotopes: [291, 292, 293, 294],
     },
     external_links: {
@@ -823,6 +837,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       radioactive: "Yes",
       half_life: "5•10<sup>-3</sup>",
       lifetime: "7•10<sup>-3</sup>",
+      quantum_numbers: "<sup>1</sup>S<sub>0</sub>",
       decay_mode: "Alpha",
       isotopes: [293],
     },
