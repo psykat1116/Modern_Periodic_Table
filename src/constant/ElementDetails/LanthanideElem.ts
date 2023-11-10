@@ -12,6 +12,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7439-91-0",
+      cid_number: "23926",
       symbol: "La",
     },
     particles: {
@@ -68,6 +69,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 8.98,
+      neutron_mass_absorption: 0.0023,
       isotopes: [
         117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130,
         131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144,
@@ -108,6 +110,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7440-45-1",
+      cid_number: "23974",
       symbol: "Ce",
     },
     particles: {
@@ -170,6 +173,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.6,
+      neutron_mass_absorption: 0.00021,
       isotopes: [
         119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132,
         133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146,
@@ -210,6 +214,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7440-10-0",
+      cid_number: "23942",
       symbol: "Pr",
     },
     particles: {
@@ -267,6 +272,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 11.4,
+      neutron_mass_absorption: 0.00021,
       isotopes: [
         121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134,
         135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148,
@@ -306,6 +312,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7440-00-8",
+      cid_number: "23934",
       symbol: "Nd",
     },
     particles: {
@@ -363,6 +370,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 49,
+      neutron_mass_absorption: 0.011,
       isotopes: [
         124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137,
         138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150.151,
@@ -402,6 +410,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7440-12-2",
+      cid_number: "23944",
       symbol: "Pm",
     },
     particles: {
@@ -484,6 +493,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7440-19-9",
+      cid_number: "23951",
       symbol: "Sm",
     },
     particles: {
@@ -544,6 +554,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 5900,
+      neutron_mass_absorption: 4.7,
       isotopes: [
         128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141,
         142, 143, 144, 145, 146, 147, 148, 149, 150.151, 152, 153, 154, 155,
@@ -583,6 +594,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7440-53-1",
+      cid_number: "23981",
       symbol: "Eu",
     },
     particles: {
@@ -638,6 +650,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 4570,
+      neutron_mass_absorption: 0.6,
       isotopes: [
         130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143,
         144, 145, 146, 147, 148, 149, 150.151, 152, 153, 154, 155, 156, 157,
@@ -678,6 +691,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7440-54-2",
+      cid_number: "23982",
       symbol: "Gd",
     },
     particles: {
@@ -739,6 +753,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 49000,
+      neutron_mass_absorption: 7.3,
       isotopes: [
         134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147,
         148, 149, 150.151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
@@ -776,6 +791,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7440-27-9",
+      cid_number: "23958",
       symbol: "Tb",
     },
     particles: {
@@ -833,6 +849,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 23,
+      neutron_mass_absorption: 0.009,
       isotopes: [
         136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149,
         150.151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163,
@@ -873,6 +890,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7429-91-6",
+      cid_number: "23912",
       symbol: "Dy",
     },
     particles: {
@@ -932,6 +950,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 950,
+      neutron_mass_absorption: 0.2,
       isotopes: [
         138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150.151,
         152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165,
@@ -972,6 +991,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7440-60-0",
+      cid_number: "23988",
       symbol: "Ho",
     },
     particles: {
@@ -1034,6 +1054,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 65,
+      neutron_mass_absorption: 0.015,
       isotopes: [
         140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153,
         154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167,
@@ -1073,6 +1094,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7440-52-0",
+      cid_number: "23980",
       symbol: "Ho",
     },
     particles: {
@@ -1131,6 +1153,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 165,
+      neutron_mass_absorption: 0.036,
       isotopes: [
         143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156,
         157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170,
@@ -1171,6 +1194,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7440-30-4",
+      cid_number: "23961",
       symbol: "Tm",
     },
     particles: {
@@ -1228,6 +1252,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 105,
+      neutron_mass_absorption: 0.025,
       isotopes: [
         145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158,
         159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172,
@@ -1268,6 +1293,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7440-64-4",
+      cid_number: "23992",
       symbol: "Yb",
     },
     particles: {
@@ -1328,6 +1354,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 35,
+      neutron_mass_absorption: 0.0076,
       isotopes: [
         148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161,
         162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175,
@@ -1367,6 +1394,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       period: 6,
       block: "F",
       cas_number: "7439-94-3",
+      cid_number: "23929",
       symbol: "Lu",
     },
     particles: {
@@ -1426,6 +1454,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 84,
+      neutron_mass_absorption: 0.022,
       isotopes: [
         150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163,
         164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177,

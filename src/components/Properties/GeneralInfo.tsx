@@ -10,6 +10,7 @@ const GeneralInfo = ({
   period,
   block,
   cas_number,
+  cid_number,
 }: GeneralProperties) => {
   const [isCopying, setIsCopying] = useState({
     atomic_number: false,
@@ -17,6 +18,7 @@ const GeneralInfo = ({
     period: false,
     block: false,
     cas_number: false,
+    cid_number: false,
   });
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const handleCopy = (value: string, property: string) => {
@@ -163,6 +165,32 @@ const GeneralInfo = ({
             </button>
           </div>
         </div>
+        {cid_number && (
+          <div className="flex flex-row justify-start items-center w-full ">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              href="https://www.wikidata.org/wiki/Property:P662"
+            >
+              CID Number
+            </Link>
+            <div
+              className={`w-[80%]  ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p>{cid_number}</p>
+              <button onClick={() => handleCopy(cid_number, "cid_number")}>
+                {!isCopying.cid_number ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

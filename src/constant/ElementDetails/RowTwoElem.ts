@@ -13,6 +13,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       period: 2,
       block: "S",
       cas_number: "7439-93-2",
+      cid_number: "3028194",
       symbol: "Li",
     },
     particles: {
@@ -95,6 +96,11 @@ export const RowTwoElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Lithium",
       youtube: "https://youtu.be/EvOvVuQcRRI",
     },
+    health_safety: {
+      Hazard_class: 4.3,
+      dot_number: 1415,
+      rtecs_number: "OJ5540000",
+    },
   },
   {
     id: 4,
@@ -108,6 +114,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       period: 2,
       block: "S",
       cas_number: "7440-41-7",
+      cid_number: "5460467",
       symbol: "Be",
     },
     particles: {
@@ -167,6 +174,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.0092,
+      neutron_mass_absorption: 0.00003,
       isotopes: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
       stable: [9],
     },
@@ -192,6 +200,11 @@ export const RowTwoElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Beryllium",
       youtube: "https://youtu.be/WHsLEmuFDrY",
     },
+    health_safety: {
+      Hazard_class: 6.1,
+      dot_number: 1567,
+      rtecs_number: "DS1750000",
+    },
   },
   {
     id: 5,
@@ -205,6 +218,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       period: 2,
       block: "P",
       cas_number: "7440-42-8",
+      cid_number: "5462311",
       symbol: "B",
     },
     particles: {
@@ -261,6 +275,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 760,
+      neutron_mass_absorption: 2.4,
       isotopes: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
       stable: [10, 11],
     },
@@ -285,6 +300,9 @@ export const RowTwoElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Boron",
       youtube: "https://youtu.be/Uhw1_Mv_sHY",
     },
+    health_safety: {
+      rtecs_number: "ED7350000",
+    },
   },
   {
     id: 6,
@@ -298,6 +316,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       period: 2,
       block: "P",
       cas_number: "7440-44-0",
+      cid_number: "5462310",
       symbol: "C",
     },
     particles: {
@@ -350,6 +369,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.0035,
+      neutron_mass_absorption: 0.000015,
       isotopes: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
       stable: [12, 13],
     },
@@ -374,6 +394,11 @@ export const RowTwoElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Carbon",
       youtube: "https://youtu.be/QuW4_bRHbUk",
     },
+    health_safety: {
+      Hazard_class: 4.2,
+      dot_number: 1361,
+      rtecs_number: "HL4158550",
+    },
   },
   {
     id: 7,
@@ -387,6 +412,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       period: 2,
       block: "P",
       cas_number: "7727-37-9",
+      cid_number: "947",
       symbol: "N",
     },
     particles: {
@@ -439,6 +465,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 1.91,
+      neutron_mass_absorption: 0.0048,
       isotopes: [
         10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,
       ],
@@ -462,6 +489,11 @@ export const RowTwoElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Nitrogen",
       youtube: "https://youtu.be/H8XNdqA18-M",
     },
+    health_safety: {
+      Hazard_class: 2.2,
+      dot_number: 1977,
+      rtecs_number: "QW9700000",
+    },
   },
   {
     id: 8,
@@ -475,6 +507,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       period: 2,
       block: "P",
       cas_number: "7782-44-7",
+      cid_number: "977",
       symbol: "O",
     },
     particles: {
@@ -525,6 +558,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.00028,
+      neutron_mass_absorption: 0.000001,
       isotopes: [
         12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,
       ],
@@ -548,6 +582,11 @@ export const RowTwoElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Oxygen",
       youtube: "https://youtu.be/diP_ngebIxI",
     },
+    health_safety: {
+      Hazard_class: 2.2,
+      dot_number: 1073,
+      rtecs_number: "RS2060000",
+    },
   },
   {
     id: 9,
@@ -561,6 +600,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       period: 2,
       block: "P",
       cas_number: "7782-41-4",
+      cid_number: "24524",
       symbol: "F",
     },
     particles: {
@@ -610,6 +650,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.0096,
+      neutron_mass_absorption: 0.00002,
       isotopes: [
         14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
       ],
@@ -627,6 +668,11 @@ export const RowTwoElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Fuorine",
       youtube: "https://youtu.be/vtWp45Eewtw",
     },
+    health_safety: {
+      Hazard_class: 2.3,
+      dot_number: 9192,
+      rtecs_number: "LM6475000",
+    },
   },
   {
     id: 10,
@@ -640,6 +686,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       period: 2,
       block: "P",
       cas_number: "7440-01-9",
+      cid_number: "23935",
       symbol: "Ne",
     },
     particles: {
@@ -691,6 +738,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.04,
+      neutron_mass_absorption: 0.00059,
       isotopes: [
         16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,
         34,
@@ -714,6 +762,11 @@ export const RowTwoElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Neon",
       youtube: "https://youtu.be/CW7ZS4S9HZY",
+    },
+    health_safety: {
+      Hazard_class: 2.2,
+      dot_number: 1913,
+      rtecs_number: "QP4450000",
     },
   },
 ];

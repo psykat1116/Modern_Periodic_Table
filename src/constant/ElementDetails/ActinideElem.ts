@@ -12,6 +12,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "7440-34-8",
+      cid_number: "167378",
       symbol: "Ac",
     },
     particles: {
@@ -57,6 +58,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "6.8706•10<sup>8</sup>",
       lifetime: "9.9121•10<sup>8</sup>",
       neutron_cross_section: 880,
+      neutron_mass_absorption: 0.078,
       decay_mode: "Beta",
       isotopes: [
         206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219,
@@ -80,6 +82,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "7440-29-1",
+      cid_number: "23960",
       symbol: "Th",
     },
     particles: {
@@ -133,6 +136,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "4.434•10<sup>17</sup>",
       lifetime: "6.397•10<sup>17</sup>",
       neutron_cross_section: 7.4,
+      neutron_mass_absorption: 0.001,
       decay_mode: "Alpha",
       isotopes: [
         209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222,
@@ -173,6 +177,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "7440-13-3",
+      cid_number: "23945",
       symbol: "Pa",
     },
     particles: {
@@ -266,6 +271,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "7440-61-1",
+      cid_number: "23989",
       symbol: "U",
     },
     particles: {
@@ -322,6 +328,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       half_life: "1.41•10<sup>17</sup>",
       lifetime: "2.034•10<sup>17</sup>",
       neutron_cross_section: 7.57,
+      neutron_mass_absorption: 0.0005,
       decay_mode: "Alpha",
       isotopes: [
         217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230,
@@ -362,6 +369,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "7439-99-8",
+      cid_number: "23933",
       symbol: "Np",
     },
     particles: {
@@ -436,6 +444,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "7440-07-5",
+      cid_number: "23940",
       symbol: "Pu",
     },
     particles: {
@@ -515,6 +524,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "7440-35-9",
+      cid_number: "23966",
       symbol: "Am",
     },
     particles: {
@@ -591,6 +601,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "7440-51-9",
+      cid_number: "23979",
       symbol: "Cm",
     },
     particles: {
@@ -658,6 +669,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "7440-40-6",
+      cid_number: "23971",
       symbol: "Bk",
     },
     particles: {
@@ -723,6 +735,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "7440-71-3",
+      cid_number: "23997",
       symbol: "Cf",
     },
     particles: {
@@ -788,6 +801,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "7429-92-7",
+      cid_number: "23913",
       symbol: "Es",
     },
     particles: {
@@ -849,6 +863,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "7429-92-7",
+      cid_number: "167391",
       symbol: "Fm",
     },
     particles: {
@@ -964,6 +979,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "10028-14-5",
+      cid_number: "24822",
       symbol: "No",
     },
     particles: {
@@ -1022,6 +1038,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       period: 7,
       block: "F",
       cas_number: "22537-19-5",
+      cid_number: "31192",
       symbol: "Lw",
     },
     particles: {

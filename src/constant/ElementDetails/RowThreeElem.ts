@@ -13,6 +13,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       period: 3,
       block: "S",
       cas_number: "7440-23-5",
+      cid_number: "5360545",
       symbol: "Na",
     },
     particles: {
@@ -69,6 +70,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.53,
+      neutron_mass_absorption: 0.0007,
       isotopes: [
         18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35,
         36, 37,
@@ -108,6 +110,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       period: 3,
       block: "S",
       cas_number: "7439-95-4",
+      cid_number: "5462224",
       symbol: "Mg",
     },
     particles: {
@@ -164,6 +167,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.063,
+      neutron_mass_absorption: 0.0001,
       isotopes: [
         19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36,
         37, 38, 39, 40,
@@ -204,6 +208,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       period: 3,
       block: "P",
       cas_number: "7429-90-5",
+      cid_number: "5359268",
       symbol: "Al",
     },
     particles: {
@@ -261,6 +266,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.233,
+      neutron_mass_absorption: 0.03,
       isotopes: [
         21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
         39, 40, 41, 42,
@@ -302,6 +308,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       period: 3,
       block: "P",
       cas_number: "7440-21-3",
+      cid_number: "5461123",
       symbol: "Si",
     },
     particles: {
@@ -357,6 +364,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.166,
+      neutron_mass_absorption: 0.0002,
       isotopes: [
         22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
         40, 41, 42, 43, 44,
@@ -397,6 +405,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       period: 3,
       block: "P",
       cas_number: "7423-14-0",
+      cid_number: "5462309",
       symbol: "P",
     },
     particles: {
@@ -447,6 +456,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.18,
+      neutron_mass_absorption: 0.0002,
       isotopes: [
         24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
         42, 43, 44, 45, 46,
@@ -487,6 +497,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       period: 3,
       block: "P",
       cas_number: "7704-34-9",
+      cid_number: "5362487",
       symbol: "S",
     },
     particles: {
@@ -539,6 +550,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.52,
+      neutron_mass_absorption: 0.00055,
       isotopes: [
         26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,
         44, 45, 46, 47, 48, 49,
@@ -579,6 +591,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       period: 3,
       block: "P",
       cas_number: "7782-50-5",
+      cid_number: "24526",
       symbol: "Cl",
     },
     particles: {
@@ -631,6 +644,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 35.3,
+      neutron_mass_absorption: 0.033,
       isotopes: [
         28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45,
         46, 47, 48, 49, 50, 51,
@@ -671,6 +685,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       period: 3,
       block: "P",
       cas_number: "7440-37-1",
+      cid_number: "23968",
       symbol: "Ar",
     },
     particles: {
@@ -723,6 +738,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.65,
+      neutron_mass_absorption: 0.00059,
       isotopes: [
         30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47,
         48, 49, 50, 51, 52, 53,

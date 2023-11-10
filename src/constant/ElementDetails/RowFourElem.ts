@@ -13,6 +13,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "S",
       cas_number: "7440-09-7",
+      cid_number: "5462222",
       symbol: "K",
     },
     particles: {
@@ -67,6 +68,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 2.1,
+      neutron_mass_absorption: 0.0018,
       isotopes: [
         32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
         50, 51, 52, 53, 54, 55,
@@ -105,6 +107,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "S",
       cas_number: "7440-70-2",
+      cid_number: "5460341",
       symbol: "Ca",
     },
     particles: {
@@ -161,6 +164,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.43,
+      neutron_mass_absorption: 0.00037,
       isotopes: [
         34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
         52, 53, 54, 55, 56, 57,
@@ -201,6 +205,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "D",
       cas_number: "7440-20-2",
+      cid_number: "23952",
       symbol: "Sc",
     },
     particles: {
@@ -255,6 +260,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 27.2,
+      neutron_mass_absorption: 0.025,
       isotopes: [
         36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
         54, 55, 56, 57, 58, 59, 60,
@@ -296,6 +302,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "D",
       cas_number: "7440-32-6",
+      cid_number: "23963",
       symbol: "Ti",
     },
     particles: {
@@ -356,6 +363,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 6.1,
+      neutron_mass_absorption: 0.0044,
       isotopes: [
         38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55,
         56, 57, 58, 59, 60, 61, 62, 63,
@@ -396,6 +404,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "D",
       cas_number: "7440-62-2",
+      cid_number: "23990",
       symbol: "V",
     },
     particles: {
@@ -456,6 +465,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 5.06,
+      neutron_mass_absorption: 0.0033,
       isotopes: [
         40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,
         58, 59, 60, 61, 62, 63, 64, 65,
@@ -497,6 +507,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "D",
       cas_number: "7440-47-3",
+      cid_number: "23976",
       symbol: "Cr",
     },
     particles: {
@@ -554,6 +565,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 3.1,
+      neutron_mass_absorption: 0.0021,
       isotopes: [
         42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
         60, 61, 62, 63, 64, 65, 66, 67,
@@ -595,6 +607,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "D",
       cas_number: "7439-96-5",
+      cid_number: "23930",
       symbol: "Mn",
     },
     particles: {
@@ -649,6 +662,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 13.3,
+      neutron_mass_absorption: 0.0083,
       isotopes: [
         44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61,
         62, 63, 64, 65, 66, 67, 68, 69,
@@ -689,6 +703,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "D",
       cas_number: "7439-89-6",
+      cid_number: "23925",
       symbol: "Fe",
     },
     particles: {
@@ -746,6 +761,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 2.56,
+      neutron_mass_absorption: 0.0015,
       isotopes: [
         45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62,
         63, 64, 65, 66, 67, 68, 69, 70, 71, 72,
@@ -784,6 +800,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "D",
       cas_number: "7440-48-4",
+      cid_number: "104730",
       symbol: "Co",
     },
     particles: {
@@ -841,6 +858,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 37.2,
+      neutron_mass_absorption: 0.021,
       isotopes: [
         47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60.61, 62, 63, 64,
         65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
@@ -879,6 +897,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "D",
       cas_number: "7440-02-0",
+      cid_number: "935",
       symbol: "Ni",
     },
     particles: {
@@ -937,6 +956,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 4.5,
+      neutron_mass_absorption: 0.0026,
       isotopes: [
         48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65,
         66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78,
@@ -975,6 +995,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "D",
       cas_number: "7440-50-8",
+      cid_number: "23978",
       symbol: "Cu",
     },
     particles: {
@@ -1033,6 +1054,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 3.78,
+      neutron_mass_absorption: 0.0021,
       isotopes: [
         52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
         70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80,
@@ -1073,6 +1095,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "D",
       cas_number: "7440-66-6",
+      cid_number: "23994",
       symbol: "Zn",
     },
     particles: {
@@ -1130,6 +1153,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 1.1,
+      neutron_mass_absorption: 0.00055,
       isotopes: [
         54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70.71,
         72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83,
@@ -1171,6 +1195,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "P",
       cas_number: "7440-55-3",
+      cid_number: "5360835",
       symbol: "Ga",
     },
     particles: {
@@ -1226,6 +1251,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 2.9,
+      neutron_mass_absorption: 0.0015,
       isotopes: [
         56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73,
         74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86,
@@ -1266,6 +1292,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "P",
       cas_number: "7440-56-4",
+      cid_number: "6326954",
       symbol: "Ge",
     },
     particles: {
@@ -1319,6 +1346,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 2.2,
+      neutron_mass_absorption: 0.0011,
       isotopes: [
         58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
         76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
@@ -1357,6 +1385,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "P",
       cas_number: "7440-38-2",
+      cid_number: "5359596",
       symbol: "As",
     },
     particles: {
@@ -1412,6 +1441,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 4.3,
+      neutron_mass_absorption: 0.002,
       isotopes: [
         60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77,
         78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92,
@@ -1451,6 +1481,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "P",
       cas_number: "74782-49-2",
+      cid_number: "6326970",
       symbol: "Se",
     },
     particles: {
@@ -1508,6 +1539,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 11.7,
+      neutron_mass_absorption: 0.0056,
       isotopes: [
         65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82,
         83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94,
@@ -1544,6 +1576,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "P",
       cas_number: "7726-95-6",
+      cid_number: "24408",
       symbol: "Br",
     },
     particles: {
@@ -1598,6 +1631,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 6.8,
+      neutron_mass_absorption: 0.002,
       isotopes: [
         67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84,
         85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97,
@@ -1636,6 +1670,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       period: 4,
       block: "P",
       cas_number: "7439-90-9",
+      cid_number: "5416",
       symbol: "Kr",
     },
     particles: {
@@ -1689,6 +1724,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 25,
+      neutron_mass_absorption: 0.013,
       isotopes: [
         69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86,
         87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100,

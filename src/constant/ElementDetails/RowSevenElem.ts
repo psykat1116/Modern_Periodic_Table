@@ -13,6 +13,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       period: 7,
       block: "S",
       cas_number: "7440-73-5",
+      cid_number: "6337087",
       symbol: "Fr",
     },
     particles: {
@@ -75,6 +76,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       period: 7,
       block: "S",
       cas_number: "7440-14-4",
+      cid_number: "6328144",
       symbol: "Ra",
     },
     particles: {
@@ -152,6 +154,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       period: 7,
       block: "D",
       cas_number: "53850-36-5",
+      cid_number: "56951715",
       symbol: "Rf",
     },
     particles: {
@@ -201,6 +204,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       period: 7,
       block: "D",
       cas_number: "53850-35-4",
+      cid_number: "56951718",
       symbol: "Db",
     },
     particles: {
@@ -250,6 +254,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       period: 7,
       block: "D",
       cas_number: "54038-81-2",
+      cid_number: "56951717",
       symbol: "Sg",
     },
     particles: {
@@ -298,6 +303,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       period: 7,
       block: "D",
       cas_number: "54037-14-8",
+      cid_number: "56951713",
       symbol: "Bh",
     },
     particles: {
@@ -349,6 +355,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       period: 7,
       block: "D",
       cas_number: "54037-57-9",
+      cid_number: "56951714",
       symbol: "Hs",
     },
     particles: {
@@ -394,6 +401,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       period: 7,
       block: "D",
       cas_number: "54038-01-6",
+      cid_number: "56951716",
       symbol: "Mt",
     },
     particles: {
@@ -442,6 +450,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       period: 7,
       block: "D",
       cas_number: "54038-77-1",
+      cid_number: "135476787",
       symbol: "Ds",
     },
     particles: {
@@ -487,6 +496,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       period: 7,
       block: "D",
       cas_number: "54386-24-2",
+      cid_number: "135476786",
       symbol: "Rg",
     },
     particles: {
@@ -529,6 +539,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       period: 7,
       block: "D",
       cas_number: "54084-26-3",
+      cid_number: "135476785",
       symbol: "Cn",
     },
     particles: {

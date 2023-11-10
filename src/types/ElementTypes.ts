@@ -5,6 +5,7 @@ export interface GeneralProperties {
   period: number;
   block: "S" | "P" | "D" | "F";
   cas_number: string;
+  cid_number?: string;
   symbol: string;
 }
 
@@ -65,6 +66,7 @@ export interface NeuclearProperties {
   half_life: string | "∞";
   lifetime: string | "∞";
   neutron_cross_section?: number;
+  neutron_mass_absorption?: number;
   decay_mode?: "Alpha" | "Beta" | "Gamma" | "Positron";
   isotopes: number[];
   stable?: number[];
@@ -107,6 +109,13 @@ export interface ExternalLinks {
   youtube: string;
 }
 
+export interface HealthSafety {
+  Hazard_class?: number;
+  dot_number?: number;
+  rtecs_number?: string;
+  nfpa_label?: string;
+}
+
 export default interface ElementDetailsProps {
   id: number;
   neighbour: string[];
@@ -122,4 +131,5 @@ export default interface ElementDetailsProps {
   electromagnetic_properties?: ElectromagneticProperties;
   prevalence?: Prevalence;
   external_links: ExternalLinks;
+  health_safety?: HealthSafety;
 }

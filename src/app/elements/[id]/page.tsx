@@ -18,6 +18,7 @@ import NeuclearProperty from "@/components/Properties/NeuclearProperty";
 import EMProperty from "@/components/Properties/EMProperty";
 import Prevalence from "@/components/Properties/Prevalence";
 import ExternalLink from "@/components/Properties/ExternalLink";
+import HealthSafety from "@/components/Properties/HealthSafety";
 import getElementData from "@/helper/getElementData";
 
 const Page = () => {
@@ -130,6 +131,7 @@ const Page = () => {
                   property={elem.neuclear_properties}
                   name={elem?.general_properties.symbol}
                 />
+                {elem.health_safety && <HealthSafety {...elem.health_safety} />}
                 {elem.prevalence && <Prevalence {...elem.prevalence} />}
               </>
             )}

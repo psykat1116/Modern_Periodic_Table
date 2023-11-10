@@ -16,6 +16,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
     half_life,
     lifetime,
     neutron_cross_section,
+    neutron_mass_absorption,
     decay_mode,
     isotopes,
     stable,
@@ -25,6 +26,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
     half_life: false,
     lifetime: false,
     neutron_cross_section: false,
+    neutron_mass_absorption: false,
     decay_mode: false,
   });
   const { theme } = useContext(ThemeContext) as ThemeContextType;
@@ -147,6 +149,39 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
                 }
               >
                 {!isCopying.neutron_cross_section ? (
+                  <MdContentCopy />
+                ) : (
+                  <MdCheck className="text-green-700" />
+                )}
+              </button>
+            </div>
+          </div>
+        )}
+        {neutron_mass_absorption && (
+          <div className="flex flex-row justify-start items-center w-full ">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%]"
+              href="https://en.wikipedia.org/wiki/Neutron_capture"
+            >
+              Neutron Cross Section
+            </Link>
+            <div
+              className={`w-[75%]  ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            >
+              <p>{neutron_mass_absorption}</p>
+              <button
+                onClick={() =>
+                  handleCopy(
+                    neutron_mass_absorption.toString(),
+                    "neutron_mass_absorption"
+                  )
+                }
+              >
+                {!isCopying.neutron_mass_absorption ? (
                   <MdContentCopy />
                 ) : (
                   <MdCheck className="text-green-700" />

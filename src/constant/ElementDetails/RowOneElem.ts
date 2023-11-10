@@ -13,6 +13,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       period: 1,
       block: "S",
       cas_number: "1333-74-0",
+      cid_number: "783",
       symbol: "H",
     },
     particles: {
@@ -62,6 +63,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.332,
+      neutron_mass_absorption: 0.011,
       isotopes: [1, 2, 3, 4, 5, 6, 7],
       stable: [1, 2],
     },
@@ -83,6 +85,11 @@ export const RowOneElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Hydrogen",
       youtube: "https://youtu.be/U-MNKK20Z_g",
     },
+    health_safety: {
+      Hazard_class: 2.1,
+      dot_number: 1966,
+      rtecs_number: "MW8900000",
+    },
   },
   {
     id: 2,
@@ -96,6 +103,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       period: 1,
       block: "P",
       cas_number: "7440-59-7",
+      cid_number: "23987",
       symbol: "He",
     },
     particles: {
@@ -147,6 +155,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       half_life: "∞",
       lifetime: "∞",
       neutron_cross_section: 0.007,
+      neutron_mass_absorption: 0.00001,
       isotopes: [2, 3, 4, 5, 6, 7, 8, 9, 10],
       stable: [3, 4],
     },
@@ -167,6 +176,11 @@ export const RowOneElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Helium",
       youtube: "https://youtu.be/ntyh9VJvq2w",
+    },
+    health_safety: {
+      Hazard_class: 2.2,
+      dot_number: 1963,
+      rtecs_number: "MH6520000",
     },
   },
 ];
