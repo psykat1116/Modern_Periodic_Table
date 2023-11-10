@@ -19,6 +19,7 @@ import EMProperty from "@/components/Properties/EMProperty";
 import Prevalence from "@/components/Properties/Prevalence";
 import ExternalLink from "@/components/Properties/ExternalLink";
 import HealthSafety from "@/components/Properties/HealthSafety";
+import AtomStructure from "@/components/Properties/AtomStructure";
 import getElementData from "@/helper/getElementData";
 
 const Page = () => {
@@ -117,6 +118,9 @@ const Page = () => {
                 <Overview {...elem.overview} />
                 <GeneralInfo {...elem.general_properties} />
                 <AtomicProperty {...elem.atomic_properties} />
+                {elem.atom_structure && (
+                  <AtomStructure {...elem.atom_structure} />
+                )}
                 {elem.thermodynamic_properties && (
                   <ThermoProperty {...elem.thermodynamic_properties} />
                 )}

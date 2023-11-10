@@ -98,6 +98,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Rubidium",
       youtube: "https://youtu.be/g0P-A23m3lE",
     },
+    atom_structure: {
+      crystall_structure: "Body-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [558.5, 558.5, 558.5],
+      space_group_name: "Im_ 3m",
+      space_group_number: 229,
+    },
   },
   {
     id: 38,
@@ -194,6 +201,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Strontium",
       youtube: "https://youtu.be/28guL5UQfOQ",
+    },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [608.49, 608.49, 608.49],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
     },
   },
   {
@@ -294,6 +308,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Yttrium",
       youtube: "https://youtu.be/LGAmrFTr5e4",
+    },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [364.74, 364.74, 573.06],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
     },
   },
   {
@@ -397,6 +418,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Zirconium",
       youtube: "https://youtu.be/yIBbrk56KwQ",
     },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [323.2, 323.2, 514.7],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
+    },
   },
   {
     id: 41,
@@ -495,6 +523,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Niobium",
       youtube: "https://youtu.be/K90HPbVZOQ4",
+    },
+    atom_structure: {
+      crystall_structure: "Body-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [330.04, 330.04, 330.04],
+      space_group_name: "Im_ 3m",
+      space_group_number: 229,
     },
   },
   {
@@ -597,6 +632,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Molybdenum",
       youtube: "https://youtu.be/fuhZF0Dtevw",
     },
+    atom_structure: {
+      crystall_structure: "Body-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [314.7, 314.7, 314.7],
+      space_group_name: "Im_ 3m",
+      space_group_number: 229,
+    },
   },
   {
     id: 43,
@@ -688,6 +730,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Technetium",
       youtube: "https://youtu.be/Hu42SH5iAps",
+    },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [273.5, 273.5, 438.8],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
     },
   },
   {
@@ -793,6 +842,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Ruthenium",
       youtube: "https://youtu.be/xtY6BpT4DTY",
     },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [270.59, 270.59, 428.15],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
+    },
   },
   {
     id: 45,
@@ -892,6 +948,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Rhodium",
       youtube: "https://youtu.be/RcQVJ4lb8r0",
     },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [380.34, 380.34, 380.34],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
+    },
   },
   {
     id: 46,
@@ -990,6 +1053,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Palladium",
       youtube: "https://youtu.be/FC-OBl9Eiiw",
+    },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [389.07, 389.07, 389.07],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
     },
   },
   {
@@ -1091,6 +1161,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Silver",
       youtube: "https://youtu.be/v-L4lUrEUlI",
     },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [408.53, 408.53, 408.53],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
+    },
   },
   {
     id: 48,
@@ -1188,6 +1265,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Cadmium",
       youtube: "https://youtu.be/yvWKeYOdWbo",
+    },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [297.94, 297.94, 561.86],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
     },
   },
   {
@@ -1287,6 +1371,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Indium",
       youtube: "https://youtu.be/mjiP5Q6g_aM",
+    },
+    atom_structure: {
+      crystall_structure: "Centered Tetragonal",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [325.23, 325.23, 494.61],
+      space_group_name: "I4/mmm",
+      space_group_number: 139,
     },
   },
   {
@@ -1389,6 +1480,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Tin",
       youtube: "https://youtu.be/Q9zdt-rOB0Y",
     },
+    atom_structure: {
+      crystall_structure: "Centered Tetragonal",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [583.18, 583.18, 318.19],
+      space_group_name: "I4<sub>1</sub>/amd",
+      space_group_number: 141,
+    },
   },
   {
     id: 51,
@@ -1485,6 +1583,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Antimony",
       youtube: "https://youtu.be/BBzUYptG1_o",
+    },
+    atom_structure: {
+      crystall_structure: "Simple Trigonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [430.7, 430.7, 1127.3],
+      space_group_name: "R_ 3m",
+      space_group_number: 166,
     },
   },
   {
@@ -1583,6 +1688,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Tellurium",
       youtube: "https://youtu.be/HGsFcbXd1hA",
     },
+    atom_structure: {
+      crystall_structure: "Simple Trigonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [445.72, 445.72, 592.9],
+      space_group_name: "P3<sub>1</sub>21",
+      space_group_number: 152,
+    },
   },
   {
     id: 53,
@@ -1674,6 +1786,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Iodine",
       youtube: "https://youtu.be/_e194ZAxwko",
     },
+    atom_structure: {
+      crystall_structure: "Base Orthorhombic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [718.02, 471.02, 981.03],
+      space_group_name: "Cmca",
+      space_group_number: 64,
+    },
   },
   {
     id: 54,
@@ -1763,6 +1882,13 @@ export const RowFiveElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Xenon",
       youtube: "https://youtu.be/p9CBg8OaTLg",
+    },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [620.23, 620.23, 620.23],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
     },
   },
 ];

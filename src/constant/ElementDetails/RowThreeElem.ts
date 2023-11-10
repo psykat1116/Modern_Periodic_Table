@@ -97,6 +97,13 @@ export const RowThreeElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Sodium",
       youtube: "https://youtu.be/WsrdE5g4z1I",
     },
+    atom_structure: {
+      crystall_structure: "Body-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [429.06, 429.06, 429.06],
+      space_group_name: "Im_ 3m",
+      space_group_number: 229,
+    },
   },
   {
     id: 12,
@@ -194,6 +201,13 @@ export const RowThreeElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Magnesium",
       youtube: "https://youtu.be/FKkWdizutxI",
+    },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [320.94, 320.94, 521.08],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
     },
   },
   {
@@ -295,6 +309,13 @@ export const RowThreeElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Aluminium",
       youtube: "https://youtu.be/nqicpx0adY4",
     },
+    atom_structure: {
+      crystall_structure: "Face-Centered Hexagonal",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [404.95, 404.95, 404.95],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
+    },
   },
   {
     id: 14,
@@ -392,6 +413,13 @@ export const RowThreeElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Silicon",
       youtube: "https://youtu.be/akvr9utNCVs",
     },
+    atom_structure: {
+      crystall_structure: "Tetrahedral Packing",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [543.09, 543.09, 543.09],
+      space_group_name: "Fd_ 3m",
+      space_group_number: 227,
+    },
   },
   {
     id: 15,
@@ -483,6 +511,13 @@ export const RowThreeElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Phosphorus",
       youtube: "https://youtu.be/NdOyFPv7TkY",
+    },
+    atom_structure: {
+      crystall_structure: "Simple Triclinic",
+      lattice_angle: [1.25384, 1.57725, 1.24896],
+      lattice_constant: [1145, 550.3, 1126.1],
+      space_group_name: "P-1",
+      space_group_number: 2,
     },
   },
   {
@@ -578,6 +613,13 @@ export const RowThreeElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Sulphur",
       youtube: "https://youtu.be/mddfu3TXaRw",
     },
+    atom_structure: {
+      crystall_structure: "Face-Centered Orthorhombic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [1043.7, 1284.5, 2436.9],
+      space_group_name: "Fddd",
+      space_group_number: 70,
+    },
   },
   {
     id: 17,
@@ -672,6 +714,13 @@ export const RowThreeElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Chlorine",
       youtube: "https://youtu.be/BXCfBl4rmh0",
     },
+    atom_structure: {
+      crystall_structure: "Base Orthorombhic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [622.35, 445.61, 817.85],
+      space_group_name: "Cmca",
+      space_group_number: 64,
+    },
   },
   {
     id: 18,
@@ -760,6 +809,13 @@ export const RowThreeElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Argon",
       youtube: "https://youtu.be/b3TrEGlpttI",
+    },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [525.6, 525.6, 525.6],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
     },
   },
 ];

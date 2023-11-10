@@ -163,7 +163,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
               className=" pr-2 py-1 rounded-[4px] w-[25%]"
               href="https://en.wikipedia.org/wiki/Neutron_capture"
             >
-              Neutron Cross Section
+              Neutron Mass Absorption
             </Link>
             <div
               className={`w-[75%]  ${

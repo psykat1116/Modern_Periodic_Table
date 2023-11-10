@@ -90,6 +90,13 @@ export const RowOneElem: ElementDetailsProps[] = [
       dot_number: 1966,
       rtecs_number: "MW8900000",
     },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [470, 470, 340],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
+    },
   },
   {
     id: 2,
@@ -181,6 +188,13 @@ export const RowOneElem: ElementDetailsProps[] = [
       Hazard_class: 2.2,
       dot_number: 1963,
       rtecs_number: "MH6520000",
+    },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic (FCC)",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [424.2, 424.2, 424.2],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
     },
   },
 ];

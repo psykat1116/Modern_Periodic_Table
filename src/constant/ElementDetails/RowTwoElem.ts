@@ -101,6 +101,13 @@ export const RowTwoElem: ElementDetailsProps[] = [
       dot_number: 1415,
       rtecs_number: "OJ5540000",
     },
+    atom_structure: {
+      crystall_structure: "Body-Centered Cubic (BCC)",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [351, 351, 351],
+      space_group_name: "Im_ 3m",
+      space_group_number: 229,
+    },
   },
   {
     id: 4,
@@ -205,6 +212,13 @@ export const RowTwoElem: ElementDetailsProps[] = [
       dot_number: 1567,
       rtecs_number: "DS1750000",
     },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [228.58, 228.58, 358.43],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
+    },
   },
   {
     id: 5,
@@ -303,6 +317,13 @@ export const RowTwoElem: ElementDetailsProps[] = [
     health_safety: {
       rtecs_number: "ED7350000",
     },
+    atom_structure: {
+      crystall_structure: "Simple Trigonal",
+      lattice_angle: [1.01334, 1.01334, 1.01334],
+      lattice_constant: [506, 506, 506],
+      space_group_name: "R_ 3m",
+      space_group_number: 166,
+    },
   },
   {
     id: 6,
@@ -399,6 +420,13 @@ export const RowTwoElem: ElementDetailsProps[] = [
       dot_number: 1361,
       rtecs_number: "HL4158550",
     },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [246.4, 246.4, 671.1],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
+    },
   },
   {
     id: 7,
@@ -494,6 +522,13 @@ export const RowTwoElem: ElementDetailsProps[] = [
       dot_number: 1977,
       rtecs_number: "QW9700000",
     },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [386.1, 386.1, 626.5],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
+    },
   },
   {
     id: 8,
@@ -587,6 +622,13 @@ export const RowTwoElem: ElementDetailsProps[] = [
       dot_number: 1073,
       rtecs_number: "RS2060000",
     },
+    atom_structure: {
+      crystall_structure: "Base-Centered Monoclinic",
+      lattice_angle: [90, 2.313085, 90],
+      lattice_constant: [540.3, 342.9, 508.6],
+      space_group_name: "C12/m1",
+      space_group_number: 12,
+    },
   },
   {
     id: 9,
@@ -672,6 +714,13 @@ export const RowTwoElem: ElementDetailsProps[] = [
       Hazard_class: 2.3,
       dot_number: 9192,
       rtecs_number: "LM6475000",
+    },
+    atom_structure: {
+      crystall_structure: "Base-Centered Monoclinic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [550, 328, 728],
+      space_group_name: "C12/c1",
+      space_group_number: 15,
     },
   },
   {
@@ -767,6 +816,13 @@ export const RowTwoElem: ElementDetailsProps[] = [
       Hazard_class: 2.2,
       dot_number: 1913,
       rtecs_number: "QP4450000",
+    },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [442.9, 442.9, 442.9],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
     },
   },
 ];

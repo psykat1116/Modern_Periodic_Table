@@ -116,6 +116,14 @@ export interface HealthSafety {
   nfpa_label?: string;
 }
 
+export interface AtomStructure {
+  crystall_structure?: string;
+  lattice_angle?: number[];
+  lattice_constant?: number[];
+  space_group_name?: string;
+  space_group_number?: number;
+}
+
 export default interface ElementDetailsProps {
   id: number;
   neighbour: string[];
@@ -132,4 +140,5 @@ export default interface ElementDetailsProps {
   prevalence?: Prevalence;
   external_links: ExternalLinks;
   health_safety?: HealthSafety;
+  atom_structure?: AtomStructure;
 }

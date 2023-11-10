@@ -141,6 +141,13 @@ export const RowSevenElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Radium",
       youtube: "https://youtu.be/I_1XelLa1eo",
     },
+    atom_structure: {
+      crystall_structure: "Body-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [514.8, 514.8, 514.8],
+      space_group_name: "Im_ 3m",
+      space_group_number: 229,
+    },
   },
   {
     id: 104,

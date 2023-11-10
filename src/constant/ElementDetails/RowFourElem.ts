@@ -94,6 +94,13 @@ export const RowFourElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Potassium",
       youtube: "https://youtu.be/ANH-v-jd9PQ",
     },
+    atom_structure: {
+      crystall_structure: "Body-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [532.8, 532.8, 532.8],
+      space_group_name: "Im_ 3m",
+      space_group_number: 229,
+    },
   },
   {
     id: 20,
@@ -192,6 +199,13 @@ export const RowFourElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Calcium",
       youtube: "https://youtu.be/V9fuY8_ffFg",
     },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [558.84, 558.84, 558.84],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
+    },
   },
   {
     id: 21,
@@ -288,6 +302,13 @@ export const RowFourElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Scandium",
       youtube: "https://youtu.be/Dh9QcKKObQE",
+    },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [330.9, 330.9, 527.33],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
     },
   },
   {
@@ -390,6 +411,13 @@ export const RowFourElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Titanium",
       youtube: "https://youtu.be/ptAR3allc7U",
+    },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [295.08, 295.08, 468.55],
+      space_group_name: "F6<sub>3</sub>/mmc",
+      space_group_number: 194,
     },
   },
   {
@@ -494,6 +522,13 @@ export const RowFourElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Vanadium",
       youtube: "https://youtu.be/eySYRB4OUZ4",
     },
+    atom_structure: {
+      crystall_structure: "Body-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [303, 303, 303],
+      space_group_name: "Im_ 3m",
+      space_group_number: 229,
+    },
   },
   {
     id: 24,
@@ -594,6 +629,13 @@ export const RowFourElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Chromium",
       youtube: "https://youtu.be/JHs150cSTVc",
     },
+    atom_structure: {
+      crystall_structure: "Body-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [291, 291, 291],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 229,
+    },
   },
   {
     id: 25,
@@ -689,6 +731,13 @@ export const RowFourElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Manganese",
       youtube: "https://youtu.be/9ZLcpb0FmFE",
+    },
+    atom_structure: {
+      crystall_structure: "Body-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [891.25, 891.25, 891.25],
+      space_group_name: "l_ 43m",
+      space_group_number: 217,
     },
   },
   {
@@ -787,6 +836,13 @@ export const RowFourElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Iron",
       youtube: "https://youtu.be/uAMMQv0rKFI",
     },
+    atom_structure: {
+      crystall_structure: "Body-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [286.65, 286.65, 286.65],
+      space_group_name: "Im_ 3m",
+      space_group_number: 229,
+    },
   },
   {
     id: 27,
@@ -883,6 +939,13 @@ export const RowFourElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Cobalt",
       youtube: "https://youtu.be/yvWKeYOdWbo",
+    },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [250.71, 250.71, 406.95],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
     },
   },
   {
@@ -981,6 +1044,13 @@ export const RowFourElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Nickel",
       youtube: "https://youtu.be/AUmoaZn9bek",
+    },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [352.4, 352.4, 352.4],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
     },
   },
   {
@@ -1082,6 +1152,13 @@ export const RowFourElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Copper",
       youtube: "https://youtu.be/fyUWYpWkwIw",
     },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [361.49, 361.49, 361.49],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
+    },
   },
   {
     id: 30,
@@ -1182,6 +1259,13 @@ export const RowFourElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Zinc",
       youtube: "https://youtu.be/ju6gGLxq99k",
     },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [266.49, 266.49, 494.68],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
+    },
   },
   {
     id: 31,
@@ -1279,6 +1363,13 @@ export const RowFourElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Galium",
       youtube: "https://youtu.be/N6ccRvKKwZQ",
     },
+    atom_structure: {
+      crystall_structure: "Base Orthorhombic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [451.97, 766.33, 452.6],
+      space_group_name: "Cmca",
+      space_group_number: 64,
+    },
   },
   {
     id: 32,
@@ -1371,6 +1462,13 @@ export const RowFourElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Germanium",
       youtube: "https://youtu.be/2xylv_hijXw",
+    },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [565.75, 565.75, 565.75],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
     },
   },
   {
@@ -1468,6 +1566,13 @@ export const RowFourElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Arsenic",
       youtube: "https://youtu.be/yD8Vz-mFHgI",
     },
+    atom_structure: {
+      crystall_structure: "Simple Trigonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [375.98, 375.98, 1054.75],
+      space_group_name: "R_ 3m",
+      space_group_number: 166,
+    },
   },
   {
     id: 34,
@@ -1563,6 +1668,13 @@ export const RowFourElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Selenium",
       youtube: "https://youtu.be/IHrUtKjcAFE",
     },
+    atom_structure: {
+      crystall_structure: "Simple Monoclinic",
+      lattice_angle: [90, 1.58493, 90],
+      lattice_constant: [905.4, 908.3, 1160.1],
+      space_group_name: "P12<sub>1</sub>/c1",
+      space_group_number: 14,
+    },
   },
   {
     id: 35,
@@ -1657,6 +1769,13 @@ export const RowFourElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Bromine",
       youtube: "https://youtu.be/1CtnJtYcm_M",
     },
+    atom_structure: {
+      crystall_structure: "Base Orthorhombic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [672.65, 464.51, 870.23],
+      space_group_name: "Cmca",
+      space_group_number: 64,
+    },
   },
   {
     id: 36,
@@ -1745,6 +1864,13 @@ export const RowFourElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Krypton",
       youtube: "https://youtu.be/il4OOY7Zseg",
+    },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [570.6, 570.6, 570.6],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
     },
   },
 ];

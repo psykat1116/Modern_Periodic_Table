@@ -70,6 +70,13 @@ export const ActinideElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Actinium",
       youtube: "https://youtu.be/rKm0ShaJNFM",
     },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [567, 567, 567],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
+    },
   },
   {
     id: 90,
@@ -165,6 +172,13 @@ export const ActinideElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Thorium",
       youtube: "https://youtu.be/zjDw1VWJ_RU",
     },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [508.42, 508.42, 508.42],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
+    },
   },
   {
     id: 91,
@@ -258,6 +272,13 @@ export const ActinideElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Protactinium",
       youtube: "https://youtu.be/bsIMMa7iEKU",
+    },
+    atom_structure: {
+      crystall_structure: "Centered Tetragonal",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [392.5, 392.5, 323.8],
+      space_group_name: "I4/mmm",
+      space_group_number: 139,
     },
   },
   {
@@ -357,6 +378,13 @@ export const ActinideElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Uranium",
       youtube: "https://youtu.be/Kkd2bYAVtOU",
     },
+    atom_structure: {
+      crystall_structure: "Base Orthorhombic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [285.37, 586.95, 495.48],
+      space_group_name: "Cmcm",
+      space_group_number: 63,
+    },
   },
   {
     id: 93,
@@ -431,6 +459,13 @@ export const ActinideElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Neptunium",
       youtube: "https://youtu.be/1D75B0_URbE",
+    },
+    atom_structure: {
+      crystall_structure: "Simple Orthorhombic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [666.3, 472.3, 488.7],
+      space_group_name: "Pnma",
+      space_group_number: 62,
     },
   },
   {
@@ -512,6 +547,13 @@ export const ActinideElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Plutonium",
       youtube: "https://youtu.be/87TpxxFdzQU",
     },
+    atom_structure: {
+      crystall_structure: "Simple Monoclinic",
+      lattice_angle: [90, 1.776571, 90],
+      lattice_constant: [618.3, 482.2, 1096.3],
+      space_group_name: "P12<sub>1</sub>/m1",
+      space_group_number: 11,
+    },
   },
   {
     id: 95,
@@ -589,6 +631,13 @@ export const ActinideElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Americium",
       youtube: "https://youtu.be/CC-L-CITg3k",
     },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [346.81, 346.81, 1124.1],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
+    },
   },
   {
     id: 96,
@@ -657,6 +706,13 @@ export const ActinideElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Curium",
       youtube: "https://youtu.be/sZobqPFNcwg",
     },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [349.6, 349.6, 1133.1],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
+    },
   },
   {
     id: 97,
@@ -722,6 +778,13 @@ export const ActinideElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Berkelium",
       youtube: "https://youtu.be/IgPkUbtnC4o",
+    },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [341.6, 341.6, 1106.9],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
     },
   },
   {
@@ -789,6 +852,13 @@ export const ActinideElem: ElementDetailsProps[] = [
       wikipedia: "https://en.wikipedia.org/wiki/Californium",
       youtube: "https://youtu.be/ZhvRmbpkx9U",
     },
+    atom_structure: {
+      crystall_structure: "Simple Hexagonal",
+      lattice_angle: [90, 90, 120],
+      lattice_constant: [338, 338, 1102 / 5],
+      space_group_name: "P6<sub>3</sub>/mmc",
+      space_group_number: 194,
+    },
   },
   {
     id: 99,
@@ -850,6 +920,13 @@ export const ActinideElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Einsteinium",
       youtube: "https://youtu.be/UdJeLlwrVUI",
+    },
+    atom_structure: {
+      crystall_structure: "Face-Centered Cubic",
+      lattice_angle: [90, 90, 90],
+      lattice_constant: [565.75, 565.75, 565.75],
+      space_group_name: "Fm_ 3m",
+      space_group_number: 225,
     },
   },
   {
