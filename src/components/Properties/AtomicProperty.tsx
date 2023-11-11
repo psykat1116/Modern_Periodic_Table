@@ -15,7 +15,6 @@ const AtomicProperty = ({
   atomic_radius,
   covalent_radius,
   van_der_walls_radius,
-  crystall_structure,
 }: AtomicProperties) => {
   const [isCopying, setIsCopying] = useState({
     atomic_weight: false,
@@ -26,7 +25,6 @@ const AtomicProperty = ({
     atomic_radius: false,
     covalent_radius: false,
     van_der_walls_radius: false,
-    crystall_structure: false,
   });
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const handleCopy = (value: string, property: string) => {
@@ -296,39 +294,6 @@ const AtomicProperty = ({
               }`}
             >
               Pm (10<sup>-12</sup>m)
-            </div>
-          </div>
-        )}
-        {crystall_structure && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
-            <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Crystal_structure"
-            >
-              Crystall Structure
-            </Link>
-            <div
-              className={`w-[75%] ${
-                theme === "dark"
-                  ? "bg-bg_dark_placeholder"
-                  : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-            >
-              <p>{crystall_structure}</p>
-              <button
-                onClick={() =>
-                  handleCopy(
-                    crystall_structure.toString(),
-                    "crystall_structure"
-                  )
-                }
-              >
-                {!isCopying.crystall_structure ? (
-                  <MdContentCopy />
-                ) : (
-                  <MdCheck className="text-green-700" />
-                )}
-              </button>
             </div>
           </div>
         )}
