@@ -101,6 +101,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       space_group_name: "Im_ 3m",
       space_group_number: 229,
     },
+    health_safety: {
+      Hazard_class: 4.3,
+      dot_number: 2257,
+      rtecs_number: "TS6460000",
+    },
   },
   {
     id: 20,
@@ -206,6 +211,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       space_group_name: "Fm_ 3m",
       space_group_number: 225,
     },
+    health_safety: {
+      Hazard_class: 4.2,
+      dot_number: 1855,
+    },
   },
   {
     id: 21,
@@ -309,6 +318,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       lattice_constant: [330.9, 330.9, 527.33],
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
+    },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
     },
   },
   {
@@ -418,6 +431,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       lattice_constant: [295.08, 295.08, 468.55],
       space_group_name: "F6<sub>3</sub>/mmc",
       space_group_number: 194,
+    },
+    health_safety: {
+      Hazard_class: 4.2,
+      dot_number: 1456,
     },
   },
   {
@@ -529,6 +546,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       space_group_name: "Im_ 3m",
       space_group_number: 229,
     },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+    },
   },
   {
     id: 24,
@@ -636,6 +657,12 @@ export const RowFourElem: ElementDetailsProps[] = [
       space_group_name: "Fm_ 3m",
       space_group_number: 229,
     },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+      rtecs_number: "GB4200000",
+      nfpa_label: "/Cr.png",
+    },
   },
   {
     id: 25,
@@ -738,6 +765,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       lattice_constant: [891.25, 891.25, 891.25],
       space_group_name: "l_ 43m",
       space_group_number: 217,
+    },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
     },
   },
   {
@@ -843,6 +874,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       space_group_name: "Im_ 3m",
       space_group_number: 229,
     },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+      rtecs_number: "NO4565500",
+    },
   },
   {
     id: 27,
@@ -946,6 +982,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       lattice_constant: [250.71, 250.71, 406.95],
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
+    },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+      rtecs_number: "GF8750000",
     },
   },
   {
@@ -1051,6 +1092,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       lattice_constant: [352.4, 352.4, 352.4],
       space_group_name: "Fm_ 3m",
       space_group_number: 225,
+    },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+      rtecs_number: "QR5950000",
     },
   },
   {
@@ -1159,6 +1205,12 @@ export const RowFourElem: ElementDetailsProps[] = [
       space_group_name: "Fm_ 3m",
       space_group_number: 225,
     },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+      rtecs_number: "GL5325000",
+      nfpa_label: "/Cu.png",
+    },
   },
   {
     id: 30,
@@ -1266,6 +1318,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
     },
+    health_safety: {
+      Hazard_class: 4.3,
+      dot_number: 1436,
+      rtecs_number: "ZG8600000",
+    },
   },
   {
     id: 31,
@@ -1370,6 +1427,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       space_group_name: "Cmca",
       space_group_number: 64,
     },
+    health_safety: {
+      Hazard_class: 8,
+      dot_number: 1803,
+      rtecs_number: "LW8600000",
+    },
   },
   {
     id: 32,
@@ -1469,6 +1531,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       lattice_constant: [565.75, 565.75, 565.75],
       space_group_name: "Fm_ 3m",
       space_group_number: 225,
+    },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+      rtecs_number: "LY5200000",
     },
   },
   {
@@ -1573,6 +1640,12 @@ export const RowFourElem: ElementDetailsProps[] = [
       space_group_name: "R_ 3m",
       space_group_number: 166,
     },
+    health_safety: {
+      Hazard_class: 61,
+      dot_number: 1558,
+      rtecs_number: "CG0525000",
+      nfpa_label: "/As.png",
+    },
   },
   {
     id: 34,
@@ -1675,6 +1748,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       space_group_name: "P12<sub>1</sub>/c1",
       space_group_number: 14,
     },
+    health_safety: {
+      Hazard_class: 6.1,
+      dot_number: 2658,
+      rtecs_number: "VS7700000",
+    },
   },
   {
     id: 35,
@@ -1776,6 +1854,12 @@ export const RowFourElem: ElementDetailsProps[] = [
       space_group_name: "Cmca",
       space_group_number: 64,
     },
+    health_safety: {
+      Hazard_class: 8,
+      dot_number: 1744,
+      rtecs_number: "EF9100000",
+      nfpa_label: "/Br.png",
+    },
   },
   {
     id: 36,
@@ -1823,6 +1907,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       fusion_heat: 1.64,
       specific_heat: 248.05,
       vaporization_heat: 9.02,
+      adiabatic_index: 5 / 3,
     },
     material_properties: {
       color: "Colorless",
@@ -1871,6 +1956,11 @@ export const RowFourElem: ElementDetailsProps[] = [
       lattice_constant: [570.6, 570.6, 570.6],
       space_group_name: "Fm_ 3m",
       space_group_number: 225,
+    },
+    health_safety: {
+      Hazard_class: 2.2,
+      dot_number: 1970,
+      rtecs_number: "OC6772500",
     },
   },
 ];

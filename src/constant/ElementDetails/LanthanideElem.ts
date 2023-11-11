@@ -105,6 +105,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
     },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3178,
+    },
   },
   {
     id: 58,
@@ -215,6 +219,11 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lattice_constant: [362, 362, 599],
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
+    },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 1333,
+      nfpa_label: "/Ce.png",
     },
   },
   {
@@ -426,6 +435,9 @@ export const LanthanideElem: ElementDetailsProps[] = [
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
     },
+    health_safety: {
+      rtecs_number: "QO8575000",
+    },
   },
   {
     id: 61,
@@ -616,6 +628,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lattice_constant: [362.1, 362.1, 2625],
       space_group_name: "R_ 3m",
       space_group_number: 166,
+    },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 1325,
     },
   },
   {
@@ -827,6 +843,9 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lattice_constant: [363.6, 363.6, 578.26],
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
+    },
+    health_safety: {
+      rtecs_number: "LW3850000",
     },
   },
   {
@@ -1152,6 +1171,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
     },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+    },
   },
   {
     id: 68,
@@ -1365,6 +1388,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
     },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+    },
   },
   {
     id: 70,
@@ -1473,6 +1500,9 @@ export const LanthanideElem: ElementDetailsProps[] = [
       space_group_name: "Fm_ 3m",
       space_group_number: 225,
     },
+    health_safety: {
+      rtecs_number: "ZG1925000",
+    },
   },
   {
     id: 71,
@@ -1580,6 +1610,10 @@ export const LanthanideElem: ElementDetailsProps[] = [
       lattice_constant: [350.31, 350.31, 555.09],
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
+    },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
     },
   },
 ];

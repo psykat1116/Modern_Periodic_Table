@@ -105,6 +105,12 @@ export const RowSixElem: ElementDetailsProps[] = [
       space_group_name: "Im_ 3m",
       space_group_number: 229,
     },
+    health_safety: {
+      Hazard_class: 4.3,
+      dot_number: 1407,
+      rtecs_number: "FK9225000",
+      nfpa_label: "/Cs.png",
+    },
   },
   {
     id: 56,
@@ -208,6 +214,12 @@ export const RowSixElem: ElementDetailsProps[] = [
       lattice_constant: [502.8, 502.8, 502.8],
       space_group_name: "Im_ 3m",
       space_group_number: 229,
+    },
+    health_safety: {
+      Hazard_class: 4.3,
+      dot_number: 1400,
+      rtecs_number: "CQ8370000",
+      nfpa_label: "/Ba.png",
     },
   },
   {
@@ -318,6 +330,11 @@ export const RowSixElem: ElementDetailsProps[] = [
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
     },
+    health_safety: {
+      Hazard_class: 4.2,
+      dot_number: 2545,
+      rtecs_number: "MG4600000",
+    },
   },
   {
     id: 73,
@@ -423,6 +440,11 @@ export const RowSixElem: ElementDetailsProps[] = [
       lattice_constant: [330.13, 330.13, 330.13],
       space_group_name: "Im_ 3m",
       space_group_number: 229,
+    },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+      rtecs_number: "WW5505000",
     },
   },
   {
@@ -532,6 +554,11 @@ export const RowSixElem: ElementDetailsProps[] = [
       lattice_constant: [316.52, 316.52, 316.52],
       space_group_name: "Im_ 3m",
       space_group_number: 229,
+    },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+      rtecs_number: "YO7175000",
     },
   },
   {
@@ -644,6 +671,9 @@ export const RowSixElem: ElementDetailsProps[] = [
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
     },
+    health_safety: {
+      rtecs_number: "VI0780000",
+    },
   },
   {
     id: 76,
@@ -751,6 +781,11 @@ export const RowSixElem: ElementDetailsProps[] = [
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
     },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+      rtecs_number: "RN1100000",
+    },
   },
   {
     id: 77,
@@ -856,6 +891,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       lattice_constant: [383.9, 383.9, 383.9],
       space_group_name: "Fm_ 3m",
       space_group_number: 225,
+    },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
     },
   },
   {
@@ -963,6 +1002,11 @@ export const RowSixElem: ElementDetailsProps[] = [
       space_group_name: "Fm_ 3m",
       space_group_number: 225,
     },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 3089,
+      rtecs_number: "TP2160000",
+    },
   },
   {
     id: 79,
@@ -1069,6 +1113,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       space_group_name: "Fm_ 3m",
       space_group_number: 225,
     },
+    health_safety: {
+      rtecs_number: "MD5070000",
+      nfpa_label: "/Au.png"
+    },
   },
   {
     id: 80,
@@ -1170,6 +1218,11 @@ export const RowSixElem: ElementDetailsProps[] = [
       lattice_constant: [300.5, 300.5, 300.5],
       space_group_name: "R_ 3m",
       space_group_number: 166,
+    },
+    health_safety: {
+      Hazard_class: 8,
+      dot_number: 2809,
+      rtecs_number: "OV4550000",
     },
   },
   {
@@ -1277,6 +1330,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       lattice_constant: [345.66, 345.66, 552.48],
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
+    },
+    health_safety: {
+      dot_number: 1707,
+      rtecs_number: "XG3425000",
     },
   },
   {
@@ -1386,6 +1443,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       space_group_name: "Fm_ 3m",
       space_group_number: 225,
     },
+    health_safety: {
+      dot_number: 3077,
+      rtecs_number: "OF7525000",
+    },
   },
   {
     id: 83,
@@ -1490,6 +1551,11 @@ export const RowSixElem: ElementDetailsProps[] = [
       lattice_constant: [667.4, 611.7, 330.4],
       space_group_name: "C12/m1",
       space_group_number: 12,
+    },
+    health_safety: {
+      Hazard_class: 6.1,
+      dot_number: 3080,
+      rtecs_number: "EB2600000",
     },
   },
   {
@@ -1686,6 +1752,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 3,
       specific_heat: 93.65,
       vaporization_heat: 17,
+      adiabatic_index: 5 / 3,
     },
     material_properties: {
       color: "Colorless",
@@ -1716,6 +1783,11 @@ export const RowSixElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Radon",
       youtube: "https://youtu.be/mTuC_LrEfbU",
+    },
+    health_safety: {
+      Hazard_class: 7,
+      dot_number: 2912,
+      rtecs_number: "VE3750000",
     },
   },
 ];

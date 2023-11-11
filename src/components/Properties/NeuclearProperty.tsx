@@ -50,7 +50,13 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
       <h1 className="text-xl">Neuclear Properties</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         <div className="flex flex-row justify-start items-center w-full ">
-          <p className=" pr-2 py-1 rounded-[4px] w-[25%]">Radioactive</p>
+          <Link
+            className=" pr-2 py-1 rounded-[4px] w-[25%]"
+            href="https://en.wikipedia.org/wiki/Radioactive_decay"
+            target="_blank"
+          >
+            Radioactive
+          </Link>
           <div
             className={`w-[75%]  ${
               theme === "dark"

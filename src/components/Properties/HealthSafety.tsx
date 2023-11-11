@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { HealthSafety } from "@/types/ElementTypes";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
@@ -123,31 +124,20 @@ const HealthSafety = ({
           </div>
         )}
         {nfpa_label && (
-          <div className="flex flex-row justify-start items-center w-full ">
+          <div className="flex flex-row justify-start items-start w-full ">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[20%]"
               href="https://en.wikipedia.org/wiki/NFPA_704"
             >
               NFPA Label
             </Link>
-            <div
-              className={`w-[80%]  ${
-                theme === "dark"
-                  ? "bg-bg_dark_placeholder"
-                  : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
-            >
-              <p>{nfpa_label}</p>
-              <button
-                onClick={() => handleCopy(nfpa_label.toString(), "nfpa_label")}
-              >
-                {!isCopying.nfpa_label ? (
-                  <MdContentCopy />
-                ) : (
-                  <MdCheck className="text-green-700" />
-                )}
-              </button>
-            </div>
+            <Image
+              src={`/assets${nfpa_label}`}
+              alt={`npfa_label_${nfpa_label}`}
+              height={80}
+              width={80}
+              className="object-cover"
+            />
           </div>
         )}
       </div>

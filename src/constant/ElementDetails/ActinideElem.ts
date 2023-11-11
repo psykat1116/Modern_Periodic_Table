@@ -179,6 +179,11 @@ export const ActinideElem: ElementDetailsProps[] = [
       space_group_name: "Fm_ 3m",
       space_group_number: 225,
     },
+    health_safety: {
+      Hazard_class: 7,
+      dot_number: 1975,
+      rtecs_number: "XO6400000",
+    },
   },
   {
     id: 91,
@@ -384,6 +389,11 @@ export const ActinideElem: ElementDetailsProps[] = [
       lattice_constant: [285.37, 586.95, 495.48],
       space_group_name: "Cmcm",
       space_group_number: 63,
+    },
+    health_safety: {
+      Hazard_class: 7,
+      dot_number: 2979,
+      rtecs_number: "YR3490000",
     },
   },
   {

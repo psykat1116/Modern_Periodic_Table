@@ -211,6 +211,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       Hazard_class: 6.1,
       dot_number: 1567,
       rtecs_number: "DS1750000",
+      nfpa_label: "/Be.png",
     },
     atom_structure: {
       crystall_structure: "Simple Hexagonal",
@@ -316,6 +317,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     },
     health_safety: {
       rtecs_number: "ED7350000",
+      nfpa_label: "/B.png",
     },
     atom_structure: {
       crystall_structure: "Simple Trigonal",
@@ -419,6 +421,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       Hazard_class: 4.2,
       dot_number: 1361,
       rtecs_number: "HL4158550",
+      nfpa_label: "/C.png",
     },
     atom_structure: {
       crystall_structure: "Simple Hexagonal",
@@ -472,6 +475,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       fusion_heat: 0.36,
       specific_heat: 1040,
       vaporization_heat: 2.79,
+      adiabatic_index: 7 / 5,
     },
     material_properties: {
       color: "Colorless",
@@ -572,6 +576,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       fusion_heat: 0.222,
       specific_heat: 919,
       vaporization_heat: 3.41,
+      adiabatic_index: 7 / 5,
     },
     material_properties: {
       color: "Colorless",
@@ -672,6 +677,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       fusion_heat: 0.26,
       specific_heat: 824,
       vaporization_heat: 3.27,
+      adiabatic_index: 7 / 5,
     },
     material_properties: {
       color: "Colorless",
@@ -768,6 +774,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       fusion_heat: 0.34,
       specific_heat: 1030,
       vaporization_heat: 1.75,
+      adiabatic_index: 5 / 3,
     },
     material_properties: {
       color: "Colorless",

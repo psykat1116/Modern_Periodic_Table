@@ -104,6 +104,11 @@ export const RowThreeElem: ElementDetailsProps[] = [
       space_group_name: "Im_ 3m",
       space_group_number: 229,
     },
+    health_safety: {
+      Hazard_class: 4.3,
+      dot_number: 1428,
+      rtecs_number: "VY0686000",
+    }
   },
   {
     id: 12,
@@ -209,6 +214,10 @@ export const RowThreeElem: ElementDetailsProps[] = [
       space_group_name: "P6<sub>3</sub>/mmc",
       space_group_number: 194,
     },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 2950,
+    }
   },
   {
     id: 13,
@@ -308,6 +317,12 @@ export const RowThreeElem: ElementDetailsProps[] = [
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Aluminium",
       youtube: "https://youtu.be/nqicpx0adY4",
+    },
+    health_safety: {
+      Hazard_class: 4.3,
+      dot_number: 1396,
+      rtecs_number: "BD0330000",
+      nfpa_label: "/Al.png",
     },
     atom_structure: {
       crystall_structure: "Face-Centered Hexagonal",
@@ -420,6 +435,11 @@ export const RowThreeElem: ElementDetailsProps[] = [
       space_group_name: "Fd_ 3m",
       space_group_number: 227,
     },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 1346,
+      rtecs_number: "VW0400000",
+    }
   },
   {
     id: 15,
@@ -519,6 +539,11 @@ export const RowThreeElem: ElementDetailsProps[] = [
       space_group_name: "P-1",
       space_group_number: 2,
     },
+    health_safety: {
+      Hazard_class: 4.1,
+      dot_number: 1338,
+      rtecs_number: "TH3495000",
+    }
   },
   {
     id: 16,
@@ -620,6 +645,9 @@ export const RowThreeElem: ElementDetailsProps[] = [
       space_group_name: "Fddd",
       space_group_number: 70,
     },
+    health_safety: {
+      rtecs_number: "WS4250000",
+    }
   },
   {
     id: 17,
@@ -664,6 +692,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       fusion_heat: 3.2,
       specific_heat: 478.2,
       vaporization_heat: 10.2,
+      adiabatic_index: 7 / 5,
     },
     material_properties: {
       color: "Yellow",
@@ -721,6 +750,9 @@ export const RowThreeElem: ElementDetailsProps[] = [
       space_group_name: "Cmca",
       space_group_number: 64,
     },
+    health_safety: {
+      rtecs_number: "FO2100000",
+    }
   },
   {
     id: 18,
@@ -768,6 +800,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       fusion_heat: 1.18,
       specific_heat: 520.33,
       vaporization_heat: 6.5,
+      adiabatic_index: 5 / 3,
     },
     material_properties: {
       color: "Colorless",
@@ -817,5 +850,10 @@ export const RowThreeElem: ElementDetailsProps[] = [
       space_group_name: "Fm_ 3m",
       space_group_number: 225,
     },
+    health_safety: {
+      Hazard_class: 2.2,
+      dot_number: 1951,
+      rtecs_number: "CF2300000",
+    }
   },
 ];

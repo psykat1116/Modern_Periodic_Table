@@ -317,7 +317,7 @@ const ThermoProperty = ({
               Adiabatic Index
             </Link>
             <div
-              className={`w-[60%] ${
+              className={`w-[80%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
