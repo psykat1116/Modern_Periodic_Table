@@ -7,6 +7,7 @@ export interface GeneralProperties {
   cas_number: string;
   cid_number?: string;
   symbol: string;
+  allotropes?: string[][];
 }
 
 export interface Particles {

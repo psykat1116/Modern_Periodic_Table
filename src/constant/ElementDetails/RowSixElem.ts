@@ -1115,7 +1115,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     },
     health_safety: {
       rtecs_number: "MD5070000",
-      nfpa_label: "/Au.png"
+      nfpa_label: "/Au.png",
     },
   },
   {
@@ -1572,6 +1572,10 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7440-08-6",
       cid_number: "6328544",
       symbol: "Po",
+      allotropes: [
+        ["Alpha Polonium", "https://en.wikipedia.org/wiki/Polonium"],
+        ["Beta Polonium", "https://en.wikipedia.org/wiki/Polonium"],
+      ],
     },
     particles: {
       electrons: 84,

@@ -491,6 +491,32 @@ export const ActinideElem: ElementDetailsProps[] = [
       cas_number: "7440-07-5",
       cid_number: "23940",
       symbol: "Pu",
+      allotropes: [
+        [
+          "Alpha Plutonium",
+          "https://en.wikipedia.org/wiki/Allotropes_of_plutonium",
+        ],
+        [
+          "Beta Plutonium",
+          "https://en.wikipedia.org/wiki/Allotropes_of_plutonium",
+        ],
+        [
+          "Gamma Plutonium",
+          "https://en.wikipedia.org/wiki/Allotropes_of_plutonium",
+        ],
+        [
+          "Delta Plutonium",
+          "https://en.wikipedia.org/wiki/Allotropes_of_plutonium",
+        ],
+        [
+          "Delta Prime Plutonium",
+          "https://en.wikipedia.org/wiki/Allotropes_of_plutonium",
+        ],
+        [
+          "Epsilon Plutonium",
+          "https://en.wikipedia.org/wiki/Allotropes_of_plutonium",
+        ],
+      ],
     },
     particles: {
       electrons: 94,

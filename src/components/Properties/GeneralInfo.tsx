@@ -11,6 +11,7 @@ const GeneralInfo = ({
   block,
   cas_number,
   cid_number,
+  allotropes,
 }: GeneralProperties) => {
   const [isCopying, setIsCopying] = useState({
     atomic_number: false,
@@ -188,6 +189,29 @@ const GeneralInfo = ({
                   <MdCheck className="text-green-700" />
                 )}
               </button>
+            </div>
+          </div>
+        )}
+        {allotropes && (
+          <div className="flex flex-row justify-start items-start w-full ">
+            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Allotropes</p>
+            <div className="w-[80%] gap-2 grid grid-cols-3 text-sm">
+              {allotropes.map((d) => {
+                return (
+                  <Link
+                    key={d[0]}
+                    target="_blank"
+                    href={d[1]}
+                    className={`${
+                      theme === "dark"
+                        ? "bg-bg_dark_placeholder"
+                        : "bg-bg_light_placeholder"
+                    } px-2 py-2 rounded-[4px] select-none`}
+                  >
+                    {d[0]}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}

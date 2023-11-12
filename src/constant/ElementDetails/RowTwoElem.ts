@@ -235,6 +235,32 @@ export const RowTwoElem: ElementDetailsProps[] = [
       cas_number: "7440-42-8",
       cid_number: "5462311",
       symbol: "B",
+      allotropes: [
+        [
+          "Alpha Rhombohedral Boron",
+          "https://en.wikipedia.org/wiki/Allotropes_of_boron",
+        ],
+        [
+          "Beta Rhombohedral Boron",
+          "https://en.wikipedia.org/wiki/Allotropes_of_boron",
+        ],
+        [
+          "Gamma Rhombohedral Boron",
+          "https://en.wikipedia.org/wiki/Allotropes_of_boron",
+        ],
+        [
+          "Alpha Tetragonal Boron",
+          "https://en.wikipedia.org/wiki/Allotropes_of_boron",
+        ],
+        [
+          "Beta Tetragonal Boron",
+          "https://en.wikipedia.org/wiki/Allotropes_of_boron",
+        ],
+        [
+          "Amorphous Boron",
+          "https://en.wikipedia.org/wiki/Allotropes_of_boron",
+        ],
+      ],
     },
     particles: {
       electrons: 5,
@@ -341,6 +367,26 @@ export const RowTwoElem: ElementDetailsProps[] = [
       cas_number: "7440-44-0",
       cid_number: "5462310",
       symbol: "C",
+      allotropes: [
+        ["Graphite", "https://en.wikipedia.org/wiki/Graphite"],
+        ["Diamond", "https://en.wikipedia.org/wiki/Diamond"],
+        ["Amorphous Carbon", "https://en.wikipedia.org/wiki/Amorphous_carbon"],
+        ["Lonsdaleite", "https://en.wikipedia.org/wiki/Lonsdaleite"],
+        ["Fullerene", "https://en.wikipedia.org/wiki/Fullerene"],
+        ["Carbon Nanotube", "https://en.wikipedia.org/wiki/Carbon_nanotube"],
+        ["Graphene", "https://en.wikipedia.org/wiki/Graphene"],
+        ["Cyclocarbon", "https://en.wikipedia.org/wiki/Cyclocarbon"],
+        ["Glassy Carbon", "https://en.wikipedia.org/wiki/Glassy_carbon"],
+        [
+          "Schwarzites",
+          "https://phys.org/news/2018-08-schwarzites-long-sought-carbon-graphene-fullerene.html",
+        ],
+        [
+          "Q-Carbon",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0008622321002293",
+        ],
+        ["Carbyne", "https://en.wikipedia.org/wiki/Carbyne"],
+      ],
     },
     particles: {
       electrons: 6,
@@ -445,6 +491,18 @@ export const RowTwoElem: ElementDetailsProps[] = [
       cas_number: "7727-37-9",
       cid_number: "947",
       symbol: "N",
+      allotropes: [
+        [
+          "Dinitrogen",
+          "https://www.sciencedirect.com/topics/chemistry/dinitrogen",
+        ],
+        ["Hexazine", "https://en.wikipedia.org/wiki/Hexazine"],
+        ["Octaazacubane", "https://en.wikipedia.org/wiki/Octaazacubane"],
+        ["Tetra-Nitrogen", "https://en.wikipedia.org/wiki/Tetranitrogen"],
+        ["Tri-Nitrogen", "https://en.wikipedia.org/wiki/Trinitrogen"],
+        ["Alpha Nitrogen", "https://en.wikipedia.org/wiki/Solid_nitrogen"],
+        ["Beta Nitrogen", "https://en.wikipedia.org/wiki/Solid_nitrogen"],
+      ],
     },
     particles: {
       electrons: 7,
@@ -548,6 +606,12 @@ export const RowTwoElem: ElementDetailsProps[] = [
       cas_number: "7782-44-7",
       cid_number: "977",
       symbol: "O",
+      allotropes: [
+        ["Di-Oxygen", "https://en.wikipedia.org/wiki/Oxygen"],
+        ["Ozone", "https://en.wikipedia.org/wiki/Ozone"],
+        ["Tetra-Oxygen", "https://en.wikipedia.org/wiki/Tetraoxygen"],
+        ["Octa-Oxygen", "https://en.wikipedia.org/wiki/Octaoxygen"],
+      ],
     },
     particles: {
       electrons: 8,
@@ -649,6 +713,10 @@ export const RowTwoElem: ElementDetailsProps[] = [
       cas_number: "7782-41-4",
       cid_number: "24524",
       symbol: "F",
+      allotropes: [
+        ["Alpha-Fluorine", "https://en.wikipedia.org/wiki/Phases_of_fluorine"],
+        ["Beta-Fluorine", "https://en.wikipedia.org/wiki/Phases_of_fluorine"],
+      ],
     },
     particles: {
       electrons: 9,

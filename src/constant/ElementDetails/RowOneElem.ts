@@ -15,6 +15,18 @@ export const RowOneElem: ElementDetailsProps[] = [
       cas_number: "1333-74-0",
       cid_number: "783",
       symbol: "H",
+      allotropes: [
+        [
+          "Ortho-Hydrogen",
+          "https://en.wikipedia.org/wiki/Spin_isomers_of_hydrogen",
+        ],
+        [
+          "Para-Hydrogen",
+          "https://en.wikipedia.org/wiki/Spin_isomers_of_hydrogen",
+        ],
+        ["Mono-atomic Hydrogen",''],
+        ["Di-atomic Hydrogen",''],
+      ],
     },
     particles: {
       electrons: 1,

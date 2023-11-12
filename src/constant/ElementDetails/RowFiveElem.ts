@@ -1560,6 +1560,15 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-36-0",
       cid_number: "5354495",
       symbol: "Sb",
+      allotropes: [
+        ["Blue-White Antimony", "https://www.britannica.com/science/antimony"],
+        ["Yellow Antimony", "https://en.wikipedia.org/wiki/Naples_yellow"],
+        ["Black Antimony", "https://simple.wikipedia.org/wiki/Antimony"],
+        [
+          "Explosive Antimony",
+          "https://en.wikipedia.org/wiki/Explosive_antimony",
+        ],
+      ],
     },
     particles: {
       electrons: 51,
@@ -1657,7 +1666,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     id: 52,
     neighbour: ["Antimony", "Iodine"],
     description:
-      "The semimetal tellutium is chemically similar to selenium. It is more metallic and somewhat less toxic than this, but its compounds smell even worse. Tellurium probably has no biological role and has only very few, special applications. It can form nice crystalls and somehow natively occurs in nature, however it is very rare. Tellurium is the element that most easily forms compound with gold, therefore it sometimes accures as waste at the extraction of gold.",
+      "The semimetal tellurium is chemically similar to selenium. It is more metallic and somewhat less toxic than this, but its compounds smell even worse. Tellurium probably has no biological role and has only very few, special applications. It can form nice crystalls and somehow natively occurs in nature, however it is very rare. Tellurium is the element that most easily forms compound with gold, therefore it sometimes accures as waste at the extraction of gold.",
     general_properties: {
       name: "Tellurium",
       atomic_number: 52,
@@ -1667,6 +1676,16 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "13494-80-9",
       cid_number: "6327182",
       symbol: "Te",
+      allotropes: [
+        [
+          "Amorohous Tellurium",
+          "https://link.springer.com/article/10.1007/BF02354800",
+        ],
+        [
+          "Crystalline Tellurium",
+          "https://pubs.rsc.org/en/content/articlelanding/2004/jm/b4050",
+        ],
+      ],
     },
     particles: {
       electrons: 52,

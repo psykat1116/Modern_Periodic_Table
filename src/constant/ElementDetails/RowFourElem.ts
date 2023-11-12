@@ -785,6 +785,12 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7439-89-6",
       cid_number: "23925",
       symbol: "Fe",
+      allotropes: [
+        ["Ferrite", "https://en.wikipedia.org/wiki/Ferrite_(magnet)"],
+        ["Austenite", "https://en.wikipedia.org/wiki/Austenite"],
+        ["Delta Iron", "https://www.britannica.com/science/delta-iron"],
+        ["Hexaferrum", "https://en.wikipedia.org/wiki/Hexaferrum"],
+      ],
     },
     particles: {
       electrons: 26,
@@ -894,6 +900,10 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-48-4",
       cid_number: "104730",
       symbol: "Co",
+      allotropes: [
+        ["Alpha Cobalt", "https://pubs.acs.org/doi/10.1021/ja0523338"],
+        ["Beta Cobalt", "https://pubs.acs.org/doi/10.1021/ja0523338"],
+      ],
     },
     particles: {
       electrons: 27,
@@ -1447,6 +1457,14 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-56-4",
       cid_number: "6326954",
       symbol: "Ge",
+      allotropes: [
+        [
+          "Alpha Germanium",
+          "https://onlinelibrary.wiley.com/doi/10.1002/adma.202006826",
+        ],
+        ["Beta Germanium", "https://en.wikipedia.org/wiki/Germanium"],
+        ["Germanene", "https://en.wikipedia.org/wiki/Germanene"],
+      ],
     },
     particles: {
       electrons: 32,
@@ -1552,6 +1570,17 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-38-2",
       cid_number: "5359596",
       symbol: "As",
+      allotropes: [
+        [
+          "Yellow Arsenic",
+          "https://pubs.acs.org/doi/10.1021/acs.chemrev.8b00713",
+        ],
+        ["Gray Arsenic", "https://www.britannica.com/science/gray-arsenic"],
+        [
+          "Black Arsenic",
+          "https://pubs.rsc.org/en/content/articlelanding/2020/nr/c9nr09627b",
+        ],
+      ],
     },
     particles: {
       electrons: 33,
@@ -1661,6 +1690,18 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "74782-49-2",
       cid_number: "6326970",
       symbol: "Se",
+      allotropes: [
+        ["Red Selenium", "https://pubs.acs.org/doi/10.1021/jacs.3c05981"],
+        [
+          "Gray Selenium",
+          "https://pubs.acs.org/doi/10.1021/acs.inorgchem.2c04094",
+        ],
+        ["Black Selenium", "https://en.wikipedia.org/wiki/Selenium"],
+        [
+          "Monoclinic Selenium",
+          "https://pubs.rsc.org/en/content/articlelanding/1980/dt/dt9800000624",
+        ],
+      ],
     },
     particles: {
       electrons: 34,

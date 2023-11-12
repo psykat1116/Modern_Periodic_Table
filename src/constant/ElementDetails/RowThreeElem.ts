@@ -108,7 +108,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       Hazard_class: 4.3,
       dot_number: 1428,
       rtecs_number: "VY0686000",
-    }
+    },
   },
   {
     id: 12,
@@ -217,7 +217,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     health_safety: {
       Hazard_class: 4.1,
       dot_number: 2950,
-    }
+    },
   },
   {
     id: 13,
@@ -346,6 +346,17 @@ export const RowThreeElem: ElementDetailsProps[] = [
       cas_number: "7440-21-3",
       cid_number: "5461123",
       symbol: "Si",
+      allotropes: [
+        [
+          "Amorphous Silicon",
+          "https://en.wikipedia.org/wiki/Amorphous_silicon",
+        ],
+        [
+          "Crystalline Silicon",
+          "https://en.wikipedia.org/wiki/Crystalline_silicon",
+        ],
+        ["Silicene", "https://en.wikipedia.org/wiki/Silicene"],
+      ],
     },
     particles: {
       electrons: 14,
@@ -439,7 +450,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       Hazard_class: 4.1,
       dot_number: 1346,
       rtecs_number: "VW0400000",
-    }
+    },
   },
   {
     id: 15,
@@ -455,6 +466,26 @@ export const RowThreeElem: ElementDetailsProps[] = [
       cas_number: "7423-14-0",
       cid_number: "5462309",
       symbol: "P",
+      allotropes: [
+        [
+          "White Phosphorus",
+          "https://www.who.int/news-room/fact-sheets/detail/white-phosphorus",
+        ],
+        ["Red Phosphorus", "https://en.wikipedia.org/wiki/Phosphorus"],
+        [
+          "Scarlet Phosphorus",
+          "https://en.wikipedia.org/wiki/Allotropes_of_phosphorus",
+        ],
+        ["Violet Phosphorus", "https://en.wikipedia.org/wiki/Phosphorus"],
+        [
+          "Diphosphorus",
+          "https://en.wikipedia.org/wiki/Allotropes_of_phosphorus",
+        ],
+        [
+          "Black Phosphorus",
+          "https://en.wikipedia.org/wiki/Allotropes_of_phosphorus",
+        ],
+      ],
     },
     particles: {
       electrons: 15,
@@ -543,7 +574,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       Hazard_class: 4.1,
       dot_number: 1338,
       rtecs_number: "TH3495000",
-    }
+    },
   },
   {
     id: 16,
@@ -559,6 +590,24 @@ export const RowThreeElem: ElementDetailsProps[] = [
       cas_number: "7704-34-9",
       cid_number: "5362487",
       symbol: "S",
+      allotropes: [
+        [
+          "Cyclo-Pentasulfur",
+          "https://en.wikipedia.org/wiki/Allotropes_of_sulfur",
+        ],
+        [
+          "Cyclo-Hexasulfur",
+          "https://en.wikipedia.org/wiki/Allotropes_of_sulfur",
+        ],
+        [
+          "Cyclo-Heptasulfur",
+          "https://en.wikipedia.org/wiki/Allotropes_of_sulfur",
+        ],
+        [
+          "Cyclo-Octasulfur",
+          "https://en.wikipedia.org/wiki/Allotropes_of_sulfur",
+        ],
+      ],
     },
     particles: {
       electrons: 16,
@@ -647,7 +696,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     health_safety: {
       rtecs_number: "WS4250000",
-    }
+    },
   },
   {
     id: 17,
@@ -752,7 +801,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     },
     health_safety: {
       rtecs_number: "FO2100000",
-    }
+    },
   },
   {
     id: 18,
@@ -854,6 +903,6 @@ export const RowThreeElem: ElementDetailsProps[] = [
       Hazard_class: 2.2,
       dot_number: 1951,
       rtecs_number: "CF2300000",
-    }
+    },
   },
 ];
