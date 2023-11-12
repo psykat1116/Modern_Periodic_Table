@@ -1882,6 +1882,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       Hazard_class: 8,
       dot_number: 1759,
       rtecs_number: "NN1575000",
+      nfpa_label: "/I.png",
     },
   },
   {

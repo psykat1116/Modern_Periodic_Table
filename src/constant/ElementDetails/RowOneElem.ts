@@ -102,6 +102,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       Hazard_class: 2.1,
       dot_number: 1966,
       rtecs_number: "MW8900000",
+      nfpa_label: "/H.png"
     },
     atom_structure: {
       crystall_structure: "Simple Hexagonal",
@@ -202,6 +203,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       Hazard_class: 2.2,
       dot_number: 1963,
       rtecs_number: "MH6520000",
+      nfpa_label: "/He.png"
     },
     atom_structure: {
       crystall_structure: "Face-Centered Cubic (FCC)",

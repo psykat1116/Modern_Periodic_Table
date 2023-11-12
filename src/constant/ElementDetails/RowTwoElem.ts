@@ -100,6 +100,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       Hazard_class: 4.3,
       dot_number: 1415,
       rtecs_number: "OJ5540000",
+      nfpa_label: "/Li.png",
     },
     atom_structure: {
       crystall_structure: "Body-Centered Cubic (BCC)",
@@ -788,6 +789,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       Hazard_class: 2.3,
       dot_number: 9192,
       rtecs_number: "LM6475000",
+      nfpa_label: "/F.png",
     },
     atom_structure: {
       crystall_structure: "Base-Centered Monoclinic",

@@ -15,10 +15,10 @@ export default function Home() {
   return (
     <>
       <motion.div
-        className="fixed min-h-screen w-full bg-[#141414] flex justify-center items-center flex-col z-50"
-        initial={{ opacity: 1, userSelect: "auto", pointerEvents: "auto" }}
-        animate={{ opacity: 0, userSelect: "none", pointerEvents: "none" }}
-        transition={{ ease: "easeInOut", delay: 1 }}
+        className="fixed min-h-screen w-full bg-[#141414] flex justify-center items-center flex-col z-50 origin-top"
+        initial={{ scaleY: 1, userSelect: "auto", pointerEvents: "auto" }}
+        animate={{ scaleY: 0, userSelect: "none", pointerEvents: "none" }}
+        transition={{ ease: "easeInOut", delay: 1, duration: 1 }}
       >
         <Lottie animationData={LoadingAnim1} className="h-[200px] w-[200px]" />
       </motion.div>

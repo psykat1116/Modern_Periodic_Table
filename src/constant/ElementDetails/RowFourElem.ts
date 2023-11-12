@@ -105,6 +105,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       Hazard_class: 4.3,
       dot_number: 2257,
       rtecs_number: "TS6460000",
+      nfpa_label: "/K.png",
     },
   },
   {
@@ -884,6 +885,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       Hazard_class: 4.1,
       dot_number: 3089,
       rtecs_number: "NO4565500",
+      nfpa_label: "/Fe.png",
     },
   },
   {
@@ -1441,6 +1443,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       Hazard_class: 8,
       dot_number: 1803,
       rtecs_number: "LW8600000",
+      nfpa_label: "/Ga.png",
     },
   },
   {
@@ -1554,6 +1557,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       Hazard_class: 4.1,
       dot_number: 3089,
       rtecs_number: "LY5200000",
+      nfpa_label: "/Ge.png",
     },
   },
   {
