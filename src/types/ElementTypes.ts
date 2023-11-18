@@ -1,5 +1,5 @@
 export interface GeneralProperties {
-  name?: string;
+  name: string;
   atomic_number: number;
   group?: number;
   period: number;

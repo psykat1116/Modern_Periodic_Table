@@ -29,6 +29,10 @@ const config: Config = {
         bg_light_placeholder: "#e3dfd2",
         bg_dark_placeholder: "#0f0b0a",
       },
+      fontFamily: {
+        poppins: "var(--font-poppins)",
+        satisfy: "var(--font-satisfy)",
+      },
     },
   },
   plugins: [],

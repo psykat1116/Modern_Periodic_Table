@@ -29,7 +29,7 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
       <h1 className="text-xl">Overview</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         <div className="flex flex-row justify-start items-center w-full ">
-          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Latin Name</p>
+          <Link href="/property/latin_name" className=" pr-2 py-1 rounded-[4px] w-[20%]">Latin Name</Link>
           <div
             className={`w-[80%] ${
               theme === "dark"

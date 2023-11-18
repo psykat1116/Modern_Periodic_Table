@@ -23,7 +23,7 @@ export default function Home() {
         <Lottie animationData={LoadingAnim1} className="h-[200px] w-[200px]" />
       </motion.div>
       <div
-        className={`min-h-screen w-full ${
+        className={`min-h-screen w-full font-poppins ${
           theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
         } flex flex-col justify-start items-center`}
       >

@@ -1470,7 +1470,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       neutrons: 126,
     },
     overview: {
-      latin_name: "Bisemutum (Bismuthum, Bismutum)",
+      latin_name: "Bisemutum",
       discovery: 1400,
       discoverer: [["Prehistoric", "Prehistoric"]],
     },
