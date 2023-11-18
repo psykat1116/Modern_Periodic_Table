@@ -13,7 +13,7 @@ import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
-const page = () => {
+const Page = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div
@@ -164,4 +164,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

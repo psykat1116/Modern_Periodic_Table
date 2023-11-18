@@ -29,7 +29,12 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
       <h1 className="text-xl">Overview</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         <div className="flex flex-row justify-start items-center w-full ">
-          <Link href="/property/latin_name" className=" pr-2 py-1 rounded-[4px] w-[20%]">Latin Name</Link>
+          <Link
+            href="/property/latin_name"
+            className=" pr-2 py-1 rounded-[4px] w-[20%]"
+          >
+            Latin Name
+          </Link>
           <div
             className={`w-[80%] ${
               theme === "dark"
@@ -48,7 +53,12 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
           </div>
         </div>
         <div className="flex flex-row justify-start items-center w-full ">
-          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Discovery</p>
+          <Link
+            href="/property/discovery"
+            className=" pr-2 py-1 rounded-[4px] w-[20%]"
+          >
+            Discovery
+          </Link>
           <div
             className={`w-[80%] ${
               theme === "dark"
@@ -69,7 +79,12 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
           </div>
         </div>
         <div className="flex flex-row justify-start items-start w-full ">
-          <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Discoverer</p>
+          <Link
+            href="/property/discoverer"
+            className=" pr-2 py-1 rounded-[4px] w-[20%]"
+          >
+            Discoverer
+          </Link>
           <div className="w-[80%] gap-2 grid grid-cols-2 text-sm">
             {discoverer.map((d) => {
               return (
