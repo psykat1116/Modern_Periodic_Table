@@ -145,7 +145,7 @@ const GeneralInfo = ({
         <div className="flex flex-row justify-start items-center w-full ">
           <Link
             className=" pr-2 py-1 rounded-[4px] w-[20%]"
-            href="https://en.wikipedia.org/wiki/CAS_Registry_Number"
+            href="/property/cas_number"
           >
             CAS Number
           </Link>
@@ -170,7 +170,7 @@ const GeneralInfo = ({
           <div className="flex flex-row justify-start items-center w-full ">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[20%]"
-              href="https://www.wikidata.org/wiki/Property:P662"
+              href="/property/cid_number"
             >
               CID Number
             </Link>
@@ -194,7 +194,12 @@ const GeneralInfo = ({
         )}
         {allotropes && (
           <div className="flex flex-row justify-start items-start w-full ">
-            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Allotropes</p>
+            <Link
+              href="/property/allotrope"
+              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+            >
+              Allotropes
+            </Link>
             <div className="w-[80%] gap-2 grid grid-cols-3 text-sm">
               {allotropes.map((d) => {
                 return (
