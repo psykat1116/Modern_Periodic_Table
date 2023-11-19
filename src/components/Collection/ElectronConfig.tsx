@@ -1,3 +1,4 @@
+"use client";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import React, { useContext } from "react";
 import Link from "next/link";
@@ -51,7 +52,7 @@ const ElectronConfig = ({
           {name}
         </Link>
       </div>
-      <p
+      <div
         className={`${
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
@@ -60,7 +61,7 @@ const ElectronConfig = ({
         dangerouslySetInnerHTML={{
           __html: DOMPurify.sanitize(electron_configuration),
         }}
-      ></p>
+      ></div>
     </div>
   );
 };
