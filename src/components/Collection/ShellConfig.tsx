@@ -1,7 +1,6 @@
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import React, { useContext } from "react";
 import Link from "next/link";
-import DOMPurify from "dompurify";
 
 interface ShellConfig {
   atomic_number: number;

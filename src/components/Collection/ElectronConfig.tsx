@@ -51,7 +51,7 @@ const ElectronConfig = ({
           {name}
         </Link>
       </div>
-      <div
+      <p
         className={`${
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
@@ -60,7 +60,7 @@ const ElectronConfig = ({
         dangerouslySetInnerHTML={{
           __html: DOMPurify.sanitize(electron_configuration),
         }}
-      ></div>
+      ></p>
     </div>
   );
 };
