@@ -1,8 +1,8 @@
 "use client";
 import React, { useContext } from "react";
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Allotrope from "@/components/Collection/Allotrope";
+import Link from "next/link";
+import ShellConfig from "@/components/Collection/ShellConfig";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
@@ -24,140 +24,166 @@ const Page = () => {
     >
       <Navbar />
       <Link
-        target="_blank"
-        href="https://en.wikipedia.org/wiki/Allotropy"
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         }`}
+        target="_blank"
+        href="https://en.wikipedia.org/wiki/Electron_shell"
       >
-        Allotropes
+        Shell Configuration
       </Link>
       <div
-        className={`w-full flex flex-col justify-start items-center px-2 pb-2 overflow-y-scroll gap-2`}
+        className={`grid grid-cols-2 max-md:grid-cols-1 overflow-y-scroll w-full px-2 pb-2 gap-2 max-md:text-[12px]`}
       >
         {RowOneElem.map((e) => {
           return (
-            <Allotrope
+            <ShellConfig
               key={e.general_properties.name}
               name={e.general_properties.name}
               atomic_number={e.general_properties.atomic_number}
               symbol={e.general_properties.symbol}
-              allotropes={e.general_properties.allotropes}
+              electron_shell_configuration={
+                e.atomic_properties.electron_shell_configuration
+              }
             />
           );
         })}
         {RowTwoElem.map((e) => {
           return (
-            <Allotrope
+            <ShellConfig
               key={e.general_properties.name}
               name={e.general_properties.name}
               atomic_number={e.general_properties.atomic_number}
               symbol={e.general_properties.symbol}
-              allotropes={e.general_properties.allotropes}
+              electron_shell_configuration={
+                e.atomic_properties.electron_shell_configuration
+              }
             />
           );
         })}
         {RowThreeElem.map((e) => {
           return (
-            <Allotrope
+            <ShellConfig
               key={e.general_properties.name}
               name={e.general_properties.name}
               atomic_number={e.general_properties.atomic_number}
               symbol={e.general_properties.symbol}
-              allotropes={e.general_properties.allotropes}
+              electron_shell_configuration={
+                e.atomic_properties.electron_shell_configuration
+              }
             />
           );
         })}
         {RowFourElem.map((e) => {
           return (
-            <Allotrope
+            <ShellConfig
               key={e.general_properties.name}
               name={e.general_properties.name}
               atomic_number={e.general_properties.atomic_number}
               symbol={e.general_properties.symbol}
-              allotropes={e.general_properties.allotropes}
+              electron_shell_configuration={
+                e.atomic_properties.electron_shell_configuration
+              }
             />
           );
         })}
         {RowFiveElem.map((e) => {
           return (
-            <Allotrope
+            <ShellConfig
               key={e.general_properties.name}
               name={e.general_properties.name}
               atomic_number={e.general_properties.atomic_number}
               symbol={e.general_properties.symbol}
-              allotropes={e.general_properties.allotropes}
+              electron_shell_configuration={
+                e.atomic_properties.electron_shell_configuration
+              }
             />
           );
         })}
-        <Allotrope
+        <ShellConfig
           name={RowSixElem[0].general_properties.name}
           atomic_number={RowSixElem[0].general_properties.atomic_number}
           symbol={RowSixElem[0].general_properties.symbol}
-          allotropes={RowSixElem[0].general_properties.allotropes}
+          electron_shell_configuration={
+            RowSixElem[0].atomic_properties.electron_shell_configuration
+          }
         />
-        <Allotrope
+        <ShellConfig
           name={RowSixElem[1].general_properties.name}
           atomic_number={RowSixElem[1].general_properties.atomic_number}
           symbol={RowSixElem[1].general_properties.symbol}
-          allotropes={RowSixElem[1].general_properties.allotropes}
+          electron_shell_configuration={
+            RowSixElem[1].atomic_properties.electron_shell_configuration
+          }
         />
         {LanthanideElem.map((e) => {
           return (
-            <Allotrope
+            <ShellConfig
               key={e.general_properties.name}
               name={e.general_properties.name}
               atomic_number={e.general_properties.atomic_number}
               symbol={e.general_properties.symbol}
-              allotropes={e.general_properties.allotropes}
+              electron_shell_configuration={
+                e.atomic_properties.electron_shell_configuration
+              }
             />
           );
         })}
         {RowSixElem.map((e, ind) => {
           return (
             ind > 1 && (
-              <Allotrope
+              <ShellConfig
                 key={e.general_properties.name}
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                allotropes={e.general_properties.allotropes}
+                electron_shell_configuration={
+                  e.atomic_properties.electron_shell_configuration
+                }
               />
             )
           );
         })}
-        <Allotrope
+        <ShellConfig
           name={RowSevenElem[0].general_properties.name}
           atomic_number={RowSevenElem[0].general_properties.atomic_number}
           symbol={RowSevenElem[0].general_properties.symbol}
-          allotropes={RowSevenElem[0].general_properties.allotropes}
+          electron_shell_configuration={
+            RowSevenElem[0].atomic_properties.electron_shell_configuration
+          }
         />
-        <Allotrope
+        <ShellConfig
           name={RowSevenElem[1].general_properties.name}
           atomic_number={RowSevenElem[1].general_properties.atomic_number}
           symbol={RowSevenElem[1].general_properties.symbol}
-          allotropes={RowSevenElem[1].general_properties.allotropes}
+          electron_shell_configuration={
+            RowSevenElem[1].atomic_properties.electron_shell_configuration
+          }
         />
         {ActinideElem.map((e) => {
           return (
-            <Allotrope
+            <ShellConfig
               key={e.general_properties.name}
               name={e.general_properties.name}
               atomic_number={e.general_properties.atomic_number}
               symbol={e.general_properties.symbol}
-              allotropes={e.general_properties.allotropes}
+              electron_shell_configuration={
+                e.atomic_properties.electron_shell_configuration
+              }
             />
           );
         })}
         {RowSevenElem.map((e, ind) => {
           return (
             ind > 1 && (
-              <Allotrope
+              <ShellConfig
                 key={e.general_properties.name}
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                allotropes={e.general_properties.allotropes}
+                electron_shell_configuration={
+                  e.atomic_properties.electron_shell_configuration
+                }
               />
             )
           );

@@ -24,6 +24,7 @@ const Page = () => {
     >
       <Navbar />
       <Link
+        target="_blank"
         href="https://www.wikidata.org/wiki/Property:P662"
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"

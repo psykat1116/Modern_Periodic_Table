@@ -47,7 +47,7 @@ const AtomicProperty = ({
         <div className="flex flex-row justify-start items-center w-full gap-2">
           <Link
             className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-            href="https://en.wikipedia.org/wiki/Standard_atomic_weight"
+            href="/property/atomic_weight"
           >
             Atomic Weight
           </Link>
@@ -84,7 +84,7 @@ const AtomicProperty = ({
         <div className="flex flex-row justify-start items-center w-full gap-2">
           <Link
             className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-            href="https://en.wikipedia.org/wiki/Electron_shell"
+            href="/property/shell_config"
           >
             Electron Shell Configuration
           </Link>
@@ -115,7 +115,7 @@ const AtomicProperty = ({
         <div className="flex flex-row justify-start items-start w-full gap-2">
           <Link
             className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-            href="https://en.wikipedia.org/wiki/Electron_shell"
+            href="/property/electron_config"
           >
             Electron Configuration
           </Link>
@@ -149,9 +149,12 @@ const AtomicProperty = ({
         </div>
         {gas_atom_multiplicities && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="/property/gas_multi"
+            >
               Gas Atomic Multiplicities
-            </p>
+            </Link>
             <div
               className={`w-[75%] ${
                 theme === "dark"
@@ -181,7 +184,7 @@ const AtomicProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Atomic_radius"
+              href="/property/atomic_rad"
             >
               Atomic Radius
             </Link>
@@ -220,7 +223,7 @@ const AtomicProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Covalent_radius"
+              href="/property/covalent_rad"
             >
               Covalent Radius
             </Link>
@@ -259,7 +262,7 @@ const AtomicProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Van_der_Waals_radius"
+              href="/property/van_der_wall_rad"
             >
               Van Der Walls Radius
             </Link>
@@ -301,7 +304,7 @@ const AtomicProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Oxidation_state"
+              href="/property/oxidation_state"
             >
               Oxidation States
             </Link>
