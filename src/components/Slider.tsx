@@ -39,14 +39,14 @@ const Slider = () => {
           );
         })}
         <div
-          className={`h-full tranition-all duration-300 top-0 absolute z-[2] button-prev-slide left-0  bg-gradient-to-r ${
+          className={`h-full cursor-pointer tranition-all duration-300 top-0 absolute z-[2] button-prev-slide left-0  bg-gradient-to-r ${
             theme === "dark" ? "from-dark_primary" : "from-light_primary"
           } to-transparent w-[100px] cursor-auto flex justify-start items-center`}
         >
           <BsArrowLeft className="text-2xl my-0.5" />
         </div>
         <div
-          className={`h-full tranition-all duration-100 top-0 absolute z-[2] button-next-slide right-0 bg-gradient-to-l ${
+          className={`h-full cursor-pointer tranition-all duration-100 top-0 absolute z-[2] button-next-slide right-0 bg-gradient-to-l ${
             theme === "dark" ? "from-dark_primary" : "from-light_primary"
           } to-transparent w-[100px] flex justify-end items-center cursor-auto`}
         >

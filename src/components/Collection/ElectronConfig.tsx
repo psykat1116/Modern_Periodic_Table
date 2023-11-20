@@ -3,6 +3,7 @@ import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import React, { useContext } from "react";
 import Link from "next/link";
 import DOMPurify from "dompurify";
+import xss from "xss";
 
 interface ElectronConfig {
   atomic_number: number;
@@ -59,7 +60,7 @@ const ElectronConfig = ({
             : "bg-bg_light text-text_secondary"
         } px-2 py-2 rounded-[4px] flex justify-start items-center`}
         dangerouslySetInnerHTML={{
-          __html: DOMPurify.sanitize(electron_configuration),
+          __html: xss(electron_configuration),
         }}
       ></div>
     </div>

@@ -57,8 +57,8 @@ const OxidationState = ({
               <p
                 className={`mr-2 h-[30px] w-[30px] flex justify-center items-center ${
                   theme === "dark"
-                    ? "bg-bg_dark"
-                    : "bg-bg_light"
+                    ? "bg-bg_dark text-text_primary"
+                    : "bg-bg_light text-text_secondary"
                 } rounded-full text-sm`}
                 key={state}
               >
