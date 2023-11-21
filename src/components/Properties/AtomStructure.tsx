@@ -135,9 +135,8 @@ const AtomStructure = ({
         {lattice_angle && (
           <div className="flex flex-row justify-start items-center w-full">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%]"
-              href="https://en.wikipedia.org/wiki/Lattice_constant"
-              target="_blank"
+              className="pr-2 py-1 rounded-[4px] w-[25%]"
+              href="/property/lattice_angle"
             >
               Lattice Angles
             </Link>
@@ -162,9 +161,8 @@ const AtomStructure = ({
         {lattice_constant && (
           <div className="flex flex-row justify-start items-center w-full">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%]"
-              href="https://en.wikipedia.org/wiki/Lattice_constant"
-              target="_blank"
+              className="pr-2 py-1 rounded-[4px] w-[25%]"
+              href="/property/lattice_constant"
             >
               Lattice Constant (Pm)
             </Link>
