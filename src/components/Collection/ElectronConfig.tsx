@@ -20,8 +20,8 @@ const ElectronConfig = ({
 }: ElectronConfig) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="w-full gap-1.5 grid grid-cols-[25%_75%] max-md:grid-cols-1 max-sm:text-sm">
-      <div className="grid grid-cols-[18%_18%_59%] gap-1.5 max-sm:grid-cols-[18%_18%_60%] max-md:grid-cols-[18%_18%_60%]">
+    <div className="w-full gap-2 flex flex-col justify-start items-center max-sm:text-sm">
+      <div className="w-full grid grid-cols-[20%_20%_57.5%] gap-2 max-sm:grid-cols-[18%_18%_60%] max-md:grid-cols-[18%_18%_60%]">
         <Link
           href={`/elements/${atomic_number}`}
           className={`p-2 rounded-sm shadow-md flex justify-center items-center ${
@@ -58,7 +58,7 @@ const ElectronConfig = ({
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        } px-2 py-2 rounded-[4px] flex justify-start items-center`}
+        } px-2 py-2 rounded-[4px] flex justify-start items-center w-full`}
         dangerouslySetInnerHTML={{
           __html: xss(electron_configuration),
         }}

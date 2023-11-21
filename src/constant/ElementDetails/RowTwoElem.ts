@@ -103,7 +103,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       nfpa_label: "/Li.png",
     },
     atom_structure: {
-      crystall_structure: "Body-Centered Cubic (BCC)",
+      crystal_structure: "Body-Centered Cubic (BCC)",
       lattice_angle: [90, 90, 90],
       lattice_constant: [351, 351, 351],
       space_group_name: "Im_ 3m",
@@ -215,7 +215,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       nfpa_label: "/Be.png",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [228.58, 228.58, 358.43],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -347,7 +347,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       nfpa_label: "/B.png",
     },
     atom_structure: {
-      crystall_structure: "Simple Trigonal",
+      crystal_structure: "Simple Trigonal",
       lattice_angle: [1.01334, 1.01334, 1.01334],
       lattice_constant: [506, 506, 506],
       space_group_name: "R_ 3m",
@@ -471,7 +471,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       nfpa_label: "/C.png",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [246.4, 246.4, 671.1],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -586,7 +586,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       rtecs_number: "QW9700000",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [386.1, 386.1, 626.5],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -693,7 +693,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       rtecs_number: "RS2060000",
     },
     atom_structure: {
-      crystall_structure: "Base-Centered Monoclinic",
+      crystal_structure: "Base-Centered Monoclinic",
       lattice_angle: [90, 2.313085, 90],
       lattice_constant: [540.3, 342.9, 508.6],
       space_group_name: "C12/m1",
@@ -792,7 +792,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       nfpa_label: "/F.png",
     },
     atom_structure: {
-      crystall_structure: "Base-Centered Monoclinic",
+      crystal_structure: "Base-Centered Monoclinic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [550, 328, 728],
       space_group_name: "C12/c1",
@@ -895,7 +895,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       rtecs_number: "QP4450000",
     },
     atom_structure: {
-      crystall_structure: "Face-Centered Cubic",
+      crystal_structure: "Face-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [442.9, 442.9, 442.9],
       space_group_name: "Fm_ 3m",

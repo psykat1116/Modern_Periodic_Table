@@ -105,7 +105,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       nfpa_label: "/H.png"
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [470, 470, 340],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -206,7 +206,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       nfpa_label: "/He.png"
     },
     atom_structure: {
-      crystall_structure: "Face-Centered Cubic (FCC)",
+      crystal_structure: "Face-Centered Cubic (FCC)",
       lattice_angle: [90, 90, 90],
       lattice_constant: [424.2, 424.2, 424.2],
       space_group_name: "Fm_ 3m",

@@ -99,7 +99,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/0YhbvVhAudE",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [377.2, 377.2, 1214.4],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -214,7 +214,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/HSa9MvYc90E",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [362, 362, 599],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -324,7 +324,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/FHDb-VjDWeE",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 160],
       lattice_constant: [367.25, 367.25, 1183.54],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -429,7 +429,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/SoxHTCod9Fc",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [365.8, 365.8, 1179.9],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -623,7 +623,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/d-RbpEIHJRI",
     },
     atom_structure: {
-      crystall_structure: "Simple Trigonal",
+      crystal_structure: "Simple Trigonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [362.1, 362.1, 2625],
       space_group_name: "R_ 3m",
@@ -731,7 +731,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/uC4nn2Ku63c",
     },
     atom_structure: {
-      crystall_structure: "Body-Centered Cubic",
+      crystal_structure: "Body-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [458.1, 458.1, 458.1],
       space_group_name: "Im_ 3m",
@@ -838,7 +838,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/jDZU5urVQTY",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [363.6, 363.6, 578.26],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -947,7 +947,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/On5LjH9TQxY",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [360.1, 360.1, 569.36],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -1055,7 +1055,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/uc4EVhl-EuY",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [359.3, 359.3, 565.37],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -1165,7 +1165,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/v5CNMTfWVJ8",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [357.73, 357.73, 561.58],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -1276,7 +1276,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/zJ7SfFTUqgQ",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [355.88, 355.88, 558.74],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -1382,7 +1382,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/DyStjcP-ppw",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [353.75, 353.75, 555.46],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -1494,7 +1494,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/ivC-dBZvAkU",
     },
     atom_structure: {
-      crystall_structure: "Face-Centered Cubic",
+      crystal_structure: "Face-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [548.47, 548.47, 548.47],
       space_group_name: "Fm_ 3m",
@@ -1605,7 +1605,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/Z6HYAlSdR2g",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [350.31, 350.31, 555.09],
       space_group_name: "P6<sub>3</sub>/mmc",

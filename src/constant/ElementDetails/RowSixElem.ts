@@ -99,7 +99,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/ytxx95g-kiA",
     },
     atom_structure: {
-      crystall_structure: "Body-Centered Cubic",
+      crystal_structure: "Body-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [614.1, 614.1, 614.1],
       space_group_name: "Im_ 3m",
@@ -209,7 +209,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/dtWVaYXD9xA",
     },
     atom_structure: {
-      crystall_structure: "Body-Centered Cubic",
+      crystal_structure: "Body-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [502.8, 502.8, 502.8],
       space_group_name: "Im_ 3m",
@@ -324,7 +324,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/-jLX2D_tta0",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [319.64, 319.64, 505.11],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -435,7 +435,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/7tsiT_zdFew",
     },
     atom_structure: {
-      crystall_structure: "Body-Centered Cubic",
+      crystal_structure: "Body-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [330.13, 330.13, 330.13],
       space_group_name: "Im_ 3m",
@@ -549,7 +549,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/6XxcVg2Dfck",
     },
     atom_structure: {
-      crystall_structure: "Body-Centered Cubic",
+      crystal_structure: "Body-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [316.52, 316.52, 316.52],
       space_group_name: "Im_ 3m",
@@ -665,7 +665,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/Duk20wEVgJQ",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [276.1, 276.1, 445.6],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -775,7 +775,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/D9C_lbivcn4",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [273.44, 273.44, 431.73],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -886,7 +886,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/lGy1vGnYAak",
     },
     atom_structure: {
-      crystall_structure: "Face-Centered Cubic",
+      crystal_structure: "Face-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [383.9, 383.9, 383.9],
       space_group_name: "Fm_ 3m",
@@ -996,7 +996,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/vhPu-3b0FnY",
     },
     atom_structure: {
-      crystall_structure: "Face-Centered Cubic",
+      crystal_structure: "Face-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [392.42, 392.42, 392.42],
       space_group_name: "Fm_ 3m",
@@ -1107,7 +1107,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/reMP1aP8Tgg",
     },
     atom_structure: {
-      crystall_structure: "Face-Centered Cubic",
+      crystal_structure: "Face-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [407.82, 407.82, 407.82],
       space_group_name: "Fm_ 3m",
@@ -1213,7 +1213,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/PFf0SBuzLMQ",
     },
     atom_structure: {
-      crystall_structure: "Simple Trigonal",
+      crystal_structure: "Simple Trigonal",
       lattice_angle: [1.23081, 1.23081, 1.23081],
       lattice_constant: [300.5, 300.5, 300.5],
       space_group_name: "R_ 3m",
@@ -1326,7 +1326,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/ZvgrXJwMm8I",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [345.66, 345.66, 552.48],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -1438,7 +1438,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/LjpthO4r1GY",
     },
     atom_structure: {
-      crystall_structure: "Face-Centered Cubic",
+      crystal_structure: "Face-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [495.08, 495.08, 495.08],
       space_group_name: "Fm_ 3m",
@@ -1547,7 +1547,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/E7uiSTa1kXQ",
     },
     atom_structure: {
-      crystall_structure: "Base-Centered Monoclinic",
+      crystal_structure: "Base-Centered Monoclinic",
       lattice_angle: [90, 1.925622, 90],
       lattice_constant: [667.4, 611.7, 330.4],
       space_group_name: "C12/m1",
@@ -1641,7 +1641,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/K97oJed15j0",
     },
     atom_structure: {
-      crystall_structure: "Simple Cubic",
+      crystal_structure: "Simple Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [335.9, 335.9, 335.9],
       space_group_name: "Pm-3m",

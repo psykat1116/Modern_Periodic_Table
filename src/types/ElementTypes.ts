@@ -119,7 +119,7 @@ export interface HealthSafety {
 }
 
 export interface AtomStructure {
-  crystall_structure?: string;
+  crystal_structure?: string;
   lattice_angle?: number[];
   lattice_constant?: number[];
   space_group_name?: string;

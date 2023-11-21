@@ -71,7 +71,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/rKm0ShaJNFM",
     },
     atom_structure: {
-      crystall_structure: "Face-Centered Cubic",
+      crystal_structure: "Face-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [567, 567, 567],
       space_group_name: "Fm_ 3m",
@@ -173,7 +173,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/zjDw1VWJ_RU",
     },
     atom_structure: {
-      crystall_structure: "Face-Centered Cubic",
+      crystal_structure: "Face-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [508.42, 508.42, 508.42],
       space_group_name: "Fm_ 3m",
@@ -279,7 +279,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/bsIMMa7iEKU",
     },
     atom_structure: {
-      crystall_structure: "Centered Tetragonal",
+      crystal_structure: "Centered Tetragonal",
       lattice_angle: [90, 90, 90],
       lattice_constant: [392.5, 392.5, 323.8],
       space_group_name: "I4/mmm",
@@ -384,7 +384,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/Kkd2bYAVtOU",
     },
     atom_structure: {
-      crystall_structure: "Base Orthorhombic",
+      crystal_structure: "Base Orthorhombic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [285.37, 586.95, 495.48],
       space_group_name: "Cmcm",
@@ -471,7 +471,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/1D75B0_URbE",
     },
     atom_structure: {
-      crystall_structure: "Simple Orthorhombic",
+      crystal_structure: "Simple Orthorhombic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [666.3, 472.3, 488.7],
       space_group_name: "Pnma",
@@ -584,7 +584,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/87TpxxFdzQU",
     },
     atom_structure: {
-      crystall_structure: "Simple Monoclinic",
+      crystal_structure: "Simple Monoclinic",
       lattice_angle: [90, 1.776571, 90],
       lattice_constant: [618.3, 482.2, 1096.3],
       space_group_name: "P12<sub>1</sub>/m1",
@@ -668,7 +668,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/CC-L-CITg3k",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [346.81, 346.81, 1124.1],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -743,7 +743,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/sZobqPFNcwg",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [349.6, 349.6, 1133.1],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -816,7 +816,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/IgPkUbtnC4o",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [341.6, 341.6, 1106.9],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -889,7 +889,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/ZhvRmbpkx9U",
     },
     atom_structure: {
-      crystall_structure: "Simple Hexagonal",
+      crystal_structure: "Simple Hexagonal",
       lattice_angle: [90, 90, 120],
       lattice_constant: [338, 338, 1102 / 5],
       space_group_name: "P6<sub>3</sub>/mmc",
@@ -958,7 +958,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       youtube: "https://youtu.be/UdJeLlwrVUI",
     },
     atom_structure: {
-      crystall_structure: "Face-Centered Cubic",
+      crystal_structure: "Face-Centered Cubic",
       lattice_angle: [90, 90, 90],
       lattice_constant: [565.75, 565.75, 565.75],
       space_group_name: "Fm_ 3m",

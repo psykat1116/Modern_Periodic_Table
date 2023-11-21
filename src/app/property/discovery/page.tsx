@@ -14,6 +14,9 @@ import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Page = () => {
+  if (typeof window !== "undefined") {
+    window.document.title = `Discovery Year of Elements`;
+  }
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div

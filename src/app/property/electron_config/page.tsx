@@ -15,6 +15,9 @@ import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Page = () => {
+  if (typeof window !== "undefined") {
+    window.document.title = `Electron Configuration of Elements`;
+  }
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div
@@ -33,7 +36,7 @@ const Page = () => {
         Electron Configuration
       </Link>
       <div
-        className={`w-full flex flex-col justify-start items-center px-2 pb-2 overflow-y-scroll gap-2`}
+        className={`w-full grid grid-cols-2 px-2 pb-2 overflow-y-scroll gap-2`}
       >
         {RowOneElem.map((e) => {
           return (

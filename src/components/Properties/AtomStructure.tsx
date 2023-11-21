@@ -6,14 +6,14 @@ import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const AtomStructure = ({
-  crystall_structure,
+  crystal_structure,
   lattice_angle,
   lattice_constant,
   space_group_name,
   space_group_number,
 }: AtomStructure) => {
   const [isCopying, setIsCopying] = useState({
-    crystall_structure: false,
+    crystal_structure: false,
     lattice_angle: false,
     lattice_constant: false,
     space_group_name: false,
@@ -37,11 +37,14 @@ const AtomStructure = ({
     >
       <h1 className="text-xl">Atomic Structure</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
-        {crystall_structure && (
+        {crystal_structure && (
           <div className="flex flex-row justify-start items-center w-full">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%]">
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%]"
+              href="/property/cryst_struc"
+            >
               Crystall Structure
-            </p>
+            </Link>
             <div
               className={`w-[75%] ${
                 theme === "dark"
@@ -49,13 +52,13 @@ const AtomStructure = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
             >
-              <p>{crystall_structure}</p>
+              <p>{crystal_structure}</p>
               <button
                 onClick={() =>
-                  handleCopy(crystall_structure, "crystall_structure")
+                  handleCopy(crystal_structure, "crystal_structure")
                 }
               >
-                {!isCopying.crystall_structure ? (
+                {!isCopying.crystal_structure ? (
                   <MdContentCopy />
                 ) : (
                   <MdCheck className="text-green-700" />
@@ -68,8 +71,7 @@ const AtomStructure = ({
           <div className="flex flex-row justify-start items-center w-full">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%]"
-              href="https://en.wikipedia.org/wiki/Space_group"
-              target="_blank"
+              href="/property/space_group_name"
             >
               Space Group Name
             </Link>
@@ -101,8 +103,7 @@ const AtomStructure = ({
           <div className="flex flex-row justify-start items-start w-full">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%]"
-              href="https://en.wikipedia.org/wiki/List_of_space_grou"
-              target="_blank"
+              href="/property/space_group_number"
             >
               Space Group Number
             </Link>
