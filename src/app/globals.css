@@ -23,3 +23,59 @@ html {
   background-color: yellow;
   color: #141414;
 }
+
+#loader span {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+}
+
+#loader span:nth-child(1) {
+  transform: rotateX(-60deg) rotateY(60deg) rotateZ(0deg);
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+  animation: atom1 3s linear infinite;
+}
+
+#loader span:nth-child(2) {
+  transform: rotateX(60deg) rotateY(60deg) rotateZ(0deg);
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+  animation: atom2 3s linear infinite;
+}
+
+#loader span:nth-child(3) {
+  transform: rotateX(-70deg) rotateY(5deg) rotateZ(0deg);
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+  animation: atom3 3s linear infinite;
+}
+
+#loader span:nth-child(4) {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+@keyframes atom1 {
+  to {
+    transform: rotateX(-60deg) rotateY(60deg) rotateZ(360deg);
+  }
+}
+
+@keyframes atom2 {
+  to {
+    transform: rotateX(60deg) rotateY(60deg) rotateZ(360deg);
+  }
+}
+
+@keyframes atom3 {
+  to {
+    transform: rotateX(-70deg) rotateY(5deg) rotateZ(360deg);
+  }
+}
