@@ -33,6 +33,9 @@ const config: Config = {
         poppins: "var(--font-poppins)",
         satisfy: "var(--font-satisfy)",
       },
+      backdropBlur: {
+        require: '6px',
+      }
     },
   },
   plugins: [],

@@ -55,7 +55,7 @@ const EMProperty = ({
         theme === "dark"
           ? "text-text_primary bg-bg_dark"
           : "bg-bg_light text-text_secondary"
-      } shadow-lg rounded-sm`}
+      } shadow-lg rounded-sm bg-opacity-60 backdrop-blur-require`}
     >
       <h1 className="text-xl">Electromagnetic Properties</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">

@@ -13,9 +13,9 @@ const Navbar = () => {
     <div
       className={`w-full flex justify-between items-center pt-3 pb-2 px-5 text-xl ${
         theme === "dark"
-          ? "bg-bg_dark text-text_primary shadow-lg"
-          : "text-text_secondary bg-bg_light shadow-md"
-      }`}
+          ? "text-text_primary"
+          : "text-text_secondary"
+        } bg-opacity-60 backdrop-blur-require`}
     >
       <Link className="text-2xl" href="/">
         <LiaAtomSolid />

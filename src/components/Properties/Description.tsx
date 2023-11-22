@@ -30,7 +30,7 @@ const Description = ({ description }: { description: string }) => {
         theme === "dark"
           ? "text-text_primary bg-bg_dark"
           : "text-text_secondary bg-bg_light"
-      } shadow-lg rounded-sm w-full p-4 text-text_primary flex flex-col justify-start items-center`}
+      } shadow-lg rounded-sm w-full p-4 text-text_primary flex flex-col justify-start items-center bg-opacity-60 backdrop-blur-require`}
     >
       <div className="flex justify-between items-center mb-2 w-full">
         <h1 className="text-xl">Description</h1>
