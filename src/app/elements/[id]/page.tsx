@@ -48,7 +48,7 @@ const Page = () => {
         } justify-start items-center`}
       >
         <div className="absolute w-full min-h-screen">
-          <Particle />
+          <Particle number={id}/>
         </div>
         <div
           className={`flex flex-col w-full ${
