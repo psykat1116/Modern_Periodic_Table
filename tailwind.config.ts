@@ -34,8 +34,22 @@ const config: Config = {
         satisfy: "var(--font-satisfy)",
       },
       backdropBlur: {
-        require: '6px',
-      }
+        require: "3px",
+      },
+      animation: {
+        rotate: "rotate 1.5s linear infinite",
+        skeleton: "skeleton 1.5s ease-in-out infinite",
+      },
+      keyframes: {
+        rotate: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        skeleton: {
+          "0%": { left: "-100%" },
+          "100%": { left: "100%" },
+        },
+      },
     },
   },
   plugins: [],

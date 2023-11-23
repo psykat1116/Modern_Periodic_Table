@@ -30,7 +30,7 @@ export default function Home() {
       >
         <Navbar />
         <Slider />
-        <div className="flex flex-col justify-start items-center my-10">
+        <div className="min-w-[80%] flex flex-col justify-start items-center my-10 overflow-x-scroll">
           <UpperTable />
           <LowerTable />
           <Categories />

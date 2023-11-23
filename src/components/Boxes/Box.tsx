@@ -166,7 +166,8 @@ const Box = ({ id, category, name, groups }: BoxTypes) => {
   }
   return (
     <Link href={`/elements/${id}`} className={style}>
-      <p className="z-10 text-xl">{name}</p>
+      <p className="absolute top-0.5 left-1 text-[10px]">{id}</p>
+      <p className="z-10 text-lg">{name}</p>
     </Link>
   );
 };

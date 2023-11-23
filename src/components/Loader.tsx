@@ -8,16 +8,22 @@ const Loader = () => {
     <div className="flex justify-center items-center w-full h-full">
       <div
         id="loader"
-        className="flex justify-center items-center rotate-[25deg]"
+        className="animate-rotate flex justify-center items-center rotate-[25deg]"
       >
         <span
-          className={`${theme === "dark" ? "border-bg_light" : "border-bg_dark"}`}
+          className={`${
+            theme === "dark" ? "border-bg_light" : "border-bg_dark"
+          }`}
         ></span>
         <span
-          className={`${theme === "dark" ? "border-bg_light" : "border-bg_dark"}`}
+          className={`${
+            theme === "dark" ? "border-bg_light" : "border-bg_dark"
+          }`}
         ></span>
         <span
-          className={`${theme === "dark" ? "border-bg_light" : "border-bg_dark"}`}
+          className={`${
+            theme === "dark" ? "border-bg_light" : "border-bg_dark"
+          }`}
         ></span>
         <span
           className={`${theme === "dark" ? "bg-bg_light" : "bg-bg_dark"}`}

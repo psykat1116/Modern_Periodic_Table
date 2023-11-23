@@ -30,6 +30,11 @@ const Slider = () => {
             ? "border-y border-y-light_primary"
             : "border-y-2 border-y-dark_primary"
         } `}
+        breakpoints={{
+          320: { slidesPerView: 2 },
+          480: { slidesPerView: 4 },
+          640: { slidesPerView: 5 },
+        }}
       >
         {Links.map((link) => {
           return (
