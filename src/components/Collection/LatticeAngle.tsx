@@ -25,7 +25,7 @@ const SpaceGroupName = ({
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } backdrop-blur-sm bg-opacity-70`}
       >
         {atomic_number}
       </Link>
@@ -35,7 +35,7 @@ const SpaceGroupName = ({
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } backdrop-blur-sm bg-opacity-70`}
       >
         {symbol}
       </Link>
@@ -45,7 +45,7 @@ const SpaceGroupName = ({
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } backdrop-blur-sm bg-opacity-70`}
       >
         {name}
       </Link>
@@ -59,7 +59,7 @@ const SpaceGroupName = ({
                   theme === "dark"
                     ? "bg-bg_dark text-text_primary"
                     : "bg-bg_light text-text_secondary"
-                } px-2 py-2 rounded-[4px] select-none`}
+                } px-2 py-2 rounded-[4px] select-none backdrop-blur-sm bg-opacity-70`}
               >
                 {d}°
               </div>

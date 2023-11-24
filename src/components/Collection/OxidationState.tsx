@@ -25,7 +25,7 @@ const OxidationState = ({
             theme === "dark"
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
-          }`}
+          } bg-opacity-70 backdrop-blur-sm`}
         >
           {atomic_number}
         </Link>
@@ -35,7 +35,7 @@ const OxidationState = ({
             theme === "dark"
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
-          }`}
+          } bg-opacity-70 backdrop-blur-sm`}
         >
           {symbol}
         </Link>
@@ -45,7 +45,7 @@ const OxidationState = ({
             theme === "dark"
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
-          }`}
+          } bg-opacity-70 backdrop-blur-sm`}
         >
           {name}
         </Link>
@@ -59,7 +59,7 @@ const OxidationState = ({
                   theme === "dark"
                     ? "bg-bg_dark text-text_primary"
                     : "bg-bg_light text-text_secondary"
-                } rounded-full text-sm`}
+                } rounded-full text-sm bg-opacity-70 backdrop-blur-sm`}
                 key={state}
               >
                 {state}

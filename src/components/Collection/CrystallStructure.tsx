@@ -24,7 +24,7 @@ const CrystallStructure = ({
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } bg-opacity-70 backdrop-blur-sm`}
       >
         {atomic_number}
       </Link>
@@ -34,7 +34,7 @@ const CrystallStructure = ({
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } bg-opacity-70 backdrop-blur-sm`}
       >
         {symbol}
       </Link>
@@ -44,7 +44,7 @@ const CrystallStructure = ({
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } bg-opacity-70 backdrop-blur-sm`}
       >
         {name}
       </Link>
@@ -55,7 +55,7 @@ const CrystallStructure = ({
             theme === "dark"
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
-          }`}
+          } bg-opacity-70 backdrop-blur-sm`}
         >
           {crystal_structure}
         </Link>

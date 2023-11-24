@@ -25,7 +25,7 @@ const Discoverer = ({
             theme === "dark"
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
-          }`}
+          } bg-opacity-70 backdrop-blur-sm`}
         >
           {atomic_number}
         </Link>
@@ -35,7 +35,7 @@ const Discoverer = ({
             theme === "dark"
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
-          }`}
+          } bg-opacity-70 backdrop-blur-sm`}
         >
           {symbol}
         </Link>
@@ -45,7 +45,7 @@ const Discoverer = ({
             theme === "dark"
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
-          }`}
+          } bg-opacity-70 backdrop-blur-sm`}
         >
           {name}
         </Link>
@@ -61,7 +61,7 @@ const Discoverer = ({
                 theme === "dark"
                   ? "bg-bg_dark text-text_primary"
                   : "bg-bg_light text-text_secondary"
-              } px-2 py-2 rounded-[4px] select-none flex justify-center items-center`}
+              } px-2 py-2 rounded-[4px] select-none flex justify-center items-center bg-opacity-70 backdrop-blur-sm`}
             >
               {d[0]}
             </Link>

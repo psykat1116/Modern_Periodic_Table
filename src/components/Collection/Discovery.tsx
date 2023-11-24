@@ -19,7 +19,7 @@ const Discovery = ({ atomic_number, symbol, name, discovery }: Discovery) => {
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } bg-opacity-70 backdrop-blur-sm`}
       >
         {atomic_number}
       </Link>
@@ -29,7 +29,7 @@ const Discovery = ({ atomic_number, symbol, name, discovery }: Discovery) => {
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } bg-opacity-70 backdrop-blur-sm`}
       >
         {symbol}
       </Link>
@@ -39,7 +39,7 @@ const Discovery = ({ atomic_number, symbol, name, discovery }: Discovery) => {
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } bg-opacity-70 backdrop-blur-sm`}
       >
         {name}
       </Link>
@@ -49,7 +49,7 @@ const Discovery = ({ atomic_number, symbol, name, discovery }: Discovery) => {
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } bg-opacity-70 backdrop-blur-sm`}
       >
         {discovery}
       </Link>

@@ -28,7 +28,7 @@ const ElectronConfig = ({
             theme === "dark"
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
-          }`}
+          } bg-opacity-70 backdrop-blur-sm`}
         >
           {atomic_number}
         </Link>
@@ -38,7 +38,7 @@ const ElectronConfig = ({
             theme === "dark"
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
-          }`}
+          } bg-opacity-70 backdrop-blur-sm`}
         >
           {symbol}
         </Link>
@@ -48,7 +48,7 @@ const ElectronConfig = ({
             theme === "dark"
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
-          }`}
+          } bg-opacity-70 backdrop-blur-sm`}
         >
           {name}
         </Link>
@@ -58,7 +58,7 @@ const ElectronConfig = ({
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        } px-2 py-2 rounded-[4px] flex justify-start items-center w-full`}
+        } px-2 py-2 rounded-[4px] flex justify-start items-center w-full bg-opacity-70 backdrop-blur-sm`}
         dangerouslySetInnerHTML={{
           __html: xss(electron_configuration),
         }}

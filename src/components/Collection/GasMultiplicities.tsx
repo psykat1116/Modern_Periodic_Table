@@ -24,7 +24,7 @@ const GasMultiplicities = ({
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } backdrop-blur-sm bg-opacity-70`}
       >
         {atomic_number}
       </Link>
@@ -34,7 +34,7 @@ const GasMultiplicities = ({
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } backdrop-blur-sm bg-opacity-70`}
       >
         {symbol}
       </Link>
@@ -44,7 +44,7 @@ const GasMultiplicities = ({
           theme === "dark"
             ? "bg-bg_dark text-text_primary"
             : "bg-bg_light text-text_secondary"
-        }`}
+        } backdrop-blur-sm bg-opacity-70`}
       >
         {name}
       </Link>
@@ -55,7 +55,7 @@ const GasMultiplicities = ({
             theme === "dark"
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
-          }`}
+          } backdrop-blur-sm bg-opacity-70`}
         >
           {gas_atom_multiplicities}
         </Link>
