@@ -22,6 +22,7 @@ import HealthSafety from "@/components/Properties/HealthSafety";
 import AtomStructure from "@/components/Properties/AtomStructure";
 import getElementData from "@/helper/getElementData";
 import Particle from "@/components/Particle";
+import { motion } from "framer-motion";
 
 const Page = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
@@ -109,13 +110,16 @@ const Page = () => {
                 theme === "dark" ? "text-text_primary" : "text-text_secondary"
               } gap-2`}
             >
-              <div
+              <motion.div
                 className={`flex justify-start flex-col items-center ${
                   theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
                 } shadow-md w-full h-[68vh] rounded-sm p-5 bg-opacity-60 backdrop-blur-require `}
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.75, ease: "easeInOut" }}
               >
                 <h1>Electron Shell Configuration</h1>
-              </div>
+              </motion.div>
               {elem && <Particles {...elem.particles} />}
               {elem.external_links && <ExternalLink {...elem.external_links} />}
             </div>

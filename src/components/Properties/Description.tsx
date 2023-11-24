@@ -3,6 +3,7 @@ import React, { useState, useContext } from "react";
 import { HiMiniSpeakerWave, HiOutlinePause, HiMiniPlay } from "react-icons/hi2";
 import { MdReplay, MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { motion } from "framer-motion";
 
 const Description = ({ description }: { description: string }) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
@@ -25,12 +26,15 @@ const Description = ({ description }: { description: string }) => {
     }, 500);
   };
   return (
-    <div
+    <motion.div
       className={`${
         theme === "dark"
           ? "text-text_primary bg-bg_dark"
           : "text-text_secondary bg-bg_light"
       } shadow-lg rounded-sm w-full p-4 text-text_primary flex flex-col justify-start items-center bg-opacity-60 backdrop-blur-require`}
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.25, ease: "easeInOut", delay: 0.1 }}
     >
       <div className="flex justify-between items-center mb-2 w-full">
         <h1 className="text-xl">Description</h1>
@@ -79,7 +83,7 @@ const Description = ({ description }: { description: string }) => {
       <p
         dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(description) }}
       ></p>
-    </div>
+    </motion.div>
   );
 };
 

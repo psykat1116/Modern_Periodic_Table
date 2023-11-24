@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import { useSearchParams } from "next/navigation";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { motion } from "framer-motion";
 
 const ColBox = ({ val1, val2 }: { val1: string; val2: string }) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const searchParam = useSearchParams();
   const param = searchParam.get("type");
   return (
-    <div
+    <motion.div
       className={`relative h-[55px] w-[55px] border-[2px] ${
         param !== null
           ? `${
@@ -24,7 +25,7 @@ const ColBox = ({ val1, val2 }: { val1: string; val2: string }) => {
     >
       <p className="text-sm text-right w-full font-bold">{val1}</p>
       <p className="text-sm text-left w-full font-bold">{val2}</p>
-    </div>
+    </motion.div>
   );
 };
 

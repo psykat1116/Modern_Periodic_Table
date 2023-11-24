@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Overview } from "@/types/ElementTypes";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { motion } from "framer-motion";
 
 const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
   const [isCopying, setIsCopying] = useState({
@@ -19,12 +20,15 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
     }, 500);
   };
   return (
-    <div
+    <motion.div
       className={`w-full flex flex-col justify-start items-start p-4 ${
         theme === "dark"
           ? "text-text_primary bg-bg_dark"
           : "bg-bg_light text-text_secondary"
       } shadow-lg rounded-sm bg-opacity-60 backdrop-blur-require`}
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.25, ease: "easeInOut", delay: 0.2 }}
     >
       <h1 className="text-xl">Overview</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
@@ -105,7 +109,7 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
