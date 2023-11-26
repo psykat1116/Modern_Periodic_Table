@@ -82,7 +82,12 @@ const ThermoProperty = ({
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {boiling_point && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Boiling Point</p>
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[20%]"
+              href="/property/boiling_point"
+            >
+              Boiling Point
+            </Link>
             <div
               className={`w-[60%] ${
                 theme === "dark"
@@ -106,7 +111,12 @@ const ThermoProperty = ({
         )}
         {melting_point && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Melting Point</p>
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[20%]"
+              href="/property/melting_point"
+            >
+              Melting Point
+            </Link>
             <div
               className={`w-[60%] ${
                 theme === "dark"
@@ -130,7 +140,12 @@ const ThermoProperty = ({
         )}
         {phase && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[20%]">Phase</p>
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[20%]"
+              href="/property/phase"
+            >
+              Phase
+            </Link>
             <div
               className={`w-[80%]  ${
                 theme === "dark"
@@ -153,8 +168,7 @@ const ThermoProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[20%]"
-              href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/heat-of-fusion"
-              target="_blank"
+              href="/property/fusion_heat"
             >
               Fusion Heat
             </Link>
@@ -185,8 +199,7 @@ const ThermoProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[20%]"
-              href="https://en.wikipedia.org/wiki/Specific_heat_capacity"
-              target="_blank"
+              href="/property/specific_heat"
             >
               Specific Heat
             </Link>
@@ -217,8 +230,7 @@ const ThermoProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[20%]"
-              href="https://en.wikipedia.org/wiki/Enthalpy_of_vaporizatio"
-              target="_blank"
+              href="/property/vaporization_heat"
             >
               Vaporization Heat
             </Link>

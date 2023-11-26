@@ -3,7 +3,7 @@ import Particles from "react-tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 
-const Particle = () => {
+const DynamicParticle = () => {
   const particlesInit = async (engine: Engine) => {
     console.log(engine);
     await loadFull(engine);
@@ -45,7 +45,7 @@ const Particle = () => {
             speed: 2,
             straight: false,
           },
-          number: { density: { enable: true, area: 600 }, value: 20 },
+          number: { density: { enable: true, area: 900 }, value: 10 },
           shape: {
             type: "circle",
           },
@@ -59,4 +59,4 @@ const Particle = () => {
   );
 };
 
-export default Particle;
+export default DynamicParticle;

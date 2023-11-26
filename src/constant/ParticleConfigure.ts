@@ -14,7 +14,7 @@ export const LanConfig: ISourceOptions = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, area: 1000 }, value: 40 },
+    number: { density: { enable: true, area: 1000 }, value: 15 },
     shape: {
       type: "circle",
     },
@@ -40,7 +40,7 @@ export const ActConfig: ISourceOptions = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, area: 1000 }, value: 40 },
+    number: { density: { enable: true, area: 1000 }, value: 15 },
     shape: {
       type: "circle",
     },
@@ -66,7 +66,7 @@ export const AlkaliConfig: ISourceOptions = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, area: 1000 }, value: 40 },
+    number: { density: { enable: true, area: 1000 }, value: 15 },
     shape: {
       type: "circle",
     },
@@ -92,7 +92,7 @@ export const AlkaliEarthConfig: ISourceOptions = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, area: 1000 }, value: 40 },
+    number: { density: { enable: true, area: 1000 }, value: 15 },
     shape: {
       type: "circle",
     },
@@ -118,7 +118,7 @@ export const TransitionConfig: ISourceOptions = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, area: 1000 }, value: 40 },
+    number: { density: { enable: true, area: 1000 }, value: 15 },
     shape: {
       type: "circle",
     },
@@ -144,7 +144,7 @@ export const MetalConfig: ISourceOptions = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, area: 1000 }, value: 40 },
+    number: { density: { enable: true, area: 1000 }, value: 15 },
     shape: {
       type: "circle",
     },
@@ -170,7 +170,7 @@ export const NonMetalConfig: ISourceOptions = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, area: 1000 }, value: 40 },
+    number: { density: { enable: true, area: 1000 }, value: 15 },
     shape: {
       type: "circle",
     },
@@ -196,7 +196,7 @@ export const MetalloidConfig: ISourceOptions = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, area: 1000 }, value: 40 },
+    number: { density: { enable: true, area: 1000 }, value: 15 },
     shape: {
       type: "circle",
     },
@@ -222,7 +222,7 @@ export const HaloConfig: ISourceOptions = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, area: 1000 }, value: 40 },
+    number: { density: { enable: true, area: 1000 }, value: 15 },
     shape: {
       type: "circle",
     },
@@ -248,7 +248,7 @@ export const NobleConfig: ISourceOptions = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, area: 1000 }, value: 40 },
+    number: { density: { enable: true, area: 1000 }, value: 15 },
     shape: {
       type: "circle",
     },
@@ -274,7 +274,7 @@ export const TransactinideConfig: ISourceOptions = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, area: 1000 }, value: 40 },
+    number: { density: { enable: true, area: 1000 }, value: 15 },
     shape: {
       type: "circle",
     },
