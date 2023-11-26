@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import FusionHeat from "@/components/Collection/FusionHeat";
+import ThermalExpansion from "@/components/Collection/ThermalExpansion";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
@@ -31,26 +31,26 @@ const Page = () => {
       </div>
       <Navbar />
       <Link
-        href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/heat-of-fusion"
-        target="_blank"
+        href="https://en.wikipedia.org/wiki/Thermal_expansion"
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         } z-[5]`}
+        target="_blank"
       >
-        Fusion Heat
+        Thermal Expansion
       </Link>
       <div
-        className={`w-full grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
+        className={`w-full grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
       >
         {RowOneElem.map((e) => {
           return (
             e.thermodynamic_properties && (
-              <FusionHeat
+              <ThermalExpansion
                 key={e.general_properties.name}
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                fusion_heat={e.thermodynamic_properties.fusion_heat}
+                thermal_expansion={e.thermodynamic_properties.thermal_expansion}
               />
             )
           );
@@ -58,12 +58,12 @@ const Page = () => {
         {RowTwoElem.map((e) => {
           return (
             e.thermodynamic_properties && (
-              <FusionHeat
+              <ThermalExpansion
                 key={e.general_properties.name}
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                fusion_heat={e.thermodynamic_properties.fusion_heat}
+                thermal_expansion={e.thermodynamic_properties.thermal_expansion}
               />
             )
           );
@@ -71,12 +71,12 @@ const Page = () => {
         {RowThreeElem.map((e) => {
           return (
             e.thermodynamic_properties && (
-              <FusionHeat
+              <ThermalExpansion
                 key={e.general_properties.name}
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                fusion_heat={e.thermodynamic_properties.fusion_heat}
+                thermal_expansion={e.thermodynamic_properties.thermal_expansion}
               />
             )
           );
@@ -84,12 +84,12 @@ const Page = () => {
         {RowFourElem.map((e) => {
           return (
             e.thermodynamic_properties && (
-              <FusionHeat
+              <ThermalExpansion
                 key={e.general_properties.name}
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                fusion_heat={e.thermodynamic_properties.fusion_heat}
+                thermal_expansion={e.thermodynamic_properties.thermal_expansion}
               />
             )
           );
@@ -97,41 +97,45 @@ const Page = () => {
         {RowFiveElem.map((e) => {
           return (
             e.thermodynamic_properties && (
-              <FusionHeat
+              <ThermalExpansion
                 key={e.general_properties.name}
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                fusion_heat={e.thermodynamic_properties.fusion_heat}
+                thermal_expansion={e.thermodynamic_properties.thermal_expansion}
               />
             )
           );
         })}
         {RowSixElem[0].thermodynamic_properties && (
-          <FusionHeat
+          <ThermalExpansion
             name={RowSixElem[0].general_properties.name}
             atomic_number={RowSixElem[0].general_properties.atomic_number}
             symbol={RowSixElem[0].general_properties.symbol}
-            fusion_heat={RowSixElem[0].thermodynamic_properties.fusion_heat}
+            thermal_expansion={
+              RowSixElem[0].thermodynamic_properties.thermal_expansion
+            }
           />
         )}
         {RowSixElem[1].thermodynamic_properties && (
-          <FusionHeat
+          <ThermalExpansion
             name={RowSixElem[1].general_properties.name}
             atomic_number={RowSixElem[1].general_properties.atomic_number}
             symbol={RowSixElem[1].general_properties.symbol}
-            fusion_heat={RowSixElem[1].thermodynamic_properties.fusion_heat}
+            thermal_expansion={
+              RowSixElem[1].thermodynamic_properties.thermal_expansion
+            }
           />
         )}
         {LanthanideElem.map((e) => {
           return (
             e.thermodynamic_properties && (
-              <FusionHeat
+              <ThermalExpansion
                 key={e.general_properties.name}
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                fusion_heat={e.thermodynamic_properties.fusion_heat}
+                thermal_expansion={e.thermodynamic_properties.thermal_expansion}
               />
             )
           );
@@ -140,41 +144,45 @@ const Page = () => {
           return (
             ind > 1 &&
             e.thermodynamic_properties && (
-              <FusionHeat
+              <ThermalExpansion
                 key={e.general_properties.name}
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                fusion_heat={e.thermodynamic_properties.fusion_heat}
+                thermal_expansion={e.thermodynamic_properties.thermal_expansion}
               />
             )
           );
         })}
         {RowSevenElem[0].thermodynamic_properties && (
-          <FusionHeat
+          <ThermalExpansion
             name={RowSevenElem[0].general_properties.name}
             atomic_number={RowSevenElem[0].general_properties.atomic_number}
             symbol={RowSevenElem[0].general_properties.symbol}
-            fusion_heat={RowSevenElem[0].thermodynamic_properties.fusion_heat}
+            thermal_expansion={
+              RowSevenElem[0].thermodynamic_properties.thermal_expansion
+            }
           />
         )}
         {RowSevenElem[1].thermodynamic_properties && (
-          <FusionHeat
+          <ThermalExpansion
             name={RowSevenElem[1].general_properties.name}
             atomic_number={RowSevenElem[1].general_properties.atomic_number}
             symbol={RowSevenElem[1].general_properties.symbol}
-            fusion_heat={RowSevenElem[1].thermodynamic_properties.fusion_heat}
+            thermal_expansion={
+              RowSevenElem[1].thermodynamic_properties.thermal_expansion
+            }
           />
         )}
         {ActinideElem.map((e) => {
           return (
             e.thermodynamic_properties && (
-              <FusionHeat
+              <ThermalExpansion
                 key={e.general_properties.name}
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                fusion_heat={e.thermodynamic_properties.fusion_heat}
+                thermal_expansion={e.thermodynamic_properties.thermal_expansion}
               />
             )
           );
@@ -183,12 +191,12 @@ const Page = () => {
           return (
             ind > 1 &&
             e.thermodynamic_properties && (
-              <FusionHeat
+              <ThermalExpansion
                 key={e.general_properties.name}
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                fusion_heat={e.thermodynamic_properties.fusion_heat}
+                thermal_expansion={e.thermodynamic_properties.thermal_expansion}
               />
             )
           );

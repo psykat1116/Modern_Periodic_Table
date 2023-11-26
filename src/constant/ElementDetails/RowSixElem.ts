@@ -1757,7 +1757,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       fusion_heat: 3,
       specific_heat: 93.65,
       vaporization_heat: 17,
-      adiabatic_index: 5 / 3,
+      adiabatic_index: 1.67,
     },
     material_properties: {
       color: "Colorless",

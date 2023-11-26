@@ -844,7 +844,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       fusion_heat: 0.34,
       specific_heat: 1030,
       vaporization_heat: 1.75,
-      adiabatic_index: 5 / 3,
+      adiabatic_index: 1.67,
     },
     material_properties: {
       color: "Colorless",

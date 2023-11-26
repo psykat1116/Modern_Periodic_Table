@@ -1931,7 +1931,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       fusion_heat: 2.3,
       specific_heat: 158.32,
       vaporization_heat: 12.64,
-      adiabatic_index: 5 / 3,
+      adiabatic_index: 1.67,
     },
     material_properties: {
       color: "Colorless",

@@ -35,7 +35,7 @@ const Page = () => {
         target="_blank"
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        }`}
+        } z-[5]`}
       >
         Specific Heat
       </Link>

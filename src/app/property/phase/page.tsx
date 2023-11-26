@@ -1,6 +1,5 @@
 "use client";
 import React, { useContext } from "react";
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Phase from "@/components/Collection/Phase";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
@@ -30,14 +29,13 @@ const Page = () => {
         <DynamicParticle />
       </div>
       <Navbar />
-      <Link
-        href="/property/phase"
+      <div
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         }`}
       >
         Phase
-      </Link>
+      </div>
       <div
         className={`w-full grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
       >

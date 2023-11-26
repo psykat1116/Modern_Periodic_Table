@@ -849,7 +849,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       fusion_heat: 1.18,
       specific_heat: 520.33,
       vaporization_heat: 6.5,
-      adiabatic_index: 5 / 3,
+      adiabatic_index: 1.67,
     },
     material_properties: {
       color: "Colorless",

@@ -35,7 +35,7 @@ const Page = () => {
         href="https://en.wikipedia.org/wiki/Atomic_radius"
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        }`}
+        } z-[5]`}
       >
         CID Number
       </Link>

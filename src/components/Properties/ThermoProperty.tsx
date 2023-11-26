@@ -261,8 +261,7 @@ const ThermoProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[20%]"
-              href="https://en.wikipedia.org/wiki/Thermal_expansion"
-              target="_blank"
+              href="/property/thermal_expansion"
             >
               Thermal Expansion
             </Link>
@@ -297,8 +296,7 @@ const ThermoProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[20%]"
-              href="https://www.britannica.com/science/Neel-temperature"
-              target="_blank"
+              href="/property/neel_point"
             >
               Neel Point (K)
             </Link>
@@ -327,8 +325,7 @@ const ThermoProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[20%]"
-              target="_blank"
-              href="https://en.wikipedia.org/wiki/Heat_capacity_ratio"
+              href="/property/adiabatic_index"
             >
               Adiabatic Index
             </Link>
