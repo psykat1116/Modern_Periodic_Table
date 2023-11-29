@@ -83,9 +83,14 @@ const MaterialProperty = ({
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {color && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm">Color</p>
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              href="/property/color"
+            >
+              Color
+            </Link>
             <div
-              className={`w-[75%]  ${
+              className={`w-[75%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -106,12 +111,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Molar_volume"
+              href="/property/molar_volume"
             >
               Molar Volume
             </Link>
             <div
-              className={`w-[55%]  ${
+              className={`w-[55%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -141,12 +146,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Mohs_scale"
+              href="/property/mohs_scale"
             >
               Mohs Hardness
             </Link>
             <div
-              className={`w-[75%]  ${
+              className={`w-[75%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -171,12 +176,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Bulk_modulus"
+              href="/property/bulk_modulus"
             >
               Bulk Modulus
             </Link>
             <div
-              className={`w-[55%]  ${
+              className={`w-[55%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -202,12 +207,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Brinell_scale"
+              href="/property/brinell_hardness"
             >
               Brinnel Hardness
             </Link>
             <div
-              className={`w-[55%]  ${
+              className={`w-[55%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -233,12 +238,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Density"
+              href="/property/density"
             >
               Density
             </Link>
             <div
-              className={`w-[55%]  ${
+              className={`w-[55%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -260,12 +265,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Density"
+              href="/property/liquid_density"
             >
               Liquid Density
             </Link>
             <div
-              className={`w-[55%]  ${
+              className={`w-[55%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -291,12 +296,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Young%27s_modulus"
+              href="/property/young_modulus"
             >
               Young Modulus
             </Link>
             <div
-              className={`w-[55%]  ${
+              className={`w-[55%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -322,12 +327,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Vickers_hardness_test"
+              href="/property/vickers_hardness"
             >
               Vickers Hardness
             </Link>
             <div
-              className={`w-[55%]  ${
+              className={`w-[55%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -353,12 +358,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Shear_modulus"
+              href="/property/shear_modulus"
             >
               Shear Hardness
             </Link>
             <div
-              className={`w-[55%]  ${
+              className={`w-[55%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -384,12 +389,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Thermal_conductivity_and_resistivity"
+              href="/property/thermal_conductivity"
             >
               Thermal Conductivity
             </Link>
             <div
-              className={`w-[55%]  ${
+              className={`w-[55%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -418,12 +423,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Speed_of_sound"
+              href="/property/sound_speed"
             >
               Sound Speed
             </Link>
             <div
-              className={`w-[55%]  ${
+              className={`w-[55%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -457,12 +462,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Poisson%27s_ratio"
+              href="/property/poisson_ratio"
             >
               Poisson Ratio
             </Link>
             <div
-              className={`w-[75%]  ${
+              className={`w-[75%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
@@ -487,12 +492,12 @@ const MaterialProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
-              href="https://en.wikipedia.org/wiki/Refractive_index"
+              href="/property/refractive_index"
             >
               Refractive Index
             </Link>
             <div
-              className={`w-[75%]  ${
+              className={`w-[75%] ${
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"

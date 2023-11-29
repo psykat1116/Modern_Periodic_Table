@@ -28,7 +28,7 @@ const Particles = ({ electrons, protons, neutrons }: Particles) => {
         } bg-[#1b1a1a] rounded-sm shadow-lg`}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 0.75, ease: "easeInOut", delay: 0.2 }}
+        transition={{ duration: 0.25, ease: "easeInOut", delay: 0.2 }}
       >
         <h1 className="text-base">Protons</h1>
         <p>{protons}</p>
@@ -39,7 +39,7 @@ const Particles = ({ electrons, protons, neutrons }: Particles) => {
         } bg-[#1b1a1a] rounded-sm shadow-lg`}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 0.75, ease: "easeInOut", delay: 0.3 }}
+        transition={{ duration: 0.25, ease: "easeInOut", delay: 0.3 }}
       >
         <h1 className="text-base">Neutrons</h1>
         <p>{neutrons}</p>
