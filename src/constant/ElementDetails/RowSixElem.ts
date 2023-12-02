@@ -92,7 +92,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "2.8•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "3.72•10<sup>-10</sup>",
       electrical_conductivity: "5•10<sup>6</sup>",
-      resisitivity: "2•10<sup>-7</sup>",
+      resistivity: "2•10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Caesium",
@@ -202,7 +202,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "1.13•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "1.552•10<sup>-9</sup>",
       electrical_conductivity: "2.9•10<sup>6</sup>",
-      resisitivity: "3.5•10<sup>-7</sup>",
+      resistivity: "3.5•10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Barium",
@@ -316,7 +316,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "5.3•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "9.46•10<sup>-10</sup>",
       electrical_conductivity: "3.3•10<sup>6</sup>",
-      resisitivity: "3•10<sup>-7</sup>",
+      resistivity: "3•10<sup>-7</sup>",
       superconducting_point: 0.128,
     },
     external_links: {
@@ -427,7 +427,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "1.07•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "1.936•10<sup>-9</sup>",
       electrical_conductivity: "7.7•10<sup>6</sup>",
-      resisitivity: "1.3•10<sup>-7</sup>",
+      resistivity: "1.3•10<sup>-7</sup>",
       superconducting_point: 4.47,
     },
     external_links: {
@@ -541,7 +541,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "4.59•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "8.44•10<sup>-10</sup>",
       electrical_conductivity: "2•10<sup>7</sup>",
-      resisitivity: "5•10<sup>-8</sup>",
+      resistivity: "5•10<sup>-8</sup>",
       superconducting_point: 0.015,
     },
     external_links: {
@@ -657,7 +657,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "4.56•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "8.49•10<sup>-10</sup>",
       electrical_conductivity: "5.6•10<sup>6</sup>",
-      resisitivity: "1.8•10<sup>-7</sup>",
+      resistivity: "1.8•10<sup>-7</sup>",
       superconducting_point: 1.7,
     },
     external_links: {
@@ -767,7 +767,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "6•10<sup>-10</sup>",
       molar_magnetic_suspectibility: "1.1•10<sup>-10</sup>",
       electrical_conductivity: "1.2•10<sup>7</sup>",
-      resisitivity: "8.1•10<sup>-8</sup>",
+      resistivity: "8.1•10<sup>-8</sup>",
       superconducting_point: 0.66,
     },
     external_links: {
@@ -878,7 +878,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "1.67•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "3.21•10<sup>-10</sup>",
       electrical_conductivity: "2.1•10<sup>7</sup>",
-      resisitivity: "4.7•10<sup>-8</sup>",
+      resistivity: "4.7•10<sup>-8</sup>",
       superconducting_point: 0.11,
     },
     external_links: {
@@ -989,7 +989,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "1.22•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "2.38•10<sup>-9</sup>",
       electrical_conductivity: "9.4•10<sup>6</sup>",
-      resisitivity: "1.1•10<sup>-7</sup>",
+      resistivity: "1.1•10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Platinum",
@@ -1100,7 +1100,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-1.78•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-3.51•10<sup>-10</sup>",
       electrical_conductivity: "4.5•10<sup>7</sup>",
-      resisitivity: "2.2•10<sup>-8</sup>",
+      resistivity: "2.2•10<sup>-8</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Gold",
@@ -1205,7 +1205,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-2.1•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-4.21•10<sup>-10</sup>",
       electrical_conductivity: "10<sup>6</sup>",
-      resisitivity: "9.6•10<sup>-7</sup>",
+      resistivity: "9.6•10<sup>-7</sup>",
       superconducting_point: 4.154,
     },
     external_links: {
@@ -1318,7 +1318,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-3•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-6.13•10<sup>-10</sup>",
       electrical_conductivity: "6.7•10<sup>6</sup>",
-      resisitivity: "1.5•10<sup>-7</sup>",
+      resistivity: "1.5•10<sup>-7</sup>",
       superconducting_point: 2.38,
     },
     external_links: {
@@ -1430,7 +1430,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-1.5•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-3.11•10<sup>-10</sup>",
       electrical_conductivity: "4.8•10<sup>6</sup>",
-      resisitivity: "2.1•10<sup>-7</sup>",
+      resistivity: "2.1•10<sup>-7</sup>",
       superconducting_point: 7.2,
     },
     external_links: {
@@ -1540,7 +1540,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-1.7•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "-3.6•10<sup>-9</sup>",
       electrical_conductivity: "7.7•10<sup>5</sup>",
-      resisitivity: "1.3•10<sup>-6</sup>",
+      resistivity: "1.3•10<sup>-6</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Bismuth",
@@ -1634,7 +1634,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     electromagnetic_properties: {
       electrical_type: "Conductor",
       electrical_conductivity: "2.3•10<sup>6</sup>",
-      resisitivity: "4.3•10<sup>-7</sup>",
+      resistivity: "4.3•10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Polonium",

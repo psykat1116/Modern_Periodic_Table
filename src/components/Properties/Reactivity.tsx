@@ -41,7 +41,7 @@ const Reactivity = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[20%] text-sm"
-              href="https://en.wikipedia.org/wiki/Electron_affinity"
+              href="/property/electron_affinity"
             >
               Electron Affinity
             </Link>
@@ -72,7 +72,7 @@ const Reactivity = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[20%] text-sm"
-              href="https://en.wikipedia.org/wiki/Ionization_energy"
+              href="/property/ionization_energy"
             >
               Ionization Energy
             </Link>
@@ -103,7 +103,7 @@ const Reactivity = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[20%] text-sm"
-              href="https://en.wikipedia.org/wiki/Electronegativity"
+              href="/property/electronegativity"
             >
               Electronegativity
             </Link>
@@ -132,7 +132,7 @@ const Reactivity = ({
         <div className="flex flex-row justify-start items-center w-full gap-2">
           <Link
             className="pr-2 py-1 rounded-[4px] w-[20%] text-sm"
-            href="https://en.wikipedia.org/wiki/Valence_(chemistry)"
+            href="/property/valence"
           >
             Valence
           </Link>

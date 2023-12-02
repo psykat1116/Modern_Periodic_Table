@@ -91,7 +91,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "8.5•10<sup>-6</sup>",
       molar_magnetic_suspectibility: "2•10<sup>-10</sup>",
       volume_magnetic_suspectibility: "8.8•10<sup>-9</sup>",
-      resisitivity: "4.7•10<sup>-8</sup>",
+      resistivity: "4.7•10<sup>-8</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Sodium",
@@ -201,7 +201,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "6.9•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "1.68•10<sup>-10</sup>",
       volume_magnetic_suspectibility: "1.2•10<sup>-5</sup>",
-      resisitivity: "4.4•10<sup>-8</sup>",
+      resistivity: "4.4•10<sup>-8</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Magnesium",
@@ -311,7 +311,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "7.8•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "2.1•10<sup>-10</sup>",
       volume_magnetic_suspectibility: "2.11•10<sup>-5</sup>",
-      resisitivity: "2.6•10<sup>-8</sup>",
+      resistivity: "2.6•10<sup>-8</sup>",
       superconducting_point: 1.175,
     },
     external_links: {
@@ -433,7 +433,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-1.6•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-4.49•10<sup>-11</sup>",
       volume_magnetic_suspectibility: "-3.73•10<sup>-6</sup>",
-      resisitivity: "10<sup>-3</sup>",
+      resistivity: "10<sup>-3</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Silicon",
@@ -557,7 +557,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-1.3•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "-3.5•10<sup>-10</sup>",
       volume_magnetic_suspectibility: "-2.06•10<sup>-5</sup>",
-      resisitivity: "10<sup>-7</sup>",
+      resistivity: "10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Phosphorus",
@@ -681,7 +681,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-6.2•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-1.99•10<sup>-10</sup>",
       volume_magnetic_suspectibility: "-1.22•10<sup>-5</sup>",
-      resisitivity: "10<sup>15</sup>",
+      resistivity: "10<sup>15</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Sulphur",
@@ -786,7 +786,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-7.2•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-5.11•10<sup>-10</sup>",
       volume_magnetic_suspectibility: "-2.31•10<sup>-8</sup>",
-      resisitivity: "10<sup>2</sup>",
+      resistivity: "10<sup>2</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Chlorine",

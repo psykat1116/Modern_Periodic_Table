@@ -92,7 +92,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-4.4•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-3.69•10<sup>-10</sup>",
       electrical_conductivity: "8.3•10<sup>6</sup>",
-      resisitivity: "1.2•10<sup>-7</sup>",
+      resistivity: "1.2•10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Rubidium",
@@ -201,7 +201,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "1.32•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "1.16•10<sup>-10</sup>",
       electrical_conductivity: "7.7•10<sup>6</sup>",
-      resisitivity: "1.3•10<sup>-7</sup>",
+      resistivity: "1.3•10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Strontium",
@@ -311,7 +311,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "6.66•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "5.921•10<sup>-9</sup>",
       electrical_conductivity: "1.8•10<sup>6</sup>",
-      resisitivity: "5.6•10<sup>-7</sup>",
+      resistivity: "5.6•10<sup>-7</sup>",
       superconducting_point: 1.3,
     },
     external_links: {
@@ -425,7 +425,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "1.68•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "1.53•10<sup>-9</sup>",
       electrical_conductivity: "2.4•10<sup>6</sup>",
-      resisitivity: "4.2•10<sup>-7</sup>",
+      resistivity: "4.2•10<sup>-7</sup>",
       superconducting_point: 0.61,
     },
     external_links: {
@@ -535,7 +535,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "2.76•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "2.56•10<sup>-9</sup>",
       electrical_conductivity: "6.7•10<sup>6</sup>",
-      resisitivity: "1.5•10<sup>-7</sup>",
+      resistivity: "1.5•10<sup>-7</sup>",
       superconducting_point: 9.25,
     },
     external_links: {
@@ -646,7 +646,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "1.17•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "1.122•10<sup>-9</sup>",
       electrical_conductivity: "2•10<sup>7</sup>",
-      resisitivity: "5•10<sup>-8</sup>",
+      resistivity: "5•10<sup>-8</sup>",
       superconducting_point: 0.915,
     },
     external_links: {
@@ -750,7 +750,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "3.42•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "3.352•10<sup>-9</sup>",
       electrical_conductivity: "5•10<sup>6</sup>",
-      resisitivity: "2•10<sup>-7</sup>",
+      resistivity: "2•10<sup>-7</sup>",
       superconducting_point: 7.8,
     },
     external_links: {
@@ -861,7 +861,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "5.42•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "5.48•10<sup>-10</sup>",
       electrical_conductivity: "1.4•10<sup>7</sup>",
-      resisitivity: "7.1•10<sup>-8</sup>",
+      resistivity: "7.1•10<sup>-8</sup>",
       superconducting_point: 0.49,
     },
     external_links: {
@@ -971,7 +971,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "1.36•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "1.4•10<sup>-9</sup>",
       electrical_conductivity: "2.3•10<sup>7</sup>",
-      resisitivity: "4.3•10<sup>-8</sup>",
+      resistivity: "4.3•10<sup>-8</sup>",
       superconducting_point: 0.49,
     },
     external_links: {
@@ -1083,7 +1083,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "6.57•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "6.992•10<sup>-9</sup>",
       electrical_conductivity: "10<sup>7</sup>",
-      resisitivity: "10<sup>-7</sup>",
+      resistivity: "10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Palladium",
@@ -1195,7 +1195,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-2.27•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-2.45•10<sup>-10</sup>",
       electrical_conductivity: "6.2•10<sup>7</sup>",
-      resisitivity: "1.6•10<sup>-8</sup>",
+      resistivity: "1.6•10<sup>-8</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Silver",
@@ -1303,7 +1303,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-2.3•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-2.59•10<sup>-10</sup>",
       electrical_conductivity: "1.4•10<sup>7</sup>",
-      resisitivity: "7•10<sup>-8</sup>",
+      resistivity: "7•10<sup>-8</sup>",
       superconducting_point: 0.517,
     },
     external_links: {
@@ -1415,7 +1415,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-1.4•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-1.61•10<sup>-10</sup>",
       electrical_conductivity: "1.2•10<sup>7</sup>",
-      resisitivity: "8•10<sup>-8</sup>",
+      resistivity: "8•10<sup>-8</sup>",
       superconducting_point: 3.41,
     },
     external_links: {
@@ -1528,7 +1528,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-3.1•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-3.68•10<sup>-10</sup>",
       electrical_conductivity: "9.1•10<sup>6</sup>",
-      resisitivity: "1.1•10<sup>-7</sup>",
+      resistivity: "1.1•10<sup>-7</sup>",
       superconducting_point: 3.72,
     },
     external_links: {
@@ -1645,7 +1645,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-1.09•10<sup>-8</sup>",
       molar_magnetic_suspectibility: "-1.327•10<sup>-9</sup>",
       electrical_conductivity: "2.5•10<sup>6</sup>",
-      resisitivity: "4•10<sup>-7</sup>",
+      resistivity: "4•10<sup>-7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Antimony",
@@ -1761,7 +1761,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-3.9•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-4.98•10<sup>-10</sup>",
       electrical_conductivity: "10<sup>4</sup>",
-      resisitivity: "10<sup>-4</sup>",
+      resistivity: "10<sup>-4</sup>",
       superconducting_point: 3.72,
     },
     external_links: {
@@ -1865,7 +1865,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       mass_magnetic_suspectibility: "-4.5•10<sup>-9</sup>",
       molar_magnetic_suspectibility: "-1.14•10<sup>-9</sup>",
       electrical_conductivity: "10<sup>-7</sup>",
-      resisitivity: "10<sup>7</sup>",
+      resistivity: "10<sup>7</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Iodine",

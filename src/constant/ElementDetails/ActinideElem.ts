@@ -161,7 +161,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       electrical_conductivity: "6.7•10<sup>6</sup>",
-      resisitivity: "1.5•10<sup>-7</sup>",
+      resistivity: "1.5•10<sup>-7</sup>",
       electrical_type: "Conductor",
       magnetic_type: "Paramagnetic",
       volume_magnetic_suspectibility: "8.4•10<sup>-5</sup>",
@@ -266,7 +266,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       electrical_conductivity: "5.6•10<sup>6</sup>",
-      resisitivity: "1.8•10<sup>-7</sup>",
+      resistivity: "1.8•10<sup>-7</sup>",
       electrical_type: "Conductor",
       magnetic_type: "Paramagnetic",
       volume_magnetic_suspectibility: "4.995•10<sup>-4</sup>",
@@ -371,7 +371,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       electrical_conductivity: "3.6•10<sup>6</sup>",
-      resisitivity: "2.8•10<sup>-7</sup>",
+      resistivity: "2.8•10<sup>-7</sup>",
       electrical_type: "Conductor",
       magnetic_type: "Paramagnetic",
       volume_magnetic_suspectibility: "4.11•10<sup>-4</sup>",
@@ -463,7 +463,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       electrical_conductivity: "8.3•10<sup>5</sup>",
-      resisitivity: "1.2•10<sup>-6</sup>",
+      resistivity: "1.2•10<sup>-6</sup>",
       electrical_type: "Conductor",
     },
     external_links: {
@@ -572,7 +572,7 @@ export const ActinideElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       electrical_conductivity: "6.7•10<sup>5</sup>",
-      resisitivity: "1.5•10<sup>-6</sup>",
+      resistivity: "1.5•10<sup>-6</sup>",
       electrical_type: "Conductor",
       magnetic_type: "Paramagnetic",
       volume_magnetic_suspectibility: "6.282•10<sup>-4</sup>",

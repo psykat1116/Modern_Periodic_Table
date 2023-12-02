@@ -78,7 +78,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     electromagnetic_properties: {
       electrical_type: "Conductor",
       magnetic_type: "Paramagnetic",
-      resisitivity: "9.4•10<sup>-8</sup>",
+      resistivity: "9.4•10<sup>-8</sup>",
       electrical_conductivity: "1.1•10<sup>7</sup>",
       volume_magnetic_suspectibility: "1.37•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "2.56•10<sup>-8</sup>",
@@ -189,7 +189,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     electromagnetic_properties: {
       electrical_type: "Conductor",
       magnetic_type: "Diamagnetic",
-      resisitivity: "4•10<sup>-8</sup>",
+      resistivity: "4•10<sup>-8</sup>",
       superconducting_point: 0.026,
       electrical_conductivity: "2.5•10<sup>7</sup>",
       volume_magnetic_suspectibility: "-2.328•10<sup>-5</sup>",
@@ -324,7 +324,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     electromagnetic_properties: {
       electrical_type: "Insulator",
       magnetic_type: "Diamagnetic",
-      resisitivity: "10<sup>4</sup>",
+      resistivity: "10<sup>4</sup>",
       electrical_conductivity: "10<sup>-4</sup>",
       volume_magnetic_suspectibility: "-2.14•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "-8.7•10<sup>-9</sup>",
@@ -446,7 +446,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
     electromagnetic_properties: {
       electrical_type: "Conductor",
       magnetic_type: "Diamagnetic",
-      resisitivity: "10<sup>-5</sup>",
+      resistivity: "10<sup>-5</sup>",
       electrical_conductivity: "10<sup>5</sup>",
       volume_magnetic_suspectibility: "-1.4•10<sup>-5</sup>",
       mass_magnetic_suspectibility: "-6.2•10<sup>-9</sup>",

@@ -81,7 +81,7 @@ export interface ElectromagneticProperties {
     | "Paramagnetic"
     | "Ferromagnetic"
     | "Antiferromagnetic";
-  resisitivity?: string;
+  resistivity?: string;
   electrical_conductivity?: string;
   curie_point?: number;
   superconducting_point?: number;

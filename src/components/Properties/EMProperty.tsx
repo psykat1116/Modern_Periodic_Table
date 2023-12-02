@@ -22,7 +22,7 @@ const ResistivityOptions = [{ name: "m•Ohm" }, { name: "cm•Ohm" }];
 const EMProperty = ({
   electrical_conductivity,
   electrical_type,
-  resisitivity,
+  resistivity,
   curie_point,
   magnetic_type,
   mass_magnetic_suspectibility,
@@ -33,7 +33,7 @@ const EMProperty = ({
   const [isCopying, setIsCopying] = useState({
     electrical_conductivity: false,
     electrical_type: false,
-    resisitivity: false,
+    resistivity: false,
     curie_point: false,
     magnetic_type: false,
     mass_magnetic_suspectibility: false,
@@ -113,7 +113,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivit"
+              href="/properties/electrical_conductivity"
             >
               Electrical Conductivity
             </Link>
@@ -152,11 +152,11 @@ const EMProperty = ({
             </div>
           </div>
         )}
-        {resisitivity && (
+        {resistivity && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivit"
+              href="/properties/resistivity"
             >
               Resistivity
             </Link>
@@ -169,11 +169,11 @@ const EMProperty = ({
             >
               <p
                 dangerouslySetInnerHTML={{
-                  __html: DOMPurify.sanitize(resisitivity),
+                  __html: DOMPurify.sanitize(resistivity),
                 }}
               ></p>
-              <button onClick={() => handleCopy(resisitivity, "resisitivity")}>
-                {!isCopying.resisitivity ? (
+              <button onClick={() => handleCopy(resistivity, "resistivity")}>
+                {!isCopying.resistivity ? (
                   <MdContentCopy />
                 ) : (
                   <MdCheck className="text-green-700" />
@@ -187,7 +187,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="https://en.wikipedia.org/wiki/Curie_temperature"
+              href="/properties/curie_point"
             >
               Curie Point
             </Link>
@@ -218,7 +218,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="https://en.wikipedia.org/wiki/Superconductivity"
+              href="/properties/superconducting_point"
             >
               Superconducting Point
             </Link>
@@ -252,7 +252,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="https://en.wikipedia.org/wiki/Magnetic_susceptibility"
+              href="/properties/mass_magnetic_suspectibility"
             >
               Mass Magnetic Suspectibility
             </Link>
@@ -290,7 +290,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="https://en.wikipedia.org/wiki/Magnetic_susceptibility"
+              href="/properties/molar_magnetic_suspectibility"
             >
               Molar Magnetic Suspectibility
             </Link>
@@ -336,7 +336,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="https://en.wikipedia.org/wiki/Magnetic_susceptibility"
+              href="/properties/volume_magnetic_suspectibility"
             >
               Volume Magnetic Suspectibility
             </Link>

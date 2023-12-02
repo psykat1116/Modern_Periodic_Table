@@ -117,7 +117,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
     electromagnetic_properties: {
       electrical_conductivity: "10<sup>6</sup>",
       electrical_type: "Conductor",
-      resisitivity: "10<sup>-6</sup>",
+      resistivity: "10<sup>-6</sup>",
     },
     reactivity: {
       valence: 2,
