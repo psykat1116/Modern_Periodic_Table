@@ -1,6 +1,7 @@
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import React, { useContext } from "react";
 import Link from "next/link";
+import xss from "xss";
 
 interface Resistivity {
   atomic_number: number;
@@ -56,9 +57,8 @@ const Resistivity = ({
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
           } bg-opacity-70 backdrop-blur-sm`}
-        >
-          {resistivity}
-        </Link>
+          dangerouslySetInnerHTML={{ __html: xss(resistivity) }}
+        ></Link>
       )}
     </div>
   );

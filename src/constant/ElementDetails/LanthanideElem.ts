@@ -938,9 +938,9 @@ export const LanthanideElem: ElementDetailsProps[] = [
       electrical_conductivity: "8.3•10<sup>5</sup>",
       resistivity: "1.2•10<sup>-6</sup>",
       curie_point: 222,
-      volume_magnetic_suspectibility: "1.117784•10<sup>-1</sup>",
+      volume_magnetic_suspectibility: "1.1177•10<sup>-1</sup>",
       mass_magnetic_suspectibility: "1.36•10<sup>-5</sup>",
-      molar_magnetic_suspectibility: "2.161385•10<sup>-6</sup>",
+      molar_magnetic_suspectibility: "2.1614•10<sup>-6</sup>",
     },
     external_links: {
       wikipedia: "https://en.wikipedia.org/wiki/Terbium",

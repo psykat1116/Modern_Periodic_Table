@@ -57,13 +57,16 @@ const EMProperty = ({
           : "bg-bg_light text-text_secondary"
       } shadow-lg rounded-sm bg-opacity-60 backdrop-blur-require`}
     >
-      <h1 className="text-xl">Electromagnetic Properties</h1>
+      <h1 className="text-xl">Electromagnetic property</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {electrical_type && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              href="/property/electrical_type"
+            >
               Electrical Type
-            </p>
+            </Link>
             <div
               className={`w-[70%]  ${
                 theme === "dark"
@@ -86,9 +89,12 @@ const EMProperty = ({
         )}
         {magnetic_type && (
           <div className="flex flex-row justify-start items-center w-full gap-2">
-            <p className="pr-2 py-1 rounded-[4px] w-[30%] text-sm">
+            <Link
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              href="/property/magnetic_type"
+            >
               Magnetic Type
-            </p>
+            </Link>
             <div
               className={`w-[70%]  ${
                 theme === "dark"
@@ -113,7 +119,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="/properties/electrical_conductivity"
+              href="/property/electrical_conductivity"
             >
               Electrical Conductivity
             </Link>
@@ -156,7 +162,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="/properties/resistivity"
+              href="/property/resistivity"
             >
               Resistivity
             </Link>
@@ -187,7 +193,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="/properties/curie_point"
+              href="/property/curie_point"
             >
               Curie Point
             </Link>
@@ -218,7 +224,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="/properties/superconducting_point"
+              href="/property/superconducting_point"
             >
               Superconducting Point
             </Link>
@@ -252,7 +258,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="/properties/mass_magnetic_suspectibility"
+              href="/property/mass_magnetic_suspectibility"
             >
               Mass Magnetic Suspectibility
             </Link>
@@ -290,7 +296,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="/properties/molar_magnetic_suspectibility"
+              href="/property/molar_magnetic_suspectibility"
             >
               Molar Magnetic Suspectibility
             </Link>
@@ -336,7 +342,7 @@ const EMProperty = ({
           <div className="flex flex-row justify-start items-center w-full gap-2">
             <Link
               className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
-              href="/properties/volume_magnetic_suspectibility"
+              href="/property/volume_magnetic_suspectibility"
             >
               Volume Magnetic Suspectibility
             </Link>
