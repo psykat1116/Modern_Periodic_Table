@@ -52,8 +52,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
         <div className="flex flex-row justify-start items-center w-full ">
           <Link
             className=" pr-2 py-1 rounded-[4px] w-[25%]"
-            href="https://en.wikipedia.org/wiki/Radioactive_decay"
-            target="_blank"
+            href="/property/radioactive"
           >
             Radioactive
           </Link>
@@ -79,7 +78,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
         <div className="flex flex-row justify-start items-center w-full ">
           <Link
             className=" pr-2 py-1 rounded-[4px] w-[25%]"
-            href="https://en.wikipedia.org/wiki/Half-life"
+            href="/property/half_life"
           >
             Half Life(s)
           </Link>
@@ -109,7 +108,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
         <div className="flex flex-row justify-start items-center w-full ">
           <Link
             className=" pr-2 py-1 rounded-[4px] w-[25%]"
-            href="https://en.wikipedia.org/wiki/Radioactive_decay"
+            href="/property/lifetime"
           >
             Lifetime(s)
           </Link>
@@ -136,7 +135,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
           <div className="flex flex-row justify-start items-center w-full ">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%]"
-              href="https://en.wikipedia.org/wiki/Neutron_cross_section"
+              href="/property/neutron_cross_section"
             >
               Neutron Cross Section
             </Link>
@@ -169,7 +168,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
           <div className="flex flex-row justify-start items-center w-full ">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%]"
-              href="https://en.wikipedia.org/wiki/Neutron_capture"
+              href="/property/neutron_mass_absorption"
             >
               Neutron Mass Absorption
             </Link>
@@ -200,7 +199,12 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
         )}
         {decay_mode && (
           <div className="flex flex-row justify-start items-center w-full ">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%]">Decay Mode</p>
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%]"
+              href="/property/decay_mode"
+            >
+              Decay Mode
+            </Link>
             <div
               className={`w-[75%]  ${
                 theme === "dark"
@@ -223,8 +227,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
           <div className="flex flex-row justify-start items-center w-full">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[25%]"
-              target="_blank"
-              href="https://en.wikipedia.org/wiki/Quantum_number"
+              href="/property/quantum_number"
             >
               Quantum Numbers
             </Link>
@@ -253,7 +256,12 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
           </div>
         )}
         <div className="flex flex-row justify-start items-start w-full ">
-          <p className=" pr-2 py-1 rounded-[4px] w-[25%]">Known Isotopes</p>
+          <Link
+            className=" pr-2 py-1 rounded-[4px] w-[25%]"
+            href="/property/isotopes"
+          >
+            Known Isotopes
+          </Link>
           <div
             className={`w-[75%] py-1 rounded-[4px] grid grid-cols-12 gap-2 select-none`}
           >
@@ -276,7 +284,12 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
         </div>
         {stable && (
           <div className="flex flex-row justify-start items-start w-full ">
-            <p className=" pr-2 py-1 rounded-[4px] w-[25%]">Stable Isotopes</p>
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[25%]"
+              href="/property/stable_isotope"
+            >
+              Stable Isotopes
+            </Link>
             <div
               className={`w-[75%] py-1 rounded-[4px] grid grid-cols-12 gap-2 select-none`}
             >
