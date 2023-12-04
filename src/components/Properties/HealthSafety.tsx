@@ -39,7 +39,7 @@ const HealthSafety = ({
           <div className="flex flex-row justify-start items-center w-full">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[20%]"
-              href="https://www.iafc.org/topics-and-tools/hazmat/fusion-center/transportation-commodities/dot-hazard-classification-system"
+              href="/property/hazard_class"
             >
               DOT Hazard Class
             </Link>
@@ -69,7 +69,7 @@ const HealthSafety = ({
           <div className="flex flex-row justify-start items-center w-full ">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[20%]"
-              href="https://en.wikipedia.org/wiki/Group_(periodic_table)"
+              href="/property/dot_number"
             >
               DOT Numbers
             </Link>
@@ -97,7 +97,7 @@ const HealthSafety = ({
           <div className="flex flex-row justify-start items-center w-full ">
             <Link
               className=" pr-2 py-1 rounded-[4px] w-[20%]"
-              href="https://en.wikipedia.org/wiki/Registry_of_Toxic_Effects_of_Chemical_Substances"
+              href="/property/rtecs_number"
             >
               RTECS Number
             </Link>
