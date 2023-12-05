@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import Link from "next/link";
 import { Prevalence } from "@/types/ElementTypes";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import DOMPurify from "dompurify";
@@ -40,7 +41,12 @@ const Prevalence = ({
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {universe && (
           <div className="flex flex-row justify-start items-center w-full ">
-            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Universe</p>
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              href="/property/universe"
+            >
+              Universe
+            </Link>
             <div
               className={`w-[80%]  ${
                 theme === "dark"
@@ -67,7 +73,12 @@ const Prevalence = ({
         )}
         {sun && (
           <div className="flex flex-row justify-start items-center w-full ">
-            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Sun</p>
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              href="/property/sun"
+            >
+              Sun
+            </Link>
             <div
               className={`w-[80%]  ${
                 theme === "dark"
@@ -90,7 +101,12 @@ const Prevalence = ({
         )}
         {ocean && (
           <div className="flex flex-row justify-start items-center w-full ">
-            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Ocean</p>
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              href="/property/ocean"
+            >
+              Ocean
+            </Link>
             <div
               className={`w-[80%]  ${
                 theme === "dark"
@@ -113,7 +129,12 @@ const Prevalence = ({
         )}
         {human && (
           <div className="flex flex-row justify-start items-center w-full ">
-            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Human</p>
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              href="/property/human"
+            >
+              Human
+            </Link>
             <div
               className={`w-[80%]  ${
                 theme === "dark"
@@ -136,7 +157,12 @@ const Prevalence = ({
         )}
         {earth_crust && (
           <div className="flex flex-row justify-start items-center w-full ">
-            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Earth Crust</p>
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              href="/property/earth_crust"
+            >
+              Earth Crust
+            </Link>
             <div
               className={`w-[80%]  ${
                 theme === "dark"
@@ -161,7 +187,12 @@ const Prevalence = ({
         )}
         {meteorites && (
           <div className="flex flex-row justify-start items-center w-full ">
-            <p className=" pr-2 py-1 rounded-[4px] w-[20%]">Meteorites</p>
+            <Link
+              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              href="/property/meteorites"
+            >
+              Meteorites
+            </Link>
             <div
               className={`w-[80%]  ${
                 theme === "dark"
