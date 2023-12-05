@@ -23,7 +23,6 @@ import AtomStructure from "@/components/Properties/AtomStructure";
 import getElementData from "@/helper/getElementData";
 import Particle from "@/components/Particle";
 import { motion } from "framer-motion";
-import Hydrogen from "@/components/Orbit/Hydrogen";
 import GetOrbit from "@/components/GetOrbit";
 
 const Page = () => {

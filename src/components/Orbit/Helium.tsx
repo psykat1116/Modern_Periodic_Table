@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
-const Hydrogen = ({ Symbol }: { Symbol: string }) => {
+const Helium = ({ Symbol }: { Symbol: string }) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <>
@@ -40,4 +40,4 @@ const Hydrogen = ({ Symbol }: { Symbol: string }) => {
   );
 };
 
-export default Hydrogen;
+export default Helium;
