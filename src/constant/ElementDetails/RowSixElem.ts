@@ -585,7 +585,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       latin_name: "Rhenium",
       discovery: 1925,
       discoverer: [
-        ["Otto Berg", "Otto_Berg"],
+        ["Otto Berg", "Otto_Berg_(scientist)"],
         ["Ida Noddack", "Ida_Noddack"],
         ["Walter Noddack", "Walter_Noddack"],
       ],

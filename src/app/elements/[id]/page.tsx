@@ -23,12 +23,14 @@ import AtomStructure from "@/components/Properties/AtomStructure";
 import getElementData from "@/helper/getElementData";
 import Particle from "@/components/Particle";
 import { motion } from "framer-motion";
+import Hydrogen from "@/components/Orbit/Hydrogen";
+import GetOrbit from "@/components/GetOrbit";
 
 const Page = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const [elem, setElem] = useState<ElementDetailsProps | null>(null);
   const { id }: { id: string } = useParams();
-  const prevId = parseInt(id) - 1 === 0 ? 118 : parseInt(id) - 1,
+  const prevId = parseInt(id) - 1 === 0 ? 116 : parseInt(id) - 1,
     nextId = parseInt(id) + 1 === 119 ? 1 : parseInt(id) + 1;
   useEffect(() => {
     setElem(getElementData(parseInt(id)));
@@ -111,14 +113,16 @@ const Page = () => {
               } gap-2`}
             >
               <motion.div
-                className={`flex justify-start flex-col items-center ${
+                className={`flex justify-center flex-col items-center ${
                   theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-                } shadow-md w-full h-[68vh] rounded-sm p-5 bg-opacity-60 backdrop-blur-require `}
+                } shadow-md w-full h-[66vh] rounded-sm p-5 bg-opacity-60 backdrop-blur-require `}
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.75, ease: "easeInOut" }}
               >
-                <h1>Electron Shell Configuration</h1>
+                <div className="w-full min-h-full flex justify-center items-center">
+                  {elem && <GetOrbit id={id} />}
+                </div>
               </motion.div>
               {elem && <Particles {...elem.particles} />}
               {elem.external_links && <ExternalLink {...elem.external_links} />}
