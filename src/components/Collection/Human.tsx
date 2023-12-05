@@ -3,14 +3,14 @@ import React, { useContext } from "react";
 import Link from "next/link";
 import xss from "xss";
 
-interface Universe {
+interface Human {
   atomic_number: number;
   symbol: string;
   name: string;
-  universe?: string;
+  human?: string;
 }
 
-const Universe = ({ atomic_number, universe, symbol, name }: Universe) => {
+const Human = ({ atomic_number, human, symbol, name }: Human) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div className="gap-1.5 grid text-center grid-cols-[14%_14%_33%_33%]">
@@ -44,7 +44,7 @@ const Universe = ({ atomic_number, universe, symbol, name }: Universe) => {
       >
         {name}
       </Link>
-      {universe && (
+      {human && (
         <Link
           href={`/elements/${atomic_number}`}
           className={`p-2 rounded-sm shadow-md ${
@@ -52,11 +52,11 @@ const Universe = ({ atomic_number, universe, symbol, name }: Universe) => {
               ? "bg-bg_dark text-text_primary"
               : "bg-bg_light text-text_secondary"
           } bg-opacity-70 backdrop-blur-sm`}
-          dangerouslySetInnerHTML={{ __html: xss(universe) }}
+          dangerouslySetInnerHTML={{ __html: xss(human) }}
         ></Link>
       )}
     </div>
   );
 };
 
-export default Universe;
+export default Human;
