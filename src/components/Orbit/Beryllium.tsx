@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
-const Helium = ({ Symbol }: { Symbol: string }) => {
+const Beryllium = ({ Symbol }: { Symbol: string }) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <>
@@ -36,8 +36,30 @@ const Helium = ({ Symbol }: { Symbol: string }) => {
           } bottom-[-6px] left-[calc(50%_-_6px)]`}
         ></span>
       </div>
+      <div
+        className={`absolute h-[120px] w-[120px] rounded-full border ${
+          theme === "dark"
+            ? "border-bg_light_placeholder"
+            : "border-bg_dark_placeholder"
+        } animate-rotate hover:pause cursor-pointer`}
+      >
+        <span
+          className={`absolute h-[12px] w-[12px] rounded-full ${
+            theme === "dark"
+              ? "bg-bg_light_placeholder"
+              : "bg-bg_dark_placeholder"
+          } top-[-6px] left-[calc(50%_-_6px)]`}
+        ></span>
+        <span
+          className={`absolute h-[12px] w-[12px] rounded-full ${
+            theme === "dark"
+              ? "bg-bg_light_placeholder"
+              : "bg-bg_dark_placeholder"
+          } bottom-[-6px] left-[calc(50%_-_6px)]`}
+        ></span>
+      </div>
     </>
   );
 };
 
-export default Helium;
+export default Beryllium;
