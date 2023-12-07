@@ -19,6 +19,12 @@ import Chlorine from "./Orbit/Chlorine";
 import Argon from "./Orbit/Argon";
 import Potassium from "./Orbit/Potassium";
 import Calcium from "./Orbit/Calcium";
+import Scandium from "./Orbit/Scandium";
+import Titanium from "./Orbit/Titanium";
+import Vanadium from "./Orbit/Vanadium";
+import Chromium from "./Orbit/Chromium";
+import Manganese from "./Orbit/Manganese";
+import Iron from "./Orbit/Iron";
 
 const GetOrbit = ({ id }: { id: string }) => {
   switch (id) {
@@ -81,6 +87,24 @@ const GetOrbit = ({ id }: { id: string }) => {
       break;
     case "20":
       return <Calcium />;
+      break;
+    case "21":
+      return <Scandium />;
+      break;
+    case "22":
+      return <Titanium />;
+      break;
+    case "23":
+      return <Vanadium />;
+      break;
+    case "24":
+      return <Chromium />;
+      break;
+    case "25":
+      return <Manganese />;
+      break;
+    case "26":
+      return <Iron />;
       break;
     default:
       return <Hydrogen />;
