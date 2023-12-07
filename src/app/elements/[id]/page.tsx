@@ -120,7 +120,20 @@ const Page = () => {
                 transition={{ duration: 0.75, ease: "easeInOut" }}
               >
                 <div className="w-full min-h-full flex justify-center items-center">
-                  {elem && <GetOrbit id={id} />}
+                  {elem && (
+                    <>
+                      <GetOrbit id={id} />
+                      <div
+                        className={`absolute h-[35px] w-[35px] ${
+                          theme === "dark"
+                            ? "bg-bg_light_placeholder text-text_secondary"
+                            : "bg-bg_dark_placeholder text-text_primary"
+                        } flex justify-center items-center rounded-full z-10`}
+                      >
+                        {elem?.general_properties.symbol}
+                      </div>
+                    </>
+                  )}
                 </div>
               </motion.div>
               {elem && <Particles {...elem.particles} />}

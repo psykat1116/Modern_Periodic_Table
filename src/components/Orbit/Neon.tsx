@@ -4,22 +4,13 @@ import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 const Neon = ({ Symbol }: { Symbol: string }) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <>
-      <div
-        className={`absolute h-[35px] w-[35px] ${
-          theme === "dark"
-            ? "bg-bg_light_placeholder text-text_secondary"
-            : "bg-bg_dark_placeholder text-text_primary"
-        } flex justify-center items-center rounded-full`}
-      >
-        {Symbol}
-      </div>
+    <div className="animate-rotate hover:pause cursor-pointer flex justify-center items-center">
       <div
         className={`absolute h-[70px] w-[70px] rounded-full border ${
           theme === "dark"
             ? "border-bg_light_placeholder"
             : "border-bg_dark_placeholder"
-        } animate-rotate hover:pause cursor-pointer`}
+        }`}
       >
         <span
           className={`absolute h-[12px] w-[12px] rounded-full ${
@@ -41,7 +32,7 @@ const Neon = ({ Symbol }: { Symbol: string }) => {
           theme === "dark"
             ? "border-bg_light_placeholder"
             : "border-bg_dark_placeholder"
-        } animate-rotate hover:pause cursor-pointer`}
+        }`}
       >
         <span
           className={`absolute h-[12px] w-[12px] rounded-full ${
@@ -100,7 +91,7 @@ const Neon = ({ Symbol }: { Symbol: string }) => {
           } top-[calc(15%_-_6px)] left-[calc(13%_-_6px)]`}
         ></span>
       </div>
-    </>
+    </div>
   );
 };
 

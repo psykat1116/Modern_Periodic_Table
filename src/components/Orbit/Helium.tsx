@@ -6,15 +6,6 @@ const Helium = ({ Symbol }: { Symbol: string }) => {
   return (
     <>
       <div
-        className={`absolute h-[35px] w-[35px] ${
-          theme === "dark"
-            ? "bg-bg_light_placeholder text-text_secondary"
-            : "bg-bg_dark_placeholder text-text_primary"
-        } flex justify-center items-center rounded-full`}
-      >
-        {Symbol}
-      </div>
-      <div
         className={`absolute h-[70px] w-[70px] rounded-full border ${
           theme === "dark"
             ? "border-bg_light_placeholder"
