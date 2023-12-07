@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
-const Hydrogen = ({ Symbol }: { Symbol: string }) => {
+const Hydrogen = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div className="absolute animate-rotate hover:pause cursor-pointer flex justify-center items-center">

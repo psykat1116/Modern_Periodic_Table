@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
-const Beryllium = ({ Symbol }: { Symbol: string }) => {
+const Beryllium = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div className="animate-rotate hover:pause cursor-pointer flex justify-center items-center">

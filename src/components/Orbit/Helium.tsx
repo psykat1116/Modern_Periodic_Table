@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
-const Helium = ({ Symbol }: { Symbol: string }) => {
+const Helium = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <>

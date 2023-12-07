@@ -9,41 +9,81 @@ import Boron from "./Orbit/Boron";
 import Nitrogen from "./Orbit/Nitrogen";
 import Oxygen from "./Orbit/Oxygen";
 import Fluorine from "./Orbit/Fluorine";
+import Sodium from "./Orbit/Sodium";
+import Magnesium from "./Orbit/Magnesium";
+import Aluminium from "./Orbit/Aluminium";
+import Silicon from "./Orbit/Silicon";
+import Phosphorus from "./Orbit/Phosphorus";
+import Sulphur from "./Orbit/Sulphur";
+import Chlorine from "./Orbit/Chlorine";
+import Argon from "./Orbit/Argon";
+import Potassium from "./Orbit/Potassium";
+import Calcium from "./Orbit/Calcium";
 
 const GetOrbit = ({ id }: { id: string }) => {
   switch (id) {
     case "1":
-      return <Hydrogen Symbol="H" />;
+      return <Hydrogen />;
       break;
     case "2":
-      return <Helium Symbol="He" />;
+      return <Helium />;
       break;
     case "3":
-      return <Lithium Symbol="Li" />;
+      return <Lithium />;
       break;
     case "4":
-      return <Beryllium Symbol="Be" />;
+      return <Beryllium />;
       break;
     case "5":
-      return <Boron Symbol="Be" />;
+      return <Boron />;
       break;
     case "6":
-      return <Carbon Symbol="C" />;
+      return <Carbon />;
       break;
     case "7":
-      return <Nitrogen Symbol="N" />;
+      return <Nitrogen />;
       break;
     case "8":
-      return <Oxygen Symbol="O" />;
+      return <Oxygen />;
       break;
     case "9":
-      return <Fluorine Symbol="F" />;
+      return <Fluorine />;
       break;
     case "10":
-      return <Neon Symbol="Ne" />;
+      return <Neon />;
+      break;
+    case "11":
+      return <Sodium />;
+      break;
+    case "12":
+      return <Magnesium />;
+      break;
+    case "13":
+      return <Aluminium />;
+      break;
+    case "14":
+      return <Silicon />;
+      break;
+    case "15":
+      return <Phosphorus />;
+      break;
+    case "16":
+      return <Sulphur />;
+      break;
+    case "17":
+      return <Chlorine />;
+      break;
+    case "18":
+      return <Argon />;
+      break;
+    case "19":
+      return <Potassium />;
+      break;
+    case "20":
+      return <Calcium />;
       break;
     default:
-      return <Hydrogen Symbol="H" />;
+      return <Hydrogen />;
       break;
   }
 };

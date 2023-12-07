@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
-const Nitrogen = () => {
+const Magnesium = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div className="animate-rotate hover:pause cursor-pointer flex justify-center items-center">
@@ -46,32 +46,75 @@ const Nitrogen = () => {
             theme === "dark"
               ? "bg-bg_light_placeholder"
               : "bg-bg_dark_placeholder"
-          } top-[calc(30%_-_6px)] left-[calc(4%_-_6px)]`}
+          } top-[calc(15%_-_6px)] left-[calc(87%_-_6px)]`}
         ></span>
         <span
           className={`absolute h-[12px] w-[12px] rounded-full ${
             theme === "dark"
               ? "bg-bg_light_placeholder"
               : "bg-bg_dark_placeholder"
-          } top-[calc(30%_-_6px)] right-[calc(4%_-_6px)]`}
+          } top-[calc(50%_-_6px)] left-[calc(100%_-_6px)]`}
         ></span>
         <span
           className={`absolute h-[12px] w-[12px] rounded-full ${
             theme === "dark"
               ? "bg-bg_light_placeholder"
               : "bg-bg_dark_placeholder"
-          } top-[calc(80%_-_6px)] right-[calc(9%_-_6px)]`}
+          } bottom-[calc(15%_-_6px)] left-[calc(87%_-_6px)]`}
         ></span>
         <span
           className={`absolute h-[12px] w-[12px] rounded-full ${
             theme === "dark"
               ? "bg-bg_light_placeholder"
               : "bg-bg_dark_placeholder"
-          } top-[calc(80%_-_6px)] left-[calc(9%_-_6px)]`}
+          } bottom-[-6px] left-[calc(50%_-_6px)]`}
+        ></span>
+        <span
+          className={`absolute h-[12px] w-[12px] rounded-full ${
+            theme === "dark"
+              ? "bg-bg_light_placeholder"
+              : "bg-bg_dark_placeholder"
+          } bottom-[calc(15%_-_6px)] left-[calc(13%_-_6px)]`}
+        ></span>
+        <span
+          className={`absolute h-[12px] w-[12px] rounded-full ${
+            theme === "dark"
+              ? "bg-bg_light_placeholder"
+              : "bg-bg_dark_placeholder"
+          } top-[calc(50%_-_6px)] left-[-6px]`}
+        ></span>
+        <span
+          className={`absolute h-[12px] w-[12px] rounded-full ${
+            theme === "dark"
+              ? "bg-bg_light_placeholder"
+              : "bg-bg_dark_placeholder"
+          } top-[calc(15%_-_6px)] left-[calc(13%_-_6px)]`}
+        ></span>
+      </div>
+      <div
+        className={`absolute h-[170px] w-[170px] rounded-full border ${
+          theme === "dark"
+            ? "border-bg_light_placeholder"
+            : "border-bg_dark_placeholder"
+        }`}
+      >
+        <span
+          className={`absolute h-[12px] w-[12px] rounded-full ${
+            theme === "dark"
+              ? "bg-bg_light_placeholder"
+              : "bg-bg_dark_placeholder"
+          } top-[-6px] left-[calc(50%_-_6px)]`}
+        ></span>
+        <span
+          className={`absolute h-[12px] w-[12px] rounded-full ${
+            theme === "dark"
+              ? "bg-bg_light_placeholder"
+              : "bg-bg_dark_placeholder"
+          } bottom-[-6px] left-[calc(50%_-_6px)]`}
         ></span>
       </div>
     </div>
   );
 };
 
-export default Nitrogen;
+export default Magnesium;
