@@ -1,30 +1,44 @@
 import React from "react";
-import Hydrogen from "./Orbit/Hydrogen";
-import Helium from "./Orbit/Helium";
-import Neon from "./Orbit/Neon";
-import Lithium from "./Orbit/Lithium";
-import Beryllium from "./Orbit/Beryllium";
-import Carbon from "./Orbit/Carbon";
-import Boron from "./Orbit/Boron";
-import Nitrogen from "./Orbit/Nitrogen";
-import Oxygen from "./Orbit/Oxygen";
-import Fluorine from "./Orbit/Fluorine";
-import Sodium from "./Orbit/Sodium";
-import Magnesium from "./Orbit/Magnesium";
-import Aluminium from "./Orbit/Aluminium";
-import Silicon from "./Orbit/Silicon";
-import Phosphorus from "./Orbit/Phosphorus";
-import Sulphur from "./Orbit/Sulphur";
-import Chlorine from "./Orbit/Chlorine";
-import Argon from "./Orbit/Argon";
-import Potassium from "./Orbit/Potassium";
-import Calcium from "./Orbit/Calcium";
-import Scandium from "./Orbit/Scandium";
-import Titanium from "./Orbit/Titanium";
-import Vanadium from "./Orbit/Vanadium";
-import Chromium from "./Orbit/Chromium";
-import Manganese from "./Orbit/Manganese";
-import Iron from "./Orbit/Iron";
+import {
+  Hydrogen,
+  Helium,
+  Lithium,
+  Beryllium,
+  Boron,
+  Carbon,
+  Nitrogen,
+  Oxygen,
+  Fluorine,
+  Neon,
+  Sodium,
+  Magnesium,
+  Aluminium,
+  Silicon,
+  Phosphorus,
+  Sulphur,
+  Chlorine,
+  Argon,
+  Potassium,
+  Calcium,
+  Scandium,
+  Titanium,
+  Vanadium,
+  Chromium,
+  Manganese,
+  Iron,
+  Cobalt,
+  Nickel,
+  Copper,
+  Zinc,
+  Gallium,
+  Germanium,
+  Arsenic,
+  Selenium,
+  Bromine,
+  Krypton,
+  Rubidium,
+  Strontium,
+} from "./Orbit/index";
 
 const GetOrbit = ({ id }: { id: string }) => {
   switch (id) {
@@ -105,6 +119,42 @@ const GetOrbit = ({ id }: { id: string }) => {
       break;
     case "26":
       return <Iron />;
+      break;
+    case "27":
+      return <Cobalt />;
+      break;
+    case "28":
+      return <Nickel />;
+      break;
+    case "29":
+      return <Copper />;
+      break;
+    case "30":
+      return <Zinc />;
+      break;
+    case "31":
+      return <Gallium />;
+      break;
+    case "32":
+      return <Germanium />;
+      break;
+    case "33":
+      return <Arsenic />;
+      break;
+    case "34":
+      return <Selenium />;
+      break;
+    case "35":
+      return <Bromine />;
+      break;
+    case "36":
+      return <Krypton />;
+      break;
+    case "37":
+      return <Rubidium />;
+      break;
+    case "38":
+      return <Strontium />;
       break;
     default:
       return <Hydrogen />;
