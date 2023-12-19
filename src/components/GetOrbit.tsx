@@ -38,6 +38,13 @@ import {
   Krypton,
   Rubidium,
   Strontium,
+  Yttrium,
+  Zirconium,
+  Niobium,
+  Molybdenum,
+  Technetium,
+  Ruthenium,
+  Rhodium,
 } from "./Orbit/index";
 
 const GetOrbit = ({ id }: { id: string }) => {
@@ -155,6 +162,27 @@ const GetOrbit = ({ id }: { id: string }) => {
       break;
     case "38":
       return <Strontium />;
+      break;
+    case "39":
+      return <Yttrium />;
+      break;
+    case "40":
+      return <Zirconium />;
+      break;
+    case "41":
+      return <Niobium />;
+      break;
+    case "42":
+      return <Molybdenum />;
+      break;
+    case "43":
+      return <Technetium />;
+      break;
+    case "44":
+      return <Ruthenium />;
+      break;
+    case "45":
+      return <Rhodium />;
       break;
     default:
       return <Hydrogen />;

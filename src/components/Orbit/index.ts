@@ -36,6 +36,13 @@ import Bromine from "./Bromine";
 import Krypton from "./Krypton";
 import Rubidium from "./Rubidium";
 import Strontium from "./Strontium";
+import Yttrium from "./Yttrium";
+import Zirconium from "./Zirconium";
+import Niobium from "./Niobium";
+import Molybdenum from "./Molybdenum";
+import Technetium from "./Technetium";
+import Ruthenium from "./Ruthenium";
+import Rhodium from "./Rhodium";
 
 export {
   Hydrogen,
@@ -76,4 +83,11 @@ export {
   Krypton,
   Rubidium,
   Strontium,
+  Yttrium,
+  Zirconium,
+  Niobium,
+  Molybdenum,
+  Technetium,
+  Ruthenium,
+  Rhodium,
 };
