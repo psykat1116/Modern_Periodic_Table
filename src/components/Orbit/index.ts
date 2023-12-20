@@ -54,6 +54,15 @@ import Iodine from "./Iodine";
 import Xenon from "./Xenon";
 import Cesium from "./Cesium";
 import Barium from "./Barium";
+import Lanthanum from "./Lanthanum";
+import Cerium from "./Cerium";
+import Praseodymium from "./Praseodymium";
+import Promethium from "./Promethium";
+import Europium from "./Europium";
+import Gadolinium from "./Gadolinium";
+import Terbium from "./Terbium";
+import Holmium from "./Holmium";
+import Thulium from "./Thulium";
 
 export {
   Hydrogen,
@@ -112,4 +121,13 @@ export {
   Xenon,
   Cesium,
   Barium,
+  Lanthanum,
+  Cerium,
+  Praseodymium,
+  Promethium,
+  Europium,
+  Gadolinium,
+  Terbium,
+  Holmium,
+  Thulium,
 };

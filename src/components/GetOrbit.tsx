@@ -56,6 +56,15 @@ import {
   Xenon,
   Cesium,
   Barium,
+  Lanthanum,
+  Cerium,
+  Praseodymium,
+  Promethium,
+  Europium,
+  Gadolinium,
+  Terbium,
+  Holmium,
+  Thulium,
 } from "./Orbit/index";
 
 const GetOrbit = ({ id }: { id: string }) => {
@@ -227,6 +236,33 @@ const GetOrbit = ({ id }: { id: string }) => {
       break;
     case "56":
       return <Barium />;
+      break;
+    case "57":
+      return <Lanthanum />;
+      break;
+    case "58":
+      return <Cerium />;
+      break;
+    case "59":
+      return <Praseodymium />;
+      break;
+    case "61":
+      return <Promethium />;
+      break;
+    case "63":
+      return <Europium />;
+      break;
+    case "64":
+      return <Gadolinium />;
+      break;
+    case "65":
+      return <Terbium />;
+      break;
+    case "67":
+      return <Holmium />;
+      break;
+    case "69":
+      return <Thulium />;
       break;
     default:
       return <Hydrogen />;
