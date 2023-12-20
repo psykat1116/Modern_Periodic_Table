@@ -54,6 +54,8 @@ import {
   Tellurium,
   Iodine,
   Xenon,
+  Cesium,
+  Barium,
 } from "./Orbit/index";
 
 const GetOrbit = ({ id }: { id: string }) => {
@@ -219,6 +221,12 @@ const GetOrbit = ({ id }: { id: string }) => {
       break;
     case "54":
       return <Xenon />;
+      break;
+    case "55":
+      return <Cesium />;
+      break;
+    case "56":
+      return <Barium />;
       break;
     default:
       return <Hydrogen />;

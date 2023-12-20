@@ -52,6 +52,8 @@ import Antimony from "./Antimony";
 import Tellurium from "./Tellurium";
 import Iodine from "./Iodine";
 import Xenon from "./Xenon";
+import Cesium from "./Cesium";
+import Barium from "./Barium";
 
 export {
   Hydrogen,
@@ -108,4 +110,6 @@ export {
   Tellurium,
   Iodine,
   Xenon,
+  Cesium,
+  Barium,
 };
