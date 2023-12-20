@@ -43,6 +43,15 @@ import Molybdenum from "./Molybdenum";
 import Technetium from "./Technetium";
 import Ruthenium from "./Ruthenium";
 import Rhodium from "./Rhodium";
+import Palladium from "./Palladium";
+import Silver from "./Silver";
+import Cadmium from "./Cadmium";
+import Indium from "./Indium";
+import Tin from "./Tin";
+import Antimony from "./Antimony";
+import Tellurium from "./Tellurium";
+import Iodine from "./Iodine";
+import Xenon from "./Xenon";
 
 export {
   Hydrogen,
@@ -90,4 +99,13 @@ export {
   Technetium,
   Ruthenium,
   Rhodium,
+  Palladium,
+  Silver,
+  Cadmium,
+  Indium,
+  Tin,
+  Antimony,
+  Tellurium,
+  Iodine,
+  Xenon,
 };

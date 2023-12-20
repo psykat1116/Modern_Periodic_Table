@@ -45,6 +45,15 @@ import {
   Technetium,
   Ruthenium,
   Rhodium,
+  Palladium,
+  Silver,
+  Cadmium,
+  Indium,
+  Tin,
+  Antimony,
+  Tellurium,
+  Iodine,
+  Xenon,
 } from "./Orbit/index";
 
 const GetOrbit = ({ id }: { id: string }) => {
@@ -183,6 +192,33 @@ const GetOrbit = ({ id }: { id: string }) => {
       break;
     case "45":
       return <Rhodium />;
+      break;
+    case "46":
+      return <Palladium />;
+      break;
+    case "47":
+      return <Silver />;
+      break;
+    case "48":
+      return <Cadmium />;
+      break;
+    case "49":
+      return <Indium />;
+      break;
+    case "50":
+      return <Tin />;
+      break;
+    case "51":
+      return <Antimony />;
+      break;
+    case "52":
+      return <Tellurium />;
+      break;
+    case "53":
+      return <Iodine />;
+      break;
+    case "54":
+      return <Xenon />;
       break;
     default:
       return <Hydrogen />;
