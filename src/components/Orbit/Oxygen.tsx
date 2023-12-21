@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { Two, Six } from "@/components/Shell";
 
 const Oxygen = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
@@ -12,20 +13,7 @@ const Oxygen = () => {
             : "border-bg_dark_placeholder"
         }`}
       >
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
+        <Two />
       </div>
       <div
         className={`absolute h-[120px] w-[120px] rounded-full border ${
@@ -34,48 +22,7 @@ const Oxygen = () => {
             : "border-bg_dark_placeholder"
         }`}
       >
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(25%_-_5px)] left-[calc(5%_-_5px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(25%_-_5px)] right-[calc(5%_-_5px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(70%_-_5px)] left-[calc(3%_-_5px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(70%_-_5px)] right-[calc(3%_-_5px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
+        <Six />
       </div>
     </div>
   );

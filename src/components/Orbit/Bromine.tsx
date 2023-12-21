@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { Two, Eight, Eighteen, Seven } from "@/components/Shell";
 
 const Bromine = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
@@ -12,20 +13,7 @@ const Bromine = () => {
             : "border-bg_dark_placeholder"
         }`}
       >
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
+        <Two />
       </div>
       <div
         className={`absolute h-[120px] w-[120px] rounded-full border ${
@@ -34,62 +22,7 @@ const Bromine = () => {
             : "border-bg_dark_placeholder"
         }`}
       >
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(15%_-_6px)] left-[calc(87%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(50%_-_6px)] left-[calc(100%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[calc(15%_-_6px)] left-[calc(87%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[calc(15%_-_6px)] left-[calc(13%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(50%_-_6px)] left-[-6px]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(15%_-_6px)] left-[calc(13%_-_6px)]`}
-        ></span>
+        <Eight />
       </div>
       <div
         className={`absolute h-[170px] w-[170px] rounded-full border ${
@@ -98,132 +31,7 @@ const Bromine = () => {
             : "border-bg_dark_placeholder"
         }`}
       >
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(42%_-_6px)] right-[calc(1%_-_7px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(42%_-_6px)] left-[calc(1%_-_7px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[calc(42%_-_6px)] right-[calc(1%_-_7px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[calc(42%_-_6px)] left-[calc(1%_-_7px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(2.5%_-_6px)] left-[calc(32%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(2.5%_-_6px)] right-[calc(32%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[calc(2.5%_-_6px)] left-[calc(32%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[calc(2.5%_-_6px)] right-[calc(32%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[calc(12%_-_6px)] left-[calc(17%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[calc(12%_-_6px)] right-[calc(17%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(12%_-_6px)] left-[calc(17%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(12%_-_6px)] right-[calc(17%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[calc(25%_-_6px)] left-[calc(6%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[calc(25%_-_6px)] right-[calc(6%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(25%_-_6px)] left-[calc(6%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(25%_-_6px)] right-[calc(6%_-_6px)]`}
-        ></span>
+        <Eighteen />
       </div>
       <div
         className={`absolute h-[220px] w-[220px] rounded-full border ${
@@ -232,55 +40,7 @@ const Bromine = () => {
             : "border-bg_dark_placeholder"
         }`}
       >
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(20%_-_6px)] left-[calc(9%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(20%_-_6px)] right-[calc(9%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(60%_-_5px)] left-[calc(1%_-_5px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(60%_-_5px)] right-[calc(1%_-_5px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(95%_-_5px)] left-[calc(27%_-_5px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[calc(95%_-_5px)] right-[calc(27%_-_5px)]`}
-        ></span>
+        <Seven />
       </div>
     </div>
   );

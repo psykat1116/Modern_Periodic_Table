@@ -59,12 +59,65 @@ import {
   Lanthanum,
   Cerium,
   Praseodymium,
+  Neodymium,
   Promethium,
+  Samarium,
   Europium,
   Gadolinium,
   Terbium,
+  Dysprosium,
   Holmium,
+  Erbium,
   Thulium,
+  Ytterbium,
+  Lutetium,
+  Hafnium,
+  Tantalum,
+  Tungsten,
+  Rhenium,
+  Osmium,
+  Iridium,
+  Platinum,
+  Gold,
+  Mercury,
+  Thallium,
+  Lead,
+  Bismuth,
+  Polonium,
+  Astatine,
+  Radon,
+  Francium,
+  Radium,
+  Actinium,
+  Thorium,
+  Protactinium,
+  Uranium,
+  Neptunium,
+  Plutonium,
+  Americium,
+  Curium,
+  Berkelium,
+  Californium,
+  Einsteinium,
+  Fermium,
+  Mendelevium,
+  Nobelium,
+  Lawrencium,
+  Rutherfordium,
+  Dubnium,
+  Seaborgium,
+  Bohrium,
+  Hassium,
+  Meitnerium,
+  Darmstadtium,
+  Roentgenium,
+  Copernicium,
+  Nihonium,
+  Flerovium,
+  Moscovium,
+  Livermorium,
+  Tennessine,
+  Oganesson,
 } from "./Orbit/index";
 
 const GetOrbit = ({ id }: { id: string }) => {
@@ -246,8 +299,14 @@ const GetOrbit = ({ id }: { id: string }) => {
     case "59":
       return <Praseodymium />;
       break;
+    case "60":
+      return <Neodymium />;
+      break;
     case "61":
       return <Promethium />;
+      break;
+    case "62":
+      return <Samarium />;
       break;
     case "63":
       return <Europium />;
@@ -258,11 +317,164 @@ const GetOrbit = ({ id }: { id: string }) => {
     case "65":
       return <Terbium />;
       break;
+    case "66":
+      return <Dysprosium />;
+      break;
     case "67":
       return <Holmium />;
       break;
+    case "68":
+      return <Erbium />;
+      break;
     case "69":
       return <Thulium />;
+      break;
+    case "70":
+      return <Ytterbium />;
+      break;
+    case "71":
+      return <Lutetium />;
+      break;
+    case "72":
+      return <Hafnium />;
+      break;
+    case "73":
+      return <Tantalum />;
+      break;
+    case "74":
+      return <Tungsten />;
+      break;
+    case "75":
+      return <Rhenium />;
+      break;
+    case "76":
+      return <Osmium />;
+      break;
+    case "77":
+      return <Iridium />;
+      break;
+    case "78":
+      return <Platinum />;
+      break;
+    case "79":
+      return <Gold />;
+      break;
+    case "80":
+      return <Mercury />;
+      break;
+    case "81":
+      return <Thallium />;
+      break;
+    case "82":
+      return <Lead />;
+      break;
+    case "83":
+      return <Bismuth />;
+      break;
+    case "84":
+      return <Polonium />;
+      break;
+    case "85":
+      return <Astatine />;
+      break;
+    case "86":
+      return <Radon />;
+      break;
+    case "87":
+      return <Francium />;
+      break;
+    case "88":
+      return <Radium />;
+      break;
+    case "89":
+      return <Actinium />;
+      break;
+    case "90":
+      return <Thorium />;
+      break;
+    case "91":
+      return <Protactinium />;
+      break;
+    case "92":
+      return <Uranium />;
+      break;
+    case "93":
+      return <Neptunium />;
+      break;
+    case "94":
+      return <Plutonium />;
+      break;
+    case "95":
+      return <Americium />;
+      break;
+    case "96":
+      return <Curium />;
+      break;
+    case "97":
+      return <Berkelium />;
+      break;
+    case "98":
+      return <Californium />;
+      break;
+    case "99":
+      return <Einsteinium />;
+      break;
+    case "100":
+      return <Fermium />;
+      break;
+    case "101":
+      return <Mendelevium />;
+      break;
+    case "102":
+      return <Nobelium />;
+      break;
+    case "103":
+      return <Lawrencium />;
+      break;
+    case "104":
+      return <Rutherfordium />;
+      break;
+    case "105":
+      return <Dubnium />;
+      break;
+    case "106":
+      return <Seaborgium />;
+      break;
+    case "107":
+      return <Bohrium />;
+      break;
+    case "108":
+      return <Hassium />;
+      break;
+    case "109":
+      return <Meitnerium />;
+      break;
+    case "110":
+      return <Darmstadtium />;
+      break;
+    case "111":
+      return <Roentgenium />;
+      break;
+    case "112":
+      return <Copernicium />;
+      break;
+    case "113":
+      return <Nihonium />;
+      break;
+    case "114":
+      return <Flerovium />;
+      break;
+    case "115":
+      return <Moscovium />;
+      break;
+    case "116":
+      return <Livermorium />;
+      break;
+    case "117":
+      return <Tennessine />;
+      break;
+    case "118":
+      return <Oganesson />;
       break;
     default:
       return <Hydrogen />;

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { One } from "@/components/Shell";
 
 const Hydrogen = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
@@ -12,13 +13,7 @@ const Hydrogen = () => {
             : "border-bg_dark_placeholder"
         }`}
       >
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[-6px] left-[calc(50%_-_6px)] `}
-        ></span>
+        <One />
       </div>
     </div>
   );

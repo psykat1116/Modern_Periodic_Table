@@ -57,12 +57,65 @@ import Barium from "./Barium";
 import Lanthanum from "./Lanthanum";
 import Cerium from "./Cerium";
 import Praseodymium from "./Praseodymium";
+import Neodymium from "./Neodymium";
 import Promethium from "./Promethium";
+import Samarium from "./Samarium";
 import Europium from "./Europium";
 import Gadolinium from "./Gadolinium";
 import Terbium from "./Terbium";
+import Dysprosium from "./Dysprosium";
 import Holmium from "./Holmium";
+import Erbium from "./Erbium";
 import Thulium from "./Thulium";
+import Ytterbium from "./Ytterbium";
+import Lutetium from "./Lutetium";
+import Hafnium from "./Hafnium";
+import Tantalum from "./Tantalum";
+import Tungsten from "./Tungsten";
+import Rhenium from "./Rhenium";
+import Osmium from "./Osmium";
+import Iridium from "./Iridium";
+import Platinum from "./Platinum";
+import Gold from "./Gold";
+import Mercury from "./Mercury";
+import Thallium from "./Thallium";
+import Lead from "./Lead";
+import Bismuth from "./Bismuth";
+import Polonium from "./Polonium";
+import Astatine from "./Astatine";
+import Radon from "./Radon";
+import Francium from "./Francium";
+import Radium from "./Radium";
+import Actinium from "./Actinium";
+import Thorium from "./Thorium";
+import Protactinium from "./Protactinium";
+import Uranium from "./Uranium";
+import Neptunium from "./Neptunium";
+import Plutonium from "./Plutonium";
+import Americium from "./Americium";
+import Curium from "./Curium";
+import Berkelium from "./Berkelium";
+import Californium from "./Californium";
+import Einsteinium from "./Einsteinium";
+import Fermium from "./Fermium";
+import Mendelevium from "./Mendelevium";
+import Nobelium from "./Nobelium";
+import Lawrencium from "./Lawrencium";
+import Rutherfordium from "./Rutherfordium";
+import Dubnium from "./Dubnium";
+import Seaborgium from "./Seaborgium";
+import Bohrium from "./Bohrium";
+import Hassium from "./Hassium";
+import Meitnerium from "./Meitnerium";
+import Darmstadtium from "./Darmstadtium";
+import Roentgenium from "./Roentgenium";
+import Copernicium from "./Copernicium";
+import Nihonium from "./Nihonium";
+import Flerovium from "./Flerovium";
+import Moscovium from "./Moscovium";
+import Livermorium from "./Livermorium";
+import Tennessine from "./Tennessine";
+import Oganesson from "./Oganesson";
 
 export {
   Hydrogen,
@@ -124,10 +177,63 @@ export {
   Lanthanum,
   Cerium,
   Praseodymium,
+  Neodymium,
   Promethium,
+  Samarium,
   Europium,
   Gadolinium,
   Terbium,
+  Dysprosium,
   Holmium,
+  Erbium,
   Thulium,
+  Ytterbium,
+  Lutetium,
+  Hafnium,
+  Tantalum,
+  Tungsten,
+  Rhenium,
+  Osmium,
+  Iridium,
+  Platinum,
+  Gold,
+  Mercury,
+  Thallium,
+  Lead,
+  Bismuth,
+  Polonium,
+  Astatine,
+  Radon,
+  Francium,
+  Radium,
+  Actinium,
+  Thorium,
+  Protactinium,
+  Uranium,
+  Neptunium,
+  Plutonium,
+  Americium,
+  Curium,
+  Berkelium,
+  Californium,
+  Einsteinium,
+  Fermium,
+  Mendelevium,
+  Nobelium,
+  Lawrencium,
+  Rutherfordium,
+  Dubnium,
+  Seaborgium,
+  Bohrium,
+  Hassium,
+  Meitnerium,
+  Darmstadtium,
+  Roentgenium,
+  Copernicium,
+  Nihonium,
+  Flerovium,
+  Moscovium,
+  Livermorium,
+  Tennessine,
+  Oganesson,
 };

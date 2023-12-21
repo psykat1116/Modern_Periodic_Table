@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { Two } from "@/components/Shell";
 
 const Beryllium = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
@@ -12,20 +13,7 @@ const Beryllium = () => {
             : "border-bg_dark_placeholder"
         }`}
       >
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
+        <Two />
       </div>
       <div
         className={`absolute h-[120px] w-[120px] rounded-full border ${
@@ -34,20 +22,7 @@ const Beryllium = () => {
             : "border-bg_dark_placeholder"
         }`}
       >
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } top-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
-        <span
-          className={`absolute h-[12px] w-[12px] rounded-full ${
-            theme === "dark"
-              ? "bg-bg_light_placeholder"
-              : "bg-bg_dark_placeholder"
-          } bottom-[-6px] left-[calc(50%_-_6px)]`}
-        ></span>
+        <Two />
       </div>
     </div>
   );

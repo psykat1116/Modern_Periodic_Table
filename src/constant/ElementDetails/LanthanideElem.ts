@@ -1188,7 +1188,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       block: "F",
       cas_number: "7440-52-0",
       cid_number: "23980",
-      symbol: "Ho",
+      symbol: "Er",
     },
     particles: {
       electrons: 68,
