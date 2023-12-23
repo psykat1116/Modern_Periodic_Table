@@ -36,9 +36,9 @@ const HealthSafety = ({
       <h1 className="text-xl">Health & Safety</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {Hazard_class && (
-          <div className="flex flex-row justify-start items-center w-full">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              className=" pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
               href="/property/hazard_class"
             >
               DOT Hazard Class
@@ -48,7 +48,7 @@ const HealthSafety = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{Hazard_class}</p>
               <button
@@ -66,9 +66,9 @@ const HealthSafety = ({
           </div>
         )}
         {dot_number && (
-          <div className="flex flex-row justify-start items-center w-full ">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
               href="/property/dot_number"
             >
               DOT Numbers
@@ -78,7 +78,7 @@ const HealthSafety = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{dot_number}</p>
               <button
@@ -94,9 +94,9 @@ const HealthSafety = ({
           </div>
         )}
         {rtecs_number && (
-          <div className="flex flex-row justify-start items-center w-full ">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
               href="/property/rtecs_number"
             >
               RTECS Number
@@ -106,7 +106,7 @@ const HealthSafety = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{rtecs_number}</p>
               <button
@@ -124,9 +124,9 @@ const HealthSafety = ({
           </div>
         )}
         {nfpa_label && (
-          <div className="flex flex-row justify-start items-start w-full ">
+          <div className="flex flex-row justify-start items-start w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
               href="https://en.wikipedia.org/wiki/NFPA_704"
             >
               NFPA Label

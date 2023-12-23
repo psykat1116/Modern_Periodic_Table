@@ -25,6 +25,15 @@ const Potassium = () => {
         <Eight />
       </div>
       <div
+        className={`absolute h-[170px] w-[170px] rounded-full border ${
+          theme === "dark"
+            ? "border-bg_light_placeholder"
+            : "border-bg_dark_placeholder"
+        }`}
+      >
+        <Eight />
+      </div>
+      <div
         className={`absolute h-[220px] w-[220px] rounded-full border ${
           theme === "dark"
             ? "border-bg_light_placeholder"

@@ -40,9 +40,9 @@ const Prevalence = ({
       <h1 className="text-xl">Prevalence</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {universe && (
-          <div className="flex flex-row justify-start items-center w-full ">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
               href="/property/universe"
             >
               Universe
@@ -52,7 +52,7 @@ const Prevalence = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{
@@ -72,9 +72,9 @@ const Prevalence = ({
           </div>
         )}
         {sun && (
-          <div className="flex flex-row justify-start items-center w-full ">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
               href="/property/sun"
             >
               Sun
@@ -84,7 +84,7 @@ const Prevalence = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(sun) }}
@@ -100,9 +100,9 @@ const Prevalence = ({
           </div>
         )}
         {ocean && (
-          <div className="flex flex-row justify-start items-center w-full ">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
               href="/property/ocean"
             >
               Ocean
@@ -112,7 +112,7 @@ const Prevalence = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(ocean) }}
@@ -128,9 +128,9 @@ const Prevalence = ({
           </div>
         )}
         {human && (
-          <div className="flex flex-row justify-start items-center w-full ">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
               href="/property/human"
             >
               Human
@@ -140,7 +140,7 @@ const Prevalence = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(human) }}
@@ -156,9 +156,9 @@ const Prevalence = ({
           </div>
         )}
         {earth_crust && (
-          <div className="flex flex-row justify-start items-center w-full ">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
               href="/property/earth_crust"
             >
               Earth Crust
@@ -168,7 +168,7 @@ const Prevalence = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{
@@ -186,9 +186,9 @@ const Prevalence = ({
           </div>
         )}
         {meteorites && (
-          <div className="flex flex-row justify-start items-center w-full ">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[20%]"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
               href="/property/meteorites"
             >
               Meteorites
@@ -198,7 +198,7 @@ const Prevalence = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{

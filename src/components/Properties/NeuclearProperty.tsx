@@ -49,9 +49,9 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
     >
       <h1 className="text-xl">Neuclear Properties</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
-        <div className="flex flex-row justify-start items-center w-full ">
+        <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
           <Link
-            className=" pr-2 py-1 rounded-[4px] w-[25%]"
+            className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
             href="/property/radioactive"
           >
             Radioactive
@@ -61,7 +61,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
           >
             <p>{radioactive}</p>
             <button
@@ -75,9 +75,9 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full ">
+        <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
           <Link
-            className=" pr-2 py-1 rounded-[4px] w-[25%]"
+            className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
             href="/property/half_life"
           >
             Half Life(s)
@@ -87,7 +87,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
           >
             <p
               dangerouslySetInnerHTML={{
@@ -105,9 +105,9 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full ">
+        <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
           <Link
-            className=" pr-2 py-1 rounded-[4px] w-[25%]"
+            className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
             href="/property/lifetime"
           >
             Lifetime(s)
@@ -117,7 +117,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
           >
             <p
               dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(lifetime) }}
@@ -132,9 +132,9 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
           </div>
         </div>
         {neutron_cross_section && (
-          <div className="flex flex-row justify-start items-center w-full ">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%]"
+              className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
               href="/property/neutron_cross_section"
             >
               Neutron Cross Section
@@ -144,7 +144,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{neutron_cross_section}</p>
               <button
@@ -165,9 +165,9 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
           </div>
         )}
         {neutron_mass_absorption && (
-          <div className="flex flex-row justify-start items-center w-full ">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%]"
+              className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
               href="/property/neutron_mass_absorption"
             >
               Neutron Mass Absorption
@@ -177,7 +177,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{neutron_mass_absorption}</p>
               <button
@@ -198,9 +198,9 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
           </div>
         )}
         {decay_mode && (
-          <div className="flex flex-row justify-start items-center w-full ">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%]"
+              className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
               href="/property/decay_mode"
             >
               Decay Mode
@@ -210,7 +210,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{decay_mode}</p>
               <button onClick={() => handleCopy(decay_mode, "decay_mode")}>
@@ -224,9 +224,9 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
           </div>
         )}
         {quantum_numbers && (
-          <div className="flex flex-row justify-start items-center w-full">
+          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%]"
+              className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
               href="/property/quantum_number"
             >
               Quantum Numbers
@@ -236,7 +236,7 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{
@@ -255,15 +255,15 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
             </div>
           </div>
         )}
-        <div className="flex flex-row justify-start items-start w-full ">
+        <div className="flex flex-row justify-start items-start w-full max-sm:flex-col">
           <Link
-            className=" pr-2 py-1 rounded-[4px] w-[25%]"
+            className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
             href="/property/isotopes"
           >
             Known Isotopes
           </Link>
           <div
-            className={`w-[75%] py-1 rounded-[4px] grid grid-cols-12 gap-2 select-none`}
+            className={`w-[75%] py-1 rounded-[4px] grid grid-cols-12 gap-2 select-none max-sm:w-full max-sm:grid-cols-5`}
           >
             {isotopes.map((elem) => {
               return (
@@ -283,15 +283,15 @@ const NeuclearProperty = ({ property, name }: NProperty) => {
           </div>
         </div>
         {stable && (
-          <div className="flex flex-row justify-start items-start w-full ">
+          <div className="flex flex-row justify-start items-start w-full max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%]"
+              className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
               href="/property/stable_isotope"
             >
               Stable Isotopes
             </Link>
             <div
-              className={`w-[75%] py-1 rounded-[4px] grid grid-cols-12 gap-2 select-none`}
+              className={`w-[75%] py-1 rounded-[4px] grid grid-cols-12 gap-2 select-none max-sm:w-full max-sm:grid-cols-5`}
             >
               {stable.map((elem) => {
                 return (

@@ -60,9 +60,9 @@ const EMProperty = ({
       <h1 className="text-xl">Electromagnetic property</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {electrical_type && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm max-sm:w-full"
               href="/property/electrical_type"
             >
               Electrical Type
@@ -72,7 +72,7 @@ const EMProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{electrical_type}</p>
               <button
@@ -88,9 +88,9 @@ const EMProperty = ({
           </div>
         )}
         {magnetic_type && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm max-sm:w-full"
               href="/property/magnetic_type"
             >
               Magnetic Type
@@ -100,7 +100,7 @@ const EMProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{magnetic_type}</p>
               <button
@@ -116,9 +116,9 @@ const EMProperty = ({
           </div>
         )}
         {electrical_conductivity && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm max-sm:w-full"
               href="/property/electrical_conductivity"
             >
               Electrical Conductivity
@@ -128,7 +128,7 @@ const EMProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              }  px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              }  px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{
@@ -159,9 +159,9 @@ const EMProperty = ({
           </div>
         )}
         {resistivity && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm max-sm:w-full"
               href="/property/resistivity"
             >
               Resistivity
@@ -171,7 +171,7 @@ const EMProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{
@@ -190,9 +190,9 @@ const EMProperty = ({
           </div>
         )}
         {curie_point && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm max-sm:w-full"
               href="/property/curie_point"
             >
               Curie Point
@@ -202,7 +202,7 @@ const EMProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{curie_point}</p>
               <button
@@ -221,9 +221,9 @@ const EMProperty = ({
           </div>
         )}
         {superconducting_point && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm max-sm:w-full"
               href="/property/superconducting_point"
             >
               Superconducting Point
@@ -233,7 +233,7 @@ const EMProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{superconducting_point}</p>
               <button
@@ -255,9 +255,9 @@ const EMProperty = ({
           </div>
         )}
         {mass_magnetic_suspectibility && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              className=" pr-2 py-1 rounded-[4px] w-[30%] text-sm max-sm:w-full"
               href="/property/mass_magnetic_suspectibility"
             >
               Mass Magnetic Suspectibility
@@ -267,7 +267,7 @@ const EMProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{
@@ -293,9 +293,9 @@ const EMProperty = ({
           </div>
         )}
         {molar_magnetic_suspectibility && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm max-sm:w-full"
               href="/property/molar_magnetic_suspectibility"
             >
               Molar Magnetic Suspectibility
@@ -305,7 +305,7 @@ const EMProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{
@@ -339,9 +339,9 @@ const EMProperty = ({
           </div>
         )}
         {volume_magnetic_suspectibility && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm"
+              className="pr-2 py-1 rounded-[4px] w-[30%] text-sm max-sm:w-full"
               href="/property/volume_magnetic_suspectibility"
             >
               Volume Magnetic Suspectibility
@@ -351,7 +351,7 @@ const EMProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{

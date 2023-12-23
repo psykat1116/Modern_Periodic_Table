@@ -10,7 +10,7 @@ const TwentyNine = () => {
           theme === "dark"
             ? "bg-bg_light_placeholder"
             : "bg-bg_dark_placeholder"
-        } top-[-6px] left-[calc(50%_-_6px)]`}
+        } top-[-7px] left-[calc(50%_-_6px)]`}
       ></span>
       <span
         className={`absolute h-[12px] w-[12px] rounded-full ${
@@ -101,14 +101,14 @@ const TwentyNine = () => {
           theme === "dark"
             ? "bg-bg_light_placeholder"
             : "bg-bg_dark_placeholder"
-        } top-[calc(46%_-_6px)] right-[calc(0%_-_6px)]`}
+        } top-[calc(46%_-_6px)] right-[-7px]`}
       ></span>
       <span
         className={`absolute h-[12px] w-[12px] rounded-full ${
           theme === "dark"
             ? "bg-bg_light_placeholder"
             : "bg-bg_dark_placeholder"
-        } top-[calc(46%_-_6px)] left-[calc(0%_-_6px)]`}
+        } top-[calc(46%_-_6px)] left-[-7px]`}
       ></span>
       <span
         className={`absolute h-[12px] w-[12px] rounded-full ${
@@ -199,14 +199,14 @@ const TwentyNine = () => {
           theme === "dark"
             ? "bg-bg_light_placeholder"
             : "bg-bg_dark_placeholder"
-        } bottom-[calc(0%_-_6px)] left-[calc(46%_-_6px)]`}
+        } bottom-[-7px] left-[calc(46%_-_6px)]`}
       ></span>
       <span
         className={`absolute h-[12px] w-[12px] rounded-full ${
           theme === "dark"
             ? "bg-bg_light_placeholder"
             : "bg-bg_dark_placeholder"
-        } bottom-[calc(0%_-_6px)] right-[calc(46%_-_6px)]`}
+        } bottom-[-7px] right-[calc(46%_-_6px)]`}
       ></span>
     </>
   );

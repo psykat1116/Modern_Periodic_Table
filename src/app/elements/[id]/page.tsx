@@ -61,16 +61,16 @@ const Page = () => {
           <div
             className={`w-full px-10 flex justify-between items-center mt-5 text-lg tracking-wider ${
               theme === "dark" ? "text-white" : "text-black"
-            }`}
+            } max-sm:px-5`}
           >
             <Link
               href={`/elements/${prevId}`}
               className="flex justify-between items-center"
             >
               <BsArrowLeft className="cursor-pointer text-xl" />
-              <p className="ml-2 text-base">{elem?.neighbour[0]}</p>
+              <p className="ml-2 text-base max-sm:ml-0">{elem?.neighbour[0]}</p>
             </Link>
-            <p className="w-full text-center mx-5">
+            <p className="w-full text-center mx-5 max-sm:hidden">
               {elem && (
                 <p>
                   {elem?.general_properties.name}{" "}
@@ -82,13 +82,13 @@ const Page = () => {
               href={`/elements/${nextId}`}
               className="flex justify-between items-center"
             >
-              <p className="mr-2 text-base">{elem?.neighbour[1]}</p>
+              <p className="mr-2 text-base max-sm:mr-0">{elem?.neighbour[1]}</p>
               <BsArrowRight className="cursor-pointer text-xl" />
             </Link>
           </div>
         </div>
         {!elem ? (
-          <div className="relative w-full h-auto my-2 p-6 flex justify-between items-center z-[5]">
+          <div className="relative w-full h-auto my-2 p-6 flex justify-between items-center z-[5] max-sm:flex-col">
             <div
               className={`relative w-1/3 min-h-[79vh] flex justify-start flex-col items-center ${
                 theme === "dark"
@@ -105,21 +105,21 @@ const Page = () => {
             ></div>
           </div>
         ) : (
-          <div className="relative w-full h-auto my-2 p-6 flex justify-between items-start z-[5]">
+          <div className="relative w-full h-auto my-2 p-6 flex justify-between items-start z-[5] max-sm:flex-col">
             <div
               className={`w-1/3 h-[79vh] flex justify-start flex-col items-center ${
                 theme === "dark" ? "text-text_primary" : "text-text_secondary"
-              } gap-2`}
+              } gap-2 max-[1200px]:w-1/2 max-sm:w-full`}
             >
               <motion.div
                 className={`flex justify-center flex-col items-center ${
                   theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-                } shadow-md w-full h-[66vh] rounded-sm p-5 bg-opacity-60 backdrop-blur-require `}
+                } shadow-md w-full h-[66vh] rounded-sm p-5 bg-opacity-60 backdrop-blur-require`}
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.75, ease: "easeInOut" }}
               >
-                <div className="w-full min-h-full flex justify-center items-center">
+                <div className="w-full h-full flex justify-center items-center max-[1200px]:scale-[0.50] max-sm:scale-[0.60] scale-95 max-sm:h-[500px]">
                   {elem && (
                     <>
                       <GetOrbit id={id} />
@@ -139,7 +139,7 @@ const Page = () => {
               {elem && <Particles {...elem.particles} />}
               {elem.external_links && <ExternalLink {...elem.external_links} />}
             </div>
-            <div className="w-2/3 h-[79vh] ml-5 overflow-y-scroll flex flex-col justify-start items-center gap-3">
+            <div className="w-2/3 h-[79vh] ml-5 overflow-y-scroll flex flex-col justify-start items-center gap-3 max-[1200px]:w-1/2 max-sm:w-full max-sm:ml-0 max-sm:mt-2 max-sm:min-h-[79vh]">
               {elem && (
                 <>
                   <Description description={elem.description} />

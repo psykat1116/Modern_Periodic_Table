@@ -82,9 +82,9 @@ const MaterialProperty = ({
       <h1 className="text-xl">Material Property</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {color && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/color"
             >
               Color
@@ -94,7 +94,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{color}</p>
               <button onClick={() => handleCopy(color, "color")}>
@@ -108,9 +108,9 @@ const MaterialProperty = ({
           </div>
         )}
         {molar_volume && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/molar_volume"
             >
               Molar Volume
@@ -120,7 +120,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center max-sm:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{
@@ -143,9 +143,9 @@ const MaterialProperty = ({
           </div>
         )}
         {mohs_hardness && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/mohs_scale"
             >
               Mohs Hardness
@@ -155,7 +155,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{mohs_hardness}</p>
               <button
@@ -173,9 +173,9 @@ const MaterialProperty = ({
           </div>
         )}
         {bulk_modulus && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/bulk_modulus"
             >
               Bulk Modulus
@@ -185,7 +185,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{bulk_modulus}</p>
               <button
@@ -204,9 +204,9 @@ const MaterialProperty = ({
           </div>
         )}
         {brinell_hardness && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/brinell_hardness"
             >
               Brinnel Hardness
@@ -216,7 +216,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{brinell_hardness}</p>
               <button
@@ -235,9 +235,9 @@ const MaterialProperty = ({
           </div>
         )}
         {density && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/density"
             >
               Density
@@ -247,7 +247,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{density}</p>
               <button onClick={() => handleCopy(density.toString(), "density")}>
@@ -262,9 +262,9 @@ const MaterialProperty = ({
           </div>
         )}
         {liquid_density && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/liquid_density"
             >
               Liquid Density
@@ -274,7 +274,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{liquid_density}</p>
               <button
@@ -293,9 +293,9 @@ const MaterialProperty = ({
           </div>
         )}
         {young_modulus && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/young_modulus"
             >
               Young Modulus
@@ -305,7 +305,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{young_modulus}</p>
               <button
@@ -324,9 +324,9 @@ const MaterialProperty = ({
           </div>
         )}
         {vickers_hardness && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/vickers_hardness"
             >
               Vickers Hardness
@@ -336,7 +336,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{vickers_hardness}</p>
               <button
@@ -355,9 +355,9 @@ const MaterialProperty = ({
           </div>
         )}
         {shear_modulus && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/shear_modulus"
             >
               Shear Hardness
@@ -367,7 +367,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{shear_modulus}</p>
               <button
@@ -386,9 +386,9 @@ const MaterialProperty = ({
           </div>
         )}
         {thermal_conductivity && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/thermal_conductivity"
             >
               Thermal Conductivity
@@ -398,7 +398,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{thermal_conductivity}</p>
               <button
@@ -420,9 +420,9 @@ const MaterialProperty = ({
           </div>
         )}
         {sound_speed && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/sound_speed"
             >
               Sound Speed
@@ -432,7 +432,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{sound_speed}</p>
               <button
@@ -459,9 +459,9 @@ const MaterialProperty = ({
           </div>
         )}
         {poisson_ratio && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/poisson_ratio"
             >
               Poisson Ratio
@@ -471,7 +471,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{poisson_ratio}</p>
               <button
@@ -489,9 +489,9 @@ const MaterialProperty = ({
           </div>
         )}
         {refrective_index && (
-          <div className="flex flex-row justify-start items-center w-full gap-2">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm"
+              className=" pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
               href="/property/refractive_index"
             >
               Refractive Index
@@ -501,7 +501,7 @@ const MaterialProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
             >
               <p>{refrective_index}</p>
               <button
