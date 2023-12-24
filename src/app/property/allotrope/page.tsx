@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Allotrope from "@/components/Collection/Allotrope";
+import { Allotrope } from "@/components/Collection";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
@@ -35,7 +35,7 @@ const Page = () => {
         href="https://en.wikipedia.org/wiki/Allotropy"
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        } z-[5]`}
+        } z-[5] max-sm:text-2xl`}
       >
         Allotropes
       </Link>

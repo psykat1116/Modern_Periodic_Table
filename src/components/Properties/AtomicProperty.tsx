@@ -217,7 +217,7 @@ const AtomicProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              }`}
+              } max-sm:w-full`}
             >
               Pm (10<sup>-12</sup>m)
             </div>
@@ -256,7 +256,7 @@ const AtomicProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              }`}
+              } max-sm:w-full`}
             >
               Pm (10<sup>-12</sup>m)
             </div>
@@ -298,7 +298,7 @@ const AtomicProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              }`}
+              } max-sm:w-full`}
             >
               Pm (10<sup>-12</sup>m)
             </div>

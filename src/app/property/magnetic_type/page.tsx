@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import MagneticType from "@/components/Collection/MagneticType";
+import { MagneticType } from "@/components/Collection";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";

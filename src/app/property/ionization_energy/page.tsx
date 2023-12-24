@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import IonizationEnergy from "@/components/Collection/IonizationEnergy";
+import { IonizationEnergy } from "@/components/Collection";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
@@ -50,9 +50,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                ionization_energy={
-                  e.reactivity.ionization_energy
-                }
+                ionization_energy={e.reactivity.ionization_energy}
               />
             )
           );
@@ -65,9 +63,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                ionization_energy={
-                  e.reactivity.ionization_energy
-                }
+                ionization_energy={e.reactivity.ionization_energy}
               />
             )
           );
@@ -80,9 +76,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                ionization_energy={
-                  e.reactivity.ionization_energy
-                }
+                ionization_energy={e.reactivity.ionization_energy}
               />
             )
           );
@@ -95,9 +89,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                ionization_energy={
-                  e.reactivity.ionization_energy
-                }
+                ionization_energy={e.reactivity.ionization_energy}
               />
             )
           );
@@ -110,9 +102,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                ionization_energy={
-                  e.reactivity.ionization_energy
-                }
+                ionization_energy={e.reactivity.ionization_energy}
               />
             )
           );
@@ -122,9 +112,7 @@ const Page = () => {
             name={RowSixElem[0].general_properties.name}
             atomic_number={RowSixElem[0].general_properties.atomic_number}
             symbol={RowSixElem[0].general_properties.symbol}
-            ionization_energy={
-              RowSixElem[0].reactivity.ionization_energy
-            }
+            ionization_energy={RowSixElem[0].reactivity.ionization_energy}
           />
         )}
         {RowSixElem[1].reactivity && (
@@ -132,9 +120,7 @@ const Page = () => {
             name={RowSixElem[1].general_properties.name}
             atomic_number={RowSixElem[1].general_properties.atomic_number}
             symbol={RowSixElem[1].general_properties.symbol}
-            ionization_energy={
-              RowSixElem[1].reactivity.ionization_energy
-            }
+            ionization_energy={RowSixElem[1].reactivity.ionization_energy}
           />
         )}
         {LanthanideElem.map((e) => {
@@ -145,9 +131,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                ionization_energy={
-                  e.reactivity.ionization_energy
-                }
+                ionization_energy={e.reactivity.ionization_energy}
               />
             )
           );
@@ -161,9 +145,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                ionization_energy={
-                  e.reactivity.ionization_energy
-                }
+                ionization_energy={e.reactivity.ionization_energy}
               />
             )
           );
@@ -173,9 +155,7 @@ const Page = () => {
             name={RowSevenElem[0].general_properties.name}
             atomic_number={RowSevenElem[0].general_properties.atomic_number}
             symbol={RowSevenElem[0].general_properties.symbol}
-            ionization_energy={
-              RowSevenElem[0].reactivity.ionization_energy
-            }
+            ionization_energy={RowSevenElem[0].reactivity.ionization_energy}
           />
         )}
         {RowSevenElem[1].reactivity && (
@@ -183,9 +163,7 @@ const Page = () => {
             name={RowSevenElem[1].general_properties.name}
             atomic_number={RowSevenElem[1].general_properties.atomic_number}
             symbol={RowSevenElem[1].general_properties.symbol}
-            ionization_energy={
-              RowSevenElem[1].reactivity.ionization_energy
-            }
+            ionization_energy={RowSevenElem[1].reactivity.ionization_energy}
           />
         )}
         {ActinideElem.map((e) => {
@@ -196,9 +174,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                ionization_energy={
-                  e.reactivity.ionization_energy
-                }
+                ionization_energy={e.reactivity.ionization_energy}
               />
             )
           );
@@ -212,9 +188,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                ionization_energy={
-                  e.reactivity.ionization_energy
-                }
+                ionization_energy={e.reactivity.ionization_energy}
               />
             )
           );

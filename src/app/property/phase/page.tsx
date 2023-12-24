@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext } from "react";
 import Navbar from "@/components/Navbar";
-import Phase from "@/components/Collection/Phase";
+import { Phase } from "@/components/Collection";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";

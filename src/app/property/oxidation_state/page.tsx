@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import OxidationState from "@/components/Collection/OxidationState";
+import { OxidationState } from "@/components/Collection";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";

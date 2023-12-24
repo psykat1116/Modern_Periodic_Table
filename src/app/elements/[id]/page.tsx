@@ -6,20 +6,22 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import ElementDetailsProps from "@/types/ElementTypes";
-import GeneralInfo from "@/components/Properties/GeneralInfo";
-import Description from "@/components/Properties/Description";
-import Particles from "@/components/Properties/Particles";
-import Overview from "@/components/Properties/Overview";
-import AtomicProperty from "@/components/Properties/AtomicProperty";
-import ThermoProperty from "@/components/Properties/ThermoProperty";
-import MaterialProperty from "@/components/Properties/MaterialProperty";
-import Reactivity from "@/components/Properties/Reactivity";
-import NeuclearProperty from "@/components/Properties/NeuclearProperty";
-import EMProperty from "@/components/Properties/EMProperty";
-import Prevalence from "@/components/Properties/Prevalence";
-import ExternalLink from "@/components/Properties/ExternalLink";
-import HealthSafety from "@/components/Properties/HealthSafety";
-import AtomStructure from "@/components/Properties/AtomStructure";
+import {
+  AtomicProperty,
+  AtomStructure,
+  Description,
+  EMProperty,
+  ExternalLink,
+  GeneralInfo,
+  HealthSafety,
+  MaterialProperty,
+  NeuclearProperty,
+  Overview,
+  Particles,
+  Prevalence,
+  Reactivity,
+  ThermoProperty,
+} from "@/components/Properties";
 import getElementData from "@/helper/getElementData";
 import Particle from "@/components/Particle";
 import { motion } from "framer-motion";
@@ -119,7 +121,7 @@ const Page = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.75, ease: "easeInOut" }}
               >
-                <div className="w-full h-full flex justify-center items-center max-[1200px]:scale-[0.50] max-sm:scale-[0.60] scale-95 max-sm:h-[500px]">
+                <div className="w-full h-full flex justify-center items-center max-[1200px]:scale-[0.70] max-sm:scale-[0.60] scale-95 max-sm:h-[500px]">
                   {elem && (
                     <>
                       <GetOrbit id={id} />
@@ -139,7 +141,7 @@ const Page = () => {
               {elem && <Particles {...elem.particles} />}
               {elem.external_links && <ExternalLink {...elem.external_links} />}
             </div>
-            <div className="w-2/3 h-[79vh] ml-5 overflow-y-scroll flex flex-col justify-start items-center gap-3 max-[1200px]:w-1/2 max-sm:w-full max-sm:ml-0 max-sm:mt-2 max-sm:min-h-[79vh]">
+            <div className="w-2/3 h-[79vh] ml-5 overflow-y-scroll flex flex-col justify-start items-center gap-3 max-[1200px]:w-1/2 max-sm:w-full max-sm:ml-0 max-sm:mt-5 max-sm:h-[79vh]">
               {elem && (
                 <>
                   <Description description={elem.description} />

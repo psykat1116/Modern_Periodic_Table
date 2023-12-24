@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import RTECSNumber from "@/components/Collection/RTECSNumber";
+import { RTECSNumber } from "@/components/Collection";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
@@ -34,13 +34,13 @@ const Page = () => {
         href="https://en.wikipedia.org/wiki/Registry_of_Toxic_Effects_of_Chemical_Substances"
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        } z-[5]`}
+        } z-[5] max-sm:text-2xl`}
         target="_blank"
       >
         RTECS Number
       </Link>
       <div
-        className={`w-full grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
+        className={`w-full grid grid-cols-3 max-md:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
       >
         {RowOneElem.map((e) => {
           return (
@@ -50,9 +50,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                rtecs_number={
-                  e.health_safety.rtecs_number
-                }
+                rtecs_number={e.health_safety.rtecs_number}
               />
             )
           );
@@ -65,9 +63,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                rtecs_number={
-                  e.health_safety.rtecs_number
-                }
+                rtecs_number={e.health_safety.rtecs_number}
               />
             )
           );
@@ -80,9 +76,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                rtecs_number={
-                  e.health_safety.rtecs_number
-                }
+                rtecs_number={e.health_safety.rtecs_number}
               />
             )
           );
@@ -95,9 +89,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                rtecs_number={
-                  e.health_safety.rtecs_number
-                }
+                rtecs_number={e.health_safety.rtecs_number}
               />
             )
           );
@@ -110,9 +102,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                rtecs_number={
-                  e.health_safety.rtecs_number
-                }
+                rtecs_number={e.health_safety.rtecs_number}
               />
             )
           );
@@ -122,9 +112,7 @@ const Page = () => {
             name={RowSixElem[0].general_properties.name}
             atomic_number={RowSixElem[0].general_properties.atomic_number}
             symbol={RowSixElem[0].general_properties.symbol}
-            rtecs_number={
-              RowSixElem[0].health_safety.rtecs_number
-            }
+            rtecs_number={RowSixElem[0].health_safety.rtecs_number}
           />
         )}
         {RowSixElem[1].health_safety && (
@@ -132,9 +120,7 @@ const Page = () => {
             name={RowSixElem[1].general_properties.name}
             atomic_number={RowSixElem[1].general_properties.atomic_number}
             symbol={RowSixElem[1].general_properties.symbol}
-            rtecs_number={
-              RowSixElem[1].health_safety.rtecs_number
-            }
+            rtecs_number={RowSixElem[1].health_safety.rtecs_number}
           />
         )}
         {LanthanideElem.map((e) => {
@@ -145,9 +131,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                rtecs_number={
-                  e.health_safety.rtecs_number
-                }
+                rtecs_number={e.health_safety.rtecs_number}
               />
             )
           );
@@ -161,9 +145,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                rtecs_number={
-                  e.health_safety.rtecs_number
-                }
+                rtecs_number={e.health_safety.rtecs_number}
               />
             )
           );
@@ -173,9 +155,7 @@ const Page = () => {
             name={RowSevenElem[0].general_properties.name}
             atomic_number={RowSevenElem[0].general_properties.atomic_number}
             symbol={RowSevenElem[0].general_properties.symbol}
-            rtecs_number={
-              RowSevenElem[0].health_safety.rtecs_number
-            }
+            rtecs_number={RowSevenElem[0].health_safety.rtecs_number}
           />
         )}
         {RowSevenElem[1].health_safety && (
@@ -183,9 +163,7 @@ const Page = () => {
             name={RowSevenElem[1].general_properties.name}
             atomic_number={RowSevenElem[1].general_properties.atomic_number}
             symbol={RowSevenElem[1].general_properties.symbol}
-            rtecs_number={
-              RowSevenElem[1].health_safety.rtecs_number
-            }
+            rtecs_number={RowSevenElem[1].health_safety.rtecs_number}
           />
         )}
         {ActinideElem.map((e) => {
@@ -196,9 +174,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                rtecs_number={
-                  e.health_safety.rtecs_number
-                }
+                rtecs_number={e.health_safety.rtecs_number}
               />
             )
           );
@@ -212,9 +188,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                rtecs_number={
-                  e.health_safety.rtecs_number
-                }
+                rtecs_number={e.health_safety.rtecs_number}
               />
             )
           );

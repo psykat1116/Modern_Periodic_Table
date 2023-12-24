@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Electronegativity from "@/components/Collection/Electronegativity";
+import { Electronegativity } from "@/components/Collection";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
@@ -50,9 +50,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                electronegativity={
-                  e.reactivity.electronegativity
-                }
+                electronegativity={e.reactivity.electronegativity}
               />
             )
           );
@@ -65,9 +63,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                electronegativity={
-                  e.reactivity.electronegativity
-                }
+                electronegativity={e.reactivity.electronegativity}
               />
             )
           );
@@ -80,9 +76,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                electronegativity={
-                  e.reactivity.electronegativity
-                }
+                electronegativity={e.reactivity.electronegativity}
               />
             )
           );
@@ -95,9 +89,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                electronegativity={
-                  e.reactivity.electronegativity
-                }
+                electronegativity={e.reactivity.electronegativity}
               />
             )
           );
@@ -110,9 +102,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                electronegativity={
-                  e.reactivity.electronegativity
-                }
+                electronegativity={e.reactivity.electronegativity}
               />
             )
           );
@@ -122,9 +112,7 @@ const Page = () => {
             name={RowSixElem[0].general_properties.name}
             atomic_number={RowSixElem[0].general_properties.atomic_number}
             symbol={RowSixElem[0].general_properties.symbol}
-            electronegativity={
-              RowSixElem[0].reactivity.electronegativity
-            }
+            electronegativity={RowSixElem[0].reactivity.electronegativity}
           />
         )}
         {RowSixElem[1].reactivity && (
@@ -132,9 +120,7 @@ const Page = () => {
             name={RowSixElem[1].general_properties.name}
             atomic_number={RowSixElem[1].general_properties.atomic_number}
             symbol={RowSixElem[1].general_properties.symbol}
-            electronegativity={
-              RowSixElem[1].reactivity.electronegativity
-            }
+            electronegativity={RowSixElem[1].reactivity.electronegativity}
           />
         )}
         {LanthanideElem.map((e) => {
@@ -145,9 +131,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                electronegativity={
-                  e.reactivity.electronegativity
-                }
+                electronegativity={e.reactivity.electronegativity}
               />
             )
           );
@@ -161,9 +145,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                electronegativity={
-                  e.reactivity.electronegativity
-                }
+                electronegativity={e.reactivity.electronegativity}
               />
             )
           );
@@ -173,9 +155,7 @@ const Page = () => {
             name={RowSevenElem[0].general_properties.name}
             atomic_number={RowSevenElem[0].general_properties.atomic_number}
             symbol={RowSevenElem[0].general_properties.symbol}
-            electronegativity={
-              RowSevenElem[0].reactivity.electronegativity
-            }
+            electronegativity={RowSevenElem[0].reactivity.electronegativity}
           />
         )}
         {RowSevenElem[1].reactivity && (
@@ -183,9 +163,7 @@ const Page = () => {
             name={RowSevenElem[1].general_properties.name}
             atomic_number={RowSevenElem[1].general_properties.atomic_number}
             symbol={RowSevenElem[1].general_properties.symbol}
-            electronegativity={
-              RowSevenElem[1].reactivity.electronegativity
-            }
+            electronegativity={RowSevenElem[1].reactivity.electronegativity}
           />
         )}
         {ActinideElem.map((e) => {
@@ -196,9 +174,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                electronegativity={
-                  e.reactivity.electronegativity
-                }
+                electronegativity={e.reactivity.electronegativity}
               />
             )
           );
@@ -212,9 +188,7 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                electronegativity={
-                  e.reactivity.electronegativity
-                }
+                electronegativity={e.reactivity.electronegativity}
               />
             )
           );

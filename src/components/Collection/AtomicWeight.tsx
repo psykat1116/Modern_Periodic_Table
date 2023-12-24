@@ -56,7 +56,7 @@ const AtomicWeight = ({
             : "bg-bg_light text-text_secondary"
         } bg-opacity-70 backdrop-blur-sm`}
       >
-        {atomic_weight}
+        {atomic_weight.toFixed(3)}
       </Link>
     </div>
   );

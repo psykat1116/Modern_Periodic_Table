@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import NeutronCrossSection from "@/components/Collection/NeutronCrossSection";
+import { NeutronCrossSection } from "@/components/Collection";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
@@ -35,12 +35,12 @@ const Page = () => {
         href="https://en.wikipedia.org/wiki/Neutron_cross_section"
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        } z-[5]`}
+        } z-[5] max-sm:text-2xl`}
       >
         Neutron Cross Section
       </Link>
       <div
-        className={`w-full grid grid-cols-3 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
+        className={`w-full grid grid-cols-3 px-2 pb-2 overflow-y-scroll gap-2 z-[5] max-md:grid-cols-2 max-sm:grid-cols-1`}
       >
         {RowOneElem.map((e) => {
           return (
@@ -50,7 +50,9 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                neutron_cross_section={e.neuclear_properties.neutron_cross_section}
+                neutron_cross_section={
+                  e.neuclear_properties.neutron_cross_section
+                }
               />
             )
           );
@@ -63,7 +65,9 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                neutron_cross_section={e.neuclear_properties.neutron_cross_section}
+                neutron_cross_section={
+                  e.neuclear_properties.neutron_cross_section
+                }
               />
             )
           );
@@ -76,7 +80,9 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                neutron_cross_section={e.neuclear_properties.neutron_cross_section}
+                neutron_cross_section={
+                  e.neuclear_properties.neutron_cross_section
+                }
               />
             )
           );
@@ -89,7 +95,9 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                neutron_cross_section={e.neuclear_properties.neutron_cross_section}
+                neutron_cross_section={
+                  e.neuclear_properties.neutron_cross_section
+                }
               />
             )
           );
@@ -102,7 +110,9 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                neutron_cross_section={e.neuclear_properties.neutron_cross_section}
+                neutron_cross_section={
+                  e.neuclear_properties.neutron_cross_section
+                }
               />
             )
           );
@@ -112,7 +122,9 @@ const Page = () => {
             name={RowSixElem[0].general_properties.name}
             atomic_number={RowSixElem[0].general_properties.atomic_number}
             symbol={RowSixElem[0].general_properties.symbol}
-            neutron_cross_section={RowSixElem[0].neuclear_properties.neutron_cross_section}
+            neutron_cross_section={
+              RowSixElem[0].neuclear_properties.neutron_cross_section
+            }
           />
         )}
         {RowSixElem[1].neuclear_properties && (
@@ -120,7 +132,9 @@ const Page = () => {
             name={RowSixElem[1].general_properties.name}
             atomic_number={RowSixElem[1].general_properties.atomic_number}
             symbol={RowSixElem[1].general_properties.symbol}
-            neutron_cross_section={RowSixElem[1].neuclear_properties.neutron_cross_section}
+            neutron_cross_section={
+              RowSixElem[1].neuclear_properties.neutron_cross_section
+            }
           />
         )}
         {LanthanideElem.map((e) => {
@@ -131,7 +145,9 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                neutron_cross_section={e.neuclear_properties.neutron_cross_section}
+                neutron_cross_section={
+                  e.neuclear_properties.neutron_cross_section
+                }
               />
             )
           );
@@ -145,7 +161,9 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                neutron_cross_section={e.neuclear_properties.neutron_cross_section}
+                neutron_cross_section={
+                  e.neuclear_properties.neutron_cross_section
+                }
               />
             )
           );
@@ -178,7 +196,9 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                neutron_cross_section={e.neuclear_properties.neutron_cross_section}
+                neutron_cross_section={
+                  e.neuclear_properties.neutron_cross_section
+                }
               />
             )
           );
@@ -192,7 +212,9 @@ const Page = () => {
                 name={e.general_properties.name}
                 atomic_number={e.general_properties.atomic_number}
                 symbol={e.general_properties.symbol}
-                neutron_cross_section={e.neuclear_properties.neutron_cross_section}
+                neutron_cross_section={
+                  e.neuclear_properties.neutron_cross_section
+                }
               />
             )
           );

@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Resistivity from "@/components/Collection/Resistivity";
+import { Resistivity } from "@/components/Collection";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
@@ -155,9 +155,7 @@ const Page = () => {
             name={RowSevenElem[0].general_properties.name}
             atomic_number={RowSevenElem[0].general_properties.atomic_number}
             symbol={RowSevenElem[0].general_properties.symbol}
-            resistivity={
-              RowSevenElem[0].electromagnetic_properties.resistivity
-            }
+            resistivity={RowSevenElem[0].electromagnetic_properties.resistivity}
           />
         )}
         {RowSevenElem[1].electromagnetic_properties && (
@@ -165,9 +163,7 @@ const Page = () => {
             name={RowSevenElem[1].general_properties.name}
             atomic_number={RowSevenElem[1].general_properties.atomic_number}
             symbol={RowSevenElem[1].general_properties.symbol}
-            resistivity={
-              RowSevenElem[1].electromagnetic_properties.resistivity
-            }
+            resistivity={RowSevenElem[1].electromagnetic_properties.resistivity}
           />
         )}
         {ActinideElem.map((e) => {

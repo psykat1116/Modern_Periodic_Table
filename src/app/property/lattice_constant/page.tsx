@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import LatticeConstant from "@/components/Collection/LatticeConstant";
+import {LatticeConstant} from "@/components/Collection";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
@@ -35,12 +35,12 @@ const Page = () => {
         href="https://en.wikipedia.org/wiki/Lattice_constant"
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        } z-[5]`}
+        } z-[5] max-sm:text-2xl`}
       >
         Lattice Constant
       </Link>
       <div
-        className={`w-full grid grid-cols-3 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
+        className={`w-full grid grid-cols-3 px-2 pb-2 overflow-y-scroll gap-2 z-[5] max-md:grid-cols-2 max-sm:grid-cols-1`}
       >
         {RowOneElem.map((e) => {
           return (

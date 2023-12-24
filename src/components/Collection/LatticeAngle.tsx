@@ -3,19 +3,19 @@ import React, { useContext } from "react";
 import Link from "next/link";
 import xss from "xss";
 
-interface SpaceGroupName {
+interface LatticeAngle {
   atomic_number: number;
   symbol: string;
   name: string;
   lattice_angle?: number[];
 }
 
-const SpaceGroupName = ({
+const LatticeAngle = ({
   atomic_number,
   lattice_angle,
   symbol,
   name,
-}: SpaceGroupName) => {
+}: LatticeAngle) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div className="gap-1.5 grid text-center grid-cols-[8%_8%_30%_45%]">
@@ -71,4 +71,4 @@ const SpaceGroupName = ({
   );
 };
 
-export default SpaceGroupName;
+export default LatticeAngle;
