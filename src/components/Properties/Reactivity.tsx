@@ -38,9 +38,9 @@ const Reactivity = ({
       <h1 className="text-xl">Reactivity</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {electron_affinity && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[20%] text-sm max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[20%] text-sm max-md:w-full"
               href="/property/electron_affinity"
             >
               Electron Affinity
@@ -50,7 +50,7 @@ const Reactivity = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{electron_affinity}</p>
               <button
@@ -69,9 +69,9 @@ const Reactivity = ({
           </div>
         )}
         {ionization_energy && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[20%] text-sm max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[20%] text-sm max-md:w-full"
               href="/property/ionization_energy"
             >
               Ionization Energy
@@ -81,7 +81,7 @@ const Reactivity = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{ionization_energy}</p>
               <button
@@ -100,9 +100,9 @@ const Reactivity = ({
           </div>
         )}
         {electronegativity && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[20%] text-sm max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[20%] text-sm max-md:w-full"
               href="/property/electronegativity"
             >
               Electronegativity
@@ -112,7 +112,7 @@ const Reactivity = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{electronegativity}</p>
               <button
@@ -129,9 +129,9 @@ const Reactivity = ({
             </div>
           </div>
         )}
-        <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+        <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
           <Link
-            className="pr-2 py-1 rounded-[4px] w-[20%] text-sm max-sm:w-full"
+            className="pr-2 py-1 rounded-[4px] w-[20%] text-sm max-md:w-full"
             href="/property/valence"
           >
             Valence
@@ -141,7 +141,7 @@ const Reactivity = ({
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
           >
             <p>{valence}</p>
             <button onClick={() => handleCopy(valence.toString(), "valence")}>

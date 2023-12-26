@@ -32,10 +32,10 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
     >
       <h1 className="text-xl">Overview</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
-        <div className="flex justify-start items-center w-full max-sm:flex-col">
+        <div className="flex justify-start items-center w-full max-md:flex-col">
           <Link
             href="/property/latin_name"
-            className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+            className="pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
           >
             Latin Name
           </Link>
@@ -44,7 +44,7 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
           >
             <p>{latin_name}</p>
             <button onClick={() => handleCopy(latin_name, "latin_name")}>
@@ -56,10 +56,10 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
             </button>
           </div>
         </div>
-        <div className="flex justify-start items-center w-full max-sm:flex-col">
+        <div className="flex justify-start items-center w-full max-md:flex-col">
           <Link
             href="/property/discovery"
-            className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+            className="pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
           >
             Discovery
           </Link>
@@ -68,7 +68,7 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
           >
             <p>{discovery}</p>
             <button
@@ -82,14 +82,14 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
             </button>
           </div>
         </div>
-        <div className="flex justify-start items-start w-full max-sm:flex-col">
+        <div className="flex justify-start items-start w-full max-md:flex-col">
           <Link
             href="/property/discoverer"
-            className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+            className="pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
           >
             Discoverer
           </Link>
-          <div className="w-[80%] gap-2 grid grid-cols-2 text-sm max-sm:w-full max-sm:grid-cols-1">
+          <div className="w-[80%] gap-2 grid grid-cols-2 text-sm max-md:w-full max-md:grid-cols-1">
             {discoverer.map((d) => {
               return (
                 <Link

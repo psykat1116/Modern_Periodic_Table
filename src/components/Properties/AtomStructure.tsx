@@ -42,9 +42,9 @@ const AtomStructure = ({
       <h1 className="text-xl">Atomic Structure</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {crystal_structure && (
-          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[25%] max-md:w-full"
               href="/property/cryst_struc"
             >
               Crystall Structure
@@ -54,7 +54,7 @@ const AtomStructure = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{crystal_structure}</p>
               <button
@@ -72,9 +72,9 @@ const AtomStructure = ({
           </div>
         )}
         {space_group_name && (
-          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[25%] max-md:w-full"
               href="/property/space_group_name"
             >
               Space Group Name
@@ -84,7 +84,7 @@ const AtomStructure = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{
@@ -104,9 +104,9 @@ const AtomStructure = ({
           </div>
         )}
         {space_group_number && (
-          <div className="flex flex-row justify-start items-start w-full max-sm:flex-col">
+          <div className="flex flex-row justify-start items-start w-full max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[25%] max-md:w-full"
               href="/property/space_group_number"
             >
               Space Group Number
@@ -116,7 +116,7 @@ const AtomStructure = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{space_group_number}</p>
               <button
@@ -137,14 +137,14 @@ const AtomStructure = ({
           </div>
         )}
         {lattice_angle && (
-          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[25%] max-md:w-full"
               href="/property/lattice_angle"
             >
               Lattice Angles
             </Link>
-            <div className="w-[75%] gap-2 flex justify-start items-center text-sm max-sm:w-full">
+            <div className="w-[75%] gap-2 flex justify-start items-center text-sm max-md:w-full">
               {lattice_angle.map((d, ind) => {
                 return (
                   <div
@@ -163,14 +163,14 @@ const AtomStructure = ({
           </div>
         )}
         {lattice_constant && (
-          <div className="flex flex-row justify-start items-center w-full max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[25%] max-md:w-full"
               href="/property/lattice_constant"
             >
               Lattice Constant (Pm)
             </Link>
-            <div className="w-[75%] gap-2 flex justify-start items-center text-sm max-sm:w-full">
+            <div className="w-[75%] gap-2 flex justify-start items-center text-sm max-md:w-full">
               {lattice_constant.map((d, ind) => {
                 return (
                   <div

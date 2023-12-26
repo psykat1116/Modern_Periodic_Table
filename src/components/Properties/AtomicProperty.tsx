@@ -48,9 +48,9 @@ const AtomicProperty = ({
     >
       <h1 className="text-xl">Atomic Properties</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
-        <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+        <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
           <Link
-            className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
+            className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-md:w-full"
             href="/property/atomic_weight"
           >
             Atomic Weight
@@ -60,7 +60,7 @@ const AtomicProperty = ({
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
           >
             <p>{atomic_weight}</p>
             <button
@@ -80,14 +80,14 @@ const AtomicProperty = ({
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } max-sm:w-full`}
+            } max-md:w-full`}
           >
             amu
           </div>
         </div>
-        <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+        <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
           <Link
-            className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
+            className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-md:w-full"
             href="/property/shell_config"
           >
             Electron Shell Configuration
@@ -97,7 +97,7 @@ const AtomicProperty = ({
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
           >
             <p>{electron_shell_configuration}</p>
             <button
@@ -116,9 +116,9 @@ const AtomicProperty = ({
             </button>
           </div>
         </div>
-        <div className="flex flex-row justify-start items-start w-full gap-2 max-sm:flex-col">
+        <div className="flex flex-row justify-start items-start w-full gap-2 max-md:flex-col">
           <Link
-            className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
+            className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-md:w-full"
             href="/property/electron_config"
           >
             Electron Configuration
@@ -128,7 +128,7 @@ const AtomicProperty = ({
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center max-sm:w-full`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center max-md:w-full`}
           >
             <p
               dangerouslySetInnerHTML={{
@@ -152,9 +152,9 @@ const AtomicProperty = ({
           </div>
         </div>
         {gas_atom_multiplicities && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-md:w-full"
               href="/property/gas_multi"
             >
               Gas Atomic Multiplicities
@@ -164,7 +164,7 @@ const AtomicProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{gas_atom_multiplicities}</p>
               <button
@@ -185,9 +185,9 @@ const AtomicProperty = ({
           </div>
         )}
         {atomic_radius && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-md:w-full"
               href="/property/atomic_rad"
             >
               Atomic Radius
@@ -197,7 +197,7 @@ const AtomicProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{atomic_radius}</p>
               <button
@@ -217,16 +217,16 @@ const AtomicProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } max-sm:w-full`}
+              } max-md:w-full`}
             >
               Pm (10<sup>-12</sup>m)
             </div>
           </div>
         )}
         {covalent_radius && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-md:w-full"
               href="/property/covalent_rad"
             >
               Covalent Radius
@@ -236,7 +236,7 @@ const AtomicProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{covalent_radius}</p>
               <button
@@ -256,16 +256,16 @@ const AtomicProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } max-sm:w-full`}
+              } max-md:w-full`}
             >
               Pm (10<sup>-12</sup>m)
             </div>
           </div>
         )}
         {van_der_walls_radius && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-md:w-full"
               href="/property/van_der_wall_rad"
             >
               Van Der Walls Radius
@@ -275,7 +275,7 @@ const AtomicProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{van_der_walls_radius}</p>
               <button
@@ -298,21 +298,21 @@ const AtomicProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } max-sm:w-full`}
+              } max-md:w-full`}
             >
               Pm (10<sup>-12</sup>m)
             </div>
           </div>
         )}
         {oxidation_states && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[25%] text-sm max-md:w-full"
               href="/property/oxidation_state"
             >
               Oxidation States
             </Link>
-            <div className="w-[75%] py-1 flex justify-start items-center select-none max-sm:w-full">
+            <div className="w-[75%] py-1 flex justify-start items-center select-none max-md:w-full">
               {oxidation_states.map((state) => {
                 return (
                   <p

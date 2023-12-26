@@ -44,9 +44,9 @@ const GeneralInfo = ({
     >
       <h1 className="text-xl">General Properties</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
-        <div className="flex justify-start items-center w-full max-sm:flex-col">
+        <div className="flex justify-start items-center w-full max-md:flex-col">
           <Link
-            className=" pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+            className=" pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
             href="https://en.wikipedia.org/wiki/Atomic_number"
           >
             Atomic Number
@@ -56,7 +56,7 @@ const GeneralInfo = ({
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
           >
             <p>{atomic_number}</p>
             <button
@@ -73,9 +73,9 @@ const GeneralInfo = ({
           </div>
         </div>
         {group && (
-          <div className="flex justify-start items-center w-full max-sm:flex-col">
+          <div className="flex justify-start items-center w-full max-md:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+              className=" pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
               href="https://en.wikipedia.org/wiki/Group_(periodic_table)"
             >
               Group
@@ -85,7 +85,7 @@ const GeneralInfo = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{group}</p>
               <button onClick={() => handleCopy(group.toString(), "group")}>
@@ -98,9 +98,9 @@ const GeneralInfo = ({
             </div>
           </div>
         )}
-        <div className="flex justify-start items-center w-full max-sm:flex-col">
+        <div className="flex justify-start items-center w-full max-md:flex-col">
           <Link
-            className=" pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+            className=" pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
             href="https://en.wikipedia.org/wiki/Period_(periodic_table)"
           >
             Period
@@ -110,7 +110,7 @@ const GeneralInfo = ({
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
           >
             <p>{period}</p>
             <button onClick={() => handleCopy(period.toString(), "period")}>
@@ -122,9 +122,9 @@ const GeneralInfo = ({
             </button>
           </div>
         </div>
-        <div className="flex justify-start items-center w-full max-sm:flex-col">
+        <div className="flex justify-start items-center w-full max-md:flex-col">
           <Link
-            className=" pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+            className=" pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
             href="https://en.wikipedia.org/wiki/Block_(periodic_table)"
           >
             Block
@@ -134,7 +134,7 @@ const GeneralInfo = ({
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
           >
             <p>{block}</p>
             <button onClick={() => handleCopy(block.toString(), "block")}>
@@ -146,9 +146,9 @@ const GeneralInfo = ({
             </button>
           </div>
         </div>
-        <div className="flex justify-start items-center w-full max-sm:flex-col">
+        <div className="flex justify-start items-center w-full max-md:flex-col">
           <Link
-            className=" pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+            className=" pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
             href="/property/cas_number"
           >
             CAS Number
@@ -158,7 +158,7 @@ const GeneralInfo = ({
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
-            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+            } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
           >
             <p>{cas_number}</p>
             <button onClick={() => handleCopy(cas_number, "cas_number")}>
@@ -171,9 +171,9 @@ const GeneralInfo = ({
           </div>
         </div>
         {cid_number && (
-          <div className="flex justify-start items-center w-full max-sm:flex-col">
+          <div className="flex justify-start items-center w-full max-md:flex-col">
             <Link
-              className=" pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+              className=" pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
               href="/property/cid_number"
             >
               CID Number
@@ -183,7 +183,7 @@ const GeneralInfo = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{cid_number}</p>
               <button onClick={() => handleCopy(cid_number, "cid_number")}>
@@ -197,14 +197,14 @@ const GeneralInfo = ({
           </div>
         )}
         {allotropes && (
-          <div className="flex justify-start items-start w-full max-sm:flex-col">
+          <div className="flex justify-start items-start w-full max-md:flex-col">
             <Link
               href="/property/allotrope"
-              className=" pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+              className=" pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
             >
               Allotropes
             </Link>
-            <div className="w-[80%] gap-2 grid grid-cols-3 text-sm max-sm:w-full">
+            <div className="w-[80%] gap-2 grid grid-cols-3 text-sm max-md:w-full">
               {allotropes.map((d) => {
                 return (
                   <Link

@@ -12,7 +12,7 @@ const ListBox = ({ options }: { options: optionTypes[] }) => {
   const [selected, setSelected] = useState(options[0]);
   return (
     <Listbox value={selected} onChange={setSelected}>
-      <div className="relative w-[20%] text-sm max-sm:w-full">
+      <div className="relative w-[20%] text-sm max-md:w-full">
         <Listbox.Button
           className={`relative w-full cursor-pointer px-2 py-2 rounded-[4px] ${
             theme === "dark"

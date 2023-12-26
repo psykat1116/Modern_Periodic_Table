@@ -31,6 +31,7 @@ const Slider = () => {
             : "border-y-2 border-y-dark_primary"
         } `}
         breakpoints={{
+          0: { slidesPerView: 1 },
           320: { slidesPerView: 2 },
           480: { slidesPerView: 4 },
           640: { slidesPerView: 5 },

@@ -81,9 +81,9 @@ const ThermoProperty = ({
       <h1 className="text-xl">Thermodynamic Properties</h1>
       <div className="flex flex-col w-full justify-start items-start gap-3 mt-3">
         {boiling_point && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
               href="/property/boiling_point"
             >
               Boiling Point
@@ -93,7 +93,7 @@ const ThermoProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{boiling_point}</p>
               <button
@@ -110,9 +110,9 @@ const ThermoProperty = ({
           </div>
         )}
         {melting_point && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
               href="/property/melting_point"
             >
               Melting Point
@@ -122,7 +122,7 @@ const ThermoProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{melting_point}</p>
               <button
@@ -139,9 +139,9 @@ const ThermoProperty = ({
           </div>
         )}
         {phase && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
               href="/property/phase"
             >
               Phase
@@ -151,7 +151,7 @@ const ThermoProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{phase}</p>
               <button onClick={() => handleCopy(phase, "phase")}>
@@ -165,9 +165,9 @@ const ThermoProperty = ({
           </div>
         )}
         {fusion_heat && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
               href="/property/fusion_heat"
             >
               Fusion Heat
@@ -177,7 +177,7 @@ const ThermoProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{fusion_heat}</p>
               <button
@@ -196,9 +196,9 @@ const ThermoProperty = ({
           </div>
         )}
         {specific_heat && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
               href="/property/specific_heat"
             >
               Specific Heat
@@ -208,7 +208,7 @@ const ThermoProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{specific_heat}</p>
               <button
@@ -227,9 +227,9 @@ const ThermoProperty = ({
           </div>
         )}
         {vaporization_heat && (
-          <div className="flex flex-row justify-start items-center w-full gap-2  max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2  max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
               href="/property/vaporization_heat"
             >
               Vaporization Heat
@@ -239,7 +239,7 @@ const ThermoProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{vaporization_heat}</p>
               <button
@@ -258,9 +258,9 @@ const ThermoProperty = ({
           </div>
         )}
         {thermal_expansion && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
               href="/property/thermal_expansion"
             >
               Thermal Expansion
@@ -270,7 +270,7 @@ const ThermoProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p
                 dangerouslySetInnerHTML={{
@@ -293,9 +293,9 @@ const ThermoProperty = ({
           </div>
         )}
         {neel_point && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
               href="/property/neel_point"
             >
               Neel Point (K)
@@ -305,7 +305,7 @@ const ThermoProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{neel_point}</p>
               <button
@@ -322,9 +322,9 @@ const ThermoProperty = ({
           </div>
         )}
         {adiabatic_index && (
-          <div className="flex flex-row justify-start items-center w-full gap-2 max-sm:flex-col">
+          <div className="flex flex-row justify-start items-center w-full gap-2 max-md:flex-col">
             <Link
-              className="pr-2 py-1 rounded-[4px] w-[20%] max-sm:w-full"
+              className="pr-2 py-1 rounded-[4px] w-[20%] max-md:w-full"
               href="/property/adiabatic_index"
             >
               Adiabatic Index
@@ -334,7 +334,7 @@ const ThermoProperty = ({
                 theme === "dark"
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
-              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-sm:w-full`}
+              } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
               <p>{adiabatic_index}</p>
               <button

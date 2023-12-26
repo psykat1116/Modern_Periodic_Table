@@ -30,9 +30,11 @@ export default function Home() {
       >
         <Navbar />
         <Slider />
-        <div className="min-w-[80%] flex flex-col justify-start items-center my-10 overflow-x-scroll">
+        <div className="min-w-[80%] flex flex-col justify-start items-center my-10 max-table:rotate-90 max-table:scale-[.5] max-sm:scale-[.4] max-table:my-0">
           <UpperTable />
           <LowerTable />
+        </div>
+        <div className="w-full px-10 mb-5 max-sm:px-1">
           <Categories />
         </div>
       </div>

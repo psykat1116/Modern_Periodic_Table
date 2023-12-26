@@ -50,6 +50,9 @@ const config: Config = {
           "100%": { left: "100%" },
         },
       },
+      screens: {
+        table: "1150px",
+      },
     },
   },
   plugins: [],
