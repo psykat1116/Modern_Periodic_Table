@@ -11,7 +11,7 @@ const Prop = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const page = () => {
+const Page = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div
@@ -26,7 +26,11 @@ const page = () => {
         className="w-full grid grid-cols-4 gap-2 p-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-table:grid-cols-3 max-sm:text-sm"
         initial="hidden"
         animate="visible"
-        transition={{ duration: 0.1, staggerChildren: 0.09, delayChildren: 0.05 }}
+        transition={{
+          duration: 0.1,
+          staggerChildren: 0.09,
+          delayChildren: 0.05,
+        }}
       >
         {Property.map((item) => {
           return (
@@ -47,4 +51,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
