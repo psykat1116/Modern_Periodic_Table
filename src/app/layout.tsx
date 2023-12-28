@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins, Satisfy } from "next/font/google";
+import { Poppins, Satisfy, Lora } from "next/font/google";
 import ThemeProvider from "@/context/ThemeProvider";
 
 const poppins = Poppins({
@@ -17,6 +17,13 @@ const satisfy = Satisfy({
   variable: "--font-satisfy",
 });
 
+const lora = Lora({
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-lora",
+});
+
 export const metadata: Metadata = {
   title: "Modern Periodic Table of Elements",
   description:
@@ -31,7 +38,9 @@ export default function RootLayout({
   return (
     <ThemeProvider>
       <html lang="en">
-        <body className={`${poppins.variable} ${satisfy.variable}`}>
+        <body
+          className={`${poppins.variable} ${satisfy.variable} ${lora.variable}`}
+        >
           {children}
         </body>
       </html>

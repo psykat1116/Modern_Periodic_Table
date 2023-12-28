@@ -6,21 +6,23 @@ import { AiFillGithub } from "react-icons/ai";
 import { FiSun } from "react-icons/fi";
 import { PiMoonStarsBold } from "react-icons/pi";
 import { LiaAtomSolid } from "react-icons/lia";
+import { TbLayoutList } from "react-icons/tb";
 
 const Navbar = () => {
   const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div
       className={`w-full flex justify-between items-center pt-3 pb-2 px-5 text-xl ${
-        theme === "dark"
-          ? "text-text_primary"
-          : "text-text_secondary"
-        } bg-opacity-60 backdrop-blur-require`}
+        theme === "dark" ? "text-text_primary" : "text-text_secondary"
+      } bg-opacity-60 backdrop-blur-require`}
     >
       <Link className="text-2xl" href="/">
         <LiaAtomSolid />
       </Link>
       <div className="flex justify-end items-center">
+        <Link href="/property">
+          <TbLayoutList className="mr-5" />
+        </Link>
         <Link
           href="https://github.com/psykat1116/Modern_Periodic_Table"
           target="_blank"

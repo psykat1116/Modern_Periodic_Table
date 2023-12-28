@@ -32,6 +32,7 @@ const config: Config = {
       fontFamily: {
         poppins: "var(--font-poppins)",
         satisfy: "var(--font-satisfy)",
+        lora: "var(--font-lora)",
       },
       backdropBlur: {
         require: "3px",

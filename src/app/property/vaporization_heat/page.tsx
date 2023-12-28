@@ -14,6 +14,7 @@ import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import DynamicParticle from "@/components/DynamicParticle";
+import { FaRegChartBar } from "react-icons/fa";
 
 const Page = () => {
   if (typeof window !== "undefined") {
@@ -30,15 +31,29 @@ const Page = () => {
         <DynamicParticle />
       </div>
       <Navbar />
-      <Link
-        href="https://en.wikipedia.org/wiki/Enthalpy_of_vaporization"
-        className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
+      <div
+        className={`w-full z-[5] flex justify-between items-center p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        } z-[5]`}
-        target="_blank"
+        } text-2xl`}
       >
-        Vaporization Heat
-      </Link>
+        <Link
+          href="https://en.wikipedia.org/wiki/Enthalpy_of_vaporization"
+          className={`font-lora p-2 ${
+            theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
+          } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm max-md:text-xl`}
+          target="_blank"
+        >
+          Vaporization Heat
+        </Link>
+        <Link
+          href="/"
+          className={`p-2 ${
+            theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
+          } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm`}
+        >
+          <FaRegChartBar className="cursor-pointer" />
+        </Link>
+      </div>
       <div
         className={`w-full grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
       >
