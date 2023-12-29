@@ -97,7 +97,9 @@ const ThermoProperty = ({
             >
               <p>{boiling_point}</p>
               <button
-                onClick={() => handleCopy(boiling_point, "boiling_point")}
+                onClick={() =>
+                  handleCopy(boiling_point.toString(), "boiling_point")
+                }
               >
                 {!isCopying.boiling_point ? (
                   <MdContentCopy />
@@ -126,7 +128,9 @@ const ThermoProperty = ({
             >
               <p>{melting_point}</p>
               <button
-                onClick={() => handleCopy(melting_point, "melting_point")}
+                onClick={() =>
+                  handleCopy(melting_point.toString(), "melting_point")
+                }
               >
                 {!isCopying.melting_point ? (
                   <MdContentCopy />
