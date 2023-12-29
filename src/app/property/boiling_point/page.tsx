@@ -46,7 +46,7 @@ const Page = () => {
           Boiling Point
         </Link>
         <Link
-          href="/"
+          href="/statistics/boiling_point"
           className={`p-2 ${
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
           } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm`}

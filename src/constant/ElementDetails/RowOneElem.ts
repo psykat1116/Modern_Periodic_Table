@@ -24,8 +24,8 @@ export const RowOneElem: ElementDetailsProps[] = [
           "Para-Hydrogen",
           "https://en.wikipedia.org/wiki/Spin_isomers_of_hydrogen",
         ],
-        ["Mono-atomic Hydrogen",''],
-        ["Di-atomic Hydrogen",''],
+        ["Mono-atomic Hydrogen", ""],
+        ["Di-atomic Hydrogen", ""],
       ],
     },
     particles: {
@@ -49,8 +49,8 @@ export const RowOneElem: ElementDetailsProps[] = [
       van_der_walls_radius: 120,
     },
     thermodynamic_properties: {
-      boiling_point: "-252.87℃",
-      melting_point: "-259.17℃",
+      boiling_point: -252.87,
+      melting_point: -259.17,
       phase: "Gas",
       fusion_heat: 0.558,
       specific_heat: 14300,
@@ -102,7 +102,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       Hazard_class: 2.1,
       dot_number: 1966,
       rtecs_number: "MW8900000",
-      nfpa_label: "/H.png"
+      nfpa_label: "/H.png",
     },
     atom_structure: {
       crystal_structure: "Simple Hexagonal",
@@ -152,8 +152,8 @@ export const RowOneElem: ElementDetailsProps[] = [
       van_der_walls_radius: 140,
     },
     thermodynamic_properties: {
-      boiling_point: "-268.93℃",
-      melting_point: "-272℃",
+      boiling_point: -268.93,
+      melting_point: -272,
       phase: "Gas",
       fusion_heat: 0.02,
       specific_heat: 5193.1,
@@ -203,7 +203,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       Hazard_class: 2.2,
       dot_number: 1963,
       rtecs_number: "MH6520000",
-      nfpa_label: "/He.png"
+      nfpa_label: "/He.png",
     },
     atom_structure: {
       crystal_structure: "Face-Centered Cubic (FCC)",

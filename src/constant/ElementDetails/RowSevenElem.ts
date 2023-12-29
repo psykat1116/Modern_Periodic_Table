@@ -101,8 +101,8 @@ export const RowSevenElem: ElementDetailsProps[] = [
       covalent_radius: 221,
     },
     thermodynamic_properties: {
-      boiling_point: "1737℃",
-      melting_point: "700℃",
+      boiling_point: 1737,
+      melting_point: 700,
       phase: "Solid",
       fusion_heat: 8,
       specific_heat: 92,

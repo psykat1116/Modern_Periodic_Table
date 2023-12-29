@@ -34,8 +34,8 @@ export interface AtomicProperties {
 }
 
 export interface ThermodynamicProperties {
-  boiling_point?: string;
-  melting_point?: string;
+  boiling_point?: number;
+  melting_point?: number;
   phase?: string;
   fusion_heat?: number;
   specific_heat?: number;

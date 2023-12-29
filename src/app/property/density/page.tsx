@@ -51,7 +51,7 @@ const Page = () => {
           Density
         </Link>
         <Link
-          href="/"
+          href="/statistics/density"
           className={`p-2 ${
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
           } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm`}

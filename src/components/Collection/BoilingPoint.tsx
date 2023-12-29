@@ -6,7 +6,7 @@ interface BoilingPoint {
   atomic_number: number;
   symbol: string;
   name: string;
-  boiling_point?: string;
+  boiling_point?: number;
 }
 
 const BoilingPoint = ({

@@ -46,7 +46,7 @@ const Page = () => {
           Bulk Modulus
         </Link>
         <Link
-          href="/"
+          href="/statistics/bulk_modulus"
           className={`p-2 ${
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
           } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm`}

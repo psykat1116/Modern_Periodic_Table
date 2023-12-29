@@ -34,8 +34,8 @@ export const ActinideElem: ElementDetailsProps[] = [
       covalent_radius: 215,
     },
     thermodynamic_properties: {
-      boiling_point: "3200℃",
-      melting_point: "1050℃",
+      boiling_point: 3200,
+      melting_point: 1050,
       phase: "Solid",
       fusion_heat: 14,
       specific_heat: 120,
@@ -111,8 +111,8 @@ export const ActinideElem: ElementDetailsProps[] = [
       covalent_radius: 206,
     },
     thermodynamic_properties: {
-      boiling_point: "4820℃",
-      melting_point: "1750℃",
+      boiling_point: 4820,
+      melting_point: 1750,
       phase: "Solid",
       fusion_heat: 16,
       specific_heat: 118,
@@ -226,8 +226,8 @@ export const ActinideElem: ElementDetailsProps[] = [
       covalent_radius: 200,
     },
     thermodynamic_properties: {
-      boiling_point: "4000℃",
-      melting_point: "1572℃",
+      boiling_point: 4000,
+      melting_point: 1572,
       phase: "Solid",
       fusion_heat: 15,
       specific_heat: 99.1,
@@ -320,8 +320,8 @@ export const ActinideElem: ElementDetailsProps[] = [
       van_der_walls_radius: 186,
     },
     thermodynamic_properties: {
-      boiling_point: "3927℃",
-      melting_point: "1135℃",
+      boiling_point: 3927,
+      melting_point: 1135,
       phase: "Solid",
       fusion_heat: 14,
       specific_heat: 116,
@@ -432,8 +432,8 @@ export const ActinideElem: ElementDetailsProps[] = [
       covalent_radius: 190,
     },
     thermodynamic_properties: {
-      boiling_point: "4000℃",
-      melting_point: "644℃",
+      boiling_point: 4000,
+      melting_point: 644,
       phase: "Solid",
       fusion_heat: 10,
       vaporization_heat: 335,
@@ -537,8 +537,8 @@ export const ActinideElem: ElementDetailsProps[] = [
       covalent_radius: 187,
     },
     thermodynamic_properties: {
-      boiling_point: "3230℃",
-      melting_point: "640℃",
+      boiling_point: 3230,
+      melting_point: 640,
       phase: "Solid",
       vaporization_heat: 325,
     },
@@ -629,8 +629,8 @@ export const ActinideElem: ElementDetailsProps[] = [
       covalent_radius: 180,
     },
     thermodynamic_properties: {
-      boiling_point: "2011℃",
-      melting_point: "1176℃",
+      boiling_point: 2011,
+      melting_point: 1176,
       phase: "Solid",
     },
     material_properties: {
@@ -712,8 +712,8 @@ export const ActinideElem: ElementDetailsProps[] = [
       covalent_radius: 180,
     },
     thermodynamic_properties: {
-      boiling_point: "3110℃",
-      melting_point: "1345℃",
+      boiling_point: 3110,
+      melting_point: 1345,
       phase: "Solid",
     },
     material_properties: {
@@ -786,7 +786,7 @@ export const ActinideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>9</sup>",
     },
     thermodynamic_properties: {
-      melting_point: "1050℃",
+      melting_point: 1050,
       phase: "Solid",
     },
     material_properties: {
@@ -860,7 +860,7 @@ export const ActinideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>10</sup>",
     },
     thermodynamic_properties: {
-      melting_point: "900℃",
+      melting_point: 900,
       phase: "Solid",
     },
     material_properties: {
@@ -933,7 +933,7 @@ export const ActinideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>11</sup>",
     },
     thermodynamic_properties: {
-      melting_point: "860℃",
+      melting_point: 860,
       phase: "Solid",
     },
     reactivity: {
@@ -1002,7 +1002,7 @@ export const ActinideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>12</sup>",
     },
     thermodynamic_properties: {
-      melting_point: "1527℃",
+      melting_point: 1527,
     },
     reactivity: {
       valence: 3,
@@ -1060,7 +1060,7 @@ export const ActinideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>13</sup>",
     },
     thermodynamic_properties: {
-      melting_point: "827℃",
+      melting_point: 827,
     },
     reactivity: {
       valence: 3,
@@ -1120,7 +1120,7 @@ export const ActinideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup>",
     },
     thermodynamic_properties: {
-      melting_point: "827℃",
+      melting_point: 827,
     },
     reactivity: {
       valence: 3,
@@ -1180,7 +1180,7 @@ export const ActinideElem: ElementDetailsProps[] = [
         "1s<sup>2</sup> 2s<sup>1</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 7p<sup>1</sup>",
     },
     thermodynamic_properties: {
-      melting_point: "1627℃",
+      melting_point: 1627,
     },
     reactivity: {
       valence: 3,

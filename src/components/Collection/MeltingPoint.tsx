@@ -6,7 +6,7 @@ interface MeltingPoint {
   atomic_number: number;
   symbol: string;
   name: string;
-  melting_point?: string;
+  melting_point?: number;
 }
 
 const MeltingPoint = ({
