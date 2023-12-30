@@ -39,9 +39,7 @@ const Page = () => {
         <Link
           target="_blank"
           href="https://en.wikipedia.org/wiki/Boiling_point"
-          className={`font-lora p-2 ${
-            theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-          } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm max-md:text-xl`}
+          className="font-lora p-2 max-md:text-xl"
         >
           Boiling Point
         </Link>

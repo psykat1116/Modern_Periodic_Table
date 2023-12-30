@@ -38,15 +38,13 @@ const Page = () => {
       >
         <Link
           href="https://en.wikipedia.org/wiki/Density"
-          className={`font-lora p-2 ${
-            theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-          } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm max-md:text-xl`}
+          className="font-lora p-2 max-md:text-xl"
           target="_blank"
         >
           Liquid Density
         </Link>
         <Link
-          href="/"
+          href="/statistics/liquid_density"
           className={`p-2 ${
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
           } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm`}

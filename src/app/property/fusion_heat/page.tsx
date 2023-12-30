@@ -39,14 +39,12 @@ const Page = () => {
         <Link
           href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/heat-of-fusion"
           target="_blank"
-          className={`font-lora p-2 ${
-            theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-          } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm max-md:text-xl`}
+          className="font-lora p-2 max-md:text-xl"
         >
           Fusion Heat
         </Link>
         <Link
-          href="/"
+          href="/statistics/fusion_heat"
           className={`p-2 ${
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
           } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm`}

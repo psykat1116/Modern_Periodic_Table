@@ -32,26 +32,16 @@ const Page = () => {
       </div>
       <Navbar />
       <div
-        className={`w-full z-[5] flex justify-between items-center p-2 ${
+        className={`w-full z-[5] flex justify-center items-center p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         } text-2xl`}
       >
         <Link
           target="_blank"
           href="https://en.wikipedia.org/wiki/Allotropy"
-          className={`font-lora p-2 ${
-            theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-          } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm max-md:text-xl`}
+          className="font-lora p-2 max-md:text-xl"
         >
           Allotropes
-        </Link>
-        <Link
-          href="/"
-          className={`p-2 ${
-            theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-          } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm`}
-        >
-          <FaRegChartBar className="cursor-pointer" />
         </Link>
       </div>
       <div

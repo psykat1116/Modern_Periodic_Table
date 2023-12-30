@@ -38,15 +38,13 @@ const Page = () => {
       >
         <Link
           href="https://en.wikipedia.org/wiki/Neel_point"
-          className={`font-lora p-2 ${
-            theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-          } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm max-md:text-xl`}
+          className="font-lora p-2 max-md:text-xl"
           target="_blank"
         >
           Neel Point
         </Link>
         <Link
-          href="/"
+          href="/statistics/neel_point"
           className={`p-2 ${
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
           } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm`}

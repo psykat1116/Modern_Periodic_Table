@@ -39,9 +39,7 @@ const Page = () => {
         <Link
           href="https://en.wikipedia.org/wiki/Specific_heat_capacity"
           target="_blank"
-          className={`font-lora p-2 ${
-            theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-          } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm max-md:text-xl`}
+          className="font-lora p-2 max-md:text-xl"
         >
           Specific Heat
         </Link>

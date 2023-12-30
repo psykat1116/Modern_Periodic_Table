@@ -169,7 +169,7 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     reactivity: {
       valence: 0,
-      ionization_energy: 1312,
+      ionization_energy: 2372.3,
     },
     neuclear_properties: {
       radioactive: "No",
