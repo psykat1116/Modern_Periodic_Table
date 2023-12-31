@@ -11,7 +11,7 @@ import {
   Tooltip,
   Title,
 } from "chart.js";
-import labelData, { atomicRadiusData } from "@/constant/GraphData/AtomicRadius";
+import labelData, { tcData } from "@/constant/GraphData/ThermalConductivity";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import Navbar from "@/components/Navbar";
 
@@ -41,7 +41,7 @@ const Page = () => {
       },
       title: {
         display: true,
-        text: "Atomic Radius of Elements",
+        text: "Thermal Conductivity of Elements",
       },
     },
   };
@@ -49,8 +49,8 @@ const Page = () => {
     labels: labelData,
     datasets: [
       {
-        label: "Atomic Radius (Pm)",
-        data: atomicRadiusData,
+        label: "Thermal Conductivity (W/mK)",
+        data: tcData,
         backgroundColor: bgColor,
         borderColor: bdColor,
         borderWidth: 1,

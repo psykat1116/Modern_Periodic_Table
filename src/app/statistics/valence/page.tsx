@@ -11,7 +11,7 @@ import {
   Tooltip,
   Title,
 } from "chart.js";
-import labelData, { atomicRadiusData } from "@/constant/GraphData/AtomicRadius";
+import labelData, { vData } from "@/constant/GraphData/Valence";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import Navbar from "@/components/Navbar";
 
@@ -41,7 +41,7 @@ const Page = () => {
       },
       title: {
         display: true,
-        text: "Atomic Radius of Elements",
+        text: "Valence of Elements",
       },
     },
   };
@@ -49,11 +49,12 @@ const Page = () => {
     labels: labelData,
     datasets: [
       {
-        label: "Atomic Radius (Pm)",
-        data: atomicRadiusData,
+        label: "Valence",
+        data: vData,
         backgroundColor: bgColor,
         borderColor: bdColor,
         borderWidth: 1,
+        tension: 0.1,
       },
     ],
   };

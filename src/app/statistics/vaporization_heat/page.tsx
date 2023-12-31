@@ -11,7 +11,7 @@ import {
   Tooltip,
   Title,
 } from "chart.js";
-import labelData, { atomicRadiusData } from "@/constant/GraphData/AtomicRadius";
+import labelData, { vhData } from "@/constant/GraphData/VaporizationHeat";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import Navbar from "@/components/Navbar";
 
@@ -41,7 +41,7 @@ const Page = () => {
       },
       title: {
         display: true,
-        text: "Atomic Radius of Elements",
+        text: "Vaporization Heat of Elements",
       },
     },
   };
@@ -49,8 +49,8 @@ const Page = () => {
     labels: labelData,
     datasets: [
       {
-        label: "Atomic Radius (Pm)",
-        data: atomicRadiusData,
+        label: "Vaporization Heat (kJ/mol)",
+        data: vhData,
         backgroundColor: bgColor,
         borderColor: bdColor,
         borderWidth: 1,

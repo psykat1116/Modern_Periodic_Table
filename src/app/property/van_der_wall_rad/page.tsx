@@ -44,7 +44,7 @@ const Page = () => {
           Van Der Walls Radius
         </Link>
         <Link
-          href="/"
+          href="/statistics/van_der_walls_radius"
           className={`p-2 ${
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
           } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm`}
