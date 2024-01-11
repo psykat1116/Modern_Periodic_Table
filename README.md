@@ -16,3 +16,5 @@ cd <your given file name>
 npm install
 npm run dev
 ```
+
+You Can See The Running Project in [http://localhost:3000](http://localhost:3000)
