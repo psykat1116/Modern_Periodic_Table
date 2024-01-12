@@ -1,11 +1,12 @@
-import React from "react";
-import { Fragment, useState, useContext } from "react";
-import { Listbox, Transition } from "@headlessui/react";
-import { HiMiniChevronUpDown } from "react-icons/hi2";
-import { BiCheck } from "react-icons/bi";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import DOMPurify from "dompurify";
-import { optionTypes } from "@/types/BoxTypes";
+import { Fragment, useContext, useState } from 'react';
+import { Listbox, Transition } from '@headlessui/react';
+import ThemeContext, { ThemeContextType } from '@/context/ThemeContex';
+
+import { BiCheck } from 'react-icons/bi';
+import DOMPurify from 'dompurify';
+import { HiMiniChevronUpDown } from 'react-icons/hi2';
+import React from 'react';
+import { optionTypes } from '@/types/BoxTypes';
 
 const ListBox = ({ options }: { options: optionTypes[] }) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
@@ -15,9 +16,9 @@ const ListBox = ({ options }: { options: optionTypes[] }) => {
       <div className="relative w-[20%] text-sm max-md:w-full">
         <Listbox.Button
           className={`relative w-full cursor-pointer px-2 py-2 rounded-[4px] ${
-            theme === "dark"
-              ? "bg-bg_dark_placeholder"
-              : "bg-bg_light_placeholder"
+            theme === 'dark'
+              ? 'bg-bg_dark_placeholder'
+              : 'bg-bg_light_placeholder'
           } focus:outline-0 text-left`}
         >
           <span
@@ -40,10 +41,10 @@ const ListBox = ({ options }: { options: optionTypes[] }) => {
           leaveTo="opacity-0"
         >
           <Listbox.Options
-            className={`absolute mt-1 max-h-60 w-full overflow-auto rounded-md ${
-              theme === "dark"
-                ? "bg-bg_dark_placeholder"
-                : "bg-bg_light_placeholder"
+            className={`absolute mt-1 max-h-60 w-full z-10 overflow-auto rounded-md ${
+              theme === 'dark'
+                ? 'bg-bg_dark_placeholder'
+                : 'bg-bg_light_placeholder'
             } py-2 text-base focus:outline-none sm:text-sm`}
           >
             {options.map((person, personIdx) => (
@@ -52,12 +53,12 @@ const ListBox = ({ options }: { options: optionTypes[] }) => {
                 className={({ active }) =>
                   `relative cursor-pointer select-none py-2 pl-10 pr-4 ${
                     active
-                      ? theme === "dark"
-                        ? "bg-black text-text_primary"
-                        : "bg-amber-100 text-text_secondary"
-                      : theme === "dark"
-                      ? "text-text_primary"
-                      : "text-text_secondary"
+                      ? theme === 'dark'
+                        ? 'bg-black text-text_primary'
+                        : 'bg-amber-100 text-text_secondary'
+                      : theme === 'dark'
+                      ? 'text-text_primary'
+                      : 'text-text_secondary'
                   }`
                 }
                 value={person}
@@ -66,7 +67,7 @@ const ListBox = ({ options }: { options: optionTypes[] }) => {
                   <>
                     <span
                       className={`block truncate ${
-                        selected ? "font-medium" : "font-normal"
+                        selected ? 'font-medium' : 'font-normal'
                       }`}
                       dangerouslySetInnerHTML={{
                         __html: DOMPurify.sanitize(person.name),
@@ -76,9 +77,9 @@ const ListBox = ({ options }: { options: optionTypes[] }) => {
                       <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                         <BiCheck
                           className={`h-5 w-5 ${
-                            theme === "dark"
-                              ? "text-text_primary"
-                              : "text-text_secondary"
+                            theme === 'dark'
+                              ? 'text-text_primary'
+                              : 'text-text_secondary'
                           }`}
                           aria-hidden="true"
                         />
