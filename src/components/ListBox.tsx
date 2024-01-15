@@ -40,7 +40,7 @@ const ListBox = ({ options }: { options: optionTypes[] }) => {
           leaveTo="opacity-0"
         >
           <Listbox.Options
-            className={`absolute mt-1 max-h-60 w-full overflow-auto rounded-md ${
+            className={`absolute mt-1 z-10 max-h-60 w-full overflow-auto rounded-md ${
               theme === "dark"
                 ? "bg-bg_dark_placeholder"
                 : "bg-bg_light_placeholder"
