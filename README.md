@@ -1,4 +1,4 @@
-<div align="center"><img src="./src/app/favicon.ico" height="50" width="50"></div>
+<div align="center"><img src="favicon.ico" height="50" width="50"></div>
 
 ## <div align="center">Modern Periodic Table</div>
 
