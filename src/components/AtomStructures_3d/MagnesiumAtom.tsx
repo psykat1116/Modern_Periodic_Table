@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
-const MagnesiumAtom = ({ theme, containerSize }) => {
-  const containerRef = useRef();
+const MagnesiumAtom = ({ theme, containerSize }: { theme: string, containerSize: { width: number, height: number } }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Three.js setup
@@ -21,7 +21,7 @@ const MagnesiumAtom = ({ theme, containerSize }) => {
     scene.add(magnesiumNucleus);
 
     // Create electrons for magnesium (2 in the first orbit, 8 in the second orbit, 2 in the third orbit)
-    const electrons = [];
+    const electrons: THREE.Mesh[] = [];
     const electronMaterial = new THREE.MeshBasicMaterial({ color: theme === "dark" ? 0x0000ff : 0xff0000 });
 
     for (let i = 0; i < 2; i++) {
@@ -121,7 +121,7 @@ const MagnesiumAtom = ({ theme, containerSize }) => {
     animate();
 
     // Function to create an electron
-    function createElectron(material, radius, distance) {
+    function createElectron(material: THREE.Material, radius: number, distance: number, orbit: number): THREE.Mesh {
       const electronGeometry = new THREE.SphereGeometry(0.2, 16, 16);
       const electron = new THREE.Mesh(electronGeometry, material);
 

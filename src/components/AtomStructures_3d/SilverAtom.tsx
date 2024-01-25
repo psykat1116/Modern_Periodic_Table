@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
-const SilverAtom = ({ theme, containerSize }) => {
-  const containerRef = useRef();
+const SilverAtom = ({ theme, containerSize }: { theme: string, containerSize: { width: number, height: number } }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Three.js setup
@@ -21,7 +21,7 @@ const SilverAtom = ({ theme, containerSize }) => {
     scene.add(silverNucleus);
 
     // Create electrons for silver (2 in the first orbit, 8 in the second orbit, 18 in the third orbit, 18 in the fourth orbit, 1 in the fifth orbit)
-    const electrons = [];
+    const electrons: THREE.Mesh[] = [];
     const electronMaterial = new THREE.MeshBasicMaterial({ color: 0x808080 }); // Gray color
 
     for (let i = 0; i < 2; i++) {
@@ -144,7 +144,7 @@ const SilverAtom = ({ theme, containerSize }) => {
     animate();
 
     // Function to create an electron
-    function createElectron(material, radius, distance) {
+    function createElectron(material: THREE.Material, radius: number, distance: number, orbit: number): THREE.Mesh {
       const electronGeometry = new THREE.SphereGeometry(0.2, 16, 16);
       const electron = new THREE.Mesh(electronGeometry, material);
 

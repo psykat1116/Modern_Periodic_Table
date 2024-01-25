@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
-const CeriumAtom = ({ theme, containerSize }) => {
-  const containerRef = useRef();
+const CeriumAtom = ({ theme, containerSize }: { theme: string, containerSize: { width: number, height: number } }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Three.js setup
@@ -21,7 +21,7 @@ const CeriumAtom = ({ theme, containerSize }) => {
     scene.add(ceriumNucleus);
 
     // Create electrons for cerium
-    const electrons = [];
+    const electrons: THREE.Mesh[] = [];
     const electronMaterial = new THREE.MeshBasicMaterial({ color: theme === "dark" ? 0x0000ff : 0xff0000 });
 
     // Electron orbits for cerium
@@ -98,14 +98,14 @@ const CeriumAtom = ({ theme, containerSize }) => {
     animate();
 
     // Function to create an electron
-    function createElectron(material, radius, distance) {
+    function createElectron(material: THREE.Material, radius: number, distance: number, orbit: number): THREE.Mesh {
       const electronGeometry = new THREE.SphereGeometry(0.2, 16, 16);
       const electron = new THREE.Mesh(electronGeometry, material);
       return electron;
     }
 
     // Function to sum an array
-    function sumArray(arr) {
+    function sumArray(arr: number[]): number {
       return arr.reduce((total, value) => total + value, 0);
     }
 

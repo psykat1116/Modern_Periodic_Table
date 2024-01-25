@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 interface NeonAtomProps{
     theme: string,
     containerSize: any
 };
 
-const NeonAtom: React.FC<NeonAtomProps> = ({ theme, containerSize }) => {
-  const containerRef = useRef();
+const NeonAtom: React.FC<NeonAtomProps> = ({ theme, containerSize }: { theme: string, containerSize: { width: number, height: number } }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Three.js setup
@@ -26,7 +26,7 @@ const NeonAtom: React.FC<NeonAtomProps> = ({ theme, containerSize }) => {
     scene.add(neonNucleus);
 
     // Create electrons for neon (2 electrons in the first orbit, 8 electrons in the second orbit)
-    const electrons = [];
+    const electrons: THREE.Mesh[] = [];
     const electronMaterial = new THREE.MeshBasicMaterial({ color: theme === "dark" ? 0x00ff00 : 0x33cc33 });
 
     for (let i = 0; i < 2; i++) {
@@ -112,7 +112,7 @@ const NeonAtom: React.FC<NeonAtomProps> = ({ theme, containerSize }) => {
     animate();
 
     // Function to create an electron
-    function createElectron(material, radius, distance) {
+    function createElectron(material: THREE.Material, radius: number, distance: number, orbit: number): THREE.Mesh {
       const electronGeometry = new THREE.SphereGeometry(0.2, 16, 16);
       const electron = new THREE.Mesh(electronGeometry, material);
 
