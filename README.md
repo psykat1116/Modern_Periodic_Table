@@ -1,5 +1,3 @@
-<div align="center"><img src="favicon.ico" height="50" width="50"></div>
-
 ## <div align="center">Modern Periodic Table</div>
 
 Welcome to the Modern Periodic Table Web Application, an innovative and immersive platform designed to provide an extensive exploration of the periodic table of elements, with a specific emphasis on all types of metals spanning every block. This website is for educational experience for individuals passionate about the diverse world of metals.
@@ -37,9 +35,9 @@ Dive into the details of various metal types, from alkali metals to transition m
  - ###### User-Friendly Presentation:
  It is designed for clarity and ease of use, making it accessible to users of all levels of expertise.
 
- <div align="center"><img src="Screenshot-1.png" height="200"></div>
- <div align="center"><img src="Screenshot-2.png" height="200"></div>
- <div align="center"><img src="Screenshot-3.png" height="200"></div>
+ <div align="center"><img src="https://github.com/Sneha123-zudo/Modern_Periodic_Table/assets/145490348/3bbf8a75-51fd-40c9-8cb2-c667f1067f1b" height="200"></div>
+ <div align="center"><img src="https://github.com/Sneha123-zudo/Modern_Periodic_Table/assets/145490348/e9de7eb5-bdd0-43b4-9edf-991635b4b550" height="200"></div>
+ <div align="center"><img src="https://github.com/Sneha123-zudo/Modern_Periodic_Table/assets/145490348/0d395b19-e7a9-49ab-9015-e1e1492d4969" height="200"></div>
 
 ## Contribution Guidelines 📑
 - Firstly add a star(⭐) in this Repository.
