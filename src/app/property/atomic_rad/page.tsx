@@ -41,7 +41,7 @@ const Page = () => {
           href="https://en.wikipedia.org/wiki/Atomic_radius"
           className="font-lora p-2 max-md:text-xl"
         >
-          CID Number
+          Atomic Radius
         </Link>
         <Link
           href="/statistics/atomic_radius"

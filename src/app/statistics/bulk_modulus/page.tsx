@@ -65,8 +65,8 @@ const Page = () => {
       }`}
     >
       <Navbar />
-      <div className="flex justify-center items-center w-[90%] h-[50%]">
-        <Line data={data} options={options} />
+      <div className="relative flex justify-center items-center w-full xl:w-[90%] h-[90vh]">
+        <Line data={data} options={options} className="rotate-90 xl:rotate-0" />
       </div>
     </div>
   );
