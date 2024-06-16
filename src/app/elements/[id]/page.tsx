@@ -33,12 +33,14 @@ const Page = () => {
   const { id }: { id: string } = useParams();
   const prevId = parseInt(id) - 1 === 0 ? 116 : parseInt(id) - 1,
     nextId = parseInt(id) + 1 === 119 ? 1 : parseInt(id) + 1;
+
   useEffect(() => {
     setElem(getElementData(parseInt(id)));
   }, [id]);
+
   if (typeof window !== "undefined") {
     if (elem) {
-      window.document.title = `Element ${elem?.general_properties.name} (${elem?.general_properties.symbol})`;
+      window.document.title = `${elem?.general_properties.name} (${elem?.general_properties.symbol}) - ${elem?.general_properties.atomic_number} `;
     } else {
       window.document.title = `Modern Periodic Table of Elements`;
     }

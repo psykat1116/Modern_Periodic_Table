@@ -38,7 +38,7 @@ const Page = () => {
         Magnetic Type
       </div>
       <div
-        className={`w-full grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
+        className={`w-full grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
       >
         {RowOneElem.map((e) => {
           return (

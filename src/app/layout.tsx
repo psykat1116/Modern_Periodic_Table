@@ -57,6 +57,14 @@ export const metadata: Metadata = {
     title: "Modern Periodic Table of Elements",
     description:
       "Elemental Explorer is an innovative and interactive platform that reimagines the traditional periodic table for the digital age. With an intuitive interface and comprehensive details on each element, this modern periodic table provides an engaging educational experience for students, educators, and science enthusiasts. Explore atomic properties, electron configurations, historical data, and practical applications with ease. Elemental Explorer brings chemistry to life, making the study of elements more accessible and fascinating than ever before.",
+    images: [
+      {
+        src: "https://github.com/psykat1116/Modern_Periodic_Table/blob/master/public/OpenGraph.png?raw=true",
+        width: 1200,
+        height: 630,
+        alt: "Modern Periodic Table of Elements",
+      },
+    ],
   },
 };
 
