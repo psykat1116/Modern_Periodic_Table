@@ -27,7 +27,37 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "Modern Periodic Table of Elements",
   description:
-    "Modern Next JS 13 Website build with Tailwind CSS for Periodic Table of Elements",
+    "Elemental Explorer is an innovative and interactive platform that reimagines the traditional periodic table for the digital age. With an intuitive interface and comprehensive details on each element, this modern periodic table provides an engaging educational experience for students, educators, and science enthusiasts. Explore atomic properties, electron configurations, historical data, and practical applications with ease. Elemental Explorer brings chemistry to life, making the study of elements more accessible and fascinating than ever before.",
+  keywords: [
+    "Next JS",
+    "Tailwind CSS",
+    "Periodic Table of Elements",
+    "Modern Periodic Table",
+    "Chemistry",
+    "Science",
+    "Education",
+    "Properties of Elements",
+    "Atomic Properties",
+    "Electron Configurations",
+    "Practical Applications",
+    "Interactive Periodic Table",
+    "Educational Platform",
+    "Atomic Structure",
+    "Thermodynamic Properties",
+    "Material Properties",
+    "Neutron Properties",
+    "Health & Safety",
+    "Prevalence",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://modern-periodic-table.vercel.app/",
+    siteName: "Modern Periodic Table of Elements",
+    title: "Modern Periodic Table of Elements",
+    description:
+      "Elemental Explorer is an innovative and interactive platform that reimagines the traditional periodic table for the digital age. With an intuitive interface and comprehensive details on each element, this modern periodic table provides an engaging educational experience for students, educators, and science enthusiasts. Explore atomic properties, electron configurations, historical data, and practical applications with ease. Elemental Explorer brings chemistry to life, making the study of elements more accessible and fascinating than ever before.",
+  },
 };
 
 export default function RootLayout({
