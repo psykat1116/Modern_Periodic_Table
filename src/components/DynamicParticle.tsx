@@ -5,7 +5,6 @@ import { loadFull } from "tsparticles";
 
 const DynamicParticle = () => {
   const particlesInit = async (engine: Engine) => {
-    console.log(engine);
     await loadFull(engine);
   };
 

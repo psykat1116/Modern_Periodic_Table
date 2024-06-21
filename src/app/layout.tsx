@@ -66,6 +66,16 @@ export const metadata: Metadata = {
       },
     ],
   },
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico",
+        sizes: "64x64",
+        type: "image/ico",
+        href: "/favicon.ico",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
