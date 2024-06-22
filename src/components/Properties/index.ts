@@ -1,31 +1,31 @@
 import AtomicProperty from "./AtomicProperty";
-import AtomStructureC from "./AtomStructure";
+import AtomStructure from "./AtomStructure";
 import Description from "./Description";
 import EMProperty from "./EMProperty";
 import ExternalLink from "./ExternalLink";
 import GeneralInfo from "./GeneralInfo";
-import HealthSafetyC from "./HealthSafety";
+import HealthSafety from "./HealthSafety";
 import MaterialProperty from "./MaterialProperty";
 import NeuclearProperty from "./NeuclearProperty";
-import OverviewC from "./Overview";
-import ParticlesC from "./Particles";
-import PrevalenceC from "./Prevalence";
+import Overview from "./Overview";
+import Particles from "./Particles";
+import Prevalence from "./Prevalence";
 import Reactivity from "./Reactivity";
 import ThermoProperty from "./ThermoProperty";
 
 export {
   AtomicProperty,
-  AtomStructureC,
+  AtomStructure,
   Description,
   EMProperty,
   ExternalLink,
   GeneralInfo,
-  HealthSafetyC,
+  HealthSafety,
   MaterialProperty,
   NeuclearProperty,
-  OverviewC,
-  ParticlesC,
-  PrevalenceC,
+  Overview,
+  Particles,
+  Prevalence,
   Reactivity,
   ThermoProperty,
 };

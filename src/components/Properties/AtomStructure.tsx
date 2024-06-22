@@ -6,7 +6,7 @@ import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import { motion } from "framer-motion";
 
-const AtomStructureC = ({
+const AtomStructure = ({
   crystal_structure,
   lattice_angle,
   lattice_constant,
@@ -193,4 +193,4 @@ const AtomStructureC = ({
   );
 };
 
-export default AtomStructureC;
+export default AtomStructure;

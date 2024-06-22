@@ -7,7 +7,7 @@ import ListBox from "../ListBox";
 
 const EnergyOptions = [{ name: "kJ/mol" }, { name: "kCal/mol" }];
 
-const ReactivityC = ({
+const Reactivity = ({
   electron_affinity,
   electronegativity,
   valence,
@@ -178,4 +178,4 @@ const ReactivityC = ({
   );
 };
 
-export default ReactivityC;
+export default Reactivity;

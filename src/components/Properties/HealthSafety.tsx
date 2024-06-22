@@ -5,7 +5,7 @@ import { HealthSafety } from "@/types/ElementTypes";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
-const HealthSafetyC = ({
+const HealthSafety = ({
   Hazard_class,
   dot_number,
   rtecs_number,
@@ -145,4 +145,4 @@ const HealthSafetyC = ({
   );
 };
 
-export default HealthSafetyC;
+export default HealthSafety;
