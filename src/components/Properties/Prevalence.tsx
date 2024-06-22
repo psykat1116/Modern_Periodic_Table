@@ -5,7 +5,7 @@ import { MdContentCopy, MdCheck } from "react-icons/md";
 import DOMPurify from "dompurify";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
-const Prevalence = ({
+const PrevalenceC = ({
   universe,
   sun,
   ocean,
@@ -220,4 +220,4 @@ const Prevalence = ({
   );
 };
 
-export default Prevalence;
+export default PrevalenceC;

@@ -64,9 +64,7 @@ const MaterialProperty = ({
     vickers_hardness: vickers_hardness || 0,
     brinell_hardness: brinell_hardness || 0,
   });
-  const [thermal, setThermal] = useState({
-    thermal_conductivity: thermal_conductivity || 0,
-  });
+  const [thermal, setThermal] = useState(thermal_conductivity || 0);
   const [modulus, setModulus] = useState({
     bulk_modulus: bulk_modulus || 0,
     young_modulus: young_modulus || 0,
@@ -468,11 +466,11 @@ const MaterialProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{thermal.thermal_conductivity}</p>
+              <p>{thermal}</p>
               <button
                 onClick={() =>
                   handleCopy(
-                    thermal.thermal_conductivity.toString(),
+                    thermal.toString(),
                     "thermal_conductivity"
                   )
                 }

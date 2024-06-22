@@ -5,7 +5,7 @@ import { MdContentCopy, MdCheck } from "react-icons/md";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import { motion } from "framer-motion";
 
-const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
+const OverviewC = ({ latin_name, discovery, discoverer }: Overview) => {
   const [isCopying, setIsCopying] = useState({
     latin_name: false,
     discoverer: false,
@@ -113,4 +113,4 @@ const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
   );
 };
 
-export default Overview;
+export default OverviewC;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Dispatch, SetStateAction } from "react";
 import { Fragment, useState, useContext } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { HiMiniChevronUpDown } from "react-icons/hi2";
@@ -27,50 +27,52 @@ interface ListBoxProps {
   ThermalType?: "thermal_conductivity";
   ModulusType?: "bulk_modulus" | "young_modulus";
   DensityType?: "density" | "liquid_density";
-  setTemp?: React.Dispatch<
-    React.SetStateAction<{
+  setTemp?: Dispatch<
+    SetStateAction<{
       melting_point: number;
       boiling_point: number;
       neel_point: number;
     }>
   >;
-  setEMTemp?: React.Dispatch<
-    React.SetStateAction<{
+  setEMTemp?: Dispatch<
+    SetStateAction<{
       curie_point: number;
       superconducting_point: number;
     }>
   >;
-  setAtomEnergy?: React.Dispatch<
-    React.SetStateAction<{
+  setAtomEnergy?: Dispatch<
+    SetStateAction<{
       electron_affinity: number;
       ionization_energy: number;
     }>
   >;
-  setHardness?: React.Dispatch<
-    React.SetStateAction<{
+  setHardness?: Dispatch<
+    SetStateAction<{
       shear_modulus: number;
       vickers_hardness: number;
       brinell_hardness: number;
     }>
   >;
-  setThermal?: React.Dispatch<
-    React.SetStateAction<{
-      thermal_conductivity: number;
-    }>
-  >;
-  setModulus?: React.Dispatch<
-    React.SetStateAction<{
+  setThermal?: Dispatch<SetStateAction<number>>;
+  setModulus?: Dispatch<
+    SetStateAction<{
       bulk_modulus: number;
       young_modulus: number;
     }>
   >;
-  setDensityData?: React.Dispatch<
-    React.SetStateAction<{
+  setDensityData?: Dispatch<
+    SetStateAction<{
       density: number;
       liquid_density: number;
     }>
   >;
-  category?: string;
+  category:
+    | "Temperature"
+    | "Thermal"
+    | "Modulus"
+    | "AtomEnergy"
+    | "Hardness"
+    | "Density";
 }
 
 const ListBox: React.FC<ListBoxProps> = ({
@@ -104,7 +106,7 @@ const ListBox: React.FC<ListBoxProps> = ({
       if (selected.name === "Feranheit (℉)") {
         newTemp = (newTemp * 9) / 5 + 32;
       } else if (selected.name === "Kelvin (K)") {
-        newTemp = newTemp + 273.15;
+        newTemp += 273.15;
       }
       setTemp?.((prev) => ({
         ...prev,
@@ -121,7 +123,7 @@ const ListBox: React.FC<ListBoxProps> = ({
       });
       if (!newAtomEnergy) return;
       if (selected.name === "kCal/mol") {
-        newAtomEnergy = newAtomEnergy / 4.184;
+        newAtomEnergy /= 4.184;
       }
       setAtomEnergy?.((prev) => ({
         ...prev,
@@ -134,7 +136,7 @@ const ListBox: React.FC<ListBoxProps> = ({
       });
       if (!newHardness) return;
       if (selected.name === "dyne/cm<sup>2</sup>") {
-        newHardness = newHardness * 10000000;
+        newHardness *= 10000000;
       }
       setHardness?.((prev) => ({
         ...prev,
@@ -147,12 +149,9 @@ const ListBox: React.FC<ListBoxProps> = ({
       });
       if (!newThermal) return;
       if (selected.name === "calcm<sup>-1</sup>s<sup>-1</sup>℃<sup>-1</sup>") {
-        newThermal = newThermal / 418.4;
+        newThermal /= 418.4;
       }
-      setThermal?.((prev) => ({
-        ...prev,
-        [ThermalType]: newThermal,
-      }));
+      setThermal?.(newThermal);
     } else if (category === "Modulus") {
       let newModulus = ConvertModulus({
         type: ModulusType,

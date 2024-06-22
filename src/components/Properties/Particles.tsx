@@ -3,7 +3,7 @@ import { Particles } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import { motion } from "framer-motion";
 
-const Particles = ({ electrons, protons, neutrons }: Particles) => {
+const ParticlesC = ({ electrons, protons, neutrons }: Particles) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div
@@ -48,4 +48,4 @@ const Particles = ({ electrons, protons, neutrons }: Particles) => {
   );
 };
 
-export default Particles;
+export default ParticlesC;
