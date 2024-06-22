@@ -151,7 +151,7 @@ const ListBox: React.FC<ListBoxProps> = ({
       }
       setThermal?.((prev) => ({
         ...prev,
-        thermal_conductivity: newThermal,
+        [ThermalType]: newThermal,
       }));
     } else if (category === "Modulus") {
       let newModulus = ConvertModulus({
