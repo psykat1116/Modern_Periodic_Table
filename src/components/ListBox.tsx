@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Fragment, useState, useContext } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { HiMiniChevronUpDown } from "react-icons/hi2";
@@ -6,10 +6,114 @@ import { BiCheck } from "react-icons/bi";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import DOMPurify from "dompurify";
 import { optionTypes } from "@/types/BoxTypes";
+import { ConvertTemp } from "@/constant/UnitConverter/Temp";
+import { useParams } from "next/navigation";
+import { ConvertEnergy } from "@/constant/UnitConverter/AtomEnergy";
+import { ConvertHardness } from "@/constant/UnitConverter/Hardness";
 
-const ListBox = ({ options }: { options: optionTypes[] }) => {
+interface ListBoxProps {
+  options: optionTypes[];
+  Temptype?:
+    | "boiling_point"
+    | "melting_point"
+    | "neel_point"
+    | "curie_point"
+    | "superconducting_point";
+  AtomEnergyType?: "ionization_energy" | "electron_affinity";
+  HardnessType?: "shear_modulus" | "vickers_hardness" | "brinell_hardness";
+  setTemp?: React.Dispatch<
+    React.SetStateAction<{
+      melting_point: number;
+      boiling_point: number;
+      neel_point: number;
+    }>
+  >;
+  setEMTemp?: React.Dispatch<
+    React.SetStateAction<{
+      curie_point: number;
+      superconducting_point: number;
+    }>
+  >;
+  setAtomEnergy?: React.Dispatch<
+    React.SetStateAction<{
+      electron_affinity: number;
+      ionization_energy: number;
+    }>
+  >;
+  setHardness?: React.Dispatch<
+    React.SetStateAction<{
+      shear_modulus: number;
+      vickers_hardness: number;
+      brinell_hardness: number;
+    }>
+  >;
+  category?: string;
+}
+
+const ListBox: React.FC<ListBoxProps> = ({
+  options,
+  Temptype = "boiling_point",
+  setTemp,
+  category = "Temperature",
+  setEMTemp,
+  AtomEnergyType = "ionization_energy",
+  setAtomEnergy,
+  HardnessType = "shear_modulus",
+  setHardness,
+}) => {
+  const params = useParams();
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const [selected, setSelected] = useState(options[0]);
+
+  useEffect(() => {
+    if (category === "Temperature") {
+      let newTemp = ConvertTemp({
+        id: parseInt(params.id as string),
+        type: Temptype,
+      });
+      if (!newTemp) return;
+      if (selected.name === "Feranheit (℉)") {
+        newTemp = (newTemp * 9) / 5 + 32;
+      } else if (selected.name === "Kelvin (K)") {
+        newTemp = newTemp + 273.15;
+      }
+      setTemp?.((prev) => ({
+        ...prev,
+        [Temptype]: newTemp,
+      }));
+      setEMTemp?.((prev) => ({
+        ...prev,
+        [Temptype]: newTemp,
+      }));
+    } else if (category === "AtomEnergy") {
+      let newAtomEnergy = ConvertEnergy({
+        type: AtomEnergyType,
+        id: parseInt(params.id as string),
+      });
+      if (!newAtomEnergy) return;
+      if (selected.name === "kCal/mol") {
+        newAtomEnergy = newAtomEnergy / 4.184;
+      }
+      setAtomEnergy?.((prev) => ({
+        ...prev,
+        [AtomEnergyType]: newAtomEnergy,
+      }));
+    } else if (category === "Hardness") {
+      let newHardness = ConvertHardness({
+        type: HardnessType,
+        id: parseInt(params.id as string),
+      });
+      if (!newHardness) return;
+      if (selected.name === "dyne/cm<sup>2</sup>") {
+        newHardness = newHardness * 10000000;
+      }
+      setHardness?.((prev) => ({
+        ...prev,
+        [HardnessType]: newHardness,
+      }));
+    }
+  }, [selected]);
+
   return (
     <Listbox value={selected} onChange={setSelected}>
       <div className="relative w-[20%] text-sm max-md:w-full">

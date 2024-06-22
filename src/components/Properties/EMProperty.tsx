@@ -30,6 +30,7 @@ const EMProperty = ({
   volume_magnetic_suspectibility,
   superconducting_point,
 }: ElectromagneticProperties) => {
+  const { theme } = useContext(ThemeContext) as ThemeContextType;
   const [isCopying, setIsCopying] = useState({
     electrical_conductivity: false,
     electrical_type: false,
@@ -41,7 +42,10 @@ const EMProperty = ({
     volume_magnetic_suspectibility: false,
     superconducting_point: false,
   });
-  const { theme } = useContext(ThemeContext) as ThemeContextType;
+  const [EMtemp, setEMTemp] = useState({
+    curie_point: curie_point || 0,
+    superconducting_point: superconducting_point || 0,
+  });
   const handleCopy = (value: string, property: string) => {
     setIsCopying({ ...isCopying, [property]: true });
     navigator.clipboard.writeText(value);
@@ -204,10 +208,10 @@ const EMProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{curie_point}</p>
+              <p>{EMtemp.curie_point}</p>
               <button
                 onClick={() =>
-                  handleCopy(curie_point.toString(), "curie_point")
+                  handleCopy(EMtemp.curie_point.toString(), "curie_point")
                 }
               >
                 {!isCopying.curie_point ? (
@@ -217,7 +221,12 @@ const EMProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={TempOptions} />
+            <ListBox
+              options={TempOptions}
+              category="Temperature"
+              Temptype="curie_point"
+              setEMTemp={setEMTemp}
+            />
           </div>
         )}
         {superconducting_point && (
@@ -235,11 +244,11 @@ const EMProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{superconducting_point}</p>
+              <p>{EMtemp.superconducting_point}</p>
               <button
                 onClick={() =>
                   handleCopy(
-                    superconducting_point.toString(),
+                    EMtemp.superconducting_point.toString(),
                     "superconducting_point"
                   )
                 }
@@ -251,7 +260,12 @@ const EMProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={TempOptions} />
+            <ListBox
+              options={TempOptions}
+              category="Temperature"
+              Temptype="superconducting_point"
+              setEMTemp={setEMTemp}
+            />
           </div>
         )}
         {mass_magnetic_suspectibility && (

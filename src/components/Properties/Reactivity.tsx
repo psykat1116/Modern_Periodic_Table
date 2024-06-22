@@ -7,19 +7,23 @@ import ListBox from "../ListBox";
 
 const EnergyOptions = [{ name: "kJ/mol" }, { name: "kCal/mol" }];
 
-const Reactivity = ({
+const ReactivityC = ({
   electron_affinity,
   electronegativity,
   valence,
   ionization_energy,
 }: Reactivity) => {
+  const { theme } = useContext(ThemeContext) as ThemeContextType;
   const [isCopying, setIsCopying] = useState({
     electron_affinity: false,
     electronegativity: false,
     valence: false,
     ionization_energy: false,
   });
-  const { theme } = useContext(ThemeContext) as ThemeContextType;
+  const [atomEnergy, setAtomEnergy] = useState({
+    electron_affinity: electron_affinity || 0,
+    ionization_energy: ionization_energy || 0,
+  });
   const handleCopy = (value: string, property: string) => {
     setIsCopying({ ...isCopying, [property]: true });
     navigator.clipboard.writeText(value);
@@ -52,10 +56,13 @@ const Reactivity = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{electron_affinity}</p>
+              <p>{atomEnergy.electron_affinity}</p>
               <button
                 onClick={() =>
-                  handleCopy(electron_affinity.toString(), "electron_affinity")
+                  handleCopy(
+                    atomEnergy.electron_affinity.toString(),
+                    "electron_affinity"
+                  )
                 }
               >
                 {!isCopying.electron_affinity ? (
@@ -65,7 +72,12 @@ const Reactivity = ({
                 )}
               </button>
             </div>
-            <ListBox options={EnergyOptions} />
+            <ListBox
+              options={EnergyOptions}
+              category="AtomEnergy"
+              setAtomEnergy={setAtomEnergy}
+              AtomEnergyType="electron_affinity"
+            />
           </div>
         )}
         {ionization_energy && (
@@ -83,10 +95,13 @@ const Reactivity = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{ionization_energy}</p>
+              <p>{atomEnergy.ionization_energy}</p>
               <button
                 onClick={() =>
-                  handleCopy(ionization_energy.toString(), "ionization_energy")
+                  handleCopy(
+                    atomEnergy.ionization_energy.toString(),
+                    "ionization_energy"
+                  )
                 }
               >
                 {!isCopying.ionization_energy ? (
@@ -96,7 +111,12 @@ const Reactivity = ({
                 )}
               </button>
             </div>
-            <ListBox options={EnergyOptions} />
+            <ListBox
+              options={EnergyOptions}
+              setAtomEnergy={setAtomEnergy}
+              AtomEnergyType="ionization_energy"
+              category="AtomEnergy"
+            />
           </div>
         )}
         {electronegativity && (
@@ -158,4 +178,4 @@ const Reactivity = ({
   );
 };
 
-export default Reactivity;
+export default ReactivityC;

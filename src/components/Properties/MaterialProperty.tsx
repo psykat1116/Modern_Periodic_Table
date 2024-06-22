@@ -47,6 +47,7 @@ const MaterialProperty = ({
   refrective_index,
   shear_modulus,
 }: MaterialProperties) => {
+  const { theme } = useContext(ThemeContext) as ThemeContextType;
   const [isCopying, setIsCopying] = useState({
     color: false,
     molar_volume: false,
@@ -63,7 +64,11 @@ const MaterialProperty = ({
     refrective_index: false,
     shear_modulus: false,
   });
-  const { theme } = useContext(ThemeContext) as ThemeContextType;
+  const [hardness, setHardness] = useState({
+    shear_modulus: shear_modulus || 0,
+    vickers_hardness: vickers_hardness || 0,
+    brinell_hardness: brinell_hardness || 0,
+  });
   const handleCopy = (value: string, property: string) => {
     setIsCopying({ ...isCopying, [property]: true });
     navigator.clipboard.writeText(value);
@@ -218,10 +223,13 @@ const MaterialProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{brinell_hardness}</p>
+              <p>{hardness.brinell_hardness}</p>
               <button
                 onClick={() =>
-                  handleCopy(brinell_hardness.toString(), "brinell_hardness")
+                  handleCopy(
+                    hardness.brinell_hardness.toString(),
+                    "brinell_hardness"
+                  )
                 }
               >
                 {!isCopying.brinell_hardness ? (
@@ -231,7 +239,12 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={BrinnelVickerShearModulusOptions} />
+            <ListBox
+              options={BrinnelVickerShearModulusOptions}
+              setHardness={setHardness}
+              category="Hardness"
+              HardnessType="brinell_hardness"
+            />
           </div>
         )}
         {density && (
@@ -338,10 +351,13 @@ const MaterialProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{vickers_hardness}</p>
+              <p>{hardness.vickers_hardness}</p>
               <button
                 onClick={() =>
-                  handleCopy(vickers_hardness.toString(), "vickers_hardness")
+                  handleCopy(
+                    hardness.vickers_hardness.toString(),
+                    "vickers_hardness"
+                  )
                 }
               >
                 {!isCopying.vickers_hardness ? (
@@ -351,7 +367,12 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={BrinnelVickerShearModulusOptions} />
+            <ListBox
+              options={BrinnelVickerShearModulusOptions}
+              setHardness={setHardness}
+              category="Hardness"
+              HardnessType="vickers_hardness"
+            />
           </div>
         )}
         {shear_modulus && (
@@ -369,10 +390,10 @@ const MaterialProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{shear_modulus}</p>
+              <p>{hardness.shear_modulus}</p>
               <button
                 onClick={() =>
-                  handleCopy(shear_modulus.toString(), "shear_modulus")
+                  handleCopy(hardness.shear_modulus.toString(), "shear_modulus")
                 }
               >
                 {!isCopying.shear_modulus ? (
@@ -382,7 +403,12 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={BrinnelVickerShearModulusOptions} />
+            <ListBox
+              options={BrinnelVickerShearModulusOptions}
+              setHardness={setHardness}
+              category="Hardness"
+              HardnessType="shear_modulus"
+            />
           </div>
         )}
         {thermal_conductivity && (

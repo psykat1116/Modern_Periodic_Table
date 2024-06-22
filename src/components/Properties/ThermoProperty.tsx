@@ -7,33 +7,10 @@ import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import ListBox from "../ListBox";
 import { motion } from "framer-motion";
 
-const SpecificHeatOptions = [
-  { name: "JKg<sup>-1</sup>K<sup>-1</sup>" },
-  { name: "Jg<sup>-1</sup>℃<sup>-1</sup>" },
-];
-
-const VaporizationHeatOptions = [
-  { name: "kJmol<sup>-1</sup>" },
-  { name: "Jg<sup>-1</sup>" },
-  { name: "KJ/Kg" },
-];
-
-const FusionHeatOptions = [
-  { name: "kJmol<sup>-1</sup>" },
-  { name: "Cal/g" },
-  { name: "J/Kg" },
-];
-
 const TemperatureOptions = [
   { name: "Celcius (℃)" },
   { name: "Feranheit (℉)" },
   { name: "Kelvin (K)" },
-];
-
-const ThermalExpansionOptions = [
-  { name: "K<sup>-1</sup>" },
-  { name: "℃<sup>-1</sup>" },
-  { name: "℉<sup>-1</sup>" },
 ];
 
 const ThermoProperty = ({
@@ -47,6 +24,7 @@ const ThermoProperty = ({
   neel_point,
   adiabatic_index,
 }: ThermodynamicProperties) => {
+  const { theme } = useContext(ThemeContext) as ThemeContextType;
   const [isCopying, setIsCopying] = useState({
     boiling_point: false,
     melting_point: false,
@@ -58,7 +36,13 @@ const ThermoProperty = ({
     neel_point: false,
     adiabatic_index: false,
   });
-  const { theme } = useContext(ThemeContext) as ThemeContextType;
+
+  const [temp, setTemp] = useState({
+    melting_point: melting_point || 0,
+    boiling_point: boiling_point || 0,
+    neel_point: neel_point || 0,
+  });
+
   const handleCopy = (value: string, property: string) => {
     setIsCopying({ ...isCopying, [property]: true });
     navigator.clipboard.writeText(value);
@@ -95,10 +79,10 @@ const ThermoProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{boiling_point}</p>
+              <p>{temp.boiling_point}</p>
               <button
                 onClick={() =>
-                  handleCopy(boiling_point.toString(), "boiling_point")
+                  handleCopy(temp.boiling_point.toString(), "boiling_point")
                 }
               >
                 {!isCopying.boiling_point ? (
@@ -108,7 +92,12 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={TemperatureOptions} />
+            <ListBox
+              options={TemperatureOptions}
+              Temptype="boiling_point"
+              setTemp={setTemp}
+              category="Temperature"
+            />
           </div>
         )}
         {melting_point && (
@@ -126,10 +115,10 @@ const ThermoProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{melting_point}</p>
+              <p>{temp.melting_point}</p>
               <button
                 onClick={() =>
-                  handleCopy(melting_point.toString(), "melting_point")
+                  handleCopy(temp.melting_point.toString(), "melting_point")
                 }
               >
                 {!isCopying.melting_point ? (
@@ -139,7 +128,12 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={TemperatureOptions} />
+            <ListBox
+              options={TemperatureOptions}
+              Temptype="melting_point"
+              setTemp={setTemp}
+              category="Temperature"
+            />
           </div>
         )}
         {phase && (
@@ -196,7 +190,16 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={FusionHeatOptions} />
+            <div
+              className={`w-[20%] px-2 py-2 text-sm rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } max-md:w-full`}
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize("kJmol<sup>-1</sup>"),
+              }}
+            ></div>
           </div>
         )}
         {specific_heat && (
@@ -227,7 +230,16 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={VaporizationHeatOptions} />
+            <div
+              className={`w-[20%] px-2 py-2 text-sm rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } max-md:w-full`}
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize("JKg<sup>-1</sup>K<sup>-1</sup>"),
+              }}
+            ></div>
           </div>
         )}
         {vaporization_heat && (
@@ -258,7 +270,16 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={SpecificHeatOptions} />
+            <div
+              className={`w-[20%] px-2 py-2 text-sm rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } max-md:w-full`}
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize("kJmol<sup>-1</sup>"),
+              }}
+            ></div>
           </div>
         )}
         {thermal_expansion && (
@@ -293,7 +314,16 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={ThermalExpansionOptions} />
+            <div
+              className={`w-[20%] px-2 py-2 text-sm rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } max-md:w-full`}
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize("K<sup>-1</sup>"),
+              }}
+            ></div>
           </div>
         )}
         {neel_point && (
@@ -311,9 +341,11 @@ const ThermoProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{neel_point}</p>
+              <p>{temp.neel_point}</p>
               <button
-                onClick={() => handleCopy(neel_point.toString(), "neel_point")}
+                onClick={() =>
+                  handleCopy(temp.neel_point.toString(), "neel_point")
+                }
               >
                 {!isCopying.neel_point ? (
                   <MdContentCopy />
@@ -322,7 +354,12 @@ const ThermoProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={TemperatureOptions} />
+            <ListBox
+              options={TemperatureOptions}
+              Temptype="neel_point"
+              category="Temperature"
+              setTemp={setTemp}
+            />
           </div>
         )}
         {adiabatic_index && (
