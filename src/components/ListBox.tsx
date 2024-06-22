@@ -10,6 +10,9 @@ import { ConvertTemp } from "@/constant/UnitConverter/Temp";
 import { useParams } from "next/navigation";
 import { ConvertEnergy } from "@/constant/UnitConverter/AtomEnergy";
 import { ConvertHardness } from "@/constant/UnitConverter/Hardness";
+import { ConvertThermal } from "@/constant/UnitConverter/Conductivity";
+import { ConvertModulus } from "@/constant/UnitConverter/Modulus";
+import { ConvertDensity } from "@/constant/UnitConverter/Density";
 
 interface ListBoxProps {
   options: optionTypes[];
@@ -21,6 +24,9 @@ interface ListBoxProps {
     | "superconducting_point";
   AtomEnergyType?: "ionization_energy" | "electron_affinity";
   HardnessType?: "shear_modulus" | "vickers_hardness" | "brinell_hardness";
+  ThermalType?: "thermal_conductivity";
+  ModulusType?: "bulk_modulus" | "young_modulus";
+  DensityType?: "density" | "liquid_density";
   setTemp?: React.Dispatch<
     React.SetStateAction<{
       melting_point: number;
@@ -47,6 +53,23 @@ interface ListBoxProps {
       brinell_hardness: number;
     }>
   >;
+  setThermal?: React.Dispatch<
+    React.SetStateAction<{
+      thermal_conductivity: number;
+    }>
+  >;
+  setModulus?: React.Dispatch<
+    React.SetStateAction<{
+      bulk_modulus: number;
+      young_modulus: number;
+    }>
+  >;
+  setDensityData?: React.Dispatch<
+    React.SetStateAction<{
+      density: number;
+      liquid_density: number;
+    }>
+  >;
   category?: string;
 }
 
@@ -60,6 +83,12 @@ const ListBox: React.FC<ListBoxProps> = ({
   setAtomEnergy,
   HardnessType = "shear_modulus",
   setHardness,
+  ThermalType = "thermal_conductivity",
+  setThermal,
+  ModulusType = "bulk_modulus",
+  setModulus,
+  DensityType = "density",
+  setDensityData,
 }) => {
   const params = useParams();
   const { theme } = useContext(ThemeContext) as ThemeContextType;
@@ -110,6 +139,45 @@ const ListBox: React.FC<ListBoxProps> = ({
       setHardness?.((prev) => ({
         ...prev,
         [HardnessType]: newHardness,
+      }));
+    } else if (category === "Thermal") {
+      let newThermal = ConvertThermal({
+        type: ThermalType,
+        id: parseInt(params.id as string),
+      });
+      if (!newThermal) return;
+      if (selected.name === "calcm<sup>-1</sup>s<sup>-1</sup>℃<sup>-1</sup>") {
+        newThermal = newThermal / 418.4;
+      }
+      setThermal?.((prev) => ({
+        ...prev,
+        thermal_conductivity: newThermal,
+      }));
+    } else if (category === "Modulus") {
+      let newModulus = ConvertModulus({
+        type: ModulusType,
+        id: parseInt(params.id as string),
+      });
+      if (!newModulus) return;
+      if (selected.name === "dyne/cm<sup>2</sup>") {
+        newModulus = newModulus * 10000000000;
+      }
+      setModulus?.((prev) => ({
+        ...prev,
+        [ModulusType]: newModulus,
+      }));
+    } else if (category === "Density") {
+      let newDensity = ConvertDensity({
+        type: DensityType,
+        id: parseInt(params.id as string),
+      });
+      if (!newDensity) return;
+      if (selected.name === "g/cm<sup>3</sup>") {
+        newDensity = newDensity / 1000;
+      }
+      setDensityData?.((prev) => ({
+        ...prev,
+        [DensityType]: newDensity,
       }));
     }
   }, [selected]);

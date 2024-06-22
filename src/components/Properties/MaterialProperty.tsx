@@ -1,15 +1,10 @@
 import React, { useState, useContext } from "react";
-import Link from "next/link";
-import { MaterialProperties } from "@/types/ElementTypes";
-import { MdContentCopy, MdCheck } from "react-icons/md";
 import DOMPurify from "dompurify";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import Link from "next/link";
 import ListBox from "../ListBox";
-
-const MolarVolumeOptions = [
-  { name: "m<sup>3</sup>/mol" },
-  { name: "cm<sup>3</sup>/mol" },
-];
+import { MdContentCopy, MdCheck } from "react-icons/md";
+import { MaterialProperties } from "@/types/ElementTypes";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const BulkYoungModulusOptions = [
   { name: "GPa(10<sup>9</sup>N/m<sup>2</sup>)" },
@@ -68,6 +63,17 @@ const MaterialProperty = ({
     shear_modulus: shear_modulus || 0,
     vickers_hardness: vickers_hardness || 0,
     brinell_hardness: brinell_hardness || 0,
+  });
+  const [thermal, setThermal] = useState({
+    thermal_conductivity: thermal_conductivity || 0,
+  });
+  const [modulus, setModulus] = useState({
+    bulk_modulus: bulk_modulus || 0,
+    young_modulus: young_modulus || 0,
+  });
+  const [densitydata, setDensitydata] = useState({
+    density: density || 0,
+    liquid_density: liquid_density || 0,
   });
   const handleCopy = (value: string, property: string) => {
     setIsCopying({ ...isCopying, [property]: true });
@@ -144,7 +150,16 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={MolarVolumeOptions} />
+            <div
+              className={`w-[20%] px-2 py-2 text-sm rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } max-md:w-full`}
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize("m<sup>3</sup>/mol"),
+              }}
+            ></div>
           </div>
         )}
         {mohs_hardness && (
@@ -192,10 +207,10 @@ const MaterialProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{bulk_modulus}</p>
+              <p>{modulus.bulk_modulus}</p>
               <button
                 onClick={() =>
-                  handleCopy(bulk_modulus.toString(), "bulk_modulus")
+                  handleCopy(modulus.bulk_modulus.toString(), "bulk_modulus")
                 }
               >
                 {!isCopying.bulk_modulus ? (
@@ -205,7 +220,12 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={BulkYoungModulusOptions} />
+            <ListBox
+              options={BulkYoungModulusOptions}
+              category="Modulus"
+              setModulus={setModulus}
+              ModulusType="bulk_modulus"
+            />
           </div>
         )}
         {brinell_hardness && (
@@ -262,8 +282,12 @@ const MaterialProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{density}</p>
-              <button onClick={() => handleCopy(density.toString(), "density")}>
+              <p>{densitydata.density}</p>
+              <button
+                onClick={() =>
+                  handleCopy(densitydata.density.toString(), "density")
+                }
+              >
                 {!isCopying.density ? (
                   <MdContentCopy />
                 ) : (
@@ -271,7 +295,12 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={DensityOptions} />
+            <ListBox
+              options={DensityOptions}
+              category="Density"
+              setDensityData={setDensitydata}
+              DensityType="density"
+            />
           </div>
         )}
         {liquid_density && (
@@ -289,10 +318,13 @@ const MaterialProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{liquid_density}</p>
+              <p>{densitydata.liquid_density}</p>
               <button
                 onClick={() =>
-                  handleCopy(liquid_density.toString(), "liquid_density")
+                  handleCopy(
+                    densitydata.liquid_density.toString(),
+                    "liquid_density"
+                  )
                 }
               >
                 {!isCopying.liquid_density ? (
@@ -302,7 +334,12 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={DensityOptions} />
+            <ListBox
+              options={DensityOptions}
+              category="Density"
+              setDensityData={setDensitydata}
+              DensityType="liquid_density"
+            />
           </div>
         )}
         {young_modulus && (
@@ -320,10 +357,10 @@ const MaterialProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{young_modulus}</p>
+              <p>{modulus.young_modulus}</p>
               <button
                 onClick={() =>
-                  handleCopy(young_modulus.toString(), "young_modulus")
+                  handleCopy(modulus.young_modulus.toString(), "young_modulus")
                 }
               >
                 {!isCopying.young_modulus ? (
@@ -333,7 +370,12 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={BulkYoungModulusOptions} />
+            <ListBox
+              options={BulkYoungModulusOptions}
+              category="Modulus"
+              setModulus={setModulus}
+              ModulusType="young_modulus"
+            />
           </div>
         )}
         {vickers_hardness && (
@@ -426,11 +468,11 @@ const MaterialProperty = ({
                   : "bg-bg_light_placeholder"
               } px-2 py-1 rounded-[4px] flex justify-between items-center select-none max-md:w-full`}
             >
-              <p>{thermal_conductivity}</p>
+              <p>{thermal.thermal_conductivity}</p>
               <button
                 onClick={() =>
                   handleCopy(
-                    thermal_conductivity.toString(),
+                    thermal.thermal_conductivity.toString(),
                     "thermal_conductivity"
                   )
                 }
@@ -442,7 +484,12 @@ const MaterialProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={ThermalConductivityOptions} />
+            <ListBox
+              options={ThermalConductivityOptions}
+              ThermalType="thermal_conductivity"
+              category="Thermal"
+              setThermal={setThermal}
+            />
           </div>
         )}
         {sound_speed && (
@@ -479,9 +526,10 @@ const MaterialProperty = ({
                   ? "bg-bg_dark_placeholder"
                   : "bg-bg_light_placeholder"
               } max-md:w-full`}
-            >
-              ms<sup>-1</sup>
-            </div>
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize("ms<sup>-1</sup>"),
+              }}
+            ></div>
           </div>
         )}
         {poisson_ratio && (

@@ -1,23 +1,16 @@
 import React, { useState, useContext } from "react";
-import Link from "next/link";
-import { ElectromagneticProperties } from "@/types/ElementTypes";
-import { MdCheck, MdContentCopy } from "react-icons/md";
 import DOMPurify from "dompurify";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import Link from "next/link";
 import ListBox from "../ListBox";
+import { MdCheck, MdContentCopy } from "react-icons/md";
+import { ElectromagneticProperties } from "@/types/ElementTypes";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const TempOptions = [
   { name: "Celecius (℃)" },
   { name: "Feranheit (℉)" },
   { name: "Kelvin (K)" },
 ];
-
-const MassMagnetOptions = [
-  { name: "m<sup>3</sup>/Kg" },
-  { name: "cm<sup>3</sup>/g" },
-];
-
-const ResistivityOptions = [{ name: "m•Ohm" }, { name: "cm•Ohm" }];
 
 const EMProperty = ({
   electrical_conductivity,
@@ -190,7 +183,15 @@ const EMProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={ResistivityOptions} />
+            <div
+              className={`w-[20%] px-2 py-2 text-sm rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } max-md:w-full`}
+            >
+              m•Ohm
+            </div>
           </div>
         )}
         {curie_point && (
@@ -303,7 +304,16 @@ const EMProperty = ({
                 )}
               </button>
             </div>
-            <ListBox options={MassMagnetOptions} />
+            <div
+              className={`w-[20%] px-2 py-2 text-sm rounded-[4px] ${
+                theme === "dark"
+                  ? "bg-bg_dark_placeholder"
+                  : "bg-bg_light_placeholder"
+              } max-md:w-full`}
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize("m<sup>3</sup>/Kg"),
+              }}
+            ></div>
           </div>
         )}
         {molar_magnetic_suspectibility && (
