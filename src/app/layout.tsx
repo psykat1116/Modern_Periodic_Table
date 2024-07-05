@@ -25,6 +25,10 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    `https://${process.env.VERCEL_URL}` ||
+      `http://localhost:${process.env.PORT || 3000}`
+  ),
   title: "Modern Periodic Table of Elements",
   description:
     "Elemental Explorer is an innovative and interactive platform that reimagines the traditional periodic table for the digital age. With an intuitive interface and comprehensive details on each element, this modern periodic table provides an engaging educational experience for students, educators, and science enthusiasts. Explore atomic properties, electron configurations, historical data, and practical applications with ease. Elemental Explorer brings chemistry to life, making the study of elements more accessible and fascinating than ever before.",
@@ -69,10 +73,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/favicon.ico",
-        sizes: "64x64",
-        type: "image/ico",
-        href: "/favicon.ico",
+        url: "/loader.png",
+        href: "/loader.png",
+        type: "image/png",
+        sizes: "16x16",
       },
     ],
   },
