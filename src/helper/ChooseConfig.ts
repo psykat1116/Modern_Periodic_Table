@@ -1,14 +1,16 @@
-import { LanConfig } from "@/constant/ParticleConfigure";
-import { ActConfig } from "@/constant/ParticleConfigure";
-import { MetalConfig } from "@/constant/ParticleConfigure";
-import { NonMetalConfig } from "@/constant/ParticleConfigure";
-import { AlkaliConfig } from "@/constant/ParticleConfigure";
-import { AlkaliEarthConfig } from "@/constant/ParticleConfigure";
-import { TransactinideConfig } from "@/constant/ParticleConfigure";
-import { TransitionConfig } from "@/constant/ParticleConfigure";
-import { HaloConfig } from "@/constant/ParticleConfigure";
-import { NobleConfig } from "@/constant/ParticleConfigure";
-import { MetalloidConfig } from "@/constant/ParticleConfigure";
+import {
+  LanConfig,
+  ActConfig,
+  AlkaliConfig,
+  AlkaliEarthConfig,
+  MetalConfig,
+  MetalloidConfig,
+  NobleConfig,
+  NonMetalConfig,
+  HaloConfig,
+  TransactinideConfig,
+  TransitionConfig,
+} from "@/constant/ParticleConfigure";
 import { ISourceOptions } from "tsparticles-engine";
 
 const Alkali = [3, 11, 19, 37, 55, 87];
@@ -27,32 +29,23 @@ const Metal = [13, 31, 49, 50, 81, 82, 83, 113, 114, 115, 116, 117];
 export const getConfig = (number: number): ISourceOptions => {
   if (number >= 57 && number <= 71) {
     return LanConfig;
-  }
-  if (number >= 89 && number <= 103) {
+  } else if (number >= 89 && number <= 103) {
     return ActConfig;
-  }
-  if (Alkali.includes(number)) {
+  } else if (Alkali.includes(number)) {
     return AlkaliConfig;
-  }
-  if (NonMetal.includes(number)) {
+  } else if (NonMetal.includes(number)) {
     return NonMetalConfig;
-  }
-  if (AlkaliEarth.includes(number)) {
+  } else if (AlkaliEarth.includes(number)) {
     return AlkaliEarthConfig;
-  }
-  if (Metal.includes(number)) {
+  } else if (Metal.includes(number)) {
     return MetalConfig;
-  }
-  if (Metalloid.includes(number)) {
+  } else if (Metalloid.includes(number)) {
     return MetalloidConfig;
-  }
-  if (Halogen.includes(number)) {
+  } else if (Halogen.includes(number)) {
     return HaloConfig;
-  }
-  if (NobleGases.includes(number)) {
+  } else if (NobleGases.includes(number)) {
     return NobleConfig;
-  }
-  if (Transactinide.includes(number)) {
+  } else if (Transactinide.includes(number)) {
     return TransactinideConfig;
   }
   return TransitionConfig;

@@ -13,7 +13,6 @@ import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
 import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import DynamicParticle from "@/components/DynamicParticle";
 import { FaRegChartBar } from "react-icons/fa";
 
 const Page = () => {
@@ -27,9 +26,6 @@ const Page = () => {
         theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
       } justify-start items-center`}
     >
-      <div className="absolute w-full min-h-screen">
-        <DynamicParticle />
-      </div>
       <Navbar />
       <div
         className={`w-full z-[5] flex justify-between items-center p-2 ${
@@ -57,84 +53,101 @@ const Page = () => {
       >
         {RowOneElem.map((e) => {
           return (
-            <AtomicRadius
-              key={e.general_properties.name}
-              name={e.general_properties.name}
-              atomic_number={e.general_properties.atomic_number}
-              symbol={e.general_properties.symbol}
-              atomic_radius={e.atomic_properties.atomic_radius}
-            />
+            e.atomic_properties.atomic_radius && (
+              <AtomicRadius
+                key={e.general_properties.name}
+                name={e.general_properties.name}
+                atomic_number={e.general_properties.atomic_number}
+                symbol={e.general_properties.symbol}
+                atomic_radius={e.atomic_properties.atomic_radius}
+              />
+            )
           );
         })}
         {RowTwoElem.map((e) => {
           return (
-            <AtomicRadius
-              key={e.general_properties.name}
-              name={e.general_properties.name}
-              atomic_number={e.general_properties.atomic_number}
-              symbol={e.general_properties.symbol}
-              atomic_radius={e.atomic_properties.atomic_radius}
-            />
+            e.atomic_properties.atomic_radius && (
+              <AtomicRadius
+                key={e.general_properties.name}
+                name={e.general_properties.name}
+                atomic_number={e.general_properties.atomic_number}
+                symbol={e.general_properties.symbol}
+                atomic_radius={e.atomic_properties.atomic_radius}
+              />
+            )
           );
         })}
         {RowThreeElem.map((e) => {
           return (
-            <AtomicRadius
-              key={e.general_properties.name}
-              name={e.general_properties.name}
-              atomic_number={e.general_properties.atomic_number}
-              symbol={e.general_properties.symbol}
-              atomic_radius={e.atomic_properties.atomic_radius}
-            />
+            e.atomic_properties.atomic_radius && (
+              <AtomicRadius
+                key={e.general_properties.name}
+                name={e.general_properties.name}
+                atomic_number={e.general_properties.atomic_number}
+                symbol={e.general_properties.symbol}
+                atomic_radius={e.atomic_properties.atomic_radius}
+              />
+            )
           );
         })}
         {RowFourElem.map((e) => {
           return (
-            <AtomicRadius
-              key={e.general_properties.name}
-              name={e.general_properties.name}
-              atomic_number={e.general_properties.atomic_number}
-              symbol={e.general_properties.symbol}
-              atomic_radius={e.atomic_properties.atomic_radius}
-            />
+            e.atomic_properties.atomic_radius && (
+              <AtomicRadius
+                key={e.general_properties.name}
+                name={e.general_properties.name}
+                atomic_number={e.general_properties.atomic_number}
+                symbol={e.general_properties.symbol}
+                atomic_radius={e.atomic_properties.atomic_radius}
+              />
+            )
           );
         })}
         {RowFiveElem.map((e) => {
           return (
-            <AtomicRadius
-              key={e.general_properties.name}
-              name={e.general_properties.name}
-              atomic_number={e.general_properties.atomic_number}
-              symbol={e.general_properties.symbol}
-              atomic_radius={e.atomic_properties.atomic_radius}
-            />
+            e.atomic_properties.atomic_radius && (
+              <AtomicRadius
+                key={e.general_properties.name}
+                name={e.general_properties.name}
+                atomic_number={e.general_properties.atomic_number}
+                symbol={e.general_properties.symbol}
+                atomic_radius={e.atomic_properties.atomic_radius}
+              />
+            )
           );
         })}
-        <AtomicRadius
-          name={RowSixElem[0].general_properties.name}
-          atomic_number={RowSixElem[0].general_properties.atomic_number}
-          symbol={RowSixElem[0].general_properties.symbol}
-          atomic_radius={RowSixElem[0].atomic_properties.atomic_radius}
-        />
-        <AtomicRadius
-          name={RowSixElem[1].general_properties.name}
-          atomic_number={RowSixElem[1].general_properties.atomic_number}
-          symbol={RowSixElem[1].general_properties.symbol}
-          atomic_radius={RowSixElem[1].atomic_properties.atomic_radius}
-        />
+        {RowSixElem[0].atomic_properties.atomic_radius && (
+          <AtomicRadius
+            name={RowSixElem[0].general_properties.name}
+            atomic_number={RowSixElem[0].general_properties.atomic_number}
+            symbol={RowSixElem[0].general_properties.symbol}
+            atomic_radius={RowSixElem[0].atomic_properties.atomic_radius}
+          />
+        )}
+        {RowSixElem[1].atomic_properties.atomic_radius && (
+          <AtomicRadius
+            name={RowSixElem[1].general_properties.name}
+            atomic_number={RowSixElem[1].general_properties.atomic_number}
+            symbol={RowSixElem[1].general_properties.symbol}
+            atomic_radius={RowSixElem[1].atomic_properties.atomic_radius}
+          />
+        )}
         {LanthanideElem.map((e) => {
           return (
-            <AtomicRadius
-              key={e.general_properties.name}
-              name={e.general_properties.name}
-              atomic_number={e.general_properties.atomic_number}
-              symbol={e.general_properties.symbol}
-              atomic_radius={e.atomic_properties.atomic_radius}
-            />
+            e.atomic_properties.atomic_radius && (
+              <AtomicRadius
+                key={e.general_properties.name}
+                name={e.general_properties.name}
+                atomic_number={e.general_properties.atomic_number}
+                symbol={e.general_properties.symbol}
+                atomic_radius={e.atomic_properties.atomic_radius}
+              />
+            )
           );
         })}
         {RowSixElem.map((e, ind) => {
           return (
+            e.atomic_properties.atomic_radius &&
             ind > 1 && (
               <AtomicRadius
                 key={e.general_properties.name}
@@ -146,31 +159,38 @@ const Page = () => {
             )
           );
         })}
-        <AtomicRadius
-          name={RowSevenElem[0].general_properties.name}
-          atomic_number={RowSevenElem[0].general_properties.atomic_number}
-          symbol={RowSevenElem[0].general_properties.symbol}
-          atomic_radius={RowSevenElem[0].atomic_properties.atomic_radius}
-        />
-        <AtomicRadius
-          name={RowSevenElem[1].general_properties.name}
-          atomic_number={RowSevenElem[1].general_properties.atomic_number}
-          symbol={RowSevenElem[1].general_properties.symbol}
-          atomic_radius={RowSevenElem[1].atomic_properties.atomic_radius}
-        />
+        {RowSevenElem[0].atomic_properties.atomic_radius && (
+          <AtomicRadius
+            name={RowSevenElem[0].general_properties.name}
+            atomic_number={RowSevenElem[0].general_properties.atomic_number}
+            symbol={RowSevenElem[0].general_properties.symbol}
+            atomic_radius={RowSevenElem[0].atomic_properties.atomic_radius}
+          />
+        )}
+        {RowSevenElem[1].atomic_properties.atomic_radius && (
+          <AtomicRadius
+            name={RowSevenElem[1].general_properties.name}
+            atomic_number={RowSevenElem[1].general_properties.atomic_number}
+            symbol={RowSevenElem[1].general_properties.symbol}
+            atomic_radius={RowSevenElem[1].atomic_properties.atomic_radius}
+          />
+        )}
         {ActinideElem.map((e) => {
           return (
-            <AtomicRadius
-              key={e.general_properties.name}
-              name={e.general_properties.name}
-              atomic_number={e.general_properties.atomic_number}
-              symbol={e.general_properties.symbol}
-              atomic_radius={e.atomic_properties.atomic_radius}
-            />
+            e.atomic_properties.atomic_radius && (
+              <AtomicRadius
+                key={e.general_properties.name}
+                name={e.general_properties.name}
+                atomic_number={e.general_properties.atomic_number}
+                symbol={e.general_properties.symbol}
+                atomic_radius={e.atomic_properties.atomic_radius}
+              />
+            )
           );
         })}
         {RowSevenElem.map((e, ind) => {
           return (
+            e.atomic_properties.atomic_radius &&
             ind > 1 && (
               <AtomicRadius
                 key={e.general_properties.name}

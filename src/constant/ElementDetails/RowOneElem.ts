@@ -59,7 +59,7 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Colorless",
-      molar_volume: "1.12•10<sup>-2</sup>",
+      molar_volume: "1.12×10<sup>-2</sup>",
       refrective_index: 1.000132,
       sound_speed: 1270,
       thermal_conductivity: 0.1805,
@@ -82,9 +82,9 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       magnetic_type: "Diamagnetic",
-      volume_magnetic_suspectibility: "-2.23•10<sup>-9</sup>",
-      mass_magnetic_suspectibility: "-2.48•10<sup>-9</sup>",
-      molar_magnetic_suspectibility: "-4.99•10<sup>-9</sup>",
+      volume_magnetic_suspectibility: "-2.23×10<sup>-9</sup>",
+      mass_magnetic_suspectibility: "-2.48×10<sup>-9</sup>",
+      molar_magnetic_suspectibility: "-4.99×10<sup>-9</sup>",
     },
     prevalence: {
       universe: "75.00%",
@@ -162,7 +162,7 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     material_properties: {
       color: "Colorless",
-      molar_volume: "2.242•10<sup>-2</sup>",
+      molar_volume: "2.242×10<sup>-2</sup>",
       refrective_index: 1.000035,
       sound_speed: 970,
       thermal_conductivity: 0.1513,
@@ -183,16 +183,16 @@ export const RowOneElem: ElementDetailsProps[] = [
     },
     electromagnetic_properties: {
       magnetic_type: "Diamagnetic",
-      volume_magnetic_suspectibility: "-1.05•10<sup>-9</sup>",
-      mass_magnetic_suspectibility: "-5.9•10<sup>-9</sup>",
-      molar_magnetic_suspectibility: "-2.36•10<sup>-11</sup>",
+      volume_magnetic_suspectibility: "-1.05×10<sup>-9</sup>",
+      mass_magnetic_suspectibility: "-5.9×10<sup>-9</sup>",
+      molar_magnetic_suspectibility: "-2.36×10<sup>-11</sup>",
     },
     prevalence: {
       universe: "23.00%",
       sun: "23.00%",
-      ocean: "7.3•10<sup>-10</sup>%",
+      ocean: "7.3×10<sup>-10</sup>%",
       human: "0%",
-      earth_crust: "5.5•10<sup>-7</sup>%",
+      earth_crust: "5.5×10<sup>-7</sup>%",
       meteorites: "0%",
     },
     external_links: {

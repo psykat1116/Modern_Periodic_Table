@@ -21,7 +21,7 @@ const MagneticType = ({
 }: MagneticType) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_35%_25%]">
+    <div className="gap-1.5 grid text-center grid-cols-[13%_13%_34%_35%]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

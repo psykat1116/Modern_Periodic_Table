@@ -13,7 +13,6 @@ import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
 import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import DynamicParticle from "@/components/DynamicParticle";
 
 const Page = () => {
   if (typeof window !== "undefined") {
@@ -26,9 +25,6 @@ const Page = () => {
         theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
       } justify-start items-center`}
     >
-      <div className="absolute w-full min-h-screen">
-        <DynamicParticle />
-      </div>
       <Navbar />
       <Link
         href="https://www.iafc.org/topics-and-tools/hazmat/fusion-center/transportation-commodities/dot-hazard-classification-system"
@@ -44,7 +40,7 @@ const Page = () => {
       >
         {RowOneElem.map((e) => {
           return (
-            e.health_safety && (
+            e.health_safety?.Hazard_class && (
               <HazardClass
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -57,7 +53,7 @@ const Page = () => {
         })}
         {RowTwoElem.map((e) => {
           return (
-            e.health_safety && (
+            e.health_safety?.Hazard_class && (
               <HazardClass
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -70,7 +66,7 @@ const Page = () => {
         })}
         {RowThreeElem.map((e) => {
           return (
-            e.health_safety && (
+            e.health_safety?.Hazard_class && (
               <HazardClass
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -83,7 +79,7 @@ const Page = () => {
         })}
         {RowFourElem.map((e) => {
           return (
-            e.health_safety && (
+            e.health_safety?.Hazard_class && (
               <HazardClass
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -96,7 +92,7 @@ const Page = () => {
         })}
         {RowFiveElem.map((e) => {
           return (
-            e.health_safety && (
+            e.health_safety?.Hazard_class && (
               <HazardClass
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -107,7 +103,7 @@ const Page = () => {
             )
           );
         })}
-        {RowSixElem[0].health_safety && (
+        {RowSixElem[0].health_safety?.Hazard_class && (
           <HazardClass
             name={RowSixElem[0].general_properties.name}
             atomic_number={RowSixElem[0].general_properties.atomic_number}
@@ -115,7 +111,7 @@ const Page = () => {
             hazard_class={RowSixElem[0].health_safety.Hazard_class}
           />
         )}
-        {RowSixElem[1].health_safety && (
+        {RowSixElem[1].health_safety?.Hazard_class && (
           <HazardClass
             name={RowSixElem[1].general_properties.name}
             atomic_number={RowSixElem[1].general_properties.atomic_number}
@@ -125,7 +121,7 @@ const Page = () => {
         )}
         {LanthanideElem.map((e) => {
           return (
-            e.health_safety && (
+            e.health_safety?.Hazard_class && (
               <HazardClass
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -139,7 +135,7 @@ const Page = () => {
         {RowSixElem.map((e, ind) => {
           return (
             ind > 1 &&
-            e.health_safety && (
+            e.health_safety?.Hazard_class && (
               <HazardClass
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -150,7 +146,7 @@ const Page = () => {
             )
           );
         })}
-        {RowSevenElem[0].health_safety && (
+        {RowSevenElem[0].health_safety?.Hazard_class && (
           <HazardClass
             name={RowSevenElem[0].general_properties.name}
             atomic_number={RowSevenElem[0].general_properties.atomic_number}
@@ -158,7 +154,7 @@ const Page = () => {
             hazard_class={RowSevenElem[0].health_safety.Hazard_class}
           />
         )}
-        {RowSevenElem[1].health_safety && (
+        {RowSevenElem[1].health_safety?.Hazard_class && (
           <HazardClass
             name={RowSevenElem[1].general_properties.name}
             atomic_number={RowSevenElem[1].general_properties.atomic_number}
@@ -168,7 +164,7 @@ const Page = () => {
         )}
         {ActinideElem.map((e) => {
           return (
-            e.health_safety && (
+            e.health_safety?.Hazard_class && (
               <HazardClass
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -182,7 +178,7 @@ const Page = () => {
         {RowSevenElem.map((e, ind) => {
           return (
             ind > 1 &&
-            e.health_safety && (
+            e.health_safety?.Hazard_class && (
               <HazardClass
                 key={e.general_properties.name}
                 name={e.general_properties.name}

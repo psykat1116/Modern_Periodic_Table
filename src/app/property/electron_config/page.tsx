@@ -13,7 +13,6 @@ import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
 import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import DynamicParticle from "@/components/DynamicParticle";
 
 const Page = () => {
   if (typeof window !== "undefined") {
@@ -26,9 +25,6 @@ const Page = () => {
         theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
       } justify-start items-center`}
     >
-      <div className="absolute w-full min-h-screen">
-        <DynamicParticle />
-      </div>
       <Navbar />
       <Link
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${

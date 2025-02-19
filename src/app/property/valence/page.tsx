@@ -13,7 +13,6 @@ import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
 import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import DynamicParticle from "@/components/DynamicParticle";
 import { FaRegChartBar } from "react-icons/fa";
 
 const Page = () => {
@@ -27,9 +26,6 @@ const Page = () => {
         theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
       } justify-start items-center`}
     >
-      <div className="absolute w-full min-h-screen">
-        <DynamicParticle />
-      </div>
       <Navbar />
       <div
         className={`w-full z-[5] flex justify-between items-center p-2 ${

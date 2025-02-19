@@ -12,7 +12,6 @@ import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
 import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import DynamicParticle from "@/components/DynamicParticle";
 
 const Page = () => {
   if (typeof window !== "undefined") {
@@ -25,23 +24,20 @@ const Page = () => {
         theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
       } justify-start items-center`}
     >
-      <div className="absolute w-full min-h-screen">
-        <DynamicParticle />
-      </div>
       <Navbar />
       <div
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         } z-[5] max-sm:text-2xl`}
       >
-        Space Group Number
+        Decay Mode
       </div>
       <div
         className={`w-full grid grid-cols-3 px-2 pb-2 overflow-y-scroll gap-2 z-[5] max-sm:grid-cols-1 max-md:grid-cols-2`}
       >
         {RowOneElem.map((e) => {
           return (
-            e.neuclear_properties && (
+            e.neuclear_properties.decay_mode && (
               <DecayMode
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -54,7 +50,7 @@ const Page = () => {
         })}
         {RowTwoElem.map((e) => {
           return (
-            e.neuclear_properties && (
+            e.neuclear_properties.decay_mode && (
               <DecayMode
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -67,7 +63,7 @@ const Page = () => {
         })}
         {RowThreeElem.map((e) => {
           return (
-            e.neuclear_properties && (
+            e.neuclear_properties.decay_mode && (
               <DecayMode
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -80,7 +76,7 @@ const Page = () => {
         })}
         {RowFourElem.map((e) => {
           return (
-            e.neuclear_properties && (
+            e.neuclear_properties.decay_mode && (
               <DecayMode
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -93,7 +89,7 @@ const Page = () => {
         })}
         {RowFiveElem.map((e) => {
           return (
-            e.neuclear_properties && (
+            e.neuclear_properties.decay_mode && (
               <DecayMode
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -104,7 +100,7 @@ const Page = () => {
             )
           );
         })}
-        {RowSixElem[0].neuclear_properties && (
+        {RowSixElem[0].neuclear_properties.decay_mode && (
           <DecayMode
             name={RowSixElem[0].general_properties.name}
             atomic_number={RowSixElem[0].general_properties.atomic_number}
@@ -112,7 +108,7 @@ const Page = () => {
             decay_mode={RowSixElem[0].neuclear_properties.decay_mode}
           />
         )}
-        {RowSixElem[1].neuclear_properties && (
+        {RowSixElem[1].neuclear_properties.decay_mode && (
           <DecayMode
             name={RowSixElem[1].general_properties.name}
             atomic_number={RowSixElem[1].general_properties.atomic_number}
@@ -122,7 +118,7 @@ const Page = () => {
         )}
         {LanthanideElem.map((e) => {
           return (
-            e.neuclear_properties && (
+            e.neuclear_properties.decay_mode && (
               <DecayMode
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -136,7 +132,7 @@ const Page = () => {
         {RowSixElem.map((e, ind) => {
           return (
             ind > 1 &&
-            e.neuclear_properties && (
+            e.neuclear_properties.decay_mode && (
               <DecayMode
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -147,7 +143,7 @@ const Page = () => {
             )
           );
         })}
-        {RowSevenElem[0].neuclear_properties && (
+        {RowSevenElem[0].neuclear_properties.decay_mode && (
           <DecayMode
             name={RowSevenElem[0].general_properties.name}
             atomic_number={RowSevenElem[0].general_properties.atomic_number}
@@ -155,7 +151,7 @@ const Page = () => {
             decay_mode={RowSevenElem[0].neuclear_properties.decay_mode}
           />
         )}
-        {RowSevenElem[1].neuclear_properties && (
+        {RowSevenElem[1].neuclear_properties.decay_mode && (
           <DecayMode
             name={RowSevenElem[1].general_properties.name}
             atomic_number={RowSevenElem[1].general_properties.atomic_number}
@@ -165,7 +161,7 @@ const Page = () => {
         )}
         {ActinideElem.map((e) => {
           return (
-            e.neuclear_properties && (
+            e.neuclear_properties.decay_mode && (
               <DecayMode
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -179,7 +175,7 @@ const Page = () => {
         {RowSevenElem.map((e, ind) => {
           return (
             ind > 1 &&
-            e.neuclear_properties && (
+            e.neuclear_properties.decay_mode && (
               <DecayMode
                 key={e.general_properties.name}
                 name={e.general_properties.name}

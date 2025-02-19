@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import {LatticeConstant} from "@/components/Collection";
+import { LatticeConstant } from "@/components/Collection";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
@@ -13,7 +13,6 @@ import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
 import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import DynamicParticle from "@/components/DynamicParticle";
 
 const Page = () => {
   if (typeof window !== "undefined") {
@@ -26,9 +25,6 @@ const Page = () => {
         theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
       } justify-start items-center`}
     >
-      <div className="absolute w-full min-h-screen">
-        <DynamicParticle />
-      </div>
       <Navbar />
       <Link
         target="_blank"
@@ -40,7 +36,7 @@ const Page = () => {
         Lattice Constant
       </Link>
       <div
-        className={`w-full grid grid-cols-3 px-2 pb-2 overflow-y-scroll gap-2 z-[5] max-md:grid-cols-2 max-sm:grid-cols-1`}
+        className={`w-full grid grid-cols-3 px-2 pb-2 overflow-y-scroll gap-2 z-[5] max-xl:grid-cols-2 max-sm:grid-cols-1`}
       >
         {RowOneElem.map((e) => {
           return (

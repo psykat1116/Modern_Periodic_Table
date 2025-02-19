@@ -1,12 +1,12 @@
-import { LanthanideElem } from "../ElementDetails/LanthanideElem";
-import { ActinideElem } from "../ElementDetails/ActinideElem";
-import { RowOneElem } from "../ElementDetails/RowOneElem";
-import { RowTwoElem } from "../ElementDetails/RowTwoElem";
-import { RowThreeElem } from "../ElementDetails/RowThreeElem";
-import { RowFourElem } from "../ElementDetails/RowFourElem";
-import { RowFiveElem } from "../ElementDetails/RowFiveElem";
-import { RowSixElem } from "../ElementDetails/RowSixElem";
-import { RowSevenElem } from "../ElementDetails/RowSevenElem";
+import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
+import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
+import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
+import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
+import { RowThreeElem } from "@/constant/ElementDetails/RowThreeElem";
+import { RowFourElem } from "@/constant/ElementDetails/RowFourElem";
+import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
+import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
+import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 
 const atomicRadiusData: number[] = [];
 const labelData: string[] = [];

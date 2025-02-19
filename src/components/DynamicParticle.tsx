@@ -8,9 +8,7 @@ const DynamicParticle = () => {
     await loadFull(engine);
   };
 
-  const particlesLoaded = async (container: Container | undefined) => {
-    console.log(container);
-  };
+  const particlesLoaded = async (container: Container | undefined) => {};
 
   return (
     <Particles

@@ -13,7 +13,6 @@ import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
 import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import DynamicParticle from "@/components/DynamicParticle";
 
 const Page = () => {
   if (typeof window !== "undefined") {
@@ -26,9 +25,6 @@ const Page = () => {
         theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
       } justify-start items-center`}
     >
-      <div className="absolute w-full min-h-screen">
-        <DynamicParticle />
-      </div>
       <Navbar />
       <div
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
@@ -42,7 +38,7 @@ const Page = () => {
       >
         {RowOneElem.map((e) => {
           return (
-            e.prevalence && (
+            e.prevalence?.ocean && (
               <Ocean
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -55,7 +51,7 @@ const Page = () => {
         })}
         {RowTwoElem.map((e) => {
           return (
-            e.prevalence && (
+            e.prevalence?.ocean && (
               <Ocean
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -68,7 +64,7 @@ const Page = () => {
         })}
         {RowThreeElem.map((e) => {
           return (
-            e.prevalence && (
+            e.prevalence?.ocean && (
               <Ocean
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -81,7 +77,7 @@ const Page = () => {
         })}
         {RowFourElem.map((e) => {
           return (
-            e.prevalence && (
+            e.prevalence?.ocean && (
               <Ocean
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -94,7 +90,7 @@ const Page = () => {
         })}
         {RowFiveElem.map((e) => {
           return (
-            e.prevalence && (
+            e.prevalence?.ocean && (
               <Ocean
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -123,7 +119,7 @@ const Page = () => {
         )}
         {LanthanideElem.map((e) => {
           return (
-            e.prevalence && (
+            e.prevalence?.ocean && (
               <Ocean
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -137,7 +133,7 @@ const Page = () => {
         {RowSixElem.map((e, ind) => {
           return (
             ind > 1 &&
-            e.prevalence && (
+            e.prevalence?.ocean && (
               <Ocean
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -166,7 +162,7 @@ const Page = () => {
         )}
         {ActinideElem.map((e) => {
           return (
-            e.prevalence && (
+            e.prevalence?.ocean && (
               <Ocean
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -180,7 +176,7 @@ const Page = () => {
         {RowSevenElem.map((e, ind) => {
           return (
             ind > 1 &&
-            e.prevalence && (
+            e.prevalence?.ocean && (
               <Ocean
                 key={e.general_properties.name}
                 name={e.general_properties.name}

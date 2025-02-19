@@ -23,14 +23,14 @@ const Page = () => {
     >
       <Navbar />
       <motion.div
-        className="w-full grid grid-cols-4 gap-2 p-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-table:grid-cols-3 max-sm:text-sm"
-        initial="hidden"
-        animate="visible"
-        transition={{
-          duration: 0.1,
-          staggerChildren: 0.09,
-          delayChildren: 0.05,
-        }}
+        className="w-full grid grid-cols-3 gap-2 p-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-table:grid-cols-3 max-sm:text-sm"
+        // initial="hidden"
+        // animate="visible"
+        // transition={{
+        //   duration: 0.1,
+        //   staggerChildren: 0.09,
+        //   delayChildren: 0.05,
+        // }}
       >
         {Property.map((item) => {
           return (

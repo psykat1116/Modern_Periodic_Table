@@ -13,7 +13,6 @@ import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
 import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import DynamicParticle from "@/components/DynamicParticle";
 import { FaRegChartBar } from "react-icons/fa";
 
 const Page = () => {
@@ -27,9 +26,6 @@ const Page = () => {
         theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
       } justify-start items-center`}
     >
-      <div className="absolute w-full min-h-screen">
-        <DynamicParticle />
-      </div>
       <Navbar />
       <div
         className={`w-full z-[5] flex justify-between items-center p-2 ${
@@ -57,7 +53,7 @@ const Page = () => {
       >
         {RowOneElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electronegativity && (
               <Electronegativity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -70,7 +66,7 @@ const Page = () => {
         })}
         {RowTwoElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electronegativity && (
               <Electronegativity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -83,7 +79,7 @@ const Page = () => {
         })}
         {RowThreeElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electronegativity && (
               <Electronegativity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -96,7 +92,7 @@ const Page = () => {
         })}
         {RowFourElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electronegativity && (
               <Electronegativity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -109,7 +105,7 @@ const Page = () => {
         })}
         {RowFiveElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electronegativity && (
               <Electronegativity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -120,7 +116,7 @@ const Page = () => {
             )
           );
         })}
-        {RowSixElem[0].reactivity && (
+        {RowSixElem[0].reactivity?.electronegativity && (
           <Electronegativity
             name={RowSixElem[0].general_properties.name}
             atomic_number={RowSixElem[0].general_properties.atomic_number}
@@ -128,7 +124,7 @@ const Page = () => {
             electronegativity={RowSixElem[0].reactivity.electronegativity}
           />
         )}
-        {RowSixElem[1].reactivity && (
+        {RowSixElem[1].reactivity?.electronegativity && (
           <Electronegativity
             name={RowSixElem[1].general_properties.name}
             atomic_number={RowSixElem[1].general_properties.atomic_number}
@@ -138,7 +134,7 @@ const Page = () => {
         )}
         {LanthanideElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electronegativity && (
               <Electronegativity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -152,7 +148,7 @@ const Page = () => {
         {RowSixElem.map((e, ind) => {
           return (
             ind > 1 &&
-            e.reactivity && (
+            e.reactivity?.electronegativity && (
               <Electronegativity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -163,7 +159,7 @@ const Page = () => {
             )
           );
         })}
-        {RowSevenElem[0].reactivity && (
+        {RowSevenElem[0].reactivity?.electronegativity && (
           <Electronegativity
             name={RowSevenElem[0].general_properties.name}
             atomic_number={RowSevenElem[0].general_properties.atomic_number}
@@ -171,7 +167,7 @@ const Page = () => {
             electronegativity={RowSevenElem[0].reactivity.electronegativity}
           />
         )}
-        {RowSevenElem[1].reactivity && (
+        {RowSevenElem[1].reactivity?.electronegativity && (
           <Electronegativity
             name={RowSevenElem[1].general_properties.name}
             atomic_number={RowSevenElem[1].general_properties.atomic_number}
@@ -181,7 +177,7 @@ const Page = () => {
         )}
         {ActinideElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electronegativity && (
               <Electronegativity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -195,7 +191,7 @@ const Page = () => {
         {RowSevenElem.map((e, ind) => {
           return (
             ind > 1 &&
-            e.reactivity && (
+            e.reactivity?.electronegativity && (
               <Electronegativity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
