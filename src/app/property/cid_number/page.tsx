@@ -1,31 +1,28 @@
 "use client";
-import React, { useContext } from "react";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
+import { useContext } from "react";
+
 import { CIDNumber } from "@/components/Collection";
-import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
-import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
+import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
+import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
+import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
 import { RowFourElem } from "@/constant/ElementDetails/RowFourElem";
+import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { RowThreeElem } from "@/constant/ElementDetails/RowThreeElem";
-import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
-import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
-import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 
 const Page = () => {
   if (typeof window !== "undefined") {
     window.document.title = `CID Number of Elements`;
   }
+
   const { theme } = useContext(ThemeContext) as ThemeContextType;
+
   return (
-    <div
-      className={`min-h-screen w-full flex flex-col justify-start items-center gap-2 ${
-        theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
-      } justify-start items-center`}
-    >
-      <Navbar />
+    <>
       <Link
         target="_blank"
         href="https://www.wikidata.org/wiki/Property:P662"
@@ -166,7 +163,7 @@ const Page = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 

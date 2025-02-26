@@ -8,83 +8,109 @@ import { RowFiveElem } from "../ElementDetails/RowFiveElem";
 import { RowSixElem } from "../ElementDetails/RowSixElem";
 import { RowSevenElem } from "../ElementDetails/RowSevenElem";
 
-const vData: number[] = [];
-const labelData: string[] = [];
+import { ChartData } from "@/types/BoxTypes";
+
+const data: ChartData[] = [];
 
 RowOneElem.forEach((elem) => {
   if (elem.reactivity?.valence) {
-    labelData.push(elem.general_properties.symbol);
-    vData.push(elem.reactivity.valence);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.reactivity.valence,
+    });
   }
 });
 RowTwoElem.forEach((elem) => {
   if (elem.reactivity?.valence) {
-    labelData.push(elem.general_properties.symbol);
-    vData.push(elem.reactivity.valence);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.reactivity.valence,
+    });
   }
 });
 RowThreeElem.forEach((elem) => {
   if (elem.reactivity?.valence) {
-    labelData.push(elem.general_properties.symbol);
-    vData.push(elem.reactivity.valence);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.reactivity.valence,
+    });
   }
 });
 RowFourElem.forEach((elem) => {
   if (elem.reactivity?.valence) {
-    labelData.push(elem.general_properties.symbol);
-    vData.push(elem.reactivity.valence);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.reactivity.valence,
+    });
   }
 });
 RowFiveElem.forEach((elem) => {
   if (elem.reactivity?.valence) {
-    labelData.push(elem.general_properties.symbol);
-    vData.push(elem.reactivity.valence);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.reactivity.valence,
+    });
   }
 });
 if (RowSixElem[0].reactivity?.valence) {
-  labelData.push(RowSixElem[0].general_properties.symbol);
-  vData.push(RowSixElem[0].reactivity.valence);
+  data.push({
+    label: RowSixElem[0].general_properties.symbol,
+    value: RowSixElem[0].reactivity.valence,
+  });
 }
 if (RowSixElem[1].reactivity?.valence) {
-  labelData.push(RowSixElem[1].general_properties.symbol);
-  vData.push(RowSixElem[1].reactivity.valence);
+  data.push({
+    label: RowSixElem[1].general_properties.symbol,
+    value: RowSixElem[1].reactivity.valence,
+  });
 }
 LanthanideElem.forEach((elem) => {
   if (elem.reactivity?.valence) {
-    labelData.push(elem.general_properties.symbol);
-    vData.push(elem.reactivity.valence);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.reactivity.valence,
+    });
   }
 });
 RowSixElem.forEach((elem) => {
   if (elem.general_properties.atomic_number >= 72) {
     if (elem.reactivity?.valence) {
-      labelData.push(elem.general_properties.symbol);
-      vData.push(elem.reactivity.valence);
+      data.push({
+        label: elem.general_properties.symbol,
+        value: elem.reactivity.valence,
+      });
     }
   }
 });
 if (RowSevenElem[0].reactivity?.valence) {
-  labelData.push(RowSevenElem[0].general_properties.symbol);
-  vData.push(RowSevenElem[0].reactivity.valence);
+  data.push({
+    label: RowSevenElem[0].general_properties.symbol,
+    value: RowSevenElem[0].reactivity.valence,
+  });
 }
 if (RowSevenElem[1].reactivity?.valence) {
-  labelData.push(RowSevenElem[1].general_properties.symbol);
-  vData.push(RowSevenElem[1].reactivity.valence);
+  data.push({
+    label: RowSevenElem[1].general_properties.symbol,
+    value: RowSevenElem[1].reactivity.valence,
+  });
 }
 ActinideElem.forEach((elem) => {
   if (elem.reactivity?.valence) {
-    labelData.push(elem.general_properties.symbol);
-    vData.push(elem.reactivity.valence);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.reactivity.valence,
+    });
   }
 });
 RowSevenElem.forEach((elem) => {
   if (elem.general_properties.atomic_number >= 104) {
     if (elem.reactivity?.valence) {
-      labelData.push(elem.general_properties.symbol);
-      vData.push(elem.reactivity.valence);
+      data.push({
+        label: elem.general_properties.symbol,
+        value: elem.reactivity.valence,
+      });
     }
   }
 });
 
-export default labelData;
-export { vData };
+export default data;

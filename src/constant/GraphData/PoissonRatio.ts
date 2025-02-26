@@ -8,83 +8,109 @@ import { RowFiveElem } from "../ElementDetails/RowFiveElem";
 import { RowSixElem } from "../ElementDetails/RowSixElem";
 import { RowSevenElem } from "../ElementDetails/RowSevenElem";
 
-const prData: number[] = [];
-const labelData: string[] = [];
+import { ChartData } from "@/types/BoxTypes";
+
+const data: ChartData[] = [];
 
 RowOneElem.forEach((elem) => {
   if (elem.material_properties?.poisson_ratio) {
-    labelData.push(elem.general_properties.symbol);
-    prData.push(elem.material_properties.poisson_ratio);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.material_properties.poisson_ratio,
+    });
   }
 });
 RowTwoElem.forEach((elem) => {
   if (elem.material_properties?.poisson_ratio) {
-    labelData.push(elem.general_properties.symbol);
-    prData.push(elem.material_properties.poisson_ratio);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.material_properties.poisson_ratio,
+    });
   }
 });
 RowThreeElem.forEach((elem) => {
   if (elem.material_properties?.poisson_ratio) {
-    labelData.push(elem.general_properties.symbol);
-    prData.push(elem.material_properties.poisson_ratio);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.material_properties.poisson_ratio,
+    });
   }
 });
 RowFourElem.forEach((elem) => {
   if (elem.material_properties?.poisson_ratio) {
-    labelData.push(elem.general_properties.symbol);
-    prData.push(elem.material_properties.poisson_ratio);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.material_properties.poisson_ratio,
+    });
   }
 });
 RowFiveElem.forEach((elem) => {
   if (elem.material_properties?.poisson_ratio) {
-    labelData.push(elem.general_properties.symbol);
-    prData.push(elem.material_properties.poisson_ratio);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.material_properties.poisson_ratio,
+    });
   }
 });
 if (RowSixElem[0].material_properties?.poisson_ratio) {
-  labelData.push(RowSixElem[0].general_properties.symbol);
-  prData.push(RowSixElem[0].material_properties.poisson_ratio);
+  data.push({
+    label: RowSixElem[0].general_properties.symbol,
+    value: RowSixElem[0].material_properties.poisson_ratio,
+  });
 }
 if (RowSixElem[1].material_properties?.poisson_ratio) {
-  labelData.push(RowSixElem[1].general_properties.symbol);
-  prData.push(RowSixElem[1].material_properties.poisson_ratio);
+  data.push({
+    label: RowSixElem[1].general_properties.symbol,
+    value: RowSixElem[1].material_properties.poisson_ratio,
+  });
 }
 LanthanideElem.forEach((elem) => {
   if (elem.material_properties?.poisson_ratio) {
-    labelData.push(elem.general_properties.symbol);
-    prData.push(elem.material_properties.poisson_ratio);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.material_properties.poisson_ratio,
+    });
   }
 });
 RowSixElem.forEach((elem) => {
   if (elem.general_properties.atomic_number >= 72) {
     if (elem.material_properties?.poisson_ratio) {
-      labelData.push(elem.general_properties.symbol);
-      prData.push(elem.material_properties.poisson_ratio);
+      data.push({
+        label: elem.general_properties.symbol,
+        value: elem.material_properties.poisson_ratio,
+      });
     }
   }
 });
 if (RowSevenElem[0].material_properties?.poisson_ratio) {
-  labelData.push(RowSevenElem[0].general_properties.symbol);
-  prData.push(RowSevenElem[0].material_properties.poisson_ratio);
+  data.push({
+    label: RowSevenElem[0].general_properties.symbol,
+    value: RowSevenElem[0].material_properties.poisson_ratio,
+  });
 }
 if (RowSevenElem[1].material_properties?.poisson_ratio) {
-  labelData.push(RowSevenElem[1].general_properties.symbol);
-  prData.push(RowSevenElem[1].material_properties.poisson_ratio);
+  data.push({
+    label: RowSevenElem[1].general_properties.symbol,
+    value: RowSevenElem[1].material_properties.poisson_ratio,
+  });
 }
 ActinideElem.forEach((elem) => {
   if (elem.material_properties?.poisson_ratio) {
-    labelData.push(elem.general_properties.symbol);
-    prData.push(elem.material_properties.poisson_ratio);
+    data.push({
+      label: elem.general_properties.symbol,
+      value: elem.material_properties.poisson_ratio,
+    });
   }
 });
 RowSevenElem.forEach((elem) => {
   if (elem.general_properties.atomic_number >= 104) {
     if (elem.material_properties?.poisson_ratio) {
-      labelData.push(elem.general_properties.symbol);
-      prData.push(elem.material_properties.poisson_ratio);
+      data.push({
+        label: elem.general_properties.symbol,
+        value: elem.material_properties.poisson_ratio,
+      });
     }
   }
 });
 
-export default labelData;
-export { prData };
+export default data;

@@ -1,74 +1,90 @@
 "use client";
-import React, { useContext } from "react";
-import { Line } from "react-chartjs-2";
-import {
-  Chart as ChartJS,
-  LineElement,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  Legend,
-  Tooltip,
-  Title,
-} from "chart.js";
-import labelData, { eaData } from "@/constant/GraphData/ElectronAffinity";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import Navbar from "@/components/Navbar";
+import { cn } from "@/lib/utils";
+import { useContext } from "react";
 
-ChartJS.register(
-  LineElement,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  Legend,
-  Tooltip,
-  Title
-);
+import data from "@/constant/GraphData/ElectronAffinity";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  ChartConfig,
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+} from "@/components/ui/chart";
+
+const chartConfig = {
+  dark: {
+    label: "Dark",
+    color: "var(--bg_dark)",
+  },
+  light: {
+    label: "Light",
+    color: "var(--bg_light)",
+  },
+} satisfies ChartConfig;
 
 const Page = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
-  let bgColor, bdColor;
-  theme === "dark"
-    ? (ChartJS.defaults.borderColor = "#1b1a1a")
-    : (ChartJS.defaults.borderColor = "#d6cccc");
-  theme === "dark" ? (bgColor = "#d6cccc") : (bgColor = "#1b1a1a");
-  theme === "dark" ? (bdColor = "#d6cccc") : (bdColor = "#1b1a1a");
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: "top" as const,
-      },
-      title: {
-        display: true,
-        text: "Electron Affinity of Elements",
-      },
-    },
-  };
-  const data = {
-    labels: labelData,
-    datasets: [
-      {
-        label: "Electron Affinity(kJ/mol)",
-        data: eaData,
-        backgroundColor: bgColor,
-        borderColor: bdColor,
-        borderWidth: 1,
-        tension: 0.1,
-      },
-    ],
-  };
+
   return (
-    <div
-      className={`min-h-screen w-full flex justify-start items-center flex-col ${
-        theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
-      }`}
+    <Card
+      className={cn(
+        "relative w-[95%] h-[32rem] mt-10",
+        theme === "dark"
+          ? "bg-bg_dark text-bg_light_placeholder"
+          : "bg-bg_light text-bg_dark_placeholder"
+      )}
     >
-      <Navbar />
-      <div className="flex justify-center items-center w-full xl:w-[90%] h-[90vh]">
-        <Line data={data} options={options} className="rotate-90 xl:rotate-0" />
-      </div>
-    </div>
+      <CardHeader>
+        <CardTitle>Electron Affinity</CardTitle>
+        <CardDescription>
+          Explore This Property For Various Element
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="relative h-[25rem] w-full">
+        <ChartContainer config={chartConfig} className="h-full w-full">
+          <LineChart
+            accessibilityLayer
+            data={data}
+            margin={{
+              top: 20,
+              left: 12,
+              right: 12,
+            }}
+          >
+            <CartesianGrid vertical={false} />
+            <XAxis dataKey="label" tickMargin={2} />
+            <ChartTooltip
+              cursor={false}
+              content={<ChartTooltipContent indicator="line" />}
+              labelClassName="text-bg_dark_placeholder"
+            />
+            <Line
+              dataKey="value"
+              type="natural"
+              stroke={
+                theme === "dark" ? "var(--color-light)" : "var(--color-dark)"
+              }
+              strokeWidth={2}
+              dot={{
+                fill:
+                  theme === "dark" ? "var(--color-light)" : "var(--color-dark)",
+              }}
+              activeDot={{
+                r: 6,
+              }}
+            />
+          </LineChart>
+        </ChartContainer>
+      </CardContent>
+    </Card>
   );
 };
 

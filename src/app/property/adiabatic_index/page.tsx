@@ -1,49 +1,52 @@
 "use client";
-import React, { useContext } from "react";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
+import { cn } from "@/lib/utils";
+import { useContext } from "react";
+import { FaRegChartBar } from "react-icons/fa";
+
 import { AdiabaticIndex } from "@/components/Collection";
-import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
-import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
+import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
+import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
+import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
 import { RowFourElem } from "@/constant/ElementDetails/RowFourElem";
+import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { RowThreeElem } from "@/constant/ElementDetails/RowThreeElem";
-import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
-import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
-import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import { FaRegChartBar } from "react-icons/fa";
+import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 
 const Page = () => {
   if (typeof window !== "undefined") {
     window.document.title = `Covalent Radius of Elements`;
   }
+
   const { theme } = useContext(ThemeContext) as ThemeContextType;
+
   return (
-    <div
-      className={`min-h-screen w-full flex flex-col justify-start items-center gap-2 ${
-        theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
-      } justify-start items-center`}
-    >
-      <Navbar />
+    <>
       <div
-        className={`w-full z-[5] flex justify-between items-center p-2 ${
+        className={cn(
+          "w-full flex justify-between items-center text-2xl pr-4 pl-1",
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        } text-2xl`}
+        )}
       >
         <Link
           href="https://en.wikipedia.org/wiki/Heat_capacity_ratio"
           target="_blank"
-          className="font-lora p-2 max-md:text-xl"
+          className={cn(
+            "font-poppins py-1 px-4 ml-1 text-base rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm",
+            theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
+          )}
         >
           Adiabatic Index
         </Link>
         <Link
           href="/statistics/adiabatic_index"
-          className={`p-2 ${
+          className={cn(
+            "p-1 rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm",
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-          } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm`}
+          )}
         >
           <FaRegChartBar className="cursor-pointer" />
         </Link>
@@ -116,7 +119,7 @@ const Page = () => {
             )
           );
         })}
-        {RowSixElem[0].thermodynamic_properties && (
+        {RowSixElem[0].thermodynamic_properties?.adiabatic_index && (
           <AdiabaticIndex
             name={RowSixElem[0].general_properties.name}
             atomic_number={RowSixElem[0].general_properties.atomic_number}
@@ -126,7 +129,7 @@ const Page = () => {
             }
           />
         )}
-        {RowSixElem[1].thermodynamic_properties && (
+        {RowSixElem[1].thermodynamic_properties?.adiabatic_index && (
           <AdiabaticIndex
             name={RowSixElem[1].general_properties.name}
             atomic_number={RowSixElem[1].general_properties.atomic_number}
@@ -163,7 +166,7 @@ const Page = () => {
             )
           );
         })}
-        {RowSevenElem[0].thermodynamic_properties && (
+        {RowSevenElem[0].thermodynamic_properties?.adiabatic_index && (
           <AdiabaticIndex
             name={RowSevenElem[0].general_properties.name}
             atomic_number={RowSevenElem[0].general_properties.atomic_number}
@@ -173,7 +176,7 @@ const Page = () => {
             }
           />
         )}
-        {RowSevenElem[1].thermodynamic_properties && (
+        {RowSevenElem[1].thermodynamic_properties?.adiabatic_index && (
           <AdiabaticIndex
             name={RowSevenElem[1].general_properties.name}
             atomic_number={RowSevenElem[1].general_properties.atomic_number}
@@ -211,7 +214,7 @@ const Page = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 

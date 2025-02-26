@@ -1,18 +1,18 @@
 "use client";
-import React, { useContext } from "react";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
+import { useContext } from "react";
+
 import { ElectricalConductivity } from "@/components/Collection";
-import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
-import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
+import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
+import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
+import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
 import { RowFourElem } from "@/constant/ElementDetails/RowFourElem";
+import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { RowThreeElem } from "@/constant/ElementDetails/RowThreeElem";
-import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
-import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
-import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 
 const Page = () => {
   if (typeof window !== "undefined") {
@@ -20,12 +20,7 @@ const Page = () => {
   }
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div
-      className={`min-h-screen w-full flex flex-col justify-start items-center gap-2 ${
-        theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
-      } justify-start items-center`}
-    >
-      <Navbar />
+    <>
       <Link
         href="https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity"
         className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
@@ -164,7 +159,8 @@ const Page = () => {
             )
           );
         })}
-        {RowSevenElem[0].electromagnetic_properties?.electrical_conductivity && (
+        {RowSevenElem[0].electromagnetic_properties
+          ?.electrical_conductivity && (
           <ElectricalConductivity
             name={RowSevenElem[0].general_properties.name}
             atomic_number={RowSevenElem[0].general_properties.atomic_number}
@@ -174,7 +170,8 @@ const Page = () => {
             }
           />
         )}
-        {RowSevenElem[1].electromagnetic_properties?.electrical_conductivity && (
+        {RowSevenElem[1].electromagnetic_properties
+          ?.electrical_conductivity && (
           <ElectricalConductivity
             name={RowSevenElem[1].general_properties.name}
             atomic_number={RowSevenElem[1].general_properties.atomic_number}
@@ -216,7 +213,7 @@ const Page = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 

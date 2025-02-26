@@ -1,35 +1,34 @@
 "use client";
-import React, { useContext } from "react";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
+import { cn } from "@/lib/utils";
+import React, { useContext } from "react";
+
 import { Allotrope } from "@/components/Collection";
-import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
-import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
+import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
+import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
+import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
 import { RowFourElem } from "@/constant/ElementDetails/RowFourElem";
+import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { RowThreeElem } from "@/constant/ElementDetails/RowThreeElem";
-import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
-import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
-import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 
 const Page = () => {
   if (typeof window !== "undefined") {
     window.document.title = `Allotropes of Elements`;
   }
+
   const { theme } = useContext(ThemeContext) as ThemeContextType;
+
   return (
-    <div
-      className={`min-h-screen w-full flex flex-col justify-start items-center gap-2 ${
-        theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
-      } justify-start items-center`}
-    >
-      <Navbar />
+    <>
       <div
-        className={`w-full z-[5] flex justify-center items-center p-2 ${
+        className={cn(
+          "w-full flex justify-center items-center text-2xl",
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        } text-2xl`}
+        )}
       >
         <Link
           target="_blank"
@@ -39,9 +38,7 @@ const Page = () => {
           Allotropes
         </Link>
       </div>
-      <div
-        className={`w-full flex flex-col justify-start items-center px-2 pb-2 overflow-y-scroll gap-2`}
-      >
+      <div className="w-full flex flex-col justify-start items-center px-2 pb-2 overflow-y-scroll gap-2">
         {RowOneElem.map((e) => {
           return (
             e.general_properties.allotropes && (
@@ -194,7 +191,7 @@ const Page = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 

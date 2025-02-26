@@ -8,3 +8,8 @@ export default interface BoxTypes {
 export interface optionTypes {
   name: string;
 }
+
+export interface ChartData {
+  label: string;
+  value: number;
+}

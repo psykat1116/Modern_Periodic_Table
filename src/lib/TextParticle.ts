@@ -20,7 +20,7 @@ export class TextParticle {
     this.density = Math.random() * 50 + 1;
   }
   draw(ctx: CanvasRenderingContext2D) {
-    ctx.fillStyle = "#D62E49";
+    ctx.fillStyle = "#2e2e2e";
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
     ctx.closePath();

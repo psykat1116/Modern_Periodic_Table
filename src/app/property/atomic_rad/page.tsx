@@ -1,49 +1,52 @@
 "use client";
-import React, { useContext } from "react";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
+import { cn } from "@/lib/utils";
+import { useContext } from "react";
+import { FaRegChartBar } from "react-icons/fa";
+
 import { AtomicRadius } from "@/components/Collection";
-import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
-import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
+import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
+import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
+import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
 import { RowFourElem } from "@/constant/ElementDetails/RowFourElem";
+import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { RowThreeElem } from "@/constant/ElementDetails/RowThreeElem";
-import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
-import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
-import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import { FaRegChartBar } from "react-icons/fa";
+import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 
 const Page = () => {
   if (typeof window !== "undefined") {
     window.document.title = `Atomic Radius of Elements`;
   }
+
   const { theme } = useContext(ThemeContext) as ThemeContextType;
+
   return (
-    <div
-      className={`min-h-screen w-full flex flex-col justify-start items-center gap-2 ${
-        theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
-      } justify-start items-center`}
-    >
-      <Navbar />
+    <>
       <div
-        className={`w-full z-[5] flex justify-between items-center p-2 ${
+        className={cn(
+          "w-full flex justify-between items-center text-2xl pr-4 pl-1",
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        } text-2xl`}
+        )}
       >
         <Link
           target="_blank"
           href="https://en.wikipedia.org/wiki/Atomic_radius"
-          className="font-lora p-2 max-md:text-xl"
+          className={cn(
+            "font-poppins py-1 px-4 ml-1 text-base rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm",
+            theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
+          )}
         >
           Atomic Radius
         </Link>
         <Link
           href="/statistics/atomic_radius"
-          className={`p-2 ${
+          className={cn(
+            "p-1 rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm",
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-          } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm`}
+          )}
         >
           <FaRegChartBar className="cursor-pointer" />
         </Link>
@@ -203,7 +206,7 @@ const Page = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 
