@@ -44,11 +44,11 @@ const Page = () => {
         <Link
           href="/statistics/atomic_radius"
           className={cn(
-            "p-1 rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm",
+            "p-1.5 rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm",
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
           )}
         >
-          <FaRegChartBar className="cursor-pointer" />
+          <FaRegChartBar className="cursor-pointer" size={23} />
         </Link>
       </div>
       <div

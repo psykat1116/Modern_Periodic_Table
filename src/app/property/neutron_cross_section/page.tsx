@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 import { useContext } from "react";
 import { FaRegChartBar } from "react-icons/fa";
 
@@ -25,24 +26,29 @@ const Page = () => {
   return (
     <>
       <div
-        className={`w-full z-[5] flex justify-between items-center p-2 ${
+        className={cn(
+          "w-full flex justify-between items-center text-2xl pr-4 pl-1",
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        } text-2xl`}
+        )}
       >
         <Link
           target="_blank"
           href="https://en.wikipedia.org/wiki/Neutron_cross_section"
-          className="font-lora p-2 max-md:text-xl"
+          className={cn(
+            "font-poppins py-1 px-4 ml-1 text-base rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm",
+            theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
+          )}
         >
           Neutron Cross Section
         </Link>
         <Link
           href="/statistics/neutron_cross_section"
-          className={`p-2 ${
+          className={cn(
+            "p-1.5 rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm",
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
-          } rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm`}
+          )}
         >
-          <FaRegChartBar className="cursor-pointer" />
+          <FaRegChartBar className="cursor-pointer" size={23} />
         </Link>
       </div>
       <div

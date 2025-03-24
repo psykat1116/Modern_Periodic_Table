@@ -179,7 +179,24 @@ const ListBox: React.FC<ListBoxProps> = ({
         [DensityType]: newDensity,
       }));
     }
-  }, [selected]);
+  }, [
+    selected,
+    AtomEnergyType,
+    category,
+    DensityType,
+    HardnessType,
+    ModulusType,
+    Temptype,
+    ThermalType,
+    params.id,
+    setDensityData,
+    setEMTemp,
+    setAtomEnergy,
+    setHardness,
+    setModulus,
+    setTemp,
+    setThermal,
+  ]);
 
   return (
     <Listbox value={selected} onChange={setSelected}>
