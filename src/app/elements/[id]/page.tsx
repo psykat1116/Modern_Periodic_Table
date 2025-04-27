@@ -10,9 +10,17 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
     openGraph: {
       type: "website",
       locale: "en_IN",
-      url: `https://modern-periodic-table.vercel.app/image${data?.general_properties.image}`,
+      url: `https://modern-periodic-table.vercel.app/elements/${params.id}`,
       title: `Element No ${data?.general_properties.atomic_number} - ${data?.general_properties.name} (${data?.general_properties.symbol})`,
       description: `${data?.description}`,
+      images: [
+        {
+          url: `https://modern-periodic-table.vercel.app/image${data?.general_properties.image}`,
+          width: 800,
+          height: 600,
+          alt: `Element No ${data?.general_properties.atomic_number} - ${data?.general_properties.name} (${data?.general_properties.symbol})`,
+        },
+      ],
     },
   };
 }
