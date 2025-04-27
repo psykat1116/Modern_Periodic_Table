@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useState, useContext } from "react";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 
-import type { AtomStructure } from "@/types/ElementTypes";
+import { AtomStructureType } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const AtomStructure = ({
@@ -13,7 +13,7 @@ const AtomStructure = ({
   lattice_constant,
   space_group_name,
   space_group_number,
-}: AtomStructure) => {
+}: AtomStructureType) => {
   const [isCopying, setIsCopying] = useState({
     crystal_structure: false,
     lattice_angle: false,

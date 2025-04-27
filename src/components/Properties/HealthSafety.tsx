@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState, useContext } from "react";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 
-import type { HealthSafety } from "@/types/ElementTypes";
+import { HealthSafetyType } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const HealthSafety = ({
@@ -11,7 +11,7 @@ const HealthSafety = ({
   dot_number,
   rtecs_number,
   nfpa_label,
-}: HealthSafety) => {
+}: HealthSafetyType) => {
   const [isCopying, setIsCopying] = useState({
     Hazard_class: false,
     dot_number: false,

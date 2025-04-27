@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useState, useContext } from "react";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 
-import type { GeneralProperties } from "@/types/ElementTypes";
+import type { GeneralPropertiesType } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const GeneralInfo = ({
@@ -14,7 +14,7 @@ const GeneralInfo = ({
   cas_number,
   cid_number,
   allotropes,
-}: GeneralProperties) => {
+}: GeneralPropertiesType) => {
   const [isCopying, setIsCopying] = useState({
     atomic_number: false,
     group: false,

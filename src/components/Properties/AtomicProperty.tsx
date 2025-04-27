@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useState, useContext } from "react";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 
-import type { AtomicProperties } from "@/types/ElementTypes";
+import { AtomicPropertiesType } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const AtomicProperty = ({
@@ -16,7 +16,7 @@ const AtomicProperty = ({
   atomic_radius,
   covalent_radius,
   van_der_walls_radius,
-}: AtomicProperties) => {
+}: AtomicPropertiesType) => {
   const [isCopying, setIsCopying] = useState({
     atomic_weight: false,
     oxidation_states: false,

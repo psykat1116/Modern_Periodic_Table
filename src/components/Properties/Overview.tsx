@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { useState, useContext } from "react";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 
-import type { Overview } from "@/types/ElementTypes";
+import { OverviewType } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
-const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
+const Overview = ({ latin_name, discovery, discoverer }: OverviewType) => {
   const [isCopying, setIsCopying] = useState({
     latin_name: false,
     discoverer: false,

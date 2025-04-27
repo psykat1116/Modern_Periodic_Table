@@ -3,7 +3,7 @@ import { useState, useContext } from "react";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 
 import ListBox from "@/components/ListBox";
-import type { Reactivity } from "@/types/ElementTypes";
+import { ReactivityType } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const EnergyOptions = [{ name: "kJ/mol" }, { name: "kCal/mol" }];
@@ -13,7 +13,7 @@ const Reactivity = ({
   electron_affinity,
   electronegativity,
   ionization_energy,
-}: Reactivity) => {
+}: ReactivityType) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const [isCopying, setIsCopying] = useState({
     electron_affinity: false,

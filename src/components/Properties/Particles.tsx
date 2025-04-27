@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { motion } from "framer-motion";
 
-import type { Particles } from "@/types/ElementTypes";
+import { ParticlesType } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
-const Particles = ({ electrons, protons, neutrons }: Particles) => {
+const Particles = ({ electrons, protons, neutrons }: ParticlesType) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div

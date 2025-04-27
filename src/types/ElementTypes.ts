@@ -1,4 +1,4 @@
-export interface GeneralProperties {
+export interface GeneralPropertiesType {
   name: string;
   atomic_number: number;
   group?: number;
@@ -11,19 +11,19 @@ export interface GeneralProperties {
   image?: string;
 }
 
-export interface Particles {
+export interface ParticlesType {
   electrons: number;
   protons: number;
   neutrons: number;
 }
 
-export interface Overview {
+export interface OverviewType{
   latin_name: string;
   discovery: number;
   discoverer: string[][];
 }
 
-export interface AtomicProperties {
+export interface AtomicPropertiesType {
   atomic_weight: number;
   oxidation_states?: number[];
   electron_shell_configuration: string;
@@ -34,7 +34,7 @@ export interface AtomicProperties {
   van_der_walls_radius?: number;
 }
 
-export interface ThermodynamicProperties {
+export interface ThermodynamicPropertiesType {
   boiling_point?: number;
   melting_point?: number;
   phase?: string;
@@ -46,7 +46,7 @@ export interface ThermodynamicProperties {
   adiabatic_index?: number;
 }
 
-export interface MaterialProperties {
+export interface MaterialPropertiesType {
   color?: string;
   molar_volume?: string;
   refrective_index?: number;
@@ -63,7 +63,7 @@ export interface MaterialProperties {
   shear_modulus?: number;
 }
 
-export interface NeuclearProperties {
+export interface NeuclearPropertiesType {
   radioactive: "Yes" | "No";
   half_life: string | "∞";
   lifetime: string | "∞";
@@ -75,7 +75,7 @@ export interface NeuclearProperties {
   stable?: number[];
 }
 
-export interface ElectromagneticProperties {
+export interface ElectromagneticPropertiesType {
   electrical_type?: "Conductor" | "Semiconductor" | "Insulator";
   magnetic_type?:
     | "Diamagnetic"
@@ -91,7 +91,7 @@ export interface ElectromagneticProperties {
   molar_magnetic_suspectibility?: string;
 }
 
-export interface Prevalence {
+export interface PrevalenceType {
   universe?: string;
   sun?: string;
   ocean?: string;
@@ -100,26 +100,26 @@ export interface Prevalence {
   meteorites?: string;
 }
 
-export interface Reactivity {
+export interface ReactivityType {
   valence: number;
   electronegativity?: number;
   electron_affinity?: number;
   ionization_energy?: number;
 }
 
-export interface ExternalLinks {
+export interface ExternalLinksType {
   wikipedia: string;
   youtube: string;
 }
 
-export interface HealthSafety {
+export interface HealthSafetyType {
   Hazard_class?: number;
   dot_number?: number;
   rtecs_number?: string;
   nfpa_label?: string;
 }
 
-export interface AtomStructure {
+export interface AtomStructureType {
   crystal_structure?: string;
   lattice_angle?: number[];
   lattice_constant?: number[];
@@ -127,21 +127,21 @@ export interface AtomStructure {
   space_group_number?: number;
 }
 
-export default interface ElementDetailsProps {
+export default interface ElementDetailsPropsType {
   id: number;
   neighbour: string[];
   description: string;
-  general_properties: GeneralProperties;
-  particles: Particles;
-  overview: Overview;
-  atomic_properties: AtomicProperties;
-  thermodynamic_properties?: ThermodynamicProperties;
-  material_properties?: MaterialProperties;
-  reactivity?: Reactivity;
-  neuclear_properties: NeuclearProperties;
-  electromagnetic_properties?: ElectromagneticProperties;
-  prevalence?: Prevalence;
-  external_links: ExternalLinks;
-  health_safety?: HealthSafety;
-  atom_structure?: AtomStructure;
+  general_properties: GeneralPropertiesType;
+  particles: ParticlesType;
+  overview: OverviewType;
+  atomic_properties: AtomicPropertiesType;
+  thermodynamic_properties?: ThermodynamicPropertiesType;
+  material_properties?: MaterialPropertiesType;
+  reactivity?: ReactivityType;
+  neuclear_properties: NeuclearPropertiesType;
+  electromagnetic_properties?: ElectromagneticPropertiesType;
+  prevalence?: PrevalenceType;
+  external_links: ExternalLinksType;
+  health_safety?: HealthSafetyType;
+  atom_structure?: AtomStructureType;
 }

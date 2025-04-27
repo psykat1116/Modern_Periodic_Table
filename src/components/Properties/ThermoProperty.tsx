@@ -5,7 +5,7 @@ import { useContext, useState } from "react";
 import { MdCheck, MdContentCopy } from "react-icons/md";
 
 import ListBox from "@/components/ListBox";
-import type { ThermodynamicProperties } from "@/types/ElementTypes";
+import { ThermodynamicPropertiesType } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const TemperatureOptions = [
@@ -24,7 +24,7 @@ const ThermoProperty = ({
   thermal_expansion,
   neel_point,
   adiabatic_index,
-}: ThermodynamicProperties) => {
+}: ThermodynamicPropertiesType) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const [isCopying, setIsCopying] = useState({
     boiling_point: false,

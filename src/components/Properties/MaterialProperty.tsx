@@ -4,7 +4,7 @@ import { useState, useContext } from "react";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 
 import ListBox from "@/components/ListBox";
-import type { MaterialProperties } from "@/types/ElementTypes";
+import { MaterialPropertiesType } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const BulkYoungModulusOptions = [
@@ -42,7 +42,7 @@ const MaterialProperty = ({
   poisson_ratio,
   refrective_index,
   shear_modulus,
-}: MaterialProperties) => {
+}: MaterialPropertiesType) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const [isCopying, setIsCopying] = useState({
     color: false,

@@ -4,7 +4,7 @@ import { useState, useContext } from "react";
 import { MdCheck, MdContentCopy } from "react-icons/md";
 
 import ListBox from "@/components/ListBox";
-import type { ElectromagneticProperties } from "@/types/ElementTypes";
+import { ElectromagneticPropertiesType } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const TempOptions = [
@@ -23,7 +23,7 @@ const EMProperty = ({
   molar_magnetic_suspectibility,
   volume_magnetic_suspectibility,
   superconducting_point,
-}: ElectromagneticProperties) => {
+}: ElectromagneticPropertiesType) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   const [isCopying, setIsCopying] = useState({
     electrical_conductivity: false,

@@ -3,10 +3,10 @@ import { useContext } from "react";
 import { motion } from "framer-motion";
 import { BsWikipedia, BsYoutube } from "react-icons/bs";
 
-import type { ExternalLinks } from "@/types/ElementTypes";
+import type { ExternalLinksType } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
-const ExternalLink = ({ youtube, wikipedia }: ExternalLinks) => {
+const ExternalLink = ({ youtube, wikipedia }: ExternalLinksType) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div

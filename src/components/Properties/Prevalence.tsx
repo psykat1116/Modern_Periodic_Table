@@ -3,7 +3,7 @@ import DOMPurify from "dompurify";
 import { useState, useContext } from "react";
 import { MdContentCopy, MdCheck } from "react-icons/md";
 
-import type { Prevalence } from "@/types/ElementTypes";
+import { PrevalenceType } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Prevalence = ({
@@ -13,7 +13,7 @@ const Prevalence = ({
   human,
   earth_crust,
   meteorites,
-}: Prevalence) => {
+}: PrevalenceType) => {
   const [isCopying, setIsCopying] = useState({
     universe: false,
     sun: false,
