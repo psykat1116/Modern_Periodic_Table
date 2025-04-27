@@ -1,6 +1,7 @@
-import React, { useContext } from "react";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import Link from "next/link";
+import { useContext } from "react";
+
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Categories = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;

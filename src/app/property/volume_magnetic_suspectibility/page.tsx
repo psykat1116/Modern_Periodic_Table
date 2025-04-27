@@ -1,8 +1,8 @@
 "use client";
+
 import Link from "next/link";
 import { useContext } from "react";
 
-import { VolumeMagneticSuspectibility } from "@/components/Collection";
 import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
 import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
@@ -12,6 +12,7 @@ import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { RowThreeElem } from "@/constant/ElementDetails/RowThreeElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { VolumeMagneticSuspectibility } from "@/components/Collection";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 
 const Page = () => {

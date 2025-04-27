@@ -1,13 +1,13 @@
-import ElementDetailsProps from "@/types/ElementTypes";
+import type ElementDetailsProps from "@/types/ElementTypes";
 import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
 import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
-import { RowThreeElem } from "@/constant/ElementDetails/RowThreeElem";
+import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowFourElem } from "@/constant/ElementDetails/RowFourElem";
 import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
-import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
+import { RowThreeElem } from "@/constant/ElementDetails/RowThreeElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
-import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
+import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 
 export default function getElementData(id: number) {
   let element: ElementDetailsProps | null = null;

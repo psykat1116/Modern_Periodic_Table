@@ -1,23 +1,26 @@
 "use client";
-import React, { useContext, useEffect, useState } from "react";
+
 import { useParams } from "next/navigation";
-import Topbar from "./Topbar";
-import Skeleton from "./Skeleton";
-import LeftSide from "./LeftSide";
-import RightSide from "./RightSide";
-import Particle from "./Particle";
+import { useContext, useEffect, useState } from "react";
+
+import Topbar from "@/components/Topbar";
+import Skeleton from "@/components/Skeleton";
+import Particle from "@/components/Particle";
+import LeftSide from "@/components/LeftSide";
+import RightSide from "@/components/RightSide";
 import getElementData from "@/helper/getElementData";
-import ElementDetailsProps from "@/types/ElementTypes";
+import type ElementDetailsProps from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Main = () => {
-    const { theme } = useContext(ThemeContext) as ThemeContextType;
-  const [elem, setElem] = useState<ElementDetailsProps | null>(null);
   const { id }: { id: string } = useParams();
+  const { theme } = useContext(ThemeContext) as ThemeContextType;
+  const [elem, setElem] = useState<ElementDetailsProps | null>(null);
 
   useEffect(() => {
     setElem(getElementData(parseInt(id)));
   }, [id]);
+
   return (
     <div
       className={`flex flex-col min-h-screen w-full ${

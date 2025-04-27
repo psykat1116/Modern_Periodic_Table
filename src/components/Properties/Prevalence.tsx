@@ -1,8 +1,9 @@
-import React, { useState, useContext } from "react";
 import Link from "next/link";
-import { Prevalence } from "@/types/ElementTypes";
-import { MdContentCopy, MdCheck } from "react-icons/md";
 import DOMPurify from "dompurify";
+import { useState, useContext } from "react";
+import { MdContentCopy, MdCheck } from "react-icons/md";
+
+import type { Prevalence } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Prevalence = ({

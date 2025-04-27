@@ -1,11 +1,11 @@
-import React, { useState, useContext } from "react";
 import Link from "next/link";
-import { AtomicProperties } from "@/types/ElementTypes";
 import DOMPurify from "dompurify";
-import { MdContentCopy, MdCheck } from "react-icons/md";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import ListBox from "../ListBox";
 import { motion } from "framer-motion";
+import { useState, useContext } from "react";
+import { MdContentCopy, MdCheck } from "react-icons/md";
+
+import type { AtomicProperties } from "@/types/ElementTypes";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const AtomicProperty = ({
   atomic_weight,

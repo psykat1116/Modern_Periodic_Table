@@ -1,4 +1,5 @@
-import BoxTypes from "@/types/BoxTypes";
+import type BoxTypes from "@/types/BoxTypes";
+
 export const RowTwoLeftElements: BoxTypes[] = [
   { id: "3", name: "Li", category: "alkali", groups: ["alkali", "sblock"] },
   {

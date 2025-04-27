@@ -1,9 +1,10 @@
-import React, { useState, useContext } from "react";
 import Link from "next/link";
-import { NeuclearProperties } from "@/types/ElementTypes";
-import { MdContentCopy, MdCheck } from "react-icons/md";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import DOMPurify from "dompurify";
+import { useState, useContext } from "react";
+import { MdContentCopy, MdCheck } from "react-icons/md";
+
+import type { NeuclearProperties } from "@/types/ElementTypes";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 interface NProperty {
   property: NeuclearProperties;

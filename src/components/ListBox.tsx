@@ -1,18 +1,19 @@
-import React, { useEffect, Dispatch, SetStateAction } from "react";
+import DOMPurify from "dompurify";
+import { BiCheck } from "react-icons/bi";
+import { useParams } from "next/navigation";
+import { HiMiniChevronUpDown } from "react-icons/hi2";
 import { Fragment, useState, useContext } from "react";
 import { Listbox, Transition } from "@headlessui/react";
-import { HiMiniChevronUpDown } from "react-icons/hi2";
-import { BiCheck } from "react-icons/bi";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import DOMPurify from "dompurify";
-import { optionTypes } from "@/types/BoxTypes";
+import { useEffect, Dispatch, SetStateAction } from "react";
+
+import type { optionTypes } from "@/types/BoxTypes";
 import { ConvertTemp } from "@/constant/UnitConverter/Temp";
-import { useParams } from "next/navigation";
+import { ConvertModulus } from "@/constant/UnitConverter/Modulus";
+import { ConvertDensity } from "@/constant/UnitConverter/Density";
 import { ConvertEnergy } from "@/constant/UnitConverter/AtomEnergy";
 import { ConvertHardness } from "@/constant/UnitConverter/Hardness";
 import { ConvertThermal } from "@/constant/UnitConverter/Conductivity";
-import { ConvertModulus } from "@/constant/UnitConverter/Modulus";
-import { ConvertDensity } from "@/constant/UnitConverter/Density";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 interface ListBoxProps {
   options: optionTypes[];

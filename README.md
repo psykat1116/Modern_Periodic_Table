@@ -39,10 +39,10 @@ Explore the richness of metals in the periodic with detailed information and int
 - ###### User-Friendly Presentation:
   It is designed for clarity and ease of use, making it accessible to users of all levels of expertise.
 
- <div align="center"><img src="https://github.com/psykat1116/Modern_Periodic_Table/blob/master/Screenshot-1.png?raw=true" height="300"></div>
- <div align="center"><img src="https://github.com/psykat1116/Modern_Periodic_Table/blob/master/Screenshot-2.png?raw=true" height="300"></div>
- <div align="center"><img src="https://github.com/psykat1116/Modern_Periodic_Table/blob/master/Screenshot-3.png?raw=true" height="300"></div>
- <div align="center"><img src="https://github.com/psykat1116/Modern_Periodic_Table/blob/master/Screenshot-4.PNG?raw=true" height="300"></div>
+ <div align="center"><img src="https://modern-periodic-table.vercel.app/Screenshot-1.png" height="300"></div>
+ <div align="center"><img src="https://modern-periodic-table.vercel.app/Screenshot-2.png" height="300"></div>
+ <div align="center"><img src="https://modern-periodic-table.vercel.app/Screenshot-3.png" height="300"></div>
+ <div align="center"><img src="https://modern-periodic-table.vercel.app/Screenshot-4.png" height="300"></div>
 
 ## Contribution Guidelines 📑
 

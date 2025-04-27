@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import { Two, Eight, Eighteen, ThirtyTwo, ThirtyOne } from "@/components/Shell";
 

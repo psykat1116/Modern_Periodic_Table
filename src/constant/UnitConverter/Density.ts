@@ -1,5 +1,5 @@
 import getElementData from "@/helper/getElementData";
-import { DensityConversion } from "@/types/Conversion";
+import type { DensityConversion } from "@/types/Conversion";
 
 export const ConvertDensity = ({ type, id }: DensityConversion) => {
   const data = getElementData(id);

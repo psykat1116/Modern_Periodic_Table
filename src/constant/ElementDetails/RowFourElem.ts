@@ -1,4 +1,4 @@
-import ElementDetailsProps from "@/types/ElementTypes";
+import type ElementDetailsProps from "@/types/ElementTypes";
 
 export const RowFourElem: ElementDetailsProps[] = [
   {
@@ -15,6 +15,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-09-7",
       cid_number: "5462222",
       symbol: "K",
+      image: "/K.jpg",
     },
     particles: {
       electrons: 19,
@@ -122,6 +123,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-70-2",
       cid_number: "5460341",
       symbol: "Ca",
+      image: "/Ca.jpg",
     },
     particles: {
       electrons: 20,
@@ -215,6 +217,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     health_safety: {
       Hazard_class: 4.2,
       dot_number: 1855,
+      nfpa_label: "/Ca.png",
     },
   },
   {
@@ -231,6 +234,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-20-2",
       cid_number: "23952",
       symbol: "Sc",
+      image: "/Sc.jpg",
     },
     particles: {
       electrons: 21,
@@ -339,6 +343,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-32-6",
       cid_number: "23963",
       symbol: "Ti",
+      image: "/Ti.JPG",
     },
     particles: {
       electrons: 22,
@@ -436,6 +441,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     health_safety: {
       Hazard_class: 4.2,
       dot_number: 1456,
+      nfpa_label: "/Ti.png",
     },
   },
   {
@@ -452,6 +458,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-62-2",
       cid_number: "23990",
       symbol: "V",
+      image: "/V.jpg",
     },
     particles: {
       electrons: 23,
@@ -550,6 +557,7 @@ export const RowFourElem: ElementDetailsProps[] = [
     health_safety: {
       Hazard_class: 4.1,
       dot_number: 3089,
+      nfpa_label: "/V.png",
     },
   },
   {
@@ -566,6 +574,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-47-3",
       cid_number: "23976",
       symbol: "Cr",
+      image: "/Cr.jpg",
     },
     particles: {
       electrons: 24,
@@ -679,6 +688,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7439-96-5",
       cid_number: "23930",
       symbol: "Mn",
+      image: "/Mn.jpg",
     },
     particles: {
       electrons: 25,
@@ -792,6 +802,7 @@ export const RowFourElem: ElementDetailsProps[] = [
         ["Delta Iron", "https://www.britannica.com/science/delta-iron"],
         ["Hexaferrum", "https://en.wikipedia.org/wiki/Hexaferrum"],
       ],
+      image: "/Fe.jpg",
     },
     particles: {
       electrons: 26,
@@ -906,6 +917,7 @@ export const RowFourElem: ElementDetailsProps[] = [
         ["Alpha Cobalt", "https://pubs.acs.org/doi/10.1021/ja0523338"],
         ["Beta Cobalt", "https://pubs.acs.org/doi/10.1021/ja0523338"],
       ],
+      image: "/Co.jpg",
     },
     particles: {
       electrons: 27,
@@ -1015,6 +1027,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-02-0",
       cid_number: "935",
       symbol: "Ni",
+      image: "/Ni.jpg",
     },
     particles: {
       electrons: 28,
@@ -1109,6 +1122,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       Hazard_class: 4.1,
       dot_number: 3089,
       rtecs_number: "QR5950000",
+      nfpa_label: "/Ni.png",
     },
   },
   {
@@ -1125,6 +1139,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-50-8",
       cid_number: "23978",
       symbol: "Cu",
+      image: "/Cu.jpg",
     },
     particles: {
       electrons: 29,
@@ -1238,6 +1253,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-66-6",
       cid_number: "23994",
       symbol: "Zn",
+      image: "/Zn.jpg",
     },
     particles: {
       electrons: 30,
@@ -1334,6 +1350,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       Hazard_class: 4.3,
       dot_number: 1436,
       rtecs_number: "ZG8600000",
+      nfpa_label: "/Zn.png",
     },
   },
   {
@@ -1350,6 +1367,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7440-55-3",
       cid_number: "5360835",
       symbol: "Ga",
+      image: "/Ga.jpg",
     },
     particles: {
       electrons: 29,
@@ -1468,6 +1486,7 @@ export const RowFourElem: ElementDetailsProps[] = [
         ["Beta Germanium", "https://en.wikipedia.org/wiki/Germanium"],
         ["Germanene", "https://en.wikipedia.org/wiki/Germanene"],
       ],
+      image: "/Ge.jpg",
     },
     particles: {
       electrons: 32,
@@ -1585,6 +1604,7 @@ export const RowFourElem: ElementDetailsProps[] = [
           "https://pubs.rsc.org/en/content/articlelanding/2020/nr/c9nr09627b",
         ],
       ],
+      image: "/As.jpg",
     },
     particles: {
       electrons: 33,
@@ -1706,6 +1726,7 @@ export const RowFourElem: ElementDetailsProps[] = [
           "https://pubs.rsc.org/en/content/articlelanding/1980/dt/dt9800000624",
         ],
       ],
+      image: "/Se.jpg",
     },
     particles: {
       electrons: 34,
@@ -1797,6 +1818,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       Hazard_class: 6.1,
       dot_number: 2658,
       rtecs_number: "VS7700000",
+      nfpa_label: "/Se.png",
     },
   },
   {
@@ -1813,6 +1835,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7726-95-6",
       cid_number: "24408",
       symbol: "Br",
+      image: "/Br.jpg",
     },
     particles: {
       electrons: 35,
@@ -1920,6 +1943,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       cas_number: "7439-90-9",
       cid_number: "5416",
       symbol: "Kr",
+      image: "/Kr.jpg",
     },
     particles: {
       electrons: 36,

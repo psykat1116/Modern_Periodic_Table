@@ -1,7 +1,8 @@
 "use client";
+
+import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
-import { loadFull } from "tsparticles";
 
 const DynamicParticle = () => {
   const particlesInit = async (engine: Engine) => {

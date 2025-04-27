@@ -1,5 +1,7 @@
 "use client";
-import React, { useContext } from "react";
+
+import { useContext } from "react";
+
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Loader = () => {

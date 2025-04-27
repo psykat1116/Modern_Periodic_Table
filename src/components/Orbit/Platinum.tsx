@@ -1,6 +1,13 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import { Two, Eight, Eighteen, ThirtyTwo, Seventeen, One } from "@/components/Shell";
+import {
+  Two,
+  Eight,
+  Eighteen,
+  ThirtyTwo,
+  Seventeen,
+  One,
+} from "@/components/Shell";
 
 const Platinum = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;

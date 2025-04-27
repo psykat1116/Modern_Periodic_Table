@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { useContext } from "react";
 import { FaRegChartBar } from "react-icons/fa";
@@ -27,7 +28,7 @@ const Page = () => {
     <>
       <div
         className={cn(
-          "w-full flex justify-between items-center text-2xl pr-4 pl-1",
+          "w-full flex justify-between items-center text-2xl pr-2 pl-1",
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         )}
       >

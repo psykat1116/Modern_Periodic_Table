@@ -1,7 +1,9 @@
 "use client";
+
+import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
-import { loadFull } from "tsparticles";
+
 import { getConfig } from "@/helper/ChooseConfig";
 
 const Particle = ({ number }: { number: string }) => {

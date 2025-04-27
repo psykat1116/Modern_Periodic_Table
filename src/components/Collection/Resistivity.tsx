@@ -1,7 +1,8 @@
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import React, { useContext } from "react";
-import Link from "next/link";
 import xss from "xss";
+import Link from "next/link";
+import { useContext } from "react";
+
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 interface Resistivity {
   atomic_number: number;

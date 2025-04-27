@@ -1,9 +1,10 @@
-import React, { useState, useContext } from "react";
 import Link from "next/link";
-import { Overview } from "@/types/ElementTypes";
-import { MdContentCopy, MdCheck } from "react-icons/md";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import { motion } from "framer-motion";
+import { useState, useContext } from "react";
+import { MdContentCopy, MdCheck } from "react-icons/md";
+
+import type { Overview } from "@/types/ElementTypes";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Overview = ({ latin_name, discovery, discoverer }: Overview) => {
   const [isCopying, setIsCopying] = useState({

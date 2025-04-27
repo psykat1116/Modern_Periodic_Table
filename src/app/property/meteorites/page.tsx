@@ -1,4 +1,5 @@
 "use client";
+
 import { useContext } from "react";
 
 import { Meteorites } from "@/components/Collection";

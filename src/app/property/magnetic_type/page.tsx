@@ -1,4 +1,5 @@
 "use client";
+
 import { useContext } from "react";
 
 import { MagneticType } from "@/components/Collection";

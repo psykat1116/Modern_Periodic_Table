@@ -1,8 +1,9 @@
 "use client";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import React, { useContext } from "react";
 
+import Link from "next/link";
+import { useContext } from "react";
+
+import { cn } from "@/lib/utils";
 import { Allotrope } from "@/components/Collection";
 import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";

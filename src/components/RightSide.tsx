@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
+
 import {
   AtomStructure,
   AtomicProperty,
@@ -6,15 +7,15 @@ import {
   EMProperty,
   GeneralInfo,
   HealthSafety,
-  MaterialProperty,
-  NeuclearProperty,
   Overview,
   Prevalence,
   Reactivity,
   ThermoProperty,
-} from "./Properties";
+  MaterialProperty,
+  NeuclearProperty,
+} from "@/components/Properties";
+import type ElementDetailsProps from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import ElementDetailsProps from "@/types/ElementTypes";
 
 interface RightSideProps {
   elem: ElementDetailsProps | null;

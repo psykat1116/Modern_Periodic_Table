@@ -1,11 +1,13 @@
 "use client";
-import React, { useContext } from "react";
-import GetOrbit from "./GetOrbit";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+
+import { useContext } from "react";
 import { motion } from "framer-motion";
-import ElementDetailsProps from "@/types/ElementTypes";
-import { ExternalLink, Particles } from "./Properties";
 import { useParams } from "next/navigation";
+
+import GetOrbit from "@/components/GetOrbit";
+import type ElementDetailsProps from "@/types/ElementTypes";
+import { ExternalLink, Particles } from "@/components/Properties";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 interface LeftSideProps {
   elem: ElementDetailsProps | null;

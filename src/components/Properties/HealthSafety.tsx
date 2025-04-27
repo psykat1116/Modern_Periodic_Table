@@ -1,8 +1,9 @@
-import React, { useState, useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { HealthSafety } from "@/types/ElementTypes";
+import { useState, useContext } from "react";
 import { MdContentCopy, MdCheck } from "react-icons/md";
+
+import type { HealthSafety } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const HealthSafety = ({

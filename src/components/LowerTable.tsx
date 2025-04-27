@@ -1,6 +1,5 @@
-import React from "react";
-import Lanthanide from "./Rows/Lanthanide";
-import Actinides from "./Rows/Actinides";
+import Actinides from "@/components/Rows/Actinides";
+import Lanthanide from "@/components/Rows/Lanthanide";
 
 const LowerTable = () => {
   return (

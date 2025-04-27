@@ -1,4 +1,4 @@
-import ElementDetailsProps from "@/types/ElementTypes";
+import type ElementDetailsProps from "@/types/ElementTypes";
 
 export const RowSixElem: ElementDetailsProps[] = [
   {
@@ -15,6 +15,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7440-46-2",
       cid_number: "5354618",
       symbol: "Cs",
+      image: "/Cs.jpg",
     },
     particles: {
       electrons: 55,
@@ -126,6 +127,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7440-39-3",
       cid_number: "5355457",
       symbol: "Ba",
+      image: "/Ba.jpg",
     },
     particles: {
       electrons: 56,
@@ -236,6 +238,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7440-58-6",
       cid_number: "23986",
       symbol: "Hf",
+      image: "/Hf.jpg",
     },
     particles: {
       electrons: 72,
@@ -350,6 +353,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7440-25-7",
       cid_number: "23956",
       symbol: "Ta",
+      image: "/Ta.jpg",
     },
     particles: {
       electrons: 73,
@@ -461,6 +465,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7440-33-7",
       cid_number: "23964",
       symbol: "W",
+      image: "/W.jpg",
     },
     particles: {
       electrons: 74,
@@ -559,6 +564,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       Hazard_class: 4.1,
       dot_number: 3089,
       rtecs_number: "YO7175000",
+      nfpa_label: "/W.png",
     },
   },
   {
@@ -575,6 +581,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7440-15-5",
       cid_number: "23947",
       symbol: "Re",
+      image: "/Re.jpg",
     },
     particles: {
       electrons: 75,
@@ -689,6 +696,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7440-58-6",
       cid_number: "23937",
       symbol: "Os",
+      image: "/Os.jpg",
     },
     particles: {
       electrons: 76,
@@ -785,6 +793,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       Hazard_class: 4.1,
       dot_number: 3089,
       rtecs_number: "RN1100000",
+      nfpa_label: "/Os.png",
     },
   },
   {
@@ -801,6 +810,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7439-88-5",
       cid_number: "23924",
       symbol: "Ir",
+      image: "/Ir.jpg",
     },
     particles: {
       electrons: 77,
@@ -911,6 +921,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7440-06-4",
       cid_number: "23939",
       symbol: "Pt",
+      image: "/Pt.jpg",
     },
     particles: {
       electrons: 78,
@@ -1006,6 +1017,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       Hazard_class: 4.1,
       dot_number: 3089,
       rtecs_number: "TP2160000",
+      nfpa_label: "/Pt.png",
     },
   },
   {
@@ -1022,6 +1034,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7440-57-5",
       cid_number: "23985",
       symbol: "Au",
+      image: "/Au.webp",
     },
     particles: {
       electrons: 79,
@@ -1132,6 +1145,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7439-97-6",
       cid_number: "23931",
       symbol: "Hg",
+      image: "/Hg.jpg",
     },
     particles: {
       electrons: 80,
@@ -1240,6 +1254,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7440-28-0",
       cid_number: "5359464",
       symbol: "Tl",
+      image: "/Tl.jpg",
     },
     particles: {
       electrons: 81,
@@ -1351,6 +1366,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7439-92-1",
       cid_number: "5352425",
       symbol: "Pb",
+      image: "/Pb.jpg",
     },
     particles: {
       electrons: 82,
@@ -1447,6 +1463,7 @@ export const RowSixElem: ElementDetailsProps[] = [
     health_safety: {
       dot_number: 3077,
       rtecs_number: "OF7525000",
+      nfpa_label: "/Pb.png",
     },
   },
   {
@@ -1463,6 +1480,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "7440-69-9",
       cid_number: "5359367",
       symbol: "Bi",
+      image: "/Bi.jpg",
     },
     particles: {
       electrons: 83,
@@ -1577,6 +1595,7 @@ export const RowSixElem: ElementDetailsProps[] = [
         ["Alpha Polonium", "https://en.wikipedia.org/wiki/Polonium"],
         ["Beta Polonium", "https://en.wikipedia.org/wiki/Polonium"],
       ],
+      image: "/Po.jpg",
     },
     particles: {
       electrons: 84,
@@ -1729,6 +1748,7 @@ export const RowSixElem: ElementDetailsProps[] = [
       cas_number: "10043-92-2",
       cid_number: "24857",
       symbol: "Rn",
+      image: "/Rn.jpg",
     },
     particles: {
       electrons: 86,

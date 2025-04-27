@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
-import BoxTypes from "@/types/BoxTypes";
-import { useSearchParams } from "next/navigation";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import Link from "next/link";
+import { useContext } from "react";
+import { useSearchParams } from "next/navigation";
+
+import type BoxTypes from "@/types/BoxTypes";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Box = ({ id, category, name, groups }: BoxTypes) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;

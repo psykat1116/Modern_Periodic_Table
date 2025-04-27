@@ -1,4 +1,5 @@
 import type { ISourceOptions } from "tsparticles-engine";
+
 export const LanConfig: ISourceOptions = {
   fpsLimit: 120,
   particles: {

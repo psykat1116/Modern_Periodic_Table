@@ -1,5 +1,5 @@
 import getElementData from "@/helper/getElementData";
-import { ThermalConversion } from "@/types/Conversion";
+import type { ThermalConversion } from "@/types/Conversion";
 
 export const ConvertThermal = ({ type, id }: ThermalConversion) => {
   const data = getElementData(id);

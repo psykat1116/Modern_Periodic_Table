@@ -1,4 +1,4 @@
-import ElementDetailsProps from "@/types/ElementTypes";
+import type ElementDetailsProps from "@/types/ElementTypes";
 
 export const RowFiveElem: ElementDetailsProps[] = [
   {
@@ -15,6 +15,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-17-7",
       cid_number: "5357696",
       symbol: "Rb",
+      image: "/Rb.JPG",
     },
     particles: {
       electrons: 37,
@@ -109,6 +110,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       Hazard_class: 4.3,
       dot_number: 1423,
       rtecs_number: "VL8500000",
+      nfpa_label: "/Rb.png",
     },
   },
   {
@@ -125,6 +127,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-24-6",
       cid_number: "5359327",
       symbol: "Sr",
+      image: "/Sr.jpg",
     },
     particles: {
       electrons: 38,
@@ -233,6 +236,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-65-5",
       cid_number: "23993",
       symbol: "Y",
+      image: "/Y.jpg",
     },
     particles: {
       electrons: 39,
@@ -329,6 +333,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       Hazard_class: 4.1,
       dot_number: 3089,
       rtecs_number: "ZG2980000",
+      nfpa_label: "/Y.png",
     },
   },
   {
@@ -345,6 +350,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-67-7",
       cid_number: "23995",
       symbol: "Zr",
+      image: "/Zr.jpg",
     },
     particles: {
       electrons: 40,
@@ -442,6 +448,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     health_safety: {
       Hazard_class: 4.2,
       dot_number: 2008,
+      nfpa_label: "/Zr.png",
     },
   },
   {
@@ -458,6 +465,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-03-1",
       cid_number: "23936",
       symbol: "Nb",
+      image: "/Nb.jpg",
     },
     particles: {
       electrons: 41,
@@ -567,6 +575,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7439-98-7",
       cid_number: "23932",
       symbol: "Mo",
+      image: "/Mo.jpg",
     },
     particles: {
       electrons: 42,
@@ -664,6 +673,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       Hazard_class: 4.1,
       dot_number: 3089,
       rtecs_number: "QA4680000",
+      nfpa_label: "/Mo.png",
     },
   },
   {
@@ -680,6 +690,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-26-8",
       cid_number: "23957",
       symbol: "Tc",
+      image: "/Tc.jpg",
     },
     particles: {
       electrons: 43,
@@ -779,6 +790,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-18-8",
       cid_number: "23950",
       symbol: "Ru",
+      image: "/Ru.jpg",
     },
     particles: {
       electrons: 44,
@@ -894,6 +906,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-16-6",
       cid_number: "23948",
       symbol: "Rh",
+      image: "/Rh.jpg",
     },
     particles: {
       electrons: 45,
@@ -1005,6 +1018,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-05-3",
       cid_number: "23938",
       symbol: "Pd",
+      image: "/Pd.jpg",
     },
     particles: {
       electrons: 46,
@@ -1100,6 +1114,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       Hazard_class: 4.2,
       dot_number: 3200,
       rtecs_number: "RT3480500",
+      nfpa_label: "/Pd.png",
     },
   },
   {
@@ -1116,6 +1131,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-22-4",
       cid_number: "23954",
       symbol: "Ag",
+      image: "/Ag.jpg",
     },
     particles: {
       electrons: 47,
@@ -1227,6 +1243,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-43-9",
       cid_number: "23973",
       symbol: "Cd",
+      image: "/Cd.jpg",
     },
     particles: {
       electrons: 48,
@@ -1338,6 +1355,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-74-6",
       cid_number: "5359967",
       symbol: "In",
+      image: "/In.jpg",
     },
     particles: {
       electrons: 49,
@@ -1449,6 +1467,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-31-5",
       cid_number: "5352426",
       symbol: "Sn",
+      image: "/Sn.jpg",
     },
     particles: {
       electrons: 50,
@@ -1544,6 +1563,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
     },
     health_safety: {
       rtecs_number: "XP7320000",
+      nfpa_label: "/Sn.png",
     },
   },
   {
@@ -1569,6 +1589,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
           "https://en.wikipedia.org/wiki/Explosive_antimony",
         ],
       ],
+      image: "/Sb.jpg",
     },
     particles: {
       electrons: 51,
@@ -1686,6 +1707,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
           "https://pubs.rsc.org/en/content/articlelanding/2004/jm/b4050",
         ],
       ],
+      image: "/Te.jpg",
     },
     particles: {
       electrons: 52,
@@ -1779,6 +1801,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       Hazard_class: 6.1,
       dot_number: 2811,
       rtecs_number: "WY2625000",
+      nfpa_label: "/Te.png",
     },
   },
   {
@@ -1795,6 +1818,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7553-56-2",
       cid_number: "807",
       symbol: "I",
+      image: "/I.jpg",
     },
     particles: {
       electrons: 53,
@@ -1899,6 +1923,7 @@ export const RowFiveElem: ElementDetailsProps[] = [
       cas_number: "7440-63-3",
       cid_number: "23991",
       symbol: "Xe",
+      image: "/Xe.jpg",
     },
     particles: {
       electrons: 54,

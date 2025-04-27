@@ -1,9 +1,10 @@
 "use client";
+
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 import { useContext } from "react";
 import { FaRegChartBar } from "react-icons/fa";
 
+import { cn } from "@/lib/utils";
 import { ElectronAffinity } from "@/components/Collection";
 import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
 import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
@@ -25,7 +26,7 @@ const Page = () => {
     <>
       <div
         className={cn(
-          "w-full flex justify-between items-center text-2xl pr-4 pl-1",
+          "w-full flex justify-between items-center text-2xl pr-2 pl-1",
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         )}
       >

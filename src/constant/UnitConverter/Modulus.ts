@@ -1,5 +1,5 @@
 import getElementData from "@/helper/getElementData";
-import { ModulusConversion } from "@/types/Conversion";
+import type { ModulusConversion } from "@/types/Conversion";
 
 export const ConvertModulus = ({ type, id }: ModulusConversion) => {
   const data = getElementData(id);

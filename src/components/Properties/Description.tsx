@@ -1,9 +1,10 @@
 import DOMPurify from "dompurify";
-import React, { useState, useContext } from "react";
-import { HiMiniSpeakerWave, HiOutlinePause, HiMiniPlay } from "react-icons/hi2";
-import { MdReplay, MdContentCopy, MdCheck } from "react-icons/md";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import { motion } from "framer-motion";
+import { useState, useContext } from "react";
+import { MdReplay, MdContentCopy, MdCheck } from "react-icons/md";
+import { HiMiniSpeakerWave, HiOutlinePause, HiMiniPlay } from "react-icons/hi2";
+
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Description = ({ description }: { description: string }) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;

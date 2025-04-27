@@ -8,6 +8,7 @@ export interface GeneralProperties {
   cid_number?: string;
   symbol: string;
   allotropes?: string[][];
+  image?: string;
 }
 
 export interface Particles {
@@ -100,8 +101,8 @@ export interface Prevalence {
 }
 
 export interface Reactivity {
-  electronegativity?: number;
   valence: number;
+  electronegativity?: number;
   electron_affinity?: number;
   ionization_energy?: number;
 }

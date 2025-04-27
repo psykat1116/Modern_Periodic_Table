@@ -1,7 +1,7 @@
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import React, { useContext } from "react";
 import Link from "next/link";
-import xss from "xss";
+import { useContext } from "react";
+
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 interface LatticeAngle {
   atomic_number: number;

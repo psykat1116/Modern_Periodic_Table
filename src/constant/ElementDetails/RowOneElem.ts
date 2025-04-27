@@ -1,4 +1,4 @@
-import ElementDetailsProps from "@/types/ElementTypes";
+import type ElementDetailsProps from "@/types/ElementTypes";
 
 export const RowOneElem: ElementDetailsProps[] = [
   {
@@ -27,6 +27,7 @@ export const RowOneElem: ElementDetailsProps[] = [
         ["Mono-atomic Hydrogen", ""],
         ["Di-atomic Hydrogen", ""],
       ],
+      image: "/H.jpg",
     },
     particles: {
       electrons: 1,
@@ -126,6 +127,7 @@ export const RowOneElem: ElementDetailsProps[] = [
       cas_number: "7440-59-7",
       cid_number: "23987",
       symbol: "He",
+      image: "/He.jpg",
     },
     particles: {
       electrons: 2,

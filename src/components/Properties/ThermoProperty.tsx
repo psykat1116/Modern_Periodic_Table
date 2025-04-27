@@ -1,11 +1,12 @@
-import React, { useContext, useState } from "react";
 import Link from "next/link";
-import { ThermodynamicProperties } from "@/types/ElementTypes";
-import { MdCheck, MdContentCopy } from "react-icons/md";
 import DOMPurify from "dompurify";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import ListBox from "../ListBox";
 import { motion } from "framer-motion";
+import { useContext, useState } from "react";
+import { MdCheck, MdContentCopy } from "react-icons/md";
+
+import ListBox from "@/components/ListBox";
+import type { ThermodynamicProperties } from "@/types/ElementTypes";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const TemperatureOptions = [
   { name: "Celcius (℃)" },

@@ -1,16 +1,17 @@
-import React, { useState, useContext } from "react";
 import Link from "next/link";
-import { Reactivity } from "@/types/ElementTypes";
+import { useState, useContext } from "react";
 import { MdContentCopy, MdCheck } from "react-icons/md";
+
+import ListBox from "@/components/ListBox";
+import type { Reactivity } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import ListBox from "../ListBox";
 
 const EnergyOptions = [{ name: "kJ/mol" }, { name: "kCal/mol" }];
 
 const Reactivity = ({
+  valence,
   electron_affinity,
   electronegativity,
-  valence,
   ionization_energy,
 }: Reactivity) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;

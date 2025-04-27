@@ -1,4 +1,4 @@
-import ElementDetailsProps from "@/types/ElementTypes";
+import type ElementDetailsProps from "@/types/ElementTypes";
 
 export const ActinideElem: ElementDetailsProps[] = [
   {
@@ -14,6 +14,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       cas_number: "7440-34-8",
       cid_number: "167378",
       symbol: "Ac",
+      image: "/Ac.png",
     },
     particles: {
       electrons: 89,
@@ -91,6 +92,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       cas_number: "7440-29-1",
       cid_number: "23960",
       symbol: "Th",
+      image: "/Th.jpg",
     },
     particles: {
       electrons: 90,
@@ -198,6 +200,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       cas_number: "7440-13-3",
       cid_number: "23945",
       symbol: "Pa",
+      image: "/Pa.jpg",
     },
     particles: {
       electrons: 91,
@@ -299,6 +302,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       cas_number: "7440-61-1",
       cid_number: "23989",
       symbol: "U",
+      image: "/U.jpg",
     },
     particles: {
       electrons: 92,
@@ -409,6 +413,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       cas_number: "7439-99-8",
       cid_number: "23933",
       symbol: "Np",
+      image: "/Np.jpg",
     },
     particles: {
       electrons: 93,
@@ -517,6 +522,7 @@ export const ActinideElem: ElementDetailsProps[] = [
           "https://en.wikipedia.org/wiki/Allotropes_of_plutonium",
         ],
       ],
+      image: "/Pu.jpg",
     },
     particles: {
       electrons: 94,
@@ -604,6 +610,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       cas_number: "7440-35-9",
       cid_number: "23966",
       symbol: "Am",
+      image: "/Am.jpg",
     },
     particles: {
       electrons: 95,
@@ -688,6 +695,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       cas_number: "7440-51-9",
       cid_number: "23979",
       symbol: "Cm",
+      image: "/Cm.jpg",
     },
     particles: {
       electrons: 96,
@@ -763,6 +771,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       cas_number: "7440-40-6",
       cid_number: "23971",
       symbol: "Bk",
+      image: "/Bk.jpg",
     },
     particles: {
       electrons: 97,
@@ -836,6 +845,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       cas_number: "7440-71-3",
       cid_number: "23997",
       symbol: "Cf",
+      image: "/Cf.jpg",
     },
     particles: {
       electrons: 98,
@@ -909,6 +919,7 @@ export const ActinideElem: ElementDetailsProps[] = [
       cas_number: "7429-92-7",
       cid_number: "23913",
       symbol: "Es",
+      image: "/Es.jpg",
     },
     particles: {
       electrons: 99,

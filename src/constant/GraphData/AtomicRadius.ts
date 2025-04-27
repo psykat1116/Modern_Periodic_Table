@@ -1,14 +1,13 @@
-import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
-import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
+import type { ChartData } from "@/types/BoxTypes";
 import { RowOneElem } from "@/constant/ElementDetails/RowOneElem";
 import { RowTwoElem } from "@/constant/ElementDetails/RowTwoElem";
-import { RowThreeElem } from "@/constant/ElementDetails/RowThreeElem";
-import { RowFourElem } from "@/constant/ElementDetails/RowFourElem";
-import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
 import { RowSixElem } from "@/constant/ElementDetails/RowSixElem";
+import { RowFiveElem } from "@/constant/ElementDetails/RowFiveElem";
+import { RowFourElem } from "@/constant/ElementDetails/RowFourElem";
+import { RowThreeElem } from "@/constant/ElementDetails/RowThreeElem";
+import { ActinideElem } from "@/constant/ElementDetails/ActinideElem";
 import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
-
-import { ChartData } from "@/types/BoxTypes";
+import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 
 const data: ChartData[] = [];
 

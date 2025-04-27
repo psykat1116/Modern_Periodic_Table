@@ -1,4 +1,4 @@
-import BoxTypes from "@/types/BoxTypes";
+import type BoxTypes from "@/types/BoxTypes";
 
 export const RowFiveElements: BoxTypes[] = [
   { name: "Rb", id: "37", category: "alkali", groups: ["sblock", "alkali"] },

@@ -1,5 +1,5 @@
 import getElementData from "@/helper/getElementData";
-import { TempConversion } from "@/types/Conversion";
+import type { TempConversion } from "@/types/Conversion";
 
 export const ConvertTemp = ({ type, id }: TempConversion) => {
   const data = getElementData(id);

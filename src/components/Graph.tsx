@@ -3,11 +3,11 @@ import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
 
 import {
   ChartConfig,
-  ChartContainer,
   ChartTooltip,
+  ChartContainer,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { ChartData } from "@/types/BoxTypes";
+import type { ChartData } from "@/types/BoxTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 interface GraphProps {

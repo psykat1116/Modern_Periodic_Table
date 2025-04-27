@@ -1,9 +1,10 @@
-import React, { useState, useContext } from "react";
-import DOMPurify from "dompurify";
 import Link from "next/link";
-import ListBox from "../ListBox";
+import DOMPurify from "dompurify";
+import { useState, useContext } from "react";
 import { MdContentCopy, MdCheck } from "react-icons/md";
-import { MaterialProperties } from "@/types/ElementTypes";
+
+import ListBox from "@/components/ListBox";
+import type { MaterialProperties } from "@/types/ElementTypes";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const BulkYoungModulusOptions = [
@@ -469,10 +470,7 @@ const MaterialProperty = ({
               <p>{thermal}</p>
               <button
                 onClick={() =>
-                  handleCopy(
-                    thermal.toString(),
-                    "thermal_conductivity"
-                  )
+                  handleCopy(thermal.toString(), "thermal_conductivity")
                 }
               >
                 {!isCopying.thermal_conductivity ? (

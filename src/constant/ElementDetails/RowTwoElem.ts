@@ -1,4 +1,4 @@
-import ElementDetailsProps from "@/types/ElementTypes";
+import type ElementDetailsProps from "@/types/ElementTypes";
 
 export const RowTwoElem: ElementDetailsProps[] = [
   {
@@ -15,6 +15,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       cas_number: "7439-93-2",
       cid_number: "3028194",
       symbol: "Li",
+      image: "/Li.jpg",
     },
     particles: {
       electrons: 3,
@@ -124,6 +125,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       cas_number: "7440-41-7",
       cid_number: "5460467",
       symbol: "Be",
+      image: "/Be.jpg",
     },
     particles: {
       electrons: 4,
@@ -262,6 +264,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
           "https://en.wikipedia.org/wiki/Allotropes_of_boron",
         ],
       ],
+      image: "/B.jpg",
     },
     particles: {
       electrons: 5,
@@ -388,6 +391,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
         ],
         ["Carbyne", "https://en.wikipedia.org/wiki/Carbyne"],
       ],
+      image: "/C.jpg",
     },
     particles: {
       electrons: 6,
@@ -504,6 +508,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
         ["Alpha Nitrogen", "https://en.wikipedia.org/wiki/Solid_nitrogen"],
         ["Beta Nitrogen", "https://en.wikipedia.org/wiki/Solid_nitrogen"],
       ],
+      image: "/N.jpg",
     },
     particles: {
       electrons: 7,
@@ -584,6 +589,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       Hazard_class: 2.2,
       dot_number: 1977,
       rtecs_number: "QW9700000",
+      nfpa_label: "/N.png",
     },
     atom_structure: {
       crystal_structure: "Simple Hexagonal",
@@ -613,6 +619,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
         ["Tetra-Oxygen", "https://en.wikipedia.org/wiki/Tetraoxygen"],
         ["Octa-Oxygen", "https://en.wikipedia.org/wiki/Octaoxygen"],
       ],
+      image: "/O.jpg",
     },
     particles: {
       electrons: 8,
@@ -691,6 +698,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       Hazard_class: 2.2,
       dot_number: 1073,
       rtecs_number: "RS2060000",
+      nfpa_label: "/O.png",
     },
     atom_structure: {
       crystal_structure: "Base-Centered Monoclinic",
@@ -718,6 +726,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
         ["Alpha-Fluorine", "https://en.wikipedia.org/wiki/Phases_of_fluorine"],
         ["Beta-Fluorine", "https://en.wikipedia.org/wiki/Phases_of_fluorine"],
       ],
+      image: "/F.jpg",
     },
     particles: {
       electrons: 9,
@@ -813,6 +822,7 @@ export const RowTwoElem: ElementDetailsProps[] = [
       cas_number: "7440-01-9",
       cid_number: "23935",
       symbol: "Ne",
+      image: "/Ne.jpg",
     },
     particles: {
       electrons: 10,

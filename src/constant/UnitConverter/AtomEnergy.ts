@@ -1,5 +1,5 @@
 import getElementData from "@/helper/getElementData";
-import { AtomEnergyConversion } from "@/types/Conversion";
+import type { AtomEnergyConversion } from "@/types/Conversion";
 
 export const ConvertEnergy = ({ type, id }: AtomEnergyConversion) => {
   const data = getElementData(id);

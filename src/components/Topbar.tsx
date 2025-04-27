@@ -1,11 +1,13 @@
 "use client";
-import React, { useContext } from "react";
-import { useParams } from "next/navigation";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import Navbar from "./Navbar";
+
 import Link from "next/link";
+import { useContext } from "react";
+import { useParams } from "next/navigation";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import ElementDetailsProps from "@/types/ElementTypes";
+
+import Navbar from "@/components/Navbar";
+import type ElementDetailsProps from "@/types/ElementTypes";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 interface TopbarDetailsProps {
   elem: ElementDetailsProps | null;

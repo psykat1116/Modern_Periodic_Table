@@ -1,4 +1,4 @@
-import ElementDetailsProps from "@/types/ElementTypes";
+import type ElementDetailsProps from "@/types/ElementTypes";
 
 export const LanthanideElem: ElementDetailsProps[] = [
   {
@@ -14,6 +14,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7439-91-0",
       cid_number: "23926",
       symbol: "La",
+      image: "/La.jpg",
     },
     particles: {
       electrons: 57,
@@ -123,6 +124,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7440-45-1",
       cid_number: "23974",
       symbol: "Ce",
+      image: "/Ce.jpg",
     },
     particles: {
       electrons: 58,
@@ -239,6 +241,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7440-10-0",
       cid_number: "23942",
       symbol: "Pr",
+      image: "/Pr.jpg",
     },
     particles: {
       electrons: 59,
@@ -344,6 +347,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7440-00-8",
       cid_number: "23934",
       symbol: "Nd",
+      image: "/Nd.jpg",
     },
     particles: {
       electrons: 60,
@@ -452,6 +456,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7440-12-2",
       cid_number: "23944",
       symbol: "Pm",
+      image: "/Pm.jpg",
     },
     particles: {
       electrons: 61,
@@ -535,6 +540,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7440-19-9",
       cid_number: "23951",
       symbol: "Sm",
+      image: "/Sm.jpg",
     },
     particles: {
       electrons: 62,
@@ -632,6 +638,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
     health_safety: {
       Hazard_class: 4.1,
       dot_number: 1325,
+      nfpa_label: "/Sm.png",
     },
   },
   {
@@ -647,6 +654,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7440-53-1",
       cid_number: "23981",
       symbol: "Eu",
+      image: "/Eu.jpg",
     },
     particles: {
       electrons: 63,
@@ -751,6 +759,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7440-54-2",
       cid_number: "23982",
       symbol: "Gd",
+      image: "/Gd.jpg",
     },
     particles: {
       electrons: 64,
@@ -861,6 +870,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7440-27-9",
       cid_number: "23958",
       symbol: "Tb",
+      image: "/Tb.jpg",
     },
     particles: {
       electrons: 65,
@@ -967,6 +977,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7429-91-6",
       cid_number: "23912",
       symbol: "Dy",
+      image: "/Dy.jpg",
     },
     particles: {
       electrons: 66,
@@ -1075,6 +1086,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7440-60-0",
       cid_number: "23988",
       symbol: "Ho",
+      image: "/Ho.jpg",
     },
     particles: {
       electrons: 67,
@@ -1189,6 +1201,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7440-52-0",
       cid_number: "23980",
       symbol: "Er",
+      image: "/Er.jpg",
     },
     particles: {
       electrons: 68,
@@ -1296,6 +1309,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7440-30-4",
       cid_number: "23961",
       symbol: "Tm",
+      image: "/Tm.jpg",
     },
     particles: {
       electrons: 69,
@@ -1406,6 +1420,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7440-64-4",
       cid_number: "23992",
       symbol: "Yb",
+      image: "/Yb.jpg",
     },
     particles: {
       electrons: 70,
@@ -1517,6 +1532,7 @@ export const LanthanideElem: ElementDetailsProps[] = [
       cas_number: "7439-94-3",
       cid_number: "23929",
       symbol: "Lu",
+      image: "/Lu.jpg",
     },
     particles: {
       electrons: 71,

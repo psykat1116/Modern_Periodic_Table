@@ -1,13 +1,15 @@
-import React, { useContext } from "react";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { useContext } from "react";
 import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+
+import Links from "@/constant/SliderData";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import Links from "@/constant/SliderData";
 
 const Slider = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;

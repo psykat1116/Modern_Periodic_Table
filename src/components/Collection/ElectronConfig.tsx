@@ -1,9 +1,10 @@
 "use client";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import React, { useContext } from "react";
-import Link from "next/link";
-import DOMPurify from "dompurify";
+
 import xss from "xss";
+import Link from "next/link";
+import { useContext } from "react";
+
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 interface ElectronConfig {
   atomic_number: number;

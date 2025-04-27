@@ -1,4 +1,4 @@
-import ElementDetailsProps from "@/types/ElementTypes";
+import type ElementDetailsProps from "@/types/ElementTypes";
 
 export const RowThreeElem: ElementDetailsProps[] = [
   {
@@ -15,6 +15,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       cas_number: "7440-23-5",
       cid_number: "5360545",
       symbol: "Na",
+      image: "/Na.jpg",
     },
     particles: {
       electrons: 11,
@@ -108,6 +109,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       Hazard_class: 4.3,
       dot_number: 1428,
       rtecs_number: "VY0686000",
+      nfpa_label: "/Na.png",
     },
   },
   {
@@ -124,6 +126,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       cas_number: "7439-95-4",
       cid_number: "5462224",
       symbol: "Mg",
+      image: "/Mg.jpg",
     },
     particles: {
       electrons: 12,
@@ -217,6 +220,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
     health_safety: {
       Hazard_class: 4.1,
       dot_number: 2950,
+      nfpa_label: "/Mg.png",
     },
   },
   {
@@ -233,6 +237,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       cas_number: "7429-90-5",
       cid_number: "5359268",
       symbol: "Al",
+      image: "/Al.jpg",
     },
     particles: {
       electrons: 13,
@@ -357,6 +362,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
         ],
         ["Silicene", "https://en.wikipedia.org/wiki/Silicene"],
       ],
+      image: "/Si.jpg",
     },
     particles: {
       electrons: 14,
@@ -450,6 +456,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       Hazard_class: 4.1,
       dot_number: 1346,
       rtecs_number: "VW0400000",
+      nfpa_label: "/Si.png",
     },
   },
   {
@@ -486,6 +493,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
           "https://en.wikipedia.org/wiki/Allotropes_of_phosphorus",
         ],
       ],
+      image: "/P.JPG",
     },
     particles: {
       electrons: 15,
@@ -574,6 +582,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       Hazard_class: 4.1,
       dot_number: 1338,
       rtecs_number: "TH3495000",
+      nfpa_label: "/P.png",
     },
   },
   {
@@ -608,6 +617,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
           "https://en.wikipedia.org/wiki/Allotropes_of_sulfur",
         ],
       ],
+      image: "/S.jpg",
     },
     particles: {
       electrons: 16,
@@ -712,6 +722,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       cas_number: "7782-50-5",
       cid_number: "24526",
       symbol: "Cl",
+      image: "/Cl.jpg",
     },
     particles: {
       electrons: 17,
@@ -817,6 +828,7 @@ export const RowThreeElem: ElementDetailsProps[] = [
       cas_number: "7440-37-1",
       cid_number: "23968",
       symbol: "Ar",
+      image: "/Ar.jpg",
     },
     particles: {
       electrons: 18,

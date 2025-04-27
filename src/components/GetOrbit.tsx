@@ -118,7 +118,7 @@ import {
   Livermorium,
   Tennessine,
   Oganesson,
-} from "./Orbit/index";
+} from "@/components/Orbit/index";
 
 const GetOrbit = ({ id }: { id: string }) => {
   switch (id) {

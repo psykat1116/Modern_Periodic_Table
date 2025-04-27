@@ -1,4 +1,4 @@
-import BoxTypes from "@/types/BoxTypes";
+import type BoxTypes from "@/types/BoxTypes";
 
 export const RowThreeLeftElements: BoxTypes[] = [
   { name: "Na", id: "11", category: "alkali", groups: ["sblock", "alkali"] },

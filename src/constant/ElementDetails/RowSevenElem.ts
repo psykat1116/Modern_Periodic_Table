@@ -1,4 +1,4 @@
-import ElementDetailsProps from "@/types/ElementTypes";
+import type ElementDetailsProps from "@/types/ElementTypes";
 
 export const RowSevenElem: ElementDetailsProps[] = [
   {
@@ -78,6 +78,7 @@ export const RowSevenElem: ElementDetailsProps[] = [
       cas_number: "7440-14-4",
       cid_number: "6328144",
       symbol: "Ra",
+      image: "/Ra.jpg",
     },
     particles: {
       electrons: 88,

@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
-import { useSearchParams } from "next/navigation";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { useContext } from "react";
 import { motion } from "framer-motion";
+import { useSearchParams } from "next/navigation";
+
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const RowBox = ({ value }: { value: string }) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;

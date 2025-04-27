@@ -1,13 +1,15 @@
 "use client";
+
 import { useContext } from "react";
 import { motion } from "framer-motion";
+
 import Slider from "@/components/Slider";
+import Loader from "@/components/Loader";
+import Navbar from "@/components/Navbar";
 import UpperTable from "@/components/UpperTable";
 import LowerTable from "@/components/LowerTable";
-import Navbar from "@/components/Navbar";
 import Categories from "@/components/Categories";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import Loader from "@/components/Loader";
 
 export default function Home() {
   const { theme } = useContext(ThemeContext) as ThemeContextType;

@@ -1,16 +1,17 @@
 import {
-  LanConfig,
   ActConfig,
-  AlkaliConfig,
-  AlkaliEarthConfig,
-  MetalConfig,
-  MetalloidConfig,
-  NobleConfig,
-  NonMetalConfig,
+  LanConfig,
   HaloConfig,
-  TransactinideConfig,
+  MetalConfig,
+  NobleConfig,
+  AlkaliConfig,
+  NonMetalConfig,
+  MetalloidConfig,
   TransitionConfig,
+  AlkaliEarthConfig,
+  TransactinideConfig,
 } from "@/constant/ParticleConfigure";
+
 import { ISourceOptions } from "tsparticles-engine";
 
 const Alkali = [3, 11, 19, 37, 55, 87];

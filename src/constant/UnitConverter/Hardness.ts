@@ -1,5 +1,5 @@
 import getElementData from "@/helper/getElementData";
-import { HardnessConversion } from "@/types/Conversion";
+import type { HardnessConversion } from "@/types/Conversion";
 
 export const ConvertHardness = ({ type, id }: HardnessConversion) => {
   const data = getElementData(id);

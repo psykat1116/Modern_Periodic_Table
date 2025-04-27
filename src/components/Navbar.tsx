@@ -1,12 +1,14 @@
 "use client";
-import React, { useContext } from "react";
+
 import Link from "next/link";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-import { AiFillGithub } from "react-icons/ai";
+import { useContext } from "react";
 import { FiSun } from "react-icons/fi";
-import { PiMoonStarsBold } from "react-icons/pi";
-import { LiaAtomSolid } from "react-icons/lia";
 import { TbLayoutList } from "react-icons/tb";
+import { AiFillGithub } from "react-icons/ai";
+import { LiaAtomSolid } from "react-icons/lia";
+import { PiMoonStarsBold } from "react-icons/pi";
+
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Navbar = () => {
   const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType;

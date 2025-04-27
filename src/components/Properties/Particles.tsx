@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
-import { Particles } from "@/types/ElementTypes";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
+import { useContext } from "react";
 import { motion } from "framer-motion";
+
+import type { Particles } from "@/types/ElementTypes";
+import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 const Particles = ({ electrons, protons, neutrons }: Particles) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;

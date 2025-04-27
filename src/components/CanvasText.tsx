@@ -1,4 +1,5 @@
 "use client";
+
 import { ElementRef, useEffect, useRef } from "react";
 
 import { mouse } from "@/lib/TextParticle";
