@@ -14,7 +14,7 @@ const Categories = () => {
           theme === "dark"
             ? "border-[#969696] text-text_primary"
             : "border-[#141414] text-text_secondary"
-        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-alkali hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-[1000] font-bold`}
+        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-alkali hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-&lsqb;1000&rsqb; font-bold`}
       >
         <div className="z-[5]">Alkali Metal</div>
         <div className="h-[6px] w-[6px] rounded-full bg-alkali" />
@@ -26,7 +26,7 @@ const Categories = () => {
           theme === "dark"
             ? "border-[#969696] text-text_primary"
             : "border-[#141414] text-text_secondary"
-        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-alkaliearth hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-[1000] font-bold`}
+        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-alkaliearth hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-&lsqb;1000&rsqb; font-bold`}
       >
         <div className="z-[5]">Alkali Earth Metal</div>
         <div className="h-[6px] w-[6px] rounded-full bg-alkaliearth" />
@@ -38,7 +38,7 @@ const Categories = () => {
           theme === "dark"
             ? "border-[#969696] text-text_primary"
             : "border-[#141414] text-text_secondary"
-        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-metal hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-[1000] font-bold`}
+        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-metal hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-&lsqb;1000&rsqb; font-bold`}
       >
         <div className="z-[5]">Metal</div>
         <div className="h-[6px] w-[6px] rounded-full bg-metal" />
@@ -50,7 +50,7 @@ const Categories = () => {
           theme === "dark"
             ? "border-[#969696] text-text_primary"
             : "border-[#141414] text-text_secondary"
-        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-nonmetal hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-[1000] font-bold`}
+        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-nonmetal hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-&lsqb;1000&rsqb; font-bold`}
       >
         <div className="z-[5]">Non Metal</div>
         <div className="h-[6px] w-[6px] rounded-full bg-nonmetal" />
@@ -62,7 +62,7 @@ const Categories = () => {
           theme === "dark"
             ? "border-[#969696] text-text_primary"
             : "border-[#141414] text-text_secondary"
-        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-metalloid hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-[1000] font-bold`}
+        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-metalloid hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-&lsqb;1000&rsqb; font-bold`}
       >
         <div className="z-[5]">Metalloid</div>
         <div className="h-[6px] w-[6px] rounded-full bg-metalloid" />
@@ -74,7 +74,7 @@ const Categories = () => {
           theme === "dark"
             ? "border-[#969696] text-text_primary"
             : "border-[#141414] text-text_secondary"
-        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-transition hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-[1000] font-bold`}
+        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-transition hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-&lsqb;1000&rsqb; font-bold`}
       >
         <div className="z-[5]">Transition Metal</div>
         <div className="h-[6px] w-[6px] rounded-full bg-transition" />
@@ -86,7 +86,7 @@ const Categories = () => {
           theme === "dark"
             ? "border-[#969696] text-text_primary"
             : "border-[#141414] text-text_secondary"
-        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-transactinides hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-[1000] font-bold`}
+        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-transactinides hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-&lsqb;1000&rsqb; font-bold`}
       >
         <div className="z-[5]">Transactinides</div>
         <div className="h-[6px] w-[6px] rounded-full bg-transactinides" />
@@ -98,7 +98,7 @@ const Categories = () => {
           theme === "dark"
             ? "border-[#969696] text-text_primary"
             : "border-[#141414] text-text_secondary"
-        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-halogen hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-[1000] font-bold`}
+        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-halogen hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-&lsqb;1000&rsqb; font-bold`}
       >
         <div className="z-[5]">Halogen</div>
         <div className="h-[6px] w-[6px] rounded-full bg-halogen" />
@@ -110,7 +110,7 @@ const Categories = () => {
           theme === "dark"
             ? "border-[#969696] text-text_primary"
             : "border-[#141414] text-text_secondary"
-        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-noblegases hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-[1000] font-bold`}
+        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-noblegases hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-&lsqb;1000&rsqb; font-bold`}
       >
         <div className="z-[5]">Noble Gases</div>
         <div className="h-[6px] w-[6px] rounded-full bg-noblegases" />
@@ -122,7 +122,7 @@ const Categories = () => {
           theme === "dark"
             ? "border-[#969696] text-text_primary"
             : "border-[#141414] text-text_secondary"
-        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-lanthanides hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-[1000] font-bold`}
+        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-lanthanides hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-&lsqb;1000&rsqb; font-bold`}
       >
         <div className="z-[5]">Lanthanide</div>
         <div className="h-[6px] w-[6px] rounded-full bg-lanthanides" />
@@ -134,7 +134,7 @@ const Categories = () => {
           theme === "dark"
             ? "border-[#969696] text-text_primary"
             : "border-[#141414] text-text_secondary"
-        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-actinides hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-[1000] font-bold`}
+        } rounded-md before:absolute before:top-0 before:left-full before:h-full before:w-full before:bg-actinides hover:before:left-0 before:transition-all before:ease-in-out before:duration-700 before:rounded-md overflow-hidden hover:border-transparent hover:text-dark_primary ease-in-out transition-all delay-&lsqb;1000&rsqb; font-bold`}
       >
         <div className="z-[5]">Actinide</div>
         <div className="h-[6px] w-[6px] rounded-full bg-actinides" />

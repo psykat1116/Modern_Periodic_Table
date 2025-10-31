@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Poppins, Satisfy, Lora } from "next/font/google";
 import ThemeProvider from "@/context/ThemeProvider";
 
@@ -84,6 +85,7 @@ export default function RootLayout({
           className={`${poppins.variable} ${satisfy.variable} ${lora.variable}`}
         >
           {children}
+          <Analytics />
         </body>
       </html>
     </ThemeProvider>
