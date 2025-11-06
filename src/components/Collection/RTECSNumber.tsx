@@ -18,7 +18,7 @@ const RTECSNumber = ({
 }: RTECSNumber) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_28%_32%]">
+    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_28%_calc(38%-18px)]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

@@ -1,7 +1,9 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { Poppins, Satisfy, Lora } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+import "./globals.css";
 import ThemeProvider from "@/context/ThemeProvider";
 
 const poppins = Poppins({
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
   ),
   title: "Modern Periodic Table of Elements",
   description:
-    "Elemental Explorer is an innovative and interactive platform that reimagines the traditional periodic table for the digital age. With an intuitive interface and comprehensive details on each element, this modern periodic table provides an engaging educational experience for students, educators, and science enthusiasts. Explore atomic properties, electron configurations, historical data, and practical applications with ease. Elemental Explorer brings chemistry to life, making the study of elements more accessible and fascinating than ever before.",
+    "This project is an innovative and interactive platform that reimagines the traditional modern periodic table for the digital age. With an intuitive interface and comprehensive details on each element, this modern periodic table provides an engaging educational experience for students, educators, and science enthusiasts. Explore atomic properties, electron configurations, historical data, and practical applications with ease. This project brings chemistry to life, making the study of elements more accessible and fascinating than ever before.",
   keywords: [
     "Next JS",
     "Tailwind CSS",
@@ -53,6 +55,7 @@ export const metadata: Metadata = {
     "Neutron Properties",
     "Health & Safety",
     "Prevalence",
+    "Periodic Table",
   ],
   openGraph: {
     type: "website",
@@ -61,7 +64,7 @@ export const metadata: Metadata = {
     siteName: "Modern Periodic Table of Elements",
     title: "Modern Periodic Table of Elements",
     description:
-      "Elemental Explorer is an innovative and interactive platform that reimagines the traditional periodic table for the digital age. With an intuitive interface and comprehensive details on each element, this modern periodic table provides an engaging educational experience for students, educators, and science enthusiasts. Explore atomic properties, electron configurations, historical data, and practical applications with ease. Elemental Explorer brings chemistry to life, making the study of elements more accessible and fascinating than ever before.",
+      "This project is an innovative and interactive platform that reimagines the traditional modern periodic table for the digital age. With an intuitive interface and comprehensive details on each element, this modern periodic table provides an engaging educational experience for students, educators, and science enthusiasts. Explore atomic properties, electron configurations, historical data, and practical applications with ease. This project brings chemistry to life, making the study of elements more accessible and fascinating than ever before.",
     images: [
       {
         url: "https://modern-periodic-table.vercel.app/OpenGraph.png",
@@ -86,6 +89,7 @@ export default function RootLayout({
         >
           {children}
           <Analytics />
+          <SpeedInsights />
         </body>
       </html>
     </ThemeProvider>

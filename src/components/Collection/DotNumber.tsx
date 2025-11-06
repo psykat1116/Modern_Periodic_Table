@@ -10,15 +10,10 @@ interface DotNumber {
   dot_number?: number;
 }
 
-const DotNumber = ({
-  atomic_number,
-  dot_number,
-  symbol,
-  name,
-}: DotNumber) => {
+const DotNumber = ({ atomic_number, dot_number, symbol, name }: DotNumber) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_38%_22%]">
+    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_calc(44%-18px)_22%]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

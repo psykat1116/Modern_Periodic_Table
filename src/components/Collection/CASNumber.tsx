@@ -13,7 +13,7 @@ interface CAS_Number {
 const CASNumber = ({ atomic_number, symbol, name, cas_number }: CAS_Number) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[12%_12%_35%_35%]">
+    <div className="gap-1.5 grid text-xs sm:text-sm md:text-base grid-cols-[12%_12%_38%_calc(38%-18px)] text-center">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

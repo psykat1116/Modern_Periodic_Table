@@ -28,7 +28,7 @@ const Page = () => {
     <>
       <div
         className={cn(
-          "w-full flex justify-between items-center text-2xl pr-2 pl-1",
+          "w-full flex justify-between items-center text-2xl px-1 md:px-2",
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         )}
       >
@@ -53,7 +53,7 @@ const Page = () => {
         </Link>
       </div>
       <div
-        className={`w-full grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
+        className={`w-full grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 px-2 pb-2 overflow-y-scroll gap-x-4 gap-y-2`}
       >
         {RowOneElem.map((e) => {
           return (

@@ -21,18 +21,18 @@ const Page = () => {
   }
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <>
+    <div className="flex w-full flex-col gap-2 relative px-2">
       <Link
         target="_blank"
         href="https://en.wikipedia.org/wiki/CAS_Registry_Number"
-        className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
+        className={`w-full text-4xl flex justify-center items-center p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        } z-[5] max-sm:text-2xl`}
+        } max-sm:text-2xl font-lora`}
       >
         CAS Number
       </Link>
       <div
-        className={`w-full grid grid-cols-3 px-2 pb-2 overflow-y-scroll gap-2 z-[5] max-md:grid-cols-2 max-sm:grid-cols-1`}
+        className={`w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 px-2 pb-2 overflow-y-scroll gap-2`}
       >
         {RowOneElem.map((e) => {
           return (
@@ -162,7 +162,7 @@ const Page = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

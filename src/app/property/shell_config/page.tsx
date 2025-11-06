@@ -23,9 +23,9 @@ const Page = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
 
   return (
-    <>
+    <div className="flex flex-col px-2 gap-2 w-full">
       <Link
-        className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
+        className={`w-full text-4xl flex justify-center items-center font-lora p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         } z-[5]`}
         target="_blank"
@@ -34,7 +34,7 @@ const Page = () => {
         Shell Configuration
       </Link>
       <div
-        className={`grid grid-cols-2 max-md:grid-cols-1 overflow-y-scroll w-full px-2 pb-2 gap-2 max-md:text-[12px] z-[5]`}
+        className={`grid grid-cols-1 md:grid-cols-2 overflow-y-scroll w-full pb-2 gap-2 max-md:text-[12px]`}
       >
         {RowOneElem.map((e) => {
           return (
@@ -190,7 +190,7 @@ const Page = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

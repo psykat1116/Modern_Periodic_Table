@@ -6,7 +6,7 @@ import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 const Categories = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="relative w-full min-h-[20vh] grid grid-cols-5 gap-2 max-md:grid-cols-3 max-sm:grid-cols-2 max-sm:text-sm">
+    <div className="relative w-full grid 2xl:grid-cols-7 xl:grid-cols-5 gap-2 md:grid-cols-3 grid-cols-2 max-sm:text-sm">
       <Link
         href="https://en.wikipedia.org/wiki/Alkali_metal"
         target="_blank"

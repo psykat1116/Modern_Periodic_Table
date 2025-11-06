@@ -3,7 +3,7 @@ import Lanthanide from "@/components/Rows/Lanthanide";
 
 const LowerTable = () => {
   return (
-    <div className="mt-10 text-text_primary flex flex-col items-end w-full gap-1.5">
+    <div className="flex relative justify-start items-center flex-col text-text_primary mt-1 gap-1.5 overflow-scroll">
       <Lanthanide />
       <Actinides />
     </div>

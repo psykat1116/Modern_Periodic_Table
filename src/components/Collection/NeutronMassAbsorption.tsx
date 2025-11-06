@@ -18,7 +18,7 @@ const NeutronMassAbsorption = ({
 }: NeutronMassAbsorption) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_40%_20%]">
+    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_calc(42%-18px)_24%]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

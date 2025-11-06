@@ -19,12 +19,13 @@ const Page = () => {
   if (typeof window !== "undefined") {
     window.document.title = `Covalent Radius of Elements`;
   }
+
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <>
+    <div className="flex flex-col gap-2 w-full px-2">
       <Link
         href="https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity"
-        className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
+        className={`w-full text-4xl flex justify-center items-center font-lora p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         } z-[5]`}
         target="_blank"
@@ -32,7 +33,7 @@ const Page = () => {
         Electrical Conductivity
       </Link>
       <div
-        className={`w-full grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
+        className={`w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pb-2 overflow-y-scroll gap-2 z-[5]`}
       >
         {RowOneElem.map((e) => {
           return (
@@ -214,7 +215,7 @@ const Page = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

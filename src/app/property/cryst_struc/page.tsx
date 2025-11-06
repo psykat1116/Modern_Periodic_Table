@@ -21,18 +21,18 @@ const Page = () => {
   }
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <>
+    <div className="flex flex-col w-full gap-2 px-2">
       <Link
         target="_blank"
         href="https://en.wikipedia.org/wiki/Standard_crystal_structure"
-        className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
+        className={`w-full text-4xl flex justify-center items-center font-lora p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         } z-[5] max-sm:text-2xl`}
       >
         Crystall Structure
       </Link>
       <div
-        className={`w-full grid grid-cols-3 px-2 pb-2 overflow-y-scroll gap-2 z-[5] max-ms:grid-cols-2 max-sm:grid-cols-1`}
+        className={`w-full grid px-2 pb-2 overflow-y-scroll gap-2 z-[5] grid-cols-1 sm:grid-cols-2 xl:grid-cols-3`}
       >
         {RowOneElem.map((e) => {
           return (
@@ -186,7 +186,7 @@ const Page = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

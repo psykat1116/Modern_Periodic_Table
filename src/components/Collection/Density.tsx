@@ -10,15 +10,10 @@ interface Density {
   density?: number;
 }
 
-const Density = ({
-  atomic_number,
-  density,
-  symbol,
-  name,
-}: Density) => {
+const Density = ({ atomic_number, density, symbol, name }: Density) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_38%_22%]">
+    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_40%_calc(26%-18px)]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

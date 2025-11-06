@@ -21,19 +21,20 @@ const Page = () => {
   if (typeof window !== "undefined") {
     window.document.title = `Covalent Radius of Elements`;
   }
+
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <>
+    <div className="flex flex-col px-2 gap-2 w-full">
       <div
         className={cn(
-          "w-full flex justify-between items-center text-2xl pr-2 pl-1",
+          "w-full flex justify-between items-center text-2xl",
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         )}
       >
         <Link
           href="https://en.wikipedia.org/wiki/Electron_affinity"
           className={cn(
-            "font-poppins py-1 px-4 ml-1 text-base rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm",
+            "font-lora py-1 px-4 text-base rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm",
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
           )}
           target="_blank"
@@ -51,11 +52,11 @@ const Page = () => {
         </Link>
       </div>
       <div
-        className={`w-full grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
+        className={`w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 pb-2 overflow-y-scroll gap-2 z-[5]`}
       >
         {RowOneElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electron_affinity && (
               <ElectronAffinity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -68,7 +69,7 @@ const Page = () => {
         })}
         {RowTwoElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electron_affinity && (
               <ElectronAffinity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -81,7 +82,7 @@ const Page = () => {
         })}
         {RowThreeElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electron_affinity && (
               <ElectronAffinity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -94,7 +95,7 @@ const Page = () => {
         })}
         {RowFourElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electron_affinity && (
               <ElectronAffinity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -107,7 +108,7 @@ const Page = () => {
         })}
         {RowFiveElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electron_affinity && (
               <ElectronAffinity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -118,7 +119,7 @@ const Page = () => {
             )
           );
         })}
-        {RowSixElem[0].reactivity && (
+        {RowSixElem[0].reactivity?.electron_affinity && (
           <ElectronAffinity
             name={RowSixElem[0].general_properties.name}
             atomic_number={RowSixElem[0].general_properties.atomic_number}
@@ -126,7 +127,7 @@ const Page = () => {
             electron_affinity={RowSixElem[0].reactivity.electron_affinity}
           />
         )}
-        {RowSixElem[1].reactivity && (
+        {RowSixElem[1].reactivity?.electron_affinity && (
           <ElectronAffinity
             name={RowSixElem[1].general_properties.name}
             atomic_number={RowSixElem[1].general_properties.atomic_number}
@@ -136,7 +137,7 @@ const Page = () => {
         )}
         {LanthanideElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electron_affinity && (
               <ElectronAffinity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -150,7 +151,7 @@ const Page = () => {
         {RowSixElem.map((e, ind) => {
           return (
             ind > 1 &&
-            e.reactivity && (
+            e.reactivity?.electron_affinity && (
               <ElectronAffinity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -161,7 +162,7 @@ const Page = () => {
             )
           );
         })}
-        {RowSevenElem[0].reactivity && (
+        {RowSevenElem[0].reactivity?.electron_affinity && (
           <ElectronAffinity
             name={RowSevenElem[0].general_properties.name}
             atomic_number={RowSevenElem[0].general_properties.atomic_number}
@@ -169,7 +170,7 @@ const Page = () => {
             electron_affinity={RowSevenElem[0].reactivity.electron_affinity}
           />
         )}
-        {RowSevenElem[1].reactivity && (
+        {RowSevenElem[1].reactivity?.electron_affinity && (
           <ElectronAffinity
             name={RowSevenElem[1].general_properties.name}
             atomic_number={RowSevenElem[1].general_properties.atomic_number}
@@ -179,7 +180,7 @@ const Page = () => {
         )}
         {ActinideElem.map((e) => {
           return (
-            e.reactivity && (
+            e.reactivity?.electron_affinity && (
               <ElectronAffinity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -193,7 +194,7 @@ const Page = () => {
         {RowSevenElem.map((e, ind) => {
           return (
             ind > 1 &&
-            e.reactivity && (
+            e.reactivity?.electron_affinity && (
               <ElectronAffinity
                 key={e.general_properties.name}
                 name={e.general_properties.name}
@@ -205,7 +206,7 @@ const Page = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

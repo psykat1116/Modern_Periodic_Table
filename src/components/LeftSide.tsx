@@ -18,7 +18,7 @@ const LeftSide: React.FC<LeftSideProps> = ({ elem }) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div
-      className={`w-1/3 h-[79vh] flex justify-start flex-col items-center ${
+      className={`w-1/3 2xl:w-1/2 h-[31rem] 2xl:h-[40rem] flex justify-start flex-col items-center ${
         theme === "dark" ? "text-text_primary" : "text-text_secondary"
       } gap-2 max-[1200px]:w-1/2 max-sm:w-full`}
     >

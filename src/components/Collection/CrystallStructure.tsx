@@ -18,7 +18,7 @@ const CrystallStructure = ({
 }: CrystallStructure) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[12%_12%_35%_35%]">
+    <div className="gap-1.5 grid text-center grid-cols-[12%_12%_28%_calc(48%-18px)]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

@@ -23,9 +23,9 @@ const Page = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
 
   return (
-    <>
+    <div className="flex flex-col px-2 w-full gap-2">
       <Link
-        className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
+        className={`w-full text-4xl flex justify-center items-center font-lora p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         } z-[5] max-sm:text-2xl`}
         href="https://en.wikipedia.org/wiki/Electron_shell"
@@ -34,7 +34,7 @@ const Page = () => {
         Electron Configuration
       </Link>
       <div
-        className={`w-full grid grid-cols-2 px-2 pb-2 overflow-y-scroll gap-2 z-[5] max-md:grid-cols-1`}
+        className={`w-full grid grid-cols-1 pb-2 overflow-y-scroll gap-2 z-[5] lg:grid-cols-2 max-lg:text-xs`}
       >
         {RowOneElem.map((e) => {
           return (
@@ -190,7 +190,7 @@ const Page = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

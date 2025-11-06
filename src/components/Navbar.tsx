@@ -14,7 +14,7 @@ const Navbar = () => {
   const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType;
   return (
     <div
-      className={`w-full flex justify-between items-center pt-3 pb-2 px-5 text-xl ${
+      className={`w-full relative flex justify-between items-center pt-3 pb-2 px-5 text-xl ${
         theme === "dark" ? "text-text_primary" : "text-text_secondary"
       } bg-opacity-60 backdrop-blur-require`}
     >

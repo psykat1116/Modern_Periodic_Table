@@ -18,8 +18,8 @@ const Discoverer = ({
 }: Discoverer) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="w-full gap-1.5 grid grid-cols-[18%_82%] max-md:grid-cols-1 max-sm:text-sm">
-      <div className="grid grid-cols-[18%_18%_59%] gap-1.5 max-sm:grid-cols-[18%_18%_60%] max-md:grid-cols-[18%_18%_60%]">
+    <div className="w-full gap-1.5 grid grid-cols-[25%_calc(75%-6px)] max-md:grid-cols-1 max-sm:text-sm">
+      <div className="grid grid-cols-[18%_18%_calc(64%-12px)] gap-1.5">
         <Link
           href={`/elements/${atomic_number}`}
           className={`p-2 rounded-sm shadow-md flex justify-center items-center ${
@@ -51,7 +51,7 @@ const Discoverer = ({
           {name}
         </Link>
       </div>
-      <div className="grid gap-1.5 grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-1">
+      <div className="grid gap-1.5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
         {discoverer.map((d) => {
           return (
             <Link

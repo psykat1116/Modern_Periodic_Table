@@ -15,16 +15,14 @@ import {
   NeuclearProperty,
 } from "@/components/Properties";
 import type ElementDetailsProps from "@/types/ElementTypes";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 
 interface RightSideProps {
   elem: ElementDetailsProps | null;
 }
 
 const RightSide: React.FC<RightSideProps> = ({ elem }) => {
-  const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="w-2/3 h-[79vh] ml-5 overflow-y-scroll flex flex-col justify-start items-center gap-3 max-[1200px]:w-1/2 max-sm:w-full max-sm:ml-0 max-sm:mt-5 max-sm:h-[79vh]">
+    <div className="w-2/3 2xl:w-1/2 h-[31rem] 2xl:h-[40rem] ml-5 overflow-y-scroll flex flex-col justify-start items-center gap-3 max-[1200px]:w-1/2 max-sm:w-full max-sm:ml-0 max-sm:mt-5 max-sm:h-[79vh]">
       {elem && (
         <>
           <Description description={elem.description} />

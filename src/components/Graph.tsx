@@ -1,18 +1,25 @@
-import { useContext } from "react";
-import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
+"use client";
+
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 
 import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
   ChartConfig,
-  ChartTooltip,
   ChartContainer,
+  ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import type { ChartData } from "@/types/BoxTypes";
+import { useContext } from "react";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-
-interface GraphProps {
-  data: ChartData[];
-}
+import { ChartData } from "@/types/BoxTypes";
+import { cn } from "@/lib/utils";
+import { ResponsiveContainer } from "recharts";
 
 const chartConfig = {
   dark: {
@@ -25,41 +32,64 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-const Graph = ({ data }: GraphProps) => {
+interface GraphProps {
+  title: string;
+  data: ChartData[];
+  description: string;
+}
+
+const Graph = ({ data, title, description }: GraphProps) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
 
   return (
-    <ChartContainer config={chartConfig} className="h-full w-full">
-      <LineChart
-        accessibilityLayer
-        data={data}
-        margin={{
-          top: 20,
-          left: 12,
-          right: 12,
-        }}
-      >
-        <CartesianGrid vertical={false} />
-        <XAxis dataKey="label" tickMargin={2} />
-        <ChartTooltip
-          cursor={false}
-          content={<ChartTooltipContent indicator="line" />}
-          labelClassName="text-bg_dark_placeholder"
-        />
-        <Line
-          dataKey="value"
-          type="natural"
-          stroke={theme === "dark" ? "var(--color-light)" : "var(--color-dark)"}
-          strokeWidth={2}
-          dot={{
-            fill: theme === "dark" ? "var(--color-light)" : "var(--color-dark)",
-          }}
-          activeDot={{
-            r: 6,
-          }}
-        />
-      </LineChart>
-    </ChartContainer>
+    <Card
+      className={cn(
+        "relative w-full max-md:min-h-screen mt-6",
+        theme === "dark"
+          ? "bg-bg_dark text-bg_light_placeholder"
+          : "bg-bg_light text-bg_dark_placeholder"
+      )}
+    >
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>{description}</CardDescription>
+      </CardHeader>
+      <CardContent className="overflow-scroll">
+        <ChartContainer config={chartConfig} className="max-md:h-screen">
+          <ResponsiveContainer>
+            <BarChart
+              data={data}
+              layout="vertical"
+              accessibilityLayer
+              margin={{ right: 16 }}
+            >
+              <CartesianGrid horizontal={false} />
+              <YAxis
+                type="category"
+                dataKey="label"
+                tickMargin={10}
+                tickLine={false}
+                axisLine={false}
+              />
+              <XAxis dataKey="value" type="number" />
+              <ChartTooltip
+                cursor={false}
+                content={<ChartTooltipContent indicator="line" />}
+              />
+              <Bar
+                radius={4}
+                dataKey="value"
+                layout="vertical"
+                fill={
+                  theme === "dark" ? "var(--color-light)" : "var(--color-dark)"
+                }
+                className="h-full"
+              />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartContainer>
+      </CardContent>
+    </Card>
   );
 };
 

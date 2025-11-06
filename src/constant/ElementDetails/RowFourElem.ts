@@ -1312,7 +1312,7 @@ export const RowFourElem: ElementDetailsProps[] = [
       neutron_mass_absorption: 0.00055,
       quantum_numbers: "<sup>1</sup>S<sub>0</sub>",
       isotopes: [
-        54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70.71,
+        54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71,
         72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83,
       ],
       stable: [64, 66, 67, 68, 70],

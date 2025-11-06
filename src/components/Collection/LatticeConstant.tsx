@@ -18,7 +18,7 @@ const LatticeConstant = ({
 }: LatticeConstant) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[8%_8%_30%_45%]">
+    <div className="gap-1.5 grid text-center grid-cols-[9%_9%_26%_calc(56%-19px)] text-[10px] md:text-sm">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${
@@ -50,7 +50,7 @@ const LatticeConstant = ({
         {name}
       </Link>
       {lattice_constant && (
-        <div className="gap-2 flex justify-start items-center text-sm">
+        <div className="gap-2 grid grid-cols-3">
           {lattice_constant.map((d, ind) => {
             return (
               <div

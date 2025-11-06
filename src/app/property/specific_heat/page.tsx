@@ -23,12 +23,11 @@ const Page = () => {
   }
 
   const { theme } = useContext(ThemeContext) as ThemeContextType;
-
   return (
-    <>
+    <div className="flex flex-col gap-2 px-2 w-full">
       <div
         className={cn(
-          "w-full flex justify-between items-center text-2xl pr-2 pl-1",
+          "w-full flex justify-between items-center text-2xl",
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         )}
       >
@@ -36,7 +35,7 @@ const Page = () => {
           href="https://en.wikipedia.org/wiki/Specific_heat_capacity"
           target="_blank"
           className={cn(
-            "font-poppins py-1 px-4 ml-1 text-base rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm",
+            "font-poppins py-1 px-4 text-base rounded-sm shadow-md bg-opacity-70 backdrop-blur-sm",
             theme === "dark" ? "bg-bg_dark" : "bg-bg_light"
           )}
         >
@@ -53,7 +52,7 @@ const Page = () => {
         </Link>
       </div>
       <div
-        className={`w-full grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
+        className={`w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pb-2 overflow-y-scroll gap-2`}
       >
         {RowOneElem.map((e) => {
           return (
@@ -211,7 +210,7 @@ const Page = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

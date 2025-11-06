@@ -15,27 +15,25 @@ import { RowSevenElem } from "@/constant/ElementDetails/RowSevenElem";
 import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 import { LanthanideElem } from "@/constant/ElementDetails/LanthanideElem";
 
-
 const Page = () => {
   if (typeof window !== "undefined") {
     window.document.title = `Oxidation States of Elements`;
   }
 
   const { theme } = useContext(ThemeContext) as ThemeContextType;
-
   return (
-    <>
+    <div className="flex flex-col px-2 w-full gap-2">
       <Link
-        className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
+        className={`w-full text-4xl flex justify-center items-center font-lora p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        } z-[5]`}
+        }`}
         href="https://en.wikipedia.org/wiki/Oxidation_state"
         target="_blank"
       >
         Oxidation States
       </Link>
       <div
-        className={`w-full grid grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
+        className={`w-full grid grid-cols-1 xl:grid-cols-2 pb-2 overflow-y-scroll gap-2`}
       >
         {RowOneElem.map((e) => {
           return (
@@ -193,7 +191,7 @@ const Page = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -10,12 +10,12 @@ const Page = () => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
 
   return (
-    <div className="w-full grid grid-cols-3 gap-2 p-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-table:grid-cols-3 max-sm:text-sm">
+    <div className="w-full grid gap-2 p-3 grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-sm:text-xs">
       {Property.map((item) => {
         return (
           <div key={item.id}>
             <Link
-              className={`p-2 rounded-sm shadow-md flex justify-center items-center ${
+              className={`p-2 rounded-sm shadow-md flex text-center justify-center items-center ${
                 theme === "dark"
                   ? "bg-bg_dark text-text_primary"
                   : "bg-bg_light text-text_secondary"

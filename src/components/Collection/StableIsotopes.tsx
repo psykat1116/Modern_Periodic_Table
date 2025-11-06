@@ -18,39 +18,41 @@ const StableIsotopes = ({
 }: StableIsotopes) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-2.5 grid text-center grid-cols-[4%_4%_10%_78%]">
-      <Link
-        href={`/elements/${atomic_number}`}
-        className={`p-2 rounded-sm shadow-md ${
-          theme === "dark"
-            ? "bg-bg_dark text-text_primary"
-            : "bg-bg_light text-text_secondary"
-        } bg-opacity-70 backdrop-blur-sm`}
-      >
-        {atomic_number}
-      </Link>
-      <Link
-        href={`/elements/${atomic_number}`}
-        className={`p-2 rounded-sm shadow-md ${
-          theme === "dark"
-            ? "bg-bg_dark text-text_primary"
-            : "bg-bg_light text-text_secondary"
-        } bg-opacity-70 backdrop-blur-sm`}
-      >
-        {symbol}
-      </Link>
-      <Link
-        href={`/elements/${atomic_number}`}
-        className={`p-2 rounded-sm shadow-md ${
-          theme === "dark"
-            ? "bg-bg_dark text-text_primary"
-            : "bg-bg_light text-text_secondary"
-        } bg-opacity-70 backdrop-blur-sm`}
-      >
-        {name}
-      </Link>
+    <div className="grid grid-cols-1 md:grid-cols-[30%_calc(70%-6px)] gap-1.5 text-center w-full">
+      <div className="grid grid-cols-[25%_25%_calc(50%-12px)] gap-1.5">
+        <Link
+          href={`/elements/${atomic_number}`}
+          className={`p-2 rounded-sm shadow-md ${
+            theme === "dark"
+              ? "bg-bg_dark text-text_primary"
+              : "bg-bg_light text-text_secondary"
+          } bg-opacity-70 backdrop-blur-sm`}
+        >
+          {atomic_number}
+        </Link>
+        <Link
+          href={`/elements/${atomic_number}`}
+          className={`p-2 rounded-sm shadow-md ${
+            theme === "dark"
+              ? "bg-bg_dark text-text_primary"
+              : "bg-bg_light text-text_secondary"
+          } bg-opacity-70 backdrop-blur-sm`}
+        >
+          {symbol}
+        </Link>
+        <Link
+          href={`/elements/${atomic_number}`}
+          className={`p-2 rounded-sm shadow-md ${
+            theme === "dark"
+              ? "bg-bg_dark text-text_primary"
+              : "bg-bg_light text-text_secondary"
+          } bg-opacity-70 backdrop-blur-sm`}
+        >
+          {name}
+        </Link>
+      </div>
       {stable && (
-        <div className="flex justify-start items-center gap-5">
+        <div className="grid grid-cols-[repeat(5,1fr)] sm:grid-cols-[repeat(6,1fr)] md:grid-cols-[repeat(8,1fr)] lg:grid-cols-[repeat(12,1fr)] xl:grid-cols-[repeat(16,1fr)] gap-5">
           {stable.map((elem) => {
             return (
               <p

@@ -13,7 +13,7 @@ interface DecayMode {
 const DecayMode = ({ atomic_number, decay_mode, symbol, name }: DecayMode) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_40%_20%]">
+    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_36%_calc(30%-18px)]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

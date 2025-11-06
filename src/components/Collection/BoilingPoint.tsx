@@ -18,7 +18,7 @@ const BoilingPoint = ({
 }: BoilingPoint) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[13%_13%_40%_26%]">
+    <div className="gap-1.5 grid text-center grid-cols-[13%_13%_calc(48%-18px)_26%]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

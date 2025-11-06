@@ -69,7 +69,7 @@ const CanvasText = ({
     }
   }, [canvasRef]);
 
-  return <canvas ref={canvasRef} />;
+  return <canvas ref={canvasRef} className="pl-28" />;
 };
 
 export default CanvasText;

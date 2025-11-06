@@ -14,9 +14,13 @@ import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
 export default function Home() {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <>
+    <div
+      className={`relative flex items-center justify-center ${
+        theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
+      } bg-blue-600`}
+    >
       <motion.div
-        className={`fixed min-h-screen w-full flex justify-center items-center flex-col z-50 origin-top ${
+        className={`fixed h-full top-0 left-0 w-full flex justify-center items-center flex-col z-50 origin-top ${
           theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
         }`}
         initial={{ scaleY: 1, userSelect: "auto", pointerEvents: "auto" }}
@@ -26,13 +30,15 @@ export default function Home() {
         <Loader />
       </motion.div>
       <div
-        className={`min-h-screen w-full font-poppins ${
-          theme === "dark" ? "bg-dark_primary" : "bg-light_primary"
-        } flex flex-col justify-start items-center`}
+        className={`relative min-h-screen md:w-full 2xl:max-w-[80rem] font-poppins 2xl:border-x-2 ${
+          theme === "dark"
+            ? "bg-dark_primary border-light_primary"
+            : "bg-light_primary border-dark_primary"
+        } flex flex-col justify-start items-center overflow-x-scroll`}
       >
         <Navbar />
         <Slider />
-        <div className="min-w-[80%] flex flex-col justify-start items-center my-10 max-table:rotate-90 max-table:scale-[.5] max-sm:scale-[.4] max-table:my-0">
+        <div className="relative w-full flex flex-col justify-start items-start px-[14px] table:px-0 table:items-center my-10 overflow-x-scroll">
           <UpperTable />
           <LowerTable />
         </div>
@@ -40,6 +46,6 @@ export default function Home() {
           <Categories />
         </div>
       </div>
-    </>
+    </div>
   );
 }

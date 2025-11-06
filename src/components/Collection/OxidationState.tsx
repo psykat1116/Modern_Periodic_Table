@@ -18,8 +18,8 @@ const OxidationState = ({
 }: OxidationState) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="w-full gap-1.5 grid grid-cols-[40%_60%] max-md:grid-cols-1 max-sm:text-sm">
-      <div className="grid grid-cols-[18%_18%_59%] gap-1.5 max-sm:grid-cols-[18%_18%_60%] max-md:grid-cols-[18%_18%_60%]">
+    <div className="w-full gap-1.5 grid grid-cols-[40%_calc(60%-6px)] max-md:grid-cols-1 max-sm:text-sm">
+      <div className="grid grid-cols-[18%_18%_calc(60%-6px)] gap-1.5">
         <Link
           href={`/elements/${atomic_number}`}
           className={`p-2 rounded-sm shadow-md flex justify-center items-center ${

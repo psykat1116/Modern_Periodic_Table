@@ -18,7 +18,7 @@ const ShellConfig = ({
 }: ShellConfig) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-2 grid text-center grid-cols-[10%_10%_20%_56%]">
+    <div className="gap-1.5 grid text-center grid-cols-[10%_10%_20%_calc(60%-18px)]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md flex justify-center items-center ${

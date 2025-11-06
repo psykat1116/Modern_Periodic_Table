@@ -13,7 +13,7 @@ interface LatinName {
 const LatinName = ({ atomic_number, symbol, name, latin_name }: LatinName) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[12%_12%_35%_35%]">
+    <div className="gap-1.5 grid text-center grid-cols-[12%_12%_36%_calc(40%-18px)]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

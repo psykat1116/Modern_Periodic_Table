@@ -1,42 +1,14 @@
-"use client";
-import { cn } from "@/lib/utils";
-import { useContext } from "react";
-
-import data from "@/constant/GraphData/VanDerWallsRadius";
-import ThemeContext, { ThemeContextType } from "@/context/ThemeContex";
-
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import Graph from "@/components/Graph";
+import data from "@/constant/GraphData/VanDerWallsRadius";
 
 const Page = () => {
-  const { theme } = useContext(ThemeContext) as ThemeContextType;
-
   return (
-    <Card
-      className={cn(
-        "relative w-[95%] h-[30rem] mt-6",
-        theme === "dark"
-          ? "bg-bg_dark text-bg_light_placeholder"
-          : "bg-bg_light text-bg_dark_placeholder"
-      )}
-    >
-      <CardHeader>
-        <CardTitle>Van Der Walls Radius (Pm)</CardTitle>
-        <CardDescription>
-          Effective size of an atom in non-bonded interactions, impacting
-          molecular structure and intermolecular forces.
-        </CardDescription>
-      </CardHeader>
-      <CardContent className="relative h-[25rem] w-full">
-        <Graph data={data} />
-      </CardContent>
-    </Card>
+    <Graph
+      data={data}
+      title="Van Der Walls Radius (Pm)"
+      description="Effective size of an atom in non-bonded interactions, impacting
+          molecular structure and intermolecular forces."
+    />
   );
 };
 

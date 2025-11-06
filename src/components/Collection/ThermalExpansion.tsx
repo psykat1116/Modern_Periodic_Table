@@ -19,7 +19,7 @@ const ThermalExpansion = ({
 }: thermal_expansion) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_33%_27%]">
+    <div className="gap-1.5 grid text-center grid-cols-[16%_16%_32%_calc(36%-18px)]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

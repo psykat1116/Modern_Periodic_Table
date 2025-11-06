@@ -18,18 +18,19 @@ const Page = () => {
   if (typeof window !== "undefined") {
     window.document.title = `Discoverer of Elements`;
   }
+
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <>
+    <div className="flex flex-col gap-2 w-full px-2">
       <div
-        className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
+        className={`w-full text-4xl flex justify-center items-center font-lora p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         }`}
       >
         Discoverer
       </div>
       <div
-        className={`w-full flex flex-col justify-start items-center px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
+        className={`w-full flex flex-col justify-start items-center pb-2 overflow-y-scroll gap-2 z-[5] text-center`}
       >
         {RowOneElem.map((e) => {
           return (
@@ -183,7 +184,7 @@ const Page = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

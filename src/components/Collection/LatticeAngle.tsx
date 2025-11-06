@@ -18,39 +18,41 @@ const LatticeAngle = ({
 }: LatticeAngle) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[8%_8%_30%_45%]">
-      <Link
-        href={`/elements/${atomic_number}`}
-        className={`p-2 rounded-sm shadow-md ${
-          theme === "dark"
-            ? "bg-bg_dark text-text_primary"
-            : "bg-bg_light text-text_secondary"
-        } backdrop-blur-sm bg-opacity-70`}
-      >
-        {atomic_number}
-      </Link>
-      <Link
-        href={`/elements/${atomic_number}`}
-        className={`p-2 rounded-sm shadow-md ${
-          theme === "dark"
-            ? "bg-bg_dark text-text_primary"
-            : "bg-bg_light text-text_secondary"
-        } backdrop-blur-sm bg-opacity-70`}
-      >
-        {symbol}
-      </Link>
-      <Link
-        href={`/elements/${atomic_number}`}
-        className={`p-2 rounded-sm shadow-md ${
-          theme === "dark"
-            ? "bg-bg_dark text-text_primary"
-            : "bg-bg_light text-text_secondary"
-        } backdrop-blur-sm bg-opacity-70`}
-      >
-        {name}
-      </Link>
+    <div className="text-center flex flex-col gap-2 w-full">
+      <div className="grid gap-2 grid-cols-[25%_25%_calc(50%-16px)]">
+        <Link
+          href={`/elements/${atomic_number}`}
+          className={`p-2 rounded-sm shadow-md ${
+            theme === "dark"
+              ? "bg-bg_dark text-text_primary"
+              : "bg-bg_light text-text_secondary"
+          } backdrop-blur-sm bg-opacity-70`}
+        >
+          {atomic_number}
+        </Link>
+        <Link
+          href={`/elements/${atomic_number}`}
+          className={`p-2 rounded-sm shadow-md ${
+            theme === "dark"
+              ? "bg-bg_dark text-text_primary"
+              : "bg-bg_light text-text_secondary"
+          } backdrop-blur-sm bg-opacity-70`}
+        >
+          {symbol}
+        </Link>
+        <Link
+          href={`/elements/${atomic_number}`}
+          className={`p-2 rounded-sm shadow-md ${
+            theme === "dark"
+              ? "bg-bg_dark text-text_primary"
+              : "bg-bg_light text-text_secondary"
+          } backdrop-blur-sm bg-opacity-70`}
+        >
+          {name}
+        </Link>
+      </div>
       {lattice_angle && (
-        <div className="gap-2 flex justify-start items-center text-sm">
+        <div className="gap-2 grid grid-cols-[repeat(3,1fr)] text-sm">
           {lattice_angle.map((d, ind) => {
             return (
               <div

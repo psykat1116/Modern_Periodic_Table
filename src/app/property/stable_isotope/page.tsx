@@ -20,18 +20,17 @@ const Page = () => {
   }
 
   const { theme } = useContext(ThemeContext) as ThemeContextType;
-
   return (
-    <>
+    <div className="flex flex-col gap-2 px-2 w-full">
       <div
-        className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
+        className={`w-full text-4xl flex justify-center items-center font-lora p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
         } z-[5]`}
       >
         Stable Isotopes
       </div>
       <div
-        className={`w-[98%] grid grid-cols-1 pb-3 overflow-y-scroll gap-5 z-[5]`}
+        className={`w-full grid grid-cols-1 pb-3 overflow-y-scroll gap-5`}
       >
         {RowOneElem.map((e) => {
           return (
@@ -185,7 +184,7 @@ const Page = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

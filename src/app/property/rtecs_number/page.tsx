@@ -21,20 +21,19 @@ const Page = () => {
   }
 
   const { theme } = useContext(ThemeContext) as ThemeContextType;
-
   return (
-    <>
+    <div className="flex flex-col gap-2 px-2 w-full">
       <Link
         href="https://en.wikipedia.org/wiki/Registry_of_Toxic_Effects_of_Chemical_Substances"
-        className={`w-full text-4xl flex justify-center items-center font-satisfy p-2 ${
+        className={`w-full text-4xl flex justify-center items-center font-lora p-2 ${
           theme === "dark" ? " text-text_primary" : " text-text_secondary"
-        } z-[5] max-sm:text-2xl`}
+        } max-sm:text-2xl`}
         target="_blank"
       >
         RTECS Number
       </Link>
       <div
-        className={`w-full grid grid-cols-3 max-md:grid-cols-1 px-2 pb-2 overflow-y-scroll gap-2 z-[5]`}
+        className={`w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pb-2 overflow-y-scroll gap-2`}
       >
         {RowOneElem.map((e) => {
           return (
@@ -188,7 +187,7 @@ const Page = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

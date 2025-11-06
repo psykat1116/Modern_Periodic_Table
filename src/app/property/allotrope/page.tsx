@@ -22,7 +22,6 @@ const Page = () => {
   }
 
   const { theme } = useContext(ThemeContext) as ThemeContextType;
-
   return (
     <>
       <div
@@ -39,7 +38,7 @@ const Page = () => {
           Allotropes
         </Link>
       </div>
-      <div className="w-full flex flex-col justify-start items-center px-2 pb-2 overflow-y-scroll gap-2">
+      <div className="w-full flex flex-col justify-start items-center px-2 pb-2 overflow-y-scroll gap-2 max-md:text-xs">
         {RowOneElem.map((e) => {
           return (
             e.general_properties.allotropes && (

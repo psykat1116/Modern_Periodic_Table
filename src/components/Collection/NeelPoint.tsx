@@ -13,7 +13,7 @@ interface neel_point {
 const NeelPoint = ({ atomic_number, neel_point, symbol, name }: neel_point) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_38%_22%]">
+    <div className="gap-1.5 grid text-center grid-cols-[17%_17%_38%_calc(28%-18px)]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

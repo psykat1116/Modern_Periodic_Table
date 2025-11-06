@@ -11,15 +11,10 @@ interface LifeTime {
   lifetime: string | "∞";
 }
 
-const LifeTime = ({
-  atomic_number,
-  lifetime,
-  symbol,
-  name,
-}: LifeTime) => {
+const LifeTime = ({ atomic_number, lifetime, symbol, name }: LifeTime) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[15%_15%_32%_33%]">
+    <div className="gap-1.5 grid text-center grid-cols-[15%_15%_32%_calc(38%-18px)]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${
@@ -59,8 +54,7 @@ const LifeTime = ({
               : "bg-bg_light text-text_secondary"
           } bg-opacity-70 backdrop-blur-sm`}
           dangerouslySetInnerHTML={{ __html: xss(lifetime) }}
-        >
-        </Link>
+        ></Link>
       )}
     </div>
   );

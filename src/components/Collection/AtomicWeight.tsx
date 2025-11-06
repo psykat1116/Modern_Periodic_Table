@@ -18,7 +18,7 @@ const AtomicWeight = ({
 }: AtomicWeight) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[12%_12%_35%_35%]">
+    <div className="gap-1.5 grid text-center grid-cols-[12%_12%_calc(41%-18px)_35%]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${

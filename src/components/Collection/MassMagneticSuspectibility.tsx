@@ -19,7 +19,7 @@ const MassMagneticSuspectibility = ({
 }: MassMagneticSuspectibility) => {
   const { theme } = useContext(ThemeContext) as ThemeContextType;
   return (
-    <div className="gap-1.5 grid text-center grid-cols-[14%_14%_35%_30%]">
+    <div className="gap-1.5 grid text-center grid-cols-[14%_14%_36%_calc(36%-18px)]">
       <Link
         href={`/elements/${atomic_number}`}
         className={`p-2 rounded-sm shadow-md ${
